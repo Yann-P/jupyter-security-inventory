@@ -1,0 +1,3093 @@
+{
+  "fetched_on": "2026-10-22",
+  "orgs": [
+    "binder-examples",
+    "binderhub-ci-repos",
+    "ipython",
+    "jupyter",
+    "jupyter-book",
+    "jupyter-governance",
+    "jupyter-incubator",
+    "jupyter-resources",
+    "jupyter-server",
+    "jupyter-standard",
+    "jupyter-standards",
+    "jupyter-widgets",
+    "jupyter-xeus",
+    "jupytercon",
+    "jupyterhealth",
+    "jupyterhub",
+    "jupyterlab",
+    "jupyterlite",
+    "voila-dashboards",
+    "voila-gallery"
+  ],
+  "repos": [
+    {
+      "full_name": "binder-examples/.github",
+      "org": "binder-examples",
+      "name": ".github",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/appmode",
+      "org": "binder-examples",
+      "name": "appmode",
+      "description": "Creating web applications with Jupyter and Binder",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/apt_install",
+      "org": "binder-examples",
+      "name": "apt_install",
+      "description": "Installing packages from APT",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/binder-r-description",
+      "org": "binder-examples",
+      "name": "binder-r-description",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/bokeh",
+      "org": "binder-examples",
+      "name": "bokeh",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/conda",
+      "org": "binder-examples",
+      "name": "conda",
+      "description": "Specifying a conda environment with `environment.yml`",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/conda-freeze",
+      "org": "binder-examples",
+      "name": "conda-freeze",
+      "description": "A base repository to use for exporting conda environments",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/continuous-build",
+      "org": "binder-examples",
+      "name": "continuous-build",
+      "description": "Show how to use continuous integration to test your dependency specifications",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/data-quilt",
+      "org": "binder-examples",
+      "name": "data-quilt",
+      "description": "Install quilt data packages and use them in Binder notebooks",
+      "is_fork": true
+    },
+    {
+      "full_name": "binder-examples/demo-julia",
+      "org": "binder-examples",
+      "name": "demo-julia",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/dockerfile-rstudio",
+      "org": "binder-examples",
+      "name": "dockerfile-rstudio",
+      "description": "Using RStudio with Binder with a custom Dockerfile",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/getting-data",
+      "org": "binder-examples",
+      "name": "getting-data",
+      "description": "How to get data into your Binder",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/getting-data-xroot",
+      "org": "binder-examples",
+      "name": "getting-data-xroot",
+      "description": "Using the xroot protocol to access very large datasets",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/julia-python",
+      "org": "binder-examples",
+      "name": "julia-python",
+      "description": "Installing Julia and Python environments",
+      "is_fork": true
+    },
+    {
+      "full_name": "binder-examples/jupyter-extension",
+      "org": "binder-examples",
+      "name": "jupyter-extension",
+      "description": "Enabling jupyter extensions for use in Binder",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/jupyter-rise",
+      "org": "binder-examples",
+      "name": "jupyter-rise",
+      "description": "Auto-launching the RISE plugin for Binder presentations.",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/jupyter-sos",
+      "org": "binder-examples",
+      "name": "jupyter-sos",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/jupyter-stacks",
+      "org": "binder-examples",
+      "name": "jupyter-stacks",
+      "description": "Binder example for using a Jupyter DockerStacks image",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/jupyter-stacks-datascience",
+      "org": "binder-examples",
+      "name": "jupyter-stacks-datascience",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/jupyterlab",
+      "org": "binder-examples",
+      "name": "jupyterlab",
+      "description": "Demonstrating how to get JupyterLab working with Binder",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/latex",
+      "org": "binder-examples",
+      "name": "latex",
+      "description": "Using `apt.txt` to install latex for use in notebooks.",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/matplotlib-versions",
+      "org": "binder-examples",
+      "name": "matplotlib-versions",
+      "description": "Illustrating what can change when a dependency is upgraded",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/minimal-dockerfile",
+      "org": "binder-examples",
+      "name": "minimal-dockerfile",
+      "description": "A starting point for your custom Dockerfile that works on binder. You probably don't want to use this.",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/multi-language-demo",
+      "org": "binder-examples",
+      "name": "multi-language-demo",
+      "description": "Material to accompany https://blog.jupyter.org/i-python-you-r-we-julia-baf064ca1fb6",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/nix",
+      "org": "binder-examples",
+      "name": "nix",
+      "description": "Simplest Nix Binderhub example",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/octave",
+      "org": "binder-examples",
+      "name": "octave",
+      "description": "An example of using Octave on mybinder.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/pipfile",
+      "org": "binder-examples",
+      "name": "pipfile",
+      "description": "Using a Pipfile with pipenv on Binder",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/python-conda_pip",
+      "org": "binder-examples",
+      "name": "python-conda_pip",
+      "description": "Installing packages with pip and conda",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/python2_runtime",
+      "org": "binder-examples",
+      "name": "python2_runtime",
+      "description": "Demonstrating how to activate a python 2 environment with `runtime.txt`",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/python2_with_3",
+      "org": "binder-examples",
+      "name": "python2_with_3",
+      "description": "A repository to demonstrate simultaneous python 2 and 3 kernels",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/r",
+      "org": "binder-examples",
+      "name": "r",
+      "description": "Using R with Jupyter / RStudio on Binder",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/r-conda",
+      "org": "binder-examples",
+      "name": "r-conda",
+      "description": "R and RStudio via conda packages in repo2docker",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/r_with_python",
+      "org": "binder-examples",
+      "name": "r_with_python",
+      "description": "Minimal working example for a binder with both R and Python Jupyter and RMarkdown notebooks",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/remote_storage",
+      "org": "binder-examples",
+      "name": "remote_storage",
+      "description": "Connecting a Binder repository with data stored remotely.",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/requirements",
+      "org": "binder-examples",
+      "name": "requirements",
+      "description": "Simple requirements.txt based example",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/rocker",
+      "org": "binder-examples",
+      "name": "rocker",
+      "description": "Using a pre-existing rocker image on mybinder.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/setup.py",
+      "org": "binder-examples",
+      "name": "setup.py",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/stencila-multi",
+      "org": "binder-examples",
+      "name": "stencila-multi",
+      "description": "Demo for Stencila & Dar on binder with multiple Stencila documents in one repository",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/stencila-py",
+      "org": "binder-examples",
+      "name": "stencila-py",
+      "description": "Demo for Stencila & DAR on binder with Python code",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/stencila-r",
+      "org": "binder-examples",
+      "name": "stencila-r",
+      "description": "Demo for Stencila & DAR on binder with R code",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/tensorboard",
+      "org": "binder-examples",
+      "name": "tensorboard",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/voila",
+      "org": "binder-examples",
+      "name": "voila",
+      "description": "Using Voilà with matplotlib example",
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/zero-to-binder",
+      "org": "binder-examples",
+      "name": "zero-to-binder",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binder-examples/zero-to-jupyterhub-k8s",
+      "org": "binder-examples",
+      "name": "zero-to-jupyterhub-k8s",
+      "description": "Helm Chart & Documentation for deploying JupyterHub on Kubernetes",
+      "is_fork": true
+    },
+    {
+      "full_name": "binderhub-ci-repos/cached-minimal-dockerfile",
+      "org": "binderhub-ci-repos",
+      "name": "cached-minimal-dockerfile",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binderhub-ci-repos/lfs",
+      "org": "binderhub-ci-repos",
+      "name": "lfs",
+      "description": "testing LFS with repo2docker/binderhub",
+      "is_fork": false
+    },
+    {
+      "full_name": "binderhub-ci-repos/minimal-dockerfile",
+      "org": "binderhub-ci-repos",
+      "name": "minimal-dockerfile",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binderhub-ci-repos/repo2docker-ci-clone-depth",
+      "org": "binderhub-ci-repos",
+      "name": "repo2docker-ci-clone-depth",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "binderhub-ci-repos/repo2docker-subdir-support",
+      "org": "binderhub-ci-repos",
+      "name": "repo2docker-subdir-support",
+      "description": "A repository to test building from a subdirectory with repo2docker",
+      "is_fork": false
+    },
+    {
+      "full_name": "binderhub-ci-repos/requirements",
+      "org": "binderhub-ci-repos",
+      "name": "requirements",
+      "description": "Simple requirements.txt based example",
+      "is_fork": true
+    },
+    {
+      "full_name": "ipython/.github",
+      "org": "ipython",
+      "name": ".github",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/comm",
+      "org": "ipython",
+      "name": "comm",
+      "description": "Python Comm implementation for the Jupyter kernel protocol",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipykernel",
+      "org": "ipython",
+      "name": "ipykernel",
+      "description": "IPython Kernel for Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipynb",
+      "org": "ipython",
+      "name": "ipynb",
+      "description": "Package / Module importer for importing code from Jupyter Notebook files (.ipynb)",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipyparallel",
+      "org": "ipython",
+      "name": "ipyparallel",
+      "description": "IPython Parallel: Interactive Parallel Computing in Python",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipython",
+      "org": "ipython",
+      "name": "ipython",
+      "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipython-in-depth",
+      "org": "ipython",
+      "name": "ipython-in-depth",
+      "description": "IPython and Jupyter in-depth Tutorial, first presented at PyCon 2012",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipython-pygments-lexers",
+      "org": "ipython",
+      "name": "ipython-pygments-lexers",
+      "description": "Pygments lexers for syntax-highlighting IPython code & sessions",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipython-website",
+      "org": "ipython",
+      "name": "ipython-website",
+      "description": "IPython website sources. Any fixes to the website should be done on this repository.",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/ipython.github.com",
+      "org": "ipython",
+      "name": "ipython.github.com",
+      "description": "Auto-generated sphinx version of the IPython website. Since this is an auto-generated directory, do *not* submit pull requests against this repository.  The actual sources are in the ipython-website repository.",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/matplotlib-inline",
+      "org": "ipython",
+      "name": "matplotlib-inline",
+      "description": "Inline Matplotlib backend for Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/pickleshare",
+      "org": "ipython",
+      "name": "pickleshare",
+      "description": "File system based database that uses python pickles",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/traitlets",
+      "org": "ipython",
+      "name": "traitlets",
+      "description": "A lightweight Traits like module",
+      "is_fork": false
+    },
+    {
+      "full_name": "ipython/xkcd-font",
+      "org": "ipython",
+      "name": "xkcd-font",
+      "description": "The xkcd font",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/.github",
+      "org": "jupyter-book",
+      "name": ".github",
+      "description": "GitHub-specified configuration / meta-data",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/blog",
+      "org": "jupyter-book",
+      "name": "blog",
+      "description": "Blog for the Jupyter Book subproject",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/blog-plugin",
+      "org": "jupyter-book",
+      "name": "blog-plugin",
+      "description": "A plugin to list blog posts in a MyST project",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/book-theme-tailwind-quickstart",
+      "org": "jupyter-book",
+      "name": "book-theme-tailwind-quickstart",
+      "description": "A quickstart repository for building custom CSS with Tailwind",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/demo-scipy-2025",
+      "org": "jupyter-book",
+      "name": "demo-scipy-2025",
+      "description": "The demo repository used in the SciPy 2025 talk on Jupyter Book 2",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-js-anywidget",
+      "org": "jupyter-book",
+      "name": "example-js-anywidget",
+      "description": "A demonstration JS anywidget for use with the MyST Document Engine",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-js-plugin",
+      "org": "jupyter-book",
+      "name": "example-js-plugin",
+      "description": "A demonstration JS plugin for use with the MyST Document Engine",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-landing-pages",
+      "org": "jupyter-book",
+      "name": "example-landing-pages",
+      "description": "An example of deploying a MyST book with a landing page",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-multi-language-book",
+      "org": "jupyter-book",
+      "name": "example-multi-language-book",
+      "description": "A simple book to demonstrate what's possible with multi-language books.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-outputs",
+      "org": "jupyter-book",
+      "name": "example-outputs",
+      "description": "An example of deploying a MyST book containing executable notebooks that generate plots",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-python-plugin",
+      "org": "jupyter-book",
+      "name": "example-python-plugin",
+      "description": "A demonstration Python plugin for use with the MyST Document Engine",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-stylesheets",
+      "org": "jupyter-book",
+      "name": "example-stylesheets",
+      "description": "An example of deploying a MyST book with a custom CSS stylesheet",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/example-widgets",
+      "org": "jupyter-book",
+      "name": "example-widgets",
+      "description": "A MyST Markdown project for testing the widget interfaces",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/github-action-playground",
+      "org": "jupyter-book",
+      "name": "github-action-playground",
+      "description": "A fork of my playground for GHA",
+      "is_fork": true
+    },
+    {
+      "full_name": "jupyter-book/hatch-deps-selector",
+      "org": "jupyter-book",
+      "name": "hatch-deps-selector",
+      "description": "Select additional dependencies for pyproject.toml from the environment",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/jb1-redirect-generator",
+      "org": "jupyter-book",
+      "name": "jb1-redirect-generator",
+      "description": "Generate HTML redirect files when migrating from Jupyter Book v1 to MyST/Jupyter Book v2",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/jupyter-book",
+      "org": "jupyter-book",
+      "name": "jupyter-book",
+      "description": "Create beautiful, publication-quality books and documents from computational content.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/jupyter_releaser",
+      "org": "jupyter-book",
+      "name": "jupyter_releaser",
+      "description": "A set of helper scripts and GitHub Actions to aid in automated releases of Python and npm packages.",
+      "is_fork": true
+    },
+    {
+      "full_name": "jupyter-book/jupyterbook.org",
+      "org": "jupyter-book",
+      "name": "jupyterbook.org",
+      "description": "The landing page and site for the Jupyter Book project",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/jupyterlab-myst",
+      "org": "jupyter-book",
+      "name": "jupyterlab-myst",
+      "description": "Use MyST Markdown directly in Jupyter Lab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/jupyterlab-myst-quickstart",
+      "org": "jupyter-book",
+      "name": "jupyterlab-myst-quickstart",
+      "description": "Quickstart examples for working with MyST in Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/legacy-demo-book",
+      "org": "jupyter-book",
+      "name": "legacy-demo-book",
+      "description": "A simple Jupyter Book",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/myst-enhancement-proposals",
+      "org": "jupyter-book",
+      "name": "myst-enhancement-proposals",
+      "description": "MyST Enhancement Proposals (MEPs)",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/myst-plugins",
+      "org": "jupyter-book",
+      "name": "myst-plugins",
+      "description": "A place for community-maintained MyST plugins",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/myst-theme",
+      "org": "jupyter-book",
+      "name": "myst-theme",
+      "description": "Packages for creating MyST websites themes using React and Remix",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/mystmd",
+      "org": "jupyter-book",
+      "name": "mystmd",
+      "description": "Command line tools for working with MyST Markdown.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/mystmd-quickstart",
+      "org": "jupyter-book",
+      "name": "mystmd-quickstart",
+      "description": "Repository to be used in the mystjs quickstart guide",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/mystmd.org",
+      "org": "jupyter-book",
+      "name": "mystmd.org",
+      "description": "The website theme and landing content for mystmd.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/renaissance2026-myst",
+      "org": "jupyter-book",
+      "name": "renaissance2026-myst",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/team-compass",
+      "org": "jupyter-book",
+      "name": "team-compass",
+      "description": "A team compass for the Jupyter Book sub-project",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/test-repo",
+      "org": "jupyter-book",
+      "name": "test-repo",
+      "description": "A test repository for internal use in docs, testing, etc.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/thebe",
+      "org": "jupyter-book",
+      "name": "thebe",
+      "description": "Turn static HTML pages into live documents with Jupyter kernels.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/thebe-binder-base",
+      "org": "jupyter-book",
+      "name": "thebe-binder-base",
+      "description": "A minimal binder setup for thebe demos",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/vscode-mystmd",
+      "org": "jupyter-book",
+      "name": "vscode-mystmd",
+      "description": "VSCode extension for MyST Markdown",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-book/workshop-template",
+      "org": "jupyter-book",
+      "name": "workshop-template",
+      "description": "Preparing for the JupyterCon 2025 Jupyter Book 2 workshop",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-governance/.github",
+      "org": "jupyter-governance",
+      "name": ".github",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-governance/ec-team-compass",
+      "org": "jupyter-governance",
+      "name": "ec-team-compass",
+      "description": "A repository for Executive Council discussion, syncing, and meeting notes. ",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-governance/funding-proposals",
+      "org": "jupyter-governance",
+      "name": "funding-proposals",
+      "description": "Funding proposals for the Jupyter Foundation",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-governance/jupyter-foundation-governing-board",
+      "org": "jupyter-governance",
+      "name": "jupyter-foundation-governing-board",
+      "description": "Materials and minutes maintained by the Jupyter Foundation Governing Board",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-incubator/sparkmagic",
+      "org": "jupyter-incubator",
+      "name": "sparkmagic",
+      "description": "Jupyter magics and kernels for working with remote Spark clusters",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/.github",
+      "org": "jupyter-server",
+      "name": ".github",
+      "description": "Community health files for the @jupyter-server organization.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/contributing-hour",
+      "org": "jupyter-server",
+      "name": "contributing-hour",
+      "description": "Contributing Hour Whiteboard",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/enterprise_gateway",
+      "org": "jupyter-server",
+      "name": "enterprise_gateway",
+      "description": "A lightweight, multi-tenant, scalable and secure gateway that enables Jupyter Notebooks to share resources across distributed clusters such as Apache Spark, Kubernetes and others.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/extension-cookiecutter",
+      "org": "jupyter-server",
+      "name": "extension-cookiecutter",
+      "description": "A Cookiecutter recipe for Jupyter Server extensions",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/fps",
+      "org": "jupyter-server",
+      "name": "fps",
+      "description": "Fast Pluggable System",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/gateway_provisioners",
+      "org": "jupyter-server",
+      "name": "gateway_provisioners",
+      "description": "Provides remote kernel provisioners for various resource-managed clusters.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter-resource-usage",
+      "org": "jupyter-server",
+      "name": "jupyter-resource-usage",
+      "description": "Jupyter Notebook Extension for monitoring your own Resource Usage",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter-scheduler",
+      "org": "jupyter-server",
+      "name": "jupyter-scheduler",
+      "description": "Run Jupyter notebooks as jobs",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter_releaser",
+      "org": "jupyter-server",
+      "name": "jupyter_releaser",
+      "description": "A set of helper scripts and GitHub Actions to aid in automated releases of Python and npm packages.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter_server",
+      "org": "jupyter-server",
+      "name": "jupyter_server",
+      "description": "The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter_server_fileid",
+      "org": "jupyter-server",
+      "name": "jupyter_server_fileid",
+      "description": "An extension that maintains file IDs for documents in a running Jupyter Server",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter_server_mathjax",
+      "org": "jupyter-server",
+      "name": "jupyter_server_mathjax",
+      "description": "Jupyter Server extension for serving Mathjax",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter_server_terminals",
+      "org": "jupyter-server",
+      "name": "jupyter_server_terminals",
+      "description": "A Jupyter Server Extension Providing Support for Terminals",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyter_ydoc",
+      "org": "jupyter-server",
+      "name": "jupyter_ydoc",
+      "description": "Jupyter document structures for collaborative editing using Yjs/pycrdt",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/jupyverse",
+      "org": "jupyter-server",
+      "name": "jupyverse",
+      "description": "Modern Jupyter server based on FastAPI",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/kernel_gateway",
+      "org": "jupyter-server",
+      "name": "kernel_gateway",
+      "description": "Jupyter Kernel Gateway",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/pytest-jupyter",
+      "org": "jupyter-server",
+      "name": "pytest-jupyter",
+      "description": "A pytest plugin for testing Jupyter core libraries and extensions.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/synchronizer",
+      "org": "jupyter-server",
+      "name": "synchronizer",
+      "description": "A Jupyter Server Session Manager that rehydrates and persists.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-server/team-compass",
+      "org": "jupyter-server",
+      "name": "team-compass",
+      "description": "A repository for team discussion, syncing, and meeting notes.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-standards/.github",
+      "org": "jupyter-standards",
+      "name": ".github",
+      "description": "Public organization profile for jupyter-standards",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/ipydatagrid",
+      "org": "jupyter-widgets",
+      "name": "ipydatagrid",
+      "description": "Fast Datagrid widget for the Jupyter Notebook and JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/ipyleaflet",
+      "org": "jupyter-widgets",
+      "name": "ipyleaflet",
+      "description": "A Jupyter - Leaflet.js bridge",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/ipywidgets",
+      "org": "jupyter-widgets",
+      "name": "ipywidgets",
+      "description": "Interactive Widgets for the Jupyter Notebook",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/jupyterlab-sidecar",
+      "org": "jupyter-widgets",
+      "name": "jupyterlab-sidecar",
+      "description": "A sidecar output widget for JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/midicontrols",
+      "org": "jupyter-widgets",
+      "name": "midicontrols",
+      "description": "A Jupyter widget for midi controllers.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/pythreejs",
+      "org": "jupyter-widgets",
+      "name": "pythreejs",
+      "description": "A Jupyter - Three.js bridge",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/team-compass",
+      "org": "jupyter-widgets",
+      "name": "team-compass",
+      "description": "A repository for team meetings and org-wide organization things",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/traittypes",
+      "org": "jupyter-widgets",
+      "name": "traittypes",
+      "description": "Traitlets types for NumPy, SciPy and friends",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/tutorial",
+      "org": "jupyter-widgets",
+      "name": "tutorial",
+      "description": "A tutorial for widgets",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/tutorial-jupyterlite",
+      "org": "jupyter-widgets",
+      "name": "tutorial-jupyterlite",
+      "description": "A JupyterLite configured for the Jupyter Widgets Tutorial",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/widget-cookiecutter",
+      "org": "jupyter-widgets",
+      "name": "widget-cookiecutter",
+      "description": "A cookiecutter template for creating a custom Jupyter widget project.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-widgets/widget-ts-cookiecutter",
+      "org": "jupyter-widgets",
+      "name": "widget-ts-cookiecutter",
+      "description": "A highly opinionated cookiecutter template for ipywidget extensions.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/.github",
+      "org": "jupyter-xeus",
+      "name": ".github",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/cpp-terminal",
+      "org": "jupyter-xeus",
+      "name": "cpp-terminal",
+      "description": "C++ library for writing multiplatform terminal applications",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/jupyter-xeus.github.io",
+      "org": "jupyter-xeus",
+      "name": "jupyter-xeus.github.io",
+      "description": "Organization and project management for Xeus",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/robotframework-interpreter",
+      "org": "jupyter-xeus",
+      "name": "robotframework-interpreter",
+      "description": "Utilities for building a Robot Framework interpreter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xcanvas",
+      "org": "jupyter-xeus",
+      "name": "xcanvas",
+      "description": "C++ back-end for ipycanvas",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xena",
+      "org": "jupyter-xeus",
+      "name": "xena",
+      "description": "The world needs Xena, stay tuned!",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus",
+      "org": "jupyter-xeus",
+      "name": "xeus",
+      "description": "Implementation of the Jupyter kernel protocol in C++",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-brainfuck",
+      "org": "jupyter-xeus",
+      "name": "xeus-brainfuck",
+      "description": "Jupyter kernel for the Brainfuck programming language",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-calc",
+      "org": "jupyter-xeus",
+      "name": "xeus-calc",
+      "description": "Jupyter kernel for a simple calculator",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-client-test",
+      "org": "jupyter-xeus",
+      "name": "xeus-client-test",
+      "description": "Jupyter kernels for testing clients",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-cling",
+      "org": "jupyter-xeus",
+      "name": "xeus-cling",
+      "description": "Jupyter kernel for the C++ programming language",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-cookiecutter",
+      "org": "jupyter-xeus",
+      "name": "xeus-cookiecutter",
+      "description": "Cookiecutter for xeus-based Jupyter kernels",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-haskell",
+      "org": "jupyter-xeus",
+      "name": "xeus-haskell",
+      "description": "jupyter / jupyterlite kernel for Haskell powered by WebAssembly",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-javascript",
+      "org": "jupyter-xeus",
+      "name": "xeus-javascript",
+      "description": "A JavaScript kernel for JupyterLite, powered by Xeus",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-lite",
+      "org": "jupyter-xeus",
+      "name": "xeus-lite",
+      "description": "Emscripten-based middleware for xeus",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-lua",
+      "org": "jupyter-xeus",
+      "name": "xeus-lua",
+      "description": "Jupyter kernel for the Lua programming language",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-nelson",
+      "org": "jupyter-xeus",
+      "name": "xeus-nelson",
+      "description": "Jupyter kernel for Nelson",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-octave",
+      "org": "jupyter-xeus",
+      "name": "xeus-octave",
+      "description": "Jupyter kernel for GNU Octave",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-python",
+      "org": "jupyter-xeus",
+      "name": "xeus-python",
+      "description": "Jupyter kernel for the Python programming language",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-python-shell",
+      "org": "jupyter-xeus",
+      "name": "xeus-python-shell",
+      "description": "Core Python code for xeus-python",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-python-wheel",
+      "org": "jupyter-xeus",
+      "name": "xeus-python-wheel",
+      "description": "Building a PyPI wheel for xeus-python",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-qt",
+      "org": "jupyter-xeus",
+      "name": "xeus-qt",
+      "description": "ZeroMQ-based middleware for xeus integrated in the Qt event loop",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-qt-python",
+      "org": "jupyter-xeus",
+      "name": "xeus-qt-python",
+      "description": "xeus-python + xeus-qt = xeus-python-qt",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-r",
+      "org": "jupyter-xeus",
+      "name": "xeus-r",
+      "description": "Jupyter kernel for the R programming language",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-robot",
+      "org": "jupyter-xeus",
+      "name": "xeus-robot",
+      "description": "Jupyter kernel for Robot Framework",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-robot-wheel",
+      "org": "jupyter-xeus",
+      "name": "xeus-robot-wheel",
+      "description": "Building a PyPI wheel for xeus-robot",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-sql",
+      "org": "jupyter-xeus",
+      "name": "xeus-sql",
+      "description": "Jupyter kernel for SQL databases",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-sqlite",
+      "org": "jupyter-xeus",
+      "name": "xeus-sqlite",
+      "description": "Jupyter kernel for SQLite",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-uv",
+      "org": "jupyter-xeus",
+      "name": "xeus-uv",
+      "description": "ZeroMQ-based middleware for xeus integrated in the uv event loop ",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xeus-zmq",
+      "org": "jupyter-xeus",
+      "name": "xeus-zmq",
+      "description": "ZeroMQ-based middleware for xeus",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xhale",
+      "org": "jupyter-xeus",
+      "name": "xhale",
+      "description": "Converter from sphinx and breathe inventory files to doxygen tag files",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xleaflet",
+      "org": "jupyter-xeus",
+      "name": "xleaflet",
+      "description": "C++ backend for the jupyter leaflet widget",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xproperty",
+      "org": "jupyter-xeus",
+      "name": "xproperty",
+      "description": "Traitlets-like C++ properties and implementation of the observer pattern",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xvega",
+      "org": "jupyter-xeus",
+      "name": "xvega",
+      "description": "A C++ API to Vega-Lite.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xvega-bindings",
+      "org": "jupyter-xeus",
+      "name": "xvega-bindings",
+      "description": "xvega bindings for xeus",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter-xeus/xwidgets",
+      "org": "jupyter-xeus",
+      "name": "xwidgets",
+      "description": "C++ backend for Jupyter interactive widgets",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/.github",
+      "org": "jupyter",
+      "name": ".github",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/accessibility",
+      "org": "jupyter",
+      "name": "accessibility",
+      "description": "A repository for ongoing work around making Jupyter's software accessible and inclusive",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/atom-notebook",
+      "org": "jupyter",
+      "name": "atom-notebook",
+      "description": "[Deprecated] Jupyter Notebook, but inside Atom.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/cdn.jupyter.org",
+      "org": "jupyter",
+      "name": "cdn.jupyter.org",
+      "description": "Assets and layout for cdn.jupyter.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/community-committee",
+      "org": "jupyter",
+      "name": "community-committee",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/cookiecutter-docker-stacks",
+      "org": "jupyter",
+      "name": "cookiecutter-docker-stacks",
+      "description": "Cookiecutter for community-maintained Jupyter Docker images",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/council",
+      "org": "jupyter",
+      "name": "council",
+      "description": "This repository provides a standardized process for community members to submit formal requests to the Executive Committee (EC) or Software Security Council (SSC).",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/design",
+      "org": "jupyter",
+      "name": "design",
+      "description": "Design related materials for Project Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/distinguished-contributors",
+      "org": "jupyter",
+      "name": "distinguished-contributors",
+      "description": "Jupyter Distinguished Contributors",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/docker-stacks",
+      "org": "jupyter",
+      "name": "docker-stacks",
+      "description": "Ready-to-run Docker images containing Jupyter applications",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/docs-team-compass",
+      "org": "jupyter",
+      "name": "docs-team-compass",
+      "description": "Documentation Work Group Discussions",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/echo_kernel",
+      "org": "jupyter",
+      "name": "echo_kernel",
+      "description": "A simple example kernel for Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/enhancement-proposals",
+      "org": "jupyter",
+      "name": "enhancement-proposals",
+      "description": "Enhancement proposals for the Jupyter Ecosystem",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/foundations-and-standards-team-compass",
+      "org": "jupyter",
+      "name": "foundations-and-standards-team-compass",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/github-data",
+      "org": "jupyter",
+      "name": "github-data",
+      "description": "Scrapes, publishes, and shows off github issue data from around the Jupyter ecosystem.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/governance",
+      "org": "jupyter",
+      "name": "governance",
+      "description": "The governance process and model for Project Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/ideas",
+      "org": "jupyter",
+      "name": "ideas",
+      "description": "A place for the Jupyter community to connect on ideas",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter",
+      "org": "jupyter",
+      "name": "jupyter",
+      "description": "Jupyter metapackage for installation and documentation",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter-communitycalls",
+      "org": "jupyter",
+      "name": "jupyter-communitycalls",
+      "description": "📣  Resources for planning and hosting the Jupyter Community Calls",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter-packaging",
+      "org": "jupyter",
+      "name": "jupyter-packaging",
+      "description": "Tools to help build and install Jupyter Python packages",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter-sphinx",
+      "org": "jupyter",
+      "name": "jupyter-sphinx",
+      "description": "Sphinx extension for rendering of Jupyter interactive widgets.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter.github.io",
+      "org": "jupyter",
+      "name": "jupyter.github.io",
+      "description": "Project Jupyter's home on the World Wide Web",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter_client",
+      "org": "jupyter",
+      "name": "jupyter_client",
+      "description": "Jupyter protocol client APIs",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter_console",
+      "org": "jupyter",
+      "name": "jupyter_console",
+      "description": "Jupyter Terminal Console",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter_core",
+      "org": "jupyter",
+      "name": "jupyter_core",
+      "description": "Core Jupyter functionality",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter_events",
+      "org": "jupyter",
+      "name": "jupyter_events",
+      "description": "Configurable event system for Jupyter applications and extensions.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jupyter_kernel_test",
+      "org": "jupyter",
+      "name": "jupyter_kernel_test",
+      "description": "A tool for testing Jupyter kernels",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jvm-magics",
+      "org": "jupyter",
+      "name": "jvm-magics",
+      "description": "A plugin system for magic function implementations across JVM kernels.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/jvm-repr",
+      "org": "jupyter",
+      "name": "jvm-repr",
+      "description": "API for converting JVM objects to representations by MIME type, for the Jupyter ecosystem.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/kernel-protocol",
+      "org": "jupyter",
+      "name": "kernel-protocol",
+      "description": "Specification of the Jupyter Kernel Protocol",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/kernel_gateway_demos",
+      "org": "jupyter",
+      "name": "kernel_gateway_demos",
+      "description": "Demos associated with the kernel gateway incubator project",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/kernels-team-compass",
+      "org": "jupyter",
+      "name": "kernels-team-compass",
+      "description": "The team-compass for the Jupyter Kernels Subproject",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/markdown",
+      "org": "jupyter",
+      "name": "markdown",
+      "description": "Specify the Jupyter Markdown flavor.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbclassic",
+      "org": "jupyter",
+      "name": "nbclassic",
+      "description": "Jupyter Notebook as a Jupyter Server extension",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbclient",
+      "org": "jupyter",
+      "name": "nbclient",
+      "description": "A client library for executing notebooks. Formally nbconvert's ExecutePreprocessor",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbconvert",
+      "org": "jupyter",
+      "name": "nbconvert",
+      "description": "Jupyter Notebook Conversion",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbconvert-examples",
+      "org": "jupyter",
+      "name": "nbconvert-examples",
+      "description": "Examples that illustrate how nbconvert can be used",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbdime",
+      "org": "jupyter",
+      "name": "nbdime",
+      "description": "Tools for diffing and merging of Jupyter notebooks.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbformat",
+      "org": "jupyter",
+      "name": "nbformat",
+      "description": "Reference implementation of the Jupyter Notebook format",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbgrader",
+      "org": "jupyter",
+      "name": "nbgrader",
+      "description": "A system for assigning and grading notebooks",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbmanager",
+      "org": "jupyter",
+      "name": "nbmanager",
+      "description": "View and stop running IPython notebook servers",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbviewer",
+      "org": "jupyter",
+      "name": "nbviewer",
+      "description": "nbconvert as a web service: Render Jupyter Notebooks as static web pages",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/nbviewer.org-deploy",
+      "org": "jupyter",
+      "name": "nbviewer.org-deploy",
+      "description": "Deployment files for nbviewer.jupyter.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/notebook",
+      "org": "jupyter",
+      "name": "notebook",
+      "description": "Jupyter Interactive Notebook",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/notebook_shim",
+      "org": "jupyter",
+      "name": "notebook_shim",
+      "description": "A shim layer for notebook traits and config",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/papyri",
+      "org": "jupyter",
+      "name": "papyri",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/pr-triage-board-bot",
+      "org": "jupyter",
+      "name": "pr-triage-board-bot",
+      "description": "Sync PRs to a GitHub Project Board to make triage easier",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/practice",
+      "org": "jupyter",
+      "name": "practice",
+      "description": "A practice repo for submitting pull requests",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/roadmap",
+      "org": "jupyter",
+      "name": "roadmap",
+      "description": "Master roadmap for Project Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/schema",
+      "org": "jupyter",
+      "name": "schema",
+      "description": "The canonical place for Jupyter schema descriptions",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/security",
+      "org": "jupyter",
+      "name": "security",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/software-steering-council-team-compass",
+      "org": "jupyter",
+      "name": "software-steering-council-team-compass",
+      "description": "Team compass page for the Jupyter Software Steering Council",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/sphinxcontrib_github_alt",
+      "org": "jupyter",
+      "name": "sphinxcontrib_github_alt",
+      "description": "Github roles for Sphinx docs",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/surveys",
+      "org": "jupyter",
+      "name": "surveys",
+      "description": "Surveys and datasets collected by Project Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/team-compass-template",
+      "org": "jupyter",
+      "name": "team-compass-template",
+      "description": "A template for team-compass repositories",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/telemetry",
+      "org": "jupyter",
+      "name": "telemetry",
+      "description": "Configurable event-logging for Jupyter applications and extensions.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/terminado",
+      "org": "jupyter",
+      "name": "terminado",
+      "description": "Terminals served by tornado websockets",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/testpath",
+      "org": "jupyter",
+      "name": "testpath",
+      "description": "Test utilities for Python code working with files and commands",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/try-jupyter",
+      "org": "jupyter",
+      "name": "try-jupyter",
+      "description": "A JupyterLite deployment to try JupyterLab, Jupyter Notebook and IPython in the browser",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyter/try.jupyter.org",
+      "org": "jupyter",
+      "name": "try.jupyter.org",
+      "description": "Try Jupyter!",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-Cheukting",
+      "org": "jupytercon",
+      "name": "2020-Cheukting",
+      "description": "2020-Cheukting created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-ClusteringAlgorithms",
+      "org": "jupytercon",
+      "name": "2020-ClusteringAlgorithms",
+      "description": "2020-fawazsiddiqi created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-ericmjl",
+      "org": "jupytercon",
+      "name": "2020-ericmjl",
+      "description": "2020-ericmjl created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-eteq",
+      "org": "jupytercon",
+      "name": "2020-eteq",
+      "description": "2020-eteq created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-ethics-culture-opensource-tutorial",
+      "org": "jupytercon",
+      "name": "2020-ethics-culture-opensource-tutorial",
+      "description": "2020-acabunoc created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-jedbrown",
+      "org": "jupytercon",
+      "name": "2020-jedbrown",
+      "description": "2020-jedbrown created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-juanklopper",
+      "org": "jupytercon",
+      "name": "2020-juanklopper",
+      "description": "Keynote speaker Juan Klopper's accompanying notebook and data",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-jupyterbook-with-turing-way",
+      "org": "jupytercon",
+      "name": "2020-jupyterbook-with-turing-way",
+      "description": "2020-tutorial created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-mattharrison",
+      "org": "jupytercon",
+      "name": "2020-mattharrison",
+      "description": "2020-mattharrison created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-OpenSourceCommunities",
+      "org": "jupytercon",
+      "name": "2020-OpenSourceCommunities",
+      "description": "2020-gdequeiroz created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-OpenSourceFunding",
+      "org": "jupytercon",
+      "name": "2020-OpenSourceFunding",
+      "description": "2020-npch created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-posters-033-stix",
+      "org": "jupytercon",
+      "name": "2020-posters-033-stix",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-posters-047-lee",
+      "org": "jupytercon",
+      "name": "2020-posters-047-lee",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-posters-048-Grosch",
+      "org": "jupytercon",
+      "name": "2020-posters-048-Grosch",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-posters-057-lippert",
+      "org": "jupytercon",
+      "name": "2020-posters-057-lippert",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-posters-103-brochart",
+      "org": "jupytercon",
+      "name": "2020-posters-103-brochart",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-sdruskat",
+      "org": "jupytercon",
+      "name": "2020-sdruskat",
+      "description": "2020-sdruskat created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-shlomihod",
+      "org": "jupytercon",
+      "name": "2020-shlomihod",
+      "description": "2020-shlomihod created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-tracks",
+      "org": "jupytercon",
+      "name": "2020-tracks",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-widgets-tutorial",
+      "org": "jupytercon",
+      "name": "2020-widgets-tutorial",
+      "description": "2020-mwcraig created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-willingc",
+      "org": "jupytercon",
+      "name": "2020-willingc",
+      "description": "2020-willingc created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/2020-zronaghi",
+      "org": "jupytercon",
+      "name": "2020-zronaghi",
+      "description": "2020-zronaghi created by GitHub Classroom",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/conf-session2020",
+      "org": "jupytercon",
+      "name": "conf-session2020",
+      "description": "A template repository for conference sessions, which are clusters of talks in a given track",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/jupytercon2020-developingextensions",
+      "org": "jupytercon",
+      "name": "jupytercon2020-developingextensions",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/jupytercon2020-website",
+      "org": "jupytercon",
+      "name": "jupytercon2020-website",
+      "description": "JupyterCon Website",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/jupytercon2025-developingextensions",
+      "org": "jupytercon",
+      "name": "jupytercon2025-developingextensions",
+      "description": "JupyterCon 2025 Workshop: Extension Development for Everyone! Materials and website.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/jupytercon2025-developingextensions-demo",
+      "org": "jupytercon",
+      "name": "jupytercon2025-developingextensions-demo",
+      "description": "A demo of a JupyterLab extension for JupyterCon 2025's \"Extension Development for Everyone!\" workshop",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupytercon/tutorial2020",
+      "org": "jupytercon",
+      "name": "tutorial2020",
+      "description": "Template for JupyterCon2020 tutorials",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/.github",
+      "org": "jupyterhealth",
+      "name": ".github",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/demos",
+      "org": "jupyterhealth",
+      "name": "demos",
+      "description": "demo notebooks to be run on the JupyterHealth deployment",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/edgemed-demo-app",
+      "org": "jupyterhealth",
+      "name": "edgemed-demo-app",
+      "description": "EdgeMed patient app (Flutter) for JupyterHealth Exchange",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/fhir-cross-version",
+      "org": "jupyterhealth",
+      "name": "fhir-cross-version",
+      "description": "FHIR IG that contains a collection of cross-version artefacts",
+      "is_fork": true
+    },
+    {
+      "full_name": "jupyterhealth/helm-charts",
+      "org": "jupyterhealth",
+      "name": "helm-charts",
+      "description": "Helm Charts for JupyterHealth",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/hub",
+      "org": "jupyterhealth",
+      "name": "hub",
+      "description": "Documentation for the JupyterHealth hub",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/initiatives",
+      "org": "jupyterhealth",
+      "name": "initiatives",
+      "description": "Planning repo for JupyterHealth",
+      "is_fork": true
+    },
+    {
+      "full_name": "jupyterhealth/jhe-smart-demo",
+      "org": "jupyterhealth",
+      "name": "jhe-smart-demo",
+      "description": "demo SMART app launch with JupyterHealth",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jhe-stress",
+      "org": "jupyterhealth",
+      "name": "jhe-stress",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyter-smart-on-fhir",
+      "org": "jupyterhealth",
+      "name": "jupyter-smart-on-fhir",
+      "description": "Demo repository to demonstrate SMART on FIHR integration with Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyterhealth-client",
+      "org": "jupyterhealth",
+      "name": "jupyterhealth-client",
+      "description": "client library for jupyterhealth data exchange",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyterhealth-demo-deploy",
+      "org": "jupyterhealth",
+      "name": "jupyterhealth-demo-deploy",
+      "description": "Deployment configuration for JupyterHealth demo at Berkeley",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyterhealth-exchange",
+      "org": "jupyterhealth",
+      "name": "jupyterhealth-exchange",
+      "description": "Collect and Share Health Data over FHIR",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyterhealth-sof-provider-template",
+      "org": "jupyterhealth",
+      "name": "jupyterhealth-sof-provider-template",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyterhealth-software",
+      "org": "jupyterhealth",
+      "name": "jupyterhealth-software",
+      "description": "A repository to track issues for the JupyterHealth Software Team",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyterhealth.github.io",
+      "org": "jupyterhealth",
+      "name": "jupyterhealth.github.io",
+      "description": "Documentation landing page for the JupyterHealth ecosystem",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/jupyterhealth.org",
+      "org": "jupyterhealth",
+      "name": "jupyterhealth.org",
+      "description": "The brochure landing site for JupyterHealth",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/myst-site-article",
+      "org": "jupyterhealth",
+      "name": "myst-site-article",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/myst-site-book",
+      "org": "jupyterhealth",
+      "name": "myst-site-book",
+      "description": null,
+      "is_fork": true
+    },
+    {
+      "full_name": "jupyterhealth/omh-shim",
+      "org": "jupyterhealth",
+      "name": "omh-shim",
+      "description": "Convert wearable health data from vendor schemas to Open mHealth schemas.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/partner-client-docker",
+      "org": "jupyterhealth",
+      "name": "partner-client-docker",
+      "description": "Docker environment for testing the partner client functionality with CommonHealth Cloud Storage Service",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/singleuser-image",
+      "org": "jupyterhealth",
+      "name": "singleuser-image",
+      "description": "Build singleuser image for Jupyter Health Hub",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/sof-cgm-demo",
+      "org": "jupyterhealth",
+      "name": "sof-cgm-demo",
+      "description": "SMART on FHIR demo with cgm data",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/software-documentation",
+      "org": "jupyterhealth",
+      "name": "software-documentation",
+      "description": "Documentation for JupyterHealth",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhealth/team-compass",
+      "org": "jupyterhealth",
+      "name": "team-compass",
+      "description": "A repository for team interaction, syncing, and handling meeting notes in JupyterHealth",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/.github",
+      "org": "jupyterhub",
+      "name": ".github",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/action-get-quayio-tags",
+      "org": "jupyterhub",
+      "name": "action-get-quayio-tags",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/action-k3s-helm",
+      "org": "jupyterhub",
+      "name": "action-k3s-helm",
+      "description": "A GitHub action to install K3S, Calico, and Helm.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/action-k8s-await-workloads",
+      "org": "jupyterhub",
+      "name": "action-k8s-await-workloads",
+      "description": "A Github Action to await k8s workloads to become Ready",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/action-k8s-namespace-report",
+      "org": "jupyterhub",
+      "name": "action-k8s-namespace-report",
+      "description": "GitHub Action to report info and logs from the current namespace.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/action-major-minor-tag-calculator",
+      "org": "jupyterhub",
+      "name": "action-major-minor-tag-calculator",
+      "description": "GitHub action to calculate major and minor semver tags, e.g. for tagging containers",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/autodoc-traits",
+      "org": "jupyterhub",
+      "name": "autodoc-traits",
+      "description": "Sphinx extension to autodocument traitlets",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/batchspawner",
+      "org": "jupyterhub",
+      "name": "batchspawner",
+      "description": "Custom Spawner for Jupyterhub to start servers in batch scheduled systems",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/binder-billing",
+      "org": "jupyterhub",
+      "name": "binder-billing",
+      "description": "A repository to explore billing data for mybinder.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/binder-data",
+      "org": "jupyterhub",
+      "name": "binder-data",
+      "description": "A place to store data for Binder",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/binderhub",
+      "org": "jupyterhub",
+      "name": "binderhub",
+      "description": "Run your code in the cloud, with technology so advanced, it feels like magic!",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/chartpress",
+      "org": "jupyterhub",
+      "name": "chartpress",
+      "description": "automate building and publishing images for helm charts",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/configurable-http-proxy",
+      "org": "jupyterhub",
+      "name": "configurable-http-proxy",
+      "description": "node-http-proxy plus a REST API",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/design",
+      "org": "jupyterhub",
+      "name": "design",
+      "description": "A collection of design material for JupyterHub and related projects",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/docker-image-cleaner",
+      "org": "jupyterhub",
+      "name": "docker-image-cleaner",
+      "description": "Python script to cleanup unused docker images",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/dockerspawner",
+      "org": "jupyterhub",
+      "name": "dockerspawner",
+      "description": "Spawns JupyterHub single user servers in Docker containers ",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/escapism",
+      "org": "jupyterhub",
+      "name": "escapism",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/firstuseauthenticator",
+      "org": "jupyterhub",
+      "name": "firstuseauthenticator",
+      "description": "JupyterHub Authenticator that lets users set passwords when they first log in",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/gh-scoped-creds",
+      "org": "jupyterhub",
+      "name": "gh-scoped-creds",
+      "description": "Provide fine-grained push access to GitHub from a JupyterHub",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/grafana-dashboards",
+      "org": "jupyterhub",
+      "name": "grafana-dashboards",
+      "description": "Grafana Dashboards useful for k8s + JupyterHub",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/helm-chart",
+      "org": "jupyterhub",
+      "name": "helm-chart",
+      "description": "A store of Helm chart tarballs for deploying JupyterHub and BinderHub on a Kubernetes cluster",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyter-remote-desktop-proxy",
+      "org": "jupyterhub",
+      "name": "jupyter-remote-desktop-proxy",
+      "description": " Run a Linux Desktop on a JupyterHub ",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyter-rsession-proxy",
+      "org": "jupyterhub",
+      "name": "jupyter-rsession-proxy",
+      "description": "Jupyter extensions for running an RStudio rsession proxy",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyter-server-proxy",
+      "org": "jupyterhub",
+      "name": "jupyter-server-proxy",
+      "description": "Jupyter notebook server extension to proxy web services.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub",
+      "org": "jupyterhub",
+      "name": "jupyterhub",
+      "description": "Multi-user server for Jupyter notebooks",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-container-images",
+      "org": "jupyterhub",
+      "name": "jupyterhub-container-images",
+      "description": "Container images for JupyterHub",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-deploy-docker",
+      "org": "jupyterhub",
+      "name": "jupyterhub-deploy-docker",
+      "description": "Reference deployment of JupyterHub with docker",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-deploy-hpc",
+      "org": "jupyterhub",
+      "name": "jupyterhub-deploy-hpc",
+      "description": "Documented examples of Jupyterhub deployment in HPC settings",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-deploy-teaching",
+      "org": "jupyterhub",
+      "name": "jupyterhub-deploy-teaching",
+      "description": "Reference deployment of JupyterHub and nbgrader on a single server",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-idle-culler",
+      "org": "jupyterhub",
+      "name": "jupyterhub-idle-culler",
+      "description": "JupyterHub service to cull idle servers and users",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-on-hadoop",
+      "org": "jupyterhub",
+      "name": "jupyterhub-on-hadoop",
+      "description": "Documentation and resources for deploying JupyterHub on Hadoop",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-python-repo-template",
+      "org": "jupyterhub",
+      "name": "jupyterhub-python-repo-template",
+      "description": "A template for generating Python repositories in the `jupyterhub` organization",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-sphinx-theme",
+      "org": "jupyterhub",
+      "name": "jupyterhub-sphinx-theme",
+      "description": "A lightweight wrapper theme for Sphinx based on the PyData Sphinx Theme",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub-the-hard-way",
+      "org": "jupyterhub",
+      "name": "jupyterhub-the-hard-way",
+      "description": "Understanding JupyterHub by deploying it step by step",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/jupyterhub.github.io",
+      "org": "jupyterhub",
+      "name": "jupyterhub.github.io",
+      "description": "A landing page and overview for the JupyterHub project and team",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/kerberosauthenticator",
+      "org": "jupyterhub",
+      "name": "kerberosauthenticator",
+      "description": "A JupyterHub authenticator using Kerberos",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/kubespawner",
+      "org": "jupyterhub",
+      "name": "kubespawner",
+      "description": "Kubernetes spawner for JupyterHub",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/ldapauthenticator",
+      "org": "jupyterhub",
+      "name": "ldapauthenticator",
+      "description": "LDAP Authenticator Plugin for Jupyter",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/ltiauthenticator",
+      "org": "jupyterhub",
+      "name": "ltiauthenticator",
+      "description": "A JupyterHub authenticator for LTI",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/mybinder-tools",
+      "org": "jupyterhub",
+      "name": "mybinder-tools",
+      "description": "Some tools for munging and utilizing kubectl",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/mybinder.org-deploy",
+      "org": "jupyterhub",
+      "name": "mybinder.org-deploy",
+      "description": "Deployment config files for mybinder.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/mybinder.org-user-guide",
+      "org": "jupyterhub",
+      "name": "mybinder.org-user-guide",
+      "description": "Turn a Git repo into a collection of interactive notebooks. This is Binder's user documentation repository.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/nativeauthenticator",
+      "org": "jupyterhub",
+      "name": "nativeauthenticator",
+      "description": "JupyterHub-native User Authenticator",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/nbgitpuller",
+      "org": "jupyterhub",
+      "name": "nbgitpuller",
+      "description": "Jupyter server extension to sync a git repository one-way to a local path",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/nbgitpuller-downloader-dropbox",
+      "org": "jupyterhub",
+      "name": "nbgitpuller-downloader-dropbox",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/nbgitpuller-downloader-generic-web",
+      "org": "jupyterhub",
+      "name": "nbgitpuller-downloader-generic-web",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/nbgitpuller-downloader-googledrive",
+      "org": "jupyterhub",
+      "name": "nbgitpuller-downloader-googledrive",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/nbgitpuller-downloader-plugins",
+      "org": "jupyterhub",
+      "name": "nbgitpuller-downloader-plugins",
+      "description": "jupyterhub/nbgitpuller allows for content provider plugins, this python package provides downloader plugins",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/oauthenticator",
+      "org": "jupyterhub",
+      "name": "oauthenticator",
+      "description": "OAuth + JupyterHub Authenticator = OAuthenticator",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/pamela",
+      "org": "jupyterhub",
+      "name": "pamela",
+      "description": "Python PAM interface",
+      "is_fork": true
+    },
+    {
+      "full_name": "jupyterhub/pebble-helm-chart",
+      "org": "jupyterhub",
+      "name": "pebble-helm-chart",
+      "description": "To deploy a server to replace Let's Encrypt in externally unreachable CI environment for testing purposes.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/pytest-jupyterhub",
+      "org": "jupyterhub",
+      "name": "pytest-jupyterhub",
+      "description": "Reusable pytest plugin for testing JupyterHub's components",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/repo2docker",
+      "org": "jupyterhub",
+      "name": "repo2docker",
+      "description": "Turn repositories into Jupyter-enabled Docker images",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/repo2docker-action",
+      "org": "jupyterhub",
+      "name": "repo2docker-action",
+      "description": "A GitHub action to build data science environment images with repo2docker and push them to registries.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/roadmap",
+      "org": "jupyterhub",
+      "name": "roadmap",
+      "description": "Repository to track JupyterHub roadmap initiatives",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/simpervisor",
+      "org": "jupyterhub",
+      "name": "simpervisor",
+      "description": "Simple Python3 Supervisor library",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/sudospawner",
+      "org": "jupyterhub",
+      "name": "sudospawner",
+      "description": "Spawn JupyterHub single-user servers with sudo",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/systemdspawner",
+      "org": "jupyterhub",
+      "name": "systemdspawner",
+      "description": "Spawn JupyterHub single-user notebook servers with systemd",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/team-compass",
+      "org": "jupyterhub",
+      "name": "team-compass",
+      "description": "A repository for team interaction, syncing, and handling meeting notes across the JupyterHub ecosystem.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/the-littlest-jupyterhub",
+      "org": "jupyterhub",
+      "name": "the-littlest-jupyterhub",
+      "description": "Simple JupyterHub distribution for 1-100 users on a single server",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/tmpauthenticator",
+      "org": "jupyterhub",
+      "name": "tmpauthenticator",
+      "description": "JupyterHub authenticator that hands out temporary accounts for everyone.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/traefik-proxy",
+      "org": "jupyterhub",
+      "name": "traefik-proxy",
+      "description": "JupyterHub proxy implementation with traefik",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/wrapspawner",
+      "org": "jupyterhub",
+      "name": "wrapspawner",
+      "description": "Mechanism for runtime configuration of spawners for JupyterHub",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterhub/zero-to-jupyterhub-k8s",
+      "org": "jupyterhub",
+      "name": "zero-to-jupyterhub-k8s",
+      "description": "Helm Chart & Documentation for deploying JupyterHub on Kubernetes",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/.github",
+      "org": "jupyterlab",
+      "name": ".github",
+      "description": "Community health files for the @JupyterLab organization",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/assets",
+      "org": "jupyterlab",
+      "name": "assets",
+      "description": "Static assets for JupyterLab extensions",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/benchmarks",
+      "org": "jupyterlab",
+      "name": "benchmarks",
+      "description": "Benchmarking tools for JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/eslint-plugin",
+      "org": "jupyterlab",
+      "name": "eslint-plugin",
+      "description": "ESLint plugin for Jupyter core and extensions with early error catching and best practices enforcement",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/extension-cookiecutter-js",
+      "org": "jupyterlab",
+      "name": "extension-cookiecutter-js",
+      "description": "A cookiecutter recipe for building JupyterLab extensions.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/extension-cookiecutter-ts",
+      "org": "jupyterlab",
+      "name": "extension-cookiecutter-ts",
+      "description": "A cookiecutter recipe for JupyterLab extensions in Typescript",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/extension-examples",
+      "org": "jupyterlab",
+      "name": "extension-examples",
+      "description": "JupyterLab Extensions by Examples",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/extension-template",
+      "org": "jupyterlab",
+      "name": "extension-template",
+      "description": "A `copier` template for JupyterLab extensions",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/frontends-team-compass",
+      "org": "jupyterlab",
+      "name": "frontends-team-compass",
+      "description": "A repository for team interaction, syncing, and handling meeting notes across the JupyterLab ecosystem.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/hatch-jupyter-builder",
+      "org": "jupyterlab",
+      "name": "hatch-jupyter-builder",
+      "description": "A hatch plugin to help build Jupyter packages",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/hatch-nodejs-version",
+      "org": "jupyterlab",
+      "name": "hatch-nodejs-version",
+      "description": "Hatch plugin to read pyproject.toml metadata from package.json",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyter-ai",
+      "org": "jupyterlab",
+      "name": "jupyter-ai",
+      "description": "An open source extension that connects AI agents to computational notebooks in JupyterLab.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyter-ai-lite",
+      "org": "jupyterlab",
+      "name": "jupyter-ai-lite",
+      "description": "Browser-based AI code completions and chat for JupyterLab, Notebook 7 and JupyterLite ✨",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyter-builder",
+      "org": "jupyterlab",
+      "name": "jupyter-builder",
+      "description": "Build tools for JupyterLab (and remixes)",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyter-chat",
+      "org": "jupyterlab",
+      "name": "jupyter-chat",
+      "description": "An extension to add a chat panel to JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyter-collaboration",
+      "org": "jupyterlab",
+      "name": "jupyter-collaboration",
+      "description": "A Jupyter Server Extension Providing Support for Y Documents",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyter-renderers",
+      "org": "jupyterlab",
+      "name": "jupyter-renderers",
+      "description": "Renderers and renderer extensions for JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupytercon-jupyterlab-training",
+      "org": "jupyterlab",
+      "name": "jupytercon-jupyterlab-training",
+      "description": "JupyterCon 2018 JupyterLab Training",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupytercon-jupyterlab-tutorial",
+      "org": "jupyterlab",
+      "name": "jupytercon-jupyterlab-tutorial",
+      "description": "JupyterCon 2018 JupyterLab tutorial ",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab",
+      "org": "jupyterlab",
+      "name": "jupyterlab",
+      "description": "JupyterLab computational environment.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-commenting",
+      "org": "jupyterlab",
+      "name": "jupyterlab-commenting",
+      "description": "Commenting and annotation for JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-demo",
+      "org": "jupyterlab",
+      "name": "jupyterlab-demo",
+      "description": "Demonstrations of JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-desktop",
+      "org": "jupyterlab",
+      "name": "jupyterlab-desktop",
+      "description": "JupyterLab desktop application, based on Electron.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-git",
+      "org": "jupyterlab",
+      "name": "jupyterlab-git",
+      "description": "A Git extension for JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-github",
+      "org": "jupyterlab",
+      "name": "jupyterlab-github",
+      "description": "GitHub integration for JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-hdf5",
+      "org": "jupyterlab",
+      "name": "jupyterlab-hdf5",
+      "description": "Open and explore HDF5 files in JupyterLab. Can handle very large (TB) sized files, and datasets of any dimensionality",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-latex",
+      "org": "jupyterlab",
+      "name": "jupyterlab-latex",
+      "description": "JupyterLab extension for live editing of LaTeX documents",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-probot",
+      "org": "jupyterlab",
+      "name": "jupyterlab-probot",
+      "description": "A probot for JupyterLab development",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab-translate",
+      "org": "jupyterlab",
+      "name": "jupyterlab-translate",
+      "description": "JupyterLab Language pack helper",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab_apod",
+      "org": "jupyterlab",
+      "name": "jupyterlab_apod",
+      "description": "JupyterLab extension tutorial answer key. Please see the tutorial at https://jupyterlab.readthedocs.io/en/stable/extension/extension_tutorial.html",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab_pygments",
+      "org": "jupyterlab",
+      "name": "jupyterlab_pygments",
+      "description": "Pygments theme making use of JupyterLab CSS variables",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/jupyterlab_server",
+      "org": "jupyterlab",
+      "name": "jupyterlab_server",
+      "description": "A set of server components for JupyterLab and JupyterLab like applications",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/language-pack-cookiecutter",
+      "org": "jupyterlab",
+      "name": "language-pack-cookiecutter",
+      "description": "Template for Jupyterlab Language packs",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/language-packs",
+      "org": "jupyterlab",
+      "name": "language-packs",
+      "description": "Language packs for JupyterLab ecosystem",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/lumino",
+      "org": "jupyterlab",
+      "name": "lumino",
+      "description": "Lumino is a library for building interactive web applications ",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/maintainer-tools",
+      "org": "jupyterlab",
+      "name": "maintainer-tools",
+      "description": "Workflows and Actions meant to be used by other repositories to make repo maintenance easier",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/plugin-playground",
+      "org": "jupyterlab",
+      "name": "plugin-playground",
+      "description": "A dynamic extension loader for JupyterLab",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/pull-requests",
+      "org": "jupyterlab",
+      "name": "pull-requests",
+      "description": "A JupyterLab extension for reviewing GitHub pull requests",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/pytest-check-links",
+      "org": "jupyterlab",
+      "name": "pytest-check-links",
+      "description": "pytest plugin that checks URLs",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/richoutput-js",
+      "org": "jupyterlab",
+      "name": "richoutput-js",
+      "description": "Experimental investigation into a rendermime for es6 modules rendering rich output",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/scipy2018-jupyterlab-tutorial",
+      "org": "jupyterlab",
+      "name": "scipy2018-jupyterlab-tutorial",
+      "description": "Tutorial material and instruction for scipy 2018 jupyterlab tutorial",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/scipy2019-jupyterlab-tutorial",
+      "org": "jupyterlab",
+      "name": "scipy2019-jupyterlab-tutorial",
+      "description": "Scipy 2019 JupyterLab tutorial",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/triage-automation",
+      "org": "jupyterlab",
+      "name": "triage-automation",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/ui-profiler",
+      "org": "jupyterlab",
+      "name": "ui-profiler",
+      "description": "Extension for profiling performance of JupyterLab UI for JupyterLab core developers, extension developers, and advanced users.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/ux-research",
+      "org": "jupyterlab",
+      "name": "ux-research",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlab/vscode-config-template",
+      "org": "jupyterlab",
+      "name": "vscode-config-template",
+      "description": "A copier template for creating the IDE config needed to debug the Python and Typescript code in any Jupyter project",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/.github",
+      "org": "jupyterlite",
+      "name": ".github",
+      "description": "Community health files for the @jupyterlite organization ",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/cockle",
+      "org": "jupyterlite",
+      "name": "cockle",
+      "description": "In-browser bash-like shell implemented in TypeScript.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/demo",
+      "org": "jupyterlite",
+      "name": "demo",
+      "description": "JupyterLite demo deployed to GitHub Pages 🚀",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/echo-kernel",
+      "org": "jupyterlite",
+      "name": "echo-kernel",
+      "description": "An echo kernel for JupyterLite",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/javascript-kernel",
+      "org": "jupyterlite",
+      "name": "javascript-kernel",
+      "description": "A simple JavaScript kernel for JupyterLite, running in a Web Worker",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/jupyterlab-webrtc-docprovider",
+      "org": "jupyterlite",
+      "name": "jupyterlab-webrtc-docprovider",
+      "description": "Document collaboration for JupyterLab and JupyterLite, powered by y-webrtc",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/jupyterlite",
+      "org": "jupyterlite",
+      "name": "jupyterlite",
+      "description": "Wasm powered Jupyter running in the browser 💡",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/jupyterlite-lsp",
+      "org": "jupyterlite",
+      "name": "jupyterlite-lsp",
+      "description": "A jupyter_lsp shim for JupyterLite",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/jupyterlite-sphinx",
+      "org": "jupyterlite",
+      "name": "jupyterlite-sphinx",
+      "description": "A Sphinx extension that integrates JupyterLite within your Sphinx documentation",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/litegitpuller",
+      "org": "jupyterlite",
+      "name": "litegitpuller",
+      "description": "nbgitpuller in JupyterLite",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/p5-kernel",
+      "org": "jupyterlite",
+      "name": "p5-kernel",
+      "description": "A p5.js kernel running in the browser",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/pyodide-kernel",
+      "org": "jupyterlite",
+      "name": "pyodide-kernel",
+      "description": "Python kernel for JupyterLite powered by Pyodide",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/repo2jupyterlite",
+      "org": "jupyterlite",
+      "name": "repo2jupyterlite",
+      "description": "Build jupyterlite apps out of repositories",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/sphinx-demo",
+      "org": "jupyterlite",
+      "name": "sphinx-demo",
+      "description": "A Sphinx demo website using jupyterlite-sphinx deployed to GitHub Pages 🚀",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/terminal",
+      "org": "jupyterlite",
+      "name": "terminal",
+      "description": "A terminal for JupyterLite.",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/wasm_lua",
+      "org": "jupyterlite",
+      "name": "wasm_lua",
+      "description": "Lua VM running in a WASM environment",
+      "is_fork": true
+    },
+    {
+      "full_name": "jupyterlite/xeus",
+      "org": "jupyterlite",
+      "name": "xeus",
+      "description": "JupyterLite loader for Xeus kernels",
+      "is_fork": false
+    },
+    {
+      "full_name": "jupyterlite/xeus-lite-demo",
+      "org": "jupyterlite",
+      "name": "xeus-lite-demo",
+      "description": "JupyterLite template repository with xeus kernels and pre-installed packages",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/.github",
+      "org": "voila-dashboards",
+      "name": ".github",
+      "description": "Community health files for the @voila-dashboards organization ",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/hotpot_km",
+      "org": "voila-dashboards",
+      "name": "hotpot_km",
+      "description": "A library for a pooling hotloaded Jupyter kernels",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/tljh-voila-gallery",
+      "org": "voila-dashboards",
+      "name": "tljh-voila-gallery",
+      "description": "Configuration for deploying the Voilà Gallery with The Littlest JupyterHub",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voici",
+      "org": "voila-dashboards",
+      "name": "voici",
+      "description": "Voici turns any Jupyter Notebook into a static web application",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voici-demo",
+      "org": "voila-dashboards",
+      "name": "voici-demo",
+      "description": "Voici deployment template ",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voici-gallery",
+      "org": "voila-dashboards",
+      "name": "voici-gallery",
+      "description": "A gallery of Voici examples",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila",
+      "org": "voila-dashboards",
+      "name": "voila",
+      "description": "Voilà turns Jupyter notebooks into standalone web applications",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-dashboards.github.io",
+      "org": "voila-dashboards",
+      "name": "voila-dashboards.github.io",
+      "description": "Organization and project management for Voilà",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-debug",
+      "org": "voila-dashboards",
+      "name": "voila-debug",
+      "description": "Voilà template to show debug information",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-gridstack",
+      "org": "voila-dashboards",
+      "name": "voila-gridstack",
+      "description": "Dashboard template for Voilà based on GridStackJS",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-heroku",
+      "org": "voila-dashboards",
+      "name": "voila-heroku",
+      "description": "Voilà application deployed on Heroku",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-huggingface",
+      "org": "voila-dashboards",
+      "name": "voila-huggingface",
+      "description": "Voila deployed on Hugging Face Spaces 🤗",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-material",
+      "org": "voila-dashboards",
+      "name": "voila-material",
+      "description": "Material design template for Voilà",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-railway",
+      "org": "voila-dashboards",
+      "name": "voila-railway",
+      "description": "Voila deployed on Railway",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-template-cookiecutter",
+      "org": "voila-dashboards",
+      "name": "voila-template-cookiecutter",
+      "description": "Cookiecutter for creating new Voilà templates",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-topbar",
+      "org": "voila-dashboards",
+      "name": "voila-topbar",
+      "description": "A Voila top bar extension.",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-dashboards/voila-vuetify",
+      "org": "voila-dashboards",
+      "name": "voila-vuetify",
+      "description": "Dashboard template for Voilà based on VuetifyJS",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/cpp-xleaflet",
+      "org": "voila-gallery",
+      "name": "cpp-xleaflet",
+      "description": "Interactive C++ Jupyter dashboards with Voilà",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/electricitymap_dashboard",
+      "org": "voila-gallery",
+      "name": "electricitymap_dashboard",
+      "description": null,
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/gaussian-density",
+      "org": "voila-gallery",
+      "name": "gaussian-density",
+      "description": "Using Voilà with bqplot to visualize the Gaussian density",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/hello-world-example",
+      "org": "voila-gallery",
+      "name": "hello-world-example",
+      "description": "A Hello World template application to get started with Voilà",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/ipympl",
+      "org": "voila-gallery",
+      "name": "ipympl",
+      "description": "Interactive matplotlib in a Voila dashboard",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/render-stl",
+      "org": "voila-gallery",
+      "name": "render-stl",
+      "description": "Using Voilà with ipyvolume to render STL files",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/voila-gallery.github.io",
+      "org": "voila-gallery",
+      "name": "voila-gallery.github.io",
+      "description": "Public facing deployment for voila-gallery.org",
+      "is_fork": false
+    },
+    {
+      "full_name": "voila-gallery/voila-spotify",
+      "org": "voila-gallery",
+      "name": "voila-spotify",
+      "description": "Visualize your Spotify data in a Voila application",
+      "is_fork": false
+    }
+  ]
+}

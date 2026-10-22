@@ -1,0 +1,32 @@
+# Runs the formatting checks and the tests, and checks that the committed outputs are exactly what the committed code produces.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0  # v7.1.0
+        with:
+          python-version: "3.14"
+      - run: pip install . --group dev
+      - run: pre-commit run --all-files --show-diff-on-failure
+      - run: pytest
+      - name: Check that output/jupyter_repos.json and output/repos.csv are up to date
+        run: |
+          python scripts/5_build_dataset.py
+          python scripts/6_table.py
+          git diff --exit-code output/jupyter_repos.json output/repos.csv || {
+            echo "::error::Outputs are out of date: run the two commands above and commit the result."
+            exit 1
+          }

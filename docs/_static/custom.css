@@ -1,0 +1,32 @@
+.bd-sidebar-primary { --pst-sidebar-primary-width: 15rem; }  /* a narrower sidebar leaves room for the tables */
+/* Wide pages for the tables, with a margin on both sides; centered on very large screens. */
+.bd-page-width, .bd-header .bd-header__inner { max-width: 112rem; padding-inline: 2rem; }
+.bd-main .bd-content .bd-article-container { max-width: 100%; }
+/* A wide search box in the top bar, which has room since the navigation is in the sidebar. */
+.navbar-header-items__end, .navbar-header-items__end .navbar-persistent--container { flex-grow: 1; }
+.navbar-header-items__end .search-button-field { width: 100%; max-width: 40rem; }
+/* A security boundary's reason wraps onto several lines rather than widening its column. */
+.reason { display: inline-block; min-width: 14rem; max-width: 18rem; }
+
+/* Table rows tinted by the repository's kind: insights.py tags each repository cell with kind-<kind>.
+   Translucent, so the table stripes and the dark theme show through. The row under the mouse gets a
+   stronger tint, so a long row is easy to follow. */
+:root {
+  --kind-package: 66, 133, 244;
+  --kind-application: 156, 102, 255;
+  --kind-tooling: 255, 159, 28;
+  --kind-deployment: 239, 83, 80;
+  --kind-documentation: 76, 175, 80;
+  --kind-example: 0, 172, 193;
+  --kind-other: 128, 128, 128;
+  --kind-alpha: 0.10;
+}
+tr:hover > td { --kind-alpha: 0.25; }
+tr:has(.kind-package) > td, .legend.kind-package { background-color: rgba(var(--kind-package), var(--kind-alpha)); }
+tr:has(.kind-application) > td, .legend.kind-application { background-color: rgba(var(--kind-application), var(--kind-alpha)); }
+tr:has(.kind-tooling) > td, .legend.kind-tooling { background-color: rgba(var(--kind-tooling), var(--kind-alpha)); }
+tr:has(.kind-deployment) > td, .legend.kind-deployment { background-color: rgba(var(--kind-deployment), var(--kind-alpha)); }
+tr:has(.kind-documentation) > td, .legend.kind-documentation { background-color: rgba(var(--kind-documentation), var(--kind-alpha)); }
+tr:has(.kind-example) > td, .legend.kind-example { background-color: rgba(var(--kind-example), var(--kind-alpha)); }
+tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind-other), var(--kind-alpha)); }
+.legend { padding: 0.1em 0.45em; border-radius: 0.3em; }
