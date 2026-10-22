@@ -1,7 +1,5 @@
 .bd-sidebar-primary { --pst-sidebar-primary-width: 15rem; }  /* a narrower sidebar leaves room for the tables */
-/* Wide pages for the tables, with a margin on both sides; centered on very large screens. */
-.bd-page-width, .bd-header .bd-header__inner { max-width: 112rem; padding-inline: 2rem; }
-.bd-main .bd-content .bd-article-container { max-width: 100%; }
+.bd-page-width, .bd-main .bd-content .bd-article-container { max-width: 100%; }  /* full width */
 /* A wide search box in the top bar, which has room since the navigation is in the sidebar. */
 .navbar-header-items__end, .navbar-header-items__end .navbar-persistent--container { flex-grow: 1; }
 .navbar-header-items__end .search-button-field { width: 100%; max-width: 40rem; }
