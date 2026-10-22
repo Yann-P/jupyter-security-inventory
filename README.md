@@ -3,9 +3,10 @@
 Project Jupyter has over 400 public repositories across 20 GitHub organizations. This project collects, for each repository, some data like how many people install it, how many other Jupyter repositories run its code in CI, whether it runs a live service, and whether it's a security boundary.
 
 ## Eventual goals
-- expose a "todo list" of bite-sized security improvements from which contributors can pick from.
-- be a tool to prioritize where security time is spent first using metrics
-- and eventually aggregate more data (trusted publishing, zizmor, check SECURITY.mds) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.
+
+- Expose a "todo list" of bite-sized security improvements from which contributors can pick from.
+- Be a tool to prioritize where security time is spent first using metrics
+- And eventually aggregate more data (trusted publishing, zizmor, check SECURITY.mds) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.
 
 ## Structure
 
@@ -43,11 +44,11 @@ Six scripts run in order (they depend on each other):
 
 ## Running it
 
-You need Python 3.14, the GitHub CLI (logged in), and a DeepSeek API key for step 4 (or an OpenAI key,
+You need Python >= 3.14, the GitHub CLI (logged in), and a DeepSeek API key for step 4 (or an OpenAI key,
 with `--model <an OpenAI model>`).
 
 ```bash
-pip install . --group dev
+pip install . --group dev --group docs
 python scripts/1_inventory.py
 python scripts/2_scan_repos.py --clone-dir ~/clones
 python scripts/3_packages.py
@@ -55,10 +56,6 @@ python scripts/4_classify.py --clone-dir ~/clones
 python scripts/5_build_dataset.py
 python scripts/6_table.py
 ```
-
-A full run takes about 15 minutes, mostly step 3. The organizations are listed at the top of
-`scripts/1_inventory.py`. To build the site: `pip install --group docs`, then
-`sphinx-build docs docs/_build/html`.
 
 ## Daily updates
 

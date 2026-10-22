@@ -27,6 +27,7 @@ Documentation, examples and demos that publish no package and handle no logins.
 ```{toctree}
 :hidden:
 
+self
 orgs
 about
 ```
