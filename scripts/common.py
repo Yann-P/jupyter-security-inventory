@@ -3,7 +3,6 @@
 import hashlib
 import json
 import re
-import threading
 import time
 import urllib.error
 import urllib.parse
@@ -15,7 +14,6 @@ OUTPUT = ROOT / "output"  # every file the scripts write
 CACHE = ROOT / ".cache" / "http"
 CACHE_HOURS = 24  # cached answers older than this are downloaded again, so counts stay current
 RETRY_ON = {429, 500, 502, 503, 504}  # HTTP errors that are worth retrying: rate limits, server hiccups
-_spacing = threading.Lock()
 
 
 def load_json(path):
@@ -30,8 +28,7 @@ def fetch_json(url: str, delay: float = 0.0):
     """GET a JSON URL. Returns None if it does not exist (404).
 
     Answers are cached in .cache/http/ for CACHE_HOURS, so running a script twice in a day does not
-    download anything twice. `delay` is the time between two requests, even from different threads, for APIs
-    that limit how often we may call them.
+    download anything twice. `delay` waits before each request, for APIs that limit how often we may call them.
     """
     cache_file = CACHE / (hashlib.sha256(url.encode()).hexdigest() + ".json")
     if cache_file.exists() and time.time() - cache_file.stat().st_mtime < CACHE_HOURS * 3600:
@@ -44,12 +41,10 @@ def fetch_json(url: str, delay: float = 0.0):
 
 def download_json(url: str, delay: float):
     request = urllib.request.Request(url, headers={"User-Agent": "jupyter-security-inventory"})
-    attempts = 8
+    attempts = 6
     for attempt in range(attempts):
         last_attempt = attempt == attempts - 1
-        with _spacing:  # one thread sleeps at a time, so requests start `delay` apart
-            time.sleep(delay)
-        wait = min(2**attempt, 60)
+        time.sleep(delay)
         try:
             with urllib.request.urlopen(request, timeout=60) as response:
                 return json.loads(response.read() or b"null")
@@ -58,13 +53,10 @@ def download_json(url: str, delay: float):
                 return None
             if error.code not in RETRY_ON or last_attempt:
                 raise
-            retry_after = error.headers.get("Retry-After", "")
-            if retry_after.isdigit():  # how long the server asks us to wait
-                wait = min(int(retry_after), 60)
         except urllib.error.URLError:
             if last_attempt:
                 raise
-        time.sleep(wait)
+        time.sleep(2**attempt)
 
 
 def quote(text: str) -> str:
