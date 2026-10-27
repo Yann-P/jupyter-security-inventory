@@ -90,6 +90,11 @@ def n(number) -> str:
     return "unknown" if number is None else f"{number:,}"
 
 
+def grouped(count: str) -> str:
+    """A number as output/repos.csv has it, with thousands separators: '55663064' -> '55,663,064'."""
+    return f"{int(count):,}" if count else ""
+
+
 def slug(full_name: str) -> str:
     """The page of a repo: orgs/<org>/<repo>, with "dot" in front of names like ".github"."""
     org, name = full_name.split("/")
@@ -234,9 +239,9 @@ def repo_rows(data: Data, names) -> list[list]:
                 data.cell(name),
                 row["kind"],
                 package(row["package"]),
-                stats(row["package"], row["downloads/month"]),
-                row["dependents"],
-                row["used in CI"],
+                stats(row["package"], grouped(row["downloads/month"])),
+                grouped(row["dependents"]),
+                grouped(row["used in CI"]),
                 plain(row["live service"]),
                 f"[{plain(row['security boundary'])}]{{.reason}}" if row["security boundary"] else "",
             ]

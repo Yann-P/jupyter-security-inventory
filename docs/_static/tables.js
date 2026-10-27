@@ -1,3 +1,15 @@
+/* Tweaks to the DataTables tables. conf.py loads this after DataTables and before the tables are drawn. */
+
+/* The columns of counts have thousands separators and links, and empty cells for the repos that publish no
+   package. DataTables' html-num-fmt type fits the first two, but rejects a column with an empty cell, so such a
+   column would be sorted as text. Accept empty cells, like its html-num type does. */
+const numFmt = DataTable.type("html-num-fmt");
+const numFmtAllOf = numFmt.detect.allOf;
+DataTable.type("html-num-fmt", "detect", {
+  oneOf: numFmt.detect.oneOf,
+  allOf: (cell, settings) => cell === "" || numFmtAllOf(cell, settings),
+});
+
 /* Adds an "organization" dropdown next to the search box of the tables that have the filter-by-org class.
    It filters the table's "organization" column. conf.py hands it to DataTables as its initComplete option. */
 function filterByOrg(settings) {

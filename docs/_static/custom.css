@@ -29,5 +29,5 @@ tr:has(.kind-example) > td, .legend.kind-example { background-color: rgba(var(--
 tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind-other), var(--kind-alpha)); }
 .legend { padding: 0.1em 0.45em; border-radius: 0.3em; }
 
-/* The organization dropdown that filter-by-org.js adds beside the search box. */
+/* The organization dropdown that tables.js adds beside the search box. */
 .org-filter { margin-right: 0.75em; }
