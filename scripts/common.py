@@ -3,6 +3,7 @@
 import hashlib
 import json
 import re
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -14,6 +15,10 @@ OUTPUT = ROOT / "output"  # every file the scripts write
 CACHE = ROOT / ".cache" / "http"
 CACHE_HOURS = 24  # cached answers older than this are downloaded again, so counts stay current
 RETRY_ON = {429, 500, 502, 503, 504}  # HTTP errors that are worth retrying: rate limits, server hiccups
+ATTEMPTS = 8  # tries per URL; the waits between them (1, 2, 4... seconds, at most MAX_WAIT) add up to about 2 minutes
+MAX_WAIT = 60
+_turns_lock = threading.Lock()
+_next_turn: dict[str, float] = {}  # host -> when the next request to it may start (time.monotonic())
 
 
 def load_json(path):
@@ -28,7 +33,8 @@ def fetch_json(url: str, delay: float = 0.0):
     """GET a JSON URL. Returns None if it does not exist (404).
 
     Answers are cached in .cache/http/ for CACHE_HOURS, so running a script twice in a day does not
-    download anything twice. `delay` waits before each request, for APIs that limit how often we may call them.
+    download anything twice. `delay` is the least time between two requests to the same host, across all
+    threads, for APIs that limit how often we may call them.
     """
     cache_file = CACHE / (hashlib.sha256(url.encode()).hexdigest() + ".json")
     if cache_file.exists() and time.time() - cache_file.stat().st_mtime < CACHE_HOURS * 3600:
@@ -39,12 +45,28 @@ def fetch_json(url: str, delay: float = 0.0):
     return body
 
 
+def wait_turn(host: str, gap: float):
+    """Sleep until it is this thread's turn to call `host`: `gap` seconds after the previous caller's turn."""
+    with _turns_lock:
+        now = time.monotonic()
+        start = max(now, _next_turn.get(host, 0.0))
+        _next_turn[host] = start + gap
+    time.sleep(start - now)
+
+
+def hold_off(host: str, seconds: float):
+    """Make every thread wait `seconds` before it calls `host` again (we were rate limited or it is struggling)."""
+    with _turns_lock:
+        _next_turn[host] = max(_next_turn.get(host, 0.0), time.monotonic() + seconds)
+
+
 def download_json(url: str, delay: float):
+    host = urllib.parse.urlsplit(url).netloc
     request = urllib.request.Request(url, headers={"User-Agent": "jupyter-security-inventory"})
-    attempts = 6
-    for attempt in range(attempts):
-        last_attempt = attempt == attempts - 1
-        time.sleep(delay)
+    for attempt in range(ATTEMPTS):
+        last_attempt = attempt == ATTEMPTS - 1
+        wait_turn(host, delay)
+        wait = min(2**attempt, MAX_WAIT)
         try:
             with urllib.request.urlopen(request, timeout=60) as response:
                 return json.loads(response.read() or b"null")
@@ -53,10 +75,13 @@ def download_json(url: str, delay: float):
                 return None
             if error.code not in RETRY_ON or last_attempt:
                 raise
+            retry_after = error.headers.get("Retry-After", "")
+            if retry_after.isdigit():  # the server says how long to wait; it can also be a date, which we ignore
+                wait = min(int(retry_after), MAX_WAIT)
         except urllib.error.URLError:
             if last_attempt:
                 raise
-        time.sleep(2**attempt)
+        hold_off(host, wait)
 
 
 def quote(text: str) -> str:
