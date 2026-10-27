@@ -17,6 +17,7 @@ templates_path = ["_templates"]
 html_sidebars = {"**": ["site-nav"]}
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
+html_js_files = ["filter-by-org.js"]
 exclude_patterns = ["_build", "_generated"]
 
 myst_enable_extensions = ["substitution", "attrs_inline"]  # attrs_inline: [text]{.class}, for the row colors
@@ -24,4 +25,6 @@ myst_substitutions = insights.build()
 
 # The big tables are sortable and searchable with DataTables, loaded from cdn.datatables.net.
 datatables_version = "3.1.4"
-datatables_options = {"pageLength": 50, "order": []}  # keep the order the tables are generated in
+# Keep the order the tables are generated in. initComplete adds the organization dropdown to the tables that have
+# the filter-by-org class: filterByOrg is defined in _static/filter-by-org.js, so this has to stay a string.
+datatables_options = '{"pageLength": 50, "order": [], "initComplete": filterByOrg}'

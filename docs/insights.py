@@ -28,6 +28,9 @@ LEGEND = "Rows are colored by kind: " + " ".join(f"[{kind}]{{.kind-{kind} .legen
 # Listed in a second table, after the software, unless they publish a package or are a security boundary.
 OUT_OF_THE_WAY = {"documentation", "example"}
 REGISTRY_TOKEN = re.compile(r"PYPI|TWINE|NPM", re.I)  # secret names that hold a PyPI or npm token
+# How step 3 names a registry -> its name on the site, which in lower case is also the name of its page.
+REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
+PACKAGE_HEADER = ["package", "organization", "repository", "kind", "downloads/month", "dependents", "security boundary"]
 
 REPO_PAGE = """# {title}
 
@@ -101,16 +104,21 @@ def links(full_names) -> str:
     return ", ".join(link(name) for name in full_names)
 
 
+def registry_url(key: str) -> str:
+    """'PYPI:jupyterhub' -> the page of jupyterhub on PyPI."""
+    system, name = key.split(":", 1)
+    if system == "PYPI":
+        return f"https://pypi.org/project/{quote(name, safe='')}/"
+    return f"https://www.npmjs.com/package/{quote(name, safe='@/')}"
+
+
 def package(top: str | None) -> str:
     """'PYPI:jupyterhub' -> the Python logo and a link to jupyterhub on PyPI (the npm logo for npm)."""
     if not top:
         return ""
     system, name = top.split(":", 1)
-    if system == "PYPI":
-        icon, url = "fa-python", f"https://pypi.org/project/{quote(name, safe='')}/"
-    else:
-        icon, url = "fa-npm", f"https://www.npmjs.com/package/{quote(name, safe='@/')}"
-    return f"[]{{.fa-brands .{icon}}} [{plain(name)}]({url})"  # the logo is drawn by the theme's Font Awesome
+    icon = "fa-python" if system == "PYPI" else "fa-npm"  # the logo is drawn by the theme's Font Awesome
+    return f"[]{{.fa-brands .{icon}}} [{plain(name)}]({registry_url(top)})"
 
 
 def stats(top: str | None, count: str) -> str:
@@ -242,6 +250,52 @@ def docs_rows(data: Data, names) -> list[list]:
     return [
         [data.cell(name), data.label(name, "kind"), plain(data.label(name, "deploys_live_service"))] for name in names
     ]
+
+
+def published(data: Data, system: str) -> list[tuple[str, dict]]:
+    """The packages of one registry as (repo, package), most downloaded first, then most depended on."""
+    found = [(name, p) for name, repo in data.repos.items() for p in repo["packages"] if p["system"] == system]
+    return sorted(
+        found,
+        key=lambda item: (-(item[1]["downloads_last_month"] or 0), -(item[1]["dependents"] or 0), item[1]["name"]),
+    )
+
+
+def package_row(data: Data, name: str, p: dict) -> list:
+    """A row of PACKAGE_HEADER: the package, who publishes it, and the labels of the repo it comes from."""
+    key, org = f"{p['system']}:{p['name']}", data.repos[name]["org"]
+    boundary = data.label(name, "security_boundary")
+    return [
+        f"[{plain(p['name'])}]({registry_url(key)})",
+        f"[{plain(org)}](/orgs/{org}.md)",
+        data.cell(name),
+        data.label(name, "kind"),
+        stats(key, n(p["downloads_last_month"])),
+        n(p["dependents"]),
+        f"[{plain(boundary)}]{{.reason}}" if boundary else "",
+    ]
+
+
+def package_pages(data: Data) -> list[list]:
+    """Writes a table of the published packages per registry. Returns the rows of the summary table."""
+    summary = []
+    for system, title in REGISTRIES.items():
+        found = published(data, system)
+        write_csv(
+            GENERATED / f"packages-{title.lower()}.csv", PACKAGE_HEADER, [package_row(data, *item) for item in found]
+        )
+        top = f"{system}:{found[0][1]['name']}" if found else None
+        summary.append(
+            [
+                f"[{title}](/packages/{title.lower()}.md)",
+                len(found),
+                len({name for name, _ in found}),
+                len({data.repos[name]["org"] for name, _ in found}),
+                package(top),
+                stats(top, n(found[0][1]["downloads_last_month"])) if top else "",
+            ]
+        )
+    return summary
 
 
 def tables(file: str, software: list, docs: list, sortable: bool) -> str:
@@ -400,6 +454,13 @@ def build() -> dict:
             "downloads/month",
         ],
         org_pages(data),
+    )
+
+    # Published packages: a table per registry
+    write_csv(
+        GENERATED / "packages.csv",
+        ["registry", "packages", "repositories", "organizations", "most downloaded", "downloads/month"],
+        package_pages(data),
     )
 
     # All repositories: the home page
