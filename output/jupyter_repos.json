@@ -1,5 +1,5 @@
 {
-  "fetched_on": "2026-10-26",
+  "fetched_on": "2026-10-27",
   "repos": [
     {
       "full_name": "binder-examples/.github",
@@ -2125,7 +2125,7 @@
       "max_downloads_last_month": 54614879,
       "top_package_dependents": 7043,
       "content": {
-        "commit": "382620cf0ccf911c030243a8089bfe25f1a74c16",
+        "commit": "1437742d7547db3bcd2261264be34b311f16d2f2",
         "n_files": 114,
         "file_types": {
           "other": 6,
@@ -2287,12 +2287,12 @@
           "name": "ipython",
           "reason": "registry links to this repo",
           "downloads_last_month": 97202828,
-          "dependents": 15400
+          "dependents": 15399
         }
       ],
       "top_package": "PYPI:ipython",
       "max_downloads_last_month": 97202828,
-      "top_package_dependents": 15400,
+      "top_package_dependents": 15399,
       "content": {
         "commit": "4e529543e57b6dd88cd838254ac8aeec1e61af9e",
         "n_files": 512,
@@ -2541,12 +2541,12 @@
           "name": "matplotlib-inline",
           "reason": "registry links to this repo",
           "downloads_last_month": 91853623,
-          "dependents": 16722
+          "dependents": 16723
         }
       ],
       "top_package": "PYPI:matplotlib-inline",
       "max_downloads_last_month": 91853623,
-      "top_package_dependents": 16722,
+      "top_package_dependents": 16723,
       "content": {
         "commit": "084e20132c3589ba91e83eae2024b59caafeb75e",
         "n_files": 15,
@@ -2595,12 +2595,12 @@
           "name": "pickleshare",
           "reason": "declared here; registry links to a same-named repo (this repo's former home)",
           "downloads_last_month": 8533671,
-          "dependents": 1129
+          "dependents": 1131
         }
       ],
       "top_package": "PYPI:pickleshare",
       "max_downloads_last_month": 8533671,
-      "top_package_dependents": 1129,
+      "top_package_dependents": 1131,
       "content": {
         "commit": "9f0a267b02063bc01bd8a44c54909dab62a590a8",
         "n_files": 10,
@@ -3469,7 +3469,7 @@
           "system": "NPM",
           "name": "jupyter-book",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3025,
+          "downloads_last_month": 2458,
           "dependents": 0
         }
       ],
@@ -3642,7 +3642,7 @@
           "system": "NPM",
           "name": "jupyterlab-myst",
           "reason": "registry links to this repo",
-          "downloads_last_month": 334,
+          "downloads_last_month": 458,
           "dependents": 1
         }
       ],
@@ -3888,106 +3888,106 @@
           "system": "NPM",
           "name": "@myst-theme/providers",
           "reason": "registry links to this repo",
-          "downloads_last_month": 8836,
+          "downloads_last_month": 11055,
           "dependents": 22
         },
         {
           "system": "NPM",
           "name": "@myst-theme/common",
           "reason": "registry links to this repo",
-          "downloads_last_month": 8540,
+          "downloads_last_month": 10902,
           "dependents": 25
-        },
-        {
-          "system": "NPM",
-          "name": "myst-to-react",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 8484,
-          "dependents": 18
         },
         {
           "system": "NPM",
           "name": "@myst-theme/search",
           "reason": "registry links to this repo",
-          "downloads_last_month": 5016,
+          "downloads_last_month": 8454,
           "dependents": 26
         },
         {
           "system": "NPM",
-          "name": "@myst-theme/search-minisearch",
+          "name": "myst-to-react",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3716,
-          "dependents": 5
-        },
-        {
-          "system": "NPM",
-          "name": "@myst-theme/anywidget",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 3583,
-          "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@myst-theme/styles",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 3387,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@myst-theme/landing-pages",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 2843,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@myst-theme/frontmatter",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 1133,
-          "dependents": 3
+          "downloads_last_month": 5289,
+          "dependents": 18
         },
         {
           "system": "NPM",
           "name": "@myst-theme/diagrams",
           "reason": "registry links to this repo",
-          "downloads_last_month": 978,
+          "downloads_last_month": 5066,
           "dependents": 3
         },
         {
           "system": "NPM",
-          "name": "myst-demo",
+          "name": "@myst-theme/styles",
           "reason": "registry links to this repo",
-          "downloads_last_month": 522,
+          "downloads_last_month": 2144,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@myst-theme/search-minisearch",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 1524,
+          "dependents": 5
+        },
+        {
+          "system": "NPM",
+          "name": "@myst-theme/landing-pages",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 1397,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@myst-theme/anywidget",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 1250,
+          "dependents": 1
+        },
+        {
+          "system": "NPM",
+          "name": "@myst-theme/frontmatter",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 1090,
           "dependents": 3
         },
         {
           "system": "NPM",
           "name": "@myst-theme/jupyter",
           "reason": "registry links to this repo",
-          "downloads_last_month": 407,
+          "downloads_last_month": 767,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "@myst-theme/site",
           "reason": "registry links to this repo",
-          "downloads_last_month": 364,
+          "downloads_last_month": 720,
           "dependents": 2
+        },
+        {
+          "system": "NPM",
+          "name": "myst-demo",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 667,
+          "dependents": 3
         },
         {
           "system": "NPM",
           "name": "@myst-theme/icons",
           "reason": "registry links to this repo",
-          "downloads_last_month": 314,
+          "downloads_last_month": 603,
           "dependents": 0
         }
       ],
       "top_package": "NPM:@myst-theme/providers",
-      "max_downloads_last_month": 8836,
+      "max_downloads_last_month": 11055,
       "top_package_dependents": 22,
       "content": {
-        "commit": "80688e270582b4da02ff46aac9e56b539e95133a",
+        "commit": "f75ec23d244911f05fd055fdcca80c164c3242b5",
         "n_files": 450,
         "file_types": {
           "docs": 74,
@@ -4042,98 +4042,91 @@
           "system": "NPM",
           "name": "myst-spec",
           "reason": "registry links to this repo",
-          "downloads_last_month": 60315,
+          "downloads_last_month": 36729,
           "dependents": 103
         },
         {
           "system": "NPM",
           "name": "myst-frontmatter",
           "reason": "registry links to this repo",
-          "downloads_last_month": 43014,
+          "downloads_last_month": 35153,
           "dependents": 104
         },
         {
           "system": "NPM",
           "name": "myst-common",
           "reason": "registry links to this repo",
-          "downloads_last_month": 42684,
+          "downloads_last_month": 34734,
           "dependents": 101
         },
         {
           "system": "NPM",
           "name": "simple-validators",
           "reason": "registry links to this repo",
-          "downloads_last_month": 40117,
+          "downloads_last_month": 33464,
           "dependents": 108
-        },
-        {
-          "system": "NPM",
-          "name": "myst-spec-ext",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 36773,
-          "dependents": 79
         },
         {
           "system": "NPM",
           "name": "myst-toc",
           "reason": "registry links to this repo",
-          "downloads_last_month": 36692,
+          "downloads_last_month": 33104,
           "dependents": 105
-        },
-        {
-          "system": "NPM",
-          "name": "markdown-it-myst",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 36277,
-          "dependents": 32
-        },
-        {
-          "system": "NPM",
-          "name": "myst-parser",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 36062,
-          "dependents": 31
-        },
-        {
-          "system": "NPM",
-          "name": "myst-roles",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 35914,
-          "dependents": 33
-        },
-        {
-          "system": "NPM",
-          "name": "myst-directives",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 33649,
-          "dependents": 39
-        },
-        {
-          "system": "NPM",
-          "name": "myst-to-html",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 31677,
-          "dependents": 42
         },
         {
           "system": "NPM",
           "name": "myst-cli-utils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 21543,
+          "downloads_last_month": 29149,
           "dependents": 62
         },
         {
           "system": "NPM",
-          "name": "mystmd",
+          "name": "myst-spec-ext",
           "reason": "registry links to this repo",
-          "downloads_last_month": 18014,
-          "dependents": 0
+          "downloads_last_month": 27308,
+          "dependents": 79
+        },
+        {
+          "system": "NPM",
+          "name": "markdown-it-myst",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 22977,
+          "dependents": 32
+        },
+        {
+          "system": "NPM",
+          "name": "myst-to-html",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 22118,
+          "dependents": 42
+        },
+        {
+          "system": "NPM",
+          "name": "myst-parser",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 21193,
+          "dependents": 31
+        },
+        {
+          "system": "NPM",
+          "name": "myst-directives",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 21178,
+          "dependents": 39
+        },
+        {
+          "system": "NPM",
+          "name": "myst-roles",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 21144,
+          "dependents": 33
         },
         {
           "system": "NPM",
           "name": "myst-transforms",
           "reason": "registry links to this repo",
-          "downloads_last_month": 13058,
+          "downloads_last_month": 12685,
           "dependents": 38
         },
         {
@@ -4145,167 +4138,174 @@
         },
         {
           "system": "NPM",
+          "name": "mystmd",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 9714,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
           "name": "myst-config",
           "reason": "registry links to this repo",
-          "downloads_last_month": 6446,
+          "downloads_last_month": 9064,
           "dependents": 46
-        },
-        {
-          "system": "NPM",
-          "name": "myst-ext-tabs",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 5425,
-          "dependents": 26
-        },
-        {
-          "system": "NPM",
-          "name": "myst-execute",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 5132,
-          "dependents": 9
-        },
-        {
-          "system": "NPM",
-          "name": "myst-ext-proof",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 4564,
-          "dependents": 18
-        },
-        {
-          "system": "NPM",
-          "name": "myst-ext-grid",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 4350,
-          "dependents": 26
-        },
-        {
-          "system": "NPM",
-          "name": "myst-ext-card",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 4259,
-          "dependents": 27
         },
         {
           "system": "NPM",
           "name": "myst-templates",
           "reason": "registry links to this repo",
-          "downloads_last_month": 4149,
+          "downloads_last_month": 6396,
           "dependents": 32
         },
         {
           "system": "NPM",
           "name": "myst-migrate",
           "reason": "registry links to this repo",
-          "downloads_last_month": 4145,
+          "downloads_last_month": 4299,
           "dependents": 28
-        },
-        {
-          "system": "NPM",
-          "name": "myst-ext-button",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 3871,
-          "dependents": 24
         },
         {
           "system": "NPM",
           "name": "myst-cli",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3692,
+          "downloads_last_month": 3644,
           "dependents": 8
         },
         {
           "system": "NPM",
-          "name": "myst-ext-exercise",
+          "name": "myst-execute",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3633,
-          "dependents": 16
-        },
-        {
-          "system": "NPM",
-          "name": "citation-js-utils",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 3520,
-          "dependents": 17
-        },
-        {
-          "system": "NPM",
-          "name": "myst-to-jats",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 3517,
-          "dependents": 16
+          "downloads_last_month": 3094,
+          "dependents": 9
         },
         {
           "system": "NPM",
           "name": "myst-to-tex",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3512,
-          "dependents": 15
-        },
-        {
-          "system": "NPM",
-          "name": "myst-to-docx",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 3499,
+          "downloads_last_month": 2842,
           "dependents": 15
         },
         {
           "system": "NPM",
           "name": "myst-to-typst",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3441,
+          "downloads_last_month": 2812,
           "dependents": 13
         },
         {
           "system": "NPM",
-          "name": "myst-ext-icon",
+          "name": "myst-ext-tabs",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3009,
-          "dependents": 9
+          "downloads_last_month": 2713,
+          "dependents": 26
+        },
+        {
+          "system": "NPM",
+          "name": "myst-ext-grid",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2694,
+          "dependents": 26
+        },
+        {
+          "system": "NPM",
+          "name": "myst-ext-card",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2659,
+          "dependents": 27
+        },
+        {
+          "system": "NPM",
+          "name": "myst-ext-proof",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2656,
+          "dependents": 18
+        },
+        {
+          "system": "NPM",
+          "name": "myst-ext-exercise",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2597,
+          "dependents": 16
+        },
+        {
+          "system": "NPM",
+          "name": "myst-to-jats",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2588,
+          "dependents": 16
+        },
+        {
+          "system": "NPM",
+          "name": "myst-to-docx",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2519,
+          "dependents": 15
+        },
+        {
+          "system": "NPM",
+          "name": "citation-js-utils",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2490,
+          "dependents": 17
+        },
+        {
+          "system": "NPM",
+          "name": "myst-ext-button",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2463,
+          "dependents": 24
         },
         {
           "system": "NPM",
           "name": "tex-to-myst",
           "reason": "registry links to this repo",
-          "downloads_last_month": 2862,
+          "downloads_last_month": 2273,
+          "dependents": 9
+        },
+        {
+          "system": "NPM",
+          "name": "jtex",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2258,
           "dependents": 9
         },
         {
           "system": "NPM",
           "name": "myst-to-md",
           "reason": "registry links to this repo",
-          "downloads_last_month": 2770,
+          "downloads_last_month": 2243,
           "dependents": 14
+        },
+        {
+          "system": "NPM",
+          "name": "myst-ext-icon",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2037,
+          "dependents": 9
         },
         {
           "system": "NPM",
           "name": "myst-ext-reactive",
           "reason": "registry links to this repo",
-          "downloads_last_month": 2750,
+          "downloads_last_month": 1979,
           "dependents": 11
-        },
-        {
-          "system": "NPM",
-          "name": "jtex",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 2245,
-          "dependents": 9
         },
         {
           "system": "NPM",
           "name": "jats-to-myst",
           "reason": "registry links to this repo",
-          "downloads_last_month": 68,
+          "downloads_last_month": 238,
           "dependents": 0
         }
       ],
       "top_package": "NPM:myst-spec",
-      "max_downloads_last_month": 60315,
+      "max_downloads_last_month": 36729,
       "top_package_dependents": 103,
       "content": {
-        "commit": "033fa068af225e974d183143ead7f5dd180663da",
-        "n_files": 1768,
+        "commit": "2210e7003a0b70d0f9884b5da81e98841f7b79e2",
+        "n_files": 1759,
         "file_types": {
-          "docs": 482,
+          "docs": 473,
           "config": 413,
           "other": 78,
           "code": 689,
@@ -4313,7 +4313,7 @@
           "media": 95,
           "notebook": 3
         },
-        "prose_ratio": 0.46,
+        "prose_ratio": 0.457,
         "workflows": {
           "count": 7,
           "triggers": [
@@ -4484,7 +4484,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "7508ddec8e913a64c4abb291c82232330a5a0b61",
+        "commit": "4fc155c35c4a08022f9d95f615eddd0db24f3dbb",
         "n_files": 22,
         "file_types": {
           "other": 2,
@@ -4560,36 +4560,36 @@
       "packages": [
         {
           "system": "NPM",
-          "name": "thebe-lite",
-          "reason": "declared here; registry links to a same-named repo (this repo's former home)",
-          "downloads_last_month": 5888,
-          "dependents": 7
-        },
-        {
-          "system": "NPM",
           "name": "thebe-core",
           "reason": "declared here; registry links to a same-named repo (this repo's former home)",
-          "downloads_last_month": 5781,
+          "downloads_last_month": 3593,
           "dependents": 11
         },
         {
           "system": "NPM",
           "name": "thebe-react",
           "reason": "declared here; registry links to a same-named repo (this repo's former home)",
-          "downloads_last_month": 5171,
+          "downloads_last_month": 3187,
           "dependents": 8
+        },
+        {
+          "system": "NPM",
+          "name": "thebe-lite",
+          "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+          "downloads_last_month": 3175,
+          "dependents": 7
         },
         {
           "system": "NPM",
           "name": "thebe",
           "reason": "declared here; registry links to a same-named repo (this repo's former home)",
-          "downloads_last_month": 1003,
+          "downloads_last_month": 1416,
           "dependents": 0
         }
       ],
-      "top_package": "NPM:thebe-lite",
-      "max_downloads_last_month": 5888,
-      "top_package_dependents": 7,
+      "top_package": "NPM:thebe-core",
+      "max_downloads_last_month": 3593,
+      "top_package_dependents": 11,
       "content": {
         "commit": "0e0c6879dc957b7749825b4da9295e8d88b52f4d",
         "n_files": 296,
@@ -5306,7 +5306,7 @@
           "system": "NPM",
           "name": "@jupyter-server/resource-usage",
           "reason": "registry links to this repo",
-          "downloads_last_month": 2102,
+          "downloads_last_month": 2273,
           "dependents": 0
         }
       ],
@@ -5374,7 +5374,7 @@
           "system": "NPM",
           "name": "@jupyterlab/scheduler",
           "reason": "registry links to this repo",
-          "downloads_last_month": 176,
+          "downloads_last_month": 365,
           "dependents": 0
         }
       ],
@@ -5576,12 +5576,12 @@
           "name": "jupyter-server",
           "reason": "registry links to this repo",
           "downloads_last_month": 32556872,
-          "dependents": 5046
+          "dependents": 5045
         }
       ],
       "top_package": "PYPI:jupyter-server",
       "max_downloads_last_month": 32556872,
-      "top_package_dependents": 5046,
+      "top_package_dependents": 5045,
       "content": {
         "commit": "f8169d721a0e0abb9ca27266c83db5a3a09e29d7",
         "n_files": 342,
@@ -5750,12 +5750,12 @@
           "name": "jupyter-server-terminals",
           "reason": "registry links to this repo",
           "downloads_last_month": 28569855,
-          "dependents": 5074
+          "dependents": 5073
         }
       ],
       "top_package": "PYPI:jupyter-server-terminals",
       "max_downloads_last_month": 28569855,
-      "top_package_dependents": 5074,
+      "top_package_dependents": 5073,
       "content": {
         "commit": "46563c0797a2d21526d0cc95c70dafc4e0e0440a",
         "n_files": 39,
@@ -5809,21 +5809,21 @@
           "name": "jupyter-ydoc",
           "reason": "registry links to this repo",
           "downloads_last_month": 864279,
-          "dependents": 122
+          "dependents": 121
         },
         {
           "system": "NPM",
           "name": "@jupyter/ydoc",
           "reason": "registry links to this repo",
-          "downloads_last_month": 449161,
+          "downloads_last_month": 616652,
           "dependents": 1003
         }
       ],
       "top_package": "PYPI:jupyter-ydoc",
       "max_downloads_last_month": 864279,
-      "top_package_dependents": 122,
+      "top_package_dependents": 121,
       "content": {
-        "commit": "345667a6d1545388ac7646cda1e88117caf3d3f6",
+        "commit": "e3fa4365b42eea792fbddcb9d41e9280c0a259c7",
         "n_files": 76,
         "file_types": {
           "config": 22,
@@ -6192,7 +6192,7 @@
       "max_downloads_last_month": 1705,
       "top_package_dependents": 43,
       "content": {
-        "commit": "6f9723475073a7cbfbda5b4694a3dfefcad03824",
+        "commit": "d9bb22a97da09ca3fb521995f34ea5011273faf4",
         "n_files": 396,
         "file_types": {
           "config": 53,
@@ -6504,7 +6504,7 @@
           "system": "NPM",
           "name": "ipydatagrid",
           "reason": "registry links to this repo",
-          "downloads_last_month": 382,
+          "downloads_last_month": 509,
           "dependents": 0
         }
       ],
@@ -6580,7 +6580,7 @@
           "system": "NPM",
           "name": "jupyter-leaflet",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1454,
+          "downloads_last_month": 2633,
           "dependents": 1
         }
       ],
@@ -6637,75 +6637,75 @@
           "name": "widgetsnbextension",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 31834051,
-          "dependents": 6754
+          "dependents": 6753
         },
         {
           "system": "PYPI",
           "name": "jupyterlab-widgets",
           "reason": "registry links to this repo",
           "downloads_last_month": 31433178,
-          "dependents": 6778
+          "dependents": 6777
         },
         {
           "system": "PYPI",
           "name": "ipywidgets",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 31105039,
-          "dependents": 6621
+          "dependents": 6620
         },
         {
           "system": "NPM",
           "name": "@jupyter-widgets/base",
           "reason": "registry links to this repo",
-          "downloads_last_month": 184716,
+          "downloads_last_month": 263199,
           "dependents": 227
         },
         {
           "system": "NPM",
           "name": "@jupyter-widgets/controls",
           "reason": "registry links to this repo",
-          "downloads_last_month": 136039,
+          "downloads_last_month": 174617,
           "dependents": 73
         },
         {
           "system": "NPM",
           "name": "@jupyter-widgets/output",
           "reason": "registry links to this repo",
-          "downloads_last_month": 90328,
+          "downloads_last_month": 128680,
           "dependents": 56
         },
         {
           "system": "NPM",
           "name": "@jupyter-widgets/base-manager",
           "reason": "registry links to this repo",
-          "downloads_last_month": 80634,
+          "downloads_last_month": 108297,
           "dependents": 60
         },
         {
           "system": "NPM",
           "name": "@jupyter-widgets/jupyterlab-manager",
           "reason": "registry links to this repo",
-          "downloads_last_month": 61372,
+          "downloads_last_month": 97265,
           "dependents": 49
         },
         {
           "system": "NPM",
           "name": "@jupyter-widgets/schema",
           "reason": "registry links to this repo",
-          "downloads_last_month": 53882,
+          "downloads_last_month": 53231,
           "dependents": 38
         },
         {
           "system": "NPM",
           "name": "@jupyter-widgets/html-manager",
           "reason": "registry links to this repo",
-          "downloads_last_month": 52476,
+          "downloads_last_month": 49511,
           "dependents": 32
         }
       ],
       "top_package": "PYPI:widgetsnbextension",
       "max_downloads_last_month": 31834051,
-      "top_package_dependents": 6754,
+      "top_package_dependents": 6753,
       "content": {
         "commit": "8ada3542abe85fdc52e2bfeeecc07f8db351cb9c",
         "n_files": 494,
@@ -6764,7 +6764,7 @@
           "system": "NPM",
           "name": "@jupyter-widgets/jupyterlab-sidecar",
           "reason": "registry links to this repo",
-          "downloads_last_month": 183,
+          "downloads_last_month": 153,
           "dependents": 0
         }
       ],
@@ -6820,22 +6820,22 @@
       "is_fork": false,
       "packages": [
         {
+          "system": "NPM",
+          "name": "@jupyter-widgets/midicontrols",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 53,
+          "dependents": 0
+        },
+        {
           "system": "PYPI",
           "name": "ipymidicontrols",
           "reason": "registry links to this repo",
           "downloads_last_month": 37,
           "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-widgets/midicontrols",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 18,
-          "dependents": 0
         }
       ],
-      "top_package": "PYPI:ipymidicontrols",
-      "max_downloads_last_month": 37,
+      "top_package": "NPM:@jupyter-widgets/midicontrols",
+      "max_downloads_last_month": 53,
       "top_package_dependents": 0,
       "content": {
         "commit": "54e1cc31842984c7e4b2e9b52960abb7546d25f8",
@@ -6887,7 +6887,7 @@
           "system": "NPM",
           "name": "jupyter-threejs",
           "reason": "registry links to this repo",
-          "downloads_last_month": 390,
+          "downloads_last_month": 439,
           "dependents": 4
         }
       ],
@@ -9649,12 +9649,12 @@
           "name": "jupyter",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 12288648,
-          "dependents": 1894
+          "dependents": 1896
         }
       ],
       "top_package": "PYPI:jupyter",
       "max_downloads_last_month": 12288648,
-      "top_package_dependents": 1894,
+      "top_package_dependents": 1896,
       "content": {
         "commit": "6b5eb0f469c7bc3ea43d6d2a0ba1057853c9a3a5",
         "n_files": 239,
@@ -9976,12 +9976,12 @@
           "name": "jupyter-console",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 12492174,
-          "dependents": 2022
+          "dependents": 2024
         }
       ],
       "top_package": "PYPI:jupyter-console",
       "max_downloads_last_month": 12492174,
-      "top_package_dependents": 2022,
+      "top_package_dependents": 2024,
       "content": {
         "commit": "29f882adec78a60a0891c69087436503493905ce",
         "n_files": 32,
@@ -10029,12 +10029,12 @@
           "name": "jupyter-core",
           "reason": "registry links to this repo",
           "downloads_last_month": 77056466,
-          "dependents": 11219
+          "dependents": 11226
         }
       ],
       "top_package": "PYPI:jupyter-core",
       "max_downloads_last_month": 77056466,
-      "top_package_dependents": 11219,
+      "top_package_dependents": 11226,
       "content": {
         "commit": "4c4f526adab04ae6bf7821f65a5adbd011aa27ac",
         "n_files": 63,
@@ -10091,12 +10091,12 @@
           "name": "jupyter-events",
           "reason": "registry links to this repo",
           "downloads_last_month": 28962752,
-          "dependents": 5217
+          "dependents": 5216
         }
       ],
       "top_package": "PYPI:jupyter-events",
       "max_downloads_last_month": 28962752,
-      "top_package_dependents": 5217,
+      "top_package_dependents": 5216,
       "content": {
         "commit": "deb61b4924d808234d295fe316360f6478584acb",
         "n_files": 62,
@@ -10684,14 +10684,14 @@
           "system": "NPM",
           "name": "nbdime",
           "reason": "registry links to this repo",
-          "downloads_last_month": 43172,
+          "downloads_last_month": 14046,
           "dependents": 18
         },
         {
           "system": "NPM",
           "name": "nbdime-jupyterlab",
           "reason": "registry links to this repo",
-          "downloads_last_month": 5221,
+          "downloads_last_month": 7653,
           "dependents": 4
         }
       ],
@@ -10763,7 +10763,7 @@
           "system": "NPM",
           "name": "nbformat-schema",
           "reason": "registry links to this repo",
-          "downloads_last_month": 60,
+          "downloads_last_month": 133,
           "dependents": 0
         }
       ],
@@ -10827,16 +10827,16 @@
         },
         {
           "system": "NPM",
-          "name": "@jupyter/nbgrader",
+          "name": "nbgrader",
           "reason": "registry links to this repo",
-          "downloads_last_month": 273,
+          "downloads_last_month": 73,
           "dependents": 0
         },
         {
           "system": "NPM",
-          "name": "nbgrader",
+          "name": "@jupyter/nbgrader",
           "reason": "registry links to this repo",
-          "downloads_last_month": 47,
+          "downloads_last_month": 68,
           "dependents": 0
         }
       ],
@@ -11050,96 +11050,96 @@
           "name": "notebook",
           "reason": "registry links to this repo",
           "downloads_last_month": 28757551,
-          "dependents": 3043
+          "dependents": 3045
         },
         {
           "system": "NPM",
           "name": "@jupyter-notebook/application",
           "reason": "registry links to this repo",
-          "downloads_last_month": 4744,
+          "downloads_last_month": 7892,
           "dependents": 25
         },
         {
           "system": "NPM",
           "name": "@jupyter-notebook/help-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3414,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-notebook/tree",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 3286,
-          "dependents": 6
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-notebook/ui-components",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 2348,
-          "dependents": 2
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-notebook/notebook-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 2174,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-notebook/application-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 2154,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-notebook/tree-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 2004,
+          "downloads_last_month": 4562,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "@jupyter-notebook/console-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1824,
+          "downloads_last_month": 4472,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "@jupyter-notebook/docmanager-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1815,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-notebook/terminal-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 932,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyter-notebook/documentsearch-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 823,
+          "downloads_last_month": 3716,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "@jupyter-notebook/lab-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 783,
+          "downloads_last_month": 3669,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyter-notebook/notebook-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 3617,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyter-notebook/tree",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 3525,
+          "dependents": 6
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyter-notebook/terminal-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 3399,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyter-notebook/application-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2839,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyter-notebook/documentsearch-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2618,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyter-notebook/ui-components",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2453,
+          "dependents": 2
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyter-notebook/tree-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2449,
           "dependents": 0
         }
       ],
       "top_package": "PYPI:notebook",
       "max_downloads_last_month": 28757551,
-      "top_package_dependents": 3043,
+      "top_package_dependents": 3045,
       "content": {
         "commit": "6cde9b9ddec821312b1ca16492233becfe145fca",
         "n_files": 376,
@@ -11763,12 +11763,12 @@
           "name": "terminado",
           "reason": "registry links to this repo",
           "downloads_last_month": 29806864,
-          "dependents": 5256
+          "dependents": 5255
         }
       ],
       "top_package": "PYPI:terminado",
       "max_downloads_last_month": 29806864,
-      "top_package_dependents": 5256,
+      "top_package_dependents": 5255,
       "content": {
         "commit": "23a0bf771107fb01ddffdf342b1d5348ad6c702d",
         "n_files": 41,
@@ -12762,7 +12762,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "0fd6cf2acc1498d148bcda1f274a0aa5cb0c9085",
+        "commit": "d29de1826a1788a611e3fd5bbaf01dc690fe2f3d",
         "n_files": 114,
         "file_types": {
           "config": 3,
@@ -13212,7 +13212,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "25a8b2d9778c28e46cdcaae6d156e32fcb08b918",
+        "commit": "2238d949729466053d100298041173268b9985fd",
         "n_files": 63,
         "file_types": {
           "config": 4,
@@ -14803,7 +14803,7 @@
           "system": "NPM",
           "name": "@jupyterhub/binderhub-client",
           "reason": "registry links to this repo",
-          "downloads_last_month": 427,
+          "downloads_last_month": 177,
           "dependents": 1
         },
         {
@@ -14817,12 +14817,12 @@
           "system": "NPM",
           "name": "@jupyterhub/binderhub-react-components",
           "reason": "registry links to this repo",
-          "downloads_last_month": 17,
+          "downloads_last_month": 36,
           "dependents": 0
         }
       ],
       "top_package": "NPM:@jupyterhub/binderhub-client",
-      "max_downloads_last_month": 427,
+      "max_downloads_last_month": 177,
       "top_package_dependents": 1,
       "content": {
         "commit": "1013493a4eaf91d9ad15de0d125cd0e36505d093",
@@ -14938,12 +14938,12 @@
           "system": "NPM",
           "name": "configurable-http-proxy",
           "reason": "registry links to this repo",
-          "downloads_last_month": 49426,
+          "downloads_last_month": 38690,
           "dependents": 1
         }
       ],
       "top_package": "NPM:configurable-http-proxy",
-      "max_downloads_last_month": 49426,
+      "max_downloads_last_month": 38690,
       "top_package_dependents": 1,
       "content": {
         "commit": "2f1042162a334d4aa4e8124804c7a2b43fdc2b10",
@@ -15529,7 +15529,7 @@
           "system": "NPM",
           "name": "@jupyterhub/jupyter-server-proxy",
           "reason": "registry links to this repo",
-          "downloads_last_month": 136,
+          "downloads_last_month": 100,
           "dependents": 0
         },
         {
@@ -15601,7 +15601,7 @@
           "system": "NPM",
           "name": "jupyterhub-deps",
           "reason": "declared here; registry links to a same-named repo (this repo's former home)",
-          "downloads_last_month": 4,
+          "downloads_last_month": 23,
           "dependents": 0
         }
       ],
@@ -17304,7 +17304,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "87a660333174319bab0ff1f7f6a3b003f3710a6b",
+        "commit": "06b322e38d554d87f0ce2e85a0e461d44e74fdcf",
         "n_files": 154,
         "file_types": {
           "docs": 136,
@@ -17756,12 +17756,12 @@
           "system": "NPM",
           "name": "@jupyter/eslint-plugin",
           "reason": "registry links to this repo",
-          "downloads_last_month": 52261,
+          "downloads_last_month": 102188,
           "dependents": 0
         }
       ],
       "top_package": "NPM:@jupyter/eslint-plugin",
-      "max_downloads_last_month": 52261,
+      "max_downloads_last_month": 102188,
       "top_package_dependents": 0,
       "content": {
         "commit": "92c61195a63a1e3d1da93101f738d2e0f4cfebf2",
@@ -18208,14 +18208,14 @@
           "name": "jupyter-ai",
           "reason": "registry links to this repo",
           "downloads_last_month": 119717,
-          "dependents": 9
+          "dependents": 8
         }
       ],
       "top_package": "PYPI:jupyter-ai",
       "max_downloads_last_month": 119717,
-      "top_package_dependents": 9,
+      "top_package_dependents": 8,
       "content": {
-        "commit": "3d40eed373abd566c02411440e5163cda85c3318",
+        "commit": "7299b29e270927e1ef77d4f1935e45b91c5a922a",
         "n_files": 186,
         "file_types": {
           "docs": 33,
@@ -18268,14 +18268,14 @@
           "system": "NPM",
           "name": "@jupyter-ai/agent-lite",
           "reason": "registry links to this repo",
-          "downloads_last_month": 14,
+          "downloads_last_month": 0,
           "dependents": 3
         },
         {
           "system": "NPM",
           "name": "@jupyter-ai/jupyternaut-lite",
           "reason": "registry links to this repo",
-          "downloads_last_month": 11,
+          "downloads_last_month": 0,
           "dependents": 0
         },
         {
@@ -18301,10 +18301,10 @@
         }
       ],
       "top_package": "NPM:@jupyter-ai/agent-lite",
-      "max_downloads_last_month": 14,
+      "max_downloads_last_month": 0,
       "top_package_dependents": 3,
       "content": {
-        "commit": "e9cbeb927a0332b49c858e65ca15b9188db45fd9",
+        "commit": "6e29270e62bd581aba2de32ff936e0b1656f8299",
         "n_files": 155,
         "file_types": {
           "config": 35,
@@ -18364,7 +18364,7 @@
           "system": "NPM",
           "name": "@jupyter/builder",
           "reason": "registry links to this repo",
-          "downloads_last_month": 75052,
+          "downloads_last_month": 110759,
           "dependents": 0
         }
       ],
@@ -18439,35 +18439,35 @@
           "name": "jupyterlab-chat",
           "reason": "registry links to this repo",
           "downloads_last_month": 22763,
-          "dependents": 24
+          "dependents": 22
         },
         {
           "system": "NPM",
           "name": "@jupyter/chat",
           "reason": "registry links to this repo",
-          "downloads_last_month": 3053,
+          "downloads_last_month": 4279,
           "dependents": 13
         },
         {
           "system": "NPM",
           "name": "jupyterlab-chat",
           "reason": "registry links to this repo",
-          "downloads_last_month": 299,
+          "downloads_last_month": 1376,
           "dependents": 2
         },
         {
           "system": "NPM",
           "name": "jupyterlab-chat-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 157,
+          "downloads_last_month": 493,
           "dependents": 0
         }
       ],
       "top_package": "PYPI:jupyterlab-chat",
       "max_downloads_last_month": 22763,
-      "top_package_dependents": 24,
+      "top_package_dependents": 22,
       "content": {
-        "commit": "31036fe15008b2bfae93dc282be2b370738a32fb",
+        "commit": "d37a38a87eff57bba8445248bb4d11a39b5101ca",
         "n_files": 270,
         "file_types": {
           "config": 37,
@@ -18531,14 +18531,14 @@
           "name": "jupyter-docprovider",
           "reason": "registry links to this repo",
           "downloads_last_month": 186123,
-          "dependents": 44
+          "dependents": 43
         },
         {
           "system": "PYPI",
           "name": "jupyter-collaboration-ui",
           "reason": "registry links to this repo",
           "downloads_last_month": 185703,
-          "dependents": 43
+          "dependents": 42
         },
         {
           "system": "PYPI",
@@ -18551,35 +18551,35 @@
           "system": "NPM",
           "name": "@jupyter/collaboration",
           "reason": "registry links to this repo",
-          "downloads_last_month": 43514,
+          "downloads_last_month": 53300,
           "dependents": 17
         },
         {
           "system": "NPM",
           "name": "@jupyter/docprovider",
           "reason": "registry links to this repo",
-          "downloads_last_month": 40147,
+          "downloads_last_month": 45405,
           "dependents": 15
         },
         {
           "system": "NPM",
           "name": "@jupyter/collaborative-drive",
           "reason": "registry links to this repo",
-          "downloads_last_month": 39774,
+          "downloads_last_month": 44256,
           "dependents": 26
         },
         {
           "system": "NPM",
           "name": "@jupyter/collaboration-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 36914,
+          "downloads_last_month": 39622,
           "dependents": 9
         },
         {
           "system": "NPM",
           "name": "@jupyter/docprovider-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 36783,
+          "downloads_last_month": 36156,
           "dependents": 9
         }
       ],
@@ -18587,12 +18587,12 @@
       "max_downloads_last_month": 815532,
       "top_package_dependents": 34,
       "content": {
-        "commit": "455f8218038137d5ea60371d9f6ece093620f11d",
-        "n_files": 208,
+        "commit": "1f912d220a47409acc758c81678b6019db270701",
+        "n_files": 209,
         "file_types": {
           "other": 14,
           "code": 93,
-          "config": 48,
+          "config": 49,
           "docs": 18,
           "media": 20,
           "web": 14,
@@ -18645,7 +18645,7 @@
           "system": "NPM",
           "name": "@jupyterlab/mathjax2-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 7192,
+          "downloads_last_month": 18325,
           "dependents": 4
         },
         {
@@ -18656,6 +18656,13 @@
           "dependents": 2
         },
         {
+          "system": "NPM",
+          "name": "@jupyterlab/vega3-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 2402,
+          "dependents": 0
+        },
+        {
           "system": "PYPI",
           "name": "jupyterlab-fasta",
           "reason": "registry links to this repo",
@@ -18664,16 +18671,9 @@
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/vega3-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 965,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
           "name": "@jupyterlab/geojson-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 928,
+          "downloads_last_month": 1164,
           "dependents": 0
         },
         {
@@ -18682,6 +18682,20 @@
           "reason": "registry links to this repo",
           "downloads_last_month": 242,
           "dependents": 2
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/katex-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 230,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/fasta-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 222,
+          "dependents": 0
         },
         {
           "system": "PYPI",
@@ -18696,24 +18710,10 @@
           "reason": "registry links to this repo",
           "downloads_last_month": 78,
           "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/katex-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 38,
-          "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/fasta-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 31,
-          "dependents": 0
         }
       ],
       "top_package": "NPM:@jupyterlab/mathjax2-extension",
-      "max_downloads_last_month": 7192,
+      "max_downloads_last_month": 18325,
       "top_package_dependents": 4,
       "content": {
         "commit": "b89c093bce24c8d7394177f08a111b3895ed6870",
@@ -18854,763 +18854,763 @@
           "system": "NPM",
           "name": "@jupyterlab/nbformat",
           "reason": "registry links to this repo",
-          "downloads_last_month": 653703,
+          "downloads_last_month": 908126,
           "dependents": 1032
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/services",
           "reason": "registry links to this repo",
-          "downloads_last_month": 519572,
+          "downloads_last_month": 693334,
           "dependents": 998
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/coreutils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 494524,
+          "downloads_last_month": 681464,
           "dependents": 1005
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/settingregistry",
           "reason": "registry links to this repo",
-          "downloads_last_month": 424718,
+          "downloads_last_month": 583684,
           "dependents": 1013
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/statedb",
           "reason": "registry links to this repo",
-          "downloads_last_month": 418312,
+          "downloads_last_month": 576085,
           "dependents": 1016
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/observables",
           "reason": "registry links to this repo",
-          "downloads_last_month": 327276,
+          "downloads_last_month": 511856,
           "dependents": 714
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/apputils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 315704,
+          "downloads_last_month": 445042,
           "dependents": 692
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/ui-components",
           "reason": "registry links to this repo",
-          "downloads_last_month": 292537,
+          "downloads_last_month": 411207,
           "dependents": 700
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/rendermime",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 287743,
-          "dependents": 670
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/statusbar",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 281656,
-          "dependents": 693
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/rendermime-interfaces",
           "reason": "registry links to this repo",
-          "downloads_last_month": 281245,
+          "downloads_last_month": 400273,
           "dependents": 1072
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/statusbar",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 390984,
+          "dependents": 693
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/translation",
           "reason": "registry links to this repo",
-          "downloads_last_month": 277771,
+          "downloads_last_month": 375633,
           "dependents": 705
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/rendermime",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 371290,
+          "dependents": 670
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/codeeditor",
           "reason": "registry links to this repo",
-          "downloads_last_month": 258834,
+          "downloads_last_month": 365134,
           "dependents": 660
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/docregistry",
           "reason": "registry links to this repo",
-          "downloads_last_month": 242866,
+          "downloads_last_month": 340992,
           "dependents": 647
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/application",
           "reason": "registry links to this repo",
-          "downloads_last_month": 232010,
+          "downloads_last_month": 330578,
           "dependents": 626
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/codemirror",
           "reason": "registry links to this repo",
-          "downloads_last_month": 228942,
+          "downloads_last_month": 328845,
           "dependents": 365
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/outputarea",
           "reason": "registry links to this repo",
-          "downloads_last_month": 220272,
+          "downloads_last_month": 310321,
           "dependents": 336
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/docmanager",
           "reason": "registry links to this repo",
-          "downloads_last_month": 196217,
+          "downloads_last_month": 305458,
           "dependents": 377
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/filebrowser",
           "reason": "registry links to this repo",
-          "downloads_last_month": 192137,
+          "downloads_last_month": 297728,
           "dependents": 366
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/cells",
           "reason": "registry links to this repo",
-          "downloads_last_month": 184783,
+          "downloads_last_month": 282390,
           "dependents": 319
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/notebook",
           "reason": "registry links to this repo",
-          "downloads_last_month": 183722,
+          "downloads_last_month": 279130,
           "dependents": 295
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/attachments",
           "reason": "registry links to this repo",
-          "downloads_last_month": 181958,
+          "downloads_last_month": 278231,
           "dependents": 322
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/documentsearch",
           "reason": "registry links to this repo",
-          "downloads_last_month": 179454,
+          "downloads_last_month": 274847,
           "dependents": 372
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/toc",
           "reason": "registry links to this repo",
-          "downloads_last_month": 166018,
+          "downloads_last_month": 264626,
           "dependents": 339
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/lsp",
           "reason": "registry links to this repo",
-          "downloads_last_month": 155737,
+          "downloads_last_month": 244819,
           "dependents": 320
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/mainmenu",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 216006,
+          "dependents": 170
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/markedparser-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 132409,
+          "downloads_last_month": 210919,
           "dependents": 301
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/mermaid",
           "reason": "registry links to this repo",
-          "downloads_last_month": 131115,
+          "downloads_last_month": 210496,
           "dependents": 306
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/mainmenu",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 126289,
-          "dependents": 170
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/console",
           "reason": "registry links to this repo",
-          "downloads_last_month": 120522,
+          "downloads_last_month": 205832,
           "dependents": 91
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/fileeditor",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 190469,
+          "dependents": 89
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/launcher",
           "reason": "registry links to this repo",
-          "downloads_last_month": 109792,
+          "downloads_last_month": 186894,
           "dependents": 99
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/logconsole",
           "reason": "registry links to this repo",
-          "downloads_last_month": 108986,
+          "downloads_last_month": 185513,
           "dependents": 98
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/fileeditor",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 108492,
-          "dependents": 89
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/theme-light-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 101001,
-          "dependents": 38
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/completer",
           "reason": "registry links to this repo",
-          "downloads_last_month": 89028,
+          "downloads_last_month": 145229,
           "dependents": 54
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/javascript-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 88206,
+          "downloads_last_month": 140061,
           "dependents": 32
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/json-extension",
+          "name": "@jupyterlab/theme-light-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 85423,
-          "dependents": 34
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/markdownviewer",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 81371,
-          "dependents": 36
+          "downloads_last_month": 136399,
+          "dependents": 38
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/docmanager-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 80110,
+          "downloads_last_month": 129962,
           "dependents": 26
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/markdownviewer",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 129241,
+          "dependents": 36
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/codemirror-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 129236,
+          "dependents": 20
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/json-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 129023,
+          "dependents": 34
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/running",
           "reason": "registry links to this repo",
-          "downloads_last_month": 79945,
+          "downloads_last_month": 127556,
           "dependents": 24
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/apputils-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 79550,
+          "downloads_last_month": 126970,
           "dependents": 20
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/codemirror-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 79094,
-          "dependents": 20
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/notebook-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 78825,
-          "dependents": 19
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/cell-toolbar",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 78711,
-          "dependents": 23
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/property-inspector",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 78634,
-          "dependents": 22
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/application-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 78511,
-          "dependents": 18
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/markdownviewer-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 78187,
-          "dependents": 19
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/core-meta",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 78144,
-          "dependents": 2
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/completer-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 77980,
-          "dependents": 17
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/mainmenu-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 77896,
+          "downloads_last_month": 126929,
           "dependents": 17
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/rendermime-extension",
+          "name": "@jupyterlab/notebook-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 77630,
-          "dependents": 20
+          "downloads_last_month": 126844,
+          "dependents": 19
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/ui-components-extension",
+          "name": "@jupyterlab/terminal",
           "reason": "registry links to this repo",
-          "downloads_last_month": 77280,
-          "dependents": 17
+          "downloads_last_month": 126624,
+          "dependents": 60
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/filebrowser-extension",
+          "name": "@jupyterlab/markdownviewer-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 77112,
+          "downloads_last_month": 126500,
+          "dependents": 19
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/application-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 126363,
           "dependents": 18
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/csvviewer",
           "reason": "registry links to this repo",
-          "downloads_last_month": 76811,
+          "downloads_last_month": 126069,
           "dependents": 20
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/completer-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 125893,
+          "dependents": 17
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/filebrowser-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 125539,
+          "dependents": 18
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/documentsearch-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 76779,
-          "dependents": 16
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/mathjax-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 76764,
-          "dependents": 20
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/toc-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 76324,
+          "downloads_last_month": 125519,
           "dependents": 16
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/fileeditor-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 76222,
+          "downloads_last_month": 125246,
           "dependents": 16
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/property-inspector",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 124694,
+          "dependents": 22
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/ui-components-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 124434,
+          "dependents": 17
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/csvviewer-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 75834,
+          "downloads_last_month": 124259,
           "dependents": 16
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/cell-toolbar-extension",
+          "name": "@jupyterlab/rendermime-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 74865,
-          "dependents": 16
+          "downloads_last_month": 122798,
+          "dependents": 20
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/shortcuts-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 74267,
+          "downloads_last_month": 122769,
           "dependents": 10
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/translation-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 73986,
+          "downloads_last_month": 122109,
           "dependents": 18
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/cell-toolbar",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 121349,
+          "dependents": 23
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/toc-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 120476,
+          "dependents": 16
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/cell-toolbar-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 118984,
+          "dependents": 16
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/core-meta",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 118257,
+          "dependents": 2
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/tooltip",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 117174,
+          "dependents": 4
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/metadataform",
           "reason": "registry links to this repo",
-          "downloads_last_month": 73155,
+          "downloads_last_month": 110108,
           "dependents": 21
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/mathjax-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 109871,
+          "dependents": 20
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/lsp-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 71710,
+          "downloads_last_month": 107793,
           "dependents": 16
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/workspaces",
           "reason": "registry links to this repo",
-          "downloads_last_month": 70436,
+          "downloads_last_month": 106908,
           "dependents": 22
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/tooltip",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 65478,
-          "dependents": 4
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/inspector",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 63103,
-          "dependents": 6
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/settingeditor",
           "reason": "registry links to this repo",
-          "downloads_last_month": 62546,
+          "downloads_last_month": 100132,
           "dependents": 4
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/terminal",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 62347,
-          "dependents": 60
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/settingeditor-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 62157,
-          "dependents": 2
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/theme-dark-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 61564,
-          "dependents": 22
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/running-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 61282,
+          "downloads_last_month": 98476,
           "dependents": 2
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/vega5-extension",
+          "name": "@jupyterlab/inspector",
           "reason": "registry links to this repo",
-          "downloads_last_month": 61121,
-          "dependents": 4
+          "downloads_last_month": 97996,
+          "dependents": 6
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/imageviewer",
+          "name": "@jupyterlab/settingeditor-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 60959,
-          "dependents": 5
+          "downloads_last_month": 97065,
+          "dependents": 2
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/tooltip-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 60624,
+          "downloads_last_month": 96344,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/htmlviewer",
           "reason": "registry links to this repo",
-          "downloads_last_month": 59883,
+          "downloads_last_month": 96188,
           "dependents": 3
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/vega5-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 96150,
+          "dependents": 4
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/theme-dark-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 95996,
+          "dependents": 22
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/debugger",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 95342,
+          "dependents": 5
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/imageviewer",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 95285,
+          "dependents": 5
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/imageviewer-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 95026,
+          "dependents": 2
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/pdf-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 59866,
+          "downloads_last_month": 94906,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/htmlviewer-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 59548,
+          "downloads_last_month": 94485,
           "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/imageviewer-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 59208,
-          "dependents": 2
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/logconsole-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 58906,
+          "downloads_last_month": 93586,
           "dependents": 1
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/inspector-extension",
+          "name": "@jupyterlab/celltags-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 58618,
-          "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/pluginmanager",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 56703,
-          "dependents": 16
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/buildutils",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 55140,
-          "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/mermaid-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 53726,
-          "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/services-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 51648,
-          "dependents": 2
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/workspaces-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 51558,
+          "downloads_last_month": 92819,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/console-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 47397,
+          "downloads_last_month": 90658,
           "dependents": 18
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/inspector-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 90654,
+          "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/statusbar-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 46396,
+          "downloads_last_month": 86607,
           "dependents": 17
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/celltags-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 45235,
-          "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/launcher-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 45069,
+          "downloads_last_month": 86169,
           "dependents": 17
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/debugger",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 43684,
-          "dependents": 5
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/testutils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 42426,
+          "downloads_last_month": 83817,
           "dependents": 13
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/pluginmanager",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 81598,
+          "dependents": 16
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/metadataform-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 40467,
+          "downloads_last_month": 78504,
+          "dependents": 1
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/mermaid-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 76986,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/pluginmanager-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 38554,
+          "downloads_last_month": 76311,
           "dependents": 1
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/help-extension",
+          "name": "@jupyterlab/buildutils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 32420,
+          "downloads_last_month": 74854,
+          "dependents": 1
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/services-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 72457,
+          "dependents": 2
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/workspaces-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 71177,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/terminal-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 30650,
+          "downloads_last_month": 61807,
           "dependents": 2
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/help-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 61007,
+          "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/extensionmanager",
           "reason": "registry links to this repo",
-          "downloads_last_month": 29800,
+          "downloads_last_month": 60318,
           "dependents": 8
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/extensionmanager-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 29440,
+          "downloads_last_month": 59974,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/hub-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 28955,
+          "downloads_last_month": 59953,
           "dependents": 2
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/debugger-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 28060,
-          "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/theme-dark-high-contrast-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 23773,
+          "downloads_last_month": 57414,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/nbconvert-css",
           "reason": "registry links to this repo",
-          "downloads_last_month": 21681,
+          "downloads_last_month": 46448,
           "dependents": 18
         },
         {
           "system": "NPM",
-          "name": "@jupyterlab/audio-extension",
+          "name": "@jupyterlab/theme-dark-high-contrast-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 19555,
-          "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/video-extension",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 19518,
+          "downloads_last_month": 42044,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/galata",
           "reason": "registry links to this repo",
-          "downloads_last_month": 17877,
+          "downloads_last_month": 39432,
+          "dependents": 1
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/audio-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 35444,
+          "dependents": 1
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/video-extension",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 35248,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlab/metapackage",
           "reason": "registry links to this repo",
-          "downloads_last_month": 4988,
+          "downloads_last_month": 17377,
+          "dependents": 0
+        },
+        {
+          "system": "NPM",
+          "name": "@jupyterlab/template",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 3012,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "jupyterlab",
           "reason": "registry links to this repo",
-          "downloads_last_month": 842,
+          "downloads_last_month": 741,
           "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/template",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 593,
-          "dependents": 0
         }
       ],
       "top_package": "PYPI:jupyterlab",
       "max_downloads_last_month": 30253541,
       "top_package_dependents": 3937,
       "content": {
-        "commit": "baa5a3fe1aefa75ada56265d394e0f6b7d111585",
-        "n_files": 3074,
+        "commit": "7dfda76f13ea6c84f3665fbad4307ee1a2442a1c",
+        "n_files": 3079,
         "file_types": {
-          "config": 604,
+          "config": 605,
           "other": 24,
           "docs": 181,
-          "code": 1374,
+          "code": 1378,
           "web": 259,
           "media": 597,
           "notebook": 35
@@ -19697,19 +19697,19 @@
           "system": "NPM",
           "name": "@jupyterlab/commenting-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 9,
+          "downloads_last_month": 129,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "jupyterlab-commenting",
           "reason": "registry links to this repo",
-          "downloads_last_month": 8,
+          "downloads_last_month": 23,
           "dependents": 0
         }
       ],
       "top_package": "NPM:@jupyterlab/commenting-extension",
-      "max_downloads_last_month": 9,
+      "max_downloads_last_month": 129,
       "top_package_dependents": 0,
       "content": {
         "commit": "5196c9787c21b7aebfeb5dde3aa30e27dde28675",
@@ -19880,7 +19880,7 @@
           "system": "NPM",
           "name": "@jupyterlab/git",
           "reason": "registry links to this repo",
-          "downloads_last_month": 2334,
+          "downloads_last_month": 2847,
           "dependents": 1
         }
       ],
@@ -19952,7 +19952,7 @@
           "system": "NPM",
           "name": "@jupyterlab/github",
           "reason": "registry links to this repo",
-          "downloads_last_month": 104,
+          "downloads_last_month": 250,
           "dependents": 0
         }
       ],
@@ -20009,23 +20009,23 @@
       "is_fork": false,
       "packages": [
         {
+          "system": "NPM",
+          "name": "@jupyterlab/hdf5",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 230,
+          "dependents": 0
+        },
+        {
           "system": "PYPI",
           "name": "jupyterlab-hdf",
           "reason": "declared here; registry links to a same-named repo (this repo's former home)",
           "downloads_last_month": 65,
           "dependents": 1
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlab/hdf5",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 37,
-          "dependents": 0
         }
       ],
-      "top_package": "PYPI:jupyterlab-hdf",
-      "max_downloads_last_month": 65,
-      "top_package_dependents": 1,
+      "top_package": "NPM:@jupyterlab/hdf5",
+      "max_downloads_last_month": 230,
+      "top_package_dependents": 0,
       "content": {
         "commit": "31ef7b732dbfe98c85d54dfab0f28699a1ab6f62",
         "n_files": 77,
@@ -20082,7 +20082,7 @@
           "system": "NPM",
           "name": "@jupyterlab/latex",
           "reason": "registry links to this repo",
-          "downloads_last_month": 70,
+          "downloads_last_month": 347,
           "dependents": 0
         }
       ],
@@ -20307,7 +20307,7 @@
           "system": "NPM",
           "name": "jupyterlab_pygments",
           "reason": "registry links to this repo",
-          "downloads_last_month": 16,
+          "downloads_last_month": 31,
           "dependents": 0
         }
       ],
@@ -20737,131 +20737,131 @@
           "system": "NPM",
           "name": "@lumino/coreutils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 759248,
+          "downloads_last_month": 1092229,
           "dependents": 1430
         },
         {
           "system": "NPM",
           "name": "@lumino/algorithm",
           "reason": "registry links to this repo",
-          "downloads_last_month": 640519,
+          "downloads_last_month": 829548,
           "dependents": 1437
+        },
+        {
+          "system": "NPM",
+          "name": "@lumino/widgets",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 817478,
+          "dependents": 983
         },
         {
           "system": "NPM",
           "name": "@lumino/signaling",
           "reason": "registry links to this repo",
-          "downloads_last_month": 595257,
+          "downloads_last_month": 774983,
           "dependents": 1409
+        },
+        {
+          "system": "NPM",
+          "name": "@lumino/dragdrop",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 772176,
+          "dependents": 1306
         },
         {
           "system": "NPM",
           "name": "@lumino/disposable",
           "reason": "registry links to this repo",
-          "downloads_last_month": 586068,
+          "downloads_last_month": 767517,
           "dependents": 1408
+        },
+        {
+          "system": "NPM",
+          "name": "@lumino/messaging",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 758007,
+          "dependents": 1330
         },
         {
           "system": "NPM",
           "name": "@lumino/domutils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 584174,
+          "downloads_last_month": 756575,
           "dependents": 1395
         },
         {
           "system": "NPM",
-          "name": "@lumino/virtualdom",
+          "name": "@lumino/collections",
           "reason": "registry links to this repo",
-          "downloads_last_month": 574962,
-          "dependents": 1395
+          "downloads_last_month": 752320,
+          "dependents": 1331
         },
         {
           "system": "NPM",
           "name": "@lumino/commands",
           "reason": "registry links to this repo",
-          "downloads_last_month": 572885,
+          "downloads_last_month": 751912,
           "dependents": 1394
+        },
+        {
+          "system": "NPM",
+          "name": "@lumino/virtualdom",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 750042,
+          "dependents": 1395
         },
         {
           "system": "NPM",
           "name": "@lumino/keyboard",
           "reason": "registry links to this repo",
-          "downloads_last_month": 572710,
+          "downloads_last_month": 745618,
           "dependents": 1395
         },
         {
           "system": "NPM",
           "name": "@lumino/properties",
           "reason": "registry links to this repo",
-          "downloads_last_month": 571681,
+          "downloads_last_month": 743618,
           "dependents": 1395
-        },
-        {
-          "system": "NPM",
-          "name": "@lumino/messaging",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 526014,
-          "dependents": 1330
-        },
-        {
-          "system": "NPM",
-          "name": "@lumino/collections",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 522243,
-          "dependents": 1331
-        },
-        {
-          "system": "NPM",
-          "name": "@lumino/widgets",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 515174,
-          "dependents": 983
-        },
-        {
-          "system": "NPM",
-          "name": "@lumino/dragdrop",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 491488,
-          "dependents": 1306
         },
         {
           "system": "NPM",
           "name": "@lumino/polling",
           "reason": "registry links to this repo",
-          "downloads_last_month": 410646,
+          "downloads_last_month": 560642,
           "dependents": 1079
         },
         {
           "system": "NPM",
           "name": "@lumino/application",
           "reason": "registry links to this repo",
-          "downloads_last_month": 270650,
+          "downloads_last_month": 417057,
           "dependents": 665
         },
         {
           "system": "NPM",
           "name": "@lumino/datagrid",
           "reason": "registry links to this repo",
-          "downloads_last_month": 137790,
+          "downloads_last_month": 255256,
           "dependents": 37
         },
         {
           "system": "NPM",
           "name": "@lumino/default-theme",
           "reason": "registry links to this repo",
-          "downloads_last_month": 33945,
+          "downloads_last_month": 50610,
           "dependents": 19
         },
         {
           "system": "NPM",
           "name": "@lumino/buildutils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 116,
+          "downloads_last_month": 111,
           "dependents": 0
         }
       ],
       "top_package": "NPM:@lumino/coreutils",
-      "max_downloads_last_month": 759248,
+      "max_downloads_last_month": 1092229,
       "top_package_dependents": 1430,
       "content": {
         "commit": "44aea979d5d2c77665d651383d27179a63596957",
@@ -21060,7 +21060,7 @@
           "system": "NPM",
           "name": "@jupyterlab/plugin-playground",
           "reason": "registry links to this repo",
-          "downloads_last_month": 9,
+          "downloads_last_month": 181,
           "dependents": 0
         }
       ],
@@ -21121,12 +21121,12 @@
           "system": "NPM",
           "name": "@jupyterlab/pullrequests",
           "reason": "registry links to this repo",
-          "downloads_last_month": 8,
+          "downloads_last_month": 174,
           "dependents": 0
         }
       ],
       "top_package": "NPM:@jupyterlab/pullrequests",
-      "max_downloads_last_month": 8,
+      "max_downloads_last_month": 174,
       "top_package_dependents": 0,
       "content": {
         "commit": "869adab376890eab0bf33816ae69b0964b2fc27f",
@@ -21405,7 +21405,7 @@
           "system": "NPM",
           "name": "@jupyterlab/ui-profiler",
           "reason": "registry links to this repo",
-          "downloads_last_month": 54,
+          "downloads_last_month": 140,
           "dependents": 0
         },
         {
@@ -21417,7 +21417,7 @@
         }
       ],
       "top_package": "NPM:@jupyterlab/ui-profiler",
-      "max_downloads_last_month": 54,
+      "max_downloads_last_month": 140,
       "top_package_dependents": 0,
       "content": {
         "commit": "560fb518ff4193143a960707a936af9ad50c22b5",
@@ -21596,12 +21596,12 @@
           "system": "NPM",
           "name": "@jupyterlite/cockle",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1647,
+          "downloads_last_month": 1995,
           "dependents": 3
         }
       ],
       "top_package": "NPM:@jupyterlite/cockle",
-      "max_downloads_last_month": 1647,
+      "max_downloads_last_month": 1995,
       "top_package_dependents": 3,
       "content": {
         "commit": "458317d56d696c1fcf231d6fe62f132ceb40a365",
@@ -21701,22 +21701,22 @@
       "is_fork": false,
       "packages": [
         {
+          "system": "NPM",
+          "name": "@jupyterlite/echo-kernel",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 65,
+          "dependents": 0
+        },
+        {
           "system": "PYPI",
           "name": "jupyterlite-echo-kernel",
           "reason": "registry links to this repo",
           "downloads_last_month": 58,
           "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlite/echo-kernel",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 13,
-          "dependents": 0
         }
       ],
-      "top_package": "PYPI:jupyterlite-echo-kernel",
-      "max_downloads_last_month": 58,
+      "top_package": "NPM:@jupyterlite/echo-kernel",
+      "max_downloads_last_month": 65,
       "top_package_dependents": 0,
       "content": {
         "commit": "16221829f0ba38374db8f2b8fda10f989d1a6cdd",
@@ -21778,14 +21778,14 @@
           "system": "NPM",
           "name": "@jupyterlite/javascript-kernel",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1050,
+          "downloads_last_month": 1556,
           "dependents": 3
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/javascript-kernel-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 954,
+          "downloads_last_month": 627,
           "dependents": 2
         }
       ],
@@ -21844,22 +21844,22 @@
       "is_fork": false,
       "packages": [
         {
+          "system": "NPM",
+          "name": "@jupyterlite/webrtc-docprovider",
+          "reason": "registry links to this repo",
+          "downloads_last_month": 42,
+          "dependents": 0
+        },
+        {
           "system": "PYPI",
           "name": "jupyterlab-webrtc-docprovider",
           "reason": "registry links to this repo",
           "downloads_last_month": 38,
           "dependents": 0
-        },
-        {
-          "system": "NPM",
-          "name": "@jupyterlite/webrtc-docprovider",
-          "reason": "registry links to this repo",
-          "downloads_last_month": 18,
-          "dependents": 0
         }
       ],
-      "top_package": "PYPI:jupyterlab-webrtc-docprovider",
-      "max_downloads_last_month": 38,
+      "top_package": "NPM:@jupyterlite/webrtc-docprovider",
+      "max_downloads_last_month": 42,
       "top_package_dependents": 0,
       "content": {
         "commit": "7c3429f78e8e0058f5ac9ecc39336c48e51d18e8",
@@ -21917,42 +21917,42 @@
           "system": "NPM",
           "name": "@jupyterlite/localforage",
           "reason": "registry links to this repo",
-          "downloads_last_month": 15201,
+          "downloads_last_month": 36620,
           "dependents": 27
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/kernel",
           "reason": "registry links to this repo",
-          "downloads_last_month": 13958,
+          "downloads_last_month": 35725,
           "dependents": 5
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/contents",
           "reason": "registry links to this repo",
-          "downloads_last_month": 13943,
+          "downloads_last_month": 29055,
           "dependents": 5
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/server",
           "reason": "registry links to this repo",
-          "downloads_last_month": 13371,
+          "downloads_last_month": 22386,
           "dependents": 5
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/session",
           "reason": "registry links to this repo",
-          "downloads_last_month": 12844,
+          "downloads_last_month": 22162,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/settings",
           "reason": "registry links to this repo",
-          "downloads_last_month": 12640,
+          "downloads_last_month": 22076,
           "dependents": 0
         },
         {
@@ -21964,72 +21964,72 @@
         },
         {
           "system": "NPM",
-          "name": "@jupyterlite/services",
+          "name": "@jupyterlite/application",
           "reason": "registry links to this repo",
-          "downloads_last_month": 2751,
-          "dependents": 26
+          "downloads_last_month": 3461,
+          "dependents": 14
         },
         {
           "system": "NPM",
-          "name": "@jupyterlite/application",
+          "name": "@jupyterlite/services",
           "reason": "registry links to this repo",
-          "downloads_last_month": 2598,
-          "dependents": 14
+          "downloads_last_month": 2718,
+          "dependents": 26
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/types",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1849,
+          "downloads_last_month": 2607,
           "dependents": 13
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/apputils",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1821,
+          "downloads_last_month": 2230,
           "dependents": 12
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/ui-components",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1374,
+          "downloads_last_month": 1768,
           "dependents": 6
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/application-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1354,
+          "downloads_last_month": 1659,
           "dependents": 4
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/services-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1177,
+          "downloads_last_month": 1281,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/apputils-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 1004,
+          "downloads_last_month": 1209,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/repl-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 761,
+          "downloads_last_month": 1159,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/notebook-application-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 721,
+          "downloads_last_month": 971,
           "dependents": 0
         }
       ],
@@ -22206,7 +22206,7 @@
           "system": "NPM",
           "name": "@jupyterlite/litegitpuller",
           "reason": "registry links to this repo",
-          "downloads_last_month": 22,
+          "downloads_last_month": 97,
           "dependents": 0
         }
       ],
@@ -22273,17 +22273,17 @@
         },
         {
           "system": "NPM",
-          "name": "@jupyterlite/p5-kernel-extension",
+          "name": "@jupyterlite/p5-kernel",
           "reason": "registry links to this repo",
-          "downloads_last_month": 23,
-          "dependents": 0
+          "downloads_last_month": 129,
+          "dependents": 1
         },
         {
           "system": "NPM",
-          "name": "@jupyterlite/p5-kernel",
+          "name": "@jupyterlite/p5-kernel-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 19,
-          "dependents": 1
+          "downloads_last_month": 129,
+          "dependents": 0
         }
       ],
       "top_package": "PYPI:jupyterlite-p5-kernel",
@@ -22352,14 +22352,14 @@
           "system": "NPM",
           "name": "@jupyterlite/pyodide-kernel",
           "reason": "registry links to this repo",
-          "downloads_last_month": 10832,
+          "downloads_last_month": 22380,
           "dependents": 1
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/pyodide-kernel-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 10303,
+          "downloads_last_month": 18876,
           "dependents": 0
         }
       ],
@@ -22527,7 +22527,7 @@
           "system": "NPM",
           "name": "@jupyterlite/terminal",
           "reason": "registry links to this repo",
-          "downloads_last_month": 708,
+          "downloads_last_month": 1036,
           "dependents": 1
         }
       ],
@@ -22637,23 +22637,23 @@
         },
         {
           "system": "NPM",
-          "name": "@jupyterlite/xeus-core",
+          "name": "@jupyterlite/xeus",
           "reason": "registry links to this repo",
-          "downloads_last_month": 327,
-          "dependents": 3
+          "downloads_last_month": 1208,
+          "dependents": 2
         },
         {
           "system": "NPM",
-          "name": "@jupyterlite/xeus",
+          "name": "@jupyterlite/xeus-core",
           "reason": "registry links to this repo",
-          "downloads_last_month": 142,
-          "dependents": 2
+          "downloads_last_month": 1167,
+          "dependents": 3
         },
         {
           "system": "NPM",
           "name": "@jupyterlite/xeus-extension",
           "reason": "registry links to this repo",
-          "downloads_last_month": 103,
+          "downloads_last_month": 888,
           "dependents": 0
         }
       ],
@@ -23067,28 +23067,28 @@
           "system": "NPM",
           "name": "@voila-dashboards/voila",
           "reason": "registry links to this repo",
-          "downloads_last_month": 628,
+          "downloads_last_month": 723,
           "dependents": 2
         },
         {
           "system": "NPM",
           "name": "@voila-dashboards/widgets-manager8",
           "reason": "registry links to this repo",
-          "downloads_last_month": 298,
+          "downloads_last_month": 555,
           "dependents": 3
         },
         {
           "system": "NPM",
           "name": "@voila-dashboards/jupyterlab-preview",
           "reason": "registry links to this repo",
-          "downloads_last_month": 103,
+          "downloads_last_month": 340,
           "dependents": 0
         },
         {
           "system": "NPM",
           "name": "@voila-dashboards/widgets-manager7",
           "reason": "registry links to this repo",
-          "downloads_last_month": 13,
+          "downloads_last_month": 93,
           "dependents": 0
         }
       ],
@@ -23246,7 +23246,7 @@
           "system": "NPM",
           "name": "@voila-dashboards/jupyterlab-gridstack",
           "reason": "registry links to this repo",
-          "downloads_last_month": 24,
+          "downloads_last_month": 114,
           "dependents": 0
         }
       ],
@@ -23534,7 +23534,7 @@
           "system": "NPM",
           "name": "voila_topbar",
           "reason": "registry links to this repo",
-          "downloads_last_month": 7,
+          "downloads_last_month": 11,
           "dependents": 0
         }
       ],
