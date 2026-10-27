@@ -30,9 +30,7 @@ def registry_entry(system: str, name: str) -> dict | None:
         people = [info.get(key) or "" for key in ("author", "author_email", "maintainer", "maintainer_email")]
         name = info["name"]
     else:
-        body = fetch_json(
-            f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.2
-        )  # 8 threads at full speed got us 429s
+        body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.2)  # without it, npm answers 429
         if not isinstance(body, dict) or "version" not in body:
             return None
         repository = body.get("repository")
