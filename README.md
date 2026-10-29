@@ -44,10 +44,8 @@ Seven scripts run in order (they depend on each other):
 
 - **Repository type, and security boundary come from a language model**
 - Download counts include CI.
-- Images: ghcr.io is not covered (it lists nothing without authentication), Quay publishes no pull counts, Docker
-  Hub's are all-time counts, and only the tag people get by default is recorded. The Docker Hub and Quay namespaces to
-  look at are listed by hand in `scripts/4_images.py`. An image's repository is the one whose chartpress file builds
-  it, else the one its description links to, else the one named like it; many older images have none.
+- Images: ghcr.io is not covered, Quay has no pull counts, Docker Hub's are all-time, and only the default tag is
+  recorded. The namespaces are listed by hand in `scripts/4_images.py`. Many older images have no repository.
 - "Used in CI" only sees the repositories listed here.
 
 ## Running it
@@ -68,19 +66,14 @@ python scripts/7_table.py
 
 ## Scanning the images
 
-`output/images.txt` has one image reference per line and nothing else, so any image scanner can read it and
-nothing here depends on one. Scanners pull the images themselves, so run them from your own machine or CI, on
-the file in a checkout or downloaded from
-`https://raw.githubusercontent.com/Yann-P/jupyter-security-inventory/main/output/images.txt`. Some tools worth
-trying:
+`output/images.txt` has one image reference per line. Run a scanner on it from your own machine or CI, on a
+checkout or on `https://raw.githubusercontent.com/Yann-P/jupyter-security-inventory/main/output/images.txt`.
 
-- [Trivy](https://trivy.dev): known vulnerabilities in the operating system and in Python, npm and other packages,
-  plus secrets and misconfigurations. A good first scanner.
-- [Grype](https://github.com/anchore/grype), with [Syft](https://github.com/anchore/syft) to list what an image
-  contains (an SBOM): known vulnerabilities again, from another database, so the two disagree usefully.
-- [Dockle](https://github.com/goodwithtech/dockle): not vulnerabilities but how the image is built, like running as
-  root or leaving secrets and credentials in it.
-- [Docker Scout](https://docs.docker.com/scout/) (`docker scout cves`): the same idea, built into Docker.
+- [Trivy](https://trivy.dev): vulnerabilities in operating system and language packages, secrets, misconfigurations.
+- [Grype](https://github.com/anchore/grype), with [Syft](https://github.com/anchore/syft) for SBOMs:
+  vulnerabilities, from another database than Trivy's.
+- [Dockle](https://github.com/goodwithtech/dockle): how the image is built, such as running as root or holding secrets.
+- [Docker Scout](https://docs.docker.com/scout/): `docker scout cves`, built into Docker.
 
 ```bash
 # Trivy: a JSON report per image, in reports/
@@ -93,8 +86,7 @@ done < output/images.txt
 xargs -n1 grype < output/images.txt
 ```
 
-`output/images.json` has the digest of each image, to find out which images are the same on both registries, and
-the repositories each image points to, to find who to report to.
+`output/images.json` also has each image's digest, and its repository to know who to report to.
 
 ## Daily updates
 

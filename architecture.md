@@ -81,7 +81,7 @@ committed. The other pages are written by hand and include those tables.
 | Page | Content | Source |
 |---|---|---|
 | Home (`index.md`) | All repos, one row each | `repos.csv` |
-| Organizations (`orgs.md`) | One page per organization, one page per repo below it | `jupyter_repos.json` |
+| Organizations (`orgs.md`) | One page per organization: its repos, its packages (PyPI, npm) and its images. One page per repo below it | `jupyter_repos.json`, `packages.json`, `images.json` |
 | Published packages (`packages.md`) | A summary, then one table for PyPI and one for npm | `packages.json` |
 | Container images (`images.md`) | One table of images | `images.json` |
 | About (`about.md`) | The README | `README.md` |
@@ -89,6 +89,8 @@ committed. The other pages are written by hand and include those tables.
 How the pages link to each other:
 
 - A repo table (home and organization pages) links each repo to its page. The `images` column counts its images.
+- An organization page has the repo tables, then the tables of its packages and images. They are the same tables as
+  the package and image pages, without the organization column. An image belongs to the organization of its namespace.
 - A repo page lists its packages and its images, with links to the registries.
 - The package and image tables link each row to the registry, to its organization page and to its repo page.
 - Package and image tables have the same columns: what, organization, repository, usage, last published. They have

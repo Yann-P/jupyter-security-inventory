@@ -110,3 +110,13 @@ def test_package_pages_write_a_table_per_registry_and_summarize_them(tmp_path, m
     ]
     assert len((tmp_path / "packages-pypi.csv").read_text().splitlines()) == 2  # the header and notebook
     assert len((tmp_path / "packages-npm.csv").read_text().splitlines()) == 3
+
+
+def test_org_body_leaves_out_empty_tables_and_the_sections_they_were_in():
+    body = insights.org_body("o", software=[["r"]], docs=[], packages={"PyPI": [], "npm": [["p"]]}, images=[])
+    headings = [line for line in body.splitlines() if line.startswith("#")]
+    assert headings == ["## Repositories", "### Software", "## Packages", "### npm"]
+    assert body.startswith("[Repositories (1)](#repositories) · [Packages (1)](#packages)")  # no link to "Images"
+
+    body = insights.org_body("o", software=[["r"]], docs=[["d"]], packages={"PyPI": [], "npm": []}, images=[])
+    assert "(#" not in body  # a page with one section needs no links to its sections

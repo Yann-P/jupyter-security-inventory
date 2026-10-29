@@ -4,7 +4,7 @@ html_theme.sidebar_secondary.remove: true
 
 # All Jupyter Repositories
 
-Every public, non-archived repository. {{ legend }}.
+Every public, non-archived repository. {{ legend }}
 
 ## Software
 

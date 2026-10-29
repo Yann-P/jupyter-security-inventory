@@ -70,9 +70,9 @@ html_theme.sidebar_secondary.remove: true
 
 # {title}
 
-{summary} {legend}
+{summary}
 
-{tables}
+{body}
 
 ```{{toctree}}
 :hidden:
@@ -352,19 +352,52 @@ def image_row(data: Data, image: dict) -> list:
     ]
 
 
-def image_rows(data: Data) -> list[list]:
-    """The images, most pulled first. Quay publishes no pull counts, so its images come last."""
-    ordered = sorted(data.images, key=lambda i: (-(i["pulls"] or 0), i["registry"], i["namespace"], i["name"]))
+def image_rows(data: Data, images: list[dict]) -> list[list]:
+    """Rows of IMAGE_HEADER, most pulled first. Quay publishes no pull counts, so its images come last."""
+    ordered = sorted(images, key=lambda i: (-(i["pulls"] or 0), i["registry"], i["namespace"], i["name"]))
     return [image_row(data, image) for image in ordered]
 
 
-def tables(file: str, software: list, docs: list, sortable: bool) -> str:
-    """The Markdown for a page's two tables, leaving out an empty one."""
-    parts = []
-    for heading, suffix, rows in (("Software", "", software), ("Documentation and examples", "-docs", docs)):
-        if rows:
-            options = ":class: sphinx-datatable\n" if sortable or heading == "Software" else ""
-            parts.append(f"## {heading}\n\n```{{csv-table}}\n:file: {file}{suffix}.csv\n:header-rows: 1\n{options}```")
+def without_org(header: list[str], rows: list[list]) -> tuple[list[str], list[list]]:
+    """A table of an organization's page leaves out the organization column: it is the same on every row."""
+    at = header.index("organization")
+    return header[:at] + header[at + 1 :], [row[:at] + row[at + 1 :] for row in rows]
+
+
+def csv_table(file: str, sortable: bool = True) -> str:
+    """The Markdown for a table whose rows are in <file>.csv, next to the page."""
+    options = ":class: sphinx-datatable\n" if sortable else ""
+    return f"```{{csv-table}}\n:file: {file}.csv\n:header-rows: 1\n{options}```"
+
+
+def org_body(org: str, software: list, docs: list, packages: dict, images: list) -> str:
+    """The sections of an organization's page: repositories, packages (per registry), images.
+
+    `packages` maps a registry's title to its rows. A table with no rows is left out, and so is its section.
+    """
+    repos = [
+        f"### {heading}\n\n{csv_table(file, sortable)}"
+        for heading, file, sortable, rows in (
+            ("Software", org, True, software),
+            ("Documentation and examples", f"{org}-docs", False, docs),
+        )
+        if rows
+    ]
+    registries = [f"### {title}\n\n{csv_table(f'{org}-{title.lower()}')}" for title, rows in packages.items() if rows]
+    sections = [("Repositories", len(software) + len(docs), LEGEND, repos)]
+    sections += [
+        ("Packages", sum(map(len, packages.values())), "Downloads are for the last month and include CI.", registries),
+        (
+            "Images",
+            len(images),
+            "Pulls are all-time Docker Hub counts and include CI; Quay publishes none.",
+            [csv_table(f"{org}-images")],
+        ),
+    ]
+    sections = [(title, count, note, tables) for title, count, note, tables in sections if count]
+    jump = " · ".join(f"[{title} ({count})](#{title.lower()})" for title, count, _, _ in sections)
+    parts = [jump] if len(sections) > 1 else []
+    parts += [f"## {title}\n\n{note}\n\n" + "\n\n".join(tables) for title, _, note, tables in sections]
     return "\n\n".join(parts)
 
 
@@ -457,12 +490,21 @@ def org_pages(data: Data) -> list[list]:
     for org in data.orgs:
         names = data.by_reach(name for name in data.repos if data.repos[name]["org"] == org)
         if not names:  # no public, non-archived repositories
-            summary[org] = [plain(org), 0, 0, 0, 0, 0, "", ""]
+            summary[org] = [plain(org), 0, 0, 0, 0, 0, 0, "", ""]
             continue
         software = repo_rows(data, [name for name in names if not data.out_of_the_way(name)])
         docs = docs_rows(data, [name for name in names if data.out_of_the_way(name)])
         write_csv(DOCS / "orgs" / f"{org}.csv", list(data.table[0]), software)
         write_csv(DOCS / "orgs" / f"{org}-docs.csv", ["repo", "kind", "live service"], docs)
+        packages = {}
+        for system, title in REGISTRIES.items():
+            found = [(name, p) for name, p in published(data, system) if data.repos[name]["org"] == org]
+            header, rows = without_org(PACKAGE_HEADER, [package_row(data, *item) for item in found])
+            write_csv(DOCS / "orgs" / f"{org}-{title.lower()}.csv", header, rows)
+            packages[title] = rows
+        org_images = [image for image in data.images if image["namespace"] == org]  # the namespace is the organization
+        header, image_table = without_org(IMAGE_HEADER, image_rows(data, org_images))
+        write_csv(DOCS / "orgs" / f"{org}-images.csv", header, image_table)
         (DOCS / "orgs" / org).mkdir()
         for name in names:
             (DOCS / f"{slug(name)}.md").write_text(repo_page(data, name), encoding="utf-8")
@@ -478,8 +520,7 @@ def org_pages(data: Data) -> list[list]:
             title=plain(org),
             summary=org_summary(org, counts),
             pages=pages,
-            legend=LEGEND,
-            tables=tables(org, software, docs, sortable=False),
+            body=org_body(org, software, docs, packages, image_table),
         )
         (DOCS / "orgs" / f"{org}.md").write_text(page, encoding="utf-8")
         top = data.repos[names[0]]
@@ -488,6 +529,7 @@ def org_pages(data: Data) -> list[list]:
             f"[{plain(org)}](/orgs/{org}.md)",
             counts["repos"],
             counts["packaged"],
+            len(org_images),
             counts["boundaries"],
             counts["services"],
             counts["tokens"],
@@ -514,6 +556,7 @@ def build() -> dict:
             "organization",
             "repos",
             "publish a package",
+            "container images",
             "security boundaries",
             "live services",
             "long-lived tokens",
@@ -531,7 +574,7 @@ def build() -> dict:
     )
 
     # Container images
-    write_csv(GENERATED / "images.csv", IMAGE_HEADER, image_rows(data))
+    write_csv(GENERATED / "images.csv", IMAGE_HEADER, image_rows(data, data.images))
 
     # All repositories: the home page
     software = [name for name in names if not data.out_of_the_way(name)]
@@ -543,7 +586,6 @@ def build() -> dict:
     return {
         "kinds": ", ".join(f"{kind} {count}" for kind, count in kinds),
         "legend": LEGEND,
-        "images": n(len(data.images)),
         "software": n(len(software)),
         "docs": n(len(docs)),
     }

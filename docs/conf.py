@@ -21,6 +21,7 @@ html_js_files = [("tables.js", {"priority": 800})]  # after DataTables, which is
 exclude_patterns = ["_build", "_generated"]
 
 myst_enable_extensions = ["substitution", "attrs_inline"]  # attrs_inline: [text]{.class}, for the row colors
+myst_heading_anchors = 3  # so that [Packages](#packages) links to a heading, as on the organization pages
 myst_substitutions = insights.build()
 
 # The big tables are sortable and searchable with DataTables, loaded from cdn.datatables.net.
