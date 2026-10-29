@@ -35,6 +35,13 @@ def test_ask_asks_again_when_the_answer_is_empty_or_invalid():
     assert len(model.requests) == 3
 
 
+def test_ask_rejects_free_text_longer_than_the_site_should_show():
+    too_long = json.loads(GOOD_ANSWER) | {"security_boundary": "authenticates users " * 20}
+    model = FakeModel(json.dumps(too_long), GOOD_ANSWER)
+    assert classify.ask(model, "deepseek-flash", "evidence").security_boundary is None
+    assert len(model.requests) == 2
+
+
 def test_thinking_is_turned_off_for_deepseek_only():
     deepseek, openai = FakeModel(GOOD_ANSWER), FakeModel(GOOD_ANSWER)
     classify.ask(deepseek, "deepseek-flash", "evidence")
