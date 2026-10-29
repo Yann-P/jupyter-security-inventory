@@ -6,8 +6,7 @@ repos qualify, the one the registry links to wins, then the one declaring it in 
 shallowest folder (deeper copies are usually stubs or vendored).
 
 Downloads: pypistats.org (last 30 days) and api.npmjs.org (last month).
-Dependents: deps.dev, largest count over the default and 12 newest versions.
-Last published: the date of the newest version on deps.dev.
+Dependents and last published date: deps.dev (see deps_dev).
 
 Usage: python scripts/3_packages.py    Output: output/packages.json
 """
@@ -81,16 +80,16 @@ def downloads(system: str, name: str) -> int | None:
     return body["downloads"] if body else None
 
 
-def deps_dev(system: str, name: str) -> dict | None:
-    """What deps.dev knows about a package, or None if it does not know it.
+def deps_dev(system: str, name: str) -> dict:
+    """What deps.dev knows about a package: how many packages depend on it, and when it was last published.
 
-    dependents: how many packages depend on it, the largest count over its default and 12 newest versions.
-    last_published: the date of its newest version.
+    dependents is the largest count over its default and 12 newest versions. Both are None if deps.dev does not
+    know the package.
     """
     package = f"systems/{system.lower()}/packages/{quote(pep503(name) if system == 'PYPI' else name)}"
     info = fetch_json(f"https://api.deps.dev/v3/{package}")
     if info is None:
-        return None
+        return {"dependents": None, "last_published": None}
     versions = info["versions"]
     newest = sorted(versions, key=lambda v: v.get("publishedAt") or "")[-12:]
     default = [v for v in versions if v.get("isDefault")]
@@ -160,8 +159,7 @@ def main():
     for package, deps in zip(packages, known):
         # One at a time, because pypistats.org limits how often we may call it.
         package["downloads_last_month"] = downloads(package["system"], package["name"])
-        package["dependents"] = deps["dependents"] if deps else None
-        package["last_published"] = deps["last_published"] if deps else None
+        package.update(deps)
 
     save_json(OUTPUT / "packages.json", {"accepted": packages, "rejected": rejected})
     n_repos = len({p["repo"] for p in packages})

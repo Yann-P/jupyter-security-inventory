@@ -16,7 +16,7 @@ Every public, non-archived repository. {{ legend }}
 
 ## Documentation and examples
 
-Documentation, examples and demos that publish no package and handle no logins.
+They publish no package and are not a security boundary.
 
 ```{csv-table}
 :file: _generated/repos-docs.csv

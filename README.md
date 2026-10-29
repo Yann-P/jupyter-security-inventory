@@ -22,7 +22,7 @@ Seven scripts run in order (they depend on each other):
 | 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
 | 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files and README | GitHub |
 | 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents and the date of the last release | PyPI, npm, pypistats.org, deps.dev |
-| 4. Images | Lists the container images published on Docker Hub and Quay and matches them to repositories, with the tag people pull, its digest, Docker Hub's pull count and the date it was pushed. Also writes `output/images.txt` for image scanners | Docker Hub, Quay |
+| 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |
 | 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
 | 6. Merge | Puts it all together and works out which repositories run each other's code | |
 | 7. Table | Writes `output/repos.csv` | |
@@ -44,8 +44,9 @@ Seven scripts run in order (they depend on each other):
 
 - **Repository type, and security boundary come from a language model**
 - Download counts include CI.
-- Images: ghcr.io is not covered, Quay has no pull counts, Docker Hub's are all-time, and only the default tag is
-  recorded. The namespaces are listed by hand in `scripts/4_images.py`. Many older images have no repository.
+- A package whose repository is not in this inventory is not seen: packages are found from the repositories.
+- Images: ghcr.io is not covered, Quay has no pull counts, and only the default tag is recorded. The namespaces are
+  listed by hand in `scripts/4_images.py`. Many older images have no repository.
 - "Used in CI" only sees the repositories listed here.
 
 ## Running it

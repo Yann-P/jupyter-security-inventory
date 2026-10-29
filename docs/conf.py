@@ -12,6 +12,9 @@ html_theme_options = {
     "github_url": "https://github.com/Yann-P/jupyter-security-inventory",
     "navbar_center": [],  # the navigation is in the left sidebar instead
     "secondary_sidebar_items": ["page-toc"],  # pages with a big table remove it, in their front matter
+    "footer_start": [],
+    "footer_end": [],
+    "show_prev_next": False,  # the order of the pages is the sidebar's, and means nothing across organizations
 }
 templates_path = ["_templates"]
 html_sidebars = {"**": ["site-nav"]}
@@ -26,6 +29,5 @@ myst_substitutions = insights.build()
 
 # The big tables are sortable and searchable with DataTables, loaded from cdn.datatables.net.
 datatables_version = "3.1.4"
-# Keep the order the tables are generated in. initComplete adds the organization dropdown to the tables that have
-# the filter-by-org class: filterByOrg is defined in _static/tables.js, so this has to stay a string.
-datatables_options = '{"pageLength": 50, "order": [], "initComplete": filterByOrg}'
+# Keep the order the tables are generated in. initTable is defined in _static/tables.js, so this has to stay a string.
+datatables_options = '{"pageLength": 50, "order": [], "initComplete": initTable}'

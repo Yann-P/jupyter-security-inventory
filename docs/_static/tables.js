@@ -10,6 +10,12 @@ DataTable.type("html-num-fmt", "detect", {
   allOf: (cell, settings) => cell === "" || numFmtAllOf(cell, settings),
 });
 
+/* A table of 10 rows or fewer, the smallest page size, fits on one page: its length menu, search box, count and
+   pager only take room. Sorting stays. */
+function hideControlsOfSmallTable(api) {
+  if (api.rows().count() <= 10) $(api.table().container()).find(".dt-layout-row:not(.dt-layout-table)").hide();
+}
+
 /* Adds an "organization" dropdown next to the search box of the tables that have the filter-by-org class.
    It filters the table's "organization" column. conf.py hands it to DataTables as its initComplete option. */
 function filterByOrg(settings) {
@@ -28,4 +34,10 @@ function filterByOrg(settings) {
       column.search(org ? "^" + $.fn.dataTable.util.escapeRegex(org) + "$" : "", true, false).draw();
     });
   $(api.table().container()).find(".dt-search").prepend(select);
+}
+
+/* conf.py hands this to DataTables as its initComplete option. */
+function initTable(settings) {
+  hideControlsOfSmallTable(settings.api);
+  filterByOrg(settings);
 }
