@@ -3,7 +3,7 @@
 conf.py calls build(), which:
 - writes short CSV tables into docs/_generated/ for the hand-written pages to include,
 - writes a page per organization (docs/orgs/<org>.md) and per repository (docs/orgs/<org>/<repo>.md),
-- returns the numbers the hand-written pages quote, as MyST substitutions: {{ repos }}, ...
+- returns the legend and the notes that the hand-written pages quote, as MyST substitutions: {{ legend }}, ...
 
 Text that comes from the repositories themselves (descriptions, labels, workflow contents) goes through
 plain(), so it always shows as text and never becomes HTML, a link or a substitution.
@@ -30,7 +30,11 @@ OUT_OF_THE_WAY = {"documentation", "example"}
 REGISTRY_TOKEN = re.compile(r"PYPI|TWINE|NPM", re.I)  # secret names that hold a PyPI or npm token
 # How step 3 names a registry -> its name on the site, which in lower case is also the name of its page.
 REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
-PACKAGE_HEADER = ["package", "organization", "repository", "kind", "downloads/month", "dependents", "security boundary"]
+# These tables are not tinted by kind: that is for repo tables.
+PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
+IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "all-time pulls", "last published"]
+DOWNLOADS_NOTE = "Downloads are for the last month and include CI."
+PULLS_NOTE = "Only Docker Hub has pull counts; they are all-time and include CI."
 
 REPO_PAGE = """# {title}
 
@@ -41,6 +45,7 @@ REPO_PAGE = """# {title}
 ## Reach
 
 - **Packages:** {packages}
+- **Container images:**{images}
 - **Run by other repositories:** {users}
 - **Live service:** {service}
 - **Security boundary:** {boundary}
@@ -65,9 +70,9 @@ html_theme.sidebar_secondary.remove: true
 
 # {title}
 
-{summary} {legend}
+{summary}
 
-{tables}
+{body}
 
 ```{{toctree}}
 :hidden:
@@ -105,6 +110,10 @@ def link(full_name: str) -> str:
     return f"[{plain(full_name)}](/{slug(full_name)}.md)"
 
 
+def org_link(org: str) -> str:
+    return f"[{plain(org)}](/orgs/{org}.md)"
+
+
 def links(full_names) -> str:
     return ", ".join(link(name) for name in full_names)
 
@@ -126,6 +135,14 @@ def package(top: str | None) -> str:
     return f"[]{{.fa-brands .{icon}}} [{plain(name)}]({registry_url(top)})"
 
 
+def image_cell(ref: str | None) -> str:
+    """'docker.io/jupyterhub/jupyterhub' -> the container logo and a link to the image on its registry."""
+    if not ref:
+        return ""
+    registry, path = ref.split("/", 1)
+    return f"[]{{.fa-brands .fa-docker}} {image_link(registry, path)}"
+
+
 def stats(top: str | None, count: str) -> str:
     """A download count that links to its history: pypistats.org for PyPI, npm-stat.com for npm."""
     if not top or not count:
@@ -136,6 +153,11 @@ def stats(top: str | None, count: str) -> str:
     else:
         url = f"https://npm-stat.com/charts.html?package={quote(name, safe='@/')}"
     return f"[{count}]({url})"
+
+
+def date(day: str | None) -> str:
+    """A date in a table, kept on one line: '2026-10-28' would otherwise wrap at its hyphens."""
+    return f"[{day}]{{.date}}" if day else ""
 
 
 def counted(number: int, one: str, many: str) -> str:
@@ -180,6 +202,7 @@ class Data:
         dataset = load("jupyter_repos.json")
         self.repos = {repo["full_name"]: repo for repo in dataset["repos"]}
         self.scan = load("scan.json")
+        self.images = load("images.json")["images"]
         self.orgs = load("repos.json")["orgs"]
         with open(OUTPUT / "repos.csv", encoding="utf-8") as file:
             self.table = list(csv.DictReader(file))
@@ -241,6 +264,8 @@ def repo_rows(data: Data, names) -> list[list]:
                 package(row["package"]),
                 stats(row["package"], grouped(row["downloads/month"])),
                 grouped(row["dependents"]),
+                image_cell(row["image"]),
+                grouped(row["all-time pulls"]),
                 grouped(row["used in CI"]),
                 plain(row["live service"]),
                 f"[{plain(row['security boundary'])}]{{.reason}}" if row["security boundary"] else "",
@@ -267,17 +292,15 @@ def published(data: Data, system: str) -> list[tuple[str, dict]]:
 
 
 def package_row(data: Data, name: str, p: dict) -> list:
-    """A row of PACKAGE_HEADER: the package, who publishes it, and the labels of the repo it comes from."""
-    key, org = f"{p['system']}:{p['name']}", data.repos[name]["org"]
-    boundary = data.label(name, "security_boundary")
+    """A row of PACKAGE_HEADER."""
+    key = f"{p['system']}:{p['name']}"
     return [
         f"[{plain(p['name'])}]({registry_url(key)})",
-        f"[{plain(org)}](/orgs/{org}.md)",
-        data.cell(name),
-        data.label(name, "kind"),
+        org_link(data.repos[name]["org"]),
+        link(name),
         stats(key, n(p["downloads_last_month"])),
         n(p["dependents"]),
-        f"[{plain(boundary)}]{{.reason}}" if boundary else "",
+        date(p["last_published"]),
     ]
 
 
@@ -303,14 +326,75 @@ def package_pages(data: Data) -> list[list]:
     return summary
 
 
-def tables(file: str, software: list, docs: list, sortable: bool) -> str:
-    """The Markdown for a page's two tables, leaving out an empty one."""
-    parts = []
-    for heading, suffix, rows in (("Software", "", software), ("Documentation and examples", "-docs", docs)):
-        if rows:
-            options = ":class: sphinx-datatable\n" if sortable or heading == "Software" else ""
-            parts.append(f"## {heading}\n\n```{{csv-table}}\n:file: {file}{suffix}.csv\n:header-rows: 1\n{options}```")
-    return "\n\n".join(parts)
+def image_path(image: dict) -> str:
+    return f"{image['namespace']}/{image['name']}"
+
+
+def image_link(registry: str, path: str) -> str:
+    """A link to an image on its registry. `path` is 'namespace/name'."""
+    url = f"https://hub.docker.com/r/{path}" if registry == "docker.io" else f"https://quay.io/repository/{path}"
+    return f"[{plain(path)}]({url})"
+
+
+def image_row(image: dict) -> list:
+    """A row of IMAGE_HEADER. The organization is the registry namespace."""
+    path = image_path(image)
+    return [
+        image_link(image["registry"], path),
+        image["registry"],
+        plain(image["tag"]),
+        org_link(image["namespace"]),
+        link(image["repo"]) if image["repo"] else "",
+        n(image["pulls"]) if image["pulls"] is not None else "",
+        date(image["last_published"]),
+    ]
+
+
+def image_rows(images: list[dict]) -> list[list]:
+    """Rows of IMAGE_HEADER, most pulled first. Quay publishes no pull counts, so its images come last."""
+    ordered = sorted(images, key=lambda i: (-(i["pulls"] or 0), i["registry"], i["namespace"], i["name"]))
+    return [image_row(image) for image in ordered]
+
+
+def without_org(header: list[str], rows: list[list]) -> tuple[list[str], list[list]]:
+    """The header and rows without the organization column, which is the same on every row of its page."""
+    at = header.index("organization")
+    return header[:at] + header[at + 1 :], [row[:at] + row[at + 1 :] for row in rows]
+
+
+def csv_table(file: str) -> str:
+    """The Markdown for a sortable table whose rows are in <file>.csv, next to the page."""
+    return f"```{{csv-table}}\n:file: {file}.csv\n:header-rows: 1\n:class: sphinx-datatable\n```"
+
+
+def org_body(org: str, software: list, docs: list, packages: dict, images: list) -> str:
+    """The sections of an organization's page: repositories, packages (a table per registry) and images.
+
+    `packages` maps a registry's title to its rows. A table with no rows is left out, and so is a section with no
+    table. With more than one section, a line of links to them comes first.
+    """
+    sections = [  # (title, note, [(subtitle, CSV file, rows)])
+        ("Repositories", LEGEND, [("Software", org, software), ("Documentation and examples", f"{org}-docs", docs)]),
+        ("Packages", DOWNLOADS_NOTE, [(title, f"{org}-{title.lower()}", rows) for title, rows in packages.items()]),
+        ("Images", PULLS_NOTE, [(None, f"{org}-images", images)]),
+    ]
+    links, parts = [], []
+    for title, note, tables in sections:
+        tables = [table for table in tables if table[2]]
+        if tables:
+            links.append(f"[{title} ({sum(len(rows) for *_, rows in tables)})](#{title.lower()})")
+            blocks = [f"### {sub}\n\n{csv_table(file)}" if sub else csv_table(file) for sub, file, _ in tables]
+            parts.append(f"## {title}\n\n{note}\n\n" + "\n\n".join(blocks))
+    return "\n\n".join(([" · ".join(links)] if len(links) > 1 else []) + parts)
+
+
+def image_item(image: dict) -> str:
+    """An image on its repo's page: where to find it, how often it was pulled and when it was last published."""
+    pulls = f", {n(image['pulls'])} pulls" if image["pulls"] is not None else ""
+    path = image_path(image)
+    return (
+        f"{image_link(image['registry'], path)} on {image['registry']}{pulls}, last published {image['last_published']}"
+    )
 
 
 def repo_page(data: Data, name: str) -> str:
@@ -358,17 +442,18 @@ def repo_page(data: Data, name: str) -> str:
     return REPO_PAGE.format(
         title=plain(name),
         name=name,
-        description=plain(repo["description"]) or "No description.",
+        description=plain(repo["description"]),
         kind=data.label(name, "kind"),
         commit=repo["content"]["commit"][:7],
         sha=repo["content"]["commit"],
         fork=" · fork" if repo["is_fork"] else "",
         packages="; ".join(
             f"{package(p['system'] + ':' + p['name'])}, {stats(p['system'] + ':' + p['name'], n(p['downloads_last_month']))} downloads/month,"
-            f" {n(p['dependents'])} dependents"
+            f" {n(p['dependents'])} dependents, last published {p['last_published'] or 'unknown'}"
             for p in repo["packages"]
         )
         or "none",
+        images="".join(f"\n  - {image_item(image)}" for image in repo["images"]) or " none",
         users=", ".join(users) or "none",
         service=plain(data.label(name, "deploys_live_service")) or "none",
         boundary=f"yes, it {plain(data.label(name, 'security_boundary'))}"
@@ -394,13 +479,22 @@ def org_pages(data: Data) -> list[list]:
     top_downloads = {}  # organization -> downloads of its most installed package, to sort by
     for org in data.orgs:
         names = data.by_reach(name for name in data.repos if data.repos[name]["org"] == org)
+        org_images = [image for image in data.images if image["namespace"] == org]
         if not names:  # no public, non-archived repositories
-            summary[org] = [plain(org), 0, 0, 0, 0, 0, "", ""]
+            summary[org] = [plain(org), 0, 0, len(org_images), 0, 0, 0, "", ""]
             continue
         software = repo_rows(data, [name for name in names if not data.out_of_the_way(name)])
         docs = docs_rows(data, [name for name in names if data.out_of_the_way(name)])
         write_csv(DOCS / "orgs" / f"{org}.csv", list(data.table[0]), software)
         write_csv(DOCS / "orgs" / f"{org}-docs.csv", ["repo", "kind", "live service"], docs)
+        packages = {}
+        for system, title in REGISTRIES.items():
+            found = [(name, p) for name, p in published(data, system) if data.repos[name]["org"] == org]
+            header, rows = without_org(PACKAGE_HEADER, [package_row(data, *item) for item in found])
+            write_csv(DOCS / "orgs" / f"{org}-{title.lower()}.csv", header, rows)
+            packages[title] = rows
+        header, image_table = without_org(IMAGE_HEADER, image_rows(org_images))
+        write_csv(DOCS / "orgs" / f"{org}-images.csv", header, image_table)
         (DOCS / "orgs" / org).mkdir()
         for name in names:
             (DOCS / f"{slug(name)}.md").write_text(repo_page(data, name), encoding="utf-8")
@@ -416,16 +510,16 @@ def org_pages(data: Data) -> list[list]:
             title=plain(org),
             summary=org_summary(org, counts),
             pages=pages,
-            legend=LEGEND,
-            tables=tables(org, software, docs, sortable=False),
+            body=org_body(org, software, docs, packages, image_table),
         )
         (DOCS / "orgs" / f"{org}.md").write_text(page, encoding="utf-8")
         top = data.repos[names[0]]
         top_downloads[org] = top["max_downloads_last_month"]
         summary[org] = [
-            f"[{plain(org)}](/orgs/{org}.md)",
+            org_link(org),
             counts["repos"],
             counts["packaged"],
+            len(org_images),
             counts["boundaries"],
             counts["services"],
             counts["tokens"],
@@ -452,6 +546,7 @@ def build() -> dict:
             "organization",
             "repos",
             "publish a package",
+            "container images",
             "security boundaries",
             "live services",
             "long-lived tokens",
@@ -468,16 +563,13 @@ def build() -> dict:
         package_pages(data),
     )
 
+    # Container images
+    write_csv(GENERATED / "images.csv", IMAGE_HEADER, image_rows(data.images))
+
     # All repositories: the home page
     software = [name for name in names if not data.out_of_the_way(name)]
     docs = [name for name in names if data.out_of_the_way(name)]
     write_csv(GENERATED / "repos.csv", list(data.table[0]), repo_rows(data, software))
     write_csv(GENERATED / "repos-docs.csv", ["repo", "kind", "live service"], docs_rows(data, docs))
 
-    kinds = Counter(data.label(name, "kind") for name in names).most_common()
-    return {
-        "kinds": ", ".join(f"{kind} {count}" for kind, count in kinds),
-        "legend": LEGEND,
-        "software": n(len(software)),
-        "docs": n(len(docs)),
-    }
+    return {"legend": LEGEND, "downloads_note": DOWNLOADS_NOTE, "pulls_note": PULLS_NOTE}

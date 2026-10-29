@@ -30,7 +30,13 @@ def make_repo(full_name, packages, boundary=None):
         "full_name": full_name,
         "org": org,
         "packages": [
-            {"system": system, "name": name, "downloads_last_month": downloads, "dependents": dependents}
+            {
+                "system": system,
+                "name": name,
+                "downloads_last_month": downloads,
+                "dependents": dependents,
+                "last_published": "2026-10-20",
+            }
             for system, name, downloads, dependents in packages
         ],
         "classification": {"kind": "package", "security_boundary": boundary},
@@ -61,12 +67,37 @@ def test_package_row_links_the_package_its_org_and_its_repo():
     assert insights.package_row(data, name, package) == [
         "[jupyterhub](https://pypi.org/project/jupyterhub/)",
         "[jupyterhub](/orgs/jupyterhub.md)",
-        "[[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)]{.kind-package}",
-        "package",
+        "[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)",
         "[1,234](https://pypistats.org/packages/jupyterhub)",
         "56",
-        "[runs multi\\-user servers]{.reason}",
+        "[2026-10-20]{.date}",
     ]
+
+
+def test_image_row_leaves_unknown_pulls_and_repository_empty():
+    image = {
+        "registry": "quay.io",
+        "namespace": "jupyterhub",
+        "name": "k8s-binderhub",
+        "tag": "1.0.0",
+        "pulls": None,
+        "last_published": "2026-07-01",
+        "repo": None,
+    }
+    row = dict(zip(insights.IMAGE_HEADER, insights.image_row(image)))
+    assert (row["all-time pulls"], row["repository"]) == ("", "")
+
+
+def test_image_rows_list_the_most_pulled_first_and_the_images_without_pull_counts_last():
+    base = {"namespace": "o", "tag": "1", "last_published": None, "repo": None}
+    rows = insights.image_rows(
+        [
+            base | {"registry": "quay.io", "name": "a", "pulls": None},
+            base | {"registry": "docker.io", "name": "b", "pulls": 5},
+            base | {"registry": "docker.io", "name": "c", "pulls": 9},
+        ]
+    )
+    assert [row[5] for row in rows] == ["9", "5", ""]
 
 
 def test_package_pages_write_a_table_per_registry_and_summarize_them(tmp_path, monkeypatch):
@@ -82,3 +113,20 @@ def test_package_pages_write_a_table_per_registry_and_summarize_them(tmp_path, m
     ]
     assert len((tmp_path / "packages-pypi.csv").read_text().splitlines()) == 2  # the header and notebook
     assert len((tmp_path / "packages-npm.csv").read_text().splitlines()) == 3
+
+
+def test_org_body_leaves_out_empty_tables_and_the_sections_they_were_in():
+    body = insights.org_body("o", software=[["r"]], docs=[], packages={"PyPI": [], "npm": [["p"]]}, images=[])
+    headings = [line for line in body.splitlines() if line.startswith("#")]
+    assert headings == ["## Repositories", "### Software", "## Packages", "### npm"]
+    assert body.startswith("[Repositories (1)](#repositories) · [Packages (1)](#packages)")  # no link to "Images"
+
+    body = insights.org_body("o", software=[["r"]], docs=[["d"]], packages={"PyPI": [], "npm": []}, images=[])
+    assert "(#" not in body  # a page with one section needs no links to its sections
+
+
+def test_org_body_lists_the_images_under_their_section_without_a_subheading():
+    body = insights.org_body("o", software=[["r"]], docs=[], packages={"PyPI": [], "npm": []}, images=[["i"], ["j"]])
+    headings = [line for line in body.splitlines() if line.startswith("#")]
+    assert headings == ["## Repositories", "### Software", "## Images"]
+    assert body.startswith("[Repositories (1)](#repositories) · [Images (2)](#images)")

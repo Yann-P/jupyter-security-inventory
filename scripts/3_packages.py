@@ -6,7 +6,7 @@ repos qualify, the one the registry links to wins, then the one declaring it in 
 shallowest folder (deeper copies are usually stubs or vendored).
 
 Downloads: pypistats.org (last 30 days) and api.npmjs.org (last month).
-Dependents: deps.dev, largest count over the default and 12 newest versions.
+Dependents and last published date: deps.dev (see deps_dev).
 
 Usage: python scripts/3_packages.py    Output: output/packages.json
 """
@@ -80,12 +80,16 @@ def downloads(system: str, name: str) -> int | None:
     return body["downloads"] if body else None
 
 
-def dependents(system: str, name: str) -> int | None:
-    """How many packages depend on this one: the largest count over its default and 12 newest versions."""
+def deps_dev(system: str, name: str) -> dict:
+    """What deps.dev knows about a package: how many packages depend on it, and when it was last published.
+
+    dependents is the largest count over its default and 12 newest versions. Both are None if deps.dev does not
+    know the package.
+    """
     package = f"systems/{system.lower()}/packages/{quote(pep503(name) if system == 'PYPI' else name)}"
     info = fetch_json(f"https://api.deps.dev/v3/{package}")
     if info is None:
-        return None
+        return {"dependents": None, "last_published": None}
     versions = info["versions"]
     newest = sorted(versions, key=lambda v: v.get("publishedAt") or "")[-12:]
     default = [v for v in versions if v.get("isDefault")]
@@ -93,7 +97,8 @@ def dependents(system: str, name: str) -> int | None:
     for version in sorted({v["versionKey"]["version"] for v in newest + default}):
         answer = fetch_json(f"https://api.deps.dev/v3alpha/{package}/versions/{quote(version)}:dependents") or {}
         counts.append(answer.get("dependentCount", 0))
-    return max(counts, default=0)
+    last_published = max((v.get("publishedAt") or "" for v in versions), default="")[:10]
+    return {"dependents": max(counts, default=0), "last_published": last_published or None}
 
 
 def find_candidates(repos: dict, scan: dict) -> dict:
@@ -150,11 +155,11 @@ def main():
     packages, rejected = pick_publishers(candidates, entries, repos, set(inventory["orgs"]))
 
     with ThreadPoolExecutor(8) as pool:
-        counts = list(pool.map(lambda p: dependents(p["system"], p["name"]), packages))
-    for package, count in zip(packages, counts):
+        known = list(pool.map(lambda p: deps_dev(p["system"], p["name"]), packages))
+    for package, deps in zip(packages, known):
         # One at a time, because pypistats.org limits how often we may call it.
         package["downloads_last_month"] = downloads(package["system"], package["name"])
-        package["dependents"] = count
+        package.update(deps)
 
     save_json(OUTPUT / "packages.json", {"accepted": packages, "rejected": rejected})
     n_repos = len({p["repo"] for p in packages})

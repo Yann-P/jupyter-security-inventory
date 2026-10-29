@@ -1,11 +1,11 @@
-"""Step 5: merge steps 1-4 into output/jupyter_repos.json, the file step 6 reads.
+"""Step 6: merge steps 1-5 into output/jupyter_repos.json, the file step 7 reads.
 
 used_by lists the repos that run this repo's code:
   ci         their workflows use its actions through a tag or branch
   ci_pinned  same, but pinned to a commit SHA (a compromise does not reach them by itself)
   build      their pyproject.toml build requirements include one of its packages
 
-Usage: python scripts/5_build_dataset.py    Output: output/jupyter_repos.json
+Usage: python scripts/6_build_dataset.py    Output: output/jupyter_repos.json
 """
 
 import re
@@ -41,6 +41,7 @@ def main():
     inventory = load_json(OUTPUT / "repos.json")
     scan = load_json(OUTPUT / "scan.json")
     packages = load_json(OUTPUT / "packages.json")["accepted"]
+    images = load_json(OUTPUT / "images.json")["images"]
     labels = load_json(OUTPUT / "classification.json")
     ci_refs, build_users = find_users(inventory["repos"], scan, packages)
 
@@ -49,11 +50,15 @@ def main():
         name = repo["full_name"]
         mine = [p for p in packages if p["repo"] == name]
         mine.sort(key=lambda p: -(p["downloads_last_month"] or 0))
+        built = sorted((i for i in images if i["repo"] == name), key=lambda i: -(i["pulls"] or 0))
         refs = ci_refs.get(name, {})
         records.append(
             {
                 **repo,
                 "packages": [{key: value for key, value in p.items() if key != "repo"} for p in mine],
+                "images": [{key: value for key, value in i.items() if key != "repo"} for i in built],
+                "top_image": f"{built[0]['registry']}/{built[0]['namespace']}/{built[0]['name']}" if built else None,
+                "top_image_pulls": built[0]["pulls"] if built else None,
                 "top_package": f"{mine[0]['system']}:{mine[0]['name']}" if mine else None,
                 "max_downloads_last_month": max((p["downloads_last_month"] or 0 for p in mine), default=0),
                 "top_package_dependents": (mine[0]["dependents"] or 0) if mine else 0,

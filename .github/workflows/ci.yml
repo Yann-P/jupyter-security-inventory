@@ -24,8 +24,8 @@ jobs:
       - run: pytest
       - name: Check that output/jupyter_repos.json and output/repos.csv are up to date
         run: |
-          python scripts/5_build_dataset.py
-          python scripts/6_table.py
+          python scripts/6_build_dataset.py
+          python scripts/7_table.py
           git diff --exit-code output/jupyter_repos.json output/repos.csv || {
             echo "::error::Outputs are out of date: run the two commands above and commit the result."
             exit 1

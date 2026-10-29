@@ -4,7 +4,7 @@ html_theme.sidebar_secondary.remove: true
 
 # All Jupyter Repositories
 
-Every public, non-archived repository. {{ legend }}.
+Every public, non-archived repository. {{ legend }}
 
 ## Software
 
@@ -16,7 +16,7 @@ Every public, non-archived repository. {{ legend }}.
 
 ## Documentation and examples
 
-Documentation, examples and demos that publish no package and handle no logins.
+They publish no package and are not a security boundary.
 
 ```{csv-table}
 :file: _generated/repos-docs.csv
@@ -30,5 +30,6 @@ Documentation, examples and demos that publish no package and handle no logins.
 self
 orgs
 packages
+images
 about
 ```
