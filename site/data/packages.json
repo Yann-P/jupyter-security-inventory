@@ -1,0 +1,5092 @@
+[
+  {
+    "id": "NPM:@jupyter-ai/agent-lite",
+    "system": "NPM",
+    "name": "@jupyter-ai/agent-lite",
+    "repo": "jupyterlab/jupyter-ai-lite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 0,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-ai/jupyternaut-lite",
+    "system": "NPM",
+    "name": "@jupyter-ai/jupyternaut-lite",
+    "repo": "jupyterlab/jupyter-ai-lite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 0,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/application",
+    "system": "NPM",
+    "name": "@jupyter-notebook/application",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 7892,
+    "dependents": 25,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/application-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/application-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2839,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/console-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/console-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 4472,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/docmanager-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/docmanager-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3716,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/documentsearch-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/documentsearch-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2618,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/help-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/help-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 4562,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/lab-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/lab-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3669,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/notebook-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/notebook-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3617,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/terminal-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/terminal-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3399,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/tree",
+    "system": "NPM",
+    "name": "@jupyter-notebook/tree",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3525,
+    "dependents": 6,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/tree-extension",
+    "system": "NPM",
+    "name": "@jupyter-notebook/tree-extension",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2449,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-notebook/ui-components",
+    "system": "NPM",
+    "name": "@jupyter-notebook/ui-components",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2453,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-server/resource-usage",
+    "system": "NPM",
+    "name": "@jupyter-server/resource-usage",
+    "repo": "jupyter-server/jupyter-resource-usage",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2273,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/base",
+    "system": "NPM",
+    "name": "@jupyter-widgets/base",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 263199,
+    "dependents": 227,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/base-manager",
+    "system": "NPM",
+    "name": "@jupyter-widgets/base-manager",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 108297,
+    "dependents": 60,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/controls",
+    "system": "NPM",
+    "name": "@jupyter-widgets/controls",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 174617,
+    "dependents": 73,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/html-manager",
+    "system": "NPM",
+    "name": "@jupyter-widgets/html-manager",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 49511,
+    "dependents": 32,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/jupyterlab-manager",
+    "system": "NPM",
+    "name": "@jupyter-widgets/jupyterlab-manager",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 97265,
+    "dependents": 49,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/jupyterlab-sidecar",
+    "system": "NPM",
+    "name": "@jupyter-widgets/jupyterlab-sidecar",
+    "repo": "jupyter-widgets/jupyterlab-sidecar",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 153,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/midicontrols",
+    "system": "NPM",
+    "name": "@jupyter-widgets/midicontrols",
+    "repo": "jupyter-widgets/midicontrols",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 53,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/output",
+    "system": "NPM",
+    "name": "@jupyter-widgets/output",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 128680,
+    "dependents": 56,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter-widgets/schema",
+    "system": "NPM",
+    "name": "@jupyter-widgets/schema",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 53231,
+    "dependents": 38,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/builder",
+    "system": "NPM",
+    "name": "@jupyter/builder",
+    "repo": "jupyterlab/jupyter-builder",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 110759,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/chat",
+    "system": "NPM",
+    "name": "@jupyter/chat",
+    "repo": "jupyterlab/jupyter-chat",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 4279,
+    "dependents": 13,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/collaboration",
+    "system": "NPM",
+    "name": "@jupyter/collaboration",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 53300,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/collaboration-extension",
+    "system": "NPM",
+    "name": "@jupyter/collaboration-extension",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 39622,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/collaborative-drive",
+    "system": "NPM",
+    "name": "@jupyter/collaborative-drive",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 44256,
+    "dependents": 26,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/docprovider",
+    "system": "NPM",
+    "name": "@jupyter/docprovider",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 45405,
+    "dependents": 15,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/docprovider-extension",
+    "system": "NPM",
+    "name": "@jupyter/docprovider-extension",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 36156,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/eslint-plugin",
+    "system": "NPM",
+    "name": "@jupyter/eslint-plugin",
+    "repo": "jupyterlab/eslint-plugin",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 102188,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/nbgrader",
+    "system": "NPM",
+    "name": "@jupyter/nbgrader",
+    "repo": "jupyter/nbgrader",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 68,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyter/ydoc",
+    "system": "NPM",
+    "name": "@jupyter/ydoc",
+    "repo": "jupyter-server/jupyter_ydoc",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 616652,
+    "dependents": 1003,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterhub/binderhub-client",
+    "system": "NPM",
+    "name": "@jupyterhub/binderhub-client",
+    "repo": "jupyterhub/binderhub",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 177,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterhub/binderhub-react-components",
+    "system": "NPM",
+    "name": "@jupyterhub/binderhub-react-components",
+    "repo": "jupyterhub/binderhub",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 36,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterhub/jupyter-server-proxy",
+    "system": "NPM",
+    "name": "@jupyterhub/jupyter-server-proxy",
+    "repo": "jupyterhub/jupyter-server-proxy",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 100,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/application",
+    "system": "NPM",
+    "name": "@jupyterlab/application",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 330578,
+    "dependents": 626,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/application-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/application-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 126363,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/apputils",
+    "system": "NPM",
+    "name": "@jupyterlab/apputils",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 445042,
+    "dependents": 692,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/apputils-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/apputils-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 126970,
+    "dependents": 20,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/attachments",
+    "system": "NPM",
+    "name": "@jupyterlab/attachments",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 278231,
+    "dependents": 322,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/audio-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/audio-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 35444,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/buildutils",
+    "system": "NPM",
+    "name": "@jupyterlab/buildutils",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 74854,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/cell-toolbar",
+    "system": "NPM",
+    "name": "@jupyterlab/cell-toolbar",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 121349,
+    "dependents": 23,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/cell-toolbar-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/cell-toolbar-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 118984,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/cells",
+    "system": "NPM",
+    "name": "@jupyterlab/cells",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 282390,
+    "dependents": 319,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/celltags-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/celltags-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 92819,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/codeeditor",
+    "system": "NPM",
+    "name": "@jupyterlab/codeeditor",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 365134,
+    "dependents": 660,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/codemirror",
+    "system": "NPM",
+    "name": "@jupyterlab/codemirror",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 328845,
+    "dependents": 365,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/codemirror-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/codemirror-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 129236,
+    "dependents": 20,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/commenting-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/commenting-extension",
+    "repo": "jupyterlab/jupyterlab-commenting",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 129,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/completer",
+    "system": "NPM",
+    "name": "@jupyterlab/completer",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 145229,
+    "dependents": 54,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/completer-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/completer-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 125893,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/console",
+    "system": "NPM",
+    "name": "@jupyterlab/console",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 205832,
+    "dependents": 91,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/console-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/console-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 90658,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/core-meta",
+    "system": "NPM",
+    "name": "@jupyterlab/core-meta",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 118257,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/coreutils",
+    "system": "NPM",
+    "name": "@jupyterlab/coreutils",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 681464,
+    "dependents": 1005,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/csvviewer",
+    "system": "NPM",
+    "name": "@jupyterlab/csvviewer",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 126069,
+    "dependents": 20,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/csvviewer-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/csvviewer-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 124259,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/debugger",
+    "system": "NPM",
+    "name": "@jupyterlab/debugger",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 95342,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/debugger-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/debugger-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 57414,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/docmanager",
+    "system": "NPM",
+    "name": "@jupyterlab/docmanager",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 305458,
+    "dependents": 377,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/docmanager-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/docmanager-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 129962,
+    "dependents": 26,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/docregistry",
+    "system": "NPM",
+    "name": "@jupyterlab/docregistry",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 340992,
+    "dependents": 647,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/documentsearch",
+    "system": "NPM",
+    "name": "@jupyterlab/documentsearch",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 274847,
+    "dependents": 372,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/documentsearch-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/documentsearch-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 125519,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/extensionmanager",
+    "system": "NPM",
+    "name": "@jupyterlab/extensionmanager",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 60318,
+    "dependents": 8,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/extensionmanager-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/extensionmanager-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 59974,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/fasta-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/fasta-extension",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 222,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/filebrowser",
+    "system": "NPM",
+    "name": "@jupyterlab/filebrowser",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 297728,
+    "dependents": 366,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/filebrowser-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/filebrowser-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 125539,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/fileeditor",
+    "system": "NPM",
+    "name": "@jupyterlab/fileeditor",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 190469,
+    "dependents": 89,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/fileeditor-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/fileeditor-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 125246,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/galata",
+    "system": "NPM",
+    "name": "@jupyterlab/galata",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 39432,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/geojson-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/geojson-extension",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1164,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/git",
+    "system": "NPM",
+    "name": "@jupyterlab/git",
+    "repo": "jupyterlab/jupyterlab-git",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2847,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/github",
+    "system": "NPM",
+    "name": "@jupyterlab/github",
+    "repo": "jupyterlab/jupyterlab-github",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 250,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/hdf5",
+    "system": "NPM",
+    "name": "@jupyterlab/hdf5",
+    "repo": "jupyterlab/jupyterlab-hdf5",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 230,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/help-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/help-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 61007,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/htmlviewer",
+    "system": "NPM",
+    "name": "@jupyterlab/htmlviewer",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 96188,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/htmlviewer-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/htmlviewer-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 94485,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/hub-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/hub-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 59953,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/imageviewer",
+    "system": "NPM",
+    "name": "@jupyterlab/imageviewer",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 95285,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/imageviewer-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/imageviewer-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 95026,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/inspector",
+    "system": "NPM",
+    "name": "@jupyterlab/inspector",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 97996,
+    "dependents": 6,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/inspector-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/inspector-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 90654,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/javascript-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/javascript-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 140061,
+    "dependents": 32,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/json-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/json-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 129023,
+    "dependents": 34,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/katex-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/katex-extension",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 230,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/latex",
+    "system": "NPM",
+    "name": "@jupyterlab/latex",
+    "repo": "jupyterlab/jupyterlab-latex",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 347,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/launcher",
+    "system": "NPM",
+    "name": "@jupyterlab/launcher",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 186894,
+    "dependents": 99,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/launcher-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/launcher-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 86169,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/logconsole",
+    "system": "NPM",
+    "name": "@jupyterlab/logconsole",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 185513,
+    "dependents": 98,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/logconsole-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/logconsole-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 93586,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/lsp",
+    "system": "NPM",
+    "name": "@jupyterlab/lsp",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 244819,
+    "dependents": 320,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/lsp-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/lsp-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 107793,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/mainmenu",
+    "system": "NPM",
+    "name": "@jupyterlab/mainmenu",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 216006,
+    "dependents": 170,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/mainmenu-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/mainmenu-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 126929,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/markdownviewer",
+    "system": "NPM",
+    "name": "@jupyterlab/markdownviewer",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 129241,
+    "dependents": 36,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/markdownviewer-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/markdownviewer-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 126500,
+    "dependents": 19,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/markedparser-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/markedparser-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 210919,
+    "dependents": 301,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/mathjax-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/mathjax-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 109871,
+    "dependents": 20,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/mathjax2-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/mathjax2-extension",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 18325,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/mermaid",
+    "system": "NPM",
+    "name": "@jupyterlab/mermaid",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 210496,
+    "dependents": 306,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/mermaid-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/mermaid-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 76986,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/metadataform",
+    "system": "NPM",
+    "name": "@jupyterlab/metadataform",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 110108,
+    "dependents": 21,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/metadataform-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/metadataform-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 78504,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/metapackage",
+    "system": "NPM",
+    "name": "@jupyterlab/metapackage",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 17377,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/nbconvert-css",
+    "system": "NPM",
+    "name": "@jupyterlab/nbconvert-css",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 46448,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/nbformat",
+    "system": "NPM",
+    "name": "@jupyterlab/nbformat",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 908126,
+    "dependents": 1032,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/notebook",
+    "system": "NPM",
+    "name": "@jupyterlab/notebook",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 279130,
+    "dependents": 295,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/notebook-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/notebook-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 126844,
+    "dependents": 19,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/observables",
+    "system": "NPM",
+    "name": "@jupyterlab/observables",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 511856,
+    "dependents": 714,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/outputarea",
+    "system": "NPM",
+    "name": "@jupyterlab/outputarea",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 310321,
+    "dependents": 336,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/pdf-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/pdf-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 94906,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/plugin-playground",
+    "system": "NPM",
+    "name": "@jupyterlab/plugin-playground",
+    "repo": "jupyterlab/plugin-playground",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 181,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/pluginmanager",
+    "system": "NPM",
+    "name": "@jupyterlab/pluginmanager",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 81598,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/pluginmanager-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/pluginmanager-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 76311,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/property-inspector",
+    "system": "NPM",
+    "name": "@jupyterlab/property-inspector",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 124694,
+    "dependents": 22,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/pullrequests",
+    "system": "NPM",
+    "name": "@jupyterlab/pullrequests",
+    "repo": "jupyterlab/pull-requests",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 174,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/rendermime",
+    "system": "NPM",
+    "name": "@jupyterlab/rendermime",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 371290,
+    "dependents": 670,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/rendermime-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/rendermime-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 122798,
+    "dependents": 20,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/rendermime-interfaces",
+    "system": "NPM",
+    "name": "@jupyterlab/rendermime-interfaces",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 400273,
+    "dependents": 1072,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/running",
+    "system": "NPM",
+    "name": "@jupyterlab/running",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 127556,
+    "dependents": 24,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/running-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/running-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 98476,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/scheduler",
+    "system": "NPM",
+    "name": "@jupyterlab/scheduler",
+    "repo": "jupyter-server/jupyter-scheduler",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 365,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/services",
+    "system": "NPM",
+    "name": "@jupyterlab/services",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 693334,
+    "dependents": 998,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/services-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/services-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 72457,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/settingeditor",
+    "system": "NPM",
+    "name": "@jupyterlab/settingeditor",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 100132,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/settingeditor-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/settingeditor-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 97065,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/settingregistry",
+    "system": "NPM",
+    "name": "@jupyterlab/settingregistry",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 583684,
+    "dependents": 1013,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/shortcuts-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/shortcuts-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 122769,
+    "dependents": 10,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/statedb",
+    "system": "NPM",
+    "name": "@jupyterlab/statedb",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 576085,
+    "dependents": 1016,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/statusbar",
+    "system": "NPM",
+    "name": "@jupyterlab/statusbar",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 390984,
+    "dependents": 693,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/statusbar-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/statusbar-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 86607,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/template",
+    "system": "NPM",
+    "name": "@jupyterlab/template",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3012,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/terminal",
+    "system": "NPM",
+    "name": "@jupyterlab/terminal",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 126624,
+    "dependents": 60,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/terminal-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/terminal-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 61807,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/testutils",
+    "system": "NPM",
+    "name": "@jupyterlab/testutils",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 83817,
+    "dependents": 13,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/theme-dark-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/theme-dark-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 95996,
+    "dependents": 22,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/theme-dark-high-contrast-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/theme-dark-high-contrast-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 42044,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/theme-light-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/theme-light-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 136399,
+    "dependents": 38,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/toc",
+    "system": "NPM",
+    "name": "@jupyterlab/toc",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 264626,
+    "dependents": 339,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/toc-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/toc-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 120476,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/tooltip",
+    "system": "NPM",
+    "name": "@jupyterlab/tooltip",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 117174,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/tooltip-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/tooltip-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 96344,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/translation",
+    "system": "NPM",
+    "name": "@jupyterlab/translation",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 375633,
+    "dependents": 705,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/translation-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/translation-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 122109,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/ui-components",
+    "system": "NPM",
+    "name": "@jupyterlab/ui-components",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 411207,
+    "dependents": 700,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/ui-components-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/ui-components-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 124434,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/ui-profiler",
+    "system": "NPM",
+    "name": "@jupyterlab/ui-profiler",
+    "repo": "jupyterlab/ui-profiler",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 140,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/vega3-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/vega3-extension",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2402,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/vega5-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/vega5-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 96150,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/video-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/video-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 35248,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/workspaces",
+    "system": "NPM",
+    "name": "@jupyterlab/workspaces",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 106908,
+    "dependents": 22,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlab/workspaces-extension",
+    "system": "NPM",
+    "name": "@jupyterlab/workspaces-extension",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 71177,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/application",
+    "system": "NPM",
+    "name": "@jupyterlite/application",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3461,
+    "dependents": 14,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/application-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/application-extension",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1659,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/apputils",
+    "system": "NPM",
+    "name": "@jupyterlite/apputils",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2230,
+    "dependents": 12,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/apputils-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/apputils-extension",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1209,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/cockle",
+    "system": "NPM",
+    "name": "@jupyterlite/cockle",
+    "repo": "jupyterlite/cockle",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1995,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/contents",
+    "system": "NPM",
+    "name": "@jupyterlite/contents",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 29055,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/echo-kernel",
+    "system": "NPM",
+    "name": "@jupyterlite/echo-kernel",
+    "repo": "jupyterlite/echo-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 65,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/javascript-kernel",
+    "system": "NPM",
+    "name": "@jupyterlite/javascript-kernel",
+    "repo": "jupyterlite/javascript-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1556,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/javascript-kernel-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/javascript-kernel-extension",
+    "repo": "jupyterlite/javascript-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 627,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/kernel",
+    "system": "NPM",
+    "name": "@jupyterlite/kernel",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 35725,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/litegitpuller",
+    "system": "NPM",
+    "name": "@jupyterlite/litegitpuller",
+    "repo": "jupyterlite/litegitpuller",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 97,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/localforage",
+    "system": "NPM",
+    "name": "@jupyterlite/localforage",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 36620,
+    "dependents": 27,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/notebook-application-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/notebook-application-extension",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 971,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/p5-kernel",
+    "system": "NPM",
+    "name": "@jupyterlite/p5-kernel",
+    "repo": "jupyterlite/p5-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 129,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/p5-kernel-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/p5-kernel-extension",
+    "repo": "jupyterlite/p5-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 129,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/pyodide-kernel",
+    "system": "NPM",
+    "name": "@jupyterlite/pyodide-kernel",
+    "repo": "jupyterlite/pyodide-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 22380,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/pyodide-kernel-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/pyodide-kernel-extension",
+    "repo": "jupyterlite/pyodide-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 18876,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/repl-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/repl-extension",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1159,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/server",
+    "system": "NPM",
+    "name": "@jupyterlite/server",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 22386,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/services",
+    "system": "NPM",
+    "name": "@jupyterlite/services",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2718,
+    "dependents": 26,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/services-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/services-extension",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1281,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/session",
+    "system": "NPM",
+    "name": "@jupyterlite/session",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 22162,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/settings",
+    "system": "NPM",
+    "name": "@jupyterlite/settings",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 22076,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/terminal",
+    "system": "NPM",
+    "name": "@jupyterlite/terminal",
+    "repo": "jupyterlite/terminal",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1036,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/types",
+    "system": "NPM",
+    "name": "@jupyterlite/types",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2607,
+    "dependents": 13,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/ui-components",
+    "system": "NPM",
+    "name": "@jupyterlite/ui-components",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1768,
+    "dependents": 6,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/webrtc-docprovider",
+    "system": "NPM",
+    "name": "@jupyterlite/webrtc-docprovider",
+    "repo": "jupyterlite/jupyterlab-webrtc-docprovider",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 42,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/xeus",
+    "system": "NPM",
+    "name": "@jupyterlite/xeus",
+    "repo": "jupyterlite/xeus",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1208,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/xeus-core",
+    "system": "NPM",
+    "name": "@jupyterlite/xeus-core",
+    "repo": "jupyterlite/xeus",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1167,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@jupyterlite/xeus-extension",
+    "system": "NPM",
+    "name": "@jupyterlite/xeus-extension",
+    "repo": "jupyterlite/xeus",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 888,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/algorithm",
+    "system": "NPM",
+    "name": "@lumino/algorithm",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 829548,
+    "dependents": 1437,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/application",
+    "system": "NPM",
+    "name": "@lumino/application",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 417057,
+    "dependents": 665,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/buildutils",
+    "system": "NPM",
+    "name": "@lumino/buildutils",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 111,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/collections",
+    "system": "NPM",
+    "name": "@lumino/collections",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 752320,
+    "dependents": 1331,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/commands",
+    "system": "NPM",
+    "name": "@lumino/commands",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 751912,
+    "dependents": 1394,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/coreutils",
+    "system": "NPM",
+    "name": "@lumino/coreutils",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1092229,
+    "dependents": 1430,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/datagrid",
+    "system": "NPM",
+    "name": "@lumino/datagrid",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 255256,
+    "dependents": 37,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/default-theme",
+    "system": "NPM",
+    "name": "@lumino/default-theme",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 50610,
+    "dependents": 19,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/disposable",
+    "system": "NPM",
+    "name": "@lumino/disposable",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 767517,
+    "dependents": 1408,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/domutils",
+    "system": "NPM",
+    "name": "@lumino/domutils",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 756575,
+    "dependents": 1395,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/dragdrop",
+    "system": "NPM",
+    "name": "@lumino/dragdrop",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 772176,
+    "dependents": 1306,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/keyboard",
+    "system": "NPM",
+    "name": "@lumino/keyboard",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 745618,
+    "dependents": 1395,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/messaging",
+    "system": "NPM",
+    "name": "@lumino/messaging",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 758007,
+    "dependents": 1330,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/polling",
+    "system": "NPM",
+    "name": "@lumino/polling",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 560642,
+    "dependents": 1079,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/properties",
+    "system": "NPM",
+    "name": "@lumino/properties",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 743618,
+    "dependents": 1395,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/signaling",
+    "system": "NPM",
+    "name": "@lumino/signaling",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 774983,
+    "dependents": 1409,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/virtualdom",
+    "system": "NPM",
+    "name": "@lumino/virtualdom",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 750042,
+    "dependents": 1395,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@lumino/widgets",
+    "system": "NPM",
+    "name": "@lumino/widgets",
+    "repo": "jupyterlab/lumino",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 817478,
+    "dependents": 983,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/anywidget",
+    "system": "NPM",
+    "name": "@myst-theme/anywidget",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1250,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/common",
+    "system": "NPM",
+    "name": "@myst-theme/common",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 10902,
+    "dependents": 25,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/diagrams",
+    "system": "NPM",
+    "name": "@myst-theme/diagrams",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 5066,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/frontmatter",
+    "system": "NPM",
+    "name": "@myst-theme/frontmatter",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1090,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/icons",
+    "system": "NPM",
+    "name": "@myst-theme/icons",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 603,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/jupyter",
+    "system": "NPM",
+    "name": "@myst-theme/jupyter",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 767,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/landing-pages",
+    "system": "NPM",
+    "name": "@myst-theme/landing-pages",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1397,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/providers",
+    "system": "NPM",
+    "name": "@myst-theme/providers",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 11055,
+    "dependents": 22,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/search",
+    "system": "NPM",
+    "name": "@myst-theme/search",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 8454,
+    "dependents": 26,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/search-minisearch",
+    "system": "NPM",
+    "name": "@myst-theme/search-minisearch",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1524,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/site",
+    "system": "NPM",
+    "name": "@myst-theme/site",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 720,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@myst-theme/styles",
+    "system": "NPM",
+    "name": "@myst-theme/styles",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2144,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@voila-dashboards/jupyterlab-gridstack",
+    "system": "NPM",
+    "name": "@voila-dashboards/jupyterlab-gridstack",
+    "repo": "voila-dashboards/voila-gridstack",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 114,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@voila-dashboards/jupyterlab-preview",
+    "system": "NPM",
+    "name": "@voila-dashboards/jupyterlab-preview",
+    "repo": "voila-dashboards/voila",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 340,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@voila-dashboards/voila",
+    "system": "NPM",
+    "name": "@voila-dashboards/voila",
+    "repo": "voila-dashboards/voila",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 723,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@voila-dashboards/widgets-manager7",
+    "system": "NPM",
+    "name": "@voila-dashboards/widgets-manager7",
+    "repo": "voila-dashboards/voila",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 93,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:@voila-dashboards/widgets-manager8",
+    "system": "NPM",
+    "name": "@voila-dashboards/widgets-manager8",
+    "repo": "voila-dashboards/voila",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 555,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:citation-js-utils",
+    "system": "NPM",
+    "name": "citation-js-utils",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2490,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:configurable-http-proxy",
+    "system": "NPM",
+    "name": "configurable-http-proxy",
+    "repo": "jupyterhub/configurable-http-proxy",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 38690,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:ipydatagrid",
+    "system": "NPM",
+    "name": "ipydatagrid",
+    "repo": "jupyter-widgets/ipydatagrid",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 509,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jats-to-myst",
+    "system": "NPM",
+    "name": "jats-to-myst",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 238,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jtex",
+    "system": "NPM",
+    "name": "jtex",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2258,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyter-book",
+    "system": "NPM",
+    "name": "jupyter-book",
+    "repo": "jupyter-book/jupyter-book",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2458,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyter-leaflet",
+    "system": "NPM",
+    "name": "jupyter-leaflet",
+    "repo": "jupyter-widgets/ipyleaflet",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2633,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyter-threejs",
+    "system": "NPM",
+    "name": "jupyter-threejs",
+    "repo": "jupyter-widgets/pythreejs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 439,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyterhub-deps",
+    "system": "NPM",
+    "name": "jupyterhub-deps",
+    "repo": "jupyterhub/jupyterhub",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 23,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyterlab",
+    "system": "NPM",
+    "name": "jupyterlab",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 741,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyterlab-chat",
+    "system": "NPM",
+    "name": "jupyterlab-chat",
+    "repo": "jupyterlab/jupyter-chat",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1376,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyterlab-chat-extension",
+    "system": "NPM",
+    "name": "jupyterlab-chat-extension",
+    "repo": "jupyterlab/jupyter-chat",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 493,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyterlab-commenting",
+    "system": "NPM",
+    "name": "jupyterlab-commenting",
+    "repo": "jupyterlab/jupyterlab-commenting",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 23,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyterlab-myst",
+    "system": "NPM",
+    "name": "jupyterlab-myst",
+    "repo": "jupyter-book/jupyterlab-myst",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 458,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:jupyterlab_pygments",
+    "system": "NPM",
+    "name": "jupyterlab_pygments",
+    "repo": "jupyterlab/jupyterlab_pygments",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 31,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:markdown-it-myst",
+    "system": "NPM",
+    "name": "markdown-it-myst",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 22977,
+    "dependents": 32,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-cli",
+    "system": "NPM",
+    "name": "myst-cli",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3644,
+    "dependents": 8,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-cli-utils",
+    "system": "NPM",
+    "name": "myst-cli-utils",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 29149,
+    "dependents": 62,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-common",
+    "system": "NPM",
+    "name": "myst-common",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 34734,
+    "dependents": 101,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-config",
+    "system": "NPM",
+    "name": "myst-config",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 9064,
+    "dependents": 46,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-demo",
+    "system": "NPM",
+    "name": "myst-demo",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 667,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-directives",
+    "system": "NPM",
+    "name": "myst-directives",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 21178,
+    "dependents": 39,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-execute",
+    "system": "NPM",
+    "name": "myst-execute",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3094,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-button",
+    "system": "NPM",
+    "name": "myst-ext-button",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2463,
+    "dependents": 24,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-card",
+    "system": "NPM",
+    "name": "myst-ext-card",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2659,
+    "dependents": 27,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-exercise",
+    "system": "NPM",
+    "name": "myst-ext-exercise",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2597,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-grid",
+    "system": "NPM",
+    "name": "myst-ext-grid",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2694,
+    "dependents": 26,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-icon",
+    "system": "NPM",
+    "name": "myst-ext-icon",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2037,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-proof",
+    "system": "NPM",
+    "name": "myst-ext-proof",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2656,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-reactive",
+    "system": "NPM",
+    "name": "myst-ext-reactive",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1979,
+    "dependents": 11,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-ext-tabs",
+    "system": "NPM",
+    "name": "myst-ext-tabs",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2713,
+    "dependents": 26,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-frontmatter",
+    "system": "NPM",
+    "name": "myst-frontmatter",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 35153,
+    "dependents": 104,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-migrate",
+    "system": "NPM",
+    "name": "myst-migrate",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 4299,
+    "dependents": 28,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-parser",
+    "system": "NPM",
+    "name": "myst-parser",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 21193,
+    "dependents": 31,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-roles",
+    "system": "NPM",
+    "name": "myst-roles",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 21144,
+    "dependents": 33,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-spec",
+    "system": "NPM",
+    "name": "myst-spec",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 36729,
+    "dependents": 103,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-spec-ext",
+    "system": "NPM",
+    "name": "myst-spec-ext",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 27308,
+    "dependents": 79,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-templates",
+    "system": "NPM",
+    "name": "myst-templates",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 6396,
+    "dependents": 32,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-to-docx",
+    "system": "NPM",
+    "name": "myst-to-docx",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2519,
+    "dependents": 15,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-to-html",
+    "system": "NPM",
+    "name": "myst-to-html",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 22118,
+    "dependents": 42,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-to-jats",
+    "system": "NPM",
+    "name": "myst-to-jats",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2588,
+    "dependents": 16,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-to-md",
+    "system": "NPM",
+    "name": "myst-to-md",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2243,
+    "dependents": 14,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-to-react",
+    "system": "NPM",
+    "name": "myst-to-react",
+    "repo": "jupyter-book/myst-theme",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 5289,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-to-tex",
+    "system": "NPM",
+    "name": "myst-to-tex",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2842,
+    "dependents": 15,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-to-typst",
+    "system": "NPM",
+    "name": "myst-to-typst",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2812,
+    "dependents": 13,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-toc",
+    "system": "NPM",
+    "name": "myst-toc",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 33104,
+    "dependents": 105,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:myst-transforms",
+    "system": "NPM",
+    "name": "myst-transforms",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 12685,
+    "dependents": 38,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:mystmd",
+    "system": "NPM",
+    "name": "mystmd",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 9714,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:nbdime",
+    "system": "NPM",
+    "name": "nbdime",
+    "repo": "jupyter/nbdime",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 14046,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:nbdime-jupyterlab",
+    "system": "NPM",
+    "name": "nbdime-jupyterlab",
+    "repo": "jupyter/nbdime",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 7653,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:nbformat-schema",
+    "system": "NPM",
+    "name": "nbformat-schema",
+    "repo": "jupyter/nbformat",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 133,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:nbgrader",
+    "system": "NPM",
+    "name": "nbgrader",
+    "repo": "jupyter/nbgrader",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 73,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:simple-validators",
+    "system": "NPM",
+    "name": "simple-validators",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 33464,
+    "dependents": 108,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:tex-to-myst",
+    "system": "NPM",
+    "name": "tex-to-myst",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2273,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:thebe",
+    "system": "NPM",
+    "name": "thebe",
+    "repo": "jupyter-book/thebe",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 1416,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:thebe-core",
+    "system": "NPM",
+    "name": "thebe-core",
+    "repo": "jupyter-book/thebe",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 3593,
+    "dependents": 11,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:thebe-lite",
+    "system": "NPM",
+    "name": "thebe-lite",
+    "repo": "jupyter-book/thebe",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 3175,
+    "dependents": 7,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:thebe-react",
+    "system": "NPM",
+    "name": "thebe-react",
+    "repo": "jupyter-book/thebe",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 3187,
+    "dependents": 8,
+    "latest_release": null
+  },
+  {
+    "id": "NPM:voila_topbar",
+    "system": "NPM",
+    "name": "voila_topbar",
+    "repo": "voila-dashboards/voila-topbar",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 11,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:autodoc-traits",
+    "system": "PYPI",
+    "name": "autodoc-traits",
+    "repo": "jupyterhub/autodoc-traits",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1660,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:batchspawner",
+    "system": "PYPI",
+    "name": "batchspawner",
+    "repo": "jupyterhub/batchspawner",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 8938,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:binderhub",
+    "system": "PYPI",
+    "name": "binderhub",
+    "repo": "jupyterhub/binderhub",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 77,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:chartpress",
+    "system": "PYPI",
+    "name": "chartpress",
+    "repo": "jupyterhub/chartpress",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 4436,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:comm",
+    "system": "PYPI",
+    "name": "comm",
+    "repo": "ipython/comm",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 55663064,
+    "dependents": 11952,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:docker-image-cleaner",
+    "system": "PYPI",
+    "name": "docker-image-cleaner",
+    "repo": "jupyterhub/docker-image-cleaner",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 40,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:dockerspawner",
+    "system": "PYPI",
+    "name": "dockerspawner",
+    "repo": "jupyterhub/dockerspawner",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 24371,
+    "dependents": 10,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:echo-kernel",
+    "system": "PYPI",
+    "name": "echo-kernel",
+    "repo": "jupyter/echo_kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 67,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:escapism",
+    "system": "PYPI",
+    "name": "escapism",
+    "repo": "jupyterhub/escapism",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 175967,
+    "dependents": 71,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps",
+    "system": "PYPI",
+    "name": "fps",
+    "repo": "jupyter-server/fps",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2373,
+    "dependents": 79,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_auth",
+    "system": "PYPI",
+    "name": "fps_auth",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 883,
+    "dependents": 10,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_auth_fief",
+    "system": "PYPI",
+    "name": "fps_auth_fief",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 121,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_auth_jupyterhub",
+    "system": "PYPI",
+    "name": "fps_auth_jupyterhub",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 157,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_contents",
+    "system": "PYPI",
+    "name": "fps_contents",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1577,
+    "dependents": 6,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_file_id",
+    "system": "PYPI",
+    "name": "fps_file_id",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 239,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_file_watcher",
+    "system": "PYPI",
+    "name": "fps_file_watcher",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1277,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_file_watcher_poll",
+    "system": "PYPI",
+    "name": "fps_file_watcher_poll",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 55,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_frontend",
+    "system": "PYPI",
+    "name": "fps_frontend",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1355,
+    "dependents": 7,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_jupyter_server",
+    "system": "PYPI",
+    "name": "fps_jupyter_server",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 26,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_jupyterlab",
+    "system": "PYPI",
+    "name": "fps_jupyterlab",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1342,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_jupyterlab_git",
+    "system": "PYPI",
+    "name": "fps_jupyterlab_git",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 48,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_jupyterlab_lsp",
+    "system": "PYPI",
+    "name": "fps_jupyterlab_lsp",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 28,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_kernel_subprocess",
+    "system": "PYPI",
+    "name": "fps_kernel_subprocess",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1171,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_kernel_web_worker",
+    "system": "PYPI",
+    "name": "fps_kernel_web_worker",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 44,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_kernels",
+    "system": "PYPI",
+    "name": "fps_kernels",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1398,
+    "dependents": 6,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_lab",
+    "system": "PYPI",
+    "name": "fps_lab",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1529,
+    "dependents": 7,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_login",
+    "system": "PYPI",
+    "name": "fps_login",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 495,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_nbconvert",
+    "system": "PYPI",
+    "name": "fps_nbconvert",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1434,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_noauth",
+    "system": "PYPI",
+    "name": "fps_noauth",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 961,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_notebook",
+    "system": "PYPI",
+    "name": "fps_notebook",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 119,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_resource_usage",
+    "system": "PYPI",
+    "name": "fps_resource_usage",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 89,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_terminals",
+    "system": "PYPI",
+    "name": "fps_terminals",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1326,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_webdav",
+    "system": "PYPI",
+    "name": "fps_webdav",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 36,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_yjs",
+    "system": "PYPI",
+    "name": "fps_yjs",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 508,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_yrooms",
+    "system": "PYPI",
+    "name": "fps_yrooms",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 182,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:fps_ystore_sqlite",
+    "system": "PYPI",
+    "name": "fps_ystore_sqlite",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 189,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:gateway-provisioners",
+    "system": "PYPI",
+    "name": "gateway-provisioners",
+    "repo": "jupyter-server/gateway_provisioners",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2807,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:gh-scoped-creds",
+    "system": "PYPI",
+    "name": "gh-scoped-creds",
+    "repo": "jupyterhub/gh-scoped-creds",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 721,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:hatch-deps-selector",
+    "system": "PYPI",
+    "name": "hatch-deps-selector",
+    "repo": "jupyter-book/hatch-deps-selector",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 107,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:hatch-jupyter-builder",
+    "system": "PYPI",
+    "name": "hatch-jupyter-builder",
+    "repo": "jupyterlab/hatch-jupyter-builder",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 155361,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:hatch-nodejs-version",
+    "system": "PYPI",
+    "name": "hatch-nodejs-version",
+    "repo": "jupyterlab/hatch-nodejs-version",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 112295,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:hotpot-km",
+    "system": "PYPI",
+    "name": "hotpot-km",
+    "repo": "voila-dashboards/hotpot_km",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 26,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipydatagrid",
+    "system": "PYPI",
+    "name": "ipydatagrid",
+    "repo": "jupyter-widgets/ipydatagrid",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 20180,
+    "dependents": 35,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipykernel",
+    "system": "PYPI",
+    "name": "ipykernel",
+    "repo": "ipython/ipykernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 54614879,
+    "dependents": 7043,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipyleaflet",
+    "system": "PYPI",
+    "name": "ipyleaflet",
+    "repo": "jupyter-widgets/ipyleaflet",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 198711,
+    "dependents": 288,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipymidicontrols",
+    "system": "PYPI",
+    "name": "ipymidicontrols",
+    "repo": "jupyter-widgets/midicontrols",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 37,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipynb",
+    "system": "PYPI",
+    "name": "ipynb",
+    "repo": "ipython/ipynb",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 54116,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipyparallel",
+    "system": "PYPI",
+    "name": "ipyparallel",
+    "repo": "ipython/ipyparallel",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 94773,
+    "dependents": 78,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipython",
+    "system": "PYPI",
+    "name": "ipython",
+    "repo": "ipython/ipython",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 97202828,
+    "dependents": 15399,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipython-pygments-lexers",
+    "system": "PYPI",
+    "name": "ipython-pygments-lexers",
+    "repo": "ipython/ipython-pygments-lexers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 54818996,
+    "dependents": 15649,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:ipywidgets",
+    "system": "PYPI",
+    "name": "ipywidgets",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 31105039,
+    "dependents": 6620,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter",
+    "system": "PYPI",
+    "name": "jupyter",
+    "repo": "jupyter/jupyter",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 12288648,
+    "dependents": 1896,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-ai",
+    "system": "PYPI",
+    "name": "jupyter-ai",
+    "repo": "jupyterlab/jupyter-ai",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 119717,
+    "dependents": 8,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-ai-agent-lite",
+    "system": "PYPI",
+    "name": "jupyter-ai-agent-lite",
+    "repo": "jupyterlab/jupyter-ai-lite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 0,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-ai-lite",
+    "system": "PYPI",
+    "name": "jupyter-ai-lite",
+    "repo": "jupyterlab/jupyter-ai-lite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 0,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-book",
+    "system": "PYPI",
+    "name": "jupyter-book",
+    "repo": "jupyter-book/jupyter-book",
+    "reason": "declared here under the repo's own name; registry has no conflicting link",
+    "downloads_last_month": 217891,
+    "dependents": 22,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-builder",
+    "system": "PYPI",
+    "name": "jupyter-builder",
+    "repo": "jupyterlab/jupyter-builder",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 17948052,
+    "dependents": 3958,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-client",
+    "system": "PYPI",
+    "name": "jupyter-client",
+    "repo": "jupyter/jupyter_client",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 71447300,
+    "dependents": 9108,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-collaboration",
+    "system": "PYPI",
+    "name": "jupyter-collaboration",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 177449,
+    "dependents": 31,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-collaboration-ui",
+    "system": "PYPI",
+    "name": "jupyter-collaboration-ui",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 185703,
+    "dependents": 42,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-console",
+    "system": "PYPI",
+    "name": "jupyter-console",
+    "repo": "jupyter/jupyter_console",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 12492174,
+    "dependents": 2024,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-core",
+    "system": "PYPI",
+    "name": "jupyter-core",
+    "repo": "jupyter/jupyter_core",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 77056466,
+    "dependents": 11226,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-docprovider",
+    "system": "PYPI",
+    "name": "jupyter-docprovider",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 186123,
+    "dependents": 43,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-enterprise-gateway",
+    "system": "PYPI",
+    "name": "jupyter-enterprise-gateway",
+    "repo": "jupyter-server/enterprise_gateway",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 10266,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-events",
+    "system": "PYPI",
+    "name": "jupyter-events",
+    "repo": "jupyter/jupyter_events",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 28962752,
+    "dependents": 5216,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-kernel-gateway",
+    "system": "PYPI",
+    "name": "jupyter-kernel-gateway",
+    "repo": "jupyter-server/kernel_gateway",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 555039,
+    "dependents": 15,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-kernel-test",
+    "system": "PYPI",
+    "name": "jupyter-kernel-test",
+    "repo": "jupyter/jupyter_kernel_test",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 7064,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-leaflet",
+    "system": "PYPI",
+    "name": "jupyter-leaflet",
+    "repo": "jupyter-widgets/ipyleaflet",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 189039,
+    "dependents": 290,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-packaging",
+    "system": "PYPI",
+    "name": "jupyter-packaging",
+    "repo": "jupyter/jupyter-packaging",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 516852,
+    "dependents": 94,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-releaser",
+    "system": "PYPI",
+    "name": "jupyter-releaser",
+    "repo": "jupyter-server/jupyter_releaser",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1278,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-remote-desktop-proxy",
+    "system": "PYPI",
+    "name": "jupyter-remote-desktop-proxy",
+    "repo": "jupyterhub/jupyter-remote-desktop-proxy",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1078,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-repo2docker",
+    "system": "PYPI",
+    "name": "jupyter-repo2docker",
+    "repo": "jupyterhub/repo2docker",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2884,
+    "dependents": 14,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-resource-usage",
+    "system": "PYPI",
+    "name": "jupyter-resource-usage",
+    "repo": "jupyter-server/jupyter-resource-usage",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 43356,
+    "dependents": 10,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-rsession-proxy",
+    "system": "PYPI",
+    "name": "jupyter-rsession-proxy",
+    "repo": "jupyterhub/jupyter-rsession-proxy",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 5599,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-scheduler",
+    "system": "PYPI",
+    "name": "jupyter-scheduler",
+    "repo": "jupyter-server/jupyter-scheduler",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 9489,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-server",
+    "system": "PYPI",
+    "name": "jupyter-server",
+    "repo": "jupyter-server/jupyter_server",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 32556872,
+    "dependents": 5045,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-server-fileid",
+    "system": "PYPI",
+    "name": "jupyter-server-fileid",
+    "repo": "jupyter-server/jupyter_server_fileid",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 813515,
+    "dependents": 326,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-server-mathjax",
+    "system": "PYPI",
+    "name": "jupyter-server-mathjax",
+    "repo": "jupyter-server/jupyter_server_mathjax",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 47561,
+    "dependents": 21,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-server-proxy",
+    "system": "PYPI",
+    "name": "jupyter-server-proxy",
+    "repo": "jupyterhub/jupyter-server-proxy",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 451131,
+    "dependents": 192,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-server-synchronizer",
+    "system": "PYPI",
+    "name": "jupyter-server-synchronizer",
+    "repo": "jupyter-server/synchronizer",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 37,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-server-terminals",
+    "system": "PYPI",
+    "name": "jupyter-server-terminals",
+    "repo": "jupyter-server/jupyter_server_terminals",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 28569855,
+    "dependents": 5073,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-server-ydoc",
+    "system": "PYPI",
+    "name": "jupyter-server-ydoc",
+    "repo": "jupyterlab/jupyter-collaboration",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 815532,
+    "dependents": 34,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-smart-on-fhir",
+    "system": "PYPI",
+    "name": "jupyter-smart-on-fhir",
+    "repo": "jupyterhealth/jupyter-smart-on-fhir",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 213,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-sphinx",
+    "system": "PYPI",
+    "name": "jupyter-sphinx",
+    "repo": "jupyter/jupyter-sphinx",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 60358,
+    "dependents": 10,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-telemetry",
+    "system": "PYPI",
+    "name": "jupyter-telemetry",
+    "repo": "jupyter/telemetry",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 35634,
+    "dependents": 27,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-theia-proxy",
+    "system": "PYPI",
+    "name": "jupyter-theia-proxy",
+    "repo": "jupyterhub/jupyter-server-proxy",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 13,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyter-ydoc",
+    "system": "PYPI",
+    "name": "jupyter-ydoc",
+    "repo": "jupyter-server/jupyter_ydoc",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 864279,
+    "dependents": 121,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhealth-client",
+    "system": "PYPI",
+    "name": "jupyterhealth-client",
+    "repo": "jupyterhealth/jupyterhealth-client",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 120,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub",
+    "system": "PYPI",
+    "name": "jupyterhub",
+    "repo": "jupyterhub/jupyterhub",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 260478,
+    "dependents": 154,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-firstuseauthenticator",
+    "system": "PYPI",
+    "name": "jupyterhub-firstuseauthenticator",
+    "repo": "jupyterhub/firstuseauthenticator",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3211,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-idle-culler",
+    "system": "PYPI",
+    "name": "jupyterhub-idle-culler",
+    "repo": "jupyterhub/jupyterhub-idle-culler",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 15786,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-kerberosauthenticator",
+    "system": "PYPI",
+    "name": "jupyterhub-kerberosauthenticator",
+    "repo": "jupyterhub/kerberosauthenticator",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 139,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-kubespawner",
+    "system": "PYPI",
+    "name": "jupyterhub-kubespawner",
+    "repo": "jupyterhub/kubespawner",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 15220,
+    "dependents": 6,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-ldapauthenticator",
+    "system": "PYPI",
+    "name": "jupyterhub-ldapauthenticator",
+    "repo": "jupyterhub/ldapauthenticator",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 6160,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-ltiauthenticator",
+    "system": "PYPI",
+    "name": "jupyterhub-ltiauthenticator",
+    "repo": "jupyterhub/ltiauthenticator",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1725,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-nativeauthenticator",
+    "system": "PYPI",
+    "name": "jupyterhub-nativeauthenticator",
+    "repo": "jupyterhub/nativeauthenticator",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 21091,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-sphinx-theme",
+    "system": "PYPI",
+    "name": "jupyterhub-sphinx-theme",
+    "repo": "jupyterhub/jupyterhub-sphinx-theme",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 373,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-systemdspawner",
+    "system": "PYPI",
+    "name": "jupyterhub-systemdspawner",
+    "repo": "jupyterhub/systemdspawner",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3179,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-tmpauthenticator",
+    "system": "PYPI",
+    "name": "jupyterhub-tmpauthenticator",
+    "repo": "jupyterhub/tmpauthenticator",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2921,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterhub-traefik-proxy",
+    "system": "PYPI",
+    "name": "jupyterhub-traefik-proxy",
+    "repo": "jupyterhub/traefik-proxy",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3497,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab",
+    "system": "PYPI",
+    "name": "jupyterlab",
+    "repo": "jupyterlab/jupyterlab",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 30253541,
+    "dependents": 3937,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-apod",
+    "system": "PYPI",
+    "name": "jupyterlab-apod",
+    "repo": "jupyterlab/jupyterlab_apod",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 20,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-chat",
+    "system": "PYPI",
+    "name": "jupyterlab-chat",
+    "repo": "jupyterlab/jupyter-chat",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 22763,
+    "dependents": 22,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-examples-hello-world",
+    "system": "PYPI",
+    "name": "jupyterlab-examples-hello-world",
+    "repo": "jupyterlab/extension-examples",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 15,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-fasta",
+    "system": "PYPI",
+    "name": "jupyterlab-fasta",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1454,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-geojson",
+    "system": "PYPI",
+    "name": "jupyterlab-geojson",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2411,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-git",
+    "system": "PYPI",
+    "name": "jupyterlab-git",
+    "repo": "jupyterlab/jupyterlab-git",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 89418,
+    "dependents": 13,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-git-core",
+    "system": "PYPI",
+    "name": "jupyterlab-git-core",
+    "repo": "jupyterlab/jupyterlab-git",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 40856,
+    "dependents": 15,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-github",
+    "system": "PYPI",
+    "name": "jupyterlab-github",
+    "repo": "jupyterlab/jupyterlab-github",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1293,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-hdf",
+    "system": "PYPI",
+    "name": "jupyterlab-hdf",
+    "repo": "jupyterlab/jupyterlab-hdf5",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 65,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-katex",
+    "system": "PYPI",
+    "name": "jupyterlab-katex",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 242,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-ar-SA",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-ar-SA",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 103,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-ca-ES",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-ca-ES",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 174,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-cs-CZ",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-cs-CZ",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 85,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-da-DK",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-da-DK",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 37,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-de-DE",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-de-DE",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 653,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-el-GR",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-el-GR",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 120,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-es-ES",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-es-ES",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1909,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-et-EE",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-et-EE",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 29,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-fi-FI",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-fi-FI",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 104,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-fr-FR",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-fr-FR",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2686,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-he-IL",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-he-IL",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 36,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-hu-HU",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-hu-HU",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 36,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-hy-AM",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-hy-AM",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 164,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-id-ID",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-id-ID",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 40,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-it-IT",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-it-IT",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 398,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-ja-JP",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-ja-JP",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 5112,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-ko-KR",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-ko-KR",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 881,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-lt-LT",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-lt-LT",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 103,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-nl-NL",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-nl-NL",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 86,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-no-NO",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-no-NO",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 60,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-pl-PL",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-pl-PL",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 284,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-pt-BR",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-pt-BR",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 396,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-ro-RO",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-ro-RO",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 36,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-ru-RU",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-ru-RU",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 840,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-tr-TR",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-tr-TR",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 170,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-uk-UA",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-uk-UA",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 66,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-vi-VN",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-vi-VN",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 41,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-zh-CN",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-zh-CN",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 11592,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-language-pack-zh-TW",
+    "system": "PYPI",
+    "name": "jupyterlab-language-pack-zh-TW",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 289,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-latex",
+    "system": "PYPI",
+    "name": "jupyterlab-latex",
+    "repo": "jupyterlab/jupyterlab-latex",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2054,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-mathjax2",
+    "system": "PYPI",
+    "name": "jupyterlab-mathjax2",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 138,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-myst",
+    "system": "PYPI",
+    "name": "jupyterlab-myst",
+    "repo": "jupyter-book/jupyterlab-myst",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 8807,
+    "dependents": 32,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-plugin-playground",
+    "system": "PYPI",
+    "name": "jupyterlab-plugin-playground",
+    "repo": "jupyterlab/plugin-playground",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 267,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-pseudo-language-pack",
+    "system": "PYPI",
+    "name": "jupyterlab-pseudo-language-pack",
+    "repo": "jupyterlab/language-packs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 40,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-pygments",
+    "system": "PYPI",
+    "name": "jupyterlab-pygments",
+    "repo": "jupyterlab/jupyterlab_pygments",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 48057917,
+    "dependents": 6282,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-server",
+    "system": "PYPI",
+    "name": "jupyterlab-server",
+    "repo": "jupyterlab/jupyterlab_server",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 27966465,
+    "dependents": 4367,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-translate",
+    "system": "PYPI",
+    "name": "jupyterlab-translate",
+    "repo": "jupyterlab/jupyterlab-translate",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 510,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-ui-profiler",
+    "system": "PYPI",
+    "name": "jupyterlab-ui-profiler",
+    "repo": "jupyterlab/ui-profiler",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 30,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-vega3",
+    "system": "PYPI",
+    "name": "jupyterlab-vega3",
+    "repo": "jupyterlab/jupyter-renderers",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 78,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-webrtc-docprovider",
+    "system": "PYPI",
+    "name": "jupyterlab-webrtc-docprovider",
+    "repo": "jupyterlite/jupyterlab-webrtc-docprovider",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 38,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlab-widgets",
+    "system": "PYPI",
+    "name": "jupyterlab-widgets",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 31433178,
+    "dependents": 6777,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite",
+    "system": "PYPI",
+    "name": "jupyterlite",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 9673,
+    "dependents": 8,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-core",
+    "system": "PYPI",
+    "name": "jupyterlite-core",
+    "repo": "jupyterlite/jupyterlite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 60813,
+    "dependents": 21,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-echo-kernel",
+    "system": "PYPI",
+    "name": "jupyterlite-echo-kernel",
+    "repo": "jupyterlite/echo-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 58,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-javascript-kernel",
+    "system": "PYPI",
+    "name": "jupyterlite-javascript-kernel",
+    "repo": "jupyterlite/javascript-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2056,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-p5-kernel",
+    "system": "PYPI",
+    "name": "jupyterlite-p5-kernel",
+    "repo": "jupyterlite/p5-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1246,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-pyodide-kernel",
+    "system": "PYPI",
+    "name": "jupyterlite-pyodide-kernel",
+    "repo": "jupyterlite/pyodide-kernel",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 51057,
+    "dependents": 8,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-sphinx",
+    "system": "PYPI",
+    "name": "jupyterlite-sphinx",
+    "repo": "jupyterlite/jupyterlite-sphinx",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 17684,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-terminal",
+    "system": "PYPI",
+    "name": "jupyterlite-terminal",
+    "repo": "jupyterlite/terminal",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1640,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyterlite-xeus",
+    "system": "PYPI",
+    "name": "jupyterlite-xeus",
+    "repo": "jupyterlite/xeus",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 3091,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyternaut-lite",
+    "system": "PYPI",
+    "name": "jupyternaut-lite",
+    "repo": "jupyterlab/jupyter-ai-lite",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 0,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse",
+    "system": "PYPI",
+    "name": "jupyverse",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 1585,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-api",
+    "system": "PYPI",
+    "name": "jupyverse-api",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1705,
+    "dependents": 43,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-auth",
+    "system": "PYPI",
+    "name": "jupyverse-auth",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1271,
+    "dependents": 31,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-contents",
+    "system": "PYPI",
+    "name": "jupyverse-contents",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1255,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-file-id",
+    "system": "PYPI",
+    "name": "jupyverse-file-id",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 211,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-file-watcher",
+    "system": "PYPI",
+    "name": "jupyverse-file-watcher",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1248,
+    "dependents": 10,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-frontend",
+    "system": "PYPI",
+    "name": "jupyverse-frontend",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1249,
+    "dependents": 15,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-jupyterlab",
+    "system": "PYPI",
+    "name": "jupyverse-jupyterlab",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1244,
+    "dependents": 11,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-kernel",
+    "system": "PYPI",
+    "name": "jupyverse-kernel",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1091,
+    "dependents": 10,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-kernels",
+    "system": "PYPI",
+    "name": "jupyverse-kernels",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1097,
+    "dependents": 7,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-lab",
+    "system": "PYPI",
+    "name": "jupyverse-lab",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1248,
+    "dependents": 9,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-login",
+    "system": "PYPI",
+    "name": "jupyverse-login",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 235,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-nbconvert",
+    "system": "PYPI",
+    "name": "jupyverse-nbconvert",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1243,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-notebook",
+    "system": "PYPI",
+    "name": "jupyverse-notebook",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 28,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-resource-usage",
+    "system": "PYPI",
+    "name": "jupyverse-resource-usage",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 30,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-terminals",
+    "system": "PYPI",
+    "name": "jupyverse-terminals",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1097,
+    "dependents": 5,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-yjs",
+    "system": "PYPI",
+    "name": "jupyverse-yjs",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1248,
+    "dependents": 7,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-yrooms",
+    "system": "PYPI",
+    "name": "jupyverse-yrooms",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 207,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:jupyverse-ystore",
+    "system": "PYPI",
+    "name": "jupyverse-ystore",
+    "repo": "jupyter-server/jupyverse",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 178,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:litegitpuller",
+    "system": "PYPI",
+    "name": "litegitpuller",
+    "repo": "jupyterlite/litegitpuller",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 161,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:matplotlib-inline",
+    "system": "PYPI",
+    "name": "matplotlib-inline",
+    "repo": "ipython/matplotlib-inline",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 91853623,
+    "dependents": 16723,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:mystmd",
+    "system": "PYPI",
+    "name": "mystmd",
+    "repo": "jupyter-book/mystmd",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 10278,
+    "dependents": 7,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbclassic",
+    "system": "PYPI",
+    "name": "nbclassic",
+    "repo": "jupyter/nbclassic",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1980454,
+    "dependents": 549,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbclient",
+    "system": "PYPI",
+    "name": "nbclient",
+    "repo": "jupyter/nbclient",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 50729821,
+    "dependents": 6386,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbconvert",
+    "system": "PYPI",
+    "name": "nbconvert",
+    "repo": "jupyter/nbconvert",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 49944679,
+    "dependents": 6147,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbdime",
+    "system": "PYPI",
+    "name": "nbdime",
+    "repo": "jupyter/nbdime",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 174529,
+    "dependents": 52,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbformat",
+    "system": "PYPI",
+    "name": "nbformat",
+    "repo": "jupyter/nbformat",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 76592205,
+    "dependents": 8353,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbgitpuller",
+    "system": "PYPI",
+    "name": "nbgitpuller",
+    "repo": "jupyterhub/nbgitpuller",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 25586,
+    "dependents": 6,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbgitpuller-downloader-dropbox",
+    "system": "PYPI",
+    "name": "nbgitpuller-downloader-dropbox",
+    "repo": "jupyterhub/nbgitpuller-downloader-dropbox",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 17,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbgitpuller-downloader-generic-web",
+    "system": "PYPI",
+    "name": "nbgitpuller-downloader-generic-web",
+    "repo": "jupyterhub/nbgitpuller-downloader-generic-web",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 15,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbgitpuller-downloader-googledrive",
+    "system": "PYPI",
+    "name": "nbgitpuller-downloader-googledrive",
+    "repo": "jupyterhub/nbgitpuller-downloader-googledrive",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 19,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbgrader",
+    "system": "PYPI",
+    "name": "nbgrader",
+    "repo": "jupyter/nbgrader",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 11171,
+    "dependents": 17,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:nbviewer",
+    "system": "PYPI",
+    "name": "nbviewer",
+    "repo": "jupyter/nbviewer",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 145,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:notebook",
+    "system": "PYPI",
+    "name": "notebook",
+    "repo": "jupyter/notebook",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 28757551,
+    "dependents": 3045,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:notebook-shim",
+    "system": "PYPI",
+    "name": "notebook-shim",
+    "repo": "jupyter/notebook_shim",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 27317089,
+    "dependents": 4487,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:oauthenticator",
+    "system": "PYPI",
+    "name": "oauthenticator",
+    "repo": "jupyterhub/oauthenticator",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 89857,
+    "dependents": 18,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:omh-shim",
+    "system": "PYPI",
+    "name": "omh-shim",
+    "repo": "jupyterhealth/omh-shim",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 838,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:papyri",
+    "system": "PYPI",
+    "name": "papyri",
+    "repo": "jupyter/papyri",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 21,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:pickleshare",
+    "system": "PYPI",
+    "name": "pickleshare",
+    "repo": "ipython/pickleshare",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 8533671,
+    "dependents": 1131,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:pytest-check-links",
+    "system": "PYPI",
+    "name": "pytest-check-links",
+    "repo": "jupyterlab/pytest-check-links",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 12459,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:pytest-jupyter",
+    "system": "PYPI",
+    "name": "pytest-jupyter",
+    "repo": "jupyter-server/pytest-jupyter",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 25571,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:pytest-jupyterhub",
+    "system": "PYPI",
+    "name": "pytest-jupyterhub",
+    "repo": "jupyterhub/pytest-jupyterhub",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 198,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:pythreejs",
+    "system": "PYPI",
+    "name": "pythreejs",
+    "repo": "jupyter-widgets/pythreejs",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 69126,
+    "dependents": 122,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:repo2jupyterlite",
+    "system": "PYPI",
+    "name": "repo2jupyterlite",
+    "repo": "jupyterlite/repo2jupyterlite",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 11,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:robotframework-interpreter",
+    "system": "PYPI",
+    "name": "robotframework-interpreter",
+    "repo": "jupyter-xeus/robotframework-interpreter",
+    "reason": "declared here; registry links to a same-named repo (this repo's former home)",
+    "downloads_last_month": 137,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:sidecar",
+    "system": "PYPI",
+    "name": "sidecar",
+    "repo": "jupyter-widgets/jupyterlab-sidecar",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 25574,
+    "dependents": 28,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:simpervisor",
+    "system": "PYPI",
+    "name": "simpervisor",
+    "repo": "jupyterhub/simpervisor",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 434920,
+    "dependents": 205,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:sparkmagic",
+    "system": "PYPI",
+    "name": "sparkmagic",
+    "repo": "jupyter-incubator/sparkmagic",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 12187,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:sphinxcontrib_github_alt",
+    "system": "PYPI",
+    "name": "sphinxcontrib_github_alt",
+    "repo": "jupyter/sphinxcontrib_github_alt",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 2857,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:sudospawner",
+    "system": "PYPI",
+    "name": "sudospawner",
+    "repo": "jupyterhub/sudospawner",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1038,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:terminado",
+    "system": "PYPI",
+    "name": "terminado",
+    "repo": "jupyter/terminado",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 29806864,
+    "dependents": 5255,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:testpath",
+    "system": "PYPI",
+    "name": "testpath",
+    "repo": "jupyter/testpath",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1460262,
+    "dependents": 145,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:traitlets",
+    "system": "PYPI",
+    "name": "traitlets",
+    "repo": "ipython/traitlets",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 118414624,
+    "dependents": 19632,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:traittypes",
+    "system": "PYPI",
+    "name": "traittypes",
+    "repo": "jupyter-widgets/traittypes",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 727236,
+    "dependents": 584,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:voici",
+    "system": "PYPI",
+    "name": "voici",
+    "repo": "voila-dashboards/voici",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 176,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:voici-core",
+    "system": "PYPI",
+    "name": "voici-core",
+    "repo": "voila-dashboards/voici",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 231,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:voila",
+    "system": "PYPI",
+    "name": "voila",
+    "repo": "voila-dashboards/voila",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 111632,
+    "dependents": 60,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:voila-gridstack",
+    "system": "PYPI",
+    "name": "voila-gridstack",
+    "repo": "voila-dashboards/voila-gridstack",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 472,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:voila-material",
+    "system": "PYPI",
+    "name": "voila-material",
+    "repo": "voila-dashboards/voila-material",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 303,
+    "dependents": 1,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:voila-topbar",
+    "system": "PYPI",
+    "name": "voila-topbar",
+    "repo": "voila-dashboards/voila-topbar",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 376,
+    "dependents": 3,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:voila-vuetify",
+    "system": "PYPI",
+    "name": "voila-vuetify",
+    "repo": "voila-dashboards/voila-vuetify",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 266,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:widgetsnbextension",
+    "system": "PYPI",
+    "name": "widgetsnbextension",
+    "repo": "jupyter-widgets/ipywidgets",
+    "reason": "declared here; registry entry is Jupyter-owned",
+    "downloads_last_month": 31834051,
+    "dependents": 6753,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:wrapspawner",
+    "system": "PYPI",
+    "name": "wrapspawner",
+    "repo": "jupyterhub/wrapspawner",
+    "reason": "declared here under the repo's own name; registry has no conflicting link",
+    "downloads_last_month": 928,
+    "dependents": 0,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:xeus-python",
+    "system": "PYPI",
+    "name": "xeus-python",
+    "repo": "jupyter-xeus/xeus-python-wheel",
+    "reason": "declared here under the repo's own name; registry has no conflicting link",
+    "downloads_last_month": 1778,
+    "dependents": 2,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:xeus-python-shell",
+    "system": "PYPI",
+    "name": "xeus-python-shell",
+    "repo": "jupyter-xeus/xeus-python-shell",
+    "reason": "registry links to this repo",
+    "downloads_last_month": 1504,
+    "dependents": 4,
+    "latest_release": null
+  },
+  {
+    "id": "PYPI:xeus-robot",
+    "system": "PYPI",
+    "name": "xeus-robot",
+    "repo": "jupyter-xeus/xeus-robot-wheel",
+    "reason": "declared here under the repo's own name; registry has no conflicting link",
+    "downloads_last_month": 215,
+    "dependents": 0,
+    "latest_release": null
+  }
+]

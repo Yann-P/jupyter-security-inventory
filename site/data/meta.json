@@ -1,0 +1,25 @@
+{
+  "fetched_on": "2026-10-27",
+  "orgs": [
+    "binder-examples",
+    "binderhub-ci-repos",
+    "ipython",
+    "jupyter",
+    "jupyter-book",
+    "jupyter-governance",
+    "jupyter-incubator",
+    "jupyter-resources",
+    "jupyter-server",
+    "jupyter-standard",
+    "jupyter-standards",
+    "jupyter-widgets",
+    "jupyter-xeus",
+    "jupytercon",
+    "jupyterhealth",
+    "jupyterhub",
+    "jupyterlab",
+    "jupyterlite",
+    "voila-dashboards",
+    "voila-gallery"
+  ]
+}

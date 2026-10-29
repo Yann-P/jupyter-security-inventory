@@ -10,7 +10,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUTPUT = ROOT / "output"  # every file the scripts write
+OUTPUT = ROOT / "output"  # what steps 1-4 write: the raw results, one file per step
+SITE_DATA = ROOT / "site" / "data"  # what step 5 writes: the files the web page loads
 CACHE = ROOT / ".cache" / "http"
 CACHE_HOURS = 24  # cached answers older than this are downloaded again, so counts stay current
 RETRY_ON = {429, 500, 502, 503, 504}  # HTTP errors that are worth retrying: rate limits, server hiccups
