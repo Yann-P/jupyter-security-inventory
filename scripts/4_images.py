@@ -7,7 +7,7 @@ The repo is the first of these that names an inventory repo: the one whose chart
 with no tag are left out: there is nothing to pull.
 
 Also writes output/images.txt, one pullable reference per line, so any image scanner can read the list without
-knowing this project's formats:  xargs -n1 trivy image < output/images.txt
+knowing this project's formats.
 
 Limits: ghcr.io cannot list a namespace without authentication, so it is not covered. Quay publishes no pull
 counts. Only one tag per image is recorded; the others are older builds of the same image.

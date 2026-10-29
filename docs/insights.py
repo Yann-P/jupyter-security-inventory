@@ -34,7 +34,7 @@ REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
 # The tables of published things (packages, images) have the same columns: what, who publishes it, the repository
 # it comes from, how much it is used and when it was last published. They are not tinted by kind: that is for repos.
 PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
-IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "pulls (all time)", "last published"]
+IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "all-time pulls", "last published"]
 
 REPO_PAGE = """# {title}
 
@@ -129,6 +129,15 @@ def package(top: str | None) -> str:
     system, name = top.split(":", 1)
     icon = "fa-python" if system == "PYPI" else "fa-npm"  # the logo is drawn by the theme's Font Awesome
     return f"[]{{.fa-brands .{icon}}} [{plain(name)}]({registry_url(top)})"
+
+
+def image_cell(ref: str | None) -> str:
+    """'docker.io/jupyterhub/jupyterhub' -> the container logo and a link to the image on its registry."""
+    if not ref:
+        return ""
+    registry, namespace, name = ref.split("/", 2)
+    image = {"registry": registry, "namespace": namespace, "name": name}
+    return f"[]{{.fa-brands .fa-docker}} [{plain(namespace + '/' + name)}]({image_url(image)})"
 
 
 def stats(top: str | None, count: str) -> str:
@@ -266,7 +275,8 @@ def repo_rows(data: Data, names) -> list[list]:
                 package(row["package"]),
                 stats(row["package"], grouped(row["downloads/month"])),
                 grouped(row["dependents"]),
-                grouped(row["images"]),
+                image_cell(row["image"]),
+                grouped(row["all-time pulls"]),
                 grouped(row["used in CI"]),
                 plain(row["live service"]),
                 f"[{plain(row['security boundary'])}]{{.reason}}" if row["security boundary"] else "",

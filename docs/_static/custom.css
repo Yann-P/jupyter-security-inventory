@@ -30,5 +30,16 @@ tr:has(.kind-example) > td, .legend.kind-example { background-color: rgba(var(--
 tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind-other), var(--kind-alpha)); }
 .legend { padding: 0.1em 0.45em; border-radius: 0.3em; }
 
+/* Compact tables: smaller text and padding, and lighter underlines on the links that fill the cells. The header keeps
+   its horizontal padding, which DataTables sizes around the sort arrows. */
+.bd-article table { font-size: 0.875rem; line-height: 1.35; }
+.bd-article table.table > :is(thead, tbody) > tr > :is(th, td) { padding-block: 0.25rem; }
+.bd-article table.table > tbody > tr > td { padding-inline: 0.5rem; }
+.bd-article table a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+}
+
 /* The organization dropdown that tables.js adds beside the search box. */
 .org-filter { margin-right: 0.75em; }

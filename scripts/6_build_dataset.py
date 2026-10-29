@@ -57,6 +57,8 @@ def main():
                 **repo,
                 "packages": [{key: value for key, value in p.items() if key != "repo"} for p in mine],
                 "images": [{key: value for key, value in i.items() if key != "repo"} for i in built],
+                "top_image": f"{built[0]['registry']}/{built[0]['namespace']}/{built[0]['name']}" if built else None,
+                "top_image_pulls": built[0]["pulls"] if built else None,
                 "top_package": f"{mine[0]['system']}:{mine[0]['name']}" if mine else None,
                 "max_downloads_last_month": max((p["downloads_last_month"] or 0 for p in mine), default=0),
                 "top_package_dependents": (mine[0]["dependents"] or 0) if mine else 0,

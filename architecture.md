@@ -88,7 +88,7 @@ committed. The other pages are written by hand and include those tables.
 
 How the pages link to each other:
 
-- A repo table (home and organization pages) links each repo to its page. The `images` column counts its images.
+- A repo table (home and organization pages) links each repo to its page. The `image` column shows its most pulled image, as `package` does for packages.
 - An organization page has the repo tables, then the tables of its packages and images. They are the same tables as
   the package and image pages, without the organization column. An image belongs to the organization of its namespace.
 - A repo page lists its packages and its images, with links to the registries.

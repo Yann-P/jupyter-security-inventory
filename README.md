@@ -33,7 +33,7 @@ Seven scripts run in order (they depend on each other):
 
 - **kind**: package, application, tooling, deployment, documentation, example or other.
 - **downloads/month** and **dependents**: for the repository's most downloaded package.
-- **images**: how many container images come from the repository.
+- **image** and **all-time pulls**: for the repository's most pulled container image.
 - **used in CI**: how many other Jupyter repositories run its actions or build tools without pinning them
   to a commit.
 - **live service**: the site or service it deploys, like mybinder.org.
@@ -63,30 +63,6 @@ python scripts/5_classify.py --clone-dir ~/clones
 python scripts/6_build_dataset.py
 python scripts/7_table.py
 ```
-
-## Scanning the images
-
-`output/images.txt` has one image reference per line. Run a scanner on it from your own machine or CI, on a
-checkout or on `https://raw.githubusercontent.com/Yann-P/jupyter-security-inventory/main/output/images.txt`.
-
-- [Trivy](https://trivy.dev): vulnerabilities in operating system and language packages, secrets, misconfigurations.
-- [Grype](https://github.com/anchore/grype), with [Syft](https://github.com/anchore/syft) for SBOMs:
-  vulnerabilities, from another database than Trivy's.
-- [Dockle](https://github.com/goodwithtech/dockle): how the image is built, such as running as root or holding secrets.
-- [Docker Scout](https://docs.docker.com/scout/): `docker scout cves`, built into Docker.
-
-```bash
-# Trivy: a JSON report per image, in reports/
-mkdir -p reports
-while read -r image; do
-  trivy image --severity HIGH,CRITICAL --format json --output "reports/$(echo "$image" | tr '/:' '__').json" "$image"
-done < output/images.txt
-
-# Grype: a table per image
-xargs -n1 grype < output/images.txt
-```
-
-`output/images.json` also has each image's digest, and its repository to know who to report to.
 
 ## Daily updates
 
