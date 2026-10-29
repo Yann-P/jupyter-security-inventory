@@ -30,5 +30,6 @@ Documentation, examples and demos that publish no package and handle no logins.
 self
 orgs
 packages
+images
 about
 ```

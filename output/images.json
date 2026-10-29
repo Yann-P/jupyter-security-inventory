@@ -1,0 +1,979 @@
+{
+  "fetched_on": "2026-10-29",
+  "images": [
+    {
+      "registry": "docker.io",
+      "namespace": "ipython",
+      "name": "ipython",
+      "reference": "docker.io/ipython/ipython:latest",
+      "tag": "latest",
+      "digest": "sha256:b8defc5ff97e7bf96270a3154e521fe076609335f940b6b6abdc0943ea142cd0",
+      "last_pushed": "2017-05-18",
+      "pulls": 18967,
+      "description": "Deprecated. IPython Notebook image.",
+      "repos": [
+        "ipython/ipython"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "ipython",
+      "name": "nbviewer",
+      "reference": "docker.io/ipython/nbviewer:latest",
+      "tag": "latest",
+      "digest": "sha256:a80ed0adc6770d0be65b82ba49da1ebc618f382213a6e6fadcf23ca0e64b41b5",
+      "last_pushed": "2020-12-02",
+      "pulls": 3222,
+      "description": "Jupyter Notebook Viewer",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "ipython",
+      "name": "notebook",
+      "reference": "docker.io/ipython/notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:9c5839639d8f124c15762f9ade2c34b19a5b1a560c7bb3f2cb6003e2379108c3",
+      "last_pushed": "2017-05-18",
+      "pulls": 139484,
+      "description": "Deprecated IPython Notebook image. See https://github.com/jupyter/docker-stacks.",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "ipython",
+      "name": "scipyserver",
+      "reference": "docker.io/ipython/scipyserver:latest",
+      "tag": "latest",
+      "digest": "sha256:805a9fc76a9832d963c4174764cdfbafba106ffa8b19855940ecbe27577c0f80",
+      "last_pushed": "2016-06-21",
+      "pulls": 321084,
+      "description": "Deprecated. IPython notebook server with SciPy stack. See https://github.com/jupyter/docker-stacks.",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "ipython",
+      "name": "scipystack",
+      "reference": "docker.io/ipython/scipystack:latest",
+      "tag": "latest",
+      "digest": "sha256:1594fc79e1cdd692a9a8c7223a727e670ae73bec96d18dbe636ed29b39845a6b",
+      "last_pushed": "2015-07-23",
+      "pulls": 14999,
+      "description": "Deprecated. Scipy IPython image. See https://github.com/jupyter/docker-stacks.",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "all-spark-notebook",
+      "reference": "docker.io/jupyter/all-spark-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:b63bae2d9d34779ac969deeb4834efd838991f77269ca9a76bf6b0d1f8678d29",
+      "last_pushed": "2023-10-20",
+      "pulls": 75203789,
+      "description": "Python, Scala, R and Spark Jupyter Notebook Stack from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "base-notebook",
+      "reference": "docker.io/jupyter/base-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:8c903974902b0e9d45d9823c2234411de0614c5c98c4bb782b3d4f55b3e435e6",
+      "last_pushed": "2023-10-20",
+      "pulls": 14876899,
+      "description": "Base image for Jupyter Notebook stacks from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "cdn.jupyter.org",
+      "reference": "docker.io/jupyter/cdn.jupyter.org:latest",
+      "tag": "latest",
+      "digest": "sha256:7a05e1e8ebb1cbb787c486523d6b60207d38fca7bc79c1bafc62108e9292133b",
+      "last_pushed": "2020-03-04",
+      "pulls": 1386,
+      "description": null,
+      "repos": [
+        "jupyter/cdn.jupyter.org"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "datascience-notebook",
+      "reference": "docker.io/jupyter/datascience-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:476c6e673e7d5d8b5059f8680b1c6a988942a79263da651bf302dc696ab311f2",
+      "last_pushed": "2023-10-20",
+      "pulls": 36294512,
+      "description": "Data Science Jupyter Notebook Python Stack from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "demo",
+      "reference": "docker.io/jupyter/demo:latest",
+      "tag": "latest",
+      "digest": "sha256:c899f8bfb0e4eadc66ff4a59cfd1f1fbeece5cc93eb7f37dac6b67837babfc2c",
+      "last_pushed": "2017-12-18",
+      "pulls": 80323,
+      "description": "(DEPRECATED) Demo of the IPython/Jupyter Notebook",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "docker-stacks-foundation",
+      "reference": "docker.io/jupyter/docker-stacks-foundation:latest",
+      "tag": "latest",
+      "digest": "sha256:5c5b20673f6ac7649de7cae5df18303936e9a986d0c46354d21ab180f66c4e13",
+      "last_pushed": "2023-10-20",
+      "pulls": 205570,
+      "description": "Tiny base image on which Jupyter apps can be built from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "julia-notebook",
+      "reference": "docker.io/jupyter/julia-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:809d1b3bbe2ef17f1725f3b0d5cca5c3d7ad9dd3de84655c7df0305b4cd7665d",
+      "last_pushed": "2023-10-20",
+      "pulls": 29857,
+      "description": "Julia Jupyter Notebook Stack from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "minimal-notebook",
+      "reference": "docker.io/jupyter/minimal-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:1c4c8b6c7c27059c353d4e80523c2696e34723fde67d27418873ebeb42032551",
+      "last_pushed": "2023-10-20",
+      "pulls": 22516192,
+      "description": "Minimal Jupyter Notebook Python Stack from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "nature-base",
+      "reference": "docker.io/jupyter/nature-base:latest",
+      "tag": "latest",
+      "digest": "sha256:daf47b4da856474a60f0a3344483b0e8ba0813b3a46c036edd90a462c55fe1b2",
+      "last_pushed": "2015-11-14",
+      "pulls": 1408,
+      "description": "Base image for jupyter/nature-demo",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "nature-demo",
+      "reference": "docker.io/jupyter/nature-demo:latest",
+      "tag": "latest",
+      "digest": "sha256:0639a4d70a1a1afb1a845320103ba760398bbd972eb03ca39a47c51998515316",
+      "last_pushed": "2015-11-12",
+      "pulls": 2770,
+      "description": "Demo image for the \"Interactive notebooks: Sharing the code\" in Nature",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "nbcache",
+      "reference": "docker.io/jupyter/nbcache:latest",
+      "tag": "latest",
+      "digest": "sha256:f055391be6c486ff2a3e7510519581895b03bf677ae9b6d859d11149f1d1aa51",
+      "last_pushed": "2017-08-27",
+      "pulls": 3108,
+      "description": "memcache layer used by our nbviewer deployments",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "nbviewer",
+      "reference": "docker.io/jupyter/nbviewer:latest",
+      "tag": "latest",
+      "digest": "sha256:2eb040d822d5953dfb0181d09cdaed34d3c6e9a2a09f798c998784547c486f2c",
+      "last_pushed": "2022-01-28",
+      "pulls": 2834616,
+      "description": "Jupyter Notebook Viewer",
+      "repos": [
+        "jupyter/nbviewer"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "nbviewer-statuspage",
+      "reference": "docker.io/jupyter/nbviewer-statuspage:latest",
+      "tag": "latest",
+      "digest": "sha256:5061824013bc97eabd043002da69b458129ed5d57e2f3890d490b77fe38d9435",
+      "last_pushed": "2020-12-02",
+      "pulls": 1537,
+      "description": "statuspage data publisher for nbviewer",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "pyspark-notebook",
+      "reference": "docker.io/jupyter/pyspark-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:58377aaa152b741e244f201679f96d909a024ea337088cc276b0ee32ab3f076f",
+      "last_pushed": "2023-10-20",
+      "pulls": 71455776,
+      "description": "Python and Spark Jupyter Notebook Stack from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "r-notebook",
+      "reference": "docker.io/jupyter/r-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:e845470a05d348b642911ae2cbfca2a9df260c8f5d5ac5e22d96ba9ac557a70e",
+      "last_pushed": "2023-10-20",
+      "pulls": 2528287,
+      "description": "R Jupyter Notebook Stack from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "repo2docker",
+      "reference": "docker.io/jupyter/repo2docker:latest",
+      "tag": "latest",
+      "digest": "sha256:66c3a54ecfddf7d9bb14e249772093b971d6573a8aebd98446747057f5114126",
+      "last_pushed": "2021-09-16",
+      "pulls": 446474,
+      "description": "Turn git repositories into Jupyter enabled Docker Images",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "scipy-notebook",
+      "reference": "docker.io/jupyter/scipy-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:fca4bcc9cbd49d9a15e0e4df6c666adf17776c950da9fa94a4f0a045d5c4ad33",
+      "last_pushed": "2023-10-20",
+      "pulls": 93332718,
+      "description": "Scientific Jupyter Notebook Python Stack from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "statuspage",
+      "reference": "docker.io/jupyter/statuspage:latest",
+      "tag": "latest",
+      "digest": "sha256:fb487da92032153c7c32b7eb4aa3c82928b2d06aa29a72fbb633df946a55e179",
+      "last_pushed": "2020-03-04",
+      "pulls": 5249,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "tensorflow-notebook",
+      "reference": "docker.io/jupyter/tensorflow-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d",
+      "last_pushed": "2023-10-20",
+      "pulls": 75407050,
+      "description": "Scientific Jupyter Notebook Python Stack w/ TensorFlow from https://github.com/jupyter/docker-stacks",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyter",
+      "name": "tmpnb",
+      "reference": "docker.io/jupyter/tmpnb:latest",
+      "tag": "latest",
+      "digest": "sha256:d7b8b405c239d2f9a83de8fad7cc9c551aaa48f8fe067b56c3359c30edae39ff",
+      "last_pushed": "2018-01-24",
+      "pulls": 10472,
+      "description": "(DEPRECATED) tmpnb, the temporary notebook service",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "binderhub-ci-repos_minimal-dockerfile",
+      "reference": "docker.io/jupyterhub/binderhub-ci-repos_minimal-dockerfile:latest",
+      "tag": "latest",
+      "digest": "sha256:a1504abefa3318f334b06b1e0f9313c2dbe9d8fad6fa78589fceb49c272a0f11",
+      "last_pushed": "2025-12-25",
+      "pulls": 35631,
+      "description": "The minimal Dockerfile that would work with BinderHub, used only for BinderHub's CI system.",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "configurable-http-proxy",
+      "reference": "docker.io/jupyterhub/configurable-http-proxy:latest",
+      "tag": "latest",
+      "digest": "sha256:69a7170eeedadb139dda5aef038d0a45378295c0d24cb0dc9da58641ef698ebe",
+      "last_pushed": "2026-07-08",
+      "pulls": 51123213,
+      "description": "node-http-proxy + REST API",
+      "repos": [
+        "jupyterhub/configurable-http-proxy"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "jupyterhub",
+      "reference": "docker.io/jupyterhub/jupyterhub:latest",
+      "tag": "latest",
+      "digest": "sha256:608dcd8f41ba1551f80f634c55c91c65737a59ccfa446b8cf98fd912f97204f8",
+      "last_pushed": "2026-10-28",
+      "pulls": 7278951,
+      "description": "JupyterHub: multi-user Jupyter notebook server",
+      "repos": [
+        "jupyterhub/jupyterhub"
+      ]
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "jupyterhub-demo",
+      "reference": "docker.io/jupyterhub/jupyterhub-demo:latest",
+      "tag": "latest",
+      "digest": "sha256:eae51d5b666b9bcfd11d9baab107758ba3fc94d8a65f9e0769e6d20592eb9ba6",
+      "last_pushed": "2026-10-28",
+      "pulls": 45580,
+      "description": "Demo JupyterHub Docker image with a quick overview of what JupyterHub is and how it works",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "jupyterhub-onbuild",
+      "reference": "docker.io/jupyterhub/jupyterhub-onbuild:latest",
+      "tag": "latest",
+      "digest": "sha256:2fd77783a8aca9330ec0a318896eb05a033d696174df036a5d9c176c65ac5e47",
+      "last_pushed": "2024-10-21",
+      "pulls": 114714,
+      "description": "onbuild version of JupyterHub images",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-binderhub",
+      "reference": "docker.io/jupyterhub/k8s-binderhub:1.0.0-0.dev.git.3983.h383374de",
+      "tag": "1.0.0-0.dev.git.3983.h383374de",
+      "digest": "sha256:5c0fdccd06841222a4a7816672f01c16aa6f45e21a5d2c365162aef7f5f72990",
+      "last_pushed": "2026-07-01",
+      "pulls": 222935,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-hub",
+      "reference": "docker.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7546.h622e1dac",
+      "tag": "5.0.0-0.dev.git.7546.h622e1dac",
+      "digest": "sha256:df050bd44cdbe8223446e11cfe5b58ce8689f830eb081297bcfec59f42fad76b",
+      "last_pushed": "2026-10-21",
+      "pulls": 124042046,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-hub-slim",
+      "reference": "docker.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7546.h622e1dac",
+      "tag": "5.0.0-0.dev.git.7546.h622e1dac",
+      "digest": "sha256:10ba3b07a43cfc63bc0c95230aa30ee47553ffa27d2da26813d50aa6321c181a",
+      "last_pushed": "2026-10-21",
+      "pulls": 63664,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-image-awaiter",
+      "reference": "docker.io/jupyterhub/k8s-image-awaiter:4.4.4",
+      "tag": "4.4.4",
+      "digest": "sha256:7e27437274322e8cea8cd729ba4f42b77a25d03e1cb6d43441fea46e272afbb1",
+      "last_pushed": "2026-10-20",
+      "pulls": 1873443,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-image-cleaner",
+      "reference": "docker.io/jupyterhub/k8s-image-cleaner:0.2.0-n768.h13978ab",
+      "tag": "0.2.0-n768.h13978ab",
+      "digest": "sha256:9179ecb443041ab3152a2aa33d76b66bb7664c1072ae29cfe7a260fd2c87d35c",
+      "last_pushed": "2021-09-22",
+      "pulls": 184158,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-network-tools",
+      "reference": "docker.io/jupyterhub/k8s-network-tools:4.4.4",
+      "tag": "4.4.4",
+      "digest": "sha256:51a99341fa4c5af0fff9b9ff942da3f207c1e72770a6bb63c322e1dfbd12cae7",
+      "last_pushed": "2026-10-20",
+      "pulls": 118246870,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-pod-culler",
+      "reference": "docker.io/jupyterhub/k8s-pod-culler:0.7.0",
+      "tag": "0.7.0",
+      "digest": "sha256:22c6070f0afbd2b4e04171a7bb6a6d74fc0c82b23d7c9e1334a5ff1963e70fa3",
+      "last_pushed": "2018-09-03",
+      "pulls": 17631,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-pre-puller",
+      "reference": "docker.io/jupyterhub/k8s-pre-puller:a21cecb",
+      "tag": "a21cecb",
+      "digest": "sha256:c246ce77f24ed82889c7a1f3d6d6daed768ae2a7c1d82be23f5105cfdcbb3929",
+      "last_pushed": "2018-02-05",
+      "pulls": 108269,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-secret-sync",
+      "reference": "docker.io/jupyterhub/k8s-secret-sync:4.4.4",
+      "tag": "4.4.4",
+      "digest": "sha256:8f13960f813d452dc0ce019c56dc3dc05ce068134553e6dcafce20e67305249c",
+      "last_pushed": "2026-10-20",
+      "pulls": 810656,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-singleuser-sample",
+      "reference": "docker.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7546.h622e1dac",
+      "tag": "5.0.0-0.dev.git.7546.h622e1dac",
+      "digest": "sha256:c8157d036260bab26c552ccedf88c143c22cea248cfdcda6f8b233d4e03446c7",
+      "last_pushed": "2026-10-21",
+      "pulls": 66491495,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "mybinder.org-analytics-publisher",
+      "reference": "docker.io/jupyterhub/mybinder.org-analytics-publisher:2020.12.4-0.dev.git.7737.h2710e4f4",
+      "tag": "2020.12.4-0.dev.git.7737.h2710e4f4",
+      "digest": "sha256:9d68e2f3150354736768428934be5a7e3207118893cc88fc7d47c69e968a1af1",
+      "last_pushed": "2026-10-26",
+      "pulls": 13394,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "mybinder.org-federation-redirect",
+      "reference": "docker.io/jupyterhub/mybinder.org-federation-redirect:2020.12.4-0.dev.git.7685.h0302ce25",
+      "tag": "2020.12.4-0.dev.git.7685.h0302ce25",
+      "digest": "sha256:0799b0b88a39355b099d2406a01c54625ef7bc1f8bb0fc2a18ae3c66f2d40b93",
+      "last_pushed": "2026-10-01",
+      "pulls": 12672,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "mybinder.org-minesweeper",
+      "reference": "docker.io/jupyterhub/mybinder.org-minesweeper:2020.12.4-0.dev.git.7733.hdb2e5d08",
+      "tag": "2020.12.4-0.dev.git.7733.hdb2e5d08",
+      "digest": "sha256:64247b0dc72f4c71c1dff84002343fefd7220c985c42a9f6004e5a58ee0502cf",
+      "last_pushed": "2026-10-25",
+      "pulls": 18169,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "mybinder.org-proxy-patches",
+      "reference": "docker.io/jupyterhub/mybinder.org-proxy-patches:2020.12.4-n489.hb4f9ab6",
+      "tag": "2020.12.4-n489.hb4f9ab6",
+      "digest": "sha256:78d71c5acc0ae44afd11ee1dd58c90c1174ceda4db93d4ec15ecef003c94fddf",
+      "last_pushed": "2021-07-02",
+      "pulls": 7568,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "mybinder.org-rsyslog",
+      "reference": "docker.io/jupyterhub/mybinder.org-rsyslog:2020.12.4-0.dev.git.7606.hffbc9140",
+      "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
+      "digest": "sha256:71fc6784c538a90f16dbe69edcbfcb968d3df147b80c4f2689433f402821d82a",
+      "last_pushed": "2026-08-24",
+      "pulls": 902,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "mybinder.org-tc-init",
+      "reference": "docker.io/jupyterhub/mybinder.org-tc-init:2020.12.4-0.dev.git.7606.hffbc9140",
+      "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
+      "digest": "sha256:e4689f4aca538faf3b626101d2ce10b21a921c2244ee902151e760b3dabdc0f5",
+      "last_pushed": "2026-08-24",
+      "pulls": 15971,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "singleuser",
+      "reference": "docker.io/jupyterhub/singleuser:latest",
+      "tag": "latest",
+      "digest": "sha256:11f725bd960266dad7d1e90880e73c50d74f26715459a39113c3bea876a74b0c",
+      "last_pushed": "2026-10-28",
+      "pulls": 20282136,
+      "description": "single-user docker images for use with JupyterHub and DockerSpawner see also: jupyter/docker-stacks",
+      "repos": []
+    },
+    {
+      "registry": "docker.io",
+      "namespace": "jupyterhub",
+      "name": "systemuser",
+      "reference": "docker.io/jupyterhub/systemuser:latest",
+      "tag": "latest",
+      "digest": "sha256:9798045bbceeed2fe9eac35a3d16d202a2b049b5ec7b5c396143ce945d99e4bc",
+      "last_pushed": "2017-08-11",
+      "pulls": 18234,
+      "description": "system-user image for use with JupyterHub and DockerSpawner",
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "all-spark-notebook",
+      "reference": "quay.io/jupyter/all-spark-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:8c6990db0c6999106c7fdd2effdbc68814a5ed6fe0b7e71a1b4cfff2467708e6",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook Python, R, Spark Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "base-notebook",
+      "reference": "quay.io/jupyter/base-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:e7e1d8727cdca641ae97c4aa96afafc21b85eb8908da1a0dafa7ddb00c8e1554",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Base Jupyter Notebook Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "datascience-notebook",
+      "reference": "quay.io/jupyter/datascience-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:77160324aa27c9fc775f21679b5360168e311da0736dd268429b5d4dc54dfe98",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook Data Science Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "docker-stacks-foundation",
+      "reference": "quay.io/jupyter/docker-stacks-foundation:latest",
+      "tag": "latest",
+      "digest": "sha256:0491293623a24de46b6983105f1c845f8e254adb0e61263579c2572e87f31d99",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Foundation Jupyter Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "julia-notebook",
+      "reference": "quay.io/jupyter/julia-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:a27e76feec1a48bc9626073299d8f0fd4ec43e808f33a933f8f23c112fa28582",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook Julia Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "minimal-notebook",
+      "reference": "quay.io/jupyter/minimal-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:2a9656bc0e0525f3c6db713c53ccf3987a60aed19d6fcb535a43dfaf3607ebf6",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Minimal Jupyter Notebook Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "pyspark-notebook",
+      "reference": "quay.io/jupyter/pyspark-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:0660e7a553729435783e1b87c118028b109e46e881f4e73152c1f1391c9cb204",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook Python, Spark Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "pytorch-notebook",
+      "reference": "quay.io/jupyter/pytorch-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:01e25ee82d487ea934f0b3ef3f376555939d2a6c7243b742aab2454b0d4ce475",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook PyTorch Deep Learning Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "r-notebook",
+      "reference": "quay.io/jupyter/r-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:670ea0b5c9ad7ba3c2ca4be8b17070266667dc36dd2681144a89430e85d3a3ad",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook R Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "scipy-notebook",
+      "reference": "quay.io/jupyter/scipy-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:d416eea5c12a44981c2fcb56520649dbd92f7ae5983f4e68e14d1d0ebdf0c2ce",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook Scientific Python Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "tensorflow-notebook",
+      "reference": "quay.io/jupyter/tensorflow-notebook:latest",
+      "tag": "latest",
+      "digest": "sha256:2bc5f13c253e302f155c34d944e71a44bf8ff9d5f347f5f0b07ffd871f894245",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": "Jupyter Notebook TensorFlow Deep Learning Stack",
+      "repos": [
+        "jupyter/docker-stacks"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyter",
+      "name": "tmpnb",
+      "reference": "quay.io/jupyter/tmpnb:latest",
+      "tag": "latest",
+      "digest": "sha256:8b1cdcc61247f362805e87239f726bf1fbad286f71090ddcba14cdac70dfd037",
+      "last_pushed": "2015-05-26",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhealth",
+      "name": "singleuser-premvp",
+      "reference": "quay.io/jupyterhealth/singleuser-premvp:latest",
+      "tag": "latest",
+      "digest": "sha256:85cbf4a2bc245e5b6804649e0db5803a1f3923f326d379bfb3fc2a2ccf076a03",
+      "last_pushed": "2026-10-14",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "configurable-http-proxy",
+      "reference": "quay.io/jupyterhub/configurable-http-proxy:latest",
+      "tag": "latest",
+      "digest": "sha256:69a7170eeedadb139dda5aef038d0a45378295c0d24cb0dc9da58641ef698ebe",
+      "last_pushed": "2026-07-08",
+      "pulls": null,
+      "description": null,
+      "repos": [
+        "jupyterhub/configurable-http-proxy"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "docker-image-cleaner",
+      "reference": "quay.io/jupyterhub/docker-image-cleaner:1.0.0-beta.3",
+      "tag": "1.0.0-beta.3",
+      "digest": "sha256:998a24360a1380ebaad48311378d1e98cdf95569583464a9369f2b347717b263",
+      "last_pushed": "2023-01-02",
+      "pulls": null,
+      "description": "https://github.com/jupyterhub/docker-image-cleaner",
+      "repos": [
+        "jupyterhub/docker-image-cleaner"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "jupyter-remote-desktop-proxy",
+      "reference": "quay.io/jupyterhub/jupyter-remote-desktop-proxy:latest",
+      "tag": "latest",
+      "digest": "sha256:17d2fb0221fbc7e93f55dace9c13d901a37045eb1d62439dfb1d90f65a2a1455",
+      "last_pushed": "2025-04-11",
+      "pulls": null,
+      "description": null,
+      "repos": [
+        "jupyterhub/jupyter-remote-desktop-proxy"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "jupyterhub",
+      "reference": "quay.io/jupyterhub/jupyterhub:latest",
+      "tag": "latest",
+      "digest": "sha256:608dcd8f41ba1551f80f634c55c91c65737a59ccfa446b8cf98fd912f97204f8",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": null,
+      "repos": [
+        "jupyterhub/jupyterhub"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "jupyterhub-demo",
+      "reference": "quay.io/jupyterhub/jupyterhub-demo:latest",
+      "tag": "latest",
+      "digest": "sha256:eae51d5b666b9bcfd11d9baab107758ba3fc94d8a65f9e0769e6d20592eb9ba6",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "jupyterhub-onbuild",
+      "reference": "quay.io/jupyterhub/jupyterhub-onbuild:latest",
+      "tag": "latest",
+      "digest": "sha256:2fd77783a8aca9330ec0a318896eb05a033d696174df036a5d9c176c65ac5e47",
+      "last_pushed": "2024-10-21",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-binderhub",
+      "reference": "quay.io/jupyterhub/k8s-binderhub:1.0.0-0.dev.git.3983.h383374de",
+      "tag": "1.0.0-0.dev.git.3983.h383374de",
+      "digest": "sha256:946b101197bb9349e9e5a4a53d5d094d1cb7a0c339472a573d5810e9cc64f015",
+      "last_pushed": "2026-07-01",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-hub",
+      "reference": "quay.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7546.h622e1dac",
+      "tag": "5.0.0-0.dev.git.7546.h622e1dac",
+      "digest": "sha256:99d21dab8dd2b94beae4094c806ab00ea4fa57dfaec8ebd4951cc2b9c42851b9",
+      "last_pushed": "2026-10-21",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-hub-slim",
+      "reference": "quay.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7546.h622e1dac",
+      "tag": "5.0.0-0.dev.git.7546.h622e1dac",
+      "digest": "sha256:697f0342137a0fdb8061133c5f05f12d3fe7d35ac86fae619462528e18a4587b",
+      "last_pushed": "2026-10-21",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-image-awaiter",
+      "reference": "quay.io/jupyterhub/k8s-image-awaiter:4.4.4",
+      "tag": "4.4.4",
+      "digest": "sha256:0d5e5e04f5086b44e6f649dac9a2e413b5af3f57c270a1125e6454f008bf76e5",
+      "last_pushed": "2026-10-20",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-network-tools",
+      "reference": "quay.io/jupyterhub/k8s-network-tools:4.4.4",
+      "tag": "4.4.4",
+      "digest": "sha256:9253a270fd2627154b38aea8a43a12e5afbebeb0d0b7d4c13679301cd9a83a0c",
+      "last_pushed": "2026-10-20",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-secret-sync",
+      "reference": "quay.io/jupyterhub/k8s-secret-sync:4.4.4",
+      "tag": "4.4.4",
+      "digest": "sha256:2454d518282412d9846b0d126297f3f4e58f56caa333df22c531a305d6fa57f7",
+      "last_pushed": "2026-10-20",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "k8s-singleuser-sample",
+      "reference": "quay.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7546.h622e1dac",
+      "tag": "5.0.0-0.dev.git.7546.h622e1dac",
+      "digest": "sha256:1b6cfaaf470b2295eaede821973405c1012ea814c84f52a7a7b6df912f673331",
+      "last_pushed": "2026-10-21",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "repo2docker",
+      "reference": "quay.io/jupyterhub/repo2docker:latest",
+      "tag": "latest",
+      "digest": "sha256:e49d680c04f900fa823115bd96513232b85ab822cd28ad9daefca78ecff3397a",
+      "last_pushed": "2026-04-23",
+      "pulls": null,
+      "description": "[`repo2docker`](https://github.com/jupyterhub/repo2docker) fetches a git repository and builds a container image based on the configuration files found in the repository.",
+      "repos": [
+        "jupyterhub/repo2docker"
+      ]
+    },
+    {
+      "registry": "quay.io",
+      "namespace": "jupyterhub",
+      "name": "singleuser",
+      "reference": "quay.io/jupyterhub/singleuser:latest",
+      "tag": "latest",
+      "digest": "sha256:11f725bd960266dad7d1e90880e73c50d74f26715459a39113c3bea876a74b0c",
+      "last_pushed": "2026-10-28",
+      "pulls": null,
+      "description": null,
+      "repos": []
+    }
+  ]
+}

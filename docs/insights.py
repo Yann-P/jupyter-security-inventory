@@ -31,6 +31,7 @@ REGISTRY_TOKEN = re.compile(r"PYPI|TWINE|NPM", re.I)  # secret names that hold a
 # How step 3 names a registry -> its name on the site, which in lower case is also the name of its page.
 REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
 PACKAGE_HEADER = ["package", "organization", "repository", "kind", "downloads/month", "dependents", "security boundary"]
+IMAGE_HEADER = ["image", "tag", "registry", "pulls", "last pushed", "repositories"]
 
 REPO_PAGE = """# {title}
 
@@ -180,6 +181,7 @@ class Data:
         dataset = load("jupyter_repos.json")
         self.repos = {repo["full_name"]: repo for repo in dataset["repos"]}
         self.scan = load("scan.json")
+        self.images = load("images.json")["images"]
         self.orgs = load("repos.json")["orgs"]
         with open(OUTPUT / "repos.csv", encoding="utf-8") as file:
             self.table = list(csv.DictReader(file))
@@ -301,6 +303,32 @@ def package_pages(data: Data) -> list[list]:
             ]
         )
     return summary
+
+
+def image_url(image: dict) -> str:
+    """The page of an image on its registry."""
+    path = f"{image['namespace']}/{image['name']}"
+    return (
+        f"https://hub.docker.com/r/{path}" if image["registry"] == "docker.io" else f"https://quay.io/repository/{path}"
+    )
+
+
+def image_row(data: Data, image: dict) -> list:
+    """A row of IMAGE_HEADER. Pulls are blank for Quay, which publishes none."""
+    return [
+        f"[{plain(image['namespace'] + '/' + image['name'])}]({image_url(image)})",
+        plain(image["tag"]),
+        image["registry"],
+        n(image["pulls"]) if image["pulls"] is not None else "",
+        image["last_pushed"],
+        ", ".join(link(name) if name in data.repos else plain(name) for name in image["repos"]),
+    ]
+
+
+def image_rows(data: Data) -> list[list]:
+    """The images, most pulled first. Quay publishes no pull counts, so its images come last."""
+    ordered = sorted(data.images, key=lambda i: (-(i["pulls"] or 0), i["registry"], i["namespace"], i["name"]))
+    return [image_row(data, image) for image in ordered]
 
 
 def tables(file: str, software: list, docs: list, sortable: bool) -> str:
@@ -468,6 +496,9 @@ def build() -> dict:
         package_pages(data),
     )
 
+    # Container images
+    write_csv(GENERATED / "images.csv", IMAGE_HEADER, image_rows(data))
+
     # All repositories: the home page
     software = [name for name in names if not data.out_of_the_way(name)]
     docs = [name for name in names if data.out_of_the_way(name)]
@@ -478,6 +509,7 @@ def build() -> dict:
     return {
         "kinds": ", ".join(f"{kind} {count}" for kind, count in kinds),
         "legend": LEGEND,
+        "images": n(len(data.images)),
         "software": n(len(software)),
         "docs": n(len(docs)),
     }

@@ -15,7 +15,7 @@ Project Jupyter has over 400 public repositories across 20 GitHub organizations.
 
 ## How it works
 
-Six scripts run in order (they depend on each other):
+Seven scripts run in order (they depend on each other):
 
 | Step | What it does | Data from |
 |---|---|---|
@@ -25,6 +25,7 @@ Six scripts run in order (they depend on each other):
 | 4. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
 | 5. Merge | Puts it all together and works out which repositories run each other's code | |
 | 6. Table | Writes `output/repos.csv` | |
+| 7. Images | Lists the container images published on Docker Hub and Quay, with the tag people pull, its digest and Docker Hub's pull count. Writes `output/images.json`, and `output/images.txt` for image scanners | Docker Hub, Quay |
 
 ## The columns
 
@@ -40,6 +41,9 @@ Six scripts run in order (they depend on each other):
 
 - **Repository type, and security boundary come from a language model**
 - Download counts include CI.
+- Images: ghcr.io is not covered (it lists nothing without authentication), Quay publishes no pull counts, and only the
+  tag people get by default is recorded. The Docker Hub and Quay namespaces to look at are listed by hand in
+  `scripts/7_images.py`.
 - "Used in CI" only sees the repositories listed here.
 
 ## Running it
@@ -55,7 +59,38 @@ python scripts/3_packages.py
 python scripts/4_classify.py --clone-dir ~/clones
 python scripts/5_build_dataset.py
 python scripts/6_table.py
+python scripts/7_images.py
 ```
+
+## Scanning the images
+
+`output/images.txt` has one image reference per line and nothing else, so any image scanner can read it and
+nothing here depends on one. Scanners pull the images themselves, so run them from your own machine or CI, on
+the file in a checkout or downloaded from
+`https://raw.githubusercontent.com/Yann-P/jupyter-security-inventory/main/output/images.txt`. Some tools worth
+trying:
+
+- [Trivy](https://trivy.dev): known vulnerabilities in the operating system and in Python, npm and other packages,
+  plus secrets and misconfigurations. A good first scanner.
+- [Grype](https://github.com/anchore/grype), with [Syft](https://github.com/anchore/syft) to list what an image
+  contains (an SBOM): known vulnerabilities again, from another database, so the two disagree usefully.
+- [Dockle](https://github.com/goodwithtech/dockle): not vulnerabilities but how the image is built, like running as
+  root or leaving secrets and credentials in it.
+- [Docker Scout](https://docs.docker.com/scout/) (`docker scout cves`): the same idea, built into Docker.
+
+```bash
+# Trivy: a JSON report per image, in reports/
+mkdir -p reports
+while read -r image; do
+  trivy image --severity HIGH,CRITICAL --format json --output "reports/$(echo "$image" | tr '/:' '__').json" "$image"
+done < output/images.txt
+
+# Grype: a table per image
+xargs -n1 grype < output/images.txt
+```
+
+`output/images.json` has the digest of each image, to find out which images are the same on both registries, and
+the repositories each image points to, to find who to report to.
 
 ## Daily updates
 
