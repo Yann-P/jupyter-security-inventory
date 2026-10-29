@@ -9,12 +9,33 @@ def test_plain_keeps_text_from_repos_from_becoming_html_or_markdown():
     assert insights.plain("[click](evil)") == "\\[click\\]\\(evil\\)"  # a link the model was tricked into writing
 
 
-def test_org_summary_reads_as_one_sentence():
+def test_summary_sentence_reads_as_one_sentence():
     counts = {"repos": 35, "packaged": 6, "boundaries": 1, "services": 0}
-    assert insights.org_summary("jupyter-book", counts) == (
+    assert insights.summary_sentence("[github.com/jupyter-book](https://github.com/jupyter-book)", counts) == (
         "[github.com/jupyter-book](https://github.com/jupyter-book) has 35 public repositories: "
         "6 publish a package and 1 is a security boundary."
     )
+
+
+def test_shown_turns_a_cell_back_into_the_text_it_displays():
+    assert (
+        insights.shown("[[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)]{.kind-package}")
+        == "jupyterhub/jupyterhub"
+    )
+    assert (
+        insights.shown("[]{.fa-brands .fa-python} [jupyterhub](https://pypi.org/project/jupyterhub/)") == "jupyterhub"
+    )
+    assert insights.shown("[1,234](https://pypistats.org/packages/jupyterhub)") == "1234"
+    assert insights.shown("unknown") == ""
+    text = "see [the docs](https://example.org), {{ repos }} <b>"
+    assert insights.shown(insights.plain(text)) == text  # text from a repo comes back as it was
+
+
+def test_write_table_writes_the_download_in_plain_text(tmp_path, monkeypatch):
+    monkeypatch.setattr(insights, "GENERATED", tmp_path)
+    insights.write_table("o-repos", ["repo", "downloads/month"], [["[[o\\/r](/orgs/o/r.md)]{.kind-tooling}", "1,234"]])
+    assert (tmp_path / "o-repos.csv").read_text().startswith("repo,downloads/month\n[[o\\/r]")
+    assert (tmp_path / "downloads" / "o-repos.csv").read_text() == "repo,downloads/month\no/r,1234\n"
 
 
 def make_data(*repos):
@@ -100,33 +121,32 @@ def test_image_rows_list_the_most_pulled_first_and_the_images_without_pull_count
     assert [row[5] for row in rows] == ["9", "5", ""]
 
 
-def test_package_pages_write_a_table_per_registry_and_summarize_them(tmp_path, monkeypatch):
-    monkeypatch.setattr(insights, "GENERATED", tmp_path)
+def test_package_summary_counts_the_packages_of_each_registry():
     data = make_data(
         make_repo("jupyterlab/lumino", [("NPM", "@lumino/coreutils", 5, 1), ("NPM", "@lumino/algorithm", 9, 1)]),
         make_repo("jupyter/notebook", [("PYPI", "notebook", 7, 3)]),
     )
-    summary = insights.package_pages(data)
-    assert [row[:4] for row in summary] == [
+    assert [row[:4] for row in insights.package_summary(data)] == [
         ["[PyPI](/packages/pypi.md)", 1, 1, 1],
         ["[npm](/packages/npm.md)", 2, 1, 1],
     ]
-    assert len((tmp_path / "packages-pypi.csv").read_text().splitlines()) == 2  # the header and notebook
-    assert len((tmp_path / "packages-npm.csv").read_text().splitlines()) == 3
 
 
-def test_org_body_leaves_out_empty_tables_and_the_sections_they_were_in():
-    body = insights.org_body("o", software=[["r"]], docs=[], packages={"PyPI": [], "npm": [["p"]]}, images=[])
+def test_sections_leave_out_empty_tables_and_the_sections_they_were_in():
+    body = insights.sections("o", [["r"]], [], {"PyPI": [], "npm": [["p"]]}, [], by_org=False)
     headings = [line for line in body.splitlines() if line.startswith("#")]
     assert headings == ["## Repositories", "### Software", "## Packages", "### npm"]
     assert body.startswith("[Repositories (1)](#repositories) · [Packages (1)](#packages)")  # no link to "Images"
 
-    body = insights.org_body("o", software=[["r"]], docs=[["d"]], packages={"PyPI": [], "npm": []}, images=[])
+    body = insights.sections("o", [["r"]], [["d"]], {"PyPI": [], "npm": []}, [], by_org=False)
     assert "(#" not in body  # a page with one section needs no links to its sections
 
 
-def test_org_body_lists_the_images_under_their_section_without_a_subheading():
-    body = insights.org_body("o", software=[["r"]], docs=[], packages={"PyPI": [], "npm": []}, images=[["i"], ["j"]])
+def test_sections_list_the_images_without_a_subheading_and_link_each_table_to_its_download():
+    body = insights.sections("all", [["r"]], [], {"PyPI": [], "npm": []}, [["i"], ["j"]], by_org=True)
     headings = [line for line in body.splitlines() if line.startswith("#")]
     assert headings == ["## Repositories", "### Software", "## Images"]
     assert body.startswith("[Repositories (1)](#repositories) · [Images (2)](#images)")
+    assert "{download}`Download CSV </_generated/downloads/all-images.csv>`" in body
+    assert ":file: /_generated/all-images.csv" in body
+    assert ":class: sphinx-datatable filter-by-org" in body  # the images have an organization column here

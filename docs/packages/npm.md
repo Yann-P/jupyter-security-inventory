@@ -6,8 +6,10 @@ html_theme.sidebar_secondary.remove: true
 
 {{ downloads_note }}
 
+{download}`Download CSV </_generated/downloads/all-npm.csv>`
+
 ```{csv-table}
-:file: ../_generated/packages-npm.csv
+:file: /_generated/all-npm.csv
 :header-rows: 1
 :class: sphinx-datatable filter-by-org
 ```

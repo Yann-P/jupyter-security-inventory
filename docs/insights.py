@@ -1,7 +1,8 @@
 """Pages and tables for the site, generated from output/ each time Sphinx starts.
 
 conf.py calls build(), which:
-- writes short CSV tables into docs/_generated/ for the hand-written pages to include,
+- writes CSV tables into docs/_generated/ for the pages to include, each with a plain-text copy in downloads/,
+- writes the body of the home page (docs/_generated/home.md), which has the sections of an organization page,
 - writes a page per organization (docs/orgs/<org>.md) and per repository (docs/orgs/<org>/<repo>.md),
 - returns the legend and the notes that the hand-written pages quote, as MyST substitutions: {{ legend }}, ...
 
@@ -33,6 +34,8 @@ REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
 # These tables are not tinted by kind: that is for repo tables.
 PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
 IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "all-time pulls", "last published"]
+DOCS_HEADER = ["repo", "kind", "live service"]
+ALL = "all"  # the scope of the home page, which lists every organization; an organization's page is scoped to it
 DOWNLOADS_NOTE = "Downloads are for the last month and include CI."
 PULLS_NOTE = "Only Docker Hub has pull counts; they are all-time and include CI."
 
@@ -160,12 +163,30 @@ def date(day: str | None) -> str:
     return f"[{day}]{{.date}}" if day else ""
 
 
+# A link [text](url) or a span [text]{.class}, as the cells of the tables have them.
+MARKUP = re.compile(r"\[((?:\\.|[^\[\]\\])*)\](?:\([^)]*\)|\{[^}]*\})")
+
+
+def shown(cell) -> str:
+    """A cell as the text it shows, for the CSV download: '[[a\\/b](/orgs/a/b.md)]{.kind-tooling}' -> 'a/b'.
+
+    Counts lose their thousands separators and the "unknown" of a missing count, so a spreadsheet reads them.
+    """
+    cell = str(cell)
+    while (inner := MARKUP.sub(r"\1", cell)) != cell:  # the innermost first: a repo is a link inside a span
+        cell = inner
+    cell = re.sub(r"\\([!-/:-@\[-`{-~])", r"\1", cell).strip()
+    if re.fullmatch(r"\d{1,3}(,\d{3})+", cell):
+        return cell.replace(",", "")
+    return "" if cell == "unknown" else cell
+
+
 def counted(number: int, one: str, many: str) -> str:
     """counted(1, "is a boundary", "are boundaries") -> '1 is a boundary'."""
     return f"{number} {one if number == 1 else many}"
 
 
-def org_summary(org: str, counts: dict) -> str:
+def summary_sentence(subject: str, counts: dict) -> str:
     """'github.com/jupyter has 60 public repositories: 23 publish a package, 6 are security ...'"""
     facts = [
         counted(counts["packaged"], "publishes a package", "publish a package"),
@@ -173,9 +194,7 @@ def org_summary(org: str, counts: dict) -> str:
         counted(counts["services"], "deploys a live service", "deploy a live service"),
     ]
     facts = [fact for fact in facts if not fact.startswith("0 ")]
-    sentence = f"[github.com/{org}](https://github.com/{org}) has " + counted(
-        counts["repos"], "public repository", "public repositories"
-    )
+    sentence = f"{subject} has " + counted(counts["repos"], "public repository", "public repositories")
     if facts:
         sentence += ": " + (", ".join(facts[:-1]) + " and " + facts[-1] if len(facts) > 1 else facts[0])
     return sentence + "."
@@ -193,6 +212,12 @@ def write_csv(path: Path, header: list[str], rows: list[list]):
         writer = csv.writer(file, lineterminator="\n")
         writer.writerow(header)
         writer.writerows(rows)
+
+
+def write_table(stem: str, header: list[str], rows: list[list]):
+    """Writes a table of the site, <stem>.csv, and downloads/<stem>.csv: the same rows as plain text."""
+    write_csv(GENERATED / f"{stem}.csv", header, rows)
+    write_csv(GENERATED / "downloads" / f"{stem}.csv", header, [[shown(cell) for cell in row] for row in rows])
 
 
 class Data:
@@ -275,7 +300,7 @@ def repo_rows(data: Data, names) -> list[list]:
 
 
 def docs_rows(data: Data, names) -> list[list]:
-    """Rows for documentation and examples: the ones that deploy a site first."""
+    """Rows of DOCS_HEADER for documentation and examples: the ones that deploy a site first."""
     names = sorted(names, key=lambda name: (not data.label(name, "deploys_live_service"), name))
     return [
         [data.cell(name), data.label(name, "kind"), plain(data.label(name, "deploys_live_service"))] for name in names
@@ -304,14 +329,11 @@ def package_row(data: Data, name: str, p: dict) -> list:
     ]
 
 
-def package_pages(data: Data) -> list[list]:
-    """Writes a table of the published packages per registry. Returns the rows of the summary table."""
+def package_summary(data: Data) -> list[list]:
+    """The rows of the summary table of the registries, which link to their pages."""
     summary = []
     for system, title in REGISTRIES.items():
         found = published(data, system)
-        write_csv(
-            GENERATED / f"packages-{title.lower()}.csv", PACKAGE_HEADER, [package_row(data, *item) for item in found]
-        )
         top = f"{system}:{found[0][1]['name']}" if found else None
         summary.append(
             [
@@ -362,30 +384,80 @@ def without_org(header: list[str], rows: list[list]) -> tuple[list[str], list[li
     return header[:at] + header[at + 1 :], [row[:at] + row[at + 1 :] for row in rows]
 
 
-def csv_table(file: str) -> str:
-    """The Markdown for a sortable table whose rows are in <file>.csv, next to the page."""
-    return f"```{{csv-table}}\n:file: {file}.csv\n:header-rows: 1\n:class: sphinx-datatable\n```"
+def csv_table(stem: str, by_org: bool = False) -> str:
+    """The Markdown for a sortable table whose rows are in <stem>.csv, with a link to download them.
+
+    `by_org`: the table has an organization column, which gets a filter.
+    """
+    classes = "sphinx-datatable" + (" filter-by-org" if by_org else "")
+    return (
+        f"{{download}}`Download CSV </_generated/downloads/{stem}.csv>`\n\n"
+        f"```{{csv-table}}\n:file: /_generated/{stem}.csv\n:header-rows: 1\n:class: {classes}\n```"
+    )
 
 
-def org_body(org: str, software: list, docs: list, packages: dict, images: list) -> str:
-    """The sections of an organization's page: repositories, packages (a table per registry) and images.
+def sections(scope: str, software: list, docs: list, packages: dict, images: list, by_org: bool) -> str:
+    """The sections of a page: repositories, packages (a table per registry) and images.
 
     `packages` maps a registry's title to its rows. A table with no rows is left out, and so is a section with no
-    table. With more than one section, a line of links to them comes first.
+    table. With more than one section, a line of links to them comes first. `by_org`: the package and image tables
+    have an organization column.
     """
-    sections = [  # (title, note, [(subtitle, CSV file, rows)])
-        ("Repositories", LEGEND, [("Software", org, software), ("Documentation and examples", f"{org}-docs", docs)]),
-        ("Packages", DOWNLOADS_NOTE, [(title, f"{org}-{title.lower()}", rows) for title, rows in packages.items()]),
-        ("Images", PULLS_NOTE, [(None, f"{org}-images", images)]),
+    groups = [  # (title, note, [(subtitle, table stem, rows, by_org)])
+        (
+            "Repositories",
+            LEGEND,
+            [
+                ("Software", f"{scope}-repos", software, False),
+                ("Documentation and examples", f"{scope}-docs", docs, False),
+            ],
+        ),
+        (
+            "Packages",
+            DOWNLOADS_NOTE,
+            [(title, f"{scope}-{title.lower()}", rows, by_org) for title, rows in packages.items()],
+        ),
+        ("Images", PULLS_NOTE, [(None, f"{scope}-images", images, by_org)]),
     ]
     links, parts = [], []
-    for title, note, tables in sections:
+    for title, note, tables in groups:
         tables = [table for table in tables if table[2]]
         if tables:
-            links.append(f"[{title} ({sum(len(rows) for *_, rows in tables)})](#{title.lower()})")
-            blocks = [f"### {sub}\n\n{csv_table(file)}" if sub else csv_table(file) for sub, file, _ in tables]
+            links.append(f"[{title} ({sum(len(rows) for _, _, rows, _ in tables)})](#{title.lower()})")
+            blocks = [
+                f"### {subtitle}\n\n{csv_table(stem, filtered)}" if subtitle else csv_table(stem, filtered)
+                for subtitle, stem, _, filtered in tables
+            ]
             parts.append(f"## {title}\n\n{note}\n\n" + "\n\n".join(blocks))
     return "\n\n".join(([" · ".join(links)] if len(links) > 1 else []) + parts)
+
+
+def write_tables(data: Data, scope: str, names: list[str], images: list[dict], by_org: bool) -> str:
+    """Writes the tables of a page that lists repositories, their packages and images. Returns its sections.
+
+    `names` are the repositories of the page. Without `by_org`, the tables of packages and images
+    leave out the organization column, which is the same on every row of an organization's page.
+    """
+
+    def write(stem: str, header: list[str], rows: list[list]) -> list[list]:
+        if not by_org:
+            header, rows = without_org(header, rows)
+        write_table(f"{scope}-{stem}", header, rows)
+        return rows
+
+    software = repo_rows(data, [name for name in names if not data.out_of_the_way(name)])
+    docs = docs_rows(data, [name for name in names if data.out_of_the_way(name)])
+    write_table(f"{scope}-repos", list(data.table[0]), software)
+    write_table(f"{scope}-docs", DOCS_HEADER, docs)
+    packages = {
+        title: write(
+            title.lower(),
+            PACKAGE_HEADER,
+            [package_row(data, name, p) for name, p in published(data, system) if name in names],
+        )
+        for system, title in REGISTRIES.items()
+    }
+    return sections(scope, software, docs, packages, write("images", IMAGE_HEADER, image_rows(images)), by_org)
 
 
 def image_item(image: dict) -> str:
@@ -472,6 +544,17 @@ def repo_page(data: Data, name: str) -> str:
     )
 
 
+def tally(data: Data, names) -> dict:
+    """What the summary sentence and the table of organizations count among these repos."""
+    return {
+        "repos": len(names),
+        "packaged": sum(bool(data.repos[name]["top_package"]) for name in names),
+        "boundaries": sum(bool(data.label(name, "security_boundary")) for name in names),
+        "services": sum(bool(data.label(name, "deploys_live_service")) for name in names),
+        "tokens": sum(bool(data.tokens(name)) for name in names),
+    }
+
+
 def org_pages(data: Data) -> list[list]:
     """A page per organization, with a page per repository under it. Returns the rows of the summary table."""
     shutil.rmtree(DOCS / "orgs", ignore_errors=True)  # generated: pages of repos that are gone must go too
@@ -483,34 +566,17 @@ def org_pages(data: Data) -> list[list]:
         if not names:  # no public, non-archived repositories
             summary[org] = [plain(org), 0, 0, len(org_images), 0, 0, 0, "", ""]
             continue
-        software = repo_rows(data, [name for name in names if not data.out_of_the_way(name)])
-        docs = docs_rows(data, [name for name in names if data.out_of_the_way(name)])
-        write_csv(DOCS / "orgs" / f"{org}.csv", list(data.table[0]), software)
-        write_csv(DOCS / "orgs" / f"{org}-docs.csv", ["repo", "kind", "live service"], docs)
-        packages = {}
-        for system, title in REGISTRIES.items():
-            found = [(name, p) for name, p in published(data, system) if data.repos[name]["org"] == org]
-            header, rows = without_org(PACKAGE_HEADER, [package_row(data, *item) for item in found])
-            write_csv(DOCS / "orgs" / f"{org}-{title.lower()}.csv", header, rows)
-            packages[title] = rows
-        header, image_table = without_org(IMAGE_HEADER, image_rows(org_images))
-        write_csv(DOCS / "orgs" / f"{org}-images.csv", header, image_table)
-        (DOCS / "orgs" / org).mkdir()
+        body = write_tables(data, org, names, org_images, by_org=False)
+        (DOCS / "orgs" / org).mkdir(parents=True)
         for name in names:
             (DOCS / f"{slug(name)}.md").write_text(repo_page(data, name), encoding="utf-8")
-        counts = {
-            "repos": len(names),
-            "packaged": sum(bool(data.repos[name]["top_package"]) for name in names),
-            "boundaries": sum(bool(data.label(name, "security_boundary")) for name in names),
-            "services": sum(bool(data.label(name, "deploys_live_service")) for name in names),
-            "tokens": sum(bool(data.tokens(name)) for name in names),
-        }
+        counts = tally(data, names)
         pages = "\n".join(slug(name).removeprefix("orgs/") for name in names)
         page = ORG_PAGE.format(
             title=plain(org),
-            summary=org_summary(org, counts),
+            summary=summary_sentence(f"[github.com/{org}](https://github.com/{org})", counts),
             pages=pages,
-            body=org_body(org, software, docs, packages, image_table),
+            body=body,
         )
         (DOCS / "orgs" / f"{org}.md").write_text(page, encoding="utf-8")
         top = data.repos[names[0]]
@@ -540,8 +606,8 @@ def build() -> dict:
     names = list(data.repos)
 
     # Organizations, with a page per organization and repository
-    write_csv(
-        GENERATED / "orgs.csv",
+    write_table(
+        "orgs",
         [
             "organization",
             "repos",
@@ -556,20 +622,17 @@ def build() -> dict:
         org_pages(data),
     )
 
-    # Published packages: a table per registry
-    write_csv(
-        GENERATED / "packages.csv",
-        ["registry", "packages", "repositories", "organizations", "most downloaded", "downloads/month"],
-        package_pages(data),
+    # All organizations: the home page, whose package and image tables the pages of packages and images show too
+    body = write_tables(data, ALL, names, data.images, by_org=True)
+    (GENERATED / "home.md").write_text(
+        summary_sentence("Project Jupyter", tally(data, names)) + "\n\n" + body, encoding="utf-8"
     )
 
-    # Container images
-    write_csv(GENERATED / "images.csv", IMAGE_HEADER, image_rows(data.images))
-
-    # All repositories: the home page
-    software = [name for name in names if not data.out_of_the_way(name)]
-    docs = [name for name in names if data.out_of_the_way(name)]
-    write_csv(GENERATED / "repos.csv", list(data.table[0]), repo_rows(data, software))
-    write_csv(GENERATED / "repos-docs.csv", ["repo", "kind", "live service"], docs_rows(data, docs))
+    # Published packages: a summary of the registries
+    write_table(
+        "packages",
+        ["registry", "packages", "repositories", "organizations", "most downloaded", "downloads/month"],
+        package_summary(data),
+    )
 
     return {"legend": LEGEND, "downloads_note": DOWNLOADS_NOTE, "pulls_note": PULLS_NOTE}

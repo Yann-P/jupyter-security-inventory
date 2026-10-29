@@ -2,26 +2,9 @@
 html_theme.sidebar_secondary.remove: true
 ---
 
-# All Jupyter Repositories
+# All organizations
 
-Every public, non-archived repository. {{ legend }}
-
-## Software
-
-```{csv-table}
-:file: _generated/repos.csv
-:header-rows: 1
-:class: sphinx-datatable
-```
-
-## Documentation and examples
-
-They publish no package and are not a security boundary.
-
-```{csv-table}
-:file: _generated/repos-docs.csv
-:header-rows: 1
-:class: sphinx-datatable
+```{include} _generated/home.md
 ```
 
 ```{toctree}
