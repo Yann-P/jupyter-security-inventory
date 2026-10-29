@@ -30,7 +30,13 @@ def make_repo(full_name, packages, boundary=None):
         "full_name": full_name,
         "org": org,
         "packages": [
-            {"system": system, "name": name, "downloads_last_month": downloads, "dependents": dependents}
+            {
+                "system": system,
+                "name": name,
+                "downloads_last_month": downloads,
+                "dependents": dependents,
+                "last_published": "2026-10-20",
+            }
             for system, name, downloads, dependents in packages
         ],
         "classification": {"kind": "package", "security_boundary": boundary},
@@ -55,18 +61,40 @@ def test_published_lists_one_registry_most_downloaded_first():
     assert [p["name"] for _, p in insights.published(data, "PYPI")] == ["notebook"]
 
 
-def test_package_row_links_the_package_its_org_and_its_repo():
+def test_package_row_links_the_package_its_org_and_its_repo_without_the_kind_colors():
     data = make_data(make_repo("jupyterhub/jupyterhub", [("PYPI", "jupyterhub", 1234, 56)], "runs multi-user servers"))
     [(name, package)] = insights.published(data, "PYPI")
     assert insights.package_row(data, name, package) == [
         "[jupyterhub](https://pypi.org/project/jupyterhub/)",
         "[jupyterhub](/orgs/jupyterhub.md)",
-        "[[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)]{.kind-package}",
-        "package",
+        "[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)",  # no {.kind-package}: the table is not about kinds
         "[1,234](https://pypistats.org/packages/jupyterhub)",
         "56",
-        "[runs multi\\-user servers]{.reason}",
+        "[2026-10-20]{.date}",
     ]
+
+
+def test_image_row_has_the_columns_of_the_package_rows_and_links_the_repo_and_the_org():
+    data = make_data(make_repo("jupyterhub/binderhub", []))
+    image = {
+        "registry": "quay.io",
+        "namespace": "jupyterhub",
+        "name": "k8s-binderhub",
+        "tag": "1.0.0",
+        "pulls": None,
+        "last_published": "2026-07-01",
+        "repo": "jupyterhub/binderhub",
+    }
+    assert insights.image_row(data, image) == [
+        "[jupyterhub\\/k8s\\-binderhub](https://quay.io/repository/jupyterhub/k8s-binderhub)",
+        "quay.io",
+        "1\\.0\\.0",
+        "[jupyterhub](/orgs/jupyterhub.md)",
+        "[jupyterhub\\/binderhub](/orgs/jupyterhub/binderhub.md)",
+        "",  # Quay publishes no pull counts
+        "[2026-07-01]{.date}",
+    ]
+    assert insights.image_row(data, image | {"repo": None})[4] == ""  # an image can come from no known repo
 
 
 def test_package_pages_write_a_table_per_registry_and_summarize_them(tmp_path, monkeypatch):

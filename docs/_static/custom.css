@@ -5,6 +5,7 @@
 .navbar-header-items__end .search-button-field { width: 100%; max-width: 40rem; }
 /* A security boundary's reason wraps onto several lines rather than widening its column. */
 .reason { display: inline-block; min-width: 14rem; max-width: 18rem; }
+.date { white-space: nowrap; }  /* a date stays on one line instead of wrapping at its hyphens */
 
 /* Table rows tinted by the repository's kind: insights.py tags each repository cell with kind-<kind>.
    Translucent, so the table stripes and the dark theme show through. The row under the mouse gets a

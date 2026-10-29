@@ -1,8 +1,8 @@
-"""Tests for scripts/5_build_dataset.py."""
+"""Tests for scripts/6_build_dataset.py."""
 
 import importlib
 
-build = importlib.import_module("5_build_dataset")
+build = importlib.import_module("6_build_dataset")
 
 
 def test_find_users_sees_actions_pinned_or_not_and_build_requirements():

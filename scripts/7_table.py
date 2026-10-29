@@ -1,11 +1,12 @@
-"""Step 6: write output/repos.csv, the table shown on the site. One row per repo, one column per metric.
+"""Step 7: write output/repos.csv, the table shown on the site. One row per repo, one column per metric.
 
-    python scripts/6_table.py
+    python scripts/7_table.py
 
 The columns:
   package            its most downloaded package
   downloads/month    monthly downloads of that package
   dependents         how many packages depend on it
+  images             how many container images come from it
   used in CI         how many other repos run its GitHub Actions or build tools in their CI or releases.
                      Repos that pin its actions to a commit SHA are not counted.
   live service       the website or service it deploys
@@ -29,6 +30,7 @@ def row(repo: dict) -> dict:
         "package": repo["top_package"] or "",
         "downloads/month": repo["max_downloads_last_month"] if has_package else "",
         "dependents": repo["top_package_dependents"] if has_package else "",
+        "images": len(repo["images"]) or "",
         "used in CI": len(set(used_by["ci"] + used_by["build"])) or "",
         "live service": labels["deploys_live_service"] or "",
         "security boundary": labels["security_boundary"] or "",

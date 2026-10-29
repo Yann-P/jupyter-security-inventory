@@ -16,6 +16,7 @@ import json
 import re
 import shutil
 from collections import Counter
+from functools import cached_property
 from pathlib import Path
 from urllib.parse import quote
 
@@ -30,8 +31,10 @@ OUT_OF_THE_WAY = {"documentation", "example"}
 REGISTRY_TOKEN = re.compile(r"PYPI|TWINE|NPM", re.I)  # secret names that hold a PyPI or npm token
 # How step 3 names a registry -> its name on the site, which in lower case is also the name of its page.
 REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
-PACKAGE_HEADER = ["package", "organization", "repository", "kind", "downloads/month", "dependents", "security boundary"]
-IMAGE_HEADER = ["image", "tag", "registry", "pulls", "last pushed", "repositories"]
+# The tables of published things (packages, images) have the same columns: what, who publishes it, the repository
+# it comes from, how much it is used and when it was last published. They are not tinted by kind: that is for repos.
+PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
+IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "pulls (all time)", "last published"]
 
 REPO_PAGE = """# {title}
 
@@ -42,6 +45,7 @@ REPO_PAGE = """# {title}
 ## Reach
 
 - **Packages:** {packages}
+- **Container images:**{images}
 - **Run by other repositories:** {users}
 - **Live service:** {service}
 - **Security boundary:** {boundary}
@@ -139,6 +143,11 @@ def stats(top: str | None, count: str) -> str:
     return f"[{count}]({url})"
 
 
+def date(day: str | None) -> str:
+    """A date in a table, kept on one line: '2026-10-28' would otherwise wrap at its hyphens."""
+    return f"[{day}]{{.date}}" if day else ""
+
+
 def counted(number: int, one: str, many: str) -> str:
     """counted(1, "is a boundary", "are boundaries") -> '1 is a boundary'."""
     return f"{number} {one if number == 1 else many}"
@@ -186,6 +195,20 @@ class Data:
         with open(OUTPUT / "repos.csv", encoding="utf-8") as file:
             self.table = list(csv.DictReader(file))
         self.jupyter = {org.lower() for org in self.orgs}
+
+    @cached_property
+    def orgs_with_repos(self) -> set:
+        return {repo["org"] for repo in self.repos.values()}
+
+    def org_cell(self, org: str) -> str:
+        """An organization in a table: a link to its page, which exists once it has a repository."""
+        return f"[{plain(org)}](/orgs/{org}.md)" if org in self.orgs_with_repos else plain(org)
+
+    def repo_cell(self, name: str | None) -> str:
+        """A repository in a table: a link to its page, or nothing when there is none."""
+        if not name:
+            return ""
+        return link(name) if name in self.repos else plain(name)
 
     def users(self, name: str) -> set:
         """The other repos that run this repo's actions or build tools without pinning them."""
@@ -243,6 +266,7 @@ def repo_rows(data: Data, names) -> list[list]:
                 package(row["package"]),
                 stats(row["package"], grouped(row["downloads/month"])),
                 grouped(row["dependents"]),
+                grouped(row["images"]),
                 grouped(row["used in CI"]),
                 plain(row["live service"]),
                 f"[{plain(row['security boundary'])}]{{.reason}}" if row["security boundary"] else "",
@@ -269,17 +293,15 @@ def published(data: Data, system: str) -> list[tuple[str, dict]]:
 
 
 def package_row(data: Data, name: str, p: dict) -> list:
-    """A row of PACKAGE_HEADER: the package, who publishes it, and the labels of the repo it comes from."""
-    key, org = f"{p['system']}:{p['name']}", data.repos[name]["org"]
-    boundary = data.label(name, "security_boundary")
+    """A row of PACKAGE_HEADER."""
+    key = f"{p['system']}:{p['name']}"
     return [
         f"[{plain(p['name'])}]({registry_url(key)})",
-        f"[{plain(org)}](/orgs/{org}.md)",
-        data.cell(name),
-        data.label(name, "kind"),
+        data.org_cell(data.repos[name]["org"]),
+        data.repo_cell(name),
         stats(key, n(p["downloads_last_month"])),
         n(p["dependents"]),
-        f"[{plain(boundary)}]{{.reason}}" if boundary else "",
+        date(p["last_published"]),
     ]
 
 
@@ -305,23 +327,28 @@ def package_pages(data: Data) -> list[list]:
     return summary
 
 
+def image_path(image: dict) -> str:
+    return f"{image['namespace']}/{image['name']}"
+
+
 def image_url(image: dict) -> str:
     """The page of an image on its registry."""
-    path = f"{image['namespace']}/{image['name']}"
-    return (
-        f"https://hub.docker.com/r/{path}" if image["registry"] == "docker.io" else f"https://quay.io/repository/{path}"
-    )
+    if image["registry"] == "docker.io":
+        return f"https://hub.docker.com/r/{image_path(image)}"
+    return f"https://quay.io/repository/{image_path(image)}"
 
 
 def image_row(data: Data, image: dict) -> list:
-    """A row of IMAGE_HEADER. Pulls are blank for Quay, which publishes none."""
+    """A row of IMAGE_HEADER. The organization is the registry namespace, which is also a GitHub organization.
+    Pulls are blank for Quay, which publishes none."""
     return [
-        f"[{plain(image['namespace'] + '/' + image['name'])}]({image_url(image)})",
-        plain(image["tag"]),
+        f"[{plain(image_path(image))}]({image_url(image)})",
         image["registry"],
+        plain(image["tag"]),
+        data.org_cell(image["namespace"]),
+        data.repo_cell(image["repo"]),
         n(image["pulls"]) if image["pulls"] is not None else "",
-        image["last_pushed"],
-        ", ".join(link(name) if name in data.repos else plain(name) for name in image["repos"]),
+        date(image["last_published"]),
     ]
 
 
@@ -339,6 +366,12 @@ def tables(file: str, software: list, docs: list, sortable: bool) -> str:
             options = ":class: sphinx-datatable\n" if sortable or heading == "Software" else ""
             parts.append(f"## {heading}\n\n```{{csv-table}}\n:file: {file}{suffix}.csv\n:header-rows: 1\n{options}```")
     return "\n\n".join(parts)
+
+
+def image_item(image: dict) -> str:
+    """An image on its repo's page: where to find it, how often it was pulled and when it was last published."""
+    pulls = f", {n(image['pulls'])} pulls" if image["pulls"] is not None else ""
+    return f"[{plain(image_path(image))}]({image_url(image)}) on {image['registry']}{pulls}, last published {image['last_published']}"
 
 
 def repo_page(data: Data, name: str) -> str:
@@ -393,10 +426,11 @@ def repo_page(data: Data, name: str) -> str:
         fork=" · fork" if repo["is_fork"] else "",
         packages="; ".join(
             f"{package(p['system'] + ':' + p['name'])}, {stats(p['system'] + ':' + p['name'], n(p['downloads_last_month']))} downloads/month,"
-            f" {n(p['dependents'])} dependents"
+            f" {n(p['dependents'])} dependents, last published {p['last_published'] or 'unknown'}"
             for p in repo["packages"]
         )
         or "none",
+        images="".join(f"\n  - {image_item(image)}" for image in repo["images"]) or " none",
         users=", ".join(users) or "none",
         service=plain(data.label(name, "deploys_live_service")) or "none",
         boundary=f"yes, it {plain(data.label(name, 'security_boundary'))}"

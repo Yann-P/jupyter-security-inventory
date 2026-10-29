@@ -20,17 +20,20 @@ Seven scripts run in order (they depend on each other):
 | Step | What it does | Data from |
 |---|---|---|
 | 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
-| 2. Scan | Clones each repository and reads its workflows, actions, package manifests and README | GitHub |
-| 3. Packages | Matches PyPI and npm packages to repositories, with downloads and dependents | PyPI, npm, pypistats.org, deps.dev |
-| 4. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
-| 5. Merge | Puts it all together and works out which repositories run each other's code | |
-| 6. Table | Writes `output/repos.csv` | |
-| 7. Images | Lists the container images published on Docker Hub and Quay, with the tag people pull, its digest and Docker Hub's pull count. Writes `output/images.json`, and `output/images.txt` for image scanners | Docker Hub, Quay |
+| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files and README | GitHub |
+| 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents and the date of the last release | PyPI, npm, pypistats.org, deps.dev |
+| 4. Images | Lists the container images published on Docker Hub and Quay and matches them to repositories, with the tag people pull, its digest, Docker Hub's pull count and the date it was pushed. Also writes `output/images.txt` for image scanners | Docker Hub, Quay |
+| 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
+| 6. Merge | Puts it all together and works out which repositories run each other's code | |
+| 7. Table | Writes `output/repos.csv` | |
+
+[architecture.md](https://github.com/Yann-P/jupyter-security-inventory/blob/main/architecture.md) explains how the pieces fit together.
 
 ## The columns
 
 - **kind**: package, application, tooling, deployment, documentation, example or other.
 - **downloads/month** and **dependents**: for the repository's most downloaded package.
+- **images**: how many container images come from the repository.
 - **used in CI**: how many other Jupyter repositories run its actions or build tools without pinning them
   to a commit.
 - **live service**: the site or service it deploys, like mybinder.org.
@@ -41,14 +44,15 @@ Seven scripts run in order (they depend on each other):
 
 - **Repository type, and security boundary come from a language model**
 - Download counts include CI.
-- Images: ghcr.io is not covered (it lists nothing without authentication), Quay publishes no pull counts, and only the
-  tag people get by default is recorded. The Docker Hub and Quay namespaces to look at are listed by hand in
-  `scripts/7_images.py`.
+- Images: ghcr.io is not covered (it lists nothing without authentication), Quay publishes no pull counts, Docker
+  Hub's are all-time counts, and only the tag people get by default is recorded. The Docker Hub and Quay namespaces to
+  look at are listed by hand in `scripts/4_images.py`. An image's repository is the one whose chartpress file builds
+  it, else the one its description links to, else the one named like it; many older images have none.
 - "Used in CI" only sees the repositories listed here.
 
 ## Running it
 
-You need Python >= 3.14, the GitHub CLI (logged in), and a DeepSeek API key for step 4 (or an OpenAI key,
+You need Python >= 3.14, the GitHub CLI (logged in), and a DeepSeek API key for step 5 (or an OpenAI key,
 with `--model <an OpenAI model>`).
 
 ```bash
@@ -56,10 +60,10 @@ pip install . --group dev --group docs
 python scripts/1_inventory.py
 python scripts/2_scan_repos.py --clone-dir ~/clones
 python scripts/3_packages.py
-python scripts/4_classify.py --clone-dir ~/clones
-python scripts/5_build_dataset.py
-python scripts/6_table.py
-python scripts/7_images.py
+python scripts/4_images.py
+python scripts/5_classify.py --clone-dir ~/clones
+python scripts/6_build_dataset.py
+python scripts/7_table.py
 ```
 
 ## Scanning the images
@@ -97,7 +101,7 @@ the repositories each image points to, to find who to report to.
 A GitHub Actions workflow (`update.yml`) reruns the whole pipeline every morning, commits what changed in
 `output/` and republishes the site. It needs a `DEEPSEEK_API_KEY` repository secret.
 
-Step 4 only labels repositories it hasn't labeled yet with the current model, so a daily run costs almost
+Step 5 only labels repositories it hasn't labeled yet with the current model, so a daily run costs almost
 nothing. To relabel everything, switch to another model or delete `output/classification.json`.
 
 ## Contributing

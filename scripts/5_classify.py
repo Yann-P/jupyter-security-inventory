@@ -1,9 +1,9 @@
-"""Step 4: label every repo from its content with an LLM
+"""Step 5: label every repo from its content with an LLM
 
 One short request per repo, 8 repos at a time, with the model's thinking turned off: these labels
 are simple enough not to need it. The prompt below is complete.
 
-Usage: python scripts/4_classify.py --clone-dir /tmp/clones [--only org/repo ...] [--dry-run] [--model M]
+Usage: python scripts/5_classify.py --clone-dir /tmp/clones [--only org/repo ...] [--dry-run] [--model M]
 Needs: pip install .; DEEPSEEK_API_KEY (or OPENAI_API_KEY with --model <an OpenAI model>).
 Output: output/classification.json
 """

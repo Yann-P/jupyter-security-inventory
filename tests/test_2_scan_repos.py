@@ -29,3 +29,19 @@ def test_summarize_workflows_finds_triggers_secrets_and_publishing():
         "secrets": ["PYPI_TOKEN"],  # GITHUB_TOKEN is left out: every repo has it
         "publishes": ["pypi"],
     }
+
+
+def test_chartpress_images_are_the_prefix_and_the_name_of_each_image():
+    chartpress = """
+charts:
+  - name: jupyterhub
+    imagePrefix: quay.io/jupyterhub/k8s-
+    images:
+      hub:
+        contextPath: images/hub
+      awaiter:
+        imageName: quay.io/jupyterhub/k8s-image-awaiter  # an explicit name wins
+  - name: no-images
+"""
+    assert scan.chartpress_images(chartpress) == ["quay.io/jupyterhub/k8s-hub", "quay.io/jupyterhub/k8s-image-awaiter"]
+    assert scan.chartpress_images("not: [valid") == []

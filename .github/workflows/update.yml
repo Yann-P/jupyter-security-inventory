@@ -1,5 +1,5 @@
 # Every day: rebuilds the inventory, commits what changed in output/, and republishes the site.
-# Step 4 only labels new repos (see scripts/4_classify.py), so a daily run costs few tokens.
+# Step 5 only labels new repos (see scripts/5_classify.py), so a daily run costs few tokens.
 # Needs a DEEPSEEK_API_KEY repository secret.
 name: Update
 
@@ -32,12 +32,12 @@ jobs:
           GH_TOKEN: ${{ github.token }}
       - run: python scripts/2_scan_repos.py --clone-dir "$RUNNER_TEMP/clones"
       - run: python scripts/3_packages.py
-      - run: python scripts/4_classify.py --clone-dir "$RUNNER_TEMP/clones"
+      - run: python scripts/4_images.py
+      - run: python scripts/5_classify.py --clone-dir "$RUNNER_TEMP/clones"
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-      - run: python scripts/5_build_dataset.py
-      - run: python scripts/6_table.py
-      - run: python scripts/7_images.py
+      - run: python scripts/6_build_dataset.py
+      - run: python scripts/7_table.py
       - name: Commit output/ if it changed
         run: |
           git config user.name "github-actions[bot]"
