@@ -4,7 +4,7 @@
 //   id           the URL: #/view/<id>
 //   title        nav link and page heading
 //   description  one sentence for the home page and under the heading
-//   source       which records are listed: "repos", "packages" or "orgs" (orgs are derived from the repos)
+//   source       which records are listed: "repos", "packages", "images" or "orgs" (orgs are derived from the repos)
 //   filter       optional (record, params, ctx) => truthy to list the record
 //   params       optional [{name, label, default}]: numbers shown above the table; they live in the URL
 //                (#/view/stale-repos?days=90) and arrive in filter() and in accessors as params.days
@@ -12,7 +12,8 @@
 //                shows `hint` instead of an empty table
 //   columns      what to show: {title, field, type, filter, width, accessor, target, of}
 //                  type      string (default) | text (long, wrapped) | number | date | list
-//                            | repo | package | org (links to that page); `of` makes a list's items links
+//                            | repo | package | org (links to that page) | image (links to its registry page);
+//                            `of` makes a list's items links
 //                  filter    optional header filter: "text" | "select" | "min"
 //                  accessor  optional (record, ctx, params) => value, for a column that is not a field of the record
 //                  target    for link types: the field holding the id, if it is not `field`
@@ -34,7 +35,8 @@
 //     sort: [{ column: "id", dir: "asc" }],
 //   },
 //
-// What a record looks like is in site/data/repos.json and packages.json (written by scripts/5_build_dataset.py).
+// What a record looks like is in site/data/repos.json, packages.json and images.json (written by
+// scripts/6_build_dataset.py).
 
 // Columns that several views use.
 const repo = { title: "Repository", field: "name", type: "repo", target: "id", filter: "text" }; // next to `org`
@@ -43,12 +45,20 @@ const kind = { title: "Kind", field: "kind", filter: "select" };
 const description = { title: "Description", field: "description", type: "text" };
 const downloads = { title: "Downloads / month", field: "downloads_last_month", type: "number", filter: "min" };
 const packages = { title: "Packages", field: "packages", type: "list", of: "package" };
+const pulls = { title: "All-time pulls", field: "pulls", type: "number", filter: "min" };
+const images = { title: "Images", field: "images", type: "list", of: "image", max: 2, width: 300 }; // most pulled first
+const image = { title: "Image", field: "name", type: "image", target: "id", filter: "text" }; // next to `registry`
+const registry = { title: "Registry", field: "registry", filter: "select" };
+const tag = { title: "Tag", field: "tag" };
+const lastPublished = { title: "Last published", field: "last_published", type: "date" };
 const count = (title, field, accessor) => ({ title, field, type: "number", accessor });
 
 const MISSING_COMMIT =
   "Dates come from fetch step 2 (scripts/2_scan_repos.py); once they are in site/data/ this view fills itself.";
-const MISSING_RELEASE =
+const MISSING_PACKAGE_DATES =
   "Dates come from fetch step 3 (scripts/3_packages.py); once they are in site/data/ this view fills itself.";
+const MISSING_IMAGE_DATES =
+  "Dates come from fetch step 4 (scripts/4_images.py); once they are in site/data/ this view fills itself.";
 
 export const views = [
   {
@@ -63,6 +73,8 @@ export const views = [
       description,
       packages,
       downloads,
+      images,
+      pulls,
       { title: "Last commit", field: "last_commit", type: "date" },
     ],
     sort: [{ column: "name", dir: "asc" }],
@@ -76,6 +88,7 @@ export const views = [
       { title: "Organization", field: "id", type: "org", filter: "text" },
       count("Repos", "repos"),
       count("Packages", "packages"),
+      count("Images", "images"),
       count("Security boundaries", "security_boundaries"),
       count("Live services", "live_services"),
       count("Publish from CI", "ci_publishers"),
@@ -95,9 +108,25 @@ export const views = [
       { title: "Repository", field: "repo", type: "repo", filter: "text" },
       downloads,
       { title: "Dependents", field: "dependents", type: "number", filter: "min" },
-      { title: "Latest release", field: "latest_release", type: "date" },
+      lastPublished,
     ],
     sort: [{ column: "downloads_last_month", dir: "desc" }],
+  },
+  {
+    id: "images",
+    title: "Container images",
+    description: "The images published on Docker Hub and Quay by these organizations, with how much they are pulled.",
+    source: "images",
+    columns: [
+      image,
+      registry,
+      tag,
+      org,
+      { title: "Repository", field: "repo", type: "repo", filter: "text" },
+      pulls,
+      lastPublished,
+    ],
+    sort: [{ column: "pulls", dir: "desc" }],
   },
   {
     id: "security-boundaries",
@@ -186,19 +215,48 @@ export const views = [
     description: "Packages with no release for a number of days (counted from the day the data was fetched).",
     source: "packages",
     params: [{ name: "days", label: "Days without a release", default: 365 }],
-    needs: "latest_release",
-    hint: MISSING_RELEASE,
-    filter: (p, params, ctx) => p.latest_release && ctx.daysSince(p.latest_release) >= params.days,
+    needs: "last_published",
+    hint: MISSING_PACKAGE_DATES,
+    filter: (p, params, ctx) => p.last_published && ctx.daysSince(p.last_published) >= params.days,
     columns: [
       { title: "System", field: "system", filter: "select" },
       { title: "Package", field: "name", type: "package", target: "id", filter: "text" },
       { title: "Repository", field: "repo", type: "repo", filter: "text" },
-      { title: "Latest release", field: "latest_release", type: "date" },
-      count("Days since", "days_since", (p, ctx) => ctx.daysSince(p.latest_release)),
+      lastPublished,
+      count("Days since", "days_since", (p, ctx) => ctx.daysSince(p.last_published)),
       downloads,
       { title: "Dependents", field: "dependents", type: "number", filter: "min" },
     ],
-    sort: [{ column: "latest_release", dir: "asc" }],
+    sort: [{ column: "last_published", dir: "asc" }],
+  },
+  {
+    id: "stale-images",
+    title: "Stale images",
+    description: "Images not published for a number of days (counted from the day the data was fetched).",
+    source: "images",
+    params: [{ name: "days", label: "Days without a publish", default: 365 }],
+    needs: "last_published",
+    hint: MISSING_IMAGE_DATES,
+    filter: (i, params, ctx) => i.last_published && ctx.daysSince(i.last_published) >= params.days,
+    columns: [
+      image,
+      registry,
+      org,
+      { title: "Repository", field: "repo", type: "repo", filter: "text" },
+      lastPublished,
+      count("Days since", "days_since", (i, ctx) => ctx.daysSince(i.last_published)),
+      pulls,
+    ],
+    sort: [{ column: "last_published", dir: "asc" }],
+  },
+  {
+    id: "images-without-repo",
+    title: "Images without a repo",
+    description: "Images that no repo of the inventory is known to build, mostly older ones. Most pulled first.",
+    source: "images",
+    filter: (i) => !i.repo,
+    columns: [image, registry, tag, org, pulls, lastPublished],
+    sort: [{ column: "pulls", dir: "desc" }],
   },
   {
     id: "publishes-from-ci",

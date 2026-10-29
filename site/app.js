@@ -3,6 +3,7 @@
 //   #/                        home: the list of views
 //   #/view/<id>?param=value   a table view
 //   #/repo/<org>/<name>   #/package/<SYSTEM:name>   #/org/<org>   one record and what it is related to
+//                             (an image has no page of its own: it links to its registry, its repo and its org)
 import { elsewhere, external, formatDate, formatNumber, h, link, page } from "./cells.js";
 import { createTable } from "./table.js";
 import { views } from "./views.js";
@@ -12,7 +13,7 @@ const DAY = 86_400_000;
 const plural = (n, word, many = word + "s") => `${formatNumber(n)} ${n === 1 ? word : many}`;
 
 // ---------------------------------------------------------------------------------------------------------------
-// Data: three JSON files joined by ids. ctx is what views and pages get to look at.
+// Data: four JSON files joined by ids. ctx is what views and pages get to look at.
 
 let ctx;
 
@@ -22,14 +23,21 @@ async function loadData() {
     if (!response.ok) throw new Error(`data/${name}.json: HTTP ${response.status}`);
     return response.json();
   };
-  const [repos, packages, meta] = await Promise.all([get("repos"), get("packages"), get("meta")]);
+  const [repos, packages, images, meta] = await Promise.all([
+    get("repos"),
+    get("packages"),
+    get("images"),
+    get("meta"),
+  ]);
   const asOf = Date.parse(meta.fetched_on); // "today" for staleness is the day the data was fetched
   const data = {
     meta,
     repos,
     packages,
+    images,
     repoById: new Map(repos.map((repo) => [repo.id, repo])),
     packageById: new Map(packages.map((pkg) => [pkg.id, pkg])),
+    imageById: new Map(images.map((image) => [image.id, image])),
     daysSince: (iso) => (iso ? Math.max(0, Math.floor((asOf - Date.parse(iso)) / DAY)) : null),
   };
   data.orgs = deriveOrgs(data);
@@ -40,7 +48,7 @@ async function loadData() {
 const latest = (dates) => dates.filter(Boolean).sort().at(-1) ?? null; // ISO dates sort as text
 
 /** There is no orgs.json: an organization is what its repos add up to. */
-function deriveOrgs({ repos, packageById, meta }) {
+function deriveOrgs({ repos, packageById, images, meta }) {
   const names = [...new Set([...meta.orgs, ...repos.map((repo) => repo.org)])].sort();
   return names.map((id) => {
     const mine = repos.filter((repo) => repo.org === id);
@@ -50,6 +58,7 @@ function deriveOrgs({ repos, packageById, meta }) {
       id,
       repos: mine.length,
       packages: packageIds.length,
+      images: images.filter((image) => image.org === id).length, // by registry namespace, which is an organization
       security_boundaries: mine.filter((repo) => repo.security_boundary).length,
       live_services: mine.filter((repo) => repo.live_service).length,
       ci_publishers: mine.filter((repo) => repo.workflows.publishes.length).length,
@@ -99,10 +108,11 @@ function homePage() {
       h("p", { class: "muted" }, rows === null ? "No dates in the data yet" : plural(rows, "row")),
     );
   });
-  const { meta, repos, packages, orgs } = ctx;
+  const { meta, repos, packages, images, orgs } = ctx;
   const summary =
-    `${plural(repos.length, "public repository", "public repositories")} and ${plural(packages.length, "package")} ` +
-    `in ${plural(orgs.length, "GitHub organization")}, fetched on ${meta.fetched_on}.`;
+    `${plural(repos.length, "public repository", "public repositories")}, ${plural(packages.length, "package")} ` +
+    `and ${plural(images.length, "container image")} in ${plural(orgs.length, "GitHub organization")}, ` +
+    `fetched on ${meta.fetched_on}.`;
   return {
     title: "Jupyter security inventory",
     content: [
@@ -220,13 +230,27 @@ const packageColumns = [
   { title: "System", field: "system" },
   { title: "Downloads / month", field: "downloads_last_month", type: "number" },
   { title: "Dependents", field: "dependents", type: "number" },
-  { title: "Latest release", field: "latest_release", type: "date" },
+  { title: "Last published", field: "last_published", type: "date" },
 ];
 const packageTable = (ids) =>
   tableBox({
     rows: ids.map((id) => ctx.packageById.get(id)).filter(Boolean),
     columns: packageColumns,
     sort: [{ column: "downloads_last_month", dir: "desc" }],
+    paged: ids.length > 50,
+  });
+
+const imageColumns = [
+  { title: "Image", field: "id", type: "image" },
+  { title: "Tag", field: "tag" },
+  { title: "All-time pulls", field: "pulls", type: "number" },
+  { title: "Last published", field: "last_published", type: "date" },
+];
+const imageTable = (ids, columns = imageColumns) =>
+  tableBox({
+    rows: ids.map((id) => ctx.imageById.get(id)).filter(Boolean),
+    columns,
+    sort: [{ column: "pulls", dir: "desc" }],
     paged: ids.length > 50,
   });
 
@@ -274,6 +298,10 @@ function repoPage(repo) {
         repo.packages.length ? packageTable(repo.packages) : none("This repo does not publish a package."),
       ),
       section(
+        "Container images",
+        repo.images.length ? imageTable(repo.images) : none("No container image of the inventory is built from it."),
+      ),
+      section(
         "Who runs this repo's code",
         relatedTable(repo.used_by) ?? none("No other repo of the inventory uses its actions or its packages."),
       ),
@@ -319,7 +347,7 @@ function packagePage(pkg) {
         ["Registry", external(elsewhere.registry(pkg.id), pkg.system === "PYPI" ? "pypi.org" : "npmjs.com")],
         ["Downloads last month", formatNumber(pkg.downloads_last_month)],
         ["Dependents", formatNumber(pkg.dependents)],
-        ["Latest release", formatDate(pkg.latest_release) || "Not recorded yet"],
+        ["Last published", formatDate(pkg.last_published) || "Not recorded yet"],
         ["Why this repo", pkg.reason],
       ]),
       siblings.length > 0 && section("Other packages of the same repo", packageTable(siblings)),
@@ -337,6 +365,8 @@ function orgPage(org) {
     { title: "Downloads / month", field: "downloads_last_month", type: "number" },
   ];
   const table = tableBox({ rows: repos, columns, sort: [{ column: "id", dir: "asc" }], paged: repos.length > 50 });
+  const packageIds = repos.flatMap((repo) => repo.packages);
+  const imageIds = ctx.images.filter((image) => image.org === org.id).map((image) => image.id);
   return {
     title: org.id,
     content: [
@@ -346,12 +376,19 @@ function orgPage(org) {
         ["On GitHub", external(elsewhere.github(org.id), `github.com/${org.id}`)],
         ["Repos", formatNumber(org.repos)],
         ["Packages", formatNumber(org.packages)],
+        ["Container images", formatNumber(org.images)],
         ["Security boundaries", formatNumber(org.security_boundaries)],
         ["Live services", formatNumber(org.live_services)],
         ["Repos that publish from CI", formatNumber(org.ci_publishers)],
         ["Downloads last month", formatNumber(org.downloads_last_month)],
       ]),
       section("Repositories", repos.length ? table : none("No repository of this organization is in the inventory.")),
+      packageIds.length > 0 && section("Packages", packageTable(packageIds)),
+      imageIds.length > 0 &&
+        section(
+          "Container images",
+          imageTable(imageIds, [...imageColumns, { title: "Repository", field: "repo", type: "repo" }]),
+        ),
     ],
   };
 }
