@@ -4,7 +4,7 @@ html_theme.sidebar_secondary.remove: true
 
 # npm
 
-Downloads are for the last month and include CI.
+{{ downloads_note }}
 
 ```{csv-table}
 :file: ../_generated/packages-npm.csv

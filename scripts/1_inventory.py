@@ -13,7 +13,7 @@ import subprocess
 
 from common import OUTPUT, save_json
 
-# The GitHub organizations of Project Jupyter: the only input maintained by hand.
+# The GitHub organizations of Project Jupyter, written by hand.
 ORGS = [
     "binder-examples",
     "binderhub-ci-repos",

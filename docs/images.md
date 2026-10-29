@@ -4,7 +4,7 @@ html_theme.sidebar_secondary.remove: true
 
 # Container images
 
-Pulls are all-time Docker Hub counts and include CI; Quay publishes none. The tag is `latest`, or the newest when there is none.
+{{ pulls_note }} The tag is `latest`, or the newest tag if there is no `latest`.
 
 {download}`Download list <../output/images.txt>`
 

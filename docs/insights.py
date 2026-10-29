@@ -3,7 +3,7 @@
 conf.py calls build(), which:
 - writes short CSV tables into docs/_generated/ for the hand-written pages to include,
 - writes a page per organization (docs/orgs/<org>.md) and per repository (docs/orgs/<org>/<repo>.md),
-- returns the numbers the hand-written pages quote, as MyST substitutions: {{ repos }}, ...
+- returns the legend and the notes that the hand-written pages quote, as MyST substitutions: {{ legend }}, ...
 
 Text that comes from the repositories themselves (descriptions, labels, workflow contents) goes through
 plain(), so it always shows as text and never becomes HTML, a link or a substitution.
@@ -16,7 +16,6 @@ import json
 import re
 import shutil
 from collections import Counter
-from functools import cached_property
 from pathlib import Path
 from urllib.parse import quote
 
@@ -31,9 +30,11 @@ OUT_OF_THE_WAY = {"documentation", "example"}
 REGISTRY_TOKEN = re.compile(r"PYPI|TWINE|NPM", re.I)  # secret names that hold a PyPI or npm token
 # How step 3 names a registry -> its name on the site, which in lower case is also the name of its page.
 REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
-# Packages and images have the same columns. Their tables are not tinted by kind, which is for repos.
+# These tables are not tinted by kind: that is for repo tables.
 PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
 IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "all-time pulls", "last published"]
+DOWNLOADS_NOTE = "Downloads are for the last month and include CI."
+PULLS_NOTE = "Only Docker Hub has pull counts; they are all-time and include CI."
 
 REPO_PAGE = """# {title}
 
@@ -109,6 +110,10 @@ def link(full_name: str) -> str:
     return f"[{plain(full_name)}](/{slug(full_name)}.md)"
 
 
+def org_link(org: str) -> str:
+    return f"[{plain(org)}](/orgs/{org}.md)"
+
+
 def links(full_names) -> str:
     return ", ".join(link(name) for name in full_names)
 
@@ -135,7 +140,7 @@ def image_cell(ref: str | None) -> str:
     if not ref:
         return ""
     registry, path = ref.split("/", 1)
-    return f"[]{{.fa-brands .fa-docker}} [{plain(path)}]({image_url(registry, path)})"
+    return f"[]{{.fa-brands .fa-docker}} {image_link(registry, path)}"
 
 
 def stats(top: str | None, count: str) -> str:
@@ -202,20 +207,6 @@ class Data:
         with open(OUTPUT / "repos.csv", encoding="utf-8") as file:
             self.table = list(csv.DictReader(file))
         self.jupyter = {org.lower() for org in self.orgs}
-
-    @cached_property
-    def orgs_with_repos(self) -> set:
-        return {repo["org"] for repo in self.repos.values()}
-
-    def org_cell(self, org: str) -> str:
-        """An organization in a table: a link to its page, which exists once it has a repository."""
-        return f"[{plain(org)}](/orgs/{org}.md)" if org in self.orgs_with_repos else plain(org)
-
-    def repo_cell(self, name: str | None) -> str:
-        """A repository in a table: a link to its page, or nothing when there is none."""
-        if not name:
-            return ""
-        return link(name) if name in self.repos else plain(name)
 
     def users(self, name: str) -> set:
         """The other repos that run this repo's actions or build tools without pinning them."""
@@ -305,8 +296,8 @@ def package_row(data: Data, name: str, p: dict) -> list:
     key = f"{p['system']}:{p['name']}"
     return [
         f"[{plain(p['name'])}]({registry_url(key)})",
-        data.org_cell(data.repos[name]["org"]),
-        data.repo_cell(name),
+        org_link(data.repos[name]["org"]),
+        link(name),
         stats(key, n(p["downloads_last_month"])),
         n(p["dependents"]),
         date(p["last_published"]),
@@ -339,22 +330,21 @@ def image_path(image: dict) -> str:
     return f"{image['namespace']}/{image['name']}"
 
 
-def image_url(registry: str, path: str) -> str:
-    """The page of an image on its registry. `path` is 'namespace/name'."""
-    if registry == "docker.io":
-        return f"https://hub.docker.com/r/{path}"
-    return f"https://quay.io/repository/{path}"
+def image_link(registry: str, path: str) -> str:
+    """A link to an image on its registry. `path` is 'namespace/name'."""
+    url = f"https://hub.docker.com/r/{path}" if registry == "docker.io" else f"https://quay.io/repository/{path}"
+    return f"[{plain(path)}]({url})"
 
 
 def image_row(data: Data, image: dict) -> list:
     """A row of IMAGE_HEADER. The organization is the registry namespace."""
     path = image_path(image)
     return [
-        f"[{plain(path)}]({image_url(image['registry'], path)})",
+        image_link(image["registry"], path),
         image["registry"],
         plain(image["tag"]),
-        data.org_cell(image["namespace"]),
-        data.repo_cell(image["repo"]),
+        org_link(image["namespace"]),
+        link(image["repo"]) if image["repo"] else "",
         n(image["pulls"]) if image["pulls"] is not None else "",
         date(image["last_published"]),
     ]
@@ -367,7 +357,7 @@ def image_rows(data: Data, images: list[dict]) -> list[list]:
 
 
 def without_org(header: list[str], rows: list[list]) -> tuple[list[str], list[list]]:
-    """A table of an organization's page leaves out the organization column: it is the same on every row."""
+    """The header and rows without the organization column, which is the same on every row of its page."""
     at = header.index("organization")
     return header[:at] + header[at + 1 :], [row[:at] + row[at + 1 :] for row in rows]
 
@@ -385,16 +375,8 @@ def org_body(org: str, software: list, docs: list, packages: dict, images: list)
     """
     sections = [  # (title, note, [(subtitle, CSV file, rows)])
         ("Repositories", LEGEND, [("Software", org, software), ("Documentation and examples", f"{org}-docs", docs)]),
-        (
-            "Packages",
-            "Downloads are for the last month and include CI.",
-            [(title, f"{org}-{title.lower()}", rows) for title, rows in packages.items()],
-        ),
-        (
-            "Images",
-            "Pulls are all-time Docker Hub counts and include CI; Quay publishes none.",
-            [(None, f"{org}-images", images)],
-        ),
+        ("Packages", DOWNLOADS_NOTE, [(title, f"{org}-{title.lower()}", rows) for title, rows in packages.items()]),
+        ("Images", PULLS_NOTE, [(None, f"{org}-images", images)]),
     ]
     links, parts = [], []
     for title, note, tables in sections:
@@ -410,7 +392,9 @@ def image_item(image: dict) -> str:
     """An image on its repo's page: where to find it, how often it was pulled and when it was last published."""
     pulls = f", {n(image['pulls'])} pulls" if image["pulls"] is not None else ""
     path = image_path(image)
-    return f"[{plain(path)}]({image_url(image['registry'], path)}) on {image['registry']}{pulls}, last published {image['last_published']}"
+    return (
+        f"{image_link(image['registry'], path)} on {image['registry']}{pulls}, last published {image['last_published']}"
+    )
 
 
 def repo_page(data: Data, name: str) -> str:
@@ -532,7 +516,7 @@ def org_pages(data: Data) -> list[list]:
         top = data.repos[names[0]]
         top_downloads[org] = top["max_downloads_last_month"]
         summary[org] = [
-            f"[{plain(org)}](/orgs/{org}.md)",
+            org_link(org),
             counts["repos"],
             counts["packaged"],
             len(org_images),
@@ -588,10 +572,4 @@ def build() -> dict:
     write_csv(GENERATED / "repos.csv", list(data.table[0]), repo_rows(data, software))
     write_csv(GENERATED / "repos-docs.csv", ["repo", "kind", "live service"], docs_rows(data, docs))
 
-    kinds = Counter(data.label(name, "kind") for name in names).most_common()
-    return {
-        "kinds": ", ".join(f"{kind} {count}" for kind, count in kinds),
-        "legend": LEGEND,
-        "software": n(len(software)),
-        "docs": n(len(docs)),
-    }
+    return {"legend": LEGEND, "downloads_note": DOWNLOADS_NOTE, "pulls_note": PULLS_NOTE}

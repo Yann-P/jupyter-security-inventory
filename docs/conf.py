@@ -14,7 +14,7 @@ html_theme_options = {
     "secondary_sidebar_items": ["page-toc"],  # pages with a big table remove it, in their front matter
     "footer_start": [],
     "footer_end": [],
-    "show_prev_next": False,  # the order of the pages is the sidebar's, and means nothing across organizations
+    "show_prev_next": False,  # the sidebar order means nothing between organizations
 }
 templates_path = ["_templates"]
 html_sidebars = {"**": ["site-nav"]}

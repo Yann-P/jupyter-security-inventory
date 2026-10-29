@@ -44,9 +44,9 @@ Seven scripts run in order (they depend on each other):
 
 - **Repository type, and security boundary come from a language model**
 - Download counts include CI.
-- A package whose repository is not in this inventory is not seen: packages are found from the repositories.
-- Images: ghcr.io is not covered, Quay has no pull counts, and only the default tag is recorded. The namespaces are
-  listed by hand in `scripts/4_images.py`. Many older images have no repository.
+- A package is found only through a repository of this inventory.
+- Images: ghcr.io is not covered, Quay has no pull counts, and one tag is recorded per image: `latest`, or the newest.
+  The namespaces are listed by hand in `scripts/4_images.py`. Many older images match no repository.
 - "Used in CI" only sees the repositories listed here.
 
 ## Running it
@@ -76,7 +76,7 @@ nothing. To relabel everything, switch to another model or delete `output/classi
 ## Contributing
 
 Change the scripts, never `output/` by hand. Rerun the pipeline from the step you changed, run `pytest`,
-and commit the new outputs with your change. CI runs the tests and checks that the outputs match the code.
+and commit the new outputs with your change. CI runs the tests and checks that `jupyter_repos.json` and `repos.csv` are up to date.
 
 ## License
 

@@ -3,7 +3,7 @@
 Two parts: a **pipeline** of seven Python scripts that writes data files, and a **site** that reads them.
 
 ```
-GitHub, PyPI, npm, deps.dev, Docker Hub, Quay, an LLM
+GitHub, PyPI, npm, pypistats.org, deps.dev, Docker Hub, Quay, an LLM
         │
         ▼
 scripts/1..7  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.py  ──►  Sphinx site
@@ -35,18 +35,19 @@ scripts/1..7  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.p
 Step 2 keeps, for each repo: file counts by type, the packages its manifests declare, a summary of its workflows
 (triggers, secrets, what they publish), the actions it uses, the images its chartpress files build, the build
 requirements of its `pyproject.toml`, and the start of its README. A clone is shallow and holds only those files.
-Symbolic links are never followed. Step 5 skips the repos already labeled by the current model.
+Symbolic links are never followed.
 
 ## Matching packages and images to repos
 
 Each match carries a `reason`. Forks never match: a fork has the files of its original, but does not publish.
 
-- **Package → repo** (step 3): a manifest declares the package, and PyPI or npm confirms it (it links to the repo,
-  or the names and owners fit). If several repos declare it, the one the registry links to wins.
+- **Package → repo** (step 3): a manifest of the repo declares the package, or the package is named like the repo;
+  and PyPI or npm confirms it (it links to the repo, or it has a Jupyter owner). If several repos qualify, the one
+  the registry links to wins.
 - **Image → repo** (step 4), first match wins: the repo's chartpress file builds the image; the registry description
   links to the repo; the repo is named like the image. Many older images match none.
-- **Image → organization**: its registry namespace. Each namespace in `NAMESPACES` must be an organization of
-  `ORGS`; step 4 stops if not.
+- **Image → organization**: its registry namespace. Each namespace in `NAMESPACES` must be an organization with
+  repos in the inventory; step 4 stops if not.
 
 ## The data files
 
@@ -54,11 +55,11 @@ All in `output/`. Repos are named `org/repo`.
 
 | File | Shape |
 |---|---|
-| `repos.json` | `orgs`, and `repos`: name, org, description, is_fork. |
+| `repos.json` | `fetched_on`, `orgs`, and `repos`: full_name, org, name, description, is_fork. |
 | `scan.json` | `{repo: facts from step 2}`. |
 | `packages.json` | `accepted`: system (PYPI or NPM), name, repo, reason, downloads_last_month, dependents, last_published. `rejected`: candidates that were not confirmed. |
-| `images.json` | `images`: registry, namespace, name, tag, reference, digest, last_published, pulls (all time), repo, reason. |
-| `images.txt` | One image reference per line, for image scanners. |
+| `images.json` | `images`: registry, namespace, name, tag, last_published, pulls (all time), reference, repo, reason. |
+| `images.txt` | One image reference per line. |
 | `classification.json` | `{repo: kind, security_boundary, deploys_live_service, rationale, model}`. Written by an LLM. |
 | `jupyter_repos.json` | The repo from step 1, plus its packages, images, content, `used_by` and classification. |
 | `repos.csv` | The columns of the repo tables. |
@@ -76,8 +77,8 @@ committed. The other pages are written by hand and include those tables.
 | Page | Content | Source |
 |---|---|---|
 | Home (`index.md`) | All repos, one row each | `repos.csv` |
-| Organizations (`orgs.md`) | One page per organization: its repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `packages.json`, `images.json` |
-| Published packages (`packages.md`) | A summary, then one table for PyPI and one for npm | `packages.json` |
+| Organizations (`orgs.md`) | One page per organization: its repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json` |
+| Published packages (`packages.md`) | A summary table, then a page with one table for PyPI and one for npm | `jupyter_repos.json` |
 | Container images (`images.md`) | One table of images | `images.json` |
 | About (`about.md`) | The README | `README.md` |
 
@@ -86,14 +87,15 @@ How the pages link to each other:
 - The repo tables (home and organization pages) link each repo to its page. The `image` column shows its most
   pulled image, as `package` does for packages.
 - A repo page lists its packages and its images, with links to the registries.
-- The package and image tables link each row to the registry, to its organization page and to its repo page. On an
-  organization page they are the same tables without the organization column. An image belongs to the organization
-  of its namespace.
-- Package and image tables have the same columns: what, organization, repository, usage, last published. Usage is
-  downloads per month for packages and all-time pulls for images. Only the repo tables are tinted by kind.
+- The package and image tables link each row to the registry, and to its organization page and its repo page when
+  there is one. On an organization page they are the same tables without the organization column. An image belongs
+  to the organization of its namespace.
+- Package and image tables share the columns organization, repository and last published. Usage is downloads per
+  month for packages and all-time pulls for images. Only the repo tables are tinted by kind.
 
-`docs/_static/tables.js` adds sorting and search to the tables with the class `sphinx-datatable` (a table of 10
-rows or fewer keeps only sorting), and a filter on the column named "organization" to those with `filter-by-org`.
+The class `sphinx-datatable` makes a table sortable and searchable (DataTables). `docs/_static/tables.js` hides
+everything but the sorting on a table of 10 rows or fewer, and adds a filter on the column named "organization" to
+the tables with the class `filter-by-org`.
 
 Text that comes from repos or the LLM (descriptions, labels, rationales) goes through `plain()` in `insights.py`,
 so it is shown as text and never becomes HTML, a link or a substitution.
@@ -111,7 +113,7 @@ Actions are pinned to commit SHAs.
 ## Adding things
 
 - **A registry namespace:** add it to `NAMESPACES` in step 4, after checking that it belongs to Jupyter. A Docker Hub
-  namespace named like a Jupyter organization can belong to someone else.
+  namespace named like a Jupyter organization can belong to someone else. It must also be an organization of `ORGS`.
 - **A column in the repo tables:** add it in `7_table.py` and in `repo_rows` of `insights.py`.
-- **Another kind of published thing:** a new step before step 5 that writes its own file with a `repo` and a
-  `reason`; add it to step 6; add a table with the same columns as the others.
+- **Another kind of published thing:** a new step before step 6 that writes its own file with a `repo` and a
+  `reason`; read it in step 6; add a table like the package and image tables.

@@ -17,7 +17,7 @@ function hideControlsOfSmallTable(api) {
 }
 
 /* Adds an "organization" dropdown next to the search box of the tables that have the filter-by-org class.
-   It filters the table's "organization" column. conf.py hands it to DataTables as its initComplete option. */
+   It filters the table's "organization" column. */
 function filterByOrg(settings) {
   const api = settings.api;
   if (!$(api.table().node()).hasClass("filter-by-org")) return;

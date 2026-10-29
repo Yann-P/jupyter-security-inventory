@@ -180,17 +180,14 @@ def chartpress_images(text: str) -> list[str]:
 
     With "imagePrefix: quay.io/jupyterhub/k8s-" and an image "hub", that is "quay.io/jupyterhub/k8s-hub".
     """
-    try:
-        data = yaml.safe_load(text)
-    except yaml.YAMLError:
-        return []
-    charts = data.get("charts") if isinstance(data, dict) else None
     names = []
-    for chart in charts if isinstance(charts, list) else []:
-        images = chart.get("images") if isinstance(chart, dict) else None
-        for name, image in (images if isinstance(images, dict) else {}).items():
-            explicit = image.get("imageName") if isinstance(image, dict) else None
-            names.append(str(explicit or f"{chart.get('imagePrefix') or ''}{name}"))
+    try:
+        for chart in yaml.safe_load(text)["charts"]:
+            for name, image in (chart.get("images") or {}).items():
+                explicit = (image or {}).get("imageName")
+                names.append(str(explicit or f"{chart.get('imagePrefix') or ''}{name}"))
+    except yaml.YAMLError, AttributeError, KeyError, TypeError:
+        return []
     return names
 
 

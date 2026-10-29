@@ -1,11 +1,11 @@
 """Step 4: the container images that Jupyter publishes on Docker Hub and Quay.
 
-For each image: the tag people pull (`latest`, or the newest tag when there is none), its digest, when it was
-published, its Docker Hub pull count (all time) and the repo it comes from, with the reason. The repo is the first
-that names an inventory repo, among: the one whose chartpress file builds the image (step 2), the one the registry
-description links to, the one named like the image. Forks never count. Images with no tag are left out.
+For each image: the tag people pull (`latest`, or the newest tag if there is no `latest`), when it was published,
+its Docker Hub pull count (all time) and the repo it comes from, with the reason. The repo is the first match of: the
+repo whose chartpress file builds the image (step 2), a repo the registry description links to, the repo named like
+the image. Forks never match. Images with no tag are left out.
 
-Also writes output/images.txt: one pullable reference per line, for image scanners.
+Also writes output/images.txt: one image reference per line.
 
 Limits: ghcr.io cannot list a namespace without authentication, so it is not covered. Quay has no pull counts.
 
@@ -18,9 +18,10 @@ from concurrent.futures import ThreadPoolExecutor
 
 from common import OUTPUT, fetch_json, github_repos_in, load_json, quote, save_json
 
-# The registry namespaces of Project Jupyter, written by hand like ORGS in step 1. Each is also a GitHub organization
-# of the inventory: the site uses it as the organization of the image. Check a namespace before adding it: on Docker
-# Hub, `jupytercon` holds throwaway images built for conference tutorials, and `binder` and `voila` are not Jupyter's.
+# The registry namespaces of Project Jupyter, written by hand like ORGS in step 1. Each must be a GitHub organization
+# with repos in the inventory: the site uses it as the organization of the image. Check a namespace before adding it:
+# on Docker Hub, `jupytercon` holds throwaway images built for conference tutorials, and `binder` and `voila` are not
+# Jupyter's.
 NAMESPACES = {
     "docker.io": ["ipython", "jupyter", "jupyterhub"],
     "quay.io": ["jupyter", "jupyterhealth", "jupyterhub"],
@@ -72,13 +73,11 @@ def hub_image(namespace: str, repo: dict) -> dict | None:
         tag = newest[0] if newest else None
     if tag is None:
         return None
-    builds = tag.get("images") or []  # a single-platform image has no digest of its own: it is its one build's
     return {
         "registry": "docker.io",
         "namespace": namespace,
         "name": name,
         "tag": tag["name"],
-        "digest": tag.get("digest") or (builds[0]["digest"] if len(builds) == 1 else None),
         "last_published": (tag.get("tag_last_pushed") or tag["last_updated"])[:10],
         "pulls": repo["pull_count"],
         "description": repo["description"],
@@ -99,7 +98,7 @@ def quay_image(namespace: str, repo: dict) -> dict | None:
     """What Quay says about one image, or None if it has no tag."""
     name = repo["name"]
     tags = f"https://quay.io/api/v1/repository/{quote(namespace)}/{quote(name)}/tag/?limit=1&onlyActiveTags=true"
-    # `limit=1` of the unfiltered list is the newest tag
+    # without specificTag, the API lists the newest tag first
     for url in (f"{tags}&specificTag=latest", tags):
         found = (fetch_json(url) or {}).get("tags")
         if found:
@@ -112,7 +111,6 @@ def quay_image(namespace: str, repo: dict) -> dict | None:
         "namespace": namespace,
         "name": name,
         "tag": tag["name"],
-        "digest": tag.get("manifest_digest"),
         "last_published": datetime.datetime.fromtimestamp(tag["start_ts"], datetime.UTC).date().isoformat(),
         "pulls": None,
         "description": repo.get("description"),
@@ -122,9 +120,10 @@ def quay_image(namespace: str, repo: dict) -> dict | None:
 def main():
     inventory = load_json(OUTPUT / "repos.json")
     scan = load_json(OUTPUT / "scan.json")
-    unknown = {ns for namespaces in NAMESPACES.values() for ns in namespaces} - set(inventory["orgs"])
+    orgs = {repo["org"] for repo in inventory["repos"]}
+    unknown = {ns for namespaces in NAMESPACES.values() for ns in namespaces} - orgs
     if unknown:
-        raise SystemExit(f"NAMESPACES has {sorted(unknown)}, which are not GitHub organizations of ORGS (step 1)")
+        raise SystemExit(f"NAMESPACES has {sorted(unknown)}, which have no repo in the inventory (step 1)")
 
     # Forks are skipped, as in step 3: a fork has the chartpress file of its original, but does not build the image.
     repo_names = {repo["full_name"].lower(): repo["full_name"] for repo in inventory["repos"] if not repo["is_fork"]}
@@ -146,7 +145,7 @@ def main():
         reference = f"{image['registry']}/{image['namespace']}/{image['name']}:{image['tag']}"
         images.append({**image, "reference": reference, "repo": repo, "reason": reason})
 
-    save_json(OUTPUT / "images.json", {"fetched_on": str(datetime.date.today()), "images": images})
+    save_json(OUTPUT / "images.json", {"images": images})
     (OUTPUT / "images.txt").write_text("".join(image["reference"] + "\n" for image in images), encoding="utf-8")
     print(f"{len(images)} images from {len(jobs)} repositories in {sum(map(len, NAMESPACES.values()))} namespaces")
 
