@@ -11,42 +11,49 @@ Project Jupyter has over 400 public repositories across 20 GitHub organizations.
 ## Structure
 
 - In `output/`: the raw result of each step below, one readable JSON file per step. Do not write here.
-- In `site/data/`: the files that join those results, one record per repository and per package, which the page loads. Written by step 5. Do not write here.
+- In `site/data/`: the files that join those results, one record per repository, package and image, which the page loads. Written by step 6. Do not write here.
 - In `site/`: a static page that loads `site/data/` and draws it in the browser. Plain HTML and JavaScript modules, no build step, no npm. Its one dependency, Tabulator, is copied into `site/vendor/`.
 
 ## How it works
 
-Five scripts run in order (they depend on each other):
+Six scripts run in order (they depend on each other):
 
 | Step | What it does | Data from |
 |---|---|---|
 | 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
-| 2. Scan | Clones each repository and reads its workflows, actions, package manifests and README | GitHub |
-| 3. Packages | Matches PyPI and npm packages to repositories, with downloads and dependents | PyPI, npm, pypistats.org, deps.dev |
-| 4. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
-| 5. Join | Puts it all together in `site/data/`, and works out which repositories run each other's code | |
+| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files and README | GitHub |
+| 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents and the date of the last release | PyPI, npm, pypistats.org, deps.dev |
+| 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |
+| 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
+| 6. Join | Puts it all together in `site/data/`, and works out which repositories run each other's code | |
+
+[architecture.md](architecture.md) explains how the pieces fit together.
 
 ## The columns
 
 - **kind**: package, application, tooling, deployment, documentation, example or other.
 - **downloads/month** and **dependents**: for the repository's most downloaded package.
+- **image** and **all-time pulls**: for the repository's most pulled container image.
 - **used in CI**: how many other Jupyter repositories run its actions or build tools without pinning them
   to a commit.
 - **live service**: the site or service it deploys, like mybinder.org.
 - **security boundary**: whether its bugs can be exploited over the network, because it handles logins,
   proxies traffic, runs multi-user servers or runs code and content from the network, and why.
 
-The data has more fields than these (workflows, files, dates, who uses whom). The docstring of `scripts/5_build_dataset.py` says how they are made and `tests/test_site_data.py` lists them all, with their types.
+The data has more fields than these (workflows, files, dates, who uses whom). The docstring of `scripts/6_build_dataset.py` says how they are made and `tests/test_site_data.py` lists them all, with their types.
 
 ## Caveats
 
 - **Repository type, and security boundary come from a language model**
 - Download counts include CI.
+- A package is found only through a repository of this inventory.
+- Images: ghcr.io is not covered, Quay has no pull counts, and one tag is recorded per image: `latest`, or the newest.
+  The namespaces are listed by hand in `scripts/4_images.py`. Many older images match no repository.
 - "Used in CI" only sees the repositories listed here.
 
 ## Running it
 
-You need Python >= 3.14, the GitHub CLI (logged in), and a DeepSeek API key for step 4 (or an OpenAI key,
+You need Python >= 3.14, the GitHub CLI (logged in), and a DeepSeek API key for step 5 (or an OpenAI key,
 with `--model <an OpenAI model>`).
 
 ```bash
@@ -54,8 +61,9 @@ pip install . --group dev
 python scripts/1_inventory.py
 python scripts/2_scan_repos.py --clone-dir ~/clones
 python scripts/3_packages.py
-python scripts/4_classify.py --clone-dir ~/clones
-python scripts/5_build_dataset.py
+python scripts/4_images.py
+python scripts/5_classify.py --clone-dir ~/clones
+python scripts/6_build_dataset.py
 python3 -m http.server -d site
 ```
 
@@ -71,12 +79,14 @@ comment at the top of that file explains each key and has a worked example. Noth
 ## Adding an inventory
 
 1. A fetch script, `scripts/<n>_<name>.py`, that writes `output/<name>.json`.
-2. A join in step 5 that writes `site/data/<name>.json`: one record per entity, each with an `id`, and ids wherever
+2. A join in step 6 that writes `site/data/<name>.json`: one record per entity, each with an `id`, and ids wherever
    it refers to another record.
 3. The invariants of the new file in `tests/test_site_data.py`: unique ids, references that resolve, the fields
    and their types.
 4. A view that lists it in `site/views.js` (and, if the page does not know the file yet, the line in `site/app.js`
    that loads the data files).
+
+`scripts/4_images.py` is a worked example.
 
 ## Daily updates
 
@@ -84,7 +94,7 @@ A GitHub Actions workflow (`update.yml`) reruns the whole pipeline every morning
 `output/` and `site/data/`. It needs a `DEEPSEEK_API_KEY` repository secret. The site is plain static files, so
 hosting `site/` is up to you.
 
-Step 4 only labels repositories it hasn't labeled yet with the current model, so a daily run costs almost
+Step 5 only labels repositories it hasn't labeled yet with the current model, so a daily run costs almost
 nothing. To relabel everything, switch to another model or delete `output/classification.json`.
 
 ## Contributing

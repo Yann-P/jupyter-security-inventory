@@ -1,10 +1,10 @@
-"""Tests for scripts/4_classify.py. A fake model stands in for DeepSeek or OpenAI."""
+"""Tests for scripts/5_classify.py. A fake model stands in for DeepSeek or OpenAI."""
 
 import importlib
 import json
 from types import SimpleNamespace
 
-classify = importlib.import_module("4_classify")
+classify = importlib.import_module("5_classify")
 
 GOOD_ANSWER = json.dumps(
     {

@@ -60,3 +60,24 @@ def test_scan_records_the_date_of_the_latest_commit_also_when_an_earlier_clone_i
     assert result["last_commit"] == "2025-11-30"
     assert result["head"] == scan.git(origin, "rev-parse", "HEAD").strip()
     assert result["n_files"] == 2
+
+
+def test_chartpress_images_are_the_prefix_and_the_name_of_each_image():
+    chartpress = """
+charts:
+  - name: jupyterhub
+    imagePrefix: quay.io/jupyterhub/k8s-
+    images:
+      hub:
+        contextPath: images/hub
+      awaiter:
+        imageName: quay.io/jupyterhub/k8s-image-awaiter  # an explicit name wins
+  - name: no-images
+"""
+    assert scan.chartpress_images(chartpress) == ["quay.io/jupyterhub/k8s-hub", "quay.io/jupyterhub/k8s-image-awaiter"]
+    assert scan.chartpress_images("not: [valid") == []
+
+
+def test_chartpress_images_ignores_a_file_that_is_not_shaped_like_a_chartpress_file():
+    for text in ("", "- hub", "charts:", "charts: [hub]", "charts: [{images: [hub]}]"):  # "" is what a symlink reads as
+        assert scan.chartpress_images(text) == []

@@ -1,9 +1,9 @@
 """Step 2: clone every repo and record what it contains.
 
 For each repo: the commit and date of its latest commit, how many files of each type, the
-packages its manifests declare, what its GitHub workflows do, the GitHub Actions it uses, and
-the start of its README. Only those few files are downloaded; for everything else the clone
-holds just the file names.
+packages its manifests declare, what its GitHub workflows do, the GitHub Actions it uses, the
+container images its chartpress files build, and the start of its README. Only those few files
+are downloaded; for everything else the clone holds just the file names.
 
 Usage: python scripts/2_scan_repos.py --clone-dir /tmp/clones    Output: output/scan.json
 """
@@ -34,6 +34,7 @@ FILE_TYPES = {
 TYPE_OF = {extension: kind for kind, extensions in FILE_TYPES.items() for extension in extensions.split()}
 
 MANIFESTS = {"package.json", "pyproject.toml", "setup.py", "setup.cfg"}
+CHARTPRESS = {"chartpress.yaml", "chartpress.yml"}  # chartpress builds a Helm chart's container images
 # A manifest inside one of these folders is a test, an example or a vendored copy, not a published package.
 NOT_PUBLISHED = {
     "node_modules",
@@ -117,10 +118,11 @@ def is_workflow(path: str) -> bool:
 
 
 def worth_reading(path: str) -> bool:
-    """The README, package manifests, workflows and action definitions: the only files we download."""
+    """The README, package manifests, workflows, action definitions and chartpress files: the only files we download."""
     if "node_modules" in PurePosixPath(path).parts:
         return False
-    return is_readme(path) or PurePosixPath(path).name in MANIFESTS or is_action(path) or is_workflow(path)
+    name = PurePosixPath(path).name
+    return is_readme(path) or name in MANIFESTS | CHARTPRESS or is_action(path) or is_workflow(path)
 
 
 def file_type(path: str) -> str:
@@ -173,6 +175,22 @@ def build_requires(pyproject: str) -> list[str]:
     return names
 
 
+def chartpress_images(text: str) -> list[str]:
+    """The images a chartpress file builds: for each chart, its imagePrefix and the name of each image.
+
+    With "imagePrefix: quay.io/jupyterhub/k8s-" and an image "hub", that is "quay.io/jupyterhub/k8s-hub".
+    """
+    names = []
+    try:
+        for chart in yaml.safe_load(text)["charts"]:
+            for name, image in (chart.get("images") or {}).items():
+                explicit = (image or {}).get("imageName")
+                names.append(str(explicit or f"{chart.get('imagePrefix') or ''}{name}"))
+    except yaml.YAMLError, AttributeError, KeyError, TypeError:
+        return []
+    return names
+
+
 def triggers(workflow: str) -> set[str]:
     """The events that start a workflow: its `on:` is a name, a list of names or a mapping keyed by name."""
     try:
@@ -212,6 +230,7 @@ def scan(full_name: str, clone_dir: Path) -> dict:
     workflows = [path for path in to_read if path.startswith(".github/workflows/")]
     actions = [path for path in to_read if PurePosixPath(path).name.startswith("action.")]
     manifests = [path for path in to_read if PurePosixPath(path).name in MANIFESTS]
+    chartpress = [path for path in to_read if PurePosixPath(path).name in CHARTPRESS]
     readme = next((path for path in to_read if is_readme(path)), None)
 
     packages, build_requirements = [], set()
@@ -231,6 +250,7 @@ def scan(full_name: str, clone_dir: Path) -> dict:
         "packages": packages,
         "workflows": summarize_workflows([read(path) for path in workflows]),
         "uses": sorted({f"{repo}@{ref}" for repo, ref in re.findall(USES, ci_text)}),
+        "images": sorted({image for path in chartpress for image in chartpress_images(read(path))}),
         "build_requires": sorted(build_requirements),
         "readme": read(readme)[:2500] if readme else None,
     }

@@ -7,7 +7,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 55663064,
       "dependents": 11965,
-      "latest_release": "2025-07-25"
+      "last_published": "2025-07-25"
     },
     {
       "system": "PYPI",
@@ -16,7 +16,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 54614879,
       "dependents": 7038,
-      "latest_release": "2026-09-29"
+      "last_published": "2026-09-29"
     },
     {
       "system": "PYPI",
@@ -25,7 +25,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 54116,
       "dependents": 4,
-      "latest_release": "2017-10-23"
+      "last_published": "2017-10-23"
     },
     {
       "system": "PYPI",
@@ -34,7 +34,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 94773,
       "dependents": 78,
-      "latest_release": "2026-05-12"
+      "last_published": "2026-05-12"
     },
     {
       "system": "PYPI",
@@ -43,7 +43,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 97202828,
       "dependents": 15413,
-      "latest_release": "2026-09-01"
+      "last_published": "2026-09-01"
     },
     {
       "system": "PYPI",
@@ -52,7 +52,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 54818996,
       "dependents": 15664,
-      "latest_release": "2025-01-17"
+      "last_published": "2025-01-17"
     },
     {
       "system": "PYPI",
@@ -61,7 +61,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 91853623,
       "dependents": 16740,
-      "latest_release": "2026-05-08"
+      "last_published": "2026-05-08"
     },
     {
       "system": "PYPI",
@@ -70,7 +70,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 8533671,
       "dependents": 1127,
-      "latest_release": "2018-09-25"
+      "last_published": "2018-09-25"
     },
     {
       "system": "PYPI",
@@ -79,7 +79,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 118414624,
       "dependents": 19652,
-      "latest_release": "2026-08-03"
+      "last_published": "2026-08-03"
     },
     {
       "system": "PYPI",
@@ -88,7 +88,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 107,
       "dependents": 0,
-      "latest_release": "2024-09-04"
+      "last_published": "2024-09-04"
     },
     {
       "system": "NPM",
@@ -97,7 +97,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3058,
       "dependents": 0,
-      "latest_release": "2026-09-23"
+      "last_published": "2026-09-23"
     },
     {
       "system": "PYPI",
@@ -106,7 +106,7 @@
       "reason": "declared here under the repo's own name; registry has no conflicting link",
       "downloads_last_month": 217891,
       "dependents": 22,
-      "latest_release": "2026-09-23"
+      "last_published": "2026-09-23"
     },
     {
       "system": "NPM",
@@ -115,7 +115,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 426,
       "dependents": 1,
-      "latest_release": "2026-10-02"
+      "last_published": "2026-10-02"
     },
     {
       "system": "PYPI",
@@ -124,7 +124,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 8807,
       "dependents": 32,
-      "latest_release": "2026-10-02"
+      "last_published": "2026-10-02"
     },
     {
       "system": "NPM",
@@ -133,7 +133,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3438,
       "dependents": 1,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -142,7 +142,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 7711,
       "dependents": 25,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -151,7 +151,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1116,
       "dependents": 3,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -160,7 +160,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1330,
       "dependents": 3,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -169,7 +169,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 464,
       "dependents": 0,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -178,7 +178,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 450,
       "dependents": 0,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -187,7 +187,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2924,
       "dependents": 0,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -196,7 +196,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 8024,
       "dependents": 22,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -205,7 +205,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4653,
       "dependents": 26,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -214,7 +214,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3554,
       "dependents": 5,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -223,7 +223,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 472,
       "dependents": 2,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -232,7 +232,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3482,
       "dependents": 0,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -241,7 +241,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 483,
       "dependents": 3,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -250,7 +250,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 7735,
       "dependents": 18,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -259,7 +259,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3453,
       "dependents": 17,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -268,7 +268,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 275,
       "dependents": 0,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -277,7 +277,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2193,
       "dependents": 9,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -286,7 +286,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36287,
       "dependents": 31,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -295,7 +295,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3589,
       "dependents": 8,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -304,7 +304,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 23357,
       "dependents": 62,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -313,7 +313,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 43438,
       "dependents": 100,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -322,7 +322,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 6404,
       "dependents": 46,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -331,7 +331,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 33779,
       "dependents": 38,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -340,7 +340,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 6938,
       "dependents": 9,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -349,7 +349,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4197,
       "dependents": 16,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -358,7 +358,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4666,
       "dependents": 15,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -367,7 +367,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3705,
       "dependents": 15,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -376,7 +376,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4698,
       "dependents": 15,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -385,7 +385,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2958,
       "dependents": 9,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -394,7 +394,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4552,
       "dependents": 17,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -403,7 +403,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2748,
       "dependents": 9,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -412,7 +412,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 6540,
       "dependents": 15,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -421,7 +421,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 43940,
       "dependents": 103,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -430,7 +430,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4110,
       "dependents": 28,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -439,7 +439,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36175,
       "dependents": 30,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -448,7 +448,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36027,
       "dependents": 32,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -457,7 +457,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 66347,
       "dependents": 103,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "NPM",
@@ -466,7 +466,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36988,
       "dependents": 79,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -475,7 +475,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3877,
       "dependents": 32,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -484,7 +484,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3498,
       "dependents": 15,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -493,7 +493,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 31143,
       "dependents": 31,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -502,7 +502,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3465,
       "dependents": 16,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -511,7 +511,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2877,
       "dependents": 14,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -520,7 +520,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3467,
       "dependents": 15,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -529,7 +529,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3368,
       "dependents": 9,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -538,7 +538,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 37642,
       "dependents": 105,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -547,7 +547,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 12596,
       "dependents": 27,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -556,7 +556,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 18231,
       "dependents": 0,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -565,7 +565,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 41040,
       "dependents": 108,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -574,7 +574,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2733,
       "dependents": 9,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "PYPI",
@@ -583,7 +583,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 10278,
       "dependents": 6,
-      "latest_release": "2026-10-27"
+      "last_published": "2026-10-27"
     },
     {
       "system": "NPM",
@@ -592,7 +592,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 1316,
       "dependents": 0,
-      "latest_release": "2025-01-28"
+      "last_published": "2025-01-28"
     },
     {
       "system": "NPM",
@@ -601,7 +601,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 7599,
       "dependents": 11,
-      "latest_release": "2025-01-28"
+      "last_published": "2025-01-28"
     },
     {
       "system": "NPM",
@@ -610,7 +610,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 7786,
       "dependents": 7,
-      "latest_release": "2025-01-28"
+      "last_published": "2025-01-28"
     },
     {
       "system": "NPM",
@@ -619,7 +619,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 7002,
       "dependents": 8,
-      "latest_release": "2025-01-28"
+      "last_published": "2025-01-28"
     },
     {
       "system": "PYPI",
@@ -628,7 +628,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 12187,
       "dependents": 2,
-      "latest_release": "2025-07-07"
+      "last_published": "2025-07-07"
     },
     {
       "system": "PYPI",
@@ -637,7 +637,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 10266,
       "dependents": 1,
-      "latest_release": "2026-06-01"
+      "last_published": "2026-06-01"
     },
     {
       "system": "PYPI",
@@ -646,7 +646,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2373,
       "dependents": 79,
-      "latest_release": "2026-07-30"
+      "last_published": "2026-07-30"
     },
     {
       "system": "PYPI",
@@ -655,7 +655,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2807,
       "dependents": 0,
-      "latest_release": "2026-09-07"
+      "last_published": "2026-09-07"
     },
     {
       "system": "NPM",
@@ -664,7 +664,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2173,
       "dependents": 0,
-      "latest_release": "2026-08-11"
+      "last_published": "2026-08-11"
     },
     {
       "system": "PYPI",
@@ -673,7 +673,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 43356,
       "dependents": 10,
-      "latest_release": "2026-08-11"
+      "last_published": "2026-08-11"
     },
     {
       "system": "NPM",
@@ -682,7 +682,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 153,
       "dependents": 0,
-      "latest_release": "2025-05-16"
+      "last_published": "2025-05-16"
     },
     {
       "system": "PYPI",
@@ -691,7 +691,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 9489,
       "dependents": 5,
-      "latest_release": "2026-08-07"
+      "last_published": "2026-08-07"
     },
     {
       "system": "PYPI",
@@ -700,7 +700,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1278,
       "dependents": 0,
-      "latest_release": "2026-07-09"
+      "last_published": "2026-07-09"
     },
     {
       "system": "PYPI",
@@ -709,7 +709,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 32556872,
       "dependents": 5037,
-      "latest_release": "2026-09-15"
+      "last_published": "2026-09-15"
     },
     {
       "system": "PYPI",
@@ -718,7 +718,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 813515,
       "dependents": 326,
-      "latest_release": "2026-10-13"
+      "last_published": "2026-10-13"
     },
     {
       "system": "PYPI",
@@ -727,7 +727,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 47561,
       "dependents": 21,
-      "latest_release": "2022-07-14"
+      "last_published": "2022-07-14"
     },
     {
       "system": "PYPI",
@@ -736,7 +736,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 28569855,
       "dependents": 5065,
-      "latest_release": "2026-01-14"
+      "last_published": "2026-01-14"
     },
     {
       "system": "NPM",
@@ -745,7 +745,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 437471,
       "dependents": 1004,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -754,7 +754,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 864279,
       "dependents": 122,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -763,7 +763,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 883,
       "dependents": 10,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -772,7 +772,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 121,
       "dependents": 0,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -781,7 +781,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 157,
       "dependents": 0,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -790,7 +790,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1577,
       "dependents": 6,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -799,7 +799,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 239,
       "dependents": 2,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -808,7 +808,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1277,
       "dependents": 4,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -817,7 +817,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 55,
       "dependents": 0,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -826,7 +826,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1355,
       "dependents": 7,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -835,7 +835,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 26,
       "dependents": 2,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -844,7 +844,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1342,
       "dependents": 4,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -853,7 +853,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 48,
       "dependents": 0,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -862,7 +862,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 28,
       "dependents": 0,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -871,7 +871,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1171,
       "dependents": 4,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -880,7 +880,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 44,
       "dependents": 0,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -889,7 +889,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1398,
       "dependents": 6,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -898,7 +898,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1529,
       "dependents": 7,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -907,7 +907,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 495,
       "dependents": 3,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -916,7 +916,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1434,
       "dependents": 4,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -925,7 +925,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 961,
       "dependents": 3,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -934,7 +934,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 119,
       "dependents": 0,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -943,7 +943,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 89,
       "dependents": 1,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -952,7 +952,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1326,
       "dependents": 4,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -961,7 +961,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 36,
       "dependents": 0,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -970,7 +970,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 508,
       "dependents": 2,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -979,7 +979,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 182,
       "dependents": 1,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -988,7 +988,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 189,
       "dependents": 1,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -997,7 +997,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 1585,
       "dependents": 3,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -1006,7 +1006,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1705,
       "dependents": 43,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1015,7 +1015,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1271,
       "dependents": 31,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1024,7 +1024,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1255,
       "dependents": 9,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1033,7 +1033,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 211,
       "dependents": 5,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1042,7 +1042,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1248,
       "dependents": 10,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1051,7 +1051,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1249,
       "dependents": 15,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1060,7 +1060,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1244,
       "dependents": 11,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1069,7 +1069,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1091,
       "dependents": 10,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1078,7 +1078,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1097,
       "dependents": 7,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1087,7 +1087,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1248,
       "dependents": 9,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -1096,7 +1096,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 235,
       "dependents": 4,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1105,7 +1105,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1243,
       "dependents": 5,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1114,7 +1114,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 28,
       "dependents": 1,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1123,7 +1123,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30,
       "dependents": 2,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1132,7 +1132,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1097,
       "dependents": 5,
-      "latest_release": "2026-10-23"
+      "last_published": "2026-10-23"
     },
     {
       "system": "PYPI",
@@ -1141,7 +1141,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1248,
       "dependents": 7,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1150,7 +1150,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 207,
       "dependents": 4,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1159,7 +1159,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 178,
       "dependents": 2,
-      "latest_release": "2026-08-05"
+      "last_published": "2026-08-05"
     },
     {
       "system": "PYPI",
@@ -1168,7 +1168,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 555039,
       "dependents": 15,
-      "latest_release": "2024-03-12"
+      "last_published": "2024-03-12"
     },
     {
       "system": "PYPI",
@@ -1177,7 +1177,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 25571,
       "dependents": 1,
-      "latest_release": "2025-10-16"
+      "last_published": "2025-10-16"
     },
     {
       "system": "PYPI",
@@ -1186,7 +1186,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 37,
       "dependents": 0,
-      "latest_release": "2024-03-13"
+      "last_published": "2024-03-13"
     },
     {
       "system": "NPM",
@@ -1195,7 +1195,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 454,
       "dependents": 0,
-      "latest_release": "2024-12-17"
+      "last_published": "2024-12-17"
     },
     {
       "system": "PYPI",
@@ -1204,7 +1204,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 20180,
       "dependents": 35,
-      "latest_release": "2024-12-17"
+      "last_published": "2024-12-17"
     },
     {
       "system": "NPM",
@@ -1213,7 +1213,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1552,
       "dependents": 1,
-      "latest_release": "2025-06-13"
+      "last_published": "2025-06-13"
     },
     {
       "system": "PYPI",
@@ -1222,7 +1222,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 198711,
       "dependents": 288,
-      "latest_release": "2025-06-13"
+      "last_published": "2025-06-13"
     },
     {
       "system": "PYPI",
@@ -1231,7 +1231,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 189039,
       "dependents": 290,
-      "latest_release": "2025-06-13"
+      "last_published": "2025-06-13"
     },
     {
       "system": "NPM",
@@ -1240,7 +1240,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 194417,
       "dependents": 227,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "NPM",
@@ -1249,7 +1249,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 86426,
       "dependents": 60,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "NPM",
@@ -1258,7 +1258,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 145383,
       "dependents": 73,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "NPM",
@@ -1267,7 +1267,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 56112,
       "dependents": 32,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "NPM",
@@ -1276,7 +1276,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 66088,
       "dependents": 49,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "NPM",
@@ -1285,7 +1285,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 96835,
       "dependents": 56,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "NPM",
@@ -1294,7 +1294,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 58325,
       "dependents": 38,
-      "latest_release": "2024-08-22"
+      "last_published": "2024-08-22"
     },
     {
       "system": "PYPI",
@@ -1303,7 +1303,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 31105039,
       "dependents": 6626,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "PYPI",
@@ -1312,7 +1312,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 31433178,
       "dependents": 6784,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "PYPI",
@@ -1321,7 +1321,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 31834051,
       "dependents": 6760,
-      "latest_release": "2026-08-18"
+      "last_published": "2026-08-18"
     },
     {
       "system": "NPM",
@@ -1330,7 +1330,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 178,
       "dependents": 0,
-      "latest_release": "2026-02-27"
+      "last_published": "2026-02-27"
     },
     {
       "system": "PYPI",
@@ -1339,7 +1339,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 25574,
       "dependents": 28,
-      "latest_release": "2026-02-27"
+      "last_published": "2026-02-27"
     },
     {
       "system": "NPM",
@@ -1348,7 +1348,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 25,
       "dependents": 0,
-      "latest_release": "2019-07-12"
+      "last_published": "2019-07-12"
     },
     {
       "system": "PYPI",
@@ -1357,7 +1357,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 37,
       "dependents": 0,
-      "latest_release": "2019-07-12"
+      "last_published": "2019-07-12"
     },
     {
       "system": "NPM",
@@ -1366,7 +1366,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 385,
       "dependents": 4,
-      "latest_release": "2023-02-20"
+      "last_published": "2023-02-20"
     },
     {
       "system": "PYPI",
@@ -1375,7 +1375,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 69126,
       "dependents": 122,
-      "latest_release": "2023-02-20"
+      "last_published": "2023-02-20"
     },
     {
       "system": "PYPI",
@@ -1384,7 +1384,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 727236,
       "dependents": 572,
-      "latest_release": "2025-10-22"
+      "last_published": "2025-10-22"
     },
     {
       "system": "PYPI",
@@ -1393,7 +1393,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 137,
       "dependents": 1,
-      "latest_release": "2021-10-20"
+      "last_published": "2021-10-20"
     },
     {
       "system": "PYPI",
@@ -1402,7 +1402,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1504,
       "dependents": 4,
-      "latest_release": "2026-08-14"
+      "last_published": "2026-08-14"
     },
     {
       "system": "PYPI",
@@ -1411,7 +1411,7 @@
       "reason": "declared here under the repo's own name; registry has no conflicting link",
       "downloads_last_month": 1778,
       "dependents": 2,
-      "latest_release": "2026-07-07"
+      "last_published": "2026-07-07"
     },
     {
       "system": "PYPI",
@@ -1420,7 +1420,7 @@
       "reason": "declared here under the repo's own name; registry has no conflicting link",
       "downloads_last_month": 215,
       "dependents": 0,
-      "latest_release": "2021-10-26"
+      "last_published": "2021-10-26"
     },
     {
       "system": "PYPI",
@@ -1429,7 +1429,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 67,
       "dependents": 0,
-      "latest_release": "2017-01-18"
+      "last_published": "2017-01-18"
     },
     {
       "system": "PYPI",
@@ -1438,7 +1438,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 12288648,
       "dependents": 1880,
-      "latest_release": "2024-08-30"
+      "last_published": "2024-08-30"
     },
     {
       "system": "PYPI",
@@ -1447,7 +1447,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 516852,
       "dependents": 80,
-      "latest_release": "2022-08-25"
+      "last_published": "2022-08-25"
     },
     {
       "system": "PYPI",
@@ -1456,7 +1456,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 60358,
       "dependents": 10,
-      "latest_release": "2023-12-28"
+      "last_published": "2023-12-28"
     },
     {
       "system": "PYPI",
@@ -1465,7 +1465,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 71447300,
       "dependents": 9108,
-      "latest_release": "2026-08-28"
+      "last_published": "2026-08-28"
     },
     {
       "system": "PYPI",
@@ -1474,7 +1474,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 12492174,
       "dependents": 2008,
-      "latest_release": "2023-03-06"
+      "last_published": "2023-03-06"
     },
     {
       "system": "PYPI",
@@ -1483,7 +1483,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 77056466,
       "dependents": 11231,
-      "latest_release": "2025-10-16"
+      "last_published": "2025-10-16"
     },
     {
       "system": "PYPI",
@@ -1492,7 +1492,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 28962752,
       "dependents": 5209,
-      "latest_release": "2026-04-20"
+      "last_published": "2026-04-20"
     },
     {
       "system": "PYPI",
@@ -1501,7 +1501,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 7064,
       "dependents": 0,
-      "latest_release": "2024-03-12"
+      "last_published": "2024-03-12"
     },
     {
       "system": "PYPI",
@@ -1510,7 +1510,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1980454,
       "dependents": 549,
-      "latest_release": "2025-09-16"
+      "last_published": "2025-09-16"
     },
     {
       "system": "PYPI",
@@ -1519,7 +1519,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 50729821,
       "dependents": 6379,
-      "latest_release": "2026-06-05"
+      "last_published": "2026-06-05"
     },
     {
       "system": "PYPI",
@@ -1528,7 +1528,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 49944679,
       "dependents": 6140,
-      "latest_release": "2026-10-12"
+      "last_published": "2026-10-12"
     },
     {
       "system": "NPM",
@@ -1537,7 +1537,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 37029,
       "dependents": 18,
-      "latest_release": "2026-02-10"
+      "last_published": "2026-02-10"
     },
     {
       "system": "NPM",
@@ -1546,7 +1546,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 6286,
       "dependents": 4,
-      "latest_release": "2026-02-10"
+      "last_published": "2026-02-10"
     },
     {
       "system": "PYPI",
@@ -1555,7 +1555,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 174529,
       "dependents": 52,
-      "latest_release": "2026-02-10"
+      "last_published": "2026-02-10"
     },
     {
       "system": "NPM",
@@ -1564,7 +1564,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 177,
       "dependents": 0,
-      "latest_release": "2024-04-04"
+      "last_published": "2024-04-04"
     },
     {
       "system": "PYPI",
@@ -1573,7 +1573,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 76592205,
       "dependents": 8350,
-      "latest_release": "2026-08-17"
+      "last_published": "2026-08-17"
     },
     {
       "system": "NPM",
@@ -1582,7 +1582,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 277,
       "dependents": 0,
-      "latest_release": "2026-09-30"
+      "last_published": "2026-09-30"
     },
     {
       "system": "NPM",
@@ -1591,7 +1591,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 45,
       "dependents": 0,
-      "latest_release": "2024-03-26"
+      "last_published": "2024-03-26"
     },
     {
       "system": "PYPI",
@@ -1600,7 +1600,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 11171,
       "dependents": 17,
-      "latest_release": "2026-09-30"
+      "last_published": "2026-09-30"
     },
     {
       "system": "PYPI",
@@ -1609,7 +1609,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 145,
       "dependents": 1,
-      "latest_release": "2017-10-15"
+      "last_published": "2017-10-15"
     },
     {
       "system": "NPM",
@@ -1618,7 +1618,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4535,
       "dependents": 25,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1627,7 +1627,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1908,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1636,7 +1636,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1685,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1645,7 +1645,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1707,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1654,7 +1654,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 636,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1663,7 +1663,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3321,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1672,7 +1672,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 794,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1681,7 +1681,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1800,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1690,7 +1690,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 919,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1699,7 +1699,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2955,
       "dependents": 6,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1708,7 +1708,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1664,
       "dependents": 0,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "NPM",
@@ -1717,7 +1717,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2024,
       "dependents": 2,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "PYPI",
@@ -1726,7 +1726,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 28757551,
       "dependents": 3031,
-      "latest_release": "2026-10-29"
+      "last_published": "2026-10-29"
     },
     {
       "system": "PYPI",
@@ -1735,7 +1735,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 27317089,
       "dependents": 4475,
-      "latest_release": "2024-02-14"
+      "last_published": "2024-02-14"
     },
     {
       "system": "PYPI",
@@ -1744,7 +1744,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 21,
       "dependents": 0,
-      "latest_release": "2024-03-01"
+      "last_published": "2024-03-01"
     },
     {
       "system": "PYPI",
@@ -1753,7 +1753,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2857,
       "dependents": 0,
-      "latest_release": "2020-04-27"
+      "last_published": "2020-04-27"
     },
     {
       "system": "PYPI",
@@ -1762,7 +1762,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 35634,
       "dependents": 27,
-      "latest_release": "2020-04-10"
+      "last_published": "2020-04-10"
     },
     {
       "system": "PYPI",
@@ -1771,7 +1771,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 29806864,
       "dependents": 5246,
-      "latest_release": "2024-03-12"
+      "last_published": "2024-03-12"
     },
     {
       "system": "PYPI",
@@ -1780,7 +1780,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1460262,
       "dependents": 145,
-      "latest_release": "2022-02-23"
+      "last_published": "2022-02-23"
     },
     {
       "system": "PYPI",
@@ -1789,7 +1789,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 213,
       "dependents": 0,
-      "latest_release": "2026-10-08"
+      "last_published": "2026-10-08"
     },
     {
       "system": "PYPI",
@@ -1798,7 +1798,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 120,
       "dependents": 0,
-      "latest_release": "2026-10-12"
+      "last_published": "2026-10-12"
     },
     {
       "system": "PYPI",
@@ -1807,7 +1807,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 838,
       "dependents": 0,
-      "latest_release": "2026-09-19"
+      "last_published": "2026-09-19"
     },
     {
       "system": "PYPI",
@@ -1816,7 +1816,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1660,
       "dependents": 0,
-      "latest_release": "2026-03-10"
+      "last_published": "2026-03-10"
     },
     {
       "system": "PYPI",
@@ -1825,7 +1825,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 8938,
       "dependents": 5,
-      "latest_release": "2024-03-19"
+      "last_published": "2024-03-19"
     },
     {
       "system": "NPM",
@@ -1834,7 +1834,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 423,
       "dependents": 1,
-      "latest_release": "2025-09-09"
+      "last_published": "2025-09-09"
     },
     {
       "system": "NPM",
@@ -1843,7 +1843,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 24,
       "dependents": 0,
-      "latest_release": "2025-09-08"
+      "last_published": "2025-09-08"
     },
     {
       "system": "PYPI",
@@ -1852,7 +1852,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 77,
       "dependents": 0,
-      "latest_release": "2018-11-07"
+      "last_published": "2018-11-07"
     },
     {
       "system": "PYPI",
@@ -1861,7 +1861,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4436,
       "dependents": 0,
-      "latest_release": "2026-05-01"
+      "last_published": "2026-05-01"
     },
     {
       "system": "NPM",
@@ -1870,7 +1870,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 52521,
       "dependents": 1,
-      "latest_release": "2026-07-08"
+      "last_published": "2026-07-08"
     },
     {
       "system": "PYPI",
@@ -1879,7 +1879,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 40,
       "dependents": 0,
-      "latest_release": "2023-01-02"
+      "last_published": "2023-01-02"
     },
     {
       "system": "PYPI",
@@ -1888,7 +1888,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 24371,
       "dependents": 10,
-      "latest_release": "2025-02-12"
+      "last_published": "2025-02-12"
     },
     {
       "system": "PYPI",
@@ -1897,7 +1897,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 175967,
       "dependents": 71,
-      "latest_release": "2025-12-11"
+      "last_published": "2025-12-11"
     },
     {
       "system": "PYPI",
@@ -1906,7 +1906,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3211,
       "dependents": 0,
-      "latest_release": "2025-03-28"
+      "last_published": "2025-03-28"
     },
     {
       "system": "PYPI",
@@ -1915,7 +1915,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 721,
       "dependents": 0,
-      "latest_release": "2022-04-20"
+      "last_published": "2022-04-20"
     },
     {
       "system": "PYPI",
@@ -1924,7 +1924,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1078,
       "dependents": 0,
-      "latest_release": "2025-04-11"
+      "last_published": "2025-04-11"
     },
     {
       "system": "PYPI",
@@ -1933,7 +1933,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 5599,
       "dependents": 1,
-      "latest_release": "2026-05-12"
+      "last_published": "2026-05-12"
     },
     {
       "system": "NPM",
@@ -1942,7 +1942,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 120,
       "dependents": 0,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "PYPI",
@@ -1951,7 +1951,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 451131,
       "dependents": 192,
-      "latest_release": "2026-09-21"
+      "last_published": "2026-09-21"
     },
     {
       "system": "PYPI",
@@ -1960,7 +1960,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 13,
       "dependents": 0,
-      "latest_release": "2019-01-03"
+      "last_published": "2019-01-03"
     },
     {
       "system": "NPM",
@@ -1969,7 +1969,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 8,
       "dependents": 0,
-      "latest_release": "2023-07-19"
+      "last_published": "2023-07-19"
     },
     {
       "system": "PYPI",
@@ -1978,7 +1978,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 260478,
       "dependents": 155,
-      "latest_release": "2026-10-20"
+      "last_published": "2026-10-20"
     },
     {
       "system": "PYPI",
@@ -1987,7 +1987,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 15786,
       "dependents": 0,
-      "latest_release": "2026-06-16"
+      "last_published": "2026-06-16"
     },
     {
       "system": "PYPI",
@@ -1996,7 +1996,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 373,
       "dependents": 0,
-      "latest_release": "2023-09-19"
+      "last_published": "2023-09-19"
     },
     {
       "system": "PYPI",
@@ -2005,7 +2005,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 139,
       "dependents": 0,
-      "latest_release": "2026-05-27"
+      "last_published": "2026-05-27"
     },
     {
       "system": "PYPI",
@@ -2014,7 +2014,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 15220,
       "dependents": 6,
-      "latest_release": "2026-07-16"
+      "last_published": "2026-07-16"
     },
     {
       "system": "PYPI",
@@ -2023,7 +2023,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 6160,
       "dependents": 0,
-      "latest_release": "2024-11-06"
+      "last_published": "2024-11-06"
     },
     {
       "system": "PYPI",
@@ -2032,7 +2032,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1725,
       "dependents": 0,
-      "latest_release": "2026-03-26"
+      "last_published": "2026-03-26"
     },
     {
       "system": "PYPI",
@@ -2041,7 +2041,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 21091,
       "dependents": 1,
-      "latest_release": "2024-09-17"
+      "last_published": "2024-09-17"
     },
     {
       "system": "PYPI",
@@ -2050,7 +2050,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 25586,
       "dependents": 6,
-      "latest_release": "2026-03-31"
+      "last_published": "2026-03-31"
     },
     {
       "system": "PYPI",
@@ -2059,7 +2059,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 17,
       "dependents": 0,
-      "latest_release": "2021-11-28"
+      "last_published": "2021-11-28"
     },
     {
       "system": "PYPI",
@@ -2068,7 +2068,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 15,
       "dependents": 0,
-      "latest_release": "2021-11-28"
+      "last_published": "2021-11-28"
     },
     {
       "system": "PYPI",
@@ -2077,7 +2077,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 19,
       "dependents": 0,
-      "latest_release": "2021-11-28"
+      "last_published": "2021-11-28"
     },
     {
       "system": "PYPI",
@@ -2086,7 +2086,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 89857,
       "dependents": 18,
-      "latest_release": "2026-03-26"
+      "last_published": "2026-03-26"
     },
     {
       "system": "PYPI",
@@ -2095,7 +2095,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 198,
       "dependents": 0,
-      "latest_release": "2023-04-25"
+      "last_published": "2023-04-25"
     },
     {
       "system": "PYPI",
@@ -2104,7 +2104,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2884,
       "dependents": 14,
-      "latest_release": "2026-04-23"
+      "last_published": "2026-04-23"
     },
     {
       "system": "PYPI",
@@ -2113,7 +2113,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 434920,
       "dependents": 205,
-      "latest_release": "2023-05-18"
+      "last_published": "2023-05-18"
     },
     {
       "system": "PYPI",
@@ -2122,7 +2122,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1038,
       "dependents": 0,
-      "latest_release": "2025-10-17"
+      "last_published": "2025-10-17"
     },
     {
       "system": "PYPI",
@@ -2131,7 +2131,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3179,
       "dependents": 3,
-      "latest_release": "2024-10-20"
+      "last_published": "2024-10-20"
     },
     {
       "system": "PYPI",
@@ -2140,7 +2140,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2921,
       "dependents": 0,
-      "latest_release": "2023-05-22"
+      "last_published": "2023-05-22"
     },
     {
       "system": "PYPI",
@@ -2149,7 +2149,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3497,
       "dependents": 1,
-      "latest_release": "2025-03-28"
+      "last_published": "2025-03-28"
     },
     {
       "system": "PYPI",
@@ -2158,7 +2158,7 @@
       "reason": "declared here under the repo's own name; registry has no conflicting link",
       "downloads_last_month": 928,
       "dependents": 0,
-      "latest_release": "2022-03-02"
+      "last_published": "2022-03-02"
     },
     {
       "system": "NPM",
@@ -2167,7 +2167,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 50922,
       "dependents": 0,
-      "latest_release": "2026-10-13"
+      "last_published": "2026-10-13"
     },
     {
       "system": "PYPI",
@@ -2176,7 +2176,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 15,
       "dependents": 0,
-      "latest_release": "2022-03-01"
+      "last_published": "2022-03-01"
     },
     {
       "system": "PYPI",
@@ -2185,7 +2185,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 155361,
       "dependents": 1,
-      "latest_release": "2026-09-18"
+      "last_published": "2026-09-18"
     },
     {
       "system": "PYPI",
@@ -2194,7 +2194,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 112295,
       "dependents": 1,
-      "latest_release": "2025-07-24"
+      "last_published": "2025-07-24"
     },
     {
       "system": "PYPI",
@@ -2203,7 +2203,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 119717,
       "dependents": 9,
-      "latest_release": "2026-09-03"
+      "last_published": "2026-09-03"
     },
     {
       "system": "NPM",
@@ -2212,7 +2212,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 66,
       "dependents": 3,
-      "latest_release": "2026-10-20"
+      "last_published": "2026-10-20"
     },
     {
       "system": "NPM",
@@ -2221,7 +2221,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 59,
       "dependents": 0,
-      "latest_release": "2026-10-20"
+      "last_published": "2026-10-20"
     },
     {
       "system": "PYPI",
@@ -2230,7 +2230,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 0,
       "dependents": 4,
-      "latest_release": "2026-10-20"
+      "last_published": "2026-10-20"
     },
     {
       "system": "PYPI",
@@ -2239,7 +2239,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 0,
       "dependents": 0,
-      "latest_release": "2026-10-20"
+      "last_published": "2026-10-20"
     },
     {
       "system": "PYPI",
@@ -2248,7 +2248,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 0,
       "dependents": 1,
-      "latest_release": "2026-10-20"
+      "last_published": "2026-10-20"
     },
     {
       "system": "NPM",
@@ -2257,7 +2257,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 76842,
       "dependents": 0,
-      "latest_release": "2026-10-27"
+      "last_published": "2026-10-27"
     },
     {
       "system": "PYPI",
@@ -2266,7 +2266,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 17948052,
       "dependents": 3947,
-      "latest_release": "2026-10-27"
+      "last_published": "2026-10-27"
     },
     {
       "system": "NPM",
@@ -2275,7 +2275,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3072,
       "dependents": 13,
-      "latest_release": "2026-10-21"
+      "last_published": "2026-10-21"
     },
     {
       "system": "NPM",
@@ -2284,7 +2284,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 313,
       "dependents": 2,
-      "latest_release": "2026-10-21"
+      "last_published": "2026-10-21"
     },
     {
       "system": "NPM",
@@ -2293,7 +2293,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 161,
       "dependents": 0,
-      "latest_release": "2026-10-21"
+      "last_published": "2026-10-21"
     },
     {
       "system": "PYPI",
@@ -2302,7 +2302,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 22763,
       "dependents": 23,
-      "latest_release": "2026-10-21"
+      "last_published": "2026-10-21"
     },
     {
       "system": "NPM",
@@ -2311,7 +2311,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 37100,
       "dependents": 17,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -2320,7 +2320,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30692,
       "dependents": 9,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -2329,7 +2329,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 33604,
       "dependents": 26,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -2338,7 +2338,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 33916,
       "dependents": 15,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -2347,7 +2347,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30539,
       "dependents": 9,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "PYPI",
@@ -2356,7 +2356,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 177449,
       "dependents": 29,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "PYPI",
@@ -2365,7 +2365,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 185703,
       "dependents": 38,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "PYPI",
@@ -2374,7 +2374,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 186123,
       "dependents": 39,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "PYPI",
@@ -2383,7 +2383,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 815532,
       "dependents": 32,
-      "latest_release": "2026-10-26"
+      "last_published": "2026-10-26"
     },
     {
       "system": "NPM",
@@ -2392,7 +2392,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 31,
       "dependents": 0,
-      "latest_release": "2023-08-01"
+      "last_published": "2023-08-01"
     },
     {
       "system": "NPM",
@@ -2401,7 +2401,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 250,
       "dependents": 0,
-      "latest_release": "2023-08-01"
+      "last_published": "2023-08-01"
     },
     {
       "system": "NPM",
@@ -2410,7 +2410,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 29,
       "dependents": 0,
-      "latest_release": "2023-08-01"
+      "last_published": "2023-08-01"
     },
     {
       "system": "NPM",
@@ -2419,7 +2419,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 6958,
       "dependents": 4,
-      "latest_release": "2024-08-26"
+      "last_published": "2024-08-26"
     },
     {
       "system": "NPM",
@@ -2428,7 +2428,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 271,
       "dependents": 0,
-      "latest_release": "2023-08-01"
+      "last_published": "2023-08-01"
     },
     {
       "system": "PYPI",
@@ -2437,7 +2437,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1454,
       "dependents": 1,
-      "latest_release": "2023-05-23"
+      "last_published": "2023-05-23"
     },
     {
       "system": "PYPI",
@@ -2446,7 +2446,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2411,
       "dependents": 2,
-      "latest_release": "2023-05-23"
+      "last_published": "2023-05-23"
     },
     {
       "system": "PYPI",
@@ -2455,7 +2455,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 242,
       "dependents": 2,
-      "latest_release": "2023-05-23"
+      "last_published": "2023-05-23"
     },
     {
       "system": "PYPI",
@@ -2464,7 +2464,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 138,
       "dependents": 0,
-      "latest_release": "2023-05-23"
+      "last_published": "2023-05-23"
     },
     {
       "system": "PYPI",
@@ -2473,7 +2473,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 78,
       "dependents": 0,
-      "latest_release": "2023-05-23"
+      "last_published": "2023-05-23"
     },
     {
       "system": "NPM",
@@ -2482,7 +2482,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 234937,
       "dependents": 626,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2491,7 +2491,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 73488,
       "dependents": 18,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2500,7 +2500,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 325131,
       "dependents": 692,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2509,7 +2509,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 74403,
       "dependents": 20,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2518,7 +2518,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 186182,
       "dependents": 322,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2527,7 +2527,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 21577,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2536,7 +2536,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 46403,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2545,7 +2545,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 74335,
       "dependents": 23,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2554,7 +2554,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 70018,
       "dependents": 16,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2563,7 +2563,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 190791,
       "dependents": 319,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2572,7 +2572,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36708,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2581,7 +2581,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 264107,
       "dependents": 660,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2590,7 +2590,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 237744,
       "dependents": 365,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2599,7 +2599,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 73970,
       "dependents": 20,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2608,7 +2608,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 84507,
       "dependents": 54,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2617,7 +2617,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 72875,
       "dependents": 17,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2626,7 +2626,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 120026,
       "dependents": 91,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2635,7 +2635,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 47880,
       "dependents": 18,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2644,7 +2644,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 80253,
       "dependents": 2,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2653,7 +2653,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 507372,
       "dependents": 1006,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2662,7 +2662,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 71597,
       "dependents": 20,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2671,7 +2671,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 70652,
       "dependents": 16,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2680,7 +2680,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 45544,
       "dependents": 5,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2689,7 +2689,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 29690,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2698,7 +2698,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 200606,
       "dependents": 377,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2707,7 +2707,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 75279,
       "dependents": 26,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2716,7 +2716,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 248436,
       "dependents": 647,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2725,7 +2725,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 180778,
       "dependents": 372,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2734,7 +2734,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 71676,
       "dependents": 16,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2743,7 +2743,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 31341,
       "dependents": 8,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2752,7 +2752,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30886,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2761,7 +2761,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 197242,
       "dependents": 366,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2770,7 +2770,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 71590,
       "dependents": 18,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2779,7 +2779,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 103940,
       "dependents": 89,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2788,7 +2788,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 71021,
       "dependents": 16,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2797,7 +2797,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 18217,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2806,7 +2806,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 34255,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2815,7 +2815,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 55713,
       "dependents": 3,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2824,7 +2824,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 55016,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2833,7 +2833,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30620,
       "dependents": 2,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2842,7 +2842,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 56800,
       "dependents": 5,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2851,7 +2851,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 54748,
       "dependents": 2,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2860,7 +2860,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 58797,
       "dependents": 6,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2869,7 +2869,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 54397,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2878,7 +2878,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 85231,
       "dependents": 32,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2887,7 +2887,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 82092,
       "dependents": 34,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2896,7 +2896,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 106239,
       "dependents": 99,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2905,7 +2905,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 45760,
       "dependents": 17,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2914,7 +2914,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 107077,
       "dependents": 98,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2923,7 +2923,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 54294,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2932,7 +2932,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 156511,
       "dependents": 320,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2941,7 +2941,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 66663,
       "dependents": 16,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2950,7 +2950,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 126402,
       "dependents": 170,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2959,7 +2959,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 72823,
       "dependents": 17,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2968,7 +2968,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 76376,
       "dependents": 36,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2977,7 +2977,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 73253,
       "dependents": 19,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2986,7 +2986,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 131629,
       "dependents": 301,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -2995,7 +2995,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 72238,
       "dependents": 20,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3004,7 +3004,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 130360,
       "dependents": 306,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3013,7 +3013,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 49501,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3022,7 +3022,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 68546,
       "dependents": 21,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3031,7 +3031,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 32197,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3040,7 +3040,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 4742,
       "dependents": 0,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3049,7 +3049,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 20935,
       "dependents": 18,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3058,7 +3058,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 618168,
       "dependents": 1033,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3067,7 +3067,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 190428,
       "dependents": 295,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3076,7 +3076,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 74007,
       "dependents": 19,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3085,7 +3085,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 334841,
       "dependents": 714,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3094,7 +3094,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 227575,
       "dependents": 336,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3103,7 +3103,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 55098,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3112,7 +3112,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 52673,
       "dependents": 16,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3121,7 +3121,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30403,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3130,7 +3130,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 73707,
       "dependents": 22,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3139,7 +3139,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 296154,
       "dependents": 670,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3148,7 +3148,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 72750,
       "dependents": 20,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3157,7 +3157,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 285824,
       "dependents": 1072,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3166,7 +3166,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 75225,
       "dependents": 24,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3175,7 +3175,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 56210,
       "dependents": 2,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3184,7 +3184,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 520316,
       "dependents": 999,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3193,7 +3193,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 47640,
       "dependents": 2,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3202,7 +3202,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 58503,
       "dependents": 4,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3211,7 +3211,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 57681,
       "dependents": 2,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3220,7 +3220,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 420726,
       "dependents": 1014,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3229,7 +3229,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 69455,
       "dependents": 10,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3238,7 +3238,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 413106,
       "dependents": 1017,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3247,7 +3247,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 290742,
       "dependents": 693,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3256,7 +3256,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 47502,
       "dependents": 17,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3265,7 +3265,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 827,
       "dependents": 0,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3274,7 +3274,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 57492,
       "dependents": 60,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3283,7 +3283,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 31997,
       "dependents": 2,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3292,7 +3292,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 44706,
       "dependents": 13,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3301,7 +3301,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 57263,
       "dependents": 22,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3310,7 +3310,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 25435,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3319,7 +3319,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 92092,
       "dependents": 38,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3328,7 +3328,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 166446,
       "dependents": 339,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3337,7 +3337,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 71458,
       "dependents": 16,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3346,7 +3346,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 61139,
       "dependents": 4,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3355,7 +3355,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 56090,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3364,7 +3364,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 285818,
       "dependents": 705,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3373,7 +3373,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 68932,
       "dependents": 18,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3382,7 +3382,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 302434,
       "dependents": 700,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3391,7 +3391,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 72345,
       "dependents": 17,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3400,7 +3400,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 56636,
       "dependents": 4,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3409,7 +3409,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 21529,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3418,7 +3418,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 65786,
       "dependents": 22,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3427,7 +3427,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 47490,
       "dependents": 1,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3436,7 +3436,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 867,
       "dependents": 1,
-      "latest_release": "2017-03-13"
+      "last_published": "2017-03-13"
     },
     {
       "system": "PYPI",
@@ -3445,7 +3445,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30253541,
       "dependents": 3926,
-      "latest_release": "2026-10-28"
+      "last_published": "2026-10-28"
     },
     {
       "system": "NPM",
@@ -3454,7 +3454,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 8,
       "dependents": 0,
-      "latest_release": "2020-05-01"
+      "last_published": "2020-05-01"
     },
     {
       "system": "NPM",
@@ -3463,7 +3463,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 7,
       "dependents": 0,
-      "latest_release": "2019-07-03"
+      "last_published": "2019-07-03"
     },
     {
       "system": "NPM",
@@ -3472,7 +3472,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2552,
       "dependents": 1,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "PYPI",
@@ -3481,7 +3481,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 89418,
       "dependents": 13,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "PYPI",
@@ -3490,7 +3490,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 40856,
       "dependents": 15,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -3499,7 +3499,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 104,
       "dependents": 0,
-      "latest_release": "2023-08-02"
+      "last_published": "2023-08-02"
     },
     {
       "system": "PYPI",
@@ -3508,7 +3508,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1293,
       "dependents": 0,
-      "latest_release": "2023-08-03"
+      "last_published": "2023-08-03"
     },
     {
       "system": "NPM",
@@ -3517,7 +3517,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 39,
       "dependents": 0,
-      "latest_release": "2023-03-08"
+      "last_published": "2023-03-08"
     },
     {
       "system": "PYPI",
@@ -3526,7 +3526,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 65,
       "dependents": 1,
-      "latest_release": "2023-03-08"
+      "last_published": "2023-03-08"
     },
     {
       "system": "NPM",
@@ -3535,7 +3535,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 80,
       "dependents": 0,
-      "latest_release": "2025-12-17"
+      "last_published": "2025-12-17"
     },
     {
       "system": "PYPI",
@@ -3544,7 +3544,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2054,
       "dependents": 1,
-      "latest_release": "2025-12-17"
+      "last_published": "2025-12-17"
     },
     {
       "system": "PYPI",
@@ -3553,7 +3553,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 510,
       "dependents": 0,
-      "latest_release": "2024-05-15"
+      "last_published": "2024-05-15"
     },
     {
       "system": "PYPI",
@@ -3562,7 +3562,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 20,
       "dependents": 0,
-      "latest_release": "2023-01-13"
+      "last_published": "2023-01-13"
     },
     {
       "system": "NPM",
@@ -3571,7 +3571,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 16,
       "dependents": 0,
-      "latest_release": "2022-04-14"
+      "last_published": "2022-04-14"
     },
     {
       "system": "PYPI",
@@ -3580,7 +3580,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 48057917,
       "dependents": 6275,
-      "latest_release": "2023-11-23"
+      "last_published": "2023-11-23"
     },
     {
       "system": "PYPI",
@@ -3589,7 +3589,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 27966465,
       "dependents": 4357,
-      "latest_release": "2026-09-15"
+      "last_published": "2026-09-15"
     },
     {
       "system": "PYPI",
@@ -3598,7 +3598,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 103,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3607,7 +3607,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 174,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3616,7 +3616,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 85,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3625,7 +3625,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 37,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3634,7 +3634,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 653,
       "dependents": 1,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3643,7 +3643,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 120,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3652,7 +3652,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1909,
       "dependents": 1,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3661,7 +3661,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 29,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3670,7 +3670,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 104,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3679,7 +3679,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2686,
       "dependents": 2,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3688,7 +3688,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3697,7 +3697,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3706,7 +3706,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 164,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3715,7 +3715,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 40,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3724,7 +3724,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 398,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3733,7 +3733,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 5112,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3742,7 +3742,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 881,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3751,7 +3751,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 103,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3760,7 +3760,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 86,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3769,7 +3769,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 60,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3778,7 +3778,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 284,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3787,7 +3787,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 396,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3796,7 +3796,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 36,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3805,7 +3805,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 840,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3814,7 +3814,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 170,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3823,7 +3823,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 66,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3832,7 +3832,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 41,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3841,7 +3841,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 11592,
       "dependents": 4,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3850,7 +3850,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 289,
       "dependents": 0,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "PYPI",
@@ -3859,7 +3859,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 40,
       "dependents": 1,
-      "latest_release": "2026-04-13"
+      "last_published": "2026-04-13"
     },
     {
       "system": "NPM",
@@ -3868,7 +3868,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 636614,
       "dependents": 1438,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3877,7 +3877,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 269151,
       "dependents": 665,
-      "latest_release": "2026-10-08"
+      "last_published": "2026-10-08"
     },
     {
       "system": "NPM",
@@ -3886,7 +3886,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 117,
       "dependents": 0,
-      "latest_release": "2025-11-13"
+      "last_published": "2025-11-13"
     },
     {
       "system": "NPM",
@@ -3895,7 +3895,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 528539,
       "dependents": 1332,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3904,7 +3904,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 571041,
       "dependents": 1395,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3913,7 +3913,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 727784,
       "dependents": 1431,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3922,7 +3922,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 131799,
       "dependents": 37,
-      "latest_release": "2026-10-08"
+      "last_published": "2026-10-08"
     },
     {
       "system": "NPM",
@@ -3931,7 +3931,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 33828,
       "dependents": 19,
-      "latest_release": "2026-10-08"
+      "last_published": "2026-10-08"
     },
     {
       "system": "NPM",
@@ -3940,7 +3940,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 583440,
       "dependents": 1409,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3949,7 +3949,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 582245,
       "dependents": 1396,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3958,7 +3958,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 498152,
       "dependents": 1307,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3967,7 +3967,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 570787,
       "dependents": 1396,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3976,7 +3976,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 532375,
       "dependents": 1331,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3985,7 +3985,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 414210,
       "dependents": 1079,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -3994,7 +3994,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 569978,
       "dependents": 1396,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -4003,7 +4003,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 593811,
       "dependents": 1410,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -4012,7 +4012,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 572966,
       "dependents": 1396,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -4021,7 +4021,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 522062,
       "dependents": 984,
-      "latest_release": "2026-10-08"
+      "last_published": "2026-10-08"
     },
     {
       "system": "NPM",
@@ -4030,7 +4030,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 11,
       "dependents": 0,
-      "latest_release": "2026-05-06"
+      "last_published": "2026-05-06"
     },
     {
       "system": "PYPI",
@@ -4039,7 +4039,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 267,
       "dependents": 0,
-      "latest_release": "2026-05-06"
+      "last_published": "2026-05-06"
     },
     {
       "system": "NPM",
@@ -4048,7 +4048,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 10,
       "dependents": 0,
-      "latest_release": "2021-09-16"
+      "last_published": "2021-09-16"
     },
     {
       "system": "PYPI",
@@ -4057,7 +4057,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 12459,
       "dependents": 1,
-      "latest_release": "2024-04-10"
+      "last_published": "2024-04-10"
     },
     {
       "system": "NPM",
@@ -4066,7 +4066,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 68,
       "dependents": 0,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "PYPI",
@@ -4075,7 +4075,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 30,
       "dependents": 0,
-      "latest_release": "2026-07-03"
+      "last_published": "2026-07-03"
     },
     {
       "system": "NPM",
@@ -4084,7 +4084,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1725,
       "dependents": 3,
-      "latest_release": "2026-09-29"
+      "last_published": "2026-09-29"
     },
     {
       "system": "NPM",
@@ -4093,7 +4093,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 13,
       "dependents": 0,
-      "latest_release": "2025-11-26"
+      "last_published": "2025-11-26"
     },
     {
       "system": "PYPI",
@@ -4102,7 +4102,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 58,
       "dependents": 0,
-      "latest_release": "2025-11-26"
+      "last_published": "2025-11-26"
     },
     {
       "system": "NPM",
@@ -4111,7 +4111,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 379,
       "dependents": 3,
-      "latest_release": "2026-07-14"
+      "last_published": "2026-07-14"
     },
     {
       "system": "NPM",
@@ -4120,7 +4120,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 260,
       "dependents": 2,
-      "latest_release": "2026-07-14"
+      "last_published": "2026-07-14"
     },
     {
       "system": "PYPI",
@@ -4129,7 +4129,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2056,
       "dependents": 4,
-      "latest_release": "2026-07-14"
+      "last_published": "2026-07-14"
     },
     {
       "system": "NPM",
@@ -4138,7 +4138,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 18,
       "dependents": 0,
-      "latest_release": "2022-04-23"
+      "last_published": "2022-04-23"
     },
     {
       "system": "PYPI",
@@ -4147,7 +4147,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 38,
       "dependents": 0,
-      "latest_release": "2022-04-22"
+      "last_published": "2022-04-22"
     },
     {
       "system": "NPM",
@@ -4156,7 +4156,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2673,
       "dependents": 14,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4165,7 +4165,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1285,
       "dependents": 4,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4174,7 +4174,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1805,
       "dependents": 12,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4183,7 +4183,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 922,
       "dependents": 1,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4192,7 +4192,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 14855,
       "dependents": 5,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4201,7 +4201,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 15086,
       "dependents": 5,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4210,7 +4210,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 16118,
       "dependents": 27,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4219,7 +4219,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 577,
       "dependents": 0,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4228,7 +4228,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 585,
       "dependents": 0,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4237,7 +4237,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 14304,
       "dependents": 5,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4246,7 +4246,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 2763,
       "dependents": 26,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4255,7 +4255,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1078,
       "dependents": 1,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4264,7 +4264,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 13725,
       "dependents": 0,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4273,7 +4273,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 13484,
       "dependents": 0,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4282,7 +4282,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1793,
       "dependents": 13,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "NPM",
@@ -4291,7 +4291,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1272,
       "dependents": 6,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "PYPI",
@@ -4300,7 +4300,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 9673,
       "dependents": 8,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "PYPI",
@@ -4309,7 +4309,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 60813,
       "dependents": 21,
-      "latest_release": "2026-10-07"
+      "last_published": "2026-10-07"
     },
     {
       "system": "PYPI",
@@ -4318,7 +4318,7 @@
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 17684,
       "dependents": 0,
-      "latest_release": "2026-08-11"
+      "last_published": "2026-08-11"
     },
     {
       "system": "NPM",
@@ -4327,7 +4327,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 13,
       "dependents": 0,
-      "latest_release": "2026-09-15"
+      "last_published": "2026-09-15"
     },
     {
       "system": "PYPI",
@@ -4336,7 +4336,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 161,
       "dependents": 0,
-      "latest_release": "2026-09-15"
+      "last_published": "2026-09-15"
     },
     {
       "system": "NPM",
@@ -4345,7 +4345,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 19,
       "dependents": 1,
-      "latest_release": "2026-03-09"
+      "last_published": "2026-03-09"
     },
     {
       "system": "NPM",
@@ -4354,7 +4354,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 22,
       "dependents": 0,
-      "latest_release": "2026-03-09"
+      "last_published": "2026-03-09"
     },
     {
       "system": "PYPI",
@@ -4363,7 +4363,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1246,
       "dependents": 1,
-      "latest_release": "2026-03-09"
+      "last_published": "2026-03-09"
     },
     {
       "system": "NPM",
@@ -4372,7 +4372,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 12741,
       "dependents": 1,
-      "latest_release": "2026-09-10"
+      "last_published": "2026-09-10"
     },
     {
       "system": "NPM",
@@ -4381,7 +4381,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 12070,
       "dependents": 0,
-      "latest_release": "2026-09-10"
+      "last_published": "2026-09-10"
     },
     {
       "system": "PYPI",
@@ -4390,7 +4390,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 51057,
       "dependents": 8,
-      "latest_release": "2026-09-10"
+      "last_published": "2026-09-10"
     },
     {
       "system": "PYPI",
@@ -4399,7 +4399,7 @@
       "reason": "declared here; registry links to a same-named repo (this repo's former home)",
       "downloads_last_month": 11,
       "dependents": 0,
-      "latest_release": "2022-11-02"
+      "last_published": "2022-11-02"
     },
     {
       "system": "NPM",
@@ -4408,7 +4408,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 747,
       "dependents": 1,
-      "latest_release": "2026-09-29"
+      "last_published": "2026-09-29"
     },
     {
       "system": "PYPI",
@@ -4417,7 +4417,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1640,
       "dependents": 1,
-      "latest_release": "2026-09-29"
+      "last_published": "2026-09-29"
     },
     {
       "system": "NPM",
@@ -4426,7 +4426,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 151,
       "dependents": 2,
-      "latest_release": "2026-09-11"
+      "last_published": "2026-09-11"
     },
     {
       "system": "NPM",
@@ -4435,7 +4435,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 345,
       "dependents": 3,
-      "latest_release": "2026-09-11"
+      "last_published": "2026-09-11"
     },
     {
       "system": "NPM",
@@ -4444,7 +4444,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 112,
       "dependents": 0,
-      "latest_release": "2026-09-11"
+      "last_published": "2026-09-11"
     },
     {
       "system": "PYPI",
@@ -4453,7 +4453,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 3091,
       "dependents": 2,
-      "latest_release": "2026-09-11"
+      "last_published": "2026-09-11"
     },
     {
       "system": "PYPI",
@@ -4462,7 +4462,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 26,
       "dependents": 0,
-      "latest_release": "2021-03-31"
+      "last_published": "2021-03-31"
     },
     {
       "system": "PYPI",
@@ -4471,7 +4471,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 176,
       "dependents": 0,
-      "latest_release": "2025-12-30"
+      "last_published": "2025-12-30"
     },
     {
       "system": "PYPI",
@@ -4480,7 +4480,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 231,
       "dependents": 1,
-      "latest_release": "2025-12-30"
+      "last_published": "2025-12-30"
     },
     {
       "system": "NPM",
@@ -4489,7 +4489,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 231,
       "dependents": 0,
-      "latest_release": "2026-09-04"
+      "last_published": "2026-09-04"
     },
     {
       "system": "NPM",
@@ -4498,7 +4498,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 688,
       "dependents": 2,
-      "latest_release": "2026-09-04"
+      "last_published": "2026-09-04"
     },
     {
       "system": "NPM",
@@ -4507,7 +4507,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 13,
       "dependents": 0,
-      "latest_release": "2026-09-04"
+      "last_published": "2026-09-04"
     },
     {
       "system": "NPM",
@@ -4516,7 +4516,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 309,
       "dependents": 3,
-      "latest_release": "2026-09-04"
+      "last_published": "2026-09-04"
     },
     {
       "system": "PYPI",
@@ -4525,7 +4525,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 111632,
       "dependents": 60,
-      "latest_release": "2026-09-04"
+      "last_published": "2026-09-04"
     },
     {
       "system": "NPM",
@@ -4534,7 +4534,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 26,
       "dependents": 0,
-      "latest_release": "2024-02-06"
+      "last_published": "2024-02-06"
     },
     {
       "system": "PYPI",
@@ -4543,7 +4543,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 472,
       "dependents": 3,
-      "latest_release": "2024-02-06"
+      "last_published": "2024-02-06"
     },
     {
       "system": "PYPI",
@@ -4552,7 +4552,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 303,
       "dependents": 1,
-      "latest_release": "2023-03-07"
+      "last_published": "2023-03-07"
     },
     {
       "system": "NPM",
@@ -4561,7 +4561,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 7,
       "dependents": 0,
-      "latest_release": "2023-08-22"
+      "last_published": "2023-08-22"
     },
     {
       "system": "PYPI",
@@ -4570,7 +4570,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 376,
       "dependents": 3,
-      "latest_release": "2023-08-22"
+      "last_published": "2023-08-22"
     },
     {
       "system": "PYPI",
@@ -4579,7 +4579,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 266,
       "dependents": 2,
-      "latest_release": "2022-11-11"
+      "last_published": "2022-11-11"
     }
   ],
   "rejected": [

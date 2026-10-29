@@ -1,9 +1,9 @@
-"""Tests for scripts/5_build_dataset.py."""
+"""Tests for scripts/6_build_dataset.py."""
 
 import importlib
 import json
 
-build = importlib.import_module("5_build_dataset")
+build = importlib.import_module("6_build_dataset")
 
 
 def test_find_users_sees_actions_pinned_or_not_and_build_requirements():
@@ -37,11 +37,14 @@ def test_the_dates_reach_the_site_and_every_reference_resolves(tmp_path, monkeyp
     }
     label = {"kind": "package", "deploys_live_service": None, "security_boundary": False, "rationale": "r"}
     package = {"system": "PYPI", "name": "o-lib", "repo": "o/tool", "reason": "r", "downloads_last_month": 9}
-    package |= {"dependents": 2, "latest_release": "2026-09-29"}
+    package |= {"dependents": 2, "last_published": "2026-09-29"}
+    image = {"registry": "quay.io", "namespace": "o", "name": "tool", "tag": "latest", "last_published": "2026-10-02"}
+    image |= {"pulls": None, "reference": "quay.io/o/tool:latest", "repo": "o/tool", "reason": "named like the image"}
     for name, data in {
         "repos": {"fetched_on": "2026-10-29", "orgs": ["o"], "repos": repos},
         "scan": scan,
         "packages": {"accepted": [package], "rejected": []},
+        "images": {"images": [image]},
         "classification": {"o/tool": label, "o/app": label},
     }.items():
         (output / f"{name}.json").write_text(json.dumps(data))
@@ -50,12 +53,18 @@ def test_the_dates_reach_the_site_and_every_reference_resolves(tmp_path, monkeyp
 
     out_repos = {r["id"]: r for r in json.loads((site / "repos.json").read_text())}
     out_packages = {p["id"]: p for p in json.loads((site / "packages.json").read_text())}
+    out_images = {i["id"]: i for i in json.loads((site / "images.json").read_text())}
     assert out_repos["o/tool"]["last_commit"] == "2026-10-01"
     assert out_repos["o/app"]["last_commit"] is None
-    assert out_packages["PYPI:o-lib"]["latest_release"] == "2026-09-29"
+    assert out_packages["PYPI:o-lib"]["last_published"] == "2026-09-29"
+    assert out_images["quay.io/o/tool"]["org"] == "o"
     for repo in out_repos.values():
-        related = [*repo["packages"], *(i for ids in [*repo["used_by"].values(), *repo["uses"].values()] for i in ids)]
-        assert all(i in out_repos or i in out_packages for i in related)
+        related = [*repo["packages"], *repo["images"]]
+        related += [i for ids in [*repo["used_by"].values(), *repo["uses"].values()] for i in ids]
+        assert all(i in out_repos or i in out_packages or i in out_images for i in related)
     assert out_repos["o/tool"]["packages"] == ["PYPI:o-lib"]
+    assert out_repos["o/tool"]["images"] == ["quay.io/o/tool"]
+    assert out_repos["o/tool"]["pulls"] is None  # Quay has no pull counts
     assert out_repos["o/app"]["uses"] == {"ci": ["o/tool"], "ci_pinned": [], "build": ["o/tool"]}
     assert all(p["repo"] in out_repos for p in out_packages.values())
+    assert all(i["repo"] in out_repos for i in out_images.values() if i["repo"])

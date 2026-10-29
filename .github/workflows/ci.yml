@@ -31,8 +31,8 @@ jobs:
           done
       - name: Check that site/data/ is up to date
         run: |
-          python scripts/5_build_dataset.py
+          python scripts/6_build_dataset.py
           git diff --exit-code site/data || {
-            echo "::error::site/data/ is out of date: run python scripts/5_build_dataset.py and commit the result."
+            echo "::error::site/data/ is out of date: run python scripts/6_build_dataset.py and commit the result."
             exit 1
           }

@@ -10,8 +10,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only community health files (ISSUE_TEMPLATE, SUPPORT.md) and no source code or workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -49,8 +51,10 @@
     "security_boundary": null,
     "rationale": "The repo contains example notebooks (index.ipynb, ipyvolume_demo.ipynb) and a README showing a Binder badge and demo description, not a reusable package or app.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -90,8 +94,10 @@
     "security_boundary": null,
     "rationale": "Repository is a Binder example for installing apt packages, with README explaining usage and a notebook demonstrating it.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -130,8 +136,10 @@
     "security_boundary": null,
     "rationale": "The repo is a Binder example demonstrating R environment setup via DESCRIPTION, with a README explaining Binder usage and a sample notebook.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -171,8 +179,10 @@
     "security_boundary": null,
     "rationale": "Repository is a Binder example demonstrating how to run a Bokeh server, with a Binder badge and example app files like bokeh-app/main.py.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -213,8 +223,10 @@
     "security_boundary": null,
     "rationale": "The repository is a Binder example with a notebook (index.ipynb), environment.yml, and README instructing users to run it on mybinder.org, classified as an example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -256,8 +268,10 @@
     "security_boundary": null,
     "rationale": "The repository is a template with an empty environment.yml meant to be used with repo2docker for exporting conda environments, as stated in the README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -296,8 +310,10 @@
     "security_boundary": null,
     "rationale": "The repository is an example showing continuous integration setup for repo2docker, with a CircleCI config and a sample notebook; README states it is an example with templates to copy.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -337,8 +353,10 @@
     "security_boundary": null,
     "rationale": "This is a Binder example repository demonstrating how to use Quilt data packages in notebooks, as evidenced by the Binder badge, index.ipynb, and binder/ configuration files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -378,8 +396,10 @@
     "security_boundary": null,
     "rationale": "Contains a single demo notebook and Binder launch link with no CI or packages, indicating an example repo.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -419,8 +439,10 @@
     "security_boundary": null,
     "rationale": "The repo is a Binder example with a custom Dockerfile for RStudio, demonstrated by the Binder badge, Dockerfile, and notebook instructions, making it an example/demo project.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -461,8 +483,10 @@
     "security_boundary": null,
     "rationale": "The repo is an example Binder project with a notebook and data demonstrating how to get data into Binder, as shown by README and files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -502,8 +526,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a README and LICENSE, showing a usage example of the XRoot protocol without any deployable code or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -541,8 +567,10 @@
     "security_boundary": null,
     "rationale": "The repository is a Binder example with notebook files and environment configuration (environment.yml and Project.toml), intended to demonstrate installing Julia and Python environments side-by-side.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -582,8 +610,10 @@
     "security_boundary": null,
     "rationale": "The repo is a Binder example with a badge, postBuild commands, and a notebook demonstrating ipywidgets, so its primary purpose is an example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -622,8 +652,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a demo notebook (index.ipynb) and instructions for creating RISE presentations on Binder, with a Binder badge linking to launch the example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -663,8 +695,10 @@
     "security_boundary": null,
     "rationale": "The repository is a Binder example demonstrating SoS multi-kernel notebooks with notebook files, a Dockerfile, and Binder badges, but no CI or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -705,8 +739,10 @@
     "security_boundary": null,
     "rationale": "Repository contains a Dockerfile that inherits from a Jupyter Docker Stacks image and a README with a mybinder.org launch badge, showing it is an example for using Jupyter Docker Stacks on Binder.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -744,8 +780,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a Dockerfile that pulls the Jupyter Datascience image, with no CI workflows or published packages, indicating it is an example for prototyping Binder functionality.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -783,8 +821,10 @@
     "security_boundary": null,
     "rationale": "The repository demonstrates using JupyterLab with Binder and contains a Binder configuration (binder/postBuild, binder/requirements.txt) and an example notebook (index.ipynb).",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -824,8 +864,10 @@
     "security_boundary": null,
     "rationale": "The repository is a Binder example demonstrating LaTeX installation, evidenced by its README and files like apt.txt and index.ipynb.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -866,8 +908,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a single Jupyter notebook and README explaining how to launch it on Binder to demonstrate changes between Matplotlib versions, making it an example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -906,8 +950,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a Dockerfile and README as a starting point for Binder images, with no CI workflows or published packages, indicating an example repository.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -945,8 +991,10 @@
     "security_boundary": null,
     "rationale": "The repo contains demo notebooks and a README linking to a Binder deployment, not a reusable package or service.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -987,8 +1035,10 @@
     "security_boundary": null,
     "rationale": "README describes it as a BinderHub example using Nix and links to mybinder.org, with no CI workflows or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1028,8 +1078,10 @@
     "security_boundary": null,
     "rationale": "Contains a Jupyter notebook and Binder configuration files, with README describing it as an example of using Octave on mybinder.org.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1069,8 +1121,10 @@
     "security_boundary": null,
     "rationale": "The repository is a sample for Binder using Pipfile and pipenv, with a README demonstrating a mybinder.org badge and an example notebook (index.ipynb).",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1111,8 +1165,10 @@
     "security_boundary": null,
     "rationale": "The repository is an example demonstrating how to use conda and pip together in Binder, with a setup file 'environment.yml' and a sample notebook 'index.ipynb'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1152,8 +1208,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Binder demo (README badge, 'runtime.txt' and 'index.ipynb') showing how to activate a Python 2 environment for Binder.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1192,8 +1250,10 @@
     "security_boundary": null,
     "rationale": "Contains example notebooks index2.ipynb and index3.ipynb with a README describing how to use Binder for Python 2 and 3 kernels, and no CI workflows or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1232,8 +1292,10 @@
     "security_boundary": null,
     "rationale": "The repository contains example R code and notebooks for Binder with a README explaining Binder usage, and no published packages or live service deployment.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1276,8 +1338,10 @@
     "security_boundary": null,
     "rationale": "This repo is an example Binder project with only README and environment.yml, demonstrating R and RStudio usage in repo2docker.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1317,8 +1381,10 @@
     "security_boundary": null,
     "rationale": "Contains binder/ config and example notebooks/RMarkdown files for running R and Python with Binder, described as a 'Minimal working example'",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1359,8 +1425,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Binder-compatible Jupyter notebook (index.ipynb) and is explicitly described as an example showing remote data access.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1399,8 +1467,10 @@
     "security_boundary": null,
     "rationale": "README and index.ipynb show a Binder-compatible example for installing Python dependencies from requirements.txt, with no published packages or deployment config.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1442,8 +1512,10 @@
     "security_boundary": null,
     "rationale": "The repository is an example Binder project, as evidenced by the README containing Binder launch badges and the description 'Using a pre-existing rocker image on mybinder.org'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1483,8 +1555,10 @@
     "security_boundary": null,
     "rationale": "Contains a Python package (setup.py, mypackage/) with a sample notebook, intended as a Binder example for installing the package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1525,8 +1599,10 @@
     "security_boundary": null,
     "rationale": "README and Binder badge show it is a demo repository for running Stencila documents on Binder, with example articles.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1565,8 +1641,10 @@
     "security_boundary": null,
     "rationale": "The repo contains a README that describes it as a demo for Stencila & DAR on Binder, and includes sample article files like article/py-jupyter.ipynb.jats.xml.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1604,8 +1682,10 @@
     "security_boundary": null,
     "rationale": "The README describes it as a demo for Stencila and DAR on Binder with R code, aimed at being run via mybinder.org.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1643,8 +1723,10 @@
     "security_boundary": null,
     "rationale": "README.md describes it as an example of running Jupyter notebook + tensorboard on mybinder.org, with files train_model.ipynb, tensorboardserverextension.py, and Binder launch badges.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1685,8 +1767,10 @@
     "security_boundary": null,
     "rationale": "Contains only an example notebook, environment.yml, and README demonstrating Voilà on Binder, with no deploy workflow or package publication.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1726,8 +1810,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a single notebook 'intro-to-binder.ipynb' and minimal config for Binder (binder/environment.yml), with a README describing it as a tutorial presentation, indicating an example/demo project.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1768,8 +1854,10 @@
     "security_boundary": "deploys JupyterHub which authenticates users and spawns multi-user notebook servers",
     "rationale": "Contains Helm chart (jupyterhub/Chart.yaml, values.yaml, templates) and documentation; CI publishes Helm chart and container images.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1830,8 +1918,10 @@
     "security_boundary": null,
     "rationale": "Contains only a Dockerfile and README, with no CI workflows or published packages, indicating a template or example Dockerfile.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1869,8 +1959,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a single data file in-lfs.dat and a README stating it is for testing LFS with repo2docker/binderhub, with no CI workflows or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1908,8 +2000,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Dockerfile and a scheduled CI workflow that builds and pushes a container image to DockerHub to serve as a base image for BinderHub CI tests.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1957,8 +2051,10 @@
     "security_boundary": null,
     "rationale": "The repo exists only as a test fixture for repo2docker's shallow clone capability.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -1996,8 +2092,10 @@
     "security_boundary": null,
     "rationale": "The repository only contains test dependency files and a README describing its purpose to test repo2docker's --subdir flag.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2034,8 +2132,10 @@
     "security_boundary": null,
     "rationale": "The repository is a simple Binder example with a requirements.txt and notebooks, explicitly stated to be used for automated testing of mybinder.org deployments.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2073,8 +2173,10 @@
     "security_boundary": null,
     "rationale": "Contains only .github community health files (FUNDING.yml, README.md, SECURITY.md) with no code or workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2114,8 +2216,10 @@
     "packages": [
       "PYPI:comm"
     ],
+    "images": [],
     "downloads_last_month": 55663064,
     "dependents": 11965,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2170,8 +2274,10 @@
     "packages": [
       "PYPI:ipykernel"
     ],
+    "images": [],
     "downloads_last_month": 54614879,
     "dependents": 7038,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2232,8 +2338,10 @@
     "packages": [
       "PYPI:ipynb"
     ],
+    "images": [],
     "downloads_last_month": 54116,
     "dependents": 4,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2276,8 +2384,10 @@
     "packages": [
       "PYPI:ipyparallel"
     ],
+    "images": [],
     "downloads_last_month": 94773,
     "dependents": 78,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2331,8 +2441,12 @@
     "packages": [
       "PYPI:ipython"
     ],
+    "images": [
+      "docker.io/ipython/ipython"
+    ],
     "downloads_last_month": 97202828,
     "dependents": 15413,
+    "pulls": 18967,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2375,8 +2489,8 @@
       "web": 3
     },
     "prose_ratio": 0.286,
-    "head": "38a9c432dbc3224fd0aa850d5cc41d6647ee2990",
-    "last_commit": "2026-10-28"
+    "head": "e82b23fb00dbd6455a2889d68ecc5a296a568347",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "ipython/ipython-in-depth",
@@ -2389,8 +2503,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a large collection of tutorial notebooks under examples/ and a Binder setup, making it an educational resource rather than installable software.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2436,8 +2552,10 @@
     "packages": [
       "PYPI:ipython-pygments-lexers"
     ],
+    "images": [],
     "downloads_last_month": 54818996,
     "dependents": 15664,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2483,8 +2601,10 @@
     "security_boundary": null,
     "rationale": "Contains Sphinx documentation sources (index.rst, conf.py, many .rst pages) and a CNAME for a website, with README describing building the IPython website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2526,8 +2646,10 @@
     "security_boundary": null,
     "rationale": "The repository contains an Astro website with src/pages, .github/workflows/deploy.yml deploying to GitHub Pages, and a CNAME file, but no installation packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2578,8 +2700,10 @@
     "packages": [
       "PYPI:matplotlib-inline"
     ],
+    "images": [],
     "downloads_last_month": 91853623,
     "dependents": 16740,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2627,8 +2751,10 @@
     "packages": [
       "PYPI:pickleshare"
     ],
+    "images": [],
     "downloads_last_month": 8533671,
     "dependents": 1127,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2672,8 +2798,10 @@
     "packages": [
       "PYPI:traitlets"
     ],
+    "images": [],
     "downloads_last_month": 118414624,
     "dependents": 19652,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2728,8 +2856,10 @@
     "security_boundary": null,
     "rationale": "The repository contains font files and build scripts, and its CI publishes a website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2779,8 +2909,10 @@
     "security_boundary": null,
     "rationale": "Contains only GitHub profile README and a scheduled triage bot workflow, indicating repository meta-configuration.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2825,8 +2957,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a MyST site under docs/ with blog posts, and the README states it is the Jupyter Book blog served at blog.jupyterbook.org.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2873,8 +3007,10 @@
     "security_boundary": null,
     "rationale": "The repository contains source code for a MyST plugin (src/plugin.ts) intended to be loaded into MyST projects, with releases published via npm (package.json).",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2920,8 +3056,10 @@
     "security_boundary": null,
     "rationale": "The repo is a quickstart demonstrating Tailwind styling for a MyST site, with only content/index.md and style files; the deploy workflow publishes a website via GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2966,8 +3104,10 @@
     "security_boundary": null,
     "rationale": "The repository only contains Jupyter Book content files (myst.yml, content/*.md) and a CI workflow deploying a website with Pages; README states it is a demo repository for a talk.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3011,8 +3151,10 @@
     "security_boundary": null,
     "rationale": "The repo is a demo/example of a JS anywidget for MyST, with widget.mjs and README showing usage, and CI publishing a website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3057,8 +3199,10 @@
     "security_boundary": null,
     "rationale": "The repository is an example MyST JS plugin demonstrating bundling and usage, as stated in README and evidenced by plugin.mjs and package.json.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3103,8 +3247,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only documentation and configuration files (e.g., index.md, myst.yml) and a deploy workflow publishing a website, with a README stating it is an example of a MyST landing page.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3149,8 +3295,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only LICENSE and README.md, with no code; the README describes it as a demonstration of multi-language books, indicating documentation/example content.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3188,8 +3336,10 @@
     "security_boundary": null,
     "rationale": "The repository primarily contains documentation (Markdown and notebooks) and its CI workflow publishes the built book as a website, with the README describing it as an example of deploying a MyST book.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3234,8 +3384,10 @@
     "security_boundary": null,
     "rationale": "The repository is explicitly a demonstration plugin, with a single plugin.py file and documentation in content/index.md, built and deployed as a website via a GitHub Pages workflow.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3279,8 +3431,10 @@
     "security_boundary": null,
     "rationale": "The repo is an example MyST book with custom CSS, as stated in its description and README, and it contains only markdown files and a stylesheet.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3324,8 +3478,10 @@
     "security_boundary": null,
     "rationale": "A MyST Markdown project with widget examples and test modules, as indicated by README and files like index.md, modules/*.mjs.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3365,8 +3521,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only GitHub Actions workflows and a custom action 'clinder', indicating it is a playground for testing CI automation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3408,8 +3566,10 @@
     "packages": [
       "PYPI:hatch-deps-selector"
     ],
+    "images": [],
     "downloads_last_month": 107,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3459,8 +3619,10 @@
     "security_boundary": null,
     "rationale": "This repo contains a standalone script (generate_redirects.py) and test_examples.py that generate HTML redirect files during Jupyter Book v1 to v2 migration, with no CI workflows or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3502,8 +3664,10 @@
       "PYPI:jupyter-book",
       "NPM:jupyter-book"
     ],
+    "images": [],
     "downloads_last_month": 217891,
     "dependents": 22,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3562,8 +3726,10 @@
     "security_boundary": null,
     "rationale": "The repository provides helper scripts and GitHub Actions for automated releases of Python and npm packages, as evidenced by README and file paths like jupyter_releaser/actions/.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3623,8 +3789,10 @@
     "security_boundary": null,
     "rationale": "Publishes the Jupyter Book website via Netlify (netlify.toml, daily-deploy.yml) with mostly documentation content.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3675,8 +3843,10 @@
       "PYPI:jupyterlab-myst",
       "NPM:jupyterlab-myst"
     ],
+    "images": [],
     "downloads_last_month": 8807,
     "dependents": 32,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3740,8 +3910,10 @@
     "security_boundary": null,
     "rationale": "Contains example notebooks and markdown demonstrating MyST features, with no CI or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3781,8 +3953,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Jupyter Book (markdown/notebook sources in my_book/) and a GitHub Actions workflow (deploy.yml) that publishes the built book to GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3827,8 +4001,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only Markdown files under meps/ and root-level docs, and the README describes it as a process and archive of proposals for the MyST Markdown Specification.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3874,8 +4050,10 @@
     "security_boundary": null,
     "rationale": "The repo contains a collection of MyST plugins in the plugins/ directory, each with .mjs files, and the README lists plugins and embed links.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -3939,8 +4117,10 @@
       "NPM:@myst-theme/icons",
       "NPM:@myst-theme/jupyter"
     ],
+    "images": [],
     "downloads_last_month": 8024,
     "dependents": 22,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4033,8 +4213,10 @@
       "NPM:jtex",
       "NPM:jats-to-myst"
     ],
+    "images": [],
     "downloads_last_month": 66347,
     "dependents": 103,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4091,8 +4273,10 @@
     "security_boundary": null,
     "rationale": "Contains only tutorial files (README, markdown, notebook, images) with no code, CI, or packages, explicitly stated as not a good example and for following a quickstart guide.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4132,8 +4316,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Remix web application theme and landing content for mystmd.org, as evidenced by theme/app and content directories, with deploy workflow .github/workflows/deploy.yml using Vercel.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4183,8 +4369,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only proposal and coordination documents (CALL.md, LOI.md, proposal.md) with no code.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4222,8 +4410,10 @@
     "security_boundary": null,
     "rationale": "Repository consists of Markdown prose in docs/ (governance, meetings, code of conduct) and its README states it is a team compass site built with MyST and hosted on Netlify.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4264,8 +4454,10 @@
     "security_boundary": null,
     "rationale": "Contains only README.md and no code, workflows, or packages; README states it is for testing and documentation purposes.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4307,8 +4499,10 @@
       "NPM:thebe-react",
       "NPM:thebe"
     ],
+    "images": [],
     "downloads_last_month": 7786,
     "dependents": 7,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4361,8 +4555,10 @@
     "security_boundary": null,
     "rationale": "Contains only a README and requirements.txt, with no CI workflows or published packages, indicating a minimal static setup for thebe demos.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4399,8 +4595,10 @@
     "security_boundary": null,
     "rationale": "The repository is a VSCode extension for MyST Markdown, as evidenced by package.json, src/extension code, and syntaxes definitions, making it a package that users install.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4441,8 +4639,10 @@
     "security_boundary": null,
     "rationale": "The repository is a template for creating Jupyter Book 2 websites using MystMD, containing mostly Markdown docs, lesson content, and a CI workflow that deploys a GitHub Pages site.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4488,8 +4688,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only README.md and profile/README.md, with no code, workflows, or configuration to deploy a service.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4527,8 +4729,10 @@
     "security_boundary": null,
     "rationale": "Contains meeting notes, governance documents, and documentation built with MyST/Read the Docs; no code besides noxfile.py for docs.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4571,8 +4775,10 @@
     "security_boundary": null,
     "rationale": "Repository contains funding proposals and progress reports, with a documentation website built from docs/ and deployed via GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4618,8 +4824,10 @@
     "security_boundary": null,
     "rationale": "The repository contains meeting minutes, governance documents, and a team compass published via GitHub Pages, as evidenced by files under doc/ and a deploy workflow named deploy.yml.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4665,8 +4873,10 @@
     "packages": [
       "PYPI:sparkmagic"
     ],
+    "images": [],
     "downloads_last_month": 12187,
     "dependents": 2,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4722,8 +4932,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only community health files (CODE_OF_CONDUCT.md, SECURITY.md, ISSUE_TEMPLATE) and images, with a README explicitly stating it holds community health files for the organization.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4762,8 +4974,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a README and documents weekly contributing hour topics and demos via branch references.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4802,8 +5016,10 @@
     "packages": [
       "PYPI:jupyter-enterprise-gateway"
     ],
+    "images": [],
     "downloads_last_month": 10266,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4852,8 +5068,10 @@
     "security_boundary": null,
     "rationale": "The repo is a Cookiecutter template for generating Jupyter Server extensions, as stated in the README and evidenced by the presence of cookiecutter.json and the templated project structure.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4901,8 +5119,10 @@
     "packages": [
       "PYPI:fps"
     ],
+    "images": [],
     "downloads_last_month": 2373,
     "dependents": 79,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4958,8 +5178,10 @@
     "packages": [
       "PYPI:gateway-provisioners"
     ],
+    "images": [],
     "downloads_last_month": 2807,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5019,8 +5241,10 @@
       "PYPI:jupyter-resource-usage",
       "NPM:@jupyter-server/resource-usage"
     ],
+    "images": [],
     "downloads_last_month": 43356,
     "dependents": 10,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5081,8 +5305,10 @@
       "PYPI:jupyter-scheduler",
       "NPM:@jupyterlab/scheduler"
     ],
+    "images": [],
     "downloads_last_month": 9489,
     "dependents": 5,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5145,8 +5371,10 @@
     "packages": [
       "PYPI:jupyter-releaser"
     ],
+    "images": [],
     "downloads_last_month": 1278,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [
         "ipython/comm",
@@ -5279,8 +5507,10 @@
     "packages": [
       "PYPI:jupyter-server"
     ],
+    "images": [],
     "downloads_last_month": 32556872,
     "dependents": 5037,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5343,8 +5573,10 @@
     "packages": [
       "PYPI:jupyter-server-fileid"
     ],
+    "images": [],
     "downloads_last_month": 813515,
     "dependents": 326,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5400,8 +5632,10 @@
     "packages": [
       "PYPI:jupyter-server-mathjax"
     ],
+    "images": [],
     "downloads_last_month": 47561,
     "dependents": 21,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5448,8 +5682,10 @@
     "packages": [
       "PYPI:jupyter-server-terminals"
     ],
+    "images": [],
     "downloads_last_month": 28569855,
     "dependents": 5065,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5506,8 +5742,10 @@
       "PYPI:jupyter-ydoc",
       "NPM:@jupyter/ydoc"
     ],
+    "images": [],
     "downloads_last_month": 864279,
     "dependents": 122,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5611,8 +5849,10 @@
       "PYPI:jupyverse-notebook",
       "PYPI:fps_jupyter_server"
     ],
+    "images": [],
     "downloads_last_month": 1705,
     "dependents": 43,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5662,8 +5902,10 @@
     "packages": [
       "PYPI:jupyter-kernel-gateway"
     ],
+    "images": [],
     "downloads_last_month": 555039,
     "dependents": 15,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5721,8 +5963,10 @@
     "packages": [
       "PYPI:pytest-jupyter"
     ],
+    "images": [],
     "downloads_last_month": 25571,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5777,8 +6021,10 @@
     "packages": [
       "PYPI:jupyter-server-synchronizer"
     ],
+    "images": [],
     "downloads_last_month": 37,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5831,8 +6077,10 @@
     "security_boundary": null,
     "rationale": "The repository consists solely of documentation and team coordination files, including meeting notes, team membership guides, and governance docs, with a readthedocs config for publishing.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5874,8 +6122,10 @@
     "security_boundary": null,
     "rationale": "Contains only README and profile files for the organization, no code or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5916,8 +6166,10 @@
       "PYPI:ipydatagrid",
       "NPM:ipydatagrid"
     ],
+    "images": [],
     "downloads_last_month": 20180,
     "dependents": 35,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5979,8 +6231,10 @@
       "PYPI:jupyter-leaflet",
       "NPM:jupyter-leaflet"
     ],
+    "images": [],
     "downloads_last_month": 198711,
     "dependents": 288,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6044,8 +6298,10 @@
       "NPM:@jupyter-widgets/schema",
       "NPM:@jupyter-widgets/html-manager"
     ],
+    "images": [],
     "downloads_last_month": 31834051,
     "dependents": 6760,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6101,8 +6357,10 @@
       "PYPI:sidecar",
       "NPM:@jupyter-widgets/jupyterlab-sidecar"
     ],
+    "images": [],
     "downloads_last_month": 25574,
     "dependents": 28,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6161,8 +6419,10 @@
       "PYPI:ipymidicontrols",
       "NPM:@jupyter-widgets/midicontrols"
     ],
+    "images": [],
     "downloads_last_month": 37,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6207,8 +6467,10 @@
       "PYPI:pythreejs",
       "NPM:jupyter-threejs"
     ],
+    "images": [],
     "downloads_last_month": 69126,
     "dependents": 122,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6255,8 +6517,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only README and meeting notes (dev-meetings.md) and no CI workflows or published packages, serving as team coordination and meeting documentation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6295,8 +6559,10 @@
     "packages": [
       "PYPI:traittypes"
     ],
+    "images": [],
     "downloads_last_month": 727236,
     "dependents": 572,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6339,8 +6605,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a tutorial with many Jupyter notebooks teaching about widgets, as indicated by the description 'A tutorial for widgets' and the extensive notebooks directory with structured lessons.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6388,8 +6656,10 @@
     "security_boundary": null,
     "rationale": "The repository is a JupyterLite demo deployed to GitHub Pages via a deploy workflow, with README focusing on trying the demo and deployment guide.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6433,8 +6703,10 @@
     "security_boundary": null,
     "rationale": "The repository is a deprecated cookiecutter template with files like cookiecutter.json and template directories, designed to scaffold new Jupyter widget projects.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6480,8 +6752,10 @@
     "security_boundary": null,
     "rationale": "The repo is a cookiecutter template for generating Jupyter widget projects, as stated in the README and evidenced by 'cookiecutter.json' and '{{cookiecutter...}}' files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6531,8 +6805,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a README and LICENSE with no CI workflows, packages, or deploy configuration, and the README excerpt is just '# .github'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6570,8 +6846,10 @@
     "security_boundary": null,
     "rationale": "The repository is a C++ library with code in cpp-terminal/ and examples in examples/, and README describes it as a 'C++ library'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6619,8 +6897,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only web files (index.html, layouts) and assets with no CI workflows or published packages, indicating a simple static website for Xeus organization management.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6661,8 +6941,10 @@
     "packages": [
       "PYPI:robotframework-interpreter"
     ],
+    "images": [],
     "downloads_last_month": 137,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6710,8 +6992,10 @@
     "security_boundary": null,
     "rationale": "xcanvas is a C++ backend for the ipycanvas library, providing a canvas API for Jupyter through xeus-cling; it is installed via conda and is a library with code in src/ and include/.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6756,8 +7040,10 @@
     "security_boundary": null,
     "rationale": "Repository contains C++ source files and CMake configuration for a library, with no CI workflows or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6797,8 +7083,10 @@
     "security_boundary": null,
     "rationale": "The repo is a C++ library implementing the Jupyter kernel protocol, as shown by include/xeus headers and README stating 'xeus is a library meant to facilitate the implementation of kernels'; tests in test/ further confirm it is software, not only docs.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6844,8 +7132,10 @@
     "security_boundary": null,
     "rationale": "The repository implements a Jupyter kernel for Brainfuck, evidenced by kernel.json files in share/jupyter/kernels and source files like src/xbrainfuck.cpp, making it a package people install as a kernel.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6888,8 +7178,10 @@
     "security_boundary": null,
     "rationale": "The repo implements and installs a Jupyter kernel named xeus-calc, as shown in src/xeus_calc_interpreter.cpp, share/jupyter/kernels/xcalc/kernel.json.in, and README installation instructions.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6935,8 +7227,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only .gitignore and LICENSE, with no documented functionality or code.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6973,8 +7267,10 @@
     "security_boundary": "executes C++ code from notebook cells",
     "rationale": "The repository contains C++ source files (src/) and kernel specs (share/jupyter/kernels/), and the README states it is a Jupyter kernel for C++.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7017,8 +7313,10 @@
     "security_boundary": null,
     "rationale": "The repo is a cookiecutter template that generates xeus-based Jupyter kernels, as evidenced by the presence of 'cookiecutter.json', 'hooks/post_gen_project.py', and template files under '{{cookiecutter.github_project_name}}'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7066,8 +7364,10 @@
     "security_boundary": "executes untrusted Haskell code in a Jupyter kernel",
     "rationale": "The repository provides Haskell Jupyter kernels built on xeus, with kernel.json files for Jupyter installation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7116,8 +7416,10 @@
     "security_boundary": null,
     "rationale": "xeus-javascript provides a Jupyter kernel (share/jupyter/kernels/xjavascript/kernel.json.in) installable via conda, making it a package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7167,8 +7469,10 @@
     "security_boundary": null,
     "rationale": "The repository is a middleware library for xeus using Emscripten, as evidenced by the README and source files like src/xserver_emscripten.cpp.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7213,8 +7517,10 @@
     "security_boundary": "executes untrusted Lua code submitted over Jupyter protocol",
     "rationale": "The repository implements a Jupyter kernel for Lua using xeus, with kernel definition in share/jupyter/kernels/xlua/kernel.json.in and installation via conda/mamba as a package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7260,8 +7566,10 @@
     "security_boundary": null,
     "rationale": "Contains source code for a Jupyter kernel (src/), kernel.json, and CMakeLists.txt for building/installing the kernel.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7307,8 +7615,10 @@
     "security_boundary": null,
     "rationale": "The repo implements a Jupyter kernel for Octave using the xeus C++ framework, as stated in README and confirmed by source files like src/xinterpreter.cpp and share/jupyter/kernels/xoctave/kernel.json.in; it is installed as a kernel package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7357,8 +7667,10 @@
     "security_boundary": "executes user-submitted Python code in a Jupyter kernel",
     "rationale": "The repository implements a Jupyter kernel for Python, as evidenced by the README description and kernel.json files under share/jupyter/kernels/.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7408,8 +7720,10 @@
     "packages": [
       "PYPI:xeus-python-shell"
     ],
+    "images": [],
     "downloads_last_month": 1504,
     "dependents": 4,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7459,8 +7773,10 @@
     "packages": [
       "PYPI:xeus-python"
     ],
+    "images": [],
     "downloads_last_month": 1778,
     "dependents": 2,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7511,8 +7827,10 @@
     "security_boundary": null,
     "rationale": "The repository provides a C++ library and example kernel for integrating xeus with Qt, as evidenced by the library source files (src/include), example kernel code, and installation of a Jupyter kernel via share/jupyter/kernels.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7557,8 +7875,10 @@
     "security_boundary": null,
     "rationale": "The repository is a C++/Python extension that integrates xeus-python and xeus-qt to run Python kernels in Qt applications; it has build files (CMakeLists.txt), source code (src/x_qt_python_extension.cpp), and a README instructing compilation and usage.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7601,8 +7921,10 @@
     "security_boundary": "executes R code from notebook users",
     "rationale": "The repository implements and packages a Jupyter kernel for R, with kernel.json, source, and install instructions via conda.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7652,8 +7974,10 @@
     "security_boundary": "executes untrusted user code in the Jupyter kernel",
     "rationale": "The repository implements a Jupyter kernel for Robot Framework, as stated in the README and evidenced by source files like src/xinterpreter.cpp and kernel specification in share/jupyter/kernels/xrobot/.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7701,8 +8025,10 @@
     "packages": [
       "PYPI:xeus-robot"
     ],
+    "images": [],
     "downloads_last_month": 215,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7753,8 +8079,10 @@
     "security_boundary": null,
     "rationale": "xeus-sql is a Jupyter kernel that enables SQL notebooks, as evidenced by the kernel.json file and README usage instructions.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7801,8 +8129,10 @@
     "security_boundary": null,
     "rationale": "xeus-sqlite is a Jupyter kernel for SQLite, as indicated by the README and kernel.json.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7851,8 +8181,10 @@
     "security_boundary": null,
     "rationale": "The repository implements a ZeroMQ middleware for xeus using the uv event loop, as indicated by the description, README, and source files in src/ and include/.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7896,8 +8228,10 @@
     "security_boundary": null,
     "rationale": "The repo provides implementations of the xserver API using ZeroMQ, as evidenced by files like include/xeus-zmq/xserver_zmq.hpp and src/server/xserver_zmq.cpp, and is packaged for installation via conda.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7943,8 +8277,10 @@
     "security_boundary": null,
     "rationale": "The repository provides a Python package (setup.py, xhale package) that converts Sphinx/Breathe inventory files to Doxygen tag files, as stated in the README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -7986,8 +8322,10 @@
     "security_boundary": null,
     "rationale": "Contains C++ source in src/ and include/, a CMake build, and README states it is a C++ backend for jupyter-leaflet installed via conda package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8034,8 +8372,10 @@
     "security_boundary": null,
     "rationale": "Header-only C++ library providing traitlets-style properties and observer pattern, evidenced by include/xproperty headers and README describing installation via mamba/conda.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8082,8 +8422,10 @@
     "security_boundary": null,
     "rationale": "The repository provides a C++ API for Vega-Lite with build configuration and test files, indicating a software library.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8127,8 +8469,10 @@
     "security_boundary": null,
     "rationale": "The repository provides bindings from xvega to xeus, with C++ source and CMake build files, indicating a library/package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8172,8 +8516,10 @@
     "security_boundary": null,
     "rationale": "The repository contains C++ source code and headers in src/ and include/xwidgets/, a CMake build system, and documentation for a library that serves as a backend for Jupyter widgets.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8222,8 +8568,10 @@
     "security_boundary": null,
     "rationale": "Contains only community health files (CODE_OF_CONDUCT.md, README.md, SECURITY.md) for the @jupyter organization.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8260,8 +8608,10 @@
     "security_boundary": null,
     "rationale": "The repository consists almost entirely of documentation (103 docs files, README linking to accessibility docs) and meeting notes, with no published packages or application code.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8314,8 +8664,10 @@
     "security_boundary": null,
     "rationale": "Files like lib/main.js, lib/notebook-editor.js, and package.json indicate an Atom package that adds notebook functionality, and the README states it is 'a package that works like the Jupyter Notebook, but inside Atom' installed via apm.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8356,8 +8708,12 @@
     "security_boundary": null,
     "rationale": "The repo contains nginx configs, Dockerfile, and scripts for cdn.jupyter.org, indicating it deploys and configures that live service.",
     "packages": [],
+    "images": [
+      "docker.io/jupyter/cdn.jupyter.org"
+    ],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": 1386,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8396,8 +8752,10 @@
     "security_boundary": null,
     "rationale": "The repo contains only Markdown/docs, meeting notes, charter, and configs for building a MyST website; the README states it is a 'team compass' for community alignment.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8447,8 +8805,10 @@
     "security_boundary": null,
     "rationale": "The repo is a cookiecutter template for generating new Jupyter Docker image projects, evidenced by cookiecutter.json, configs, and template files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8492,8 +8852,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only README, LICENSE, and an issue template for formal community requests to the EC or SSC; it has no code or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8532,8 +8894,10 @@
     "security_boundary": null,
     "rationale": "The repository primarily contains design assets and documents like logos, brand guides, and UI mockups, as stated in the README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8573,8 +8937,10 @@
     "security_boundary": null,
     "rationale": "The repository only contains documentation and process files for the Jupyter Distinguished Contributors body, as seen in README.md and elections_process/process.md.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8612,8 +8978,32 @@
     "security_boundary": null,
     "rationale": "The repository primarily builds and publishes Docker images (container) as evidenced by numerous Dockerfiles in images/ and CI workflows like docker-build-test-upload.yml.",
     "packages": [],
+    "images": [
+      "docker.io/jupyter/scipy-notebook",
+      "docker.io/jupyter/tensorflow-notebook",
+      "docker.io/jupyter/all-spark-notebook",
+      "docker.io/jupyter/pyspark-notebook",
+      "docker.io/jupyter/datascience-notebook",
+      "docker.io/jupyter/minimal-notebook",
+      "docker.io/jupyter/base-notebook",
+      "docker.io/jupyter/r-notebook",
+      "docker.io/jupyter/docker-stacks-foundation",
+      "docker.io/jupyter/julia-notebook",
+      "quay.io/jupyter/all-spark-notebook",
+      "quay.io/jupyter/base-notebook",
+      "quay.io/jupyter/datascience-notebook",
+      "quay.io/jupyter/docker-stacks-foundation",
+      "quay.io/jupyter/julia-notebook",
+      "quay.io/jupyter/minimal-notebook",
+      "quay.io/jupyter/pyspark-notebook",
+      "quay.io/jupyter/pytorch-notebook",
+      "quay.io/jupyter/r-notebook",
+      "quay.io/jupyter/scipy-notebook",
+      "quay.io/jupyter/tensorflow-notebook"
+    ],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": 93332718,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8671,8 +9061,10 @@
     "security_boundary": null,
     "rationale": "The repository contains documentation working group charter, guidebook, and meeting-oriented content (e.g., charter.md, guide_book.md, README.md), and its CI workflow publishes a website for tracking documentation issues.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8720,8 +9112,10 @@
     "packages": [
       "PYPI:echo-kernel"
     ],
+    "images": [],
     "downloads_last_month": 67,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8772,8 +9166,10 @@
     "security_boundary": null,
     "rationale": "The repository contains Markdown proposals and a documentation build workflow (docs.yml publishing to GitHub Pages), with README describing JEPs.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8822,8 +9218,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only documentation files (e.g., docs/index.rst, docs/team.md) and a .readthedocs.yml, with the README pointing to rendered docs at readthedocs.io.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8865,8 +9263,10 @@
     "security_boundary": null,
     "rationale": "The repository scrapes GitHub issue data, publishes it as SQLite databases in a GitHub release, and generates a static MyST website, with CI workflows 'release.yml' for data collection and 'book.yml' for publishing the site.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8915,8 +9315,10 @@
     "security_boundary": null,
     "rationale": "The repository contains governance process documents, meeting notes, election data, and a website built with MyST and deployed via GitHub Pages, indicating documentation purposes.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -8963,8 +9365,10 @@
     "security_boundary": null,
     "rationale": "The README describes a community idea board where users propose and edit a list, with only README.md and docs, no code or CI.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9003,8 +9407,10 @@
     "packages": [
       "PYPI:jupyter"
     ],
+    "images": [],
     "downloads_last_month": 12288648,
     "dependents": 1880,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9053,8 +9459,10 @@
     "security_boundary": null,
     "rationale": "The repo contains markdown files for planning and hosting community calls with no software code, CI workflows, or deployed service.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9095,8 +9503,10 @@
     "packages": [
       "PYPI:jupyter-packaging"
     ],
+    "images": [],
     "downloads_last_month": 516852,
     "dependents": 80,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9158,8 +9568,10 @@
     "packages": [
       "PYPI:jupyter-sphinx"
     ],
+    "images": [],
     "downloads_last_month": 60358,
     "dependents": 10,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9209,8 +9621,10 @@
     "security_boundary": null,
     "rationale": "The repository is explicitly the source for the Jupyter.org website, built with Jekyll and hosted via GitHub Pages (CNAME, _config.yml, HTML/Markdown pages).",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9260,8 +9674,10 @@
     "packages": [
       "PYPI:jupyter-client"
     ],
+    "images": [],
     "downloads_last_month": 71447300,
     "dependents": 9108,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9318,8 +9734,10 @@
     "packages": [
       "PYPI:jupyter-console"
     ],
+    "images": [],
     "downloads_last_month": 12492174,
     "dependents": 2008,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9369,8 +9787,10 @@
     "packages": [
       "PYPI:jupyter-core"
     ],
+    "images": [],
     "downloads_last_month": 77056466,
     "dependents": 11231,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9429,8 +9849,10 @@
     "packages": [
       "PYPI:jupyter-events"
     ],
+    "images": [],
     "downloads_last_month": 28962752,
     "dependents": 5209,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9487,8 +9909,10 @@
     "packages": [
       "PYPI:jupyter-kernel-test"
     ],
+    "images": [],
     "downloads_last_month": 7064,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9541,8 +9965,10 @@
     "security_boundary": null,
     "rationale": "The repo is a JVM library providing a plugin API for magic functions, as evidenced by Java source files and README stating it is a plugin system for Jupyter magics.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9582,8 +10008,10 @@
     "security_boundary": null,
     "rationale": "The repository provides a Java/Gradle library API for converting JVM objects to MIME-type representations for Jupyter kernels, as evidenced by README purpose and source files under src/main/java.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9623,8 +10051,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only documentation files (docs/index.rst, docs/messaging.rst) describing the kernel protocol specification, and has no code, CI workflows, or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9665,8 +10095,10 @@
     "security_boundary": null,
     "rationale": "The repository contains examples and demos for the Jupyter Kernel Gateway, as indicated by the README title and folder structure with demos like cf_demo, microservice_demo, and node_client_example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9708,8 +10140,10 @@
     "security_boundary": null,
     "rationale": "Contains mainly documentation files (docs/, README.md) and is a team-compass repo for interactions and meeting notes, with no code or packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9751,8 +10185,10 @@
     "security_boundary": null,
     "rationale": "The repository has only a README and LICENSE, describing a specification for Jupyter Markdown flavor, so it is documentation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9792,8 +10228,10 @@
     "packages": [
       "PYPI:nbclassic"
     ],
+    "images": [],
     "downloads_last_month": 1980454,
     "dependents": 549,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9855,8 +10293,10 @@
     "packages": [
       "PYPI:nbclient"
     ],
+    "images": [],
     "downloads_last_month": 50729821,
     "dependents": 6379,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9914,8 +10354,10 @@
     "packages": [
       "PYPI:nbconvert"
     ],
+    "images": [],
     "downloads_last_month": 49944679,
     "dependents": 6140,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9972,8 +10414,10 @@
     "security_boundary": null,
     "rationale": "The repository name and description explicitly state it contains examples for nbconvert, and the file list includes only example notebooks, templates, and configuration files organized into scenario folders.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10018,8 +10462,10 @@
       "NPM:nbdime",
       "NPM:nbdime-jupyterlab"
     ],
+    "images": [],
     "downloads_last_month": 174529,
     "dependents": 52,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10084,8 +10530,10 @@
       "PYPI:nbformat",
       "NPM:nbformat-schema"
     ],
+    "images": [],
     "downloads_last_month": 76592205,
     "dependents": 8350,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10145,8 +10593,10 @@
       "NPM:@jupyter/nbgrader",
       "NPM:nbgrader"
     ],
+    "images": [],
     "downloads_last_month": 11171,
     "dependents": 17,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10208,8 +10658,10 @@
     "security_boundary": null,
     "rationale": "Contains a setup.py, nbmanager package, and desktop launcher for a GUI to view and stop notebook servers, indicating a desktop tool rather than a server itself.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10251,8 +10703,12 @@
     "packages": [
       "PYPI:nbviewer"
     ],
+    "images": [
+      "docker.io/jupyter/nbviewer"
+    ],
     "downloads_last_month": 145,
     "dependents": 1,
+    "pulls": 2834616,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10303,8 +10759,10 @@
     "security_boundary": null,
     "rationale": "The repository contains deployment configuration and scripts for nbviewer.org, with a CD workflow that deploys the nbviewer service.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10367,8 +10825,10 @@
       "NPM:@jupyter-notebook/lab-extension",
       "NPM:@jupyter-notebook/documentsearch-extension"
     ],
+    "images": [],
     "downloads_last_month": 28757551,
     "dependents": 3031,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10435,8 +10895,10 @@
     "packages": [
       "PYPI:notebook-shim"
     ],
+    "images": [],
     "downloads_last_month": 27317089,
     "dependents": 4475,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10492,8 +10954,10 @@
     "packages": [
       "PYPI:papyri"
     ],
+    "images": [],
     "downloads_last_month": 21,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10544,8 +11008,10 @@
     "security_boundary": null,
     "rationale": "The repository is a GitHub bot that syncs PRs to project boards, with action.yml and CI workflows showing it runs as code in other repos' workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [
         "jupyter-book/.github"
@@ -10594,8 +11060,10 @@
     "security_boundary": null,
     "rationale": "The repository only contains a README explaining how to practice pull requests, with no code, CI, or packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10632,8 +11100,10 @@
     "security_boundary": null,
     "rationale": "Repository contains only markdown files describing roadmap for Jupyter subprojects and no code or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10671,8 +11141,10 @@
     "security_boundary": null,
     "rationale": "Repository contains JSON schemas and a Python package (jupyter_schemas.py, pyproject.toml) for Jupyter, with README stating 'pip install jupyter-schemas'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10713,8 +11185,10 @@
     "security_boundary": null,
     "rationale": "The repository focuses on security documentation, meeting notes, and internal tracking scripts, as evidenced by docs/ files like vulnerability-handling.md and numerous meetings/*.md, with README stating it is for security discussions and tools.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10755,8 +11229,10 @@
     "security_boundary": null,
     "rationale": "Contains team governance documents, meeting notes, and docs/ with Sphinx config and council roster.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10800,8 +11276,10 @@
     "packages": [
       "PYPI:sphinxcontrib_github_alt"
     ],
+    "images": [],
     "downloads_last_month": 2857,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10844,8 +11322,10 @@
     "security_boundary": null,
     "rationale": "The repository contains survey datasets, analysis notebooks, and documentation; it's not a package, application, tooling, deployment, or example, but primarily data and documentation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10894,8 +11374,10 @@
     "security_boundary": null,
     "rationale": "The repository is a cookiecutter template that generates a team-compass repository with documentation structure; it is used to scaffold new team repositories and contains no deploy workflows or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10939,8 +11421,10 @@
     "packages": [
       "PYPI:jupyter-telemetry"
     ],
+    "images": [],
     "downloads_last_month": 35634,
     "dependents": 27,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10992,8 +11476,10 @@
     "packages": [
       "PYPI:terminado"
     ],
+    "images": [],
     "downloads_last_month": 29806864,
     "dependents": 5246,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11033,8 +11519,8 @@
       "web": 2
     },
     "prose_ratio": 0.407,
-    "head": "16da0b6286d99152f36aeedf17f32e55d426a74f",
-    "last_commit": "2026-10-28"
+    "head": "b070d12fa1108b482758f2ef6e3a0b54f7273196",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyter/testpath",
@@ -11049,8 +11535,10 @@
     "packages": [
       "PYPI:testpath"
     ],
+    "images": [],
     "downloads_last_month": 1460262,
     "dependents": 145,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11093,8 +11581,10 @@
     "security_boundary": null,
     "rationale": "The repository is a demonstration site using JupyterLite, with content notebooks and a deploy workflow to GitHub Pages, as stated in README and .github/workflows/deploy.yml.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11143,8 +11633,10 @@
     "security_boundary": null,
     "rationale": "Static HTML site for try.jupyter.org with CNAME and index.html, no workflows or packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11184,8 +11676,10 @@
     "security_boundary": null,
     "rationale": "The repository contains tutorial notebooks and slides for a JupyterCon 2020 tutorial on Bokeh, with a CI workflow that publishes slides via GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11231,8 +11725,10 @@
     "security_boundary": null,
     "rationale": "Repository contains tutorial notebooks, slides, images, and a speaker guide, with no published packages or deployable service.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11278,8 +11774,10 @@
     "security_boundary": null,
     "rationale": "The repository is a tutorial with 11 notebooks and a README stating it is 'a tutorial designed to teach you the basic and practical aspects of graph theory'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11320,8 +11818,10 @@
     "security_boundary": null,
     "rationale": "The repo contains JupyterCon 2020 tutorial notebooks under 'notebooks/' and a README stating 'Open Development Tutorial'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11366,8 +11866,10 @@
     "security_boundary": null,
     "rationale": "The repository is a tutorial site for a JupyterCon talk, containing slides and notebooks that are published as a website via GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11410,8 +11912,10 @@
     "security_boundary": null,
     "rationale": "The repository is a template for JupyterCon tutorials, containing narrated guides, slides, notebooks, and supporting media, with a CI workflow that publishes a website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11454,8 +11958,10 @@
     "security_boundary": null,
     "rationale": "Contains a keynote notebook and data files, no CI or packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11496,8 +12002,10 @@
     "security_boundary": null,
     "rationale": "The repository contains tutorial materials for a JupyterCon 2020 session, including notebooks, slides, and a book built with Jupyter Book, as indicated by the README and file structure.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11542,8 +12050,10 @@
     "security_boundary": null,
     "rationale": "Repo contains tutorial materials (slides, notebooks, images) for JupyterCon 2020 and CI only publishes a website from slides.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11587,8 +12097,10 @@
     "security_boundary": null,
     "rationale": "The repository contains tutorial notebooks, presentations, and slides for a JupyterCon 2020 tutorial, with a CI workflow that builds and publishes a website using peaceiris/actions-gh-pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11632,8 +12144,10 @@
     "security_boundary": null,
     "rationale": "The repository contains tutorial materials in notebooks and slides, a CI workflow that publishes a website, and README guides for speakers.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11677,8 +12191,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a notebook and a README without CI workflows or published packages, indicating it is a presentation or poster material.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11716,8 +12232,10 @@
     "security_boundary": null,
     "rationale": "Contains only a notebook and README with no code, CI, or deployment evidence.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11755,8 +12273,10 @@
     "security_boundary": null,
     "rationale": "Repository contains only Jupyter notebooks and a README, serving as a conference poster example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11794,8 +12314,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a Jupyter notebook and a requirements file with no CI workflows or published packages, indicating an example/demo project.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11833,8 +12355,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a Jupyter notebook and README with no CI workflows or published packages, consistent with a poster presentation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11872,8 +12396,10 @@
     "security_boundary": null,
     "rationale": "The repository contains tutorial materials for a JupyterCon 2020 session, including a Jupyter notebook, slides, and associated data/images, with no published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11918,8 +12444,10 @@
     "security_boundary": null,
     "rationale": "The repository is a JupyterCon tutorial with notebooks and slides in a docs-style structure, and its CI deploys a GitHub Pages website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11965,8 +12493,10 @@
     "security_boundary": null,
     "rationale": "The repo contains only notebooks and a README, with the README indicating it is for JupyterCon 2020 conference tracks and submitted notebooks.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12004,8 +12534,10 @@
     "security_boundary": null,
     "rationale": "Contains many tutorial notebooks (e.g., notebooks/01.Basics/*.ipynb) and a README describing installation for a JupyterCon 2020 tutorial.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12053,8 +12585,10 @@
     "security_boundary": null,
     "rationale": "This repository contains tutorial materials for a JupyterCon 2020 section on open-source governance, including notebooks, slides, and images, with a CI workflow that publishes the content as a website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12098,8 +12632,10 @@
     "security_boundary": null,
     "rationale": "The repository contains Jupyter notebooks in 'notebooks/' and a GitHub workflow 'slides.yml' that publishes to GitHub Pages, indicating it is tutorial material for JupyterCon 2020.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12145,8 +12681,10 @@
     "security_boundary": null,
     "rationale": "The repository is a template for organizing JupyterCon 2020 conference sessions, containing only README files in docs, images, notebooks, and slides directories, with no code or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12183,8 +12721,10 @@
     "security_boundary": null,
     "rationale": "Contains tutorial materials for a JupyterCon session, including slides, notebooks, and demo extension code, with no published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12231,8 +12771,10 @@
     "security_boundary": null,
     "rationale": "Repository is the JupyterCon 2020 website, a Nuxt.js project with Vue components and static assets, deployed via GitHub Pages action.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12279,8 +12821,10 @@
     "security_boundary": null,
     "rationale": "The repository contains workshop materials, a website with .md files, and a CI workflow deploying to GitHub Pages, indicating its primary purpose is documentation/tutorial.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12327,8 +12871,10 @@
     "security_boundary": null,
     "rationale": "The repository is a JupyterLab extension with installable Python and NPM packages named 'jupytercon2025_extension_workshop', as shown in README and setup files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12388,8 +12934,10 @@
     "security_boundary": null,
     "rationale": "Template repository for JupyterCon2020 tutorials with speaker guide and tutorial materials, no deployed service or security boundary.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12432,8 +12980,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only profile/README.md and has no code or CI workflows, indicating it serves organizational profile documentation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12470,8 +13020,10 @@
     "security_boundary": null,
     "rationale": "The repo contains demo notebooks and dashboard code for JupyterHealth deployments, with a CI workflow that publishes a website, but no published packages or live service deployment config.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12519,8 +13071,10 @@
     "security_boundary": null,
     "rationale": "Flutter mobile app for patients to share wearable health data with a JupyterHealth Exchange server.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12561,8 +13115,10 @@
     "security_boundary": null,
     "rationale": "The repository contains FHIR mapping files (.fml) and implementation guide configuration (ig.ini) for cross-version artifacts, indicating it is a FHIR implementation guide, which is a specification document.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12602,8 +13158,10 @@
     "security_boundary": null,
     "rationale": "The repository contains Helm chart templates for deploying JupyterHealth services, as evidenced by files like `jhe/Chart.yaml` and `jhe/templates/deployment.yaml`.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12649,8 +13207,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only documentation files under docs/ and a workflow that builds and publishes a website, with README stating it is user documentation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12696,8 +13256,10 @@
     "security_boundary": null,
     "rationale": "The repo implements a validator tool in the 'validator/' directory that lints GitHub issues, as stated in the README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12741,8 +13303,10 @@
     "security_boundary": null,
     "rationale": "The repository is a self-contained Docker-Compose demo (docker-compose.yaml) that runs a SMART-on-FHIR app with FHIR and JupyterHealth Exchange for demonstration.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12785,8 +13349,10 @@
     "security_boundary": null,
     "rationale": "The repository contains scripts (jhestress.py, seed_and_bench.py) for stress-testing JupyterHealth Exchange, as evidenced by the README and Python files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12829,8 +13395,10 @@
     "packages": [
       "PYPI:jupyter-smart-on-fhir"
     ],
+    "images": [],
     "downloads_last_month": 213,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12878,8 +13446,10 @@
     "packages": [
       "PYPI:jupyterhealth-client"
     ],
+    "images": [],
     "downloads_last_month": 120,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12926,8 +13496,10 @@
     "security_boundary": null,
     "rationale": "Contains Kubernetes deployment configs (charts, cluster configs), CI deploy workflow, and secrets managed via SOPS; README explicitly states 'Deployment configuration for JupyterHealth demo at Berkeley'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -12972,8 +13544,10 @@
     "security_boundary": "authenticates users, enforces RBAC, and shares patient health data via APIs",
     "rationale": "The README describes a Django web application for sharing patient health data via Web UI and FHIR/REST/MCP APIs, with OAuth/OIDC authentication and role-based access control.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13026,8 +13600,10 @@
     "security_boundary": "authenticates via SMART on FHIR and renders patient data from EHR",
     "rationale": "This is a template repository for building a SMART on FHIR provider-launch application that renders patient data via Voilà, as stated in the README and evidenced by files like dashboard.ipynb and provider_app/.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13074,8 +13650,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only a README.md that describes it as an issue tracker for the JupyterHealth Software Team, with no code or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13112,8 +13690,10 @@
     "security_boundary": null,
     "rationale": "The repository contains documentation files under docs/ and a GitHub Pages workflow (docs.yml) that publishes the website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13159,8 +13739,10 @@
     "security_boundary": null,
     "rationale": "The repository is a Hugo website with content in content/ and themes/, configured for GitHub Pages deployment via .github/workflows/hugo.yaml.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13208,8 +13790,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a MyST website for JupyterHealth documentation with markdown files, a _toc.yml, and a GitHub Actions workflow deploy.yml that publishes to GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13253,8 +13837,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only Markdown documentation files, MyST config, and images, with a deploy workflow for a GitHub Pages website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13300,8 +13886,10 @@
     "packages": [
       "PYPI:omh-shim"
     ],
+    "images": [],
     "downloads_last_month": 838,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13348,8 +13936,10 @@
     "security_boundary": null,
     "rationale": "Contains Dockerfile and source code for a client tool to interact with CommonHealth Cloud Storage Service, designed for testing and interaction.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13389,8 +13979,10 @@
     "security_boundary": "runs code from users after authentication as single user servers",
     "rationale": "Contains a Dockerfile that builds a singleuser container image for the Jupyter Health pre-MVP, published via CI workflow to quay.io/jupyterhealth/singleuser-premvp.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13439,8 +14031,10 @@
     "security_boundary": "authenticates SMART on FHIR launches and fetches patient health data",
     "rationale": "Repository is a SMART on FHIR demo application that runs as a Voilà-served dashboard, with Dockerfile and CI workflow publishing a container.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13487,8 +14081,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only documentation files (index.md, explanation/, howto/, tutorial/) and a README stating it is the MyST-based documentation website for JupyterHealth; the CI workflow publishes the website via GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13535,8 +14131,10 @@
     "security_boundary": null,
     "rationale": "README states it is for team interaction, syncing, and meeting notes, with no code beyond README/LICENSE.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13574,8 +14172,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only community health files (CODE_OF_CONDUCT.md, issue templates, support.yml) and its README states it exists to provide default GitHub organization health files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13614,8 +14214,10 @@
     "security_boundary": null,
     "rationale": "The repository is a GitHub Action with action.yml, src/, and tests, as described in README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [
         "jupyterhub/jupyterhub-container-images"
@@ -13661,8 +14263,10 @@
     "security_boundary": null,
     "rationale": "This repository provides a GitHub Action to install K3s, Calico, and Helm, as indicated by action.yml and README, fitting the tooling category.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [
         "binder-examples/zero-to-jupyterhub-k8s",
@@ -13719,8 +14323,10 @@
     "security_boundary": null,
     "rationale": "The repository defines a GitHub Action (action.yaml, README: 'GitHub Action: Await k8s workloads') designed to run in CI workflows of other projects.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [
         "binder-examples/zero-to-jupyterhub-k8s",
@@ -13775,8 +14381,10 @@
     "security_boundary": null,
     "rationale": "The repository is a GitHub Action with action.yaml and a k8s-namespace-report script, and its README shows usage in a CI workflow.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [
         "binder-examples/zero-to-jupyterhub-k8s",
@@ -13832,8 +14440,10 @@
     "security_boundary": null,
     "rationale": "The repository contains action.yml, src/index.js, and dist/index.js, indicating a GitHub Action used to calculate version tags for container image tagging.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [
         "jupyterhub/configurable-http-proxy",
@@ -13884,8 +14494,10 @@
     "packages": [
       "PYPI:autodoc-traits"
     ],
+    "images": [],
     "downloads_last_month": 1660,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13933,8 +14545,10 @@
     "packages": [
       "PYPI:batchspawner"
     ],
+    "images": [],
     "downloads_last_month": 8938,
     "dependents": 5,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -13983,8 +14597,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a single Jupyter notebook (analyze_data.ipynb) for visualizing mybinder.org billing data, with no deployment or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14024,8 +14640,10 @@
     "security_boundary": null,
     "rationale": "Contains scripts to scrape data, a notebook for analysis, and GitHub workflows publishing data as releases and deploying a documentation website, with README stating data should be stored here and analysis done elsewhere.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14076,8 +14694,13 @@
       "PYPI:binderhub",
       "NPM:@jupyterhub/binderhub-react-components"
     ],
+    "images": [
+      "docker.io/jupyterhub/k8s-binderhub",
+      "quay.io/jupyterhub/k8s-binderhub"
+    ],
     "downloads_last_month": 423,
     "dependents": 1,
+    "pulls": 222935,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14144,8 +14767,10 @@
     "packages": [
       "PYPI:chartpress"
     ],
+    "images": [],
     "downloads_last_month": 4436,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14193,8 +14818,13 @@
     "packages": [
       "NPM:configurable-http-proxy"
     ],
+    "images": [
+      "docker.io/jupyterhub/configurable-http-proxy",
+      "quay.io/jupyterhub/configurable-http-proxy"
+    ],
     "downloads_last_month": 52521,
     "dependents": 1,
+    "pulls": 51123213,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14250,8 +14880,10 @@
     "security_boundary": null,
     "rationale": "Contains only branding assets, logos, and a comic for JupyterHub/Binder with a build script for assets.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14294,8 +14926,12 @@
     "packages": [
       "PYPI:docker-image-cleaner"
     ],
+    "images": [
+      "quay.io/jupyterhub/docker-image-cleaner"
+    ],
     "downloads_last_month": 40,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14352,8 +14988,10 @@
     "packages": [
       "PYPI:dockerspawner"
     ],
+    "images": [],
     "downloads_last_month": 24371,
     "dependents": 10,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14402,8 +15040,10 @@
     "packages": [
       "PYPI:escapism"
     ],
+    "images": [],
     "downloads_last_month": 175967,
     "dependents": 71,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14450,8 +15090,10 @@
     "packages": [
       "PYPI:jupyterhub-firstuseauthenticator"
     ],
+    "images": [],
     "downloads_last_month": 3211,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14502,8 +15144,10 @@
     "packages": [
       "PYPI:gh-scoped-creds"
     ],
+    "images": [],
     "downloads_last_month": 721,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14550,8 +15194,10 @@
     "security_boundary": null,
     "rationale": "The repository provides Grafana dashboards as Jsonnet code for JupyterHub deployments, with documentation on deployment and usage.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14596,8 +15242,10 @@
     "security_boundary": null,
     "rationale": "The repository stores packaged Helm charts in its gh-pages branch and serves them as a Helm chart repository via GitHub Pages at hub.jupyter.org/helm-chart/.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14637,8 +15285,12 @@
     "packages": [
       "PYPI:jupyter-remote-desktop-proxy"
     ],
+    "images": [
+      "quay.io/jupyterhub/jupyter-remote-desktop-proxy"
+    ],
     "downloads_last_month": 1078,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14695,8 +15347,10 @@
     "packages": [
       "PYPI:jupyter-rsession-proxy"
     ],
+    "images": [],
     "downloads_last_month": 5599,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14748,8 +15402,10 @@
       "NPM:@jupyterhub/jupyter-server-proxy",
       "PYPI:jupyter-theia-proxy"
     ],
+    "images": [],
     "downloads_last_month": 451131,
     "dependents": 192,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14805,8 +15461,13 @@
       "PYPI:jupyterhub",
       "NPM:jupyterhub-deps"
     ],
+    "images": [
+      "docker.io/jupyterhub/jupyterhub",
+      "quay.io/jupyterhub/jupyterhub"
+    ],
     "downloads_last_month": 260478,
     "dependents": 155,
+    "pulls": 7278951,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14856,8 +15517,10 @@
     "security_boundary": null,
     "rationale": "The repository defines and publishes JupyterHub container images for the Hub, demo, and singleuser, with CI workflows building and pushing containers.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14913,8 +15576,10 @@
     "security_boundary": null,
     "rationale": "The repository provides a reference deployment of JupyterHub using Docker, including docker-compose.yml and jupyterhub_config.py, and explicitly states it is not intended for production.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14959,8 +15624,10 @@
     "security_boundary": null,
     "rationale": "Contains documented deployment examples with configuration files and scripts for JupyterHub in HPC environments.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15000,8 +15667,10 @@
     "security_boundary": null,
     "rationale": "The repository contains Ansible roles and playbooks (deploy.yml, roles/) to deploy JupyterHub and nbgrader on a single server, as stated in the README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15044,8 +15713,10 @@
     "packages": [
       "PYPI:jupyterhub-idle-culler"
     ],
+    "images": [],
     "downloads_last_month": 15786,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15091,8 +15762,10 @@
     "security_boundary": null,
     "rationale": "The repository primarily contains RST documentation in docs/ and a manual setup/demo guide, with a clear description stating it provides 'Documentation and resources for deploying JupyterHub on Hadoop'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15134,8 +15807,10 @@
     "security_boundary": null,
     "rationale": "The repo is a template with example files for creating new Python repositories, containing packaging config (pyproject.toml), docs, and CI workflow; it does not enforce auth or run untrusted code.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15183,8 +15858,10 @@
     "packages": [
       "PYPI:jupyterhub-sphinx-theme"
     ],
+    "images": [],
     "downloads_last_month": 373,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15232,8 +15909,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only tutorial documentation (docs/*.md) with no code, packages, or deployment configs.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15277,8 +15956,10 @@
     "security_boundary": null,
     "rationale": "The repo contains a GitHub Pages site with docs/ content built by mystmd and deployed via .github/workflows/deploy.yml, serving a landing page at hub.jupyter.org.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15327,8 +16008,10 @@
     "packages": [
       "PYPI:jupyterhub-kerberosauthenticator"
     ],
+    "images": [],
     "downloads_last_month": 139,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15376,8 +16059,10 @@
     "packages": [
       "PYPI:jupyterhub-kubespawner"
     ],
+    "images": [],
     "downloads_last_month": 15220,
     "dependents": 6,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15432,8 +16117,10 @@
     "packages": [
       "PYPI:jupyterhub-ldapauthenticator"
     ],
+    "images": [],
     "downloads_last_month": 6160,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15483,8 +16170,10 @@
     "packages": [
       "PYPI:jupyterhub-ltiauthenticator"
     ],
+    "images": [],
     "downloads_last_month": 1725,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15532,8 +16221,10 @@
     "security_boundary": null,
     "rationale": "Repository contains kubetools module with tooling functions and notebooks, no CI workflows or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15572,8 +16263,16 @@
     "security_boundary": null,
     "rationale": "The repository contains deployment configuration files for mybinder.org (e.g., config/prod.yaml, mybinder/values.yaml, secrets/*), and CI workflows deploy to cloud infrastructure.",
     "packages": [],
+    "images": [
+      "docker.io/jupyterhub/mybinder.org-minesweeper",
+      "docker.io/jupyterhub/mybinder.org-tc-init",
+      "docker.io/jupyterhub/mybinder.org-analytics-publisher",
+      "docker.io/jupyterhub/mybinder.org-federation-redirect",
+      "docker.io/jupyterhub/mybinder.org-rsyslog"
+    ],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": 18169,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15632,8 +16331,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only documentation files (docs/, README with user guide content) and a Read the Docs configuration (.readthedocs.yaml), with no code or CI workflows; its README states it is the user documentation repository for mybinder.org.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15677,8 +16378,10 @@
     "packages": [
       "PYPI:jupyterhub-nativeauthenticator"
     ],
+    "images": [],
     "downloads_last_month": 21091,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15728,8 +16431,10 @@
     "packages": [
       "PYPI:nbgitpuller"
     ],
+    "images": [],
     "downloads_last_month": 25586,
     "dependents": 6,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15781,8 +16486,10 @@
     "packages": [
       "PYPI:nbgitpuller-downloader-dropbox"
     ],
+    "images": [],
     "downloads_last_month": 17,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15824,8 +16531,10 @@
     "packages": [
       "PYPI:nbgitpuller-downloader-generic-web"
     ],
+    "images": [],
     "downloads_last_month": 15,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15867,8 +16576,10 @@
     "packages": [
       "PYPI:nbgitpuller-downloader-googledrive"
     ],
+    "images": [],
     "downloads_last_month": 19,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15908,8 +16619,10 @@
     "security_boundary": "Downloads untrusted URLs and extracts archives into JupyterHub user environments",
     "rationale": "The README describes a Python package (installable via pip) that provides downloader plugins for nbgitpuller, used in JupyterHub to fetch archives from URLs.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -15951,8 +16664,10 @@
     "packages": [
       "PYPI:oauthenticator"
     ],
+    "images": [],
     "downloads_last_month": 89857,
     "dependents": 18,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16001,8 +16716,10 @@
     "security_boundary": "performs PAM authentication for user login",
     "rationale": "The repository contains a single Python module pamela.py that wraps the PAM library for authentication, with CI publishing to PyPI, making it an installable package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16048,8 +16765,10 @@
     "security_boundary": null,
     "rationale": "The repository provides a Helm chart for Pebble, an ACME server for testing in CI environments, as indicated by the README and chart files under 'pebble/'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16103,8 +16822,10 @@
     "packages": [
       "PYPI:pytest-jupyterhub"
     ],
+    "images": [],
     "downloads_last_month": 198,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16153,8 +16874,12 @@
     "packages": [
       "PYPI:jupyter-repo2docker"
     ],
+    "images": [
+      "quay.io/jupyterhub/repo2docker"
+    ],
     "downloads_last_month": 2884,
     "dependents": 14,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16208,8 +16933,10 @@
     "security_boundary": null,
     "rationale": "Contains action.yml defining a GitHub Action and scripts like create_docker_image.sh for building Docker images, as documented in the README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16256,8 +16983,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only tracking issue templates and a README describing it as a roadmap tracking repository.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16298,8 +17027,10 @@
     "packages": [
       "PYPI:simpervisor"
     ],
+    "images": [],
     "downloads_last_month": 434920,
     "dependents": 205,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16349,8 +17080,10 @@
     "packages": [
       "PYPI:sudospawner"
     ],
+    "images": [],
     "downloads_last_month": 1038,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16399,8 +17132,10 @@
     "packages": [
       "PYPI:jupyterhub-systemdspawner"
     ],
+    "images": [],
     "downloads_last_month": 3179,
     "dependents": 3,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16446,8 +17181,10 @@
     "security_boundary": null,
     "rationale": "The repository is a meta-repository for team interaction and meeting notes, with 136 documentation files and a README indicating most content lives on the JupyterHub Team Compass website.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16495,8 +17232,10 @@
     "security_boundary": null,
     "rationale": "The repository includes a Python package under 'tljh/' with setup.py and provides a JupyterHub distribution for 1-100 users, as described in the README and supported by systemd and traefik configuration code.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16543,8 +17282,10 @@
     "packages": [
       "PYPI:jupyterhub-tmpauthenticator"
     ],
+    "images": [],
     "downloads_last_month": 2921,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16592,8 +17333,10 @@
     "packages": [
       "PYPI:jupyterhub-traefik-proxy"
     ],
+    "images": [],
     "downloads_last_month": 3497,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16646,8 +17389,10 @@
     "packages": [
       "PYPI:wrapspawner"
     ],
+    "images": [],
     "downloads_last_month": 928,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16694,8 +17439,23 @@
     "security_boundary": "authenticates users and spawns their notebook servers via JupyterHub",
     "rationale": "The repository contains the Helm chart for JupyterHub on Kubernetes (jupyterhub/Chart.yaml, jupyterhub/values.yaml) and its documentation (docs/source). It deploys JupyterHub, a multi-user notebook server.",
     "packages": [],
+    "images": [
+      "docker.io/jupyterhub/k8s-hub",
+      "docker.io/jupyterhub/k8s-network-tools",
+      "docker.io/jupyterhub/k8s-singleuser-sample",
+      "docker.io/jupyterhub/k8s-image-awaiter",
+      "docker.io/jupyterhub/k8s-secret-sync",
+      "docker.io/jupyterhub/k8s-hub-slim",
+      "quay.io/jupyterhub/k8s-hub",
+      "quay.io/jupyterhub/k8s-hub-slim",
+      "quay.io/jupyterhub/k8s-image-awaiter",
+      "quay.io/jupyterhub/k8s-network-tools",
+      "quay.io/jupyterhub/k8s-secret-sync",
+      "quay.io/jupyterhub/k8s-singleuser-sample"
+    ],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": 124042046,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16758,8 +17518,10 @@
     "security_boundary": null,
     "rationale": "Contains standard community health files (CODE_OF_CONDUCT.md, SECURITY.md, FUNDING.yml) and issue templates for the @JupyterLab organization.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16803,8 +17565,10 @@
     "security_boundary": null,
     "rationale": "The repository describes itself as 'Static assets for JupyterLab extensions' and explains that it builds a GitHub Pages website serving a Jekyll-based news feed for JupyterLab, with files like index.md and posts.md being documentation content.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16843,8 +17607,10 @@
     "security_boundary": null,
     "rationale": "Contains benchmark tooling, Docker images for testing, and CI workflows for benchmarking JupyterLab performance.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16898,8 +17664,10 @@
     "packages": [
       "NPM:@jupyter/eslint-plugin"
     ],
+    "images": [],
     "downloads_last_month": 50922,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -16956,8 +17724,10 @@
     "security_boundary": null,
     "rationale": "The repository is a cookiecutter template that generates JupyterLab extension projects, as described in its README and evident from template files like {{cookiecutter.python_name}}/package.json and pyproject.toml.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17006,8 +17776,10 @@
     "security_boundary": null,
     "rationale": "The repository is a cookiecutter template for generating JupyterLab extensions, evidenced by the cookiecutter.json and the README instructing users to run 'cookiecutter https://github.com/jupyterlab/extension-cookiecutter-ts'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17056,8 +17828,10 @@
     "packages": [
       "PYPI:jupyterlab-examples-hello-world"
     ],
+    "images": [],
     "downloads_last_month": 15,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17105,8 +17879,10 @@
     "security_boundary": null,
     "rationale": "The repository is a copier template that scaffolds JupyterLab extensions, as shown by copier.yml, template/*.jinja files, and README usage instructions.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17156,8 +17932,10 @@
     "security_boundary": null,
     "rationale": "Contains documentation files like meeting notes, team guides, and decision-making documents; README indicates purpose is team interaction and meeting notes.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17201,8 +17979,10 @@
     "packages": [
       "PYPI:hatch-jupyter-builder"
     ],
+    "images": [],
     "downloads_last_month": 155361,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17265,8 +18045,10 @@
     "packages": [
       "PYPI:hatch-nodejs-version"
     ],
+    "images": [],
     "downloads_last_month": 112295,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17356,8 +18138,10 @@
     "packages": [
       "PYPI:jupyter-ai"
     ],
+    "images": [],
     "downloads_last_month": 119717,
     "dependents": 9,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17419,8 +18203,10 @@
       "PYPI:jupyter-ai-lite",
       "PYPI:jupyternaut-lite"
     ],
+    "images": [],
     "downloads_last_month": 66,
     "dependents": 3,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17482,8 +18268,10 @@
       "PYPI:jupyter-builder",
       "NPM:@jupyter/builder"
     ],
+    "images": [],
     "downloads_last_month": 17948052,
     "dependents": 3947,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17559,8 +18347,10 @@
       "NPM:jupyterlab-chat",
       "NPM:jupyterlab-chat-extension"
     ],
+    "images": [],
     "downloads_last_month": 22763,
     "dependents": 23,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17632,8 +18422,10 @@
       "NPM:@jupyter/collaboration-extension",
       "NPM:@jupyter/docprovider-extension"
     ],
+    "images": [],
     "downloads_last_month": 815532,
     "dependents": 32,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17708,8 +18500,10 @@
       "NPM:@jupyterlab/fasta-extension",
       "NPM:@jupyterlab/katex-extension"
     ],
+    "images": [],
     "downloads_last_month": 6958,
     "dependents": 4,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17764,8 +18558,10 @@
     "security_boundary": null,
     "rationale": "Repository contains training material and links, no code beyond README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17802,8 +18598,10 @@
     "security_boundary": null,
     "rationale": "The repository is named 'jupytercon-jupyterlab-tutorial' and contains tutorial materials, including notebooks and markdown files, for a JupyterCon 2018 tutorial.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17956,8 +18754,10 @@
       "NPM:jupyterlab",
       "NPM:@jupyterlab/template"
     ],
+    "images": [],
     "downloads_last_month": 30253541,
     "dependents": 3926,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18030,18 +18830,18 @@
         "jupyter_releaser"
       ]
     },
-    "n_files": 3081,
+    "n_files": 3083,
     "file_types": {
       "config": 605,
       "other": 24,
       "docs": 181,
-      "code": 1379,
+      "code": 1381,
       "web": 259,
       "media": 598,
       "notebook": 35
     },
-    "prose_ratio": 0.438,
-    "head": "30485445e61fac7014218392eba6534bcf772e59",
+    "prose_ratio": 0.437,
+    "head": "58909b9bfe840607f080dbc7d420d7252fee899e",
     "last_commit": "2026-10-29"
   },
   {
@@ -18058,8 +18858,10 @@
       "NPM:@jupyterlab/commenting-extension",
       "NPM:jupyterlab-commenting"
     ],
+    "images": [],
     "downloads_last_month": 8,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18105,8 +18907,10 @@
     "security_boundary": null,
     "rationale": "The repository contains Jupyter notebooks, data files, and slides demonstrating JupyterLab, as stated in the README and its name.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18157,8 +18961,10 @@
     "security_boundary": null,
     "rationale": "The repo is an Electron-based desktop application for JupyterLab, as stated in its README and evidenced by files like package.json, electron-builder-scripts, and media/screenshots.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18221,8 +19027,10 @@
       "PYPI:jupyterlab-git-core",
       "NPM:@jupyterlab/git"
     ],
+    "images": [],
     "downloads_last_month": 89418,
     "dependents": 13,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18288,8 +19096,10 @@
       "PYPI:jupyterlab-github",
       "NPM:@jupyterlab/github"
     ],
+    "images": [],
     "downloads_last_month": 1293,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18350,8 +19160,10 @@
       "PYPI:jupyterlab-hdf",
       "NPM:@jupyterlab/hdf5"
     ],
+    "images": [],
     "downloads_last_month": 65,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18402,8 +19214,10 @@
       "PYPI:jupyterlab-latex",
       "NPM:@jupyterlab/latex"
     ],
+    "images": [],
     "downloads_last_month": 2054,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18462,8 +19276,10 @@
     "security_boundary": "Processes GitHub webhook events and takes actions on repositories based on configuration.",
     "rationale": "The repo implements a Probot app (src/index.ts, app.yml) that handles GitHub webhook events for JupyterLab maintenance tasks.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18508,8 +19324,10 @@
     "packages": [
       "PYPI:jupyterlab-translate"
     ],
+    "images": [],
     "downloads_last_month": 510,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18556,8 +19374,10 @@
     "packages": [
       "PYPI:jupyterlab-apod"
     ],
+    "images": [],
     "downloads_last_month": 20,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18619,8 +19439,10 @@
       "PYPI:jupyterlab-pygments",
       "NPM:jupyterlab_pygments"
     ],
+    "images": [],
     "downloads_last_month": 48057917,
     "dependents": 6275,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18685,8 +19507,10 @@
     "packages": [
       "PYPI:jupyterlab-server"
     ],
+    "images": [],
     "downloads_last_month": 27966465,
     "dependents": 4357,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18743,8 +19567,10 @@
     "security_boundary": null,
     "rationale": "The repo is a Copier template for generating JupyterLab language packs, as stated in README and evidenced by copier.yml and template files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18816,8 +19642,10 @@
       "PYPI:jupyterlab-language-pack-ro-RO",
       "PYPI:jupyterlab-language-pack-et-EE"
     ],
+    "images": [],
     "downloads_last_month": 11592,
     "dependents": 4,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18887,8 +19715,10 @@
       "NPM:@lumino/default-theme",
       "NPM:@lumino/buildutils"
     ],
+    "images": [],
     "downloads_last_month": 727784,
     "dependents": 1431,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18947,8 +19777,10 @@
     "security_boundary": null,
     "rationale": "The repository contains reusable GitHub Actions and workflows (e.g., .github/actions/*, .github/workflows/*) intended for other repositories' maintenance, as stated in its description and README.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [
         "ipython/comm",
@@ -19088,8 +19920,10 @@
       "PYPI:jupyterlab-plugin-playground",
       "NPM:@jupyterlab/plugin-playground"
     ],
+    "images": [],
     "downloads_last_month": 267,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19150,8 +19984,10 @@
     "packages": [
       "NPM:@jupyterlab/pullrequests"
     ],
+    "images": [],
     "downloads_last_month": 10,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19198,8 +20034,10 @@
     "packages": [
       "PYPI:pytest-check-links"
     ],
+    "images": [],
     "downloads_last_month": 12459,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19254,8 +20092,10 @@
     "security_boundary": null,
     "rationale": "It is a JupyterLab extension for rendering ES6 Rich Output files, as stated in the README and evidenced by extension metadata files (install.json, src/index.ts).",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19303,8 +20143,10 @@
     "security_boundary": null,
     "rationale": "The repository contains tutorial instructions, exercises, and notebooks for a SciPy 2018 JupyterLab tutorial, as indicated by the README and file structure.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19348,8 +20190,10 @@
     "security_boundary": null,
     "rationale": "The repository contains tutorial material and exercises for a SciPy 2019 JupyterLab tutorial, with files like 'Exercise-1/Exercise1.md', 'notebooks/Data.ipynb', and a README instructing installation for tutorial attendees.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19393,8 +20237,10 @@
     "security_boundary": null,
     "rationale": "Repository contains only meeting notes and workflow automations for the triage team, evidenced by README and absence of code.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19435,8 +20281,10 @@
       "NPM:@jupyterlab/ui-profiler",
       "PYPI:jupyterlab-ui-profiler"
     ],
+    "images": [],
     "downloads_last_month": 68,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19497,8 +20345,10 @@
     "security_boundary": null,
     "rationale": "The repo contains UX research documentation (PDFs, personas, use cases) and its README describes it as a centralized place for research documentation.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19537,8 +20387,10 @@
     "security_boundary": null,
     "rationale": "The repository is a copier template that generates Visual Studio Code configuration for Jupyter extension projects, as described in README and evidenced by template files and .github/workflows/main.yml.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19584,8 +20436,10 @@
     "security_boundary": null,
     "rationale": "Contains only community health files like CODE_OF_CONDUCT.md, SECURITY.md, FUNDING.yml, and issue templates, with no code, CI workflows, or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19625,8 +20479,10 @@
     "packages": [
       "NPM:@jupyterlite/cockle"
     ],
+    "images": [],
     "downloads_last_month": 1725,
     "dependents": 3,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19683,8 +20539,10 @@
     "security_boundary": null,
     "rationale": "Contains many example notebooks (content/*.ipynb) and a GitHub Actions deploy workflow to publish a static JupyterLite site on GitHub Pages, demonstrating usage rather than a library or application.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19734,8 +20592,10 @@
       "PYPI:jupyterlite-echo-kernel",
       "NPM:@jupyterlite/echo-kernel"
     ],
+    "images": [],
     "downloads_last_month": 58,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19797,8 +20657,10 @@
       "NPM:@jupyterlite/javascript-kernel",
       "NPM:@jupyterlite/javascript-kernel-extension"
     ],
+    "images": [],
     "downloads_last_month": 2056,
     "dependents": 4,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19861,8 +20723,10 @@
       "PYPI:jupyterlab-webrtc-docprovider",
       "NPM:@jupyterlite/webrtc-docprovider"
     ],
+    "images": [],
     "downloads_last_month": 38,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19934,8 +20798,10 @@
       "NPM:@jupyterlite/repl-extension",
       "NPM:@jupyterlite/notebook-application-extension"
     ],
+    "images": [],
     "downloads_last_month": 60813,
     "dependents": 21,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -19994,8 +20860,10 @@
     "security_boundary": null,
     "rationale": "The repository describes itself as 'A jupyter_lsp shim for JupyterLite' and includes npm packages under packages/ with source code implementing Language Server Protocol features.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20041,8 +20909,10 @@
     "packages": [
       "PYPI:jupyterlite-sphinx"
     ],
+    "images": [],
     "downloads_last_month": 17684,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20102,8 +20972,10 @@
       "PYPI:litegitpuller",
       "NPM:@jupyterlite/litegitpuller"
     ],
+    "images": [],
     "downloads_last_month": 161,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20167,8 +21039,10 @@
       "NPM:@jupyterlite/p5-kernel-extension",
       "NPM:@jupyterlite/p5-kernel"
     ],
+    "images": [],
     "downloads_last_month": 1246,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20233,8 +21107,10 @@
       "NPM:@jupyterlite/pyodide-kernel",
       "NPM:@jupyterlite/pyodide-kernel-extension"
     ],
+    "images": [],
     "downloads_last_month": 51057,
     "dependents": 8,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20295,8 +21171,10 @@
     "packages": [
       "PYPI:repo2jupyterlite"
     ],
+    "images": [],
     "downloads_last_month": 11,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20338,8 +21216,10 @@
     "security_boundary": null,
     "rationale": "The repository is a demo website using jupyterlite-sphinx, with content primarily in docs/source directories and deployed to GitHub Pages via .github/workflows/pages.yml.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20391,8 +21271,10 @@
       "PYPI:jupyterlite-terminal",
       "NPM:@jupyterlite/terminal"
     ],
+    "images": [],
     "downloads_last_month": 1640,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20454,8 +21336,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Lua VM (lua-5.3.4/src/*.c) compiled to WASM to run in the browser, with a demo HTML page (main.html) and no CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20501,8 +21385,10 @@
       "NPM:@jupyterlite/xeus",
       "NPM:@jupyterlite/xeus-extension"
     ],
+    "images": [],
     "downloads_last_month": 3091,
     "dependents": 2,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20562,8 +21448,10 @@
     "security_boundary": null,
     "rationale": "Repository is a template for creating JupyterLite deployments with xeus kernels, with a deploy workflow publishing to GitHub Pages and a demo notebook.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20609,8 +21497,10 @@
     "security_boundary": null,
     "rationale": "The repo contains only community health files like CODE_OF_CONDUCT.md, SECURITY.md, and issue templates, with README explicitly stating it holds 'Community health files for the @voila-dashboards organization'.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20650,8 +21540,10 @@
     "packages": [
       "PYPI:hotpot-km"
     ],
+    "images": [],
     "downloads_last_month": 26,
     "dependents": 0,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20694,8 +21586,10 @@
     "security_boundary": null,
     "rationale": "Readme and setup.py show this is a plugin for The Littlest JupyterHub that installs a Voilà Gallery, so its primary purpose is a package.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20743,8 +21637,10 @@
       "PYPI:voici-core",
       "PYPI:voici"
     ],
+    "images": [],
     "downloads_last_month": 231,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20807,8 +21703,10 @@
     "security_boundary": null,
     "rationale": "The repository is a template for deploying Voici dashboards as static sites, as indicated by its README and deploy workflow publishing to GitHub Pages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20854,8 +21752,10 @@
     "security_boundary": null,
     "rationale": "The repository is a gallery website of Voici examples, as evidenced by README stating 'This is a gallery of Voici examples' and it appears to be a static site deployed via GitHub Actions.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20908,8 +21808,10 @@
       "NPM:@voila-dashboards/jupyterlab-preview",
       "NPM:@voila-dashboards/widgets-manager7"
     ],
+    "images": [],
     "downloads_last_month": 111632,
     "dependents": 60,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -20975,8 +21877,10 @@
     "security_boundary": null,
     "rationale": "The repository contains only GitHub Pages files (index.html, _layouts, _posts) serving the Voilà organization site, with no code, CI workflows, or published packages.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21016,8 +21920,10 @@
     "security_boundary": null,
     "rationale": "This repo is a Voilà template installed via pip, containing template files and static assets for Voilà applications.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21063,8 +21969,10 @@
       "PYPI:voila-gridstack",
       "NPM:@voila-dashboards/jupyterlab-gridstack"
     ],
+    "images": [],
     "downloads_last_month": 472,
     "dependents": 3,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21129,8 +22037,10 @@
     "security_boundary": null,
     "rationale": "Repository is a template/example for deploying a Voilà notebook application to Heroku, evidenced by README instructions, Procfile, and notebook.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21169,8 +22079,10 @@
     "security_boundary": null,
     "rationale": "The repo is a template/demo for deploying Voila dashboards to Hugging Face Spaces, containing notebooks and deployment configuration.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21218,8 +22130,10 @@
     "packages": [
       "PYPI:voila-material"
     ],
+    "images": [],
     "downloads_last_month": 303,
     "dependents": 1,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21262,8 +22176,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Procfile and requirements for deploying Voila to Railway, with a 'Deploy on Railway' button and a live demo link.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21302,8 +22218,10 @@
     "security_boundary": null,
     "rationale": "The repository provides a Cookiecutter template for generating new Voilà templates, as evidenced by the cookiecutter.json and project scaffolding files.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21347,8 +22265,10 @@
       "PYPI:voila-topbar",
       "NPM:voila_topbar"
     ],
+    "images": [],
     "downloads_last_month": 376,
     "dependents": 3,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21407,8 +22327,10 @@
     "packages": [
       "PYPI:voila-vuetify"
     ],
+    "images": [],
     "downloads_last_month": 266,
     "dependents": 2,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21450,8 +22372,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a single Jupyter notebook (index.ipynb), a Binder launch link for rendering it with Voilà, and no CI workflows or packages, indicating a demo example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21492,8 +22416,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a single Jupyter notebook (Main.ipynb) alongside data files and configuration, with a minimal README, indicating an example dashboard project.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21535,8 +22461,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a single notebook and a Binder link, showing a gallery example of Voilà visualization.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21576,8 +22504,10 @@
     "security_boundary": null,
     "rationale": "Contains a sample `app.ipynb` Voilà dashboard with setup instructions for Binder, serving as a getting-started example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21617,8 +22547,10 @@
     "security_boundary": null,
     "rationale": "Contains a single notebook ipympl.ipynb and a GIF demonstrating an interactive matplotlib demo, with no package publishing or CI workflows.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21659,8 +22591,10 @@
     "security_boundary": null,
     "rationale": "The repository is a Binder example that demonstrates rendering STL files with Voilà and ipyvolume, as shown by the Binder badge and README title.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21701,8 +22635,10 @@
     "security_boundary": null,
     "rationale": "The repository is the website for voila-gallery.org, as noted in the README 'View the gallery at https://voila-gallery.github.io' and contains HTML/CSS/JS files under index.html, css/style.css, and js/index.js.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -21747,8 +22683,10 @@
     "security_boundary": null,
     "rationale": "The repository contains a Binder-ready Voila application (environment.yml, jupyter_config.json, Spotify_viewer.ipynb) for visualizing Spotify data, with no CI workflows or published packages, indicating a demo example.",
     "packages": [],
+    "images": [],
     "downloads_last_month": null,
     "dependents": null,
+    "pulls": null,
     "used_by": {
       "ci": [],
       "ci_pinned": [],

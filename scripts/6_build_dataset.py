@@ -1,16 +1,17 @@
-"""Step 5: join steps 1-4 into the files the web page loads, in site/data/.
+"""Step 6: join steps 1-5 into the files the web page loads, in site/data/.
 
-    repos.json     one record per repo; ids of the packages it publishes and of the repos that run its code
+    repos.json     one record per repo; ids of the packages and images it publishes and of the repos that run its code
     packages.json  one record per package; the id of the repo that publishes it
+    images.json    one record per container image; the id of the repo it comes from, if any
     meta.json      when the data was fetched, and the organizations
 
-Every cross-reference is an id (a repo's full name, a package's "SYSTEM:name"), so the page can follow it with one
-lookup. used_by and uses are the two directions of the same relation:
+Every cross-reference is an id (a repo's full name, a package's "SYSTEM:name", an image's "registry/namespace/name"),
+so the page can follow it with one lookup. used_by and uses are the two directions of the same relation:
   ci         the workflows of the consumer use the provider's actions through a tag or branch
   ci_pinned  same, but pinned to a commit SHA (a compromise does not reach the consumer by itself)
   build      the consumer's pyproject.toml build requirements include one of the provider's packages
 
-Usage: python scripts/5_build_dataset.py    Output: site/data/
+Usage: python scripts/6_build_dataset.py    Output: site/data/
 """
 
 import re
@@ -46,6 +47,10 @@ def package_id(package: dict) -> str:
     return f"{package['system']}:{package['name']}"
 
 
+def image_id(image: dict) -> str:
+    return f"{image['registry']}/{image['namespace']}/{image['name']}"
+
+
 def invert(used_by: dict) -> dict:
     """{provider: {"ci": [consumers], ...}} -> {consumer: {"ci": [providers], ...}}"""
     uses = {}
@@ -62,6 +67,7 @@ def main():
     inventory = load_json(OUTPUT / "repos.json")
     scan = load_json(OUTPUT / "scan.json")
     accepted = load_json(OUTPUT / "packages.json")["accepted"]
+    published = load_json(OUTPUT / "images.json")["images"]
     labels = load_json(OUTPUT / "classification.json")
     ci_refs, build_users = find_users(inventory["repos"], scan, accepted)
 
@@ -74,9 +80,25 @@ def main():
             "reason": p["reason"],
             "downloads_last_month": p["downloads_last_month"],
             "dependents": p["dependents"],
-            "latest_release": p.get("latest_release"),  # an ISO date; None until step 3 records it
+            "last_published": p["last_published"],  # an ISO date; None if deps.dev does not know the package
         }
         for p in sorted(accepted, key=lambda p: package_id(p).lower())
+    ]
+
+    images = [
+        {
+            "id": image_id(i),
+            "registry": i["registry"],
+            "org": i["namespace"],  # a GitHub organization, step 4 checks it
+            "name": i["name"],
+            "tag": i["tag"],
+            "reference": i["reference"],
+            "repo": i["repo"],  # None if no repo matches
+            "reason": i["reason"],
+            "pulls": i["pulls"],  # all time; None on Quay, which has no pull counts
+            "last_published": i["last_published"],
+        }
+        for i in sorted(published, key=lambda i: image_id(i).lower())
     ]
 
     used_by = {}
@@ -94,6 +116,7 @@ def main():
     for repo in inventory["repos"]:
         name = repo["full_name"]
         mine = sorted((p for p in packages if p["repo"] == name), key=lambda p: -(p["downloads_last_month"] or 0))
+        built = sorted((i for i in images if i["repo"] == name), key=lambda i: -(i["pulls"] or 0))
         label, content = labels[name], scan[name]
         repos.append(
             {
@@ -107,8 +130,10 @@ def main():
                 "security_boundary": label["security_boundary"],
                 "rationale": label["rationale"],
                 "packages": [p["id"] for p in mine],
+                "images": [i["id"] for i in built],
                 "downloads_last_month": mine[0]["downloads_last_month"] or 0 if mine else None,  # of the top package
                 "dependents": mine[0]["dependents"] or 0 if mine else None,
+                "pulls": built[0]["pulls"] if built else None,  # of the top image
                 "used_by": used_by[name],
                 "uses": uses.get(name, {"ci": [], "ci_pinned": [], "build": []}),
                 "used_in_ci": len(set(used_by[name]["ci"] + used_by[name]["build"])),  # pinned ones do not count
@@ -124,8 +149,9 @@ def main():
 
     save_json(SITE_DATA / "repos.json", repos)
     save_json(SITE_DATA / "packages.json", packages)
+    save_json(SITE_DATA / "images.json", images)
     save_json(SITE_DATA / "meta.json", {"fetched_on": inventory["fetched_on"], "orgs": inventory["orgs"]})
-    print(f"wrote {len(repos)} repos and {len(packages)} packages to site/data/")
+    print(f"wrote {len(repos)} repos, {len(packages)} packages and {len(images)} images to site/data/")
 
 
 if __name__ == "__main__":

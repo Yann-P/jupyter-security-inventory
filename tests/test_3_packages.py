@@ -48,5 +48,5 @@ def test_deps_dev_gives_dependents_and_the_date_of_the_newest_version(monkeypatc
     monkeypatch.setattr(packages, "fetch_json", fake_fetch_json)
 
     # A pre-release counts as the newest version; the default one is only used for the dependents.
-    assert packages.deps_dev("PYPI", "Some_Lib") == {"dependents": 40, "latest_release": "2026-02-01"}
-    assert packages.deps_dev("PYPI", "unknown") == {"dependents": None, "latest_release": None}
+    assert packages.deps_dev("PYPI", "Some_Lib") == {"dependents": 40, "last_published": "2026-02-01"}
+    assert packages.deps_dev("PYPI", "unknown") == {"dependents": None, "last_published": None}
