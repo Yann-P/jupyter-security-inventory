@@ -1,4 +1,5 @@
-# Runs the formatting checks and the tests, and checks that the committed outputs are exactly what the committed code produces.
+# Runs the formatting checks, the tests and a syntax check of the page's JavaScript, and checks that the committed
+# site data is exactly what the committed code produces.
 name: CI
 
 on:
@@ -22,11 +23,16 @@ jobs:
       - run: pip install . --group dev
       - run: pre-commit run --all-files --show-diff-on-failure
       - run: pytest
-      - name: Check that output/jupyter_repos.json and output/repos.csv are up to date
+      - name: Check the syntax of the page's JavaScript
+        run: |
+          # The files are ES modules: without --input-type=module, node --check skips the errors in those that import.
+          for file in site/*.js; do
+            node --input-type=module --check < "$file" || { echo "::error::Syntax error in $file"; exit 1; }
+          done
+      - name: Check that site/data/ is up to date
         run: |
           python scripts/5_build_dataset.py
-          python scripts/6_table.py
-          git diff --exit-code output/jupyter_repos.json output/repos.csv || {
-            echo "::error::Outputs are out of date: run the two commands above and commit the result."
+          git diff --exit-code site/data || {
+            echo "::error::site/data/ is out of date: run python scripts/5_build_dataset.py and commit the result."
             exit 1
           }

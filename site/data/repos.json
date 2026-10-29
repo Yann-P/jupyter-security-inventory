@@ -36,7 +36,7 @@
     },
     "prose_ratio": 1.0,
     "head": "5e53dc746262e25542518f21dd27899a081defe7",
-    "last_commit": null
+    "last_commit": "2019-09-24"
   },
   {
     "id": "binder-examples/appmode",
@@ -77,7 +77,7 @@
     },
     "prose_ratio": 1.0,
     "head": "ef9cb16bf8002bde4a2dc39c8c40ed7ebbeab971",
-    "last_commit": null
+    "last_commit": "2019-03-26"
   },
   {
     "id": "binder-examples/apt_install",
@@ -117,7 +117,7 @@
     },
     "prose_ratio": 1.0,
     "head": "9d3102b9cd84bc7322779216f6493f6cbe8d82bb",
-    "last_commit": null
+    "last_commit": "2019-03-04"
   },
   {
     "id": "binder-examples/binder-r-description",
@@ -158,7 +158,7 @@
     },
     "prose_ratio": 0.667,
     "head": "435def5c37d4e3839396ef30854a6b4db0482252",
-    "last_commit": null
+    "last_commit": "2019-03-26"
   },
   {
     "id": "binder-examples/bokeh",
@@ -200,7 +200,7 @@
     },
     "prose_ratio": 0.5,
     "head": "407bbe93bbfd2d0a1e3bcd10e2571a61a55661aa",
-    "last_commit": null
+    "last_commit": "2020-04-03"
   },
   {
     "id": "binder-examples/conda",
@@ -243,7 +243,7 @@
     },
     "prose_ratio": 1.0,
     "head": "f00a783146e9c6a2ed9726f01fc09fbfbad2f89e",
-    "last_commit": null
+    "last_commit": "2023-02-16"
   },
   {
     "id": "binder-examples/conda-freeze",
@@ -283,7 +283,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cce6dde7701a9f360c611fc9c20c32ab39ae8580",
-    "last_commit": null
+    "last_commit": "2019-03-02"
   },
   {
     "id": "binder-examples/continuous-build",
@@ -324,7 +324,7 @@
     },
     "prose_ratio": 1.0,
     "head": "17f9fa885d25cb6f9f37ce6efb3db60bc6da0940",
-    "last_commit": null
+    "last_commit": "2019-03-05"
   },
   {
     "id": "binder-examples/data-quilt",
@@ -365,7 +365,7 @@
     },
     "prose_ratio": 1.0,
     "head": "0aab7e952c5baf46bfa990e89d45922bc9c1865b",
-    "last_commit": null
+    "last_commit": "2019-07-09"
   },
   {
     "id": "binder-examples/demo-julia",
@@ -406,7 +406,7 @@
     },
     "prose_ratio": 1.0,
     "head": "5eebe6232eefc320e67457e65a3fb2fe5471d6af",
-    "last_commit": null
+    "last_commit": "2025-11-21"
   },
   {
     "id": "binder-examples/dockerfile-rstudio",
@@ -448,7 +448,7 @@
     },
     "prose_ratio": 0.75,
     "head": "249838f2ac7e018fdf560b930780cb4770faf049",
-    "last_commit": null
+    "last_commit": "2018-02-22"
   },
   {
     "id": "binder-examples/getting-data",
@@ -489,7 +489,7 @@
     },
     "prose_ratio": 1.0,
     "head": "fec63da8fed0a5b6866d6157a55a2f496c528bc8",
-    "last_commit": null
+    "last_commit": "2021-01-07"
   },
   {
     "id": "binder-examples/getting-data-xroot",
@@ -528,7 +528,7 @@
     },
     "prose_ratio": 1.0,
     "head": "c13d2a92cd8e0e2e81773ea21029ef85ac8eabd8",
-    "last_commit": null
+    "last_commit": "2019-05-24"
   },
   {
     "id": "binder-examples/julia-python",
@@ -569,7 +569,7 @@
     },
     "prose_ratio": 1.0,
     "head": "9b0da630e28b765a0fba777d7ade2a13457f2805",
-    "last_commit": null
+    "last_commit": "2024-05-29"
   },
   {
     "id": "binder-examples/jupyter-extension",
@@ -609,7 +609,7 @@
     },
     "prose_ratio": 1.0,
     "head": "fb927f1e7b7fcfbdc071cada312d3cc5104fa277",
-    "last_commit": null
+    "last_commit": "2021-09-16"
   },
   {
     "id": "binder-examples/jupyter-rise",
@@ -650,7 +650,7 @@
     },
     "prose_ratio": 1.0,
     "head": "b8fd564fb853102ea1577474ac2132467dae9dd1",
-    "last_commit": null
+    "last_commit": "2020-06-29"
   },
   {
     "id": "binder-examples/jupyter-sos",
@@ -692,7 +692,7 @@
     },
     "prose_ratio": 1.0,
     "head": "b1e5b13c99944371fc0257808d50c15b92e459da",
-    "last_commit": null
+    "last_commit": "2023-04-10"
   },
   {
     "id": "binder-examples/jupyter-stacks",
@@ -731,7 +731,7 @@
     },
     "prose_ratio": 1.0,
     "head": "b33625eac93e25f8433ed56f6ad09f000f2987e8",
-    "last_commit": null
+    "last_commit": "2019-03-26"
   },
   {
     "id": "binder-examples/jupyter-stacks-datascience",
@@ -770,7 +770,7 @@
     },
     "prose_ratio": 1.0,
     "head": "2df974bf0ba288933a34ae4da1a95e823cd046e9",
-    "last_commit": null
+    "last_commit": "2020-06-30"
   },
   {
     "id": "binder-examples/jupyterlab",
@@ -811,7 +811,7 @@
     },
     "prose_ratio": 1.0,
     "head": "be84880214e57de971825161a2cd02137de3b4ef",
-    "last_commit": null
+    "last_commit": "2019-09-16"
   },
   {
     "id": "binder-examples/latex",
@@ -853,7 +853,7 @@
     },
     "prose_ratio": 1.0,
     "head": "c5fb3dcf9f70e25f286b857e2d2f1b80d61d50ab",
-    "last_commit": null
+    "last_commit": "2021-07-04"
   },
   {
     "id": "binder-examples/matplotlib-versions",
@@ -893,7 +893,7 @@
     },
     "prose_ratio": 1.0,
     "head": "31e07abfcd47d2bf33322eca29e7ba53bd82b2d6",
-    "last_commit": null
+    "last_commit": "2019-02-15"
   },
   {
     "id": "binder-examples/minimal-dockerfile",
@@ -932,7 +932,7 @@
     },
     "prose_ratio": 1.0,
     "head": "2cd2202f6e6fa8c47c644a38262eb0c093f82d15",
-    "last_commit": null
+    "last_commit": "2021-09-22"
   },
   {
     "id": "binder-examples/multi-language-demo",
@@ -974,7 +974,7 @@
     },
     "prose_ratio": 1.0,
     "head": "faab8aaba6cb14ae30192e808847e7be90c3535f",
-    "last_commit": null
+    "last_commit": "2019-09-20"
   },
   {
     "id": "binder-examples/nix",
@@ -1015,7 +1015,7 @@
     },
     "prose_ratio": 1.0,
     "head": "296e5735fac9806f8331abde0355c8603861473e",
-    "last_commit": null
+    "last_commit": "2019-07-10"
   },
   {
     "id": "binder-examples/octave",
@@ -1056,7 +1056,7 @@
     },
     "prose_ratio": 1.0,
     "head": "83421cd1049dfeaead12f4a12e85e6b6c4426a96",
-    "last_commit": null
+    "last_commit": "2025-04-25"
   },
   {
     "id": "binder-examples/pipfile",
@@ -1098,7 +1098,7 @@
     },
     "prose_ratio": 0.5,
     "head": "21d4a4022b4af8302c892d935d6f890a7c74266f",
-    "last_commit": null
+    "last_commit": "2019-06-26"
   },
   {
     "id": "binder-examples/python-conda_pip",
@@ -1139,7 +1139,7 @@
     },
     "prose_ratio": 1.0,
     "head": "3b7126f39253f92bb13ce7ea155fd8a121082afe",
-    "last_commit": null
+    "last_commit": "2019-05-06"
   },
   {
     "id": "binder-examples/python2_runtime",
@@ -1179,7 +1179,7 @@
     },
     "prose_ratio": 1.0,
     "head": "d38469bff97fc3cb859f7405bffec513b05e65fa",
-    "last_commit": null
+    "last_commit": "2020-01-31"
   },
   {
     "id": "binder-examples/python2_with_3",
@@ -1219,7 +1219,7 @@
     },
     "prose_ratio": 1.0,
     "head": "9818f3ef34a08095e9180adc1eca866dff9de0d9",
-    "last_commit": null
+    "last_commit": "2019-03-26"
   },
   {
     "id": "binder-examples/r",
@@ -1263,7 +1263,7 @@
     },
     "prose_ratio": 0.5,
     "head": "41e70868b8ab1d59df91d555d6571f3a072d24c7",
-    "last_commit": null
+    "last_commit": "2025-12-17"
   },
   {
     "id": "binder-examples/r-conda",
@@ -1304,7 +1304,7 @@
     },
     "prose_ratio": 1.0,
     "head": "2092b79b5be4258ae193915519313076e49085e5",
-    "last_commit": null
+    "last_commit": "2026-09-26"
   },
   {
     "id": "binder-examples/r_with_python",
@@ -1346,7 +1346,7 @@
     },
     "prose_ratio": 0.8,
     "head": "b96091697eb5d8424464b702293a752c736c8dc8",
-    "last_commit": null
+    "last_commit": "2019-03-26"
   },
   {
     "id": "binder-examples/remote_storage",
@@ -1386,7 +1386,7 @@
     },
     "prose_ratio": 1.0,
     "head": "f7188a95afd848dae65d4ee944912cfdf3d81884",
-    "last_commit": null
+    "last_commit": "2019-03-26"
   },
   {
     "id": "binder-examples/requirements",
@@ -1429,7 +1429,7 @@
     },
     "prose_ratio": 1.0,
     "head": "505a59f0430cb6414a4acbdd88803ce33c7fd953",
-    "last_commit": null
+    "last_commit": "2026-03-09"
   },
   {
     "id": "binder-examples/rocker",
@@ -1470,7 +1470,7 @@
     },
     "prose_ratio": 0.429,
     "head": "0040956c9b1b1b6972e6182f5f1420109aac1db2",
-    "last_commit": null
+    "last_commit": "2019-03-26"
   },
   {
     "id": "binder-examples/setup.py",
@@ -1512,7 +1512,7 @@
     },
     "prose_ratio": 0.333,
     "head": "3f0437065094b5d70ed9856d0821927b58a62b16",
-    "last_commit": null
+    "last_commit": "2018-10-09"
   },
   {
     "id": "binder-examples/stencila-multi",
@@ -1552,7 +1552,7 @@
     },
     "prose_ratio": 0.667,
     "head": "7a049d68dffc3a1ca983affa6350b528b92e00bf",
-    "last_commit": null
+    "last_commit": "2018-11-21"
   },
   {
     "id": "binder-examples/stencila-py",
@@ -1591,7 +1591,7 @@
     },
     "prose_ratio": 1.0,
     "head": "8b4466168142da743d970df304ff21668cd48d1a",
-    "last_commit": null
+    "last_commit": "2018-11-21"
   },
   {
     "id": "binder-examples/stencila-r",
@@ -1630,7 +1630,7 @@
     },
     "prose_ratio": 1.0,
     "head": "8b7e8ce10452db16b8388b4009b284906e30f2d1",
-    "last_commit": null
+    "last_commit": "2018-11-21"
   },
   {
     "id": "binder-examples/tensorboard",
@@ -1672,7 +1672,7 @@
     },
     "prose_ratio": 0.667,
     "head": "4a93712656de76499f636b61130aedb8f41c6a60",
-    "last_commit": null
+    "last_commit": "2020-01-23"
   },
   {
     "id": "binder-examples/voila",
@@ -1713,7 +1713,7 @@
     },
     "prose_ratio": 1.0,
     "head": "049705607f6e85040ee1b6e9904200057585efde",
-    "last_commit": null
+    "last_commit": "2021-09-10"
   },
   {
     "id": "binder-examples/zero-to-binder",
@@ -1755,7 +1755,7 @@
     },
     "prose_ratio": 1.0,
     "head": "165d994d9191559da9eb9a48b1d85f52b088b29b",
-    "last_commit": null
+    "last_commit": "2019-01-29"
   },
   {
     "id": "binder-examples/zero-to-jupyterhub-k8s",
@@ -1817,7 +1817,7 @@
     },
     "prose_ratio": 0.839,
     "head": "d078c0eac148f3bee443f3d0cd18d1dbfacafe01",
-    "last_commit": null
+    "last_commit": "2023-03-07"
   },
   {
     "id": "binderhub-ci-repos/cached-minimal-dockerfile",
@@ -1856,7 +1856,7 @@
     },
     "prose_ratio": 1.0,
     "head": "596b52f10efb0c9befc0c4ae850cc5175297d71c",
-    "last_commit": null
+    "last_commit": "2020-11-18"
   },
   {
     "id": "binderhub-ci-repos/lfs",
@@ -1895,7 +1895,7 @@
     },
     "prose_ratio": 1.0,
     "head": "9abf54a17c3d31823b037b80e9ab0903c0e40694",
-    "last_commit": null
+    "last_commit": "2019-06-13"
   },
   {
     "id": "binderhub-ci-repos/minimal-dockerfile",
@@ -1944,7 +1944,7 @@
     },
     "prose_ratio": 1.0,
     "head": "fcf68531397429cffbe85135b5a07ee01368286c",
-    "last_commit": null
+    "last_commit": "2025-10-25"
   },
   {
     "id": "binderhub-ci-repos/repo2docker-ci-clone-depth",
@@ -1983,7 +1983,7 @@
     },
     "prose_ratio": 1.0,
     "head": "703322e9c6635ba1835d3b92eafbabeca0042c3e",
-    "last_commit": null
+    "last_commit": "2017-10-26"
   },
   {
     "id": "binderhub-ci-repos/repo2docker-subdir-support",
@@ -2021,7 +2021,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cff1a76da66a249822fdcaf3b858ee5536e37876",
-    "last_commit": null
+    "last_commit": "2018-10-16"
   },
   {
     "id": "binderhub-ci-repos/requirements",
@@ -2060,7 +2060,7 @@
     },
     "prose_ratio": 1.0,
     "head": "20c4fe55a9b2c5011d228545e821b1c7b1723652",
-    "last_commit": null
+    "last_commit": "2018-09-17"
   },
   {
     "id": "ipython/.github",
@@ -2099,7 +2099,7 @@
     },
     "prose_ratio": 1.0,
     "head": "57adc482f9bd9f774151a01683f258a6633f624c",
-    "last_commit": null
+    "last_commit": "2026-08-26"
   },
   {
     "id": "ipython/comm",
@@ -2115,7 +2115,7 @@
       "PYPI:comm"
     ],
     "downloads_last_month": 55663064,
-    "dependents": 11952,
+    "dependents": 11965,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2155,7 +2155,7 @@
     },
     "prose_ratio": 0.5,
     "head": "ba1c862a4cdb28d2aebc9b77c3b9616dbcffc44c",
-    "last_commit": null
+    "last_commit": "2026-09-02"
   },
   {
     "id": "ipython/ipykernel",
@@ -2171,7 +2171,7 @@
       "PYPI:ipykernel"
     ],
     "downloads_last_month": 54614879,
-    "dependents": 7043,
+    "dependents": 7038,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2216,8 +2216,8 @@
       "media": 3
     },
     "prose_ratio": 0.125,
-    "head": "1437742d7547db3bcd2261264be34b311f16d2f2",
-    "last_commit": null
+    "head": "f87d0e09863101be7a961d53f29549397ff62c72",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "ipython/ipynb",
@@ -2261,7 +2261,7 @@
     },
     "prose_ratio": 0.4,
     "head": "f82fe63596bff08c7e98743264b4a2a9dcf3b73f",
-    "last_commit": null
+    "last_commit": "2023-01-14"
   },
   {
     "id": "ipython/ipyparallel",
@@ -2316,7 +2316,7 @@
     },
     "prose_ratio": 0.382,
     "head": "d724f99d7e4949e116ca986ad00576bc1d86a843",
-    "last_commit": null
+    "last_commit": "2026-07-19"
   },
   {
     "id": "ipython/ipython",
@@ -2332,7 +2332,7 @@
       "PYPI:ipython"
     ],
     "downloads_last_month": 97202828,
-    "dependents": 15399,
+    "dependents": 15413,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2365,18 +2365,18 @@
         "pypi"
       ]
     },
-    "n_files": 512,
+    "n_files": 513,
     "file_types": {
       "other": 18,
-      "docs": 78,
+      "docs": 79,
       "config": 27,
       "code": 334,
       "media": 52,
       "web": 3
     },
-    "prose_ratio": 0.285,
-    "head": "4e529543e57b6dd88cd838254ac8aeec1e61af9e",
-    "last_commit": null
+    "prose_ratio": 0.286,
+    "head": "38a9c432dbc3224fd0aa850d5cc41d6647ee2990",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "ipython/ipython-in-depth",
@@ -2421,7 +2421,7 @@
     },
     "prose_ratio": 0.625,
     "head": "b2f9442aa52118dec44ccb0ee749ea63ac578bba",
-    "last_commit": null
+    "last_commit": "2021-09-10"
   },
   {
     "id": "ipython/ipython-pygments-lexers",
@@ -2437,7 +2437,7 @@
       "PYPI:ipython-pygments-lexers"
     ],
     "downloads_last_month": 54818996,
-    "dependents": 15649,
+    "dependents": 15664,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2470,7 +2470,7 @@
     },
     "prose_ratio": 0.333,
     "head": "50791e25b02ebbdc8a13f2bbaf4b1cbea93f82a7",
-    "last_commit": null
+    "last_commit": "2026-09-02"
   },
   {
     "id": "ipython/ipython-website",
@@ -2513,7 +2513,7 @@
     },
     "prose_ratio": 0.914,
     "head": "5088348a051aec0ccf5159f96ae0fa3335dd16e7",
-    "last_commit": null
+    "last_commit": "2025-10-05"
   },
   {
     "id": "ipython/ipython.github.com",
@@ -2563,7 +2563,7 @@
     },
     "prose_ratio": 0.725,
     "head": "f4cb7dcf177990f6bf65bbe5b8c3c789ecb91613",
-    "last_commit": null
+    "last_commit": "2026-06-02"
   },
   {
     "id": "ipython/matplotlib-inline",
@@ -2579,7 +2579,7 @@
       "PYPI:matplotlib-inline"
     ],
     "downloads_last_month": 91853623,
-    "dependents": 16723,
+    "dependents": 16740,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2602,17 +2602,17 @@
         "pypi"
       ]
     },
-    "n_files": 15,
+    "n_files": 16,
     "file_types": {
-      "config": 5,
+      "config": 6,
       "other": 3,
       "docs": 1,
       "code": 4,
       "notebook": 2
     },
     "prose_ratio": 0.429,
-    "head": "084e20132c3589ba91e83eae2024b59caafeb75e",
-    "last_commit": null
+    "head": "95c7f835483d1d27e888d4e16f6a78064349ee02",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "ipython/pickleshare",
@@ -2628,7 +2628,7 @@
       "PYPI:pickleshare"
     ],
     "downloads_last_month": 8533671,
-    "dependents": 1131,
+    "dependents": 1127,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2657,7 +2657,7 @@
     },
     "prose_ratio": 0.25,
     "head": "9f0a267b02063bc01bd8a44c54909dab62a590a8",
-    "last_commit": null
+    "last_commit": "2026-09-02"
   },
   {
     "id": "ipython/traitlets",
@@ -2673,7 +2673,7 @@
       "PYPI:traitlets"
     ],
     "downloads_last_month": 118414624,
-    "dependents": 19632,
+    "dependents": 19652,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -2715,7 +2715,7 @@
     },
     "prose_ratio": 0.208,
     "head": "a576f243ec6c7be0ac3d00b3ba294408a84b068e",
-    "last_commit": null
+    "last_commit": "2026-10-20"
   },
   {
     "id": "ipython/xkcd-font",
@@ -2766,7 +2766,7 @@
     },
     "prose_ratio": 0.791,
     "head": "d6a83979937c7c36475926009c1eb471e6d62b9d",
-    "last_commit": null
+    "last_commit": "2026-07-09"
   },
   {
     "id": "jupyter-book/.github",
@@ -2812,7 +2812,7 @@
     },
     "prose_ratio": 1.0,
     "head": "7080fd253008b9c8d77a7bdbf7211da0feeaadc2",
-    "last_commit": null
+    "last_commit": "2026-06-22"
   },
   {
     "id": "jupyter-book/blog",
@@ -2860,7 +2860,7 @@
     },
     "prose_ratio": 0.975,
     "head": "0d730afbfac036e88e4745e950f418e8ebd84239",
-    "last_commit": null
+    "last_commit": "2026-09-30"
   },
   {
     "id": "jupyter-book/blog-plugin",
@@ -2907,7 +2907,7 @@
     },
     "prose_ratio": 0.538,
     "head": "6afb81be34d73ae15e3bec34ba7d9694e4d51c0e",
-    "last_commit": null
+    "last_commit": "2025-12-17"
   },
   {
     "id": "jupyter-book/book-theme-tailwind-quickstart",
@@ -2953,7 +2953,7 @@
     },
     "prose_ratio": 0.6,
     "head": "6b49a1f0518723fc359368dd2da380849885c73c",
-    "last_commit": null
+    "last_commit": "2025-06-16"
   },
   {
     "id": "jupyter-book/demo-scipy-2025",
@@ -2998,7 +2998,7 @@
     },
     "prose_ratio": 1.0,
     "head": "5e7778b1b37af881cec3ff74465004ec62f501f9",
-    "last_commit": null
+    "last_commit": "2025-07-01"
   },
   {
     "id": "jupyter-book/example-js-anywidget",
@@ -3044,7 +3044,7 @@
     },
     "prose_ratio": 0.667,
     "head": "580c7a34f676338ababf659efb1bce671a0a532d",
-    "last_commit": null
+    "last_commit": "2026-03-04"
   },
   {
     "id": "jupyter-book/example-js-plugin",
@@ -3090,7 +3090,7 @@
     },
     "prose_ratio": 0.667,
     "head": "74feec2024b4f3e1f4d1c93eb5d47628fa8e92e6",
-    "last_commit": null
+    "last_commit": "2026-02-09"
   },
   {
     "id": "jupyter-book/example-landing-pages",
@@ -3136,7 +3136,7 @@
     },
     "prose_ratio": 1.0,
     "head": "427009bc9e9ae43866e24a61afcc57de6e3c8ae8",
-    "last_commit": null
+    "last_commit": "2025-07-01"
   },
   {
     "id": "jupyter-book/example-multi-language-book",
@@ -3175,7 +3175,7 @@
     },
     "prose_ratio": 1.0,
     "head": "79f60983934ebcde494250f3c8e97874db548385",
-    "last_commit": null
+    "last_commit": "2026-03-04"
   },
   {
     "id": "jupyter-book/example-outputs",
@@ -3221,7 +3221,7 @@
     },
     "prose_ratio": 1.0,
     "head": "d7ee89ea1ee65f9eac0261e99ba866392e832689",
-    "last_commit": null
+    "last_commit": "2026-01-31"
   },
   {
     "id": "jupyter-book/example-python-plugin",
@@ -3266,7 +3266,7 @@
     },
     "prose_ratio": 0.75,
     "head": "9795d0499c627384940bb988952394eaae968367",
-    "last_commit": null
+    "last_commit": "2025-05-14"
   },
   {
     "id": "jupyter-book/example-stylesheets",
@@ -3311,7 +3311,7 @@
     },
     "prose_ratio": 1.0,
     "head": "e4e99d4fef4acfb205dde38c351597eae958724b",
-    "last_commit": null
+    "last_commit": "2025-05-14"
   },
   {
     "id": "jupyter-book/example-widgets",
@@ -3352,7 +3352,7 @@
     },
     "prose_ratio": 0.4,
     "head": "a1710bb8e3102cb1122b36e0e8ab6334eb6869de",
-    "last_commit": null
+    "last_commit": "2026-02-24"
   },
   {
     "id": "jupyter-book/github-action-playground",
@@ -3393,7 +3393,7 @@
     },
     "prose_ratio": 0.0,
     "head": "0491103009f6ea6a8fb0970961cc75b873f01d31",
-    "last_commit": null
+    "last_commit": "2026-05-18"
   },
   {
     "id": "jupyter-book/hatch-deps-selector",
@@ -3446,7 +3446,7 @@
     },
     "prose_ratio": 0.286,
     "head": "d36eb9c0e3957c1aac163fa601d8ae5b464afad7",
-    "last_commit": null
+    "last_commit": "2024-09-04"
   },
   {
     "id": "jupyter-book/jb1-redirect-generator",
@@ -3486,7 +3486,7 @@
     },
     "prose_ratio": 0.333,
     "head": "d70ce6d7df9f2dfc83bb1d409336c0cc3e20697f",
-    "last_commit": null
+    "last_commit": "2026-02-26"
   },
   {
     "id": "jupyter-book/jupyter-book",
@@ -3549,7 +3549,7 @@
     },
     "prose_ratio": 0.738,
     "head": "11acb1bbdd51c23ae14663daf0b7d4a0fd1c9d0e",
-    "last_commit": null
+    "last_commit": "2026-09-23"
   },
   {
     "id": "jupyter-book/jupyter_releaser",
@@ -3610,7 +3610,7 @@
     },
     "prose_ratio": 0.557,
     "head": "844b46d3bbc499831c32ed3a53469f55334dc9c3",
-    "last_commit": null
+    "last_commit": "2024-10-29"
   },
   {
     "id": "jupyter-book/jupyterbook.org",
@@ -3659,7 +3659,7 @@
     },
     "prose_ratio": 0.867,
     "head": "ccb4857f9b10f607e29ce70f83be6e735135bf49",
-    "last_commit": null
+    "last_commit": "2026-10-21"
   },
   {
     "id": "jupyter-book/jupyterlab-myst",
@@ -3727,7 +3727,7 @@
     },
     "prose_ratio": 0.523,
     "head": "ada2b284307f20ba00895b671c3a737ee1bf9d55",
-    "last_commit": null
+    "last_commit": "2026-10-02"
   },
   {
     "id": "jupyter-book/jupyterlab-myst-quickstart",
@@ -3768,7 +3768,7 @@
     },
     "prose_ratio": 1.0,
     "head": "f6ef75642e3251876633c359b63b0cd76a5c2ce1",
-    "last_commit": null
+    "last_commit": "2023-07-05"
   },
   {
     "id": "jupyter-book/legacy-demo-book",
@@ -3814,7 +3814,7 @@
     },
     "prose_ratio": 1.0,
     "head": "8e2b450cf57313bb018aedde922015f82187f51e",
-    "last_commit": null
+    "last_commit": "2024-11-13"
   },
   {
     "id": "jupyter-book/myst-enhancement-proposals",
@@ -3861,7 +3861,7 @@
     },
     "prose_ratio": 0.929,
     "head": "d3027b25abd427c24038739aac8c817cc5229d07",
-    "last_commit": null
+    "last_commit": "2026-03-22"
   },
   {
     "id": "jupyter-book/myst-plugins",
@@ -3911,7 +3911,7 @@
     },
     "prose_ratio": 0.359,
     "head": "95626532ae6609acb4ef7af4fc6968850309c41c",
-    "last_commit": null
+    "last_commit": "2026-10-12"
   },
   {
     "id": "jupyter-book/myst-theme",
@@ -3925,21 +3925,21 @@
     "rationale": "The repository contains NPM packages (published under @myst-theme) and React/Remix theme components for rendering MyST content, as evidenced by package.json and published packages like @myst-theme/providers.",
     "packages": [
       "NPM:@myst-theme/providers",
+      "NPM:myst-to-react",
       "NPM:@myst-theme/common",
       "NPM:@myst-theme/search",
-      "NPM:myst-to-react",
-      "NPM:@myst-theme/diagrams",
-      "NPM:@myst-theme/styles",
       "NPM:@myst-theme/search-minisearch",
-      "NPM:@myst-theme/landing-pages",
+      "NPM:@myst-theme/styles",
       "NPM:@myst-theme/anywidget",
+      "NPM:@myst-theme/landing-pages",
       "NPM:@myst-theme/frontmatter",
-      "NPM:@myst-theme/jupyter",
-      "NPM:@myst-theme/site",
+      "NPM:@myst-theme/diagrams",
       "NPM:myst-demo",
-      "NPM:@myst-theme/icons"
+      "NPM:@myst-theme/site",
+      "NPM:@myst-theme/icons",
+      "NPM:@myst-theme/jupyter"
     ],
-    "downloads_last_month": 11055,
+    "downloads_last_month": 8024,
     "dependents": 22,
     "used_by": {
       "ci": [],
@@ -3982,7 +3982,7 @@
     },
     "prose_ratio": 0.295,
     "head": "f75ec23d244911f05fd055fdcca80c164c3242b5",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyter-book/mystmd",
@@ -4000,40 +4000,40 @@
       "NPM:myst-common",
       "NPM:simple-validators",
       "NPM:myst-toc",
-      "NPM:myst-cli-utils",
       "NPM:myst-spec-ext",
       "NPM:markdown-it-myst",
-      "NPM:myst-to-html",
       "NPM:myst-parser",
-      "NPM:myst-directives",
       "NPM:myst-roles",
+      "NPM:myst-directives",
+      "NPM:myst-to-html",
+      "NPM:myst-cli-utils",
+      "NPM:mystmd",
       "NPM:myst-transforms",
       "PYPI:mystmd",
-      "NPM:mystmd",
-      "NPM:myst-config",
-      "NPM:myst-templates",
-      "NPM:myst-migrate",
-      "NPM:myst-cli",
       "NPM:myst-execute",
-      "NPM:myst-to-tex",
-      "NPM:myst-to-typst",
       "NPM:myst-ext-tabs",
+      "NPM:myst-config",
       "NPM:myst-ext-grid",
       "NPM:myst-ext-card",
       "NPM:myst-ext-proof",
-      "NPM:myst-ext-exercise",
-      "NPM:myst-to-jats",
-      "NPM:myst-to-docx",
-      "NPM:citation-js-utils",
       "NPM:myst-ext-button",
+      "NPM:myst-migrate",
+      "NPM:myst-templates",
+      "NPM:myst-ext-exercise",
+      "NPM:myst-cli",
+      "NPM:myst-to-docx",
+      "NPM:myst-to-tex",
+      "NPM:myst-to-jats",
+      "NPM:citation-js-utils",
+      "NPM:myst-to-typst",
+      "NPM:myst-ext-icon",
+      "NPM:myst-to-md",
+      "NPM:myst-ext-reactive",
       "NPM:tex-to-myst",
       "NPM:jtex",
-      "NPM:myst-to-md",
-      "NPM:myst-ext-icon",
-      "NPM:myst-ext-reactive",
       "NPM:jats-to-myst"
     ],
-    "downloads_last_month": 36729,
+    "downloads_last_month": 66347,
     "dependents": 103,
     "used_by": {
       "ci": [],
@@ -4078,7 +4078,7 @@
     },
     "prose_ratio": 0.457,
     "head": "2210e7003a0b70d0f9884b5da81e98841f7b79e2",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyter-book/mystmd-quickstart",
@@ -4119,7 +4119,7 @@
     },
     "prose_ratio": 1.0,
     "head": "caadbd885c2dee8a02b38ead4049d900678dc385",
-    "last_commit": null
+    "last_commit": "2025-01-03"
   },
   {
     "id": "jupyter-book/mystmd.org",
@@ -4170,7 +4170,7 @@
     },
     "prose_ratio": 0.429,
     "head": "78f0db446fb3e8c5bee106483bd9f2ffa8a976cc",
-    "last_commit": null
+    "last_commit": "2026-09-21"
   },
   {
     "id": "jupyter-book/renaissance2026-myst",
@@ -4209,7 +4209,7 @@
     },
     "prose_ratio": 1.0,
     "head": "547ca233e1f9e79151bc85ab4b64b1484b6502d4",
-    "last_commit": null
+    "last_commit": "2026-06-08"
   },
   {
     "id": "jupyter-book/team-compass",
@@ -4251,7 +4251,7 @@
     },
     "prose_ratio": 0.875,
     "head": "4fc155c35c4a08022f9d95f615eddd0db24f3dbb",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyter-book/test-repo",
@@ -4289,7 +4289,7 @@
     },
     "prose_ratio": 1.0,
     "head": "e64cbcbdbf5bf00b744ce874d993452d69fe2239",
-    "last_commit": null
+    "last_commit": "2026-01-09"
   },
   {
     "id": "jupyter-book/thebe",
@@ -4302,13 +4302,13 @@
     "security_boundary": null,
     "rationale": "Publishes multiple NPM packages (thebe, thebe-core, thebe-lite, thebe-react) and CI publishes to npm.",
     "packages": [
+      "NPM:thebe-lite",
       "NPM:thebe-core",
       "NPM:thebe-react",
-      "NPM:thebe-lite",
       "NPM:thebe"
     ],
-    "downloads_last_month": 3593,
-    "dependents": 11,
+    "downloads_last_month": 7786,
+    "dependents": 7,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -4348,7 +4348,7 @@
     },
     "prose_ratio": 0.525,
     "head": "0e0c6879dc957b7749825b4da9295e8d88b52f4d",
-    "last_commit": null
+    "last_commit": "2026-06-22"
   },
   {
     "id": "jupyter-book/thebe-binder-base",
@@ -4386,7 +4386,7 @@
     },
     "prose_ratio": 1.0,
     "head": "0f4b0682ec70647edd1c8845d7a48b6eaae594cd",
-    "last_commit": null
+    "last_commit": "2023-04-27"
   },
   {
     "id": "jupyter-book/vscode-mystmd",
@@ -4428,7 +4428,7 @@
     },
     "prose_ratio": 0.5,
     "head": "4766925df74501e20e5118dde3b3fbb32309eb2d",
-    "last_commit": null
+    "last_commit": "2024-10-22"
   },
   {
     "id": "jupyter-book/workshop-template",
@@ -4475,7 +4475,7 @@
     },
     "prose_ratio": 1.0,
     "head": "e22d306baa2819016eeebb6411ebd05fcd3e6fed",
-    "last_commit": null
+    "last_commit": "2026-03-17"
   },
   {
     "id": "jupyter-governance/.github",
@@ -4514,7 +4514,7 @@
     },
     "prose_ratio": 1.0,
     "head": "850678d8a65a245f9081edf3b393df8f84109dfc",
-    "last_commit": null
+    "last_commit": "2025-04-16"
   },
   {
     "id": "jupyter-governance/ec-team-compass",
@@ -4558,7 +4558,7 @@
     },
     "prose_ratio": 0.957,
     "head": "b6730b35cdfc4edf1a311ad313399cd77a12b02d",
-    "last_commit": null
+    "last_commit": "2026-09-23"
   },
   {
     "id": "jupyter-governance/funding-proposals",
@@ -4605,7 +4605,7 @@
     },
     "prose_ratio": 0.977,
     "head": "a991e042fc2264464ab5a2568ff2c5b365e16f27",
-    "last_commit": null
+    "last_commit": "2026-10-12"
   },
   {
     "id": "jupyter-governance/jupyter-foundation-governing-board",
@@ -4650,7 +4650,7 @@
     },
     "prose_ratio": 1.0,
     "head": "342afb672f020a0539abd31c66c45d172c667c06",
-    "last_commit": null
+    "last_commit": "2026-08-24"
   },
   {
     "id": "jupyter-incubator/sparkmagic",
@@ -4709,7 +4709,7 @@
     },
     "prose_ratio": 0.205,
     "head": "41ff10d366acb68a5567d439b87f2d20fbf8b2c7",
-    "last_commit": null
+    "last_commit": "2025-09-09"
   },
   {
     "id": "jupyter-server/.github",
@@ -4749,7 +4749,7 @@
     },
     "prose_ratio": 1.0,
     "head": "339ec164a968653f7ca60c79d4a349f797a55702",
-    "last_commit": null
+    "last_commit": "2022-08-01"
   },
   {
     "id": "jupyter-server/contributing-hour",
@@ -4787,7 +4787,7 @@
     },
     "prose_ratio": 1.0,
     "head": "f8f67d039027e829e58edd3062e8829509805ce6",
-    "last_commit": null
+    "last_commit": "2022-06-02"
   },
   {
     "id": "jupyter-server/enterprise_gateway",
@@ -4838,8 +4838,8 @@
       "notebook": 11
     },
     "prose_ratio": 0.633,
-    "head": "880ab92b9a9124363a10acafd82daa42ecf402e1",
-    "last_commit": null
+    "head": "3be3bb30a09fd022bf093d8e29d9b9131eee1873",
+    "last_commit": "2026-10-27"
   },
   {
     "id": "jupyter-server/extension-cookiecutter",
@@ -4886,7 +4886,7 @@
     },
     "prose_ratio": 0.333,
     "head": "c03fda1fc878fd873b6482e77e9d34a9977e40b6",
-    "last_commit": null
+    "last_commit": "2022-12-07"
   },
   {
     "id": "jupyter-server/fps",
@@ -4943,7 +4943,7 @@
     },
     "prose_ratio": 0.259,
     "head": "b4e2d1f44f1d2e3826a79a8f587c816d86c5941e",
-    "last_commit": null
+    "last_commit": "2026-08-14"
   },
   {
     "id": "jupyter-server/gateway_provisioners",
@@ -5003,7 +5003,7 @@
     },
     "prose_ratio": 0.433,
     "head": "d2d6f36c66ef4e0e1e2f154ae1487d1441350b9f",
-    "last_commit": null
+    "last_commit": "2026-09-07"
   },
   {
     "id": "jupyter-server/jupyter-resource-usage",
@@ -5065,7 +5065,7 @@
     },
     "prose_ratio": 0.341,
     "head": "2e20198ba8f8789e1d079075c54f77a76e0bce4c",
-    "last_commit": null
+    "last_commit": "2026-08-11"
   },
   {
     "id": "jupyter-server/jupyter-scheduler",
@@ -5130,7 +5130,7 @@
     },
     "prose_ratio": 0.346,
     "head": "955883c1b33a7c366df0e3e7d9a9523dff48c9b4",
-    "last_commit": null
+    "last_commit": "2026-02-09"
   },
   {
     "id": "jupyter-server/jupyter_releaser",
@@ -5264,7 +5264,7 @@
     },
     "prose_ratio": 0.557,
     "head": "f27bf638436926ec2d2aea586f65e992f91fa44d",
-    "last_commit": null
+    "last_commit": "2026-10-22"
   },
   {
     "id": "jupyter-server/jupyter_server",
@@ -5280,7 +5280,7 @@
       "PYPI:jupyter-server"
     ],
     "downloads_last_month": 32556872,
-    "dependents": 5045,
+    "dependents": 5037,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5327,8 +5327,8 @@
       "web": 20
     },
     "prose_ratio": 0.321,
-    "head": "f8169d721a0e0abb9ca27266c83db5a3a09e29d7",
-    "last_commit": null
+    "head": "e39ebd56b3ed2b201aa615448ec6adbeed8fa99c",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyter-server/jupyter_server_fileid",
@@ -5385,7 +5385,7 @@
     },
     "prose_ratio": 0.368,
     "head": "c2902acd44b63a421e7226c3bc8b6856943d4c0d",
-    "last_commit": null
+    "last_commit": "2026-10-13"
   },
   {
     "id": "jupyter-server/jupyter_server_mathjax",
@@ -5433,7 +5433,7 @@
     },
     "prose_ratio": 0.2,
     "head": "286f3852ae2490f649c663638f3f2f2503599cf8",
-    "last_commit": null
+    "last_commit": "2022-07-14"
   },
   {
     "id": "jupyter-server/jupyter_server_terminals",
@@ -5449,7 +5449,7 @@
       "PYPI:jupyter-server-terminals"
     ],
     "downloads_last_month": 28569855,
-    "dependents": 5073,
+    "dependents": 5065,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5490,7 +5490,7 @@
     },
     "prose_ratio": 0.391,
     "head": "46563c0797a2d21526d0cc95c70dafc4e0e0440a",
-    "last_commit": null
+    "last_commit": "2026-01-14"
   },
   {
     "id": "jupyter-server/jupyter_ydoc",
@@ -5507,7 +5507,7 @@
       "NPM:@jupyter/ydoc"
     ],
     "downloads_last_month": 864279,
-    "dependents": 121,
+    "dependents": 122,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -5552,7 +5552,7 @@
     },
     "prose_ratio": 0.298,
     "head": "e3fa4365b42eea792fbddcb9d41e9280c0a259c7",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyter-server/jupyverse",
@@ -5647,7 +5647,7 @@
     },
     "prose_ratio": 0.434,
     "head": "d9bb22a97da09ca3fb521995f34ea5011273faf4",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyter-server/kernel_gateway",
@@ -5706,7 +5706,7 @@
     },
     "prose_ratio": 0.387,
     "head": "8c483ff06e6b88a579137b5045d3b90c2826b8b0",
-    "last_commit": null
+    "last_commit": "2024-03-12"
   },
   {
     "id": "jupyter-server/pytest-jupyter",
@@ -5762,7 +5762,7 @@
     },
     "prose_ratio": 0.3,
     "head": "9509dd22d3a29122373d8a5ae134632f10abce21",
-    "last_commit": null
+    "last_commit": "2025-10-16"
   },
   {
     "id": "jupyter-server/synchronizer",
@@ -5818,7 +5818,7 @@
     },
     "prose_ratio": 0.267,
     "head": "faa25ac7ba7683021a9026ac9e0512deadd837c8",
-    "last_commit": null
+    "last_commit": "2024-03-13"
   },
   {
     "id": "jupyter-server/team-compass",
@@ -5861,7 +5861,7 @@
     },
     "prose_ratio": 0.8,
     "head": "945d10d11e3a73e29b9c2905615feab001ab3d74",
-    "last_commit": null
+    "last_commit": "2026-10-20"
   },
   {
     "id": "jupyter-standards/.github",
@@ -5900,7 +5900,7 @@
     },
     "prose_ratio": 1.0,
     "head": "fdeed5444fcdaaf32e99cf45931f4c1e2d843e93",
-    "last_commit": null
+    "last_commit": "2023-10-09"
   },
   {
     "id": "jupyter-widgets/ipydatagrid",
@@ -5962,7 +5962,7 @@
     },
     "prose_ratio": 0.803,
     "head": "0685635938395866ba3f9b62bcca8fa4c973d7d7",
-    "last_commit": null
+    "last_commit": "2026-01-15"
   },
   {
     "id": "jupyter-widgets/ipyleaflet",
@@ -6020,7 +6020,7 @@
     },
     "prose_ratio": 0.693,
     "head": "612f4ebb800e50c0bae84e4d2b6bd3e622b7a12c",
-    "last_commit": null
+    "last_commit": "2026-05-07"
   },
   {
     "id": "jupyter-widgets/ipywidgets",
@@ -6045,7 +6045,7 @@
       "NPM:@jupyter-widgets/html-manager"
     ],
     "downloads_last_month": 31834051,
-    "dependents": 6753,
+    "dependents": 6760,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6085,7 +6085,7 @@
     },
     "prose_ratio": 0.485,
     "head": "8ada3542abe85fdc52e2bfeeecc07f8db351cb9c",
-    "last_commit": null
+    "last_commit": "2026-08-19"
   },
   {
     "id": "jupyter-widgets/jupyterlab-sidecar",
@@ -6145,7 +6145,7 @@
     },
     "prose_ratio": 0.5,
     "head": "02d394841ef3dbd4258b44a5d4ade750ea3167a6",
-    "last_commit": null
+    "last_commit": "2026-02-27"
   },
   {
     "id": "jupyter-widgets/midicontrols",
@@ -6158,10 +6158,10 @@
     "security_boundary": null,
     "rationale": "The repository publishes the ipymidicontrols Python package and @jupyter-widgets/midicontrols npm package, with setup.py, package.json, and source code in ipymidicontrols/ and src/, and is described as a Jupyter widget for interfacing with MIDI controllers.",
     "packages": [
-      "NPM:@jupyter-widgets/midicontrols",
-      "PYPI:ipymidicontrols"
+      "PYPI:ipymidicontrols",
+      "NPM:@jupyter-widgets/midicontrols"
     ],
-    "downloads_last_month": 53,
+    "downloads_last_month": 37,
     "dependents": 0,
     "used_by": {
       "ci": [],
@@ -6191,7 +6191,7 @@
     },
     "prose_ratio": 0.19,
     "head": "54e1cc31842984c7e4b2e9b52960abb7546d25f8",
-    "last_commit": null
+    "last_commit": "2019-11-18"
   },
   {
     "id": "jupyter-widgets/pythreejs",
@@ -6242,7 +6242,7 @@
     },
     "prose_ratio": 0.252,
     "head": "584fe393ff593319ce33cd53dd94c8625aa01c88",
-    "last_commit": null
+    "last_commit": "2023-02-20"
   },
   {
     "id": "jupyter-widgets/team-compass",
@@ -6280,7 +6280,7 @@
     },
     "prose_ratio": 1.0,
     "head": "1be9a4dd290ca82b1747108e5ad70497adb0bdf7",
-    "last_commit": null
+    "last_commit": "2025-12-12"
   },
   {
     "id": "jupyter-widgets/traittypes",
@@ -6296,7 +6296,7 @@
       "PYPI:traittypes"
     ],
     "downloads_last_month": 727236,
-    "dependents": 584,
+    "dependents": 572,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -6326,7 +6326,7 @@
     },
     "prose_ratio": 0.353,
     "head": "9a1db7c182bf2884110958303bc3f54f9ed8414f",
-    "last_commit": null
+    "last_commit": "2025-10-22"
   },
   {
     "id": "jupyter-widgets/tutorial",
@@ -6375,7 +6375,7 @@
     },
     "prose_ratio": 0.725,
     "head": "95da869df06b890bd79a7e569672dd8a2725ce01",
-    "last_commit": null
+    "last_commit": "2024-06-14"
   },
   {
     "id": "jupyter-widgets/tutorial-jupyterlite",
@@ -6420,7 +6420,7 @@
     },
     "prose_ratio": 1.0,
     "head": "5cc14dcfea0e6a01a90b089d81683665bc2efe11",
-    "last_commit": null
+    "last_commit": "2022-07-12"
   },
   {
     "id": "jupyter-widgets/widget-cookiecutter",
@@ -6467,7 +6467,7 @@
     },
     "prose_ratio": 0.286,
     "head": "347b812631f9e92f32bd2a8ccd78958a8fa8abed",
-    "last_commit": null
+    "last_commit": "2024-01-22"
   },
   {
     "id": "jupyter-widgets/widget-ts-cookiecutter",
@@ -6518,7 +6518,7 @@
     },
     "prose_ratio": 0.286,
     "head": "7e3339c6d32fc21396c5d32c750db9ea246a9346",
-    "last_commit": null
+    "last_commit": "2024-02-07"
   },
   {
     "id": "jupyter-xeus/.github",
@@ -6557,7 +6557,7 @@
     },
     "prose_ratio": 1.0,
     "head": "4bdd59730a3c2a0a93ebf71254ad55eb7f243f0c",
-    "last_commit": null
+    "last_commit": "2024-01-12"
   },
   {
     "id": "jupyter-xeus/cpp-terminal",
@@ -6606,7 +6606,7 @@
     },
     "prose_ratio": 0.117,
     "head": "463cc0b501dceeb89ec787e935e3e00115af4d0c",
-    "last_commit": null
+    "last_commit": "2026-10-14"
   },
   {
     "id": "jupyter-xeus/jupyter-xeus.github.io",
@@ -6646,7 +6646,7 @@
     },
     "prose_ratio": 1.0,
     "head": "34caebc71cda1171698172dd28dd3a886d69b198",
-    "last_commit": null
+    "last_commit": "2019-12-16"
   },
   {
     "id": "jupyter-xeus/robotframework-interpreter",
@@ -6697,7 +6697,7 @@
     },
     "prose_ratio": 0.067,
     "head": "cc2dfe5b595c46dc64701d577b739f58f94d5baa",
-    "last_commit": null
+    "last_commit": "2021-10-20"
   },
   {
     "id": "jupyter-xeus/xcanvas",
@@ -6743,7 +6743,7 @@
     },
     "prose_ratio": 0.571,
     "head": "265cb13105039505401de74084c9f98321348e94",
-    "last_commit": null
+    "last_commit": "2026-03-06"
   },
   {
     "id": "jupyter-xeus/xena",
@@ -6784,7 +6784,7 @@
     },
     "prose_ratio": 0.286,
     "head": "4b8077be0abaf697907775ea82408f475ffae173",
-    "last_commit": null
+    "last_commit": "2020-12-15"
   },
   {
     "id": "jupyter-xeus/xeus",
@@ -6831,7 +6831,7 @@
     },
     "prose_ratio": 0.301,
     "head": "89ddf2a78679c9851ade1c077db5808dce22f18c",
-    "last_commit": null
+    "last_commit": "2026-09-21"
   },
   {
     "id": "jupyter-xeus/xeus-brainfuck",
@@ -6875,7 +6875,7 @@
     },
     "prose_ratio": 0.706,
     "head": "0302ecf698b8bace54030eb8eae452110e7418ea",
-    "last_commit": null
+    "last_commit": "2026-03-20"
   },
   {
     "id": "jupyter-xeus/xeus-calc",
@@ -6922,7 +6922,7 @@
     },
     "prose_ratio": 0.5,
     "head": "22294b67f4033861644a306f31424243d5a3b848",
-    "last_commit": null
+    "last_commit": "2024-12-16"
   },
   {
     "id": "jupyter-xeus/xeus-client-test",
@@ -6960,7 +6960,7 @@
     },
     "prose_ratio": null,
     "head": "07d3a839ccfaf1d626e908d78689fbbc253fe9a0",
-    "last_commit": null
+    "last_commit": "2025-12-16"
   },
   {
     "id": "jupyter-xeus/xeus-cling",
@@ -7004,7 +7004,7 @@
     },
     "prose_ratio": 0.542,
     "head": "3788b129dbacda2c5653e787412bbfb0319d6c7b",
-    "last_commit": null
+    "last_commit": "2025-10-27"
   },
   {
     "id": "jupyter-xeus/xeus-cookiecutter",
@@ -7053,7 +7053,7 @@
     },
     "prose_ratio": 0.684,
     "head": "6a656cbf823141020a21b9ad33be593e873a4e7d",
-    "last_commit": null
+    "last_commit": "2026-03-16"
   },
   {
     "id": "jupyter-xeus/xeus-haskell",
@@ -7103,7 +7103,7 @@
     },
     "prose_ratio": 0.281,
     "head": "7c465750e2e6ac4b9bdbab2764c4ff5683e36db4",
-    "last_commit": null
+    "last_commit": "2026-08-28"
   },
   {
     "id": "jupyter-xeus/xeus-javascript",
@@ -7154,7 +7154,7 @@
     },
     "prose_ratio": 0.567,
     "head": "23f7e0081e23b1826aa8798ff45c48aa95cde341",
-    "last_commit": null
+    "last_commit": "2025-11-25"
   },
   {
     "id": "jupyter-xeus/xeus-lite",
@@ -7200,7 +7200,7 @@
     },
     "prose_ratio": 0.312,
     "head": "b5077c994171ebd1fce1cc7a58188426d6cafc5b",
-    "last_commit": null
+    "last_commit": "2026-03-05"
   },
   {
     "id": "jupyter-xeus/xeus-lua",
@@ -7247,7 +7247,7 @@
     },
     "prose_ratio": 0.618,
     "head": "a39a123375bba7a8eff6c7f8096e172261929c98",
-    "last_commit": null
+    "last_commit": "2026-04-10"
   },
   {
     "id": "jupyter-xeus/xeus-nelson",
@@ -7294,7 +7294,7 @@
     },
     "prose_ratio": 0.607,
     "head": "786e575970f8e6d34ea9807de67e430371512739",
-    "last_commit": null
+    "last_commit": "2024-07-12"
   },
   {
     "id": "jupyter-xeus/xeus-octave",
@@ -7344,7 +7344,7 @@
     },
     "prose_ratio": 0.508,
     "head": "b203877568c000ebf46811d378fa67893351e470",
-    "last_commit": null
+    "last_commit": "2026-03-11"
   },
   {
     "id": "jupyter-xeus/xeus-python",
@@ -7393,7 +7393,7 @@
     },
     "prose_ratio": 0.459,
     "head": "00563a4773084fb39b2a597b1aec9f3eb918daa2",
-    "last_commit": null
+    "last_commit": "2026-09-21"
   },
   {
     "id": "jupyter-xeus/xeus-python-shell",
@@ -7444,7 +7444,7 @@
     },
     "prose_ratio": 0.143,
     "head": "154993acb4aa49d34453dc5495de232c5fa52846",
-    "last_commit": null
+    "last_commit": "2026-08-14"
   },
   {
     "id": "jupyter-xeus/xeus-python-wheel",
@@ -7498,7 +7498,7 @@
     },
     "prose_ratio": 0.667,
     "head": "76b782aa3269c59c70270099c1c6b241e9005f5e",
-    "last_commit": null
+    "last_commit": "2026-07-23"
   },
   {
     "id": "jupyter-xeus/xeus-qt",
@@ -7544,7 +7544,7 @@
     },
     "prose_ratio": 0.5,
     "head": "67a82db74dcb72c320030dcf55de22bd52957697",
-    "last_commit": null
+    "last_commit": "2024-07-02"
   },
   {
     "id": "jupyter-xeus/xeus-qt-python",
@@ -7588,7 +7588,7 @@
     },
     "prose_ratio": 0.429,
     "head": "bc2fdadefc0981f483f49e9ca93a6cd575c86d40",
-    "last_commit": null
+    "last_commit": "2023-10-19"
   },
   {
     "id": "jupyter-xeus/xeus-r",
@@ -7639,7 +7639,7 @@
     },
     "prose_ratio": 0.447,
     "head": "b6be174a675d295e29775ff9b94bcbac73c33994",
-    "last_commit": null
+    "last_commit": "2026-10-21"
   },
   {
     "id": "jupyter-xeus/xeus-robot",
@@ -7686,7 +7686,7 @@
     },
     "prose_ratio": 0.455,
     "head": "91f24789d674f33ec18bcfec9bec4efff9fb4048",
-    "last_commit": null
+    "last_commit": "2023-01-16"
   },
   {
     "id": "jupyter-xeus/xeus-robot-wheel",
@@ -7740,7 +7740,7 @@
     },
     "prose_ratio": 0.5,
     "head": "49a66adf388fc507e8b6fece7aa9f45d41deff3f",
-    "last_commit": null
+    "last_commit": "2022-03-10"
   },
   {
     "id": "jupyter-xeus/xeus-sql",
@@ -7788,7 +7788,7 @@
     },
     "prose_ratio": 0.694,
     "head": "a2b12e5c9c6eec6d68d3025346e35a66544bb162",
-    "last_commit": null
+    "last_commit": "2026-03-16"
   },
   {
     "id": "jupyter-xeus/xeus-sqlite",
@@ -7838,7 +7838,7 @@
     },
     "prose_ratio": 0.5,
     "head": "09c14e8487822089a71b7bb5f47396a5801b45d4",
-    "last_commit": null
+    "last_commit": "2026-03-16"
   },
   {
     "id": "jupyter-xeus/xeus-uv",
@@ -7883,7 +7883,7 @@
     },
     "prose_ratio": 0.294,
     "head": "7a2a28b197ceb73cf728d328714628b1b9264bba",
-    "last_commit": null
+    "last_commit": "2026-01-14"
   },
   {
     "id": "jupyter-xeus/xeus-zmq",
@@ -7930,7 +7930,7 @@
     },
     "prose_ratio": 0.137,
     "head": "111e055a54c09818507db25f6d51dc0c780e3cd7",
-    "last_commit": null
+    "last_commit": "2026-10-16"
   },
   {
     "id": "jupyter-xeus/xhale",
@@ -7973,7 +7973,7 @@
     },
     "prose_ratio": 0.462,
     "head": "2027eece5c6c971706b48916dfbe07609621dfac",
-    "last_commit": null
+    "last_commit": "2025-10-27"
   },
   {
     "id": "jupyter-xeus/xleaflet",
@@ -8021,7 +8021,7 @@
     },
     "prose_ratio": 0.5,
     "head": "4361a47805f6ad92ee538f4c1e777a9de784398c",
-    "last_commit": null
+    "last_commit": "2026-03-06"
   },
   {
     "id": "jupyter-xeus/xproperty",
@@ -8069,7 +8069,7 @@
     },
     "prose_ratio": 0.522,
     "head": "919fb1e3ba720180a0434cb5d4a3b3d7599d47f2",
-    "last_commit": null
+    "last_commit": "2026-02-12"
   },
   {
     "id": "jupyter-xeus/xvega",
@@ -8114,7 +8114,7 @@
     },
     "prose_ratio": 0.014,
     "head": "82be020dad61c336bbb20cb52b4e00e9b388e6ee",
-    "last_commit": null
+    "last_commit": "2025-09-22"
   },
   {
     "id": "jupyter-xeus/xvega-bindings",
@@ -8159,7 +8159,7 @@
     },
     "prose_ratio": 0.375,
     "head": "f3e91b782ce222335fe05dea6f764b9b0bc54101",
-    "last_commit": null
+    "last_commit": "2025-10-21"
   },
   {
     "id": "jupyter-xeus/xwidgets",
@@ -8209,7 +8209,7 @@
     },
     "prose_ratio": 0.227,
     "head": "dc7e49bf9b6ab05c4b2f7a0848772e92279e40de",
-    "last_commit": null
+    "last_commit": "2026-10-12"
   },
   {
     "id": "jupyter/.github",
@@ -8247,7 +8247,7 @@
     },
     "prose_ratio": 1.0,
     "head": "c240347f9e5185e6dc1b14af678cbc0532ae3dcf",
-    "last_commit": null
+    "last_commit": "2026-09-14"
   },
   {
     "id": "jupyter/accessibility",
@@ -8301,7 +8301,7 @@
     },
     "prose_ratio": 0.965,
     "head": "440e52720df6ca241b04588c67d396b79e453532",
-    "last_commit": null
+    "last_commit": "2026-04-20"
   },
   {
     "id": "jupyter/atom-notebook",
@@ -8343,7 +8343,7 @@
     },
     "prose_ratio": 0.364,
     "head": "117e3171eb50f68e3dd22ca87e34e6020e041f6c",
-    "last_commit": null
+    "last_commit": "2020-10-29"
   },
   {
     "id": "jupyter/cdn.jupyter.org",
@@ -8383,7 +8383,7 @@
     },
     "prose_ratio": 0.667,
     "head": "a2076225aaaa169086015b62adc83a084c3be9f8",
-    "last_commit": null
+    "last_commit": "2020-03-04"
   },
   {
     "id": "jupyter/community-committee",
@@ -8434,7 +8434,7 @@
     },
     "prose_ratio": 1.0,
     "head": "b6d49f3354431fd61f388ed0b0608aaf790ae475",
-    "last_commit": null
+    "last_commit": "2026-10-22"
   },
   {
     "id": "jupyter/cookiecutter-docker-stacks",
@@ -8479,7 +8479,7 @@
     },
     "prose_ratio": 0.5,
     "head": "68410a7827ca33e8126bb31a9fb3bc93287d55ac",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyter/council",
@@ -8519,7 +8519,7 @@
     },
     "prose_ratio": 1.0,
     "head": "2e51f59aac5c6fb54d0ee20e12ddd8d086ca3fb9",
-    "last_commit": null
+    "last_commit": "2026-05-22"
   },
   {
     "id": "jupyter/design",
@@ -8560,7 +8560,7 @@
     },
     "prose_ratio": 1.0,
     "head": "969b623cd3b7428822a758952b8a7d6646fff658",
-    "last_commit": null
+    "last_commit": "2025-01-09"
   },
   {
     "id": "jupyter/distinguished-contributors",
@@ -8599,7 +8599,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cf8e054ae4dce9e9a9aa57a7ef28685a75bb7cd9",
-    "last_commit": null
+    "last_commit": "2025-11-07"
   },
   {
     "id": "jupyter/docker-stacks",
@@ -8657,8 +8657,8 @@
       "code": 143
     },
     "prose_ratio": 0.332,
-    "head": "4aa9f4159aafd409be2b5cbcce9c7d370ded45f0",
-    "last_commit": null
+    "head": "22d92ea8f1a25d077f3641f171f519fedd5e9ed2",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyter/docs-team-compass",
@@ -8705,7 +8705,7 @@
     },
     "prose_ratio": 0.889,
     "head": "1ddc14e6cbfbe4eae04056581106a80dcc2a9ec4",
-    "last_commit": null
+    "last_commit": "2025-02-19"
   },
   {
     "id": "jupyter/echo_kernel",
@@ -8759,7 +8759,7 @@
     },
     "prose_ratio": 0.286,
     "head": "ad2ff4f47e9c9ef6b63c440ed5f8739a19b8ad12",
-    "last_commit": null
+    "last_commit": "2025-09-09"
   },
   {
     "id": "jupyter/enhancement-proposals",
@@ -8809,7 +8809,7 @@
     },
     "prose_ratio": 0.933,
     "head": "906afd95af965994a3c7cea8af4f01723daa7716",
-    "last_commit": null
+    "last_commit": "2026-09-16"
   },
   {
     "id": "jupyter/foundations-and-standards-team-compass",
@@ -8852,7 +8852,7 @@
     },
     "prose_ratio": 0.769,
     "head": "ebee4937dfddf2cf081d52520d995c9b78a09b28",
-    "last_commit": null
+    "last_commit": "2024-10-23"
   },
   {
     "id": "jupyter/github-data",
@@ -8902,7 +8902,7 @@
     },
     "prose_ratio": 0.667,
     "head": "6e358088ba18fab5a0fb8a811c995d191e39f6d4",
-    "last_commit": null
+    "last_commit": "2026-09-11"
   },
   {
     "id": "jupyter/governance",
@@ -8950,7 +8950,7 @@
     },
     "prose_ratio": 0.942,
     "head": "d9226e35fa72f8a595966c73a8921c0f0c04b1c2",
-    "last_commit": null
+    "last_commit": "2026-10-09"
   },
   {
     "id": "jupyter/ideas",
@@ -8988,7 +8988,7 @@
     },
     "prose_ratio": 1.0,
     "head": "37bdd6acde0e72515b45e06f35d1f14a6b97b7a2",
-    "last_commit": null
+    "last_commit": "2018-09-12"
   },
   {
     "id": "jupyter/jupyter",
@@ -9004,7 +9004,7 @@
       "PYPI:jupyter"
     ],
     "downloads_last_month": 12288648,
-    "dependents": 1896,
+    "dependents": 1880,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9040,7 +9040,7 @@
     },
     "prose_ratio": 0.971,
     "head": "6b5eb0f469c7bc3ea43d6d2a0ba1057853c9a3a5",
-    "last_commit": null
+    "last_commit": "2026-07-09"
   },
   {
     "id": "jupyter/jupyter-communitycalls",
@@ -9080,7 +9080,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cf0213d47b84b2c10630f64d6773d7903ac48d83",
-    "last_commit": null
+    "last_commit": "2024-02-01"
   },
   {
     "id": "jupyter/jupyter-packaging",
@@ -9096,7 +9096,7 @@
       "PYPI:jupyter-packaging"
     ],
     "downloads_last_month": 516852,
-    "dependents": 94,
+    "dependents": 80,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9143,7 +9143,7 @@
     },
     "prose_ratio": 0.158,
     "head": "4915fc8e36e38111b96c23e28e37b2873ca57907",
-    "last_commit": null
+    "last_commit": "2024-04-05"
   },
   {
     "id": "jupyter/jupyter-sphinx",
@@ -9196,7 +9196,7 @@
     },
     "prose_ratio": 0.797,
     "head": "bd4c85dc8cc08eab5251ffee2a94ec25a669c5bb",
-    "last_commit": null
+    "last_commit": "2026-09-29"
   },
   {
     "id": "jupyter/jupyter.github.io",
@@ -9244,8 +9244,8 @@
       "code": 10
     },
     "prose_ratio": 0.968,
-    "head": "c41e13a50df7f9f15ac80652957e53d479a48b0f",
-    "last_commit": null
+    "head": "9a1f8c2ed771778a4acdd58018eed89304c55bc8",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyter/jupyter_client",
@@ -9303,7 +9303,7 @@
     },
     "prose_ratio": 0.247,
     "head": "978361b3785dcd9cba6c733f4555e833e88fc0df",
-    "last_commit": null
+    "last_commit": "2026-08-28"
   },
   {
     "id": "jupyter/jupyter_console",
@@ -9319,7 +9319,7 @@
       "PYPI:jupyter-console"
     ],
     "downloads_last_month": 12492174,
-    "dependents": 2024,
+    "dependents": 2008,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9354,7 +9354,7 @@
     },
     "prose_ratio": 0.304,
     "head": "29f882adec78a60a0891c69087436503493905ce",
-    "last_commit": null
+    "last_commit": "2026-09-14"
   },
   {
     "id": "jupyter/jupyter_core",
@@ -9370,7 +9370,7 @@
       "PYPI:jupyter-core"
     ],
     "downloads_last_month": 77056466,
-    "dependents": 11226,
+    "dependents": 11231,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9414,7 +9414,7 @@
     },
     "prose_ratio": 0.227,
     "head": "4c4f526adab04ae6bf7821f65a5adbd011aa27ac",
-    "last_commit": null
+    "last_commit": "2026-08-24"
   },
   {
     "id": "jupyter/jupyter_events",
@@ -9430,7 +9430,7 @@
       "PYPI:jupyter-events"
     ],
     "downloads_last_month": 28962752,
-    "dependents": 5216,
+    "dependents": 5209,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9472,7 +9472,7 @@
     },
     "prose_ratio": 0.405,
     "head": "deb61b4924d808234d295fe316360f6478584acb",
-    "last_commit": null
+    "last_commit": "2026-09-28"
   },
   {
     "id": "jupyter/jupyter_kernel_test",
@@ -9528,7 +9528,7 @@
     },
     "prose_ratio": 0.375,
     "head": "5f2c65271b48dc95fc75a9585cb1d6db0bb55557",
-    "last_commit": null
+    "last_commit": "2024-03-12"
   },
   {
     "id": "jupyter/jvm-magics",
@@ -9569,7 +9569,7 @@
     },
     "prose_ratio": 0.111,
     "head": "4cba58776d3ceec4b195d9c91a8464321bbca8f7",
-    "last_commit": null
+    "last_commit": "2019-02-19"
   },
   {
     "id": "jupyter/jvm-repr",
@@ -9610,7 +9610,7 @@
     },
     "prose_ratio": 0.077,
     "head": "2e50ad4f70bde84018a1f1ee469517d2b63cd343",
-    "last_commit": null
+    "last_commit": "2020-01-16"
   },
   {
     "id": "jupyter/kernel-protocol",
@@ -9652,7 +9652,7 @@
     },
     "prose_ratio": 0.75,
     "head": "ea6f3c873925afd0ccd7faf9259ab16555855184",
-    "last_commit": null
+    "last_commit": "2023-06-12"
   },
   {
     "id": "jupyter/kernel_gateway_demos",
@@ -9695,7 +9695,7 @@
     },
     "prose_ratio": 0.562,
     "head": "cf92ed7115390c410b50487b490ec92a55fc22f0",
-    "last_commit": null
+    "last_commit": "2020-10-07"
   },
   {
     "id": "jupyter/kernels-team-compass",
@@ -9738,7 +9738,7 @@
     },
     "prose_ratio": 0.769,
     "head": "b7e090737d7ee542bfcb2596f1299d51338852f0",
-    "last_commit": null
+    "last_commit": "2025-03-13"
   },
   {
     "id": "jupyter/markdown",
@@ -9777,7 +9777,7 @@
     },
     "prose_ratio": 1.0,
     "head": "1165869d3967593bdf622c113ce103ff718ab569",
-    "last_commit": null
+    "last_commit": "2023-07-04"
   },
   {
     "id": "jupyter/nbclassic",
@@ -9840,7 +9840,7 @@
     },
     "prose_ratio": 0.525,
     "head": "173fdfecbda8e4e6a70d865fda7970ceb5239137",
-    "last_commit": null
+    "last_commit": "2026-04-16"
   },
   {
     "id": "jupyter/nbclient",
@@ -9856,7 +9856,7 @@
       "PYPI:nbclient"
     ],
     "downloads_last_month": 50729821,
-    "dependents": 6386,
+    "dependents": 6379,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9899,7 +9899,7 @@
     },
     "prose_ratio": 0.679,
     "head": "0811ff44c63c9853c4d6ba7265d7042ca7f8742a",
-    "last_commit": null
+    "last_commit": "2026-06-05"
   },
   {
     "id": "jupyter/nbconvert",
@@ -9915,7 +9915,7 @@
       "PYPI:nbconvert"
     ],
     "downloads_last_month": 49944679,
-    "dependents": 6147,
+    "dependents": 6140,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -9959,7 +9959,7 @@
     },
     "prose_ratio": 0.412,
     "head": "e681152f214b65387f875aad96a4726994533a0b",
-    "last_commit": null
+    "last_commit": "2026-10-12"
   },
   {
     "id": "jupyter/nbconvert-examples",
@@ -10001,7 +10001,7 @@
     },
     "prose_ratio": 0.619,
     "head": "039724f4251cc8183f85534785fbee14809248ac",
-    "last_commit": null
+    "last_commit": "2019-01-13"
   },
   {
     "id": "jupyter/nbdime",
@@ -10068,7 +10068,7 @@
     },
     "prose_ratio": 0.477,
     "head": "744c97897e2c33a1b3f04f5834ee6e70478219a2",
-    "last_commit": null
+    "last_commit": "2026-06-10"
   },
   {
     "id": "jupyter/nbformat",
@@ -10085,7 +10085,7 @@
       "NPM:nbformat-schema"
     ],
     "downloads_last_month": 76592205,
-    "dependents": 8353,
+    "dependents": 8350,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10128,7 +10128,7 @@
     },
     "prose_ratio": 0.269,
     "head": "cfb73afdd2a7f358953f2a34f747fd0d0e9d6288",
-    "last_commit": null
+    "last_commit": "2026-10-15"
   },
   {
     "id": "jupyter/nbgrader",
@@ -10142,8 +10142,8 @@
     "rationale": "The repository is nbgrader, a package with Python and TypeScript code (nbgrader/ and src/) published to PyPI and npm, as shown by pyproject.toml, package.json, and CI workflows.",
     "packages": [
       "PYPI:nbgrader",
-      "NPM:nbgrader",
-      "NPM:@jupyter/nbgrader"
+      "NPM:@jupyter/nbgrader",
+      "NPM:nbgrader"
     ],
     "downloads_last_month": 11171,
     "dependents": 17,
@@ -10194,8 +10194,8 @@
       "web": 20
     },
     "prose_ratio": 0.471,
-    "head": "c2e1ab63512b766aae2d2018fbc8f60c00fc7d19",
-    "last_commit": null
+    "head": "71d340c114a2661e7f0ba9b57cb80b23538d78fa",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyter/nbmanager",
@@ -10236,7 +10236,7 @@
     },
     "prose_ratio": 0.64,
     "head": "dd26a71c0b625773dab582d47d713d574f2af84b",
-    "last_commit": null
+    "last_commit": "2019-01-27"
   },
   {
     "id": "jupyter/nbviewer",
@@ -10290,7 +10290,7 @@
     },
     "prose_ratio": 0.669,
     "head": "5fde5fecfbe2c1bdb19d451ca7e2ab698f985aa2",
-    "last_commit": null
+    "last_commit": "2026-09-04"
   },
   {
     "id": "jupyter/nbviewer.org-deploy",
@@ -10340,7 +10340,7 @@
     },
     "prose_ratio": 0.25,
     "head": "46d27d053886a4ed2e2ee70b3abc754858476cdd",
-    "last_commit": null
+    "last_commit": "2026-09-04"
   },
   {
     "id": "jupyter/notebook",
@@ -10356,19 +10356,19 @@
       "PYPI:notebook",
       "NPM:@jupyter-notebook/application",
       "NPM:@jupyter-notebook/help-extension",
-      "NPM:@jupyter-notebook/console-extension",
-      "NPM:@jupyter-notebook/docmanager-extension",
-      "NPM:@jupyter-notebook/lab-extension",
-      "NPM:@jupyter-notebook/notebook-extension",
       "NPM:@jupyter-notebook/tree",
-      "NPM:@jupyter-notebook/terminal-extension",
-      "NPM:@jupyter-notebook/application-extension",
-      "NPM:@jupyter-notebook/documentsearch-extension",
       "NPM:@jupyter-notebook/ui-components",
-      "NPM:@jupyter-notebook/tree-extension"
+      "NPM:@jupyter-notebook/application-extension",
+      "NPM:@jupyter-notebook/notebook-extension",
+      "NPM:@jupyter-notebook/docmanager-extension",
+      "NPM:@jupyter-notebook/console-extension",
+      "NPM:@jupyter-notebook/tree-extension",
+      "NPM:@jupyter-notebook/terminal-extension",
+      "NPM:@jupyter-notebook/lab-extension",
+      "NPM:@jupyter-notebook/documentsearch-extension"
     ],
     "downloads_last_month": 28757551,
-    "dependents": 3045,
+    "dependents": 3031,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10419,8 +10419,8 @@
       "media": 96
     },
     "prose_ratio": 0.653,
-    "head": "6cde9b9ddec821312b1ca16492233becfe145fca",
-    "last_commit": null
+    "head": "b5a05a862382c90bda0343af3535098a5548c023",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyter/notebook_shim",
@@ -10436,7 +10436,7 @@
       "PYPI:notebook-shim"
     ],
     "downloads_last_month": 27317089,
-    "dependents": 4487,
+    "dependents": 4475,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -10477,7 +10477,7 @@
     },
     "prose_ratio": 0.2,
     "head": "e1baccba8e2201e41991eb1c6bd96ff94efa10cc",
-    "last_commit": null
+    "last_commit": "2026-10-15"
   },
   {
     "id": "jupyter/papyri",
@@ -10531,7 +10531,7 @@
     },
     "prose_ratio": 0.207,
     "head": "31b4436456cb3434e59fe1a34c8b8b780be93d93",
-    "last_commit": null
+    "last_commit": "2026-10-07"
   },
   {
     "id": "jupyter/pr-triage-board-bot",
@@ -10581,7 +10581,7 @@
     },
     "prose_ratio": 0.077,
     "head": "a2b556b277251241f05e394cfdfed5f1ad717893",
-    "last_commit": null
+    "last_commit": "2026-06-01"
   },
   {
     "id": "jupyter/practice",
@@ -10619,7 +10619,7 @@
     },
     "prose_ratio": 1.0,
     "head": "a32a166b71874d575bab44d69dbd6a0460b58b8f",
-    "last_commit": null
+    "last_commit": "2018-08-25"
   },
   {
     "id": "jupyter/roadmap",
@@ -10658,7 +10658,7 @@
     },
     "prose_ratio": 1.0,
     "head": "40c95da21278fd3c1ecf641777febb0259671ba5",
-    "last_commit": null
+    "last_commit": "2019-07-16"
   },
   {
     "id": "jupyter/schema",
@@ -10700,7 +10700,7 @@
     },
     "prose_ratio": 0.667,
     "head": "6ab0f1f8d8387a00e08287162112df6b332b27d9",
-    "last_commit": null
+    "last_commit": "2025-12-09"
   },
   {
     "id": "jupyter/security",
@@ -10742,7 +10742,7 @@
     },
     "prose_ratio": 0.926,
     "head": "d32454e27c85cef024c019334b4c147365125f56",
-    "last_commit": null
+    "last_commit": "2026-10-19"
   },
   {
     "id": "jupyter/software-steering-council-team-compass",
@@ -10785,7 +10785,7 @@
     },
     "prose_ratio": 0.667,
     "head": "0fb17b29f685a3fe6e2c62fb1cdf0a4cd989ea14",
-    "last_commit": null
+    "last_commit": "2026-08-31"
   },
   {
     "id": "jupyter/sphinxcontrib_github_alt",
@@ -10831,7 +10831,7 @@
     },
     "prose_ratio": 0.667,
     "head": "d53e47dba537ae17ebecd66e1d23ff05ad94cce3",
-    "last_commit": null
+    "last_commit": "2020-04-27"
   },
   {
     "id": "jupyter/surveys",
@@ -10881,7 +10881,7 @@
     },
     "prose_ratio": 0.911,
     "head": "81bbb9b0bc578f7c03387da60cd217b09ca34a92",
-    "last_commit": null
+    "last_commit": "2026-09-07"
   },
   {
     "id": "jupyter/team-compass-template",
@@ -10924,7 +10924,7 @@
     },
     "prose_ratio": 0.786,
     "head": "c12f15423ce3ffda5c68bed4dc614c02eb438ddf",
-    "last_commit": null
+    "last_commit": "2022-05-25"
   },
   {
     "id": "jupyter/telemetry",
@@ -10977,7 +10977,7 @@
     },
     "prose_ratio": 0.414,
     "head": "2975fcac06cb3ffa5872258669990f488547e0c1",
-    "last_commit": null
+    "last_commit": "2024-05-10"
   },
   {
     "id": "jupyter/terminado",
@@ -10993,7 +10993,7 @@
       "PYPI:terminado"
     ],
     "downloads_last_month": 29806864,
-    "dependents": 5255,
+    "dependents": 5246,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -11033,8 +11033,8 @@
       "web": 2
     },
     "prose_ratio": 0.407,
-    "head": "23a0bf771107fb01ddffdf342b1d5348ad6c702d",
-    "last_commit": null
+    "head": "16da0b6286d99152f36aeedf17f32e55d426a74f",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyter/testpath",
@@ -11080,7 +11080,7 @@
     },
     "prose_ratio": 0.421,
     "head": "5c6ccfda4db8ac9d5b89c304c1ede54a6d3d91c6",
-    "last_commit": null
+    "last_commit": "2026-09-15"
   },
   {
     "id": "jupyter/try-jupyter",
@@ -11129,8 +11129,8 @@
       "code": 5
     },
     "prose_ratio": 0.688,
-    "head": "e9cf252030c826c6b6083a7fea6dac880a290e57",
-    "last_commit": null
+    "head": "d178bd53e9d234b7936255e2150d11a0270a23dd",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyter/try.jupyter.org",
@@ -11171,7 +11171,7 @@
     },
     "prose_ratio": 1.0,
     "head": "e86948f0248b6a7fb9ffff988c503446b68cfd1d",
-    "last_commit": null
+    "last_commit": "2018-03-03"
   },
   {
     "id": "jupytercon/2020-Cheukting",
@@ -11218,7 +11218,7 @@
     },
     "prose_ratio": 1.0,
     "head": "5b2c1c5e59b80fa063547605abf0ab8924e2bfd1",
-    "last_commit": null
+    "last_commit": "2020-10-08"
   },
   {
     "id": "jupytercon/2020-ClusteringAlgorithms",
@@ -11265,7 +11265,7 @@
     },
     "prose_ratio": 1.0,
     "head": "fd2eb8bd5f93b7b5f6a3f7f6418e49447a413f86",
-    "last_commit": null
+    "last_commit": "2020-10-06"
   },
   {
     "id": "jupytercon/2020-ericmjl",
@@ -11307,7 +11307,7 @@
     },
     "prose_ratio": 0.583,
     "head": "e972b5a4cf50cf236d04a081ee1c49444e8b7416",
-    "last_commit": null
+    "last_commit": "2020-11-27"
   },
   {
     "id": "jupytercon/2020-eteq",
@@ -11353,7 +11353,7 @@
     },
     "prose_ratio": 1.0,
     "head": "29f4c1223135cc3d705e28f09cc425dce9cb719b",
-    "last_commit": null
+    "last_commit": "2020-10-08"
   },
   {
     "id": "jupytercon/2020-ethics-culture-opensource-tutorial",
@@ -11397,7 +11397,7 @@
     },
     "prose_ratio": 1.0,
     "head": "693475bdd8bbef6eae8f86574ce84d38d8bbafc3",
-    "last_commit": null
+    "last_commit": "2020-10-13"
   },
   {
     "id": "jupytercon/2020-jedbrown",
@@ -11441,7 +11441,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cab67b4b9d5591b27ee27265377ee3358884fa75",
-    "last_commit": null
+    "last_commit": "2020-09-21"
   },
   {
     "id": "jupytercon/2020-juanklopper",
@@ -11483,7 +11483,7 @@
     },
     "prose_ratio": 1.0,
     "head": "a29a820280890ac09afbb988b3def13143a49ab7",
-    "last_commit": null
+    "last_commit": "2020-10-12"
   },
   {
     "id": "jupytercon/2020-jupyterbook-with-turing-way",
@@ -11529,7 +11529,7 @@
     },
     "prose_ratio": 1.0,
     "head": "7d7baf2b8df420299e6ea0af054693680857a503",
-    "last_commit": null
+    "last_commit": "2020-10-28"
   },
   {
     "id": "jupytercon/2020-mattharrison",
@@ -11574,7 +11574,7 @@
     },
     "prose_ratio": 1.0,
     "head": "2124d7e14b1912b508e4fc7d3193e6f8015b15ad",
-    "last_commit": null
+    "last_commit": "2020-09-10"
   },
   {
     "id": "jupytercon/2020-OpenSourceCommunities",
@@ -11619,7 +11619,7 @@
     },
     "prose_ratio": 1.0,
     "head": "1c0cec10a92a78185900afe4672cb28b513f7efb",
-    "last_commit": null
+    "last_commit": "2020-10-01"
   },
   {
     "id": "jupytercon/2020-OpenSourceFunding",
@@ -11664,7 +11664,7 @@
     },
     "prose_ratio": 1.0,
     "head": "6416d0e8c541cc1db44fc79ca9614a9ea1acf248",
-    "last_commit": null
+    "last_commit": "2020-10-09"
   },
   {
     "id": "jupytercon/2020-posters-033-stix",
@@ -11703,7 +11703,7 @@
     },
     "prose_ratio": 1.0,
     "head": "d4d7a030fcc2ccd3dd5e6b65de0f744fbefc5a83",
-    "last_commit": null
+    "last_commit": "2020-10-13"
   },
   {
     "id": "jupytercon/2020-posters-047-lee",
@@ -11742,7 +11742,7 @@
     },
     "prose_ratio": 1.0,
     "head": "b9632556c31a231d336c617a18464b777d3ef410",
-    "last_commit": null
+    "last_commit": "2020-10-13"
   },
   {
     "id": "jupytercon/2020-posters-048-Grosch",
@@ -11781,7 +11781,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cddde46a5e62a70629f33d8c787c77cda8e66060",
-    "last_commit": null
+    "last_commit": "2020-10-13"
   },
   {
     "id": "jupytercon/2020-posters-057-lippert",
@@ -11820,7 +11820,7 @@
     },
     "prose_ratio": 1.0,
     "head": "3d381f12b34096584a6c321f23d173c15c704b40",
-    "last_commit": null
+    "last_commit": "2020-10-13"
   },
   {
     "id": "jupytercon/2020-posters-103-brochart",
@@ -11859,7 +11859,7 @@
     },
     "prose_ratio": 1.0,
     "head": "bd33d4ad4f86c9378476c16fd5f7c18190318cf1",
-    "last_commit": null
+    "last_commit": "2020-10-13"
   },
   {
     "id": "jupytercon/2020-sdruskat",
@@ -11905,7 +11905,7 @@
     },
     "prose_ratio": 1.0,
     "head": "25da3574f48c7ea33905f543817f527fc1fb4979",
-    "last_commit": null
+    "last_commit": "2020-10-09"
   },
   {
     "id": "jupytercon/2020-shlomihod",
@@ -11952,7 +11952,7 @@
     },
     "prose_ratio": 1.0,
     "head": "c992e2b547192b1fa1c0c5dc9579f03d6ca718bc",
-    "last_commit": null
+    "last_commit": "2020-10-06"
   },
   {
     "id": "jupytercon/2020-tracks",
@@ -11991,7 +11991,7 @@
     },
     "prose_ratio": 1.0,
     "head": "0ca4f83411e39908594949f1552247500ee52735",
-    "last_commit": null
+    "last_commit": "2020-10-11"
   },
   {
     "id": "jupytercon/2020-widgets-tutorial",
@@ -12040,7 +12040,7 @@
     },
     "prose_ratio": 0.883,
     "head": "d29de1826a1788a611e3fd5bbaf01dc690fe2f3d",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupytercon/2020-willingc",
@@ -12085,7 +12085,7 @@
     },
     "prose_ratio": 1.0,
     "head": "8eda34a294cc8f1e9572fd49cb7aa7c794e762c2",
-    "last_commit": null
+    "last_commit": "2020-10-10"
   },
   {
     "id": "jupytercon/2020-zronaghi",
@@ -12132,7 +12132,7 @@
     },
     "prose_ratio": 1.0,
     "head": "b88a9683105d8ed0599b329e3a4b4a35ac8a5897",
-    "last_commit": null
+    "last_commit": "2020-10-05"
   },
   {
     "id": "jupytercon/conf-session2020",
@@ -12170,7 +12170,7 @@
     },
     "prose_ratio": 1.0,
     "head": "d3345dcdc2a67ae35981f0ae9849e7b24b5c2ea6",
-    "last_commit": null
+    "last_commit": "2020-08-28"
   },
   {
     "id": "jupytercon/jupytercon2020-developingextensions",
@@ -12218,7 +12218,7 @@
     },
     "prose_ratio": 0.556,
     "head": "5b9b902aae6b2ecf28592322160d68503c03d0e8",
-    "last_commit": null
+    "last_commit": "2020-10-08"
   },
   {
     "id": "jupytercon/jupytercon2020-website",
@@ -12266,7 +12266,7 @@
     },
     "prose_ratio": 0.939,
     "head": "50e3ab8c5f247526e6e3b001ca6e08f11bfd529d",
-    "last_commit": null
+    "last_commit": "2022-10-21"
   },
   {
     "id": "jupytercon/jupytercon2025-developingextensions",
@@ -12314,7 +12314,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cd76a2db4952f5179b14096bff7366f067cdb3ab",
-    "last_commit": null
+    "last_commit": "2025-11-19"
   },
   {
     "id": "jupytercon/jupytercon2025-developingextensions-demo",
@@ -12375,7 +12375,7 @@
     },
     "prose_ratio": 0.433,
     "head": "6df5e9939ee090b3760e511a33371a26c66b721d",
-    "last_commit": null
+    "last_commit": "2025-10-29"
   },
   {
     "id": "jupytercon/tutorial2020",
@@ -12419,7 +12419,7 @@
     },
     "prose_ratio": 1.0,
     "head": "ed56a9570f7655578ddf42c37185926304a06162",
-    "last_commit": null
+    "last_commit": "2020-09-07"
   },
   {
     "id": "jupyterhealth/.github",
@@ -12457,7 +12457,7 @@
     },
     "prose_ratio": 1.0,
     "head": "54e19bd6cd7d319ec36e3f09141af77ae0fc5b7f",
-    "last_commit": null
+    "last_commit": "2026-10-22"
   },
   {
     "id": "jupyterhealth/demos",
@@ -12506,7 +12506,7 @@
     },
     "prose_ratio": 0.589,
     "head": "2238d949729466053d100298041173268b9985fd",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyterhealth/edgemed-demo-app",
@@ -12548,7 +12548,7 @@
     },
     "prose_ratio": 0.914,
     "head": "246acc62c92d9124e3a954111e1ddbb9ed1b0d92",
-    "last_commit": null
+    "last_commit": "2026-10-20"
   },
   {
     "id": "jupyterhealth/fhir-cross-version",
@@ -12589,7 +12589,7 @@
     },
     "prose_ratio": 0.5,
     "head": "8113cd23751e23824816298af4bed8d41018beb0",
-    "last_commit": null
+    "last_commit": "2026-03-25"
   },
   {
     "id": "jupyterhealth/helm-charts",
@@ -12636,7 +12636,7 @@
     },
     "prose_ratio": 0.625,
     "head": "81315f1641b81cbb3b045c6adc605e814f44ab6a",
-    "last_commit": null
+    "last_commit": "2026-10-08"
   },
   {
     "id": "jupyterhealth/hub",
@@ -12683,7 +12683,7 @@
     },
     "prose_ratio": 0.929,
     "head": "6d82819685895ca683f8f22afe48c18bd03d866d",
-    "last_commit": null
+    "last_commit": "2026-10-05"
   },
   {
     "id": "jupyterhealth/initiatives",
@@ -12728,7 +12728,7 @@
     },
     "prose_ratio": 0.167,
     "head": "dba239a3648634610f9a85415ce2510ad929d3f0",
-    "last_commit": null
+    "last_commit": "2026-10-14"
   },
   {
     "id": "jupyterhealth/jhe-smart-demo",
@@ -12772,7 +12772,7 @@
     },
     "prose_ratio": 0.286,
     "head": "dd1fa7e1d5204a4f7e68ea5864f941579bf4bca4",
-    "last_commit": null
+    "last_commit": "2026-02-04"
   },
   {
     "id": "jupyterhealth/jhe-stress",
@@ -12814,7 +12814,7 @@
     },
     "prose_ratio": 0.5,
     "head": "2c118bfb90ee6ab082d6963bfcc7d357559d8164",
-    "last_commit": null
+    "last_commit": "2026-09-23"
   },
   {
     "id": "jupyterhealth/jupyter-smart-on-fhir",
@@ -12863,7 +12863,7 @@
     },
     "prose_ratio": 0.231,
     "head": "a0a31bb850d0c53d5e3b61a7326a36ca6bba5c31",
-    "last_commit": null
+    "last_commit": "2026-10-07"
   },
   {
     "id": "jupyterhealth/jupyterhealth-client",
@@ -12913,7 +12913,7 @@
     },
     "prose_ratio": 0.5,
     "head": "15d88eb66276a393f3f6cf0f94ebab42a7e93953",
-    "last_commit": null
+    "last_commit": "2026-10-12"
   },
   {
     "id": "jupyterhealth/jupyterhealth-demo-deploy",
@@ -12959,7 +12959,7 @@
     },
     "prose_ratio": 0.5,
     "head": "2020191984f4e530f0b8ee2bbbe57824535071fd",
-    "last_commit": null
+    "last_commit": "2026-10-08"
   },
   {
     "id": "jupyterhealth/jupyterhealth-exchange",
@@ -13013,7 +13013,7 @@
     },
     "prose_ratio": 0.222,
     "head": "3cb9e210e3c3a77ff582e2ba02214ac723b0c547",
-    "last_commit": null
+    "last_commit": "2026-10-08"
   },
   {
     "id": "jupyterhealth/jupyterhealth-sof-provider-template",
@@ -13061,7 +13061,7 @@
     },
     "prose_ratio": 0.318,
     "head": "4a86d186a433c326504378bdb49983848d6f9623",
-    "last_commit": null
+    "last_commit": "2026-10-07"
   },
   {
     "id": "jupyterhealth/jupyterhealth-software",
@@ -13099,7 +13099,7 @@
     },
     "prose_ratio": 1.0,
     "head": "dcf1b072fcd06488968716019d2fe5b59890c96e",
-    "last_commit": null
+    "last_commit": "2024-06-20"
   },
   {
     "id": "jupyterhealth/jupyterhealth.github.io",
@@ -13146,7 +13146,7 @@
     },
     "prose_ratio": 0.938,
     "head": "f9f9cc02f407d35aea35ca01ba46165ac0c2f137",
-    "last_commit": null
+    "last_commit": "2026-10-23"
   },
   {
     "id": "jupyterhealth/jupyterhealth.org",
@@ -13195,7 +13195,7 @@
     },
     "prose_ratio": 0.659,
     "head": "714d67624e4fb375809e2b8c75a7be96c7c9255d",
-    "last_commit": null
+    "last_commit": "2026-10-07"
   },
   {
     "id": "jupyterhealth/myst-site-article",
@@ -13240,7 +13240,7 @@
     },
     "prose_ratio": 1.0,
     "head": "43d27b4bf59c8a990df2dab2a3473c9043e05dd3",
-    "last_commit": null
+    "last_commit": "2024-04-22"
   },
   {
     "id": "jupyterhealth/myst-site-book",
@@ -13285,7 +13285,7 @@
     },
     "prose_ratio": 1.0,
     "head": "f27d0813090423b11d7466ea0e2971a792da2b2d",
-    "last_commit": null
+    "last_commit": "2024-05-08"
   },
   {
     "id": "jupyterhealth/omh-shim",
@@ -13335,7 +13335,7 @@
     },
     "prose_ratio": 0.346,
     "head": "1892a182d6b6c8255b5663a61086fe27eaa67cc0",
-    "last_commit": null
+    "last_commit": "2026-09-19"
   },
   {
     "id": "jupyterhealth/partner-client-docker",
@@ -13376,7 +13376,7 @@
     },
     "prose_ratio": 0.364,
     "head": "27e63298a95c92071beba854ace9bbcc0d1717e4",
-    "last_commit": null
+    "last_commit": "2024-04-07"
   },
   {
     "id": "jupyterhealth/singleuser-image",
@@ -13426,7 +13426,7 @@
     },
     "prose_ratio": 0.4,
     "head": "e980a453ad2d7a7871a55747b4d3c45dd29c1595",
-    "last_commit": null
+    "last_commit": "2026-10-14"
   },
   {
     "id": "jupyterhealth/sof-cgm-demo",
@@ -13474,7 +13474,7 @@
     },
     "prose_ratio": 0.292,
     "head": "c69e01f6639bfa509434cff4098c4d909e813d5e",
-    "last_commit": null
+    "last_commit": "2026-10-08"
   },
   {
     "id": "jupyterhealth/software-documentation",
@@ -13522,7 +13522,7 @@
     },
     "prose_ratio": 1.0,
     "head": "49a35c93b740f9eb4db1a0c055ea391403ca36f2",
-    "last_commit": null
+    "last_commit": "2026-10-05"
   },
   {
     "id": "jupyterhealth/team-compass",
@@ -13561,7 +13561,7 @@
     },
     "prose_ratio": 1.0,
     "head": "86708c186b15aa68cfa41b316655d50ef68fced5",
-    "last_commit": null
+    "last_commit": "2025-09-15"
   },
   {
     "id": "jupyterhub/.github",
@@ -13601,7 +13601,7 @@
     },
     "prose_ratio": 1.0,
     "head": "1ce38bf4a1d1480cbb16c0d7180ef8bb7fca0493",
-    "last_commit": null
+    "last_commit": "2026-08-10"
   },
   {
     "id": "jupyterhub/action-get-quayio-tags",
@@ -13648,7 +13648,7 @@
     },
     "prose_ratio": 0.2,
     "head": "8104abd2cbd919c41b7e46f76da0c418515c0f77",
-    "last_commit": null
+    "last_commit": "2026-09-26"
   },
   {
     "id": "jupyterhub/action-k3s-helm",
@@ -13706,7 +13706,7 @@
     },
     "prose_ratio": 1.0,
     "head": "6da89b79178a4f74d94114306c5c39df06d28b1c",
-    "last_commit": null
+    "last_commit": "2026-07-01"
   },
   {
     "id": "jupyterhub/action-k8s-await-workloads",
@@ -13762,7 +13762,7 @@
     },
     "prose_ratio": 0.312,
     "head": "f2f60c4ab11cea683b3ac272a1476d0a6643c03b",
-    "last_commit": null
+    "last_commit": "2026-01-12"
   },
   {
     "id": "jupyterhub/action-k8s-namespace-report",
@@ -13819,7 +13819,7 @@
     },
     "prose_ratio": 1.0,
     "head": "c218f103e8e9aa6169879b4317401469c2e925ed",
-    "last_commit": null
+    "last_commit": "2026-03-16"
   },
   {
     "id": "jupyterhub/action-major-minor-tag-calculator",
@@ -13869,7 +13869,7 @@
     },
     "prose_ratio": 0.25,
     "head": "b9d9271198eb8d2c3473e7050f60fad7a73e157a",
-    "last_commit": null
+    "last_commit": "2026-10-01"
   },
   {
     "id": "jupyterhub/autodoc-traits",
@@ -13918,7 +13918,7 @@
     },
     "prose_ratio": 0.75,
     "head": "339425f57a35c47a1435b0b3330749f3f1d7f1b8",
-    "last_commit": null
+    "last_commit": "2026-08-11"
   },
   {
     "id": "jupyterhub/batchspawner",
@@ -13970,7 +13970,7 @@
     },
     "prose_ratio": 0.357,
     "head": "451dcf171cff7883904845d5de8c5e5e250b64d9",
-    "last_commit": null
+    "last_commit": "2025-10-01"
   },
   {
     "id": "jupyterhub/binder-billing",
@@ -14011,7 +14011,7 @@
     },
     "prose_ratio": 1.0,
     "head": "03da4faf549955782326cbc3e4d1e30da8be6eb2",
-    "last_commit": null
+    "last_commit": "2020-01-03"
   },
   {
     "id": "jupyterhub/binder-data",
@@ -14059,7 +14059,7 @@
     },
     "prose_ratio": 0.75,
     "head": "c66d69e6aa14a5edae56b9b874e0e8b93d31224f",
-    "last_commit": null
+    "last_commit": "2026-06-05"
   },
   {
     "id": "jupyterhub/binderhub",
@@ -14076,7 +14076,7 @@
       "PYPI:binderhub",
       "NPM:@jupyterhub/binderhub-react-components"
     ],
-    "downloads_last_month": 177,
+    "downloads_last_month": 423,
     "dependents": 1,
     "used_by": {
       "ci": [],
@@ -14129,7 +14129,7 @@
     },
     "prose_ratio": 0.436,
     "head": "1013493a4eaf91d9ad15de0d125cd0e36505d093",
-    "last_commit": null
+    "last_commit": "2026-07-01"
   },
   {
     "id": "jupyterhub/chartpress",
@@ -14178,7 +14178,7 @@
     },
     "prose_ratio": 0.609,
     "head": "f7d727abccb67bbb352f330d92c68e8b995c96cb",
-    "last_commit": null
+    "last_commit": "2026-06-01"
   },
   {
     "id": "jupyterhub/configurable-http-proxy",
@@ -14193,7 +14193,7 @@
     "packages": [
       "NPM:configurable-http-proxy"
     ],
-    "downloads_last_month": 38690,
+    "downloads_last_month": 52521,
     "dependents": 1,
     "used_by": {
       "ci": [],
@@ -14236,8 +14236,8 @@
       "web": 5
     },
     "prose_ratio": 0.385,
-    "head": "2f1042162a334d4aa4e8124804c7a2b43fdc2b10",
-    "last_commit": null
+    "head": "65b3864479631b299d120c289c7b10515169da76",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyterhub/design",
@@ -14279,7 +14279,7 @@
     },
     "prose_ratio": 0.987,
     "head": "a037b7487f24e3735bd0b534d55823fedfcd8edc",
-    "last_commit": null
+    "last_commit": "2025-09-16"
   },
   {
     "id": "jupyterhub/docker-image-cleaner",
@@ -14337,7 +14337,7 @@
     },
     "prose_ratio": 0.444,
     "head": "b305d4fd0fd20c0ea38b2fbb6f93c83d3faaed19",
-    "last_commit": null
+    "last_commit": "2026-08-27"
   },
   {
     "id": "jupyterhub/dockerspawner",
@@ -14387,7 +14387,7 @@
     },
     "prose_ratio": 0.5,
     "head": "a73d0de667e43a6967d4c870c00d6b11c9a0dd17",
-    "last_commit": null
+    "last_commit": "2026-07-01"
   },
   {
     "id": "jupyterhub/escapism",
@@ -14435,7 +14435,7 @@
     },
     "prose_ratio": 0.4,
     "head": "ae458c5ad90e66d42c5e55e97e1b72e128cf0b99",
-    "last_commit": null
+    "last_commit": "2026-06-02"
   },
   {
     "id": "jupyterhub/firstuseauthenticator",
@@ -14487,7 +14487,7 @@
     },
     "prose_ratio": 0.444,
     "head": "439b3a7d8920e9ec6ade8e1f38ffedae03d12603",
-    "last_commit": null
+    "last_commit": "2026-10-23"
   },
   {
     "id": "jupyterhub/gh-scoped-creds",
@@ -14537,7 +14537,7 @@
     },
     "prose_ratio": 0.75,
     "head": "fe538a4bbc189ae3240301e125828984dc0abf89",
-    "last_commit": null
+    "last_commit": "2026-08-27"
   },
   {
     "id": "jupyterhub/grafana-dashboards",
@@ -14583,7 +14583,7 @@
     },
     "prose_ratio": 0.984,
     "head": "f8bf30b77c8bab4c109349f46ba6ec655c7d17c6",
-    "last_commit": null
+    "last_commit": "2026-10-12"
   },
   {
     "id": "jupyterhub/helm-chart",
@@ -14622,7 +14622,7 @@
     },
     "prose_ratio": 1.0,
     "head": "63e6e91495bbee32e8dd240719e7d071ab209b98",
-    "last_commit": null
+    "last_commit": "2023-06-01"
   },
   {
     "id": "jupyterhub/jupyter-remote-desktop-proxy",
@@ -14680,7 +14680,7 @@
     },
     "prose_ratio": 0.5,
     "head": "390c824aeb5d90633b1803b9009195313dce0ff3",
-    "last_commit": null
+    "last_commit": "2026-09-01"
   },
   {
     "id": "jupyterhub/jupyter-rsession-proxy",
@@ -14731,7 +14731,7 @@
     },
     "prose_ratio": 0.778,
     "head": "2bc193994d6167f356c6878afe09b1c923b01575",
-    "last_commit": null
+    "last_commit": "2026-09-21"
   },
   {
     "id": "jupyterhub/jupyter-server-proxy",
@@ -14789,7 +14789,7 @@
     },
     "prose_ratio": 0.397,
     "head": "204020060c950dc60a362b7b35bff80b9e8249b7",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyterhub/jupyterhub",
@@ -14806,7 +14806,7 @@
       "NPM:jupyterhub-deps"
     ],
     "downloads_last_month": 260478,
-    "dependents": 154,
+    "dependents": 155,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -14842,8 +14842,8 @@
       "notebook": 2
     },
     "prose_ratio": 0.474,
-    "head": "4224d01251779a37112d8ae26dc384244d31cb77",
-    "last_commit": null
+    "head": "5dd3832731fd1b17ebdce2e8b4271440410d3ed4",
+    "last_commit": "2026-10-27"
   },
   {
     "id": "jupyterhub/jupyterhub-container-images",
@@ -14899,8 +14899,8 @@
       "code": 2
     },
     "prose_ratio": 0.714,
-    "head": "1b08d200efdcc68786e5f64702b2749672528424",
-    "last_commit": null
+    "head": "96b3f05dbb063467899bb4abd869458acf46ed37",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyterhub/jupyterhub-deploy-docker",
@@ -14946,7 +14946,7 @@
     },
     "prose_ratio": 0.4,
     "head": "e2b79700d32662403ad951a13f19030864ad581a",
-    "last_commit": null
+    "last_commit": "2026-10-13"
   },
   {
     "id": "jupyterhub/jupyterhub-deploy-hpc",
@@ -14987,7 +14987,7 @@
     },
     "prose_ratio": 0.308,
     "head": "fbffef1aacf15f656ca6a1b7b2b24906212263d7",
-    "last_commit": null
+    "last_commit": "2024-06-11"
   },
   {
     "id": "jupyterhub/jupyterhub-deploy-teaching",
@@ -15029,7 +15029,7 @@
     },
     "prose_ratio": 0.792,
     "head": "609b0eb2e7f1a2c5d025a40e64ef281a304ae249",
-    "last_commit": null
+    "last_commit": "2024-06-11"
   },
   {
     "id": "jupyterhub/jupyterhub-idle-culler",
@@ -15078,7 +15078,7 @@
     },
     "prose_ratio": 0.364,
     "head": "0b92132cf9a1ba5f5c425c790e44246b2dfbfe52",
-    "last_commit": null
+    "last_commit": "2026-10-21"
   },
   {
     "id": "jupyterhub/jupyterhub-on-hadoop",
@@ -15121,7 +15121,7 @@
     },
     "prose_ratio": 0.75,
     "head": "b4e4171732016e9c27bbb52a854a460c2bf54d7a",
-    "last_commit": null
+    "last_commit": "2019-07-16"
   },
   {
     "id": "jupyterhub/jupyterhub-python-repo-template",
@@ -15168,7 +15168,7 @@
     },
     "prose_ratio": 0.714,
     "head": "3bcbc805517686a33b8dfc5bff6e1e15f8afb2b7",
-    "last_commit": null
+    "last_commit": "2025-12-08"
   },
   {
     "id": "jupyterhub/jupyterhub-sphinx-theme",
@@ -15219,7 +15219,7 @@
     },
     "prose_ratio": 0.833,
     "head": "33139829eb7840b41cfcdcbff603701e7e468391",
-    "last_commit": null
+    "last_commit": "2025-05-15"
   },
   {
     "id": "jupyterhub/jupyterhub-the-hard-way",
@@ -15264,7 +15264,7 @@
     },
     "prose_ratio": 1.0,
     "head": "d938ac4ab17e194e3d15c7b86fa54dfeb5661b90",
-    "last_commit": null
+    "last_commit": "2025-12-06"
   },
   {
     "id": "jupyterhub/jupyterhub.github.io",
@@ -15312,7 +15312,7 @@
     },
     "prose_ratio": 0.667,
     "head": "12fcc920d1d350a6d0b0d9e87ecca115319708a7",
-    "last_commit": null
+    "last_commit": "2026-08-19"
   },
   {
     "id": "jupyterhub/kerberosauthenticator",
@@ -15361,7 +15361,7 @@
     },
     "prose_ratio": 0.556,
     "head": "3c5f60d084201884de63d5b36d01f0b56d23b0e5",
-    "last_commit": null
+    "last_commit": "2026-08-01"
   },
   {
     "id": "jupyterhub/kubespawner",
@@ -15417,7 +15417,7 @@
     },
     "prose_ratio": 0.405,
     "head": "47ce269d515b7b509cb5ebe45d69ebe79d9dd6c6",
-    "last_commit": null
+    "last_commit": "2026-09-29"
   },
   {
     "id": "jupyterhub/ldapauthenticator",
@@ -15468,7 +15468,7 @@
     },
     "prose_ratio": 0.364,
     "head": "9d2759a3ca3ab8a311398fbae8f8d4cd114f66b0",
-    "last_commit": null
+    "last_commit": "2026-07-01"
   },
   {
     "id": "jupyterhub/ltiauthenticator",
@@ -15519,7 +15519,7 @@
     },
     "prose_ratio": 0.352,
     "head": "c0c3bf3a7a12f81fe09ad858a102a3d6a17fe5d7",
-    "last_commit": null
+    "last_commit": "2026-07-01"
   },
   {
     "id": "jupyterhub/mybinder-tools",
@@ -15559,7 +15559,7 @@
     },
     "prose_ratio": 0.5,
     "head": "fa690516b9bf9fa2079fd13474611cbf970d423a",
-    "last_commit": null
+    "last_commit": "2018-07-12"
   },
   {
     "id": "jupyterhub/mybinder.org-deploy",
@@ -15619,7 +15619,7 @@
     },
     "prose_ratio": 0.718,
     "head": "4bdea9849b8181b7cb02109dd6ac8af7128fa8b6",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyterhub/mybinder.org-user-guide",
@@ -15662,7 +15662,7 @@
     },
     "prose_ratio": 0.829,
     "head": "1a4084931e8296769eab9b2ea75c5e29ac8e618b",
-    "last_commit": null
+    "last_commit": "2026-09-27"
   },
   {
     "id": "jupyterhub/nativeauthenticator",
@@ -15713,7 +15713,7 @@
     },
     "prose_ratio": 0.61,
     "head": "67acaf6a1a7305a9b43dec90056dc08b4f5ef98a",
-    "last_commit": null
+    "last_commit": "2026-10-13"
   },
   {
     "id": "jupyterhub/nbgitpuller",
@@ -15766,7 +15766,7 @@
     },
     "prose_ratio": 0.528,
     "head": "f7dce435044a769dfab00ed1214a7851f0b60797",
-    "last_commit": null
+    "last_commit": "2026-03-31"
   },
   {
     "id": "jupyterhub/nbgitpuller-downloader-dropbox",
@@ -15809,7 +15809,7 @@
     },
     "prose_ratio": 0.6,
     "head": "d81fa98630cb8a7a35d00365020b5f8c66a6fa76",
-    "last_commit": null
+    "last_commit": "2021-11-26"
   },
   {
     "id": "jupyterhub/nbgitpuller-downloader-generic-web",
@@ -15852,7 +15852,7 @@
     },
     "prose_ratio": 0.5,
     "head": "3d6080c92a610d72f02bf1d15a65fbf15b625604",
-    "last_commit": null
+    "last_commit": "2021-11-26"
   },
   {
     "id": "jupyterhub/nbgitpuller-downloader-googledrive",
@@ -15895,7 +15895,7 @@
     },
     "prose_ratio": 0.5,
     "head": "4e3688f0ba0a225f71f9e6215eddd6adefbbb125",
-    "last_commit": null
+    "last_commit": "2021-11-26"
   },
   {
     "id": "jupyterhub/nbgitpuller-downloader-plugins",
@@ -15936,7 +15936,7 @@
     },
     "prose_ratio": 0.25,
     "head": "646857507fb21a6f2a7222bdd7610d7184492e69",
-    "last_commit": null
+    "last_commit": "2022-01-19"
   },
   {
     "id": "jupyterhub/oauthenticator",
@@ -15988,7 +15988,7 @@
     },
     "prose_ratio": 0.5,
     "head": "02344def2a5e57b9fb25424dd806bcaff8de800d",
-    "last_commit": null
+    "last_commit": "2026-10-01"
   },
   {
     "id": "jupyterhub/pamela",
@@ -16035,7 +16035,7 @@
     },
     "prose_ratio": 0.5,
     "head": "0894fff26692355414b6e6080acd60ed56613355",
-    "last_commit": null
+    "last_commit": "2024-12-18"
   },
   {
     "id": "jupyterhub/pebble-helm-chart",
@@ -16088,7 +16088,7 @@
     },
     "prose_ratio": 0.833,
     "head": "17abfdfb3dd0b44ad75c1fadcdcd56fd633c81b9",
-    "last_commit": null
+    "last_commit": "2026-10-12"
   },
   {
     "id": "jupyterhub/pytest-jupyterhub",
@@ -16138,7 +16138,7 @@
     },
     "prose_ratio": 0.682,
     "head": "0bc90cdd06c01c2a63ae56e36878ea25ce7642fd",
-    "last_commit": null
+    "last_commit": "2026-06-02"
   },
   {
     "id": "jupyterhub/repo2docker",
@@ -16195,7 +16195,7 @@
     },
     "prose_ratio": 0.522,
     "head": "ebcc593885cc6a7e344520ca1bb8766242093c8f",
-    "last_commit": null
+    "last_commit": "2026-09-15"
   },
   {
     "id": "jupyterhub/repo2docker-action",
@@ -16243,7 +16243,7 @@
     },
     "prose_ratio": 0.571,
     "head": "92fefcbd2b46dd9716f5263a9e740cbc972f6dd9",
-    "last_commit": null
+    "last_commit": "2026-02-23"
   },
   {
     "id": "jupyterhub/roadmap",
@@ -16283,7 +16283,7 @@
     },
     "prose_ratio": 1.0,
     "head": "039f274863b3c19e3345623a447f4de1b47fc982",
-    "last_commit": null
+    "last_commit": "2026-05-06"
   },
   {
     "id": "jupyterhub/simpervisor",
@@ -16334,7 +16334,7 @@
     },
     "prose_ratio": 0.214,
     "head": "24730d8bf9574e1adfb755804882acedd3696855",
-    "last_commit": null
+    "last_commit": "2026-07-01"
   },
   {
     "id": "jupyterhub/sudospawner",
@@ -16384,7 +16384,7 @@
     },
     "prose_ratio": 0.333,
     "head": "304be890e24a0d64c394ea26690a82bedb367681",
-    "last_commit": null
+    "last_commit": "2026-08-05"
   },
   {
     "id": "jupyterhub/systemdspawner",
@@ -16433,7 +16433,7 @@
     },
     "prose_ratio": 0.417,
     "head": "9a0a7f4efe543f50517f84f9985c38269afc77c3",
-    "last_commit": null
+    "last_commit": "2026-07-01"
   },
   {
     "id": "jupyterhub/team-compass",
@@ -16482,7 +16482,7 @@
     },
     "prose_ratio": 0.965,
     "head": "06b322e38d554d87f0ce2e85a0e461d44e74fdcf",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyterhub/the-littlest-jupyterhub",
@@ -16528,7 +16528,7 @@
     },
     "prose_ratio": 0.795,
     "head": "05637a2fe4bb5b1e91bcdb0efc0059ab4b30d543",
-    "last_commit": null
+    "last_commit": "2026-08-24"
   },
   {
     "id": "jupyterhub/tmpauthenticator",
@@ -16577,7 +16577,7 @@
     },
     "prose_ratio": 0.5,
     "head": "49cb1fb144a06e03dfab835f76e8fc5b222446b1",
-    "last_commit": null
+    "last_commit": "2026-09-01"
   },
   {
     "id": "jupyterhub/traefik-proxy",
@@ -16631,7 +16631,7 @@
     },
     "prose_ratio": 0.4,
     "head": "d17479605b873158226cccaebefe377531979182",
-    "last_commit": null
+    "last_commit": "2026-08-27"
   },
   {
     "id": "jupyterhub/wrapspawner",
@@ -16681,7 +16681,7 @@
     },
     "prose_ratio": 0.556,
     "head": "cb74046aa0217cf48c76944fae2d8c0cbae2a701",
-    "last_commit": null
+    "last_commit": "2024-04-08"
   },
   {
     "id": "jupyterhub/zero-to-jupyterhub-k8s",
@@ -16744,8 +16744,8 @@
       "media": 33
     },
     "prose_ratio": 0.847,
-    "head": "8cd5651dd3b8077b1d6bb234f668521186ce763c",
-    "last_commit": null
+    "head": "e1606f9428d022b66fdc5b2d67953284e6a94c72",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyterlab/.github",
@@ -16790,7 +16790,7 @@
     },
     "prose_ratio": 1.0,
     "head": "486879676b42459f54bb0c54b8895dcc78f5a94f",
-    "last_commit": null
+    "last_commit": "2025-09-16"
   },
   {
     "id": "jupyterlab/assets",
@@ -16830,7 +16830,7 @@
     },
     "prose_ratio": 1.0,
     "head": "03509a95ff70aafef768dd98f093953cfde106ca",
-    "last_commit": null
+    "last_commit": "2025-11-05"
   },
   {
     "id": "jupyterlab/benchmarks",
@@ -16883,7 +16883,7 @@
     },
     "prose_ratio": 0.735,
     "head": "66ed34aa639ed69a236d44a1c45b7dbaa113ec98",
-    "last_commit": null
+    "last_commit": "2023-05-28"
   },
   {
     "id": "jupyterlab/eslint-plugin",
@@ -16898,7 +16898,7 @@
     "packages": [
       "NPM:@jupyter/eslint-plugin"
     ],
-    "downloads_last_month": 102188,
+    "downloads_last_month": 50922,
     "dependents": 0,
     "used_by": {
       "ci": [],
@@ -16942,8 +16942,8 @@
       "web": 2
     },
     "prose_ratio": 0.325,
-    "head": "92c61195a63a1e3d1da93101f738d2e0f4cfebf2",
-    "last_commit": null
+    "head": "3b8c32b5c12d56259d2b1ea4a4165d25b9049355",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyterlab/extension-cookiecutter-js",
@@ -16993,7 +16993,7 @@
     },
     "prose_ratio": 0.444,
     "head": "040d26ddbf6271886dd1ff0a69b22860480c538d",
-    "last_commit": null
+    "last_commit": "2023-01-06"
   },
   {
     "id": "jupyterlab/extension-cookiecutter-ts",
@@ -17041,7 +17041,7 @@
     },
     "prose_ratio": 0.333,
     "head": "91d717421398e632d4066d7333b0ef870a422873",
-    "last_commit": null
+    "last_commit": "2026-09-04"
   },
   {
     "id": "jupyterlab/extension-examples",
@@ -17092,7 +17092,7 @@
     },
     "prose_ratio": 0.426,
     "head": "0ff7dc53f876a2ad9388eb71c188156a572014fc",
-    "last_commit": null
+    "last_commit": "2026-04-08"
   },
   {
     "id": "jupyterlab/extension-template",
@@ -17142,8 +17142,8 @@
       "code": 2
     },
     "prose_ratio": 0.946,
-    "head": "b3d8fa16b1fa84efbbb9508ef46755976265167a",
-    "last_commit": null
+    "head": "d0987d46c84bfaa702c697097becf0491cf2eef7",
+    "last_commit": "2026-10-27"
   },
   {
     "id": "jupyterlab/frontends-team-compass",
@@ -17186,7 +17186,7 @@
     },
     "prose_ratio": 0.812,
     "head": "10350484a13574e18e98d6f8a8a8e0e793ca4277",
-    "last_commit": null
+    "last_commit": "2026-09-10"
   },
   {
     "id": "jupyterlab/hatch-jupyter-builder",
@@ -17250,7 +17250,7 @@
     },
     "prose_ratio": 0.357,
     "head": "fedc855da78b965f69a0c6d02e5645adcf2a6fac",
-    "last_commit": null
+    "last_commit": "2026-09-18"
   },
   {
     "id": "jupyterlab/hatch-nodejs-version",
@@ -17341,7 +17341,7 @@
     },
     "prose_ratio": 0.308,
     "head": "81c4612da14dec4b260bc956225fa24ab62b377e",
-    "last_commit": null
+    "last_commit": "2025-07-24"
   },
   {
     "id": "jupyterlab/jupyter-ai",
@@ -17357,7 +17357,7 @@
       "PYPI:jupyter-ai"
     ],
     "downloads_last_month": 119717,
-    "dependents": 8,
+    "dependents": 9,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17399,8 +17399,8 @@
       "web": 4
     },
     "prose_ratio": 0.85,
-    "head": "7299b29e270927e1ef77d4f1935e45b91c5a922a",
-    "last_commit": null
+    "head": "a93eadfe57741d1b1be6d08a45231e02b6f37139",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyterlab/jupyter-ai-lite",
@@ -17419,7 +17419,7 @@
       "PYPI:jupyter-ai-lite",
       "PYPI:jupyternaut-lite"
     ],
-    "downloads_last_month": 0,
+    "downloads_last_month": 66,
     "dependents": 3,
     "used_by": {
       "ci": [],
@@ -17465,8 +17465,8 @@
       "media": 5
     },
     "prose_ratio": 0.348,
-    "head": "6e29270e62bd581aba2de32ff936e0b1656f8299",
-    "last_commit": null
+    "head": "ceb956a2bba517c6b52dfa47ad9b34fae49920a8",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyterlab/jupyter-builder",
@@ -17483,7 +17483,7 @@
       "NPM:@jupyter/builder"
     ],
     "downloads_last_month": 17948052,
-    "dependents": 3958,
+    "dependents": 3947,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17540,8 +17540,8 @@
       "code": 33
     },
     "prose_ratio": 0.132,
-    "head": "4978d1b850f0857c5c8aea25782f4aac48d0f6e3",
-    "last_commit": null
+    "head": "fec862fedbb5cd7797d7a64c687975039bb8b035",
+    "last_commit": "2026-10-27"
   },
   {
     "id": "jupyterlab/jupyter-chat",
@@ -17560,7 +17560,7 @@
       "NPM:jupyterlab-chat-extension"
     ],
     "downloads_last_month": 22763,
-    "dependents": 22,
+    "dependents": 23,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17597,19 +17597,19 @@
         "jupyter_releaser"
       ]
     },
-    "n_files": 270,
+    "n_files": 271,
     "file_types": {
       "config": 37,
       "other": 11,
       "docs": 16,
-      "code": 170,
+      "code": 171,
       "notebook": 1,
       "web": 12,
       "media": 23
     },
-    "prose_ratio": 0.234,
-    "head": "d37a38a87eff57bba8445248bb4d11a39b5101ca",
-    "last_commit": null
+    "prose_ratio": 0.233,
+    "head": "71473c456d5a28652154a539493e9fab838c10c9",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyterlab/jupyter-collaboration",
@@ -17633,7 +17633,7 @@
       "NPM:@jupyter/docprovider-extension"
     ],
     "downloads_last_month": 815532,
-    "dependents": 34,
+    "dependents": 32,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -17684,7 +17684,7 @@
     },
     "prose_ratio": 0.363,
     "head": "1f912d220a47409acc758c81678b6019db270701",
-    "last_commit": null
+    "last_commit": "2026-10-26"
   },
   {
     "id": "jupyterlab/jupyter-renderers",
@@ -17699,16 +17699,16 @@
     "packages": [
       "NPM:@jupyterlab/mathjax2-extension",
       "PYPI:jupyterlab-geojson",
-      "NPM:@jupyterlab/vega3-extension",
       "PYPI:jupyterlab-fasta",
+      "NPM:@jupyterlab/vega3-extension",
       "NPM:@jupyterlab/geojson-extension",
       "PYPI:jupyterlab-katex",
-      "NPM:@jupyterlab/katex-extension",
-      "NPM:@jupyterlab/fasta-extension",
       "PYPI:jupyterlab-mathjax2",
-      "PYPI:jupyterlab-vega3"
+      "PYPI:jupyterlab-vega3",
+      "NPM:@jupyterlab/fasta-extension",
+      "NPM:@jupyterlab/katex-extension"
     ],
-    "downloads_last_month": 18325,
+    "downloads_last_month": 6958,
     "dependents": 4,
     "used_by": {
       "ci": [],
@@ -17751,7 +17751,7 @@
     },
     "prose_ratio": 0.569,
     "head": "b89c093bce24c8d7394177f08a111b3895ed6870",
-    "last_commit": null
+    "last_commit": "2025-02-20"
   },
   {
     "id": "jupyterlab/jupytercon-jupyterlab-training",
@@ -17789,7 +17789,7 @@
     },
     "prose_ratio": 1.0,
     "head": "05cbf7eca20a34bc084d090afab45f0dbb893f2f",
-    "last_commit": null
+    "last_commit": "2018-08-22"
   },
   {
     "id": "jupyterlab/jupytercon-jupyterlab-tutorial",
@@ -17834,7 +17834,7 @@
     },
     "prose_ratio": 0.864,
     "head": "c14db2b591c9c0484200cde7759efd57f71b7631",
-    "last_commit": null
+    "last_commit": "2018-08-22"
   },
   {
     "id": "jupyterlab/jupyterlab",
@@ -17856,14 +17856,14 @@
       "NPM:@jupyterlab/observables",
       "NPM:@jupyterlab/apputils",
       "NPM:@jupyterlab/ui-components",
-      "NPM:@jupyterlab/rendermime-interfaces",
-      "NPM:@jupyterlab/statusbar",
-      "NPM:@jupyterlab/translation",
       "NPM:@jupyterlab/rendermime",
+      "NPM:@jupyterlab/statusbar",
+      "NPM:@jupyterlab/rendermime-interfaces",
+      "NPM:@jupyterlab/translation",
       "NPM:@jupyterlab/codeeditor",
       "NPM:@jupyterlab/docregistry",
-      "NPM:@jupyterlab/application",
       "NPM:@jupyterlab/codemirror",
+      "NPM:@jupyterlab/application",
       "NPM:@jupyterlab/outputarea",
       "NPM:@jupyterlab/docmanager",
       "NPM:@jupyterlab/filebrowser",
@@ -17873,91 +17873,91 @@
       "NPM:@jupyterlab/documentsearch",
       "NPM:@jupyterlab/toc",
       "NPM:@jupyterlab/lsp",
-      "NPM:@jupyterlab/mainmenu",
       "NPM:@jupyterlab/markedparser-extension",
       "NPM:@jupyterlab/mermaid",
+      "NPM:@jupyterlab/mainmenu",
       "NPM:@jupyterlab/console",
-      "NPM:@jupyterlab/fileeditor",
-      "NPM:@jupyterlab/launcher",
       "NPM:@jupyterlab/logconsole",
-      "NPM:@jupyterlab/completer",
-      "NPM:@jupyterlab/javascript-extension",
+      "NPM:@jupyterlab/launcher",
+      "NPM:@jupyterlab/fileeditor",
       "NPM:@jupyterlab/theme-light-extension",
-      "NPM:@jupyterlab/docmanager-extension",
-      "NPM:@jupyterlab/markdownviewer",
-      "NPM:@jupyterlab/codemirror-extension",
+      "NPM:@jupyterlab/javascript-extension",
+      "NPM:@jupyterlab/completer",
       "NPM:@jupyterlab/json-extension",
+      "NPM:@jupyterlab/core-meta",
+      "NPM:@jupyterlab/markdownviewer",
+      "NPM:@jupyterlab/docmanager-extension",
       "NPM:@jupyterlab/running",
       "NPM:@jupyterlab/apputils-extension",
-      "NPM:@jupyterlab/mainmenu-extension",
+      "NPM:@jupyterlab/cell-toolbar",
       "NPM:@jupyterlab/notebook-extension",
-      "NPM:@jupyterlab/terminal",
-      "NPM:@jupyterlab/markdownviewer-extension",
-      "NPM:@jupyterlab/application-extension",
-      "NPM:@jupyterlab/csvviewer",
-      "NPM:@jupyterlab/completer-extension",
-      "NPM:@jupyterlab/filebrowser-extension",
-      "NPM:@jupyterlab/documentsearch-extension",
-      "NPM:@jupyterlab/fileeditor-extension",
+      "NPM:@jupyterlab/codemirror-extension",
       "NPM:@jupyterlab/property-inspector",
-      "NPM:@jupyterlab/ui-components-extension",
-      "NPM:@jupyterlab/csvviewer-extension",
+      "NPM:@jupyterlab/application-extension",
+      "NPM:@jupyterlab/markdownviewer-extension",
+      "NPM:@jupyterlab/completer-extension",
+      "NPM:@jupyterlab/mainmenu-extension",
       "NPM:@jupyterlab/rendermime-extension",
+      "NPM:@jupyterlab/ui-components-extension",
+      "NPM:@jupyterlab/mathjax-extension",
+      "NPM:@jupyterlab/documentsearch-extension",
+      "NPM:@jupyterlab/csvviewer",
+      "NPM:@jupyterlab/filebrowser-extension",
+      "NPM:@jupyterlab/toc-extension",
+      "NPM:@jupyterlab/fileeditor-extension",
+      "NPM:@jupyterlab/csvviewer-extension",
+      "NPM:@jupyterlab/cell-toolbar-extension",
       "NPM:@jupyterlab/shortcuts-extension",
       "NPM:@jupyterlab/translation-extension",
-      "NPM:@jupyterlab/cell-toolbar",
-      "NPM:@jupyterlab/toc-extension",
-      "NPM:@jupyterlab/cell-toolbar-extension",
-      "NPM:@jupyterlab/core-meta",
-      "NPM:@jupyterlab/tooltip",
       "NPM:@jupyterlab/metadataform",
-      "NPM:@jupyterlab/mathjax-extension",
       "NPM:@jupyterlab/lsp-extension",
       "NPM:@jupyterlab/workspaces",
-      "NPM:@jupyterlab/settingeditor",
-      "NPM:@jupyterlab/running-extension",
+      "NPM:@jupyterlab/tooltip",
       "NPM:@jupyterlab/inspector",
+      "NPM:@jupyterlab/settingeditor",
       "NPM:@jupyterlab/settingeditor-extension",
+      "NPM:@jupyterlab/terminal",
+      "NPM:@jupyterlab/theme-dark-extension",
+      "NPM:@jupyterlab/imageviewer",
+      "NPM:@jupyterlab/vega5-extension",
+      "NPM:@jupyterlab/running-extension",
       "NPM:@jupyterlab/tooltip-extension",
       "NPM:@jupyterlab/htmlviewer",
-      "NPM:@jupyterlab/vega5-extension",
-      "NPM:@jupyterlab/theme-dark-extension",
-      "NPM:@jupyterlab/debugger",
-      "NPM:@jupyterlab/imageviewer",
-      "NPM:@jupyterlab/imageviewer-extension",
       "NPM:@jupyterlab/pdf-extension",
       "NPM:@jupyterlab/htmlviewer-extension",
-      "NPM:@jupyterlab/logconsole-extension",
-      "NPM:@jupyterlab/celltags-extension",
-      "NPM:@jupyterlab/console-extension",
+      "NPM:@jupyterlab/imageviewer-extension",
       "NPM:@jupyterlab/inspector-extension",
-      "NPM:@jupyterlab/statusbar-extension",
-      "NPM:@jupyterlab/launcher-extension",
-      "NPM:@jupyterlab/testutils",
+      "NPM:@jupyterlab/logconsole-extension",
       "NPM:@jupyterlab/pluginmanager",
-      "NPM:@jupyterlab/metadataform-extension",
       "NPM:@jupyterlab/mermaid-extension",
-      "NPM:@jupyterlab/pluginmanager-extension",
-      "NPM:@jupyterlab/buildutils",
+      "NPM:@jupyterlab/console-extension",
       "NPM:@jupyterlab/services-extension",
+      "NPM:@jupyterlab/statusbar-extension",
       "NPM:@jupyterlab/workspaces-extension",
-      "NPM:@jupyterlab/terminal-extension",
+      "NPM:@jupyterlab/buildutils",
+      "NPM:@jupyterlab/launcher-extension",
+      "NPM:@jupyterlab/debugger",
+      "NPM:@jupyterlab/testutils",
+      "NPM:@jupyterlab/celltags-extension",
       "NPM:@jupyterlab/help-extension",
+      "NPM:@jupyterlab/metadataform-extension",
+      "NPM:@jupyterlab/terminal-extension",
       "NPM:@jupyterlab/extensionmanager",
       "NPM:@jupyterlab/extensionmanager-extension",
       "NPM:@jupyterlab/hub-extension",
+      "NPM:@jupyterlab/pluginmanager-extension",
       "NPM:@jupyterlab/debugger-extension",
-      "NPM:@jupyterlab/nbconvert-css",
       "NPM:@jupyterlab/theme-dark-high-contrast-extension",
-      "NPM:@jupyterlab/galata",
       "NPM:@jupyterlab/audio-extension",
       "NPM:@jupyterlab/video-extension",
+      "NPM:@jupyterlab/nbconvert-css",
+      "NPM:@jupyterlab/galata",
       "NPM:@jupyterlab/metapackage",
-      "NPM:@jupyterlab/template",
-      "NPM:jupyterlab"
+      "NPM:jupyterlab",
+      "NPM:@jupyterlab/template"
     ],
     "downloads_last_month": 30253541,
-    "dependents": 3937,
+    "dependents": 3926,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18030,19 +18030,19 @@
         "jupyter_releaser"
       ]
     },
-    "n_files": 3079,
+    "n_files": 3081,
     "file_types": {
       "config": 605,
       "other": 24,
       "docs": 181,
-      "code": 1378,
+      "code": 1379,
       "web": 259,
-      "media": 597,
+      "media": 598,
       "notebook": 35
     },
     "prose_ratio": 0.438,
-    "head": "7dfda76f13ea6c84f3665fbad4307ee1a2442a1c",
-    "last_commit": null
+    "head": "30485445e61fac7014218392eba6534bcf772e59",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyterlab/jupyterlab-commenting",
@@ -18058,7 +18058,7 @@
       "NPM:@jupyterlab/commenting-extension",
       "NPM:jupyterlab-commenting"
     ],
-    "downloads_last_month": 129,
+    "downloads_last_month": 8,
     "dependents": 0,
     "used_by": {
       "ci": [],
@@ -18092,7 +18092,7 @@
     },
     "prose_ratio": 0.5,
     "head": "5196c9787c21b7aebfeb5dde3aa30e27dde28675",
-    "last_commit": null
+    "last_commit": "2020-05-01"
   },
   {
     "id": "jupyterlab/jupyterlab-demo",
@@ -18144,7 +18144,7 @@
     },
     "prose_ratio": 0.87,
     "head": "fe0c447c1af3faa361075c2a79f1d9dfb9613ffd",
-    "last_commit": null
+    "last_commit": "2025-08-27"
   },
   {
     "id": "jupyterlab/jupyterlab-desktop",
@@ -18193,18 +18193,18 @@
         "container"
       ]
     },
-    "n_files": 222,
+    "n_files": 223,
     "file_types": {
       "other": 15,
       "docs": 12,
       "config": 28,
-      "code": 115,
+      "code": 116,
       "media": 51,
       "web": 1
     },
-    "prose_ratio": 0.358,
-    "head": "0e46b48fedc0777fa33946ffe9bc3a16ee0d74a2",
-    "last_commit": null
+    "prose_ratio": 0.356,
+    "head": "0d7e537b04e49c80ed61911d895273eee9af0f44",
+    "last_commit": "2026-10-27"
   },
   {
     "id": "jupyterlab/jupyterlab-git",
@@ -18272,7 +18272,7 @@
     },
     "prose_ratio": 0.249,
     "head": "b62a87b719cd151a2c60eaaa6a70a6755784c4ef",
-    "last_commit": null
+    "last_commit": "2026-10-07"
   },
   {
     "id": "jupyterlab/jupyterlab-github",
@@ -18334,7 +18334,7 @@
     },
     "prose_ratio": 0.526,
     "head": "6ab46858aa5dc0b93510b8fdb52e9066178847ea",
-    "last_commit": null
+    "last_commit": "2024-03-25"
   },
   {
     "id": "jupyterlab/jupyterlab-hdf5",
@@ -18347,11 +18347,11 @@
     "security_boundary": null,
     "rationale": "The repository is a JupyterLab extension that opens and explores HDF5 files, with both Python server extension and TypeScript labextension published on PyPI and NPM.",
     "packages": [
-      "NPM:@jupyterlab/hdf5",
-      "PYPI:jupyterlab-hdf"
+      "PYPI:jupyterlab-hdf",
+      "NPM:@jupyterlab/hdf5"
     ],
-    "downloads_last_month": 230,
-    "dependents": 0,
+    "downloads_last_month": 65,
+    "dependents": 1,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18386,7 +18386,7 @@
     },
     "prose_ratio": 0.28,
     "head": "31ef7b732dbfe98c85d54dfab0f28699a1ab6f62",
-    "last_commit": null
+    "last_commit": "2023-10-11"
   },
   {
     "id": "jupyterlab/jupyterlab-latex",
@@ -18449,7 +18449,7 @@
     },
     "prose_ratio": 0.643,
     "head": "4a1d91de0277f47378ffc2894f13dbcc286e2531",
-    "last_commit": null
+    "last_commit": "2025-12-17"
   },
   {
     "id": "jupyterlab/jupyterlab-probot",
@@ -18493,7 +18493,7 @@
     },
     "prose_ratio": 0.4,
     "head": "aa41ba7d8cad42cc643ee5e1c33796326d43c9fe",
-    "last_commit": null
+    "last_commit": "2023-12-26"
   },
   {
     "id": "jupyterlab/jupyterlab-translate",
@@ -18541,7 +18541,7 @@
     },
     "prose_ratio": 0.211,
     "head": "3120dd14424862ec8135b706e7edadc9a1ef5dfc",
-    "last_commit": null
+    "last_commit": "2026-06-10"
   },
   {
     "id": "jupyterlab/jupyterlab_apod",
@@ -18603,7 +18603,7 @@
     },
     "prose_ratio": 0.375,
     "head": "397639e908826072b040aeec20fa050dc11046d4",
-    "last_commit": null
+    "last_commit": "2024-07-10"
   },
   {
     "id": "jupyterlab/jupyterlab_pygments",
@@ -18620,7 +18620,7 @@
       "NPM:jupyterlab_pygments"
     ],
     "downloads_last_month": 48057917,
-    "dependents": 6282,
+    "dependents": 6275,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18670,7 +18670,7 @@
     },
     "prose_ratio": 0.5,
     "head": "c3380f5c973c74e13f7832504749d6ec11c5f491",
-    "last_commit": null
+    "last_commit": "2023-11-23"
   },
   {
     "id": "jupyterlab/jupyterlab_server",
@@ -18686,7 +18686,7 @@
       "PYPI:jupyterlab-server"
     ],
     "downloads_last_month": 27966465,
-    "dependents": 4367,
+    "dependents": 4357,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18730,7 +18730,7 @@
     },
     "prose_ratio": 0.268,
     "head": "475cfc19e0e69444fc7e3b0e41655cbeb32a8756",
-    "last_commit": null
+    "last_commit": "2026-09-15"
   },
   {
     "id": "jupyterlab/language-pack-cookiecutter",
@@ -18772,7 +18772,7 @@
     },
     "prose_ratio": 0.889,
     "head": "1ff479f99e2827724cc33bfaa47d9f76f6e6878e",
-    "last_commit": null
+    "last_commit": "2023-05-27"
   },
   {
     "id": "jupyterlab/language-packs",
@@ -18854,8 +18854,8 @@
       "code": 36
     },
     "prose_ratio": 0.737,
-    "head": "9b6351601a61efe588017b18045fcce2be3c3fa9",
-    "last_commit": null
+    "head": "efdedf50218406eda64c3a89c572e33dd8c3b998",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyterlab/lumino",
@@ -18870,25 +18870,25 @@
     "packages": [
       "NPM:@lumino/coreutils",
       "NPM:@lumino/algorithm",
-      "NPM:@lumino/widgets",
       "NPM:@lumino/signaling",
-      "NPM:@lumino/dragdrop",
       "NPM:@lumino/disposable",
-      "NPM:@lumino/messaging",
       "NPM:@lumino/domutils",
-      "NPM:@lumino/collections",
-      "NPM:@lumino/commands",
       "NPM:@lumino/virtualdom",
+      "NPM:@lumino/commands",
       "NPM:@lumino/keyboard",
       "NPM:@lumino/properties",
+      "NPM:@lumino/messaging",
+      "NPM:@lumino/collections",
+      "NPM:@lumino/widgets",
+      "NPM:@lumino/dragdrop",
       "NPM:@lumino/polling",
       "NPM:@lumino/application",
       "NPM:@lumino/datagrid",
       "NPM:@lumino/default-theme",
       "NPM:@lumino/buildutils"
     ],
-    "downloads_last_month": 1092229,
-    "dependents": 1430,
+    "downloads_last_month": 727784,
+    "dependents": 1431,
     "used_by": {
       "ci": [],
       "ci_pinned": [],
@@ -18934,7 +18934,7 @@
     },
     "prose_ratio": 0.245,
     "head": "44aea979d5d2c77665d651383d27179a63596957",
-    "last_commit": null
+    "last_commit": "2026-10-08"
   },
   {
     "id": "jupyterlab/maintainer-tools",
@@ -19071,8 +19071,8 @@
       "other": 1
     },
     "prose_ratio": 0.3,
-    "head": "4016d4e69656e13e662d629ee3c30dc31e68628f",
-    "last_commit": null
+    "head": "b9d5c28489f8b460cef48868f303b97c20f8fe1b",
+    "last_commit": "2026-10-27"
   },
   {
     "id": "jupyterlab/plugin-playground",
@@ -19135,7 +19135,7 @@
     },
     "prose_ratio": 0.358,
     "head": "b1e21e7440b28afc13a3c534e7fb10828d412d5a",
-    "last_commit": null
+    "last_commit": "2026-06-23"
   },
   {
     "id": "jupyterlab/pull-requests",
@@ -19150,7 +19150,7 @@
     "packages": [
       "NPM:@jupyterlab/pullrequests"
     ],
-    "downloads_last_month": 174,
+    "downloads_last_month": 10,
     "dependents": 0,
     "used_by": {
       "ci": [],
@@ -19183,7 +19183,7 @@
     },
     "prose_ratio": 0.145,
     "head": "869adab376890eab0bf33816ae69b0964b2fc27f",
-    "last_commit": null
+    "last_commit": "2024-12-16"
   },
   {
     "id": "jupyterlab/pytest-check-links",
@@ -19241,7 +19241,7 @@
     },
     "prose_ratio": 0.522,
     "head": "92c89c079d595f8319403fa7d2d1a4df6cf71ad5",
-    "last_commit": null
+    "last_commit": "2026-06-25"
   },
   {
     "id": "jupyterlab/richoutput-js",
@@ -19290,7 +19290,7 @@
     },
     "prose_ratio": 0.4,
     "head": "36c7cc43f9a662bc68d2331bc2c5c6c95a63dc8a",
-    "last_commit": null
+    "last_commit": "2022-11-01"
   },
   {
     "id": "jupyterlab/scipy2018-jupyterlab-tutorial",
@@ -19335,7 +19335,7 @@
     },
     "prose_ratio": 0.826,
     "head": "b3f8e31a1fb3031bc36dbbb777dfe79999248035",
-    "last_commit": null
+    "last_commit": "2025-08-27"
   },
   {
     "id": "jupyterlab/scipy2019-jupyterlab-tutorial",
@@ -19380,7 +19380,7 @@
     },
     "prose_ratio": 0.864,
     "head": "70308c2aa7df74aa31c7661f1bbca581d5006a8d",
-    "last_commit": null
+    "last_commit": "2019-07-10"
   },
   {
     "id": "jupyterlab/triage-automation",
@@ -19419,7 +19419,7 @@
     },
     "prose_ratio": 1.0,
     "head": "c1711f3fb09a66b2634bf12ce51fbdfbdb03bcde",
-    "last_commit": null
+    "last_commit": "2026-03-31"
   },
   {
     "id": "jupyterlab/ui-profiler",
@@ -19435,7 +19435,7 @@
       "NPM:@jupyterlab/ui-profiler",
       "PYPI:jupyterlab-ui-profiler"
     ],
-    "downloads_last_month": 140,
+    "downloads_last_month": 68,
     "dependents": 0,
     "used_by": {
       "ci": [],
@@ -19484,7 +19484,7 @@
     },
     "prose_ratio": 0.343,
     "head": "560fb518ff4193143a960707a936af9ad50c22b5",
-    "last_commit": null
+    "last_commit": "2026-07-03"
   },
   {
     "id": "jupyterlab/ux-research",
@@ -19524,7 +19524,7 @@
     },
     "prose_ratio": 1.0,
     "head": "30ebc71b9e26a510171eb10f8a1f19d738eec9fb",
-    "last_commit": null
+    "last_commit": "2023-02-23"
   },
   {
     "id": "jupyterlab/vscode-config-template",
@@ -19571,7 +19571,7 @@
     },
     "prose_ratio": 1.0,
     "head": "e5acd0bde92988e8ab6a881d68169c013d6b12f4",
-    "last_commit": null
+    "last_commit": "2023-06-12"
   },
   {
     "id": "jupyterlite/.github",
@@ -19610,7 +19610,7 @@
     },
     "prose_ratio": 1.0,
     "head": "b18156c68342221c305643eb31d8f350dd0b31f5",
-    "last_commit": null
+    "last_commit": "2026-09-15"
   },
   {
     "id": "jupyterlite/cockle",
@@ -19625,7 +19625,7 @@
     "packages": [
       "NPM:@jupyterlite/cockle"
     ],
-    "downloads_last_month": 1995,
+    "downloads_last_month": 1725,
     "dependents": 3,
     "used_by": {
       "ci": [],
@@ -19650,6 +19650,7 @@
       ],
       "secrets": [
         "APP_PRIVATE_KEY",
+        "CODECOV_TOKEN",
         "NPM_TOKEN"
       ],
       "publishes": [
@@ -19658,9 +19659,9 @@
         "website"
       ]
     },
-    "n_files": 252,
+    "n_files": 253,
     "file_types": {
-      "config": 22,
+      "config": 23,
       "other": 5,
       "docs": 5,
       "media": 2,
@@ -19668,8 +19669,8 @@
       "code": 214
     },
     "prose_ratio": 0.049,
-    "head": "458317d56d696c1fcf231d6fe62f132ceb40a365",
-    "last_commit": null
+    "head": "3789cee875e76f3bae64b18d11c9ee1ba66da457",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyterlite/demo",
@@ -19717,7 +19718,7 @@
     },
     "prose_ratio": 1.0,
     "head": "0b56844ad3965ecfc201eaa59de45831eed44334",
-    "last_commit": null
+    "last_commit": "2026-06-25"
   },
   {
     "id": "jupyterlite/echo-kernel",
@@ -19730,10 +19731,10 @@
     "security_boundary": null,
     "rationale": "The repository is a JupyterLite kernel extension published to PyPI and npm, as evidenced by package.json, setup.py, and CI workflows publishing to both registries.",
     "packages": [
-      "NPM:@jupyterlite/echo-kernel",
-      "PYPI:jupyterlite-echo-kernel"
+      "PYPI:jupyterlite-echo-kernel",
+      "NPM:@jupyterlite/echo-kernel"
     ],
-    "downloads_last_month": 65,
+    "downloads_last_month": 58,
     "dependents": 0,
     "used_by": {
       "ci": [],
@@ -19779,7 +19780,7 @@
     },
     "prose_ratio": 0.5,
     "head": "16221829f0ba38374db8f2b8fda10f989d1a6cdd",
-    "last_commit": null
+    "last_commit": "2025-11-26"
   },
   {
     "id": "jupyterlite/javascript-kernel",
@@ -19844,7 +19845,7 @@
     },
     "prose_ratio": 0.245,
     "head": "7240833fd7fd0253a84ba3fe8b3bf0dd624a7cc4",
-    "last_commit": null
+    "last_commit": "2026-10-10"
   },
   {
     "id": "jupyterlite/jupyterlab-webrtc-docprovider",
@@ -19857,10 +19858,10 @@
     "security_boundary": "executes untrusted collaboration messages from peers over WebRTC",
     "rationale": "The repository is a JupyterLab and JupyterLite extension ('jupyterlab-webrtc-docprovider') with Python and NPM packages, documented as 'Document collaboration for JupyterLab and JupyterLite, powered by y-webrtc' in README.",
     "packages": [
-      "NPM:@jupyterlite/webrtc-docprovider",
-      "PYPI:jupyterlab-webrtc-docprovider"
+      "PYPI:jupyterlab-webrtc-docprovider",
+      "NPM:@jupyterlite/webrtc-docprovider"
     ],
-    "downloads_last_month": 42,
+    "downloads_last_month": 38,
     "dependents": 0,
     "used_by": {
       "ci": [],
@@ -19901,7 +19902,7 @@
     },
     "prose_ratio": 0.424,
     "head": "7c3429f78e8e0058f5ac9ecc39336c48e51d18e8",
-    "last_commit": null
+    "last_commit": "2022-04-22"
   },
   {
     "id": "jupyterlite/jupyterlite",
@@ -19922,12 +19923,12 @@
       "NPM:@jupyterlite/session",
       "NPM:@jupyterlite/settings",
       "PYPI:jupyterlite",
-      "NPM:@jupyterlite/application",
       "NPM:@jupyterlite/services",
-      "NPM:@jupyterlite/types",
+      "NPM:@jupyterlite/application",
       "NPM:@jupyterlite/apputils",
-      "NPM:@jupyterlite/ui-components",
+      "NPM:@jupyterlite/types",
       "NPM:@jupyterlite/application-extension",
+      "NPM:@jupyterlite/ui-components",
       "NPM:@jupyterlite/services-extension",
       "NPM:@jupyterlite/apputils-extension",
       "NPM:@jupyterlite/repl-extension",
@@ -19979,8 +19980,8 @@
       "data": 2
     },
     "prose_ratio": 0.577,
-    "head": "e851060d83a820cb6f315c1792818c389ca25cb0",
-    "last_commit": null
+    "head": "8d85c81dc6205c22088b5c1746497040b5f479de",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyterlite/jupyterlite-lsp",
@@ -20025,7 +20026,7 @@
     },
     "prose_ratio": 0.5,
     "head": "b5787b150215a85bdf704aa58947d9fa946ac892",
-    "last_commit": null
+    "last_commit": "2022-12-09"
   },
   {
     "id": "jupyterlite/jupyterlite-sphinx",
@@ -20085,7 +20086,7 @@
     },
     "prose_ratio": 0.8,
     "head": "b00b7dc8ec0b2391e047b71fd1bf49b6463b9bfc",
-    "last_commit": null
+    "last_commit": "2026-09-08"
   },
   {
     "id": "jupyterlite/litegitpuller",
@@ -20148,8 +20149,8 @@
       "web": 2
     },
     "prose_ratio": 0.35,
-    "head": "b640273cbd1dea4a0f8bb3594e398a3420f88443",
-    "last_commit": null
+    "head": "4c0308f706082b1834f1e0eaf0921bfba96a7103",
+    "last_commit": "2026-10-28"
   },
   {
     "id": "jupyterlite/p5-kernel",
@@ -20163,8 +20164,8 @@
     "rationale": "Repo contains a kernel package (jupyterlite_p5_kernel/__init__.py) and JupyterLab extension packages, with PyPI/npm publishing workflows.",
     "packages": [
       "PYPI:jupyterlite-p5-kernel",
-      "NPM:@jupyterlite/p5-kernel",
-      "NPM:@jupyterlite/p5-kernel-extension"
+      "NPM:@jupyterlite/p5-kernel-extension",
+      "NPM:@jupyterlite/p5-kernel"
     ],
     "downloads_last_month": 1246,
     "dependents": 1,
@@ -20215,7 +20216,7 @@
     },
     "prose_ratio": 0.581,
     "head": "f74f267d8ea18693ae311a96bb6df50b027dc323",
-    "last_commit": null
+    "last_commit": "2026-03-09"
   },
   {
     "id": "jupyterlite/pyodide-kernel",
@@ -20279,7 +20280,7 @@
     },
     "prose_ratio": 0.295,
     "head": "480178b7fe22002b7c3b94e0e1c16cc78b2232f2",
-    "last_commit": null
+    "last_commit": "2026-10-08"
   },
   {
     "id": "jupyterlite/repo2jupyterlite",
@@ -20324,7 +20325,7 @@
     },
     "prose_ratio": 0.2,
     "head": "28fa21239656e31fd84aad787e2eec9b45e6f4f6",
-    "last_commit": null
+    "last_commit": "2026-07-06"
   },
   {
     "id": "jupyterlite/sphinx-demo",
@@ -20374,7 +20375,7 @@
     },
     "prose_ratio": 0.667,
     "head": "48584934aa0cd463569ad736dc18d25bdb37b133",
-    "last_commit": null
+    "last_commit": "2025-10-01"
   },
   {
     "id": "jupyterlite/terminal",
@@ -20440,7 +20441,7 @@
     },
     "prose_ratio": 0.396,
     "head": "0a39730dbea047d30917dee8cd0b510b9f54d236",
-    "last_commit": null
+    "last_commit": "2026-10-08"
   },
   {
     "id": "jupyterlite/wasm_lua",
@@ -20482,7 +20483,7 @@
     },
     "prose_ratio": 0.139,
     "head": "a6aba057cce7c4ad915790db1fd6aa34dfed17f9",
-    "last_commit": null
+    "last_commit": "2023-11-29"
   },
   {
     "id": "jupyterlite/xeus",
@@ -20496,8 +20497,8 @@
     "rationale": "JupyterLite Xeus is an extension for JupyterLite that bundles xeus kernels compiled to WebAssembly, with published Python and npm packages, and source code for kernels and an extension.",
     "packages": [
       "PYPI:jupyterlite-xeus",
-      "NPM:@jupyterlite/xeus",
       "NPM:@jupyterlite/xeus-core",
+      "NPM:@jupyterlite/xeus",
       "NPM:@jupyterlite/xeus-extension"
     ],
     "downloads_last_month": 3091,
@@ -20547,8 +20548,8 @@
       "notebook": 4
     },
     "prose_ratio": 0.367,
-    "head": "e505e76bf37ddd598f6f4121f6a30b7764123b53",
-    "last_commit": null
+    "head": "ca8c6cc9146ef6de39bb534b16b79df7eaaeb111",
+    "last_commit": "2026-10-29"
   },
   {
     "id": "jupyterlite/xeus-lite-demo",
@@ -20595,7 +20596,7 @@
     },
     "prose_ratio": 1.0,
     "head": "d6cae8aba0731832781df37a4c11f84b95365be8",
-    "last_commit": null
+    "last_commit": "2025-11-27"
   },
   {
     "id": "voila-dashboards/.github",
@@ -20634,7 +20635,7 @@
     },
     "prose_ratio": 1.0,
     "head": "1689539fd1e6ab946f9e16f09cd2e9bfa07db05a",
-    "last_commit": null
+    "last_commit": "2026-04-29"
   },
   {
     "id": "voila-dashboards/hotpot_km",
@@ -20680,7 +20681,7 @@
     },
     "prose_ratio": 0.042,
     "head": "6d2f573cb1acbd8ea4682c27b29a3fa2d09ba4e4",
-    "last_commit": null
+    "last_commit": "2021-03-31"
   },
   {
     "id": "voila-dashboards/tljh-voila-gallery",
@@ -20726,7 +20727,7 @@
     },
     "prose_ratio": 0.526,
     "head": "431b9eceec9be2dc35090b2518eb86640057eb33",
-    "last_commit": null
+    "last_commit": "2020-11-10"
   },
   {
     "id": "voila-dashboards/voici",
@@ -20793,7 +20794,7 @@
     },
     "prose_ratio": 0.516,
     "head": "5417f9acaa47d69354ee89a46d82c7c524b01ab8",
-    "last_commit": null
+    "last_commit": "2025-12-30"
   },
   {
     "id": "voila-dashboards/voici-demo",
@@ -20840,7 +20841,7 @@
     },
     "prose_ratio": 1.0,
     "head": "53d190281d737d10553ec65bbe672b83c1d85ec6",
-    "last_commit": null
+    "last_commit": "2026-01-05"
   },
   {
     "id": "voila-dashboards/voici-gallery",
@@ -20888,7 +20889,7 @@
     },
     "prose_ratio": 0.438,
     "head": "17d027e8d304ead97e95a217d5e8765263da4da5",
-    "last_commit": null
+    "last_commit": "2024-12-11"
   },
   {
     "id": "voila-dashboards/voila",
@@ -20961,7 +20962,7 @@
     },
     "prose_ratio": 0.439,
     "head": "2993413ffb950476ff7b44abf84fe56f656e7772",
-    "last_commit": null
+    "last_commit": "2026-09-04"
   },
   {
     "id": "voila-dashboards/voila-dashboards.github.io",
@@ -21002,7 +21003,7 @@
     },
     "prose_ratio": 1.0,
     "head": "6c6b452754faa7cc3a927edde7bebb56bdd4a7cb",
-    "last_commit": null
+    "last_commit": "2025-02-07"
   },
   {
     "id": "voila-dashboards/voila-debug",
@@ -21046,7 +21047,7 @@
     },
     "prose_ratio": 0.625,
     "head": "e1ea954d55ca72cb11e361045f893e06404e0bb2",
-    "last_commit": null
+    "last_commit": "2019-09-27"
   },
   {
     "id": "voila-dashboards/voila-gridstack",
@@ -21115,7 +21116,7 @@
     },
     "prose_ratio": 0.485,
     "head": "02f6233da825678438917ab843c16eae0641f0c0",
-    "last_commit": null
+    "last_commit": "2024-03-27"
   },
   {
     "id": "voila-dashboards/voila-heroku",
@@ -21155,7 +21156,7 @@
     },
     "prose_ratio": 1.0,
     "head": "81b396621ac268b141da08eca4dacde4dc9a1fbc",
-    "last_commit": null
+    "last_commit": "2021-12-20"
   },
   {
     "id": "voila-dashboards/voila-huggingface",
@@ -21202,7 +21203,7 @@
     },
     "prose_ratio": 1.0,
     "head": "7ec5bcdcec06321585c2d65eac9c5a19df3016d2",
-    "last_commit": null
+    "last_commit": "2023-08-22"
   },
   {
     "id": "voila-dashboards/voila-material",
@@ -21248,7 +21249,7 @@
     },
     "prose_ratio": 0.905,
     "head": "897c12d793a5f42d61594eaf08b82454639c729a",
-    "last_commit": null
+    "last_commit": "2025-08-25"
   },
   {
     "id": "voila-dashboards/voila-railway",
@@ -21288,7 +21289,7 @@
     },
     "prose_ratio": 1.0,
     "head": "cd97640834e71e83d4e08cb6698300262ac053fa",
-    "last_commit": null
+    "last_commit": "2023-08-22"
   },
   {
     "id": "voila-dashboards/voila-template-cookiecutter",
@@ -21330,7 +21331,7 @@
     },
     "prose_ratio": 0.75,
     "head": "8c6382e42a561987139d9835c7e40fb39e91a22c",
-    "last_commit": null
+    "last_commit": "2019-10-12"
   },
   {
     "id": "voila-dashboards/voila-topbar",
@@ -21391,7 +21392,7 @@
     },
     "prose_ratio": 0.455,
     "head": "8bd6d01541ec83abef33baf1e207c0c075a9b8ff",
-    "last_commit": null
+    "last_commit": "2025-03-03"
   },
   {
     "id": "voila-dashboards/voila-vuetify",
@@ -21436,7 +21437,7 @@
     },
     "prose_ratio": 0.7,
     "head": "d280dd6c11a3252df9354cbd641983bb558c56b6",
-    "last_commit": null
+    "last_commit": "2022-11-11"
   },
   {
     "id": "voila-gallery/cpp-xleaflet",
@@ -21478,7 +21479,7 @@
     },
     "prose_ratio": 1.0,
     "head": "918c3409e1571d530de63eb74895c507c63488ec",
-    "last_commit": null
+    "last_commit": "2021-09-10"
   },
   {
     "id": "voila-gallery/electricitymap_dashboard",
@@ -21521,7 +21522,7 @@
     },
     "prose_ratio": 0.667,
     "head": "11798615d53bdfe7cec97aab96491f36cc1851a4",
-    "last_commit": null
+    "last_commit": "2024-04-04"
   },
   {
     "id": "voila-gallery/gaussian-density",
@@ -21562,7 +21563,7 @@
     },
     "prose_ratio": 1.0,
     "head": "7fdbbb06298542a51150f8757b22f1d39d004c3a",
-    "last_commit": null
+    "last_commit": "2021-09-13"
   },
   {
     "id": "voila-gallery/hello-world-example",
@@ -21603,7 +21604,7 @@
     },
     "prose_ratio": 1.0,
     "head": "dafcec99ba35e752141612887f30a337e4c98afd",
-    "last_commit": null
+    "last_commit": "2019-07-08"
   },
   {
     "id": "voila-gallery/ipympl",
@@ -21645,7 +21646,7 @@
     },
     "prose_ratio": 1.0,
     "head": "d3b722437ef36e519c92be249afbd55aec93ec00",
-    "last_commit": null
+    "last_commit": "2021-09-13"
   },
   {
     "id": "voila-gallery/render-stl",
@@ -21687,7 +21688,7 @@
     },
     "prose_ratio": 1.0,
     "head": "6f2bcc50484a3ba3ee2688a8f2b1464802d2369c",
-    "last_commit": null
+    "last_commit": "2021-09-13"
   },
   {
     "id": "voila-gallery/voila-gallery.github.io",
@@ -21733,7 +21734,7 @@
     },
     "prose_ratio": 0.75,
     "head": "ae8f5f9c9bfb6c86cf3e5502220a3fcfbceb1ad5",
-    "last_commit": null
+    "last_commit": "2025-08-04"
   },
   {
     "id": "voila-gallery/voila-spotify",
@@ -21775,6 +21776,6 @@
     },
     "prose_ratio": 1.0,
     "head": "625f0d3eb7472db4f355fdd8ab522c5bebf291c7",
-    "last_commit": null
+    "last_commit": "2020-03-02"
   }
 ]

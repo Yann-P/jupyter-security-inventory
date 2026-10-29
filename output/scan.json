@@ -1,6 +1,7 @@
 {
   "binder-examples/.github": {
     "head": "5e53dc746262e25542518f21dd27899a081defe7",
+    "last_commit": "2019-09-24",
     "n_files": 2,
     "file_types": {
       "other": 1,
@@ -19,6 +20,7 @@
   },
   "binder-examples/appmode": {
     "head": "ef9cb16bf8002bde4a2dc39c8c40ed7ebbeab971",
+    "last_commit": "2019-03-26",
     "n_files": 7,
     "file_types": {
       "other": 3,
@@ -39,6 +41,7 @@
   },
   "binder-examples/apt_install": {
     "head": "9d3102b9cd84bc7322779216f6493f6cbe8d82bb",
+    "last_commit": "2019-03-04",
     "n_files": 5,
     "file_types": {
       "other": 2,
@@ -58,6 +61,7 @@
   },
   "binder-examples/binder-r-description": {
     "head": "435def5c37d4e3839396ef30854a6b4db0482252",
+    "last_commit": "2019-03-26",
     "n_files": 6,
     "file_types": {
       "other": 3,
@@ -78,6 +82,7 @@
   },
   "binder-examples/bokeh": {
     "head": "407bbe93bbfd2d0a1e3bcd10e2571a61a55661aa",
+    "last_commit": "2020-04-03",
     "n_files": 9,
     "file_types": {
       "other": 3,
@@ -99,6 +104,7 @@
   },
   "binder-examples/conda": {
     "head": "f00a783146e9c6a2ed9726f01fc09fbfbad2f89e",
+    "last_commit": "2023-02-16",
     "n_files": 5,
     "file_types": {
       "config": 2,
@@ -123,6 +129,7 @@
   },
   "binder-examples/conda-freeze": {
     "head": "cce6dde7701a9f360c611fc9c20c32ab39ae8580",
+    "last_commit": "2019-03-02",
     "n_files": 3,
     "file_types": {
       "other": 1,
@@ -142,6 +149,7 @@
   },
   "binder-examples/continuous-build": {
     "head": "17f9fa885d25cb6f9f37ce6efb3db60bc6da0940",
+    "last_commit": "2019-03-05",
     "n_files": 5,
     "file_types": {
       "config": 1,
@@ -162,6 +170,7 @@
   },
   "binder-examples/data-quilt": {
     "head": "0aab7e952c5baf46bfa990e89d45922bc9c1865b",
+    "last_commit": "2019-07-09",
     "n_files": 6,
     "file_types": {
       "other": 2,
@@ -182,6 +191,7 @@
   },
   "binder-examples/demo-julia": {
     "head": "5eebe6232eefc320e67457e65a3fb2fe5471d6af",
+    "last_commit": "2025-11-21",
     "n_files": 5,
     "file_types": {
       "other": 1,
@@ -202,6 +212,7 @@
   },
   "binder-examples/dockerfile-rstudio": {
     "head": "249838f2ac7e018fdf560b930780cb4770faf049",
+    "last_commit": "2018-02-22",
     "n_files": 5,
     "file_types": {
       "other": 1,
@@ -223,6 +234,7 @@
   },
   "binder-examples/getting-data": {
     "head": "fec63da8fed0a5b6866d6157a55a2f496c528bc8",
+    "last_commit": "2021-01-07",
     "n_files": 6,
     "file_types": {
       "other": 2,
@@ -243,6 +255,7 @@
   },
   "binder-examples/getting-data-xroot": {
     "head": "c13d2a92cd8e0e2e81773ea21029ef85ac8eabd8",
+    "last_commit": "2019-05-24",
     "n_files": 2,
     "file_types": {
       "other": 1,
@@ -261,6 +274,7 @@
   },
   "binder-examples/julia-python": {
     "head": "9b0da630e28b765a0fba777d7ade2a13457f2805",
+    "last_commit": "2024-05-29",
     "n_files": 9,
     "file_types": {
       "other": 2,
@@ -281,6 +295,7 @@
   },
   "binder-examples/jupyter-extension": {
     "head": "fb927f1e7b7fcfbdc071cada312d3cc5104fa277",
+    "last_commit": "2021-09-16",
     "n_files": 5,
     "file_types": {
       "other": 2,
@@ -300,6 +315,7 @@
   },
   "binder-examples/jupyter-rise": {
     "head": "b8fd564fb853102ea1577474ac2132467dae9dd1",
+    "last_commit": "2020-06-29",
     "n_files": 5,
     "file_types": {
       "other": 2,
@@ -320,6 +336,7 @@
   },
   "binder-examples/jupyter-sos": {
     "head": "b1e5b13c99944371fc0257808d50c15b92e459da",
+    "last_commit": "2023-04-10",
     "n_files": 15,
     "file_types": {
       "other": 4,
@@ -341,6 +358,7 @@
   },
   "binder-examples/jupyter-stacks": {
     "head": "b33625eac93e25f8433ed56f6ad09f000f2987e8",
+    "last_commit": "2019-03-26",
     "n_files": 3,
     "file_types": {
       "other": 2,
@@ -359,6 +377,7 @@
   },
   "binder-examples/jupyter-stacks-datascience": {
     "head": "2df974bf0ba288933a34ae4da1a95e823cd046e9",
+    "last_commit": "2020-06-30",
     "n_files": 4,
     "file_types": {
       "other": 3,
@@ -377,6 +396,7 @@
   },
   "binder-examples/jupyterlab": {
     "head": "be84880214e57de971825161a2cd02137de3b4ef",
+    "last_commit": "2019-09-16",
     "n_files": 8,
     "file_types": {
       "other": 4,
@@ -397,6 +417,7 @@
   },
   "binder-examples/latex": {
     "head": "c5fb3dcf9f70e25f286b857e2d2f1b80d61d50ab",
+    "last_commit": "2021-07-04",
     "n_files": 9,
     "file_types": {
       "other": 3,
@@ -418,6 +439,7 @@
   },
   "binder-examples/matplotlib-versions": {
     "head": "31e07abfcd47d2bf33322eca29e7ba53bd82b2d6",
+    "last_commit": "2019-02-15",
     "n_files": 3,
     "file_types": {
       "other": 1,
@@ -437,6 +459,7 @@
   },
   "binder-examples/minimal-dockerfile": {
     "head": "2cd2202f6e6fa8c47c644a38262eb0c093f82d15",
+    "last_commit": "2021-09-22",
     "n_files": 3,
     "file_types": {
       "other": 2,
@@ -455,6 +478,7 @@
   },
   "binder-examples/multi-language-demo": {
     "head": "faab8aaba6cb14ae30192e808847e7be90c3535f",
+    "last_commit": "2019-09-20",
     "n_files": 13,
     "file_types": {
       "other": 3,
@@ -476,6 +500,7 @@
   },
   "binder-examples/nix": {
     "head": "296e5735fac9806f8331abde0355c8603861473e",
+    "last_commit": "2019-07-10",
     "n_files": 5,
     "file_types": {
       "other": 1,
@@ -496,6 +521,7 @@
   },
   "binder-examples/octave": {
     "head": "83421cd1049dfeaead12f4a12e85e6b6c4426a96",
+    "last_commit": "2025-04-25",
     "n_files": 6,
     "file_types": {
       "other": 2,
@@ -516,6 +542,7 @@
   },
   "binder-examples/pipfile": {
     "head": "21d4a4022b4af8302c892d935d6f890a7c74266f",
+    "last_commit": "2019-06-26",
     "n_files": 7,
     "file_types": {
       "other": 2,
@@ -537,6 +564,7 @@
   },
   "binder-examples/python-conda_pip": {
     "head": "3b7126f39253f92bb13ce7ea155fd8a121082afe",
+    "last_commit": "2019-05-06",
     "n_files": 5,
     "file_types": {
       "other": 2,
@@ -557,6 +585,7 @@
   },
   "binder-examples/python2_runtime": {
     "head": "d38469bff97fc3cb859f7405bffec513b05e65fa",
+    "last_commit": "2020-01-31",
     "n_files": 6,
     "file_types": {
       "other": 2,
@@ -576,6 +605,7 @@
   },
   "binder-examples/python2_with_3": {
     "head": "9818f3ef34a08095e9180adc1eca866dff9de0d9",
+    "last_commit": "2019-03-26",
     "n_files": 8,
     "file_types": {
       "other": 2,
@@ -595,6 +625,7 @@
   },
   "binder-examples/r": {
     "head": "41e70868b8ab1d59df91d555d6571f3a072d24c7",
+    "last_commit": "2025-12-17",
     "n_files": 14,
     "file_types": {
       "config": 1,
@@ -620,6 +651,7 @@
   },
   "binder-examples/r-conda": {
     "head": "2092b79b5be4258ae193915519313076e49085e5",
+    "last_commit": "2026-09-26",
     "n_files": 3,
     "file_types": {
       "config": 2,
@@ -642,6 +674,7 @@
   },
   "binder-examples/r_with_python": {
     "head": "b96091697eb5d8424464b702293a752c736c8dc8",
+    "last_commit": "2019-03-26",
     "n_files": 11,
     "file_types": {
       "other": 5,
@@ -663,6 +696,7 @@
   },
   "binder-examples/remote_storage": {
     "head": "f7188a95afd848dae65d4ee944912cfdf3d81884",
+    "last_commit": "2019-03-26",
     "n_files": 4,
     "file_types": {
       "other": 1,
@@ -682,6 +716,7 @@
   },
   "binder-examples/requirements": {
     "head": "505a59f0430cb6414a4acbdd88803ce33c7fd953",
+    "last_commit": "2026-03-09",
     "n_files": 7,
     "file_types": {
       "config": 2,
@@ -706,6 +741,7 @@
   },
   "binder-examples/rocker": {
     "head": "0040956c9b1b1b6972e6182f5f1420109aac1db2",
+    "last_commit": "2019-03-26",
     "n_files": 13,
     "file_types": {
       "other": 6,
@@ -726,6 +762,7 @@
   },
   "binder-examples/setup.py": {
     "head": "3f0437065094b5d70ed9856d0821927b58a62b16",
+    "last_commit": "2018-10-09",
     "n_files": 9,
     "file_types": {
       "other": 2,
@@ -747,6 +784,7 @@
   },
   "binder-examples/stencila-multi": {
     "head": "7a049d68dffc3a1ca983affa6350b528b92e00bf",
+    "last_commit": "2018-11-21",
     "n_files": 11,
     "file_types": {
       "other": 8,
@@ -766,6 +804,7 @@
   },
   "binder-examples/stencila-py": {
     "head": "8b4466168142da743d970df304ff21668cd48d1a",
+    "last_commit": "2018-11-21",
     "n_files": 5,
     "file_types": {
       "other": 4,
@@ -784,6 +823,7 @@
   },
   "binder-examples/stencila-r": {
     "head": "8b7e8ce10452db16b8388b4009b284906e30f2d1",
+    "last_commit": "2018-11-21",
     "n_files": 6,
     "file_types": {
       "other": 5,
@@ -802,6 +842,7 @@
   },
   "binder-examples/tensorboard": {
     "head": "4a93712656de76499f636b61130aedb8f41c6a60",
+    "last_commit": "2020-01-23",
     "n_files": 9,
     "file_types": {
       "docs": 1,
@@ -823,6 +864,7 @@
   },
   "binder-examples/voila": {
     "head": "049705607f6e85040ee1b6e9904200057585efde",
+    "last_commit": "2021-09-10",
     "n_files": 4,
     "file_types": {
       "other": 1,
@@ -843,6 +885,7 @@
   },
   "binder-examples/zero-to-binder": {
     "head": "165d994d9191559da9eb9a48b1d85f52b088b29b",
+    "last_commit": "2019-01-29",
     "n_files": 10,
     "file_types": {
       "other": 2,
@@ -864,6 +907,7 @@
   },
   "binder-examples/zero-to-jupyterhub-k8s": {
     "head": "d078c0eac148f3bee443f3d0cd18d1dbfacafe01",
+    "last_commit": "2023-03-07",
     "n_files": 205,
     "file_types": {
       "config": 69,
@@ -914,6 +958,7 @@
   },
   "binderhub-ci-repos/cached-minimal-dockerfile": {
     "head": "596b52f10efb0c9befc0c4ae850cc5175297d71c",
+    "last_commit": "2020-11-18",
     "n_files": 2,
     "file_types": {
       "other": 1,
@@ -932,6 +977,7 @@
   },
   "binderhub-ci-repos/lfs": {
     "head": "9abf54a17c3d31823b037b80e9ab0903c0e40694",
+    "last_commit": "2019-06-13",
     "n_files": 5,
     "file_types": {
       "other": 4,
@@ -950,6 +996,7 @@
   },
   "binderhub-ci-repos/minimal-dockerfile": {
     "head": "fcf68531397429cffbe85135b5a07ee01368286c",
+    "last_commit": "2025-10-25",
     "n_files": 3,
     "file_types": {
       "config": 1,
@@ -980,6 +1027,7 @@
   },
   "binderhub-ci-repos/repo2docker-ci-clone-depth": {
     "head": "703322e9c6635ba1835d3b92eafbabeca0042c3e",
+    "last_commit": "2017-10-26",
     "n_files": 3,
     "file_types": {
       "other": 1,
@@ -998,6 +1046,7 @@
   },
   "binderhub-ci-repos/repo2docker-subdir-support": {
     "head": "cff1a76da66a249822fdcaf3b858ee5536e37876",
+    "last_commit": "2018-10-16",
     "n_files": 3,
     "file_types": {
       "docs": 3
@@ -1015,6 +1064,7 @@
   },
   "binderhub-ci-repos/requirements": {
     "head": "20c4fe55a9b2c5011d228545e821b1c7b1723652",
+    "last_commit": "2018-09-17",
     "n_files": 4,
     "file_types": {
       "docs": 2,
@@ -1033,6 +1083,7 @@
   },
   "ipython/.github": {
     "head": "57adc482f9bd9f774151a01683f258a6633f624c",
+    "last_commit": "2026-08-26",
     "n_files": 3,
     "file_types": {
       "config": 1,
@@ -1051,6 +1102,7 @@
   },
   "ipython/comm": {
     "head": "ba1c862a4cdb28d2aebc9b77c3b9616dbcffc44c",
+    "last_commit": "2026-09-02",
     "n_files": 17,
     "file_types": {
       "config": 8,
@@ -1095,7 +1147,8 @@
     "readme": "# Comm\n\nIt provides a way to register a Kernel Comm implementation, as per the Jupyter kernel protocol.\nIt also provides a base Comm implementation and a default CommManager that can be used.\n\n## Register a comm implementation in the kernel:\n\n### Case 1: Using the default CommManager and the BaseComm implementations\n\nWe provide default implementations for usage in IPython:\n\n```python\nimport comm\n\n\nclass MyCustomComm(comm.base_comm.BaseComm):\n    def publish_msg(self, msg_type, data=None, metadata=None, buffers=None, **keys):\n        # TODO implement the logic for sending comm messages through the iopub channel\n        pass\n\n\ncomm.create_comm = MyCustomComm\n```\n\nThis is typically what ipykernel and JupyterLite's pyolite kernel will do.\n\n### Case 2: Providing your own comm manager creation implementation\n\n```python\nimport comm\n\ncomm.create_comm = custom_create_comm\ncomm.get_comm_manager = custom_comm_manager_getter\n```\n\nThis is typically what xeus-python does (it has its own manager implementation using xeus's C++ messaging logic).\n\n## Comm users\n\nLibraries like ipywidgets can then use the comms implementation that has been registered by the kernel:\n\n```python\nfrom comm import create_comm, get_comm_manager\n\n# Create a comm\ncomm_manager = get_comm_manager()\ncomm = create_comm()\n\ncomm_manager.register_comm(comm)\n```\n"
   },
   "ipython/ipykernel": {
-    "head": "1437742d7547db3bcd2261264be34b311f16d2f2",
+    "head": "f87d0e09863101be7a961d53f29549397ff62c72",
+    "last_commit": "2026-10-28",
     "n_files": 114,
     "file_types": {
       "other": 6,
@@ -1134,9 +1187,9 @@
       "actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510",
       "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
       "jupyter-server/jupyter_releaser@70e58c50c736ad496cca11fe4f2446033b68b027",
-      "jupyterlab/maintainer-tools@21b1cac622018fd37ec13a1c8081da814e10d94e",
+      "jupyterlab/maintainer-tools@925e40fa6066f4533e0c40803bd4b6d0d2f4a781",
       "scientific-python/upload-nightly-action@16fa02eacee1655195143de09f03676e60ef2bf5",
-      "zizmorcore/zizmor-action@cc914d7f3750a2d13d75c7f184a1060aa0e9d482"
+      "zizmorcore/zizmor-action@85b2b9fb8e3325e7a23d7d0a9d7ba5ae0f999e3e"
     ],
     "build_requires": [
       "hatchling",
@@ -1146,6 +1199,7 @@
   },
   "ipython/ipynb": {
     "head": "f82fe63596bff08c7e98743264b4a2a9dcf3b73f",
+    "last_commit": "2023-01-14",
     "n_files": 26,
     "file_types": {
       "other": 4,
@@ -1174,6 +1228,7 @@
   },
   "ipython/ipyparallel": {
     "head": "d724f99d7e4949e116ca986ad00576bc1d86a843",
+    "last_commit": "2026-07-19",
     "n_files": 305,
     "file_types": {
       "config": 42,
@@ -1226,11 +1281,12 @@
     "readme": "# Interactive Parallel Computing with IPython\n\nIPython Parallel (`ipyparallel`) is a Python package and collection of CLI scripts for controlling clusters of IPython processes, built on the Jupyter protocol.\n\nIPython Parallel provides the following commands:\n\n- ipcluster - start/stop/list clusters\n- ipcontroller - start a controller\n- ipengine - start an engine\n\n## Install\n\nInstall IPython Parallel:\n\n    pip install ipyparallel\n\nThis will install and enable the IPython Parallel extensions\nfor Jupyter Notebook and (as of 7.0) Jupyter Lab 3.0.\n\n## Run\n\nStart a cluster:\n\n    ipcluster start\n\nUse it from Python:\n\n```python\nimport os\nimport ipyparallel as ipp\n\ncluster = ipp.Cluster(n=4)\nwith cluster as rc:\n    ar = rc[:].apply_async(os.getpid)\n    pid_map = ar.get_dict()\n```\n\nSee [the docs](https://ipyparallel.readthedocs.io) for more info.\n"
   },
   "ipython/ipython": {
-    "head": "4e529543e57b6dd88cd838254ac8aeec1e61af9e",
-    "n_files": 512,
+    "head": "38a9c432dbc3224fd0aa850d5cc41d6647ee2990",
+    "last_commit": "2026-10-28",
+    "n_files": 513,
     "file_types": {
       "other": 18,
-      "docs": 78,
+      "docs": 79,
       "config": 27,
       "code": 334,
       "media": 52,
@@ -1272,7 +1328,7 @@
       "astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7",
       "codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5",
       "github/codeql-action@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2",
-      "pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33",
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086",
       "scientific-python/upload-nightly-action@16fa02eacee1655195143de09f03676e60ef2bf5",
       "zulip/github-actions-zulip@f675f2b4eb2a95fae974215476dcb7ad8dfeff6b"
     ],
@@ -1283,6 +1339,7 @@
   },
   "ipython/ipython-in-depth": {
     "head": "b2f9442aa52118dec44ccb0ee749ea63ac578bba",
+    "last_commit": "2021-09-10",
     "n_files": 249,
     "file_types": {
       "other": 22,
@@ -1307,6 +1364,7 @@
   },
   "ipython/ipython-pygments-lexers": {
     "head": "50791e25b02ebbdc8a13f2bbaf4b1cbea93f82a7",
+    "last_commit": "2026-09-02",
     "n_files": 8,
     "file_types": {
       "config": 3,
@@ -1347,6 +1405,7 @@
   },
   "ipython/ipython-website": {
     "head": "5088348a051aec0ccf5159f96ae0fa3335dd16e7",
+    "last_commit": "2025-10-05",
     "n_files": 112,
     "file_types": {
       "other": 6,
@@ -1369,6 +1428,7 @@
   },
   "ipython/ipython.github.com": {
     "head": "f4cb7dcf177990f6bf65bbe5b8c3c789ecb91613",
+    "last_commit": "2026-06-02",
     "n_files": 107,
     "file_types": {
       "other": 20,
@@ -1409,10 +1469,11 @@
     "readme": null
   },
   "ipython/matplotlib-inline": {
-    "head": "084e20132c3589ba91e83eae2024b59caafeb75e",
-    "n_files": 15,
+    "head": "95c7f835483d1d27e888d4e16f6a78064349ee02",
+    "last_commit": "2026-10-28",
+    "n_files": 16,
     "file_types": {
-      "config": 5,
+      "config": 6,
       "other": 3,
       "docs": 1,
       "code": 4,
@@ -1439,11 +1500,10 @@
     },
     "uses": [
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
-      "actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd",
-      "actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405",
-      "astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d",
-      "github/codeql-action@cdf488f595d80d6e07e03d4674febd5ab45fa938",
-      "pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b"
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e",
+      "github/codeql-action@9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "build_requires": [
       "flit_core"
@@ -1452,6 +1512,7 @@
   },
   "ipython/pickleshare": {
     "head": "9f0a267b02063bc01bd8a44c54909dab62a590a8",
+    "last_commit": "2026-09-02",
     "n_files": 10,
     "file_types": {
       "config": 4,
@@ -1484,6 +1545,7 @@
   },
   "ipython/traitlets": {
     "head": "a576f243ec6c7be0ac3d00b3ba294408a84b068e",
+    "last_commit": "2026-10-20",
     "n_files": 94,
     "file_types": {
       "other": 6,
@@ -1532,6 +1594,7 @@
   },
   "ipython/xkcd-font": {
     "head": "d6a83979937c7c36475926009c1eb471e6d62b9d",
+    "last_commit": "2026-07-09",
     "n_files": 134,
     "file_types": {
       "other": 8,
@@ -1571,6 +1634,7 @@
   },
   "jupyter-book/.github": {
     "head": "7080fd253008b9c8d77a7bdbf7211da0feeaadc2",
+    "last_commit": "2026-06-22",
     "n_files": 2,
     "file_types": {
       "config": 1,
@@ -1596,6 +1660,7 @@
   },
   "jupyter-book/blog": {
     "head": "0d730afbfac036e88e4745e950f418e8ebd84239",
+    "last_commit": "2026-09-30",
     "n_files": 47,
     "file_types": {
       "docs": 29,
@@ -1629,6 +1694,7 @@
   },
   "jupyter-book/blog-plugin": {
     "head": "6afb81be34d73ae15e3bec34ba7d9694e4d51c0e",
+    "last_commit": "2025-12-17",
     "n_files": 21,
     "file_types": {
       "config": 7,
@@ -1662,6 +1728,7 @@
   },
   "jupyter-book/book-theme-tailwind-quickstart": {
     "head": "6b49a1f0518723fc359368dd2da380849885c73c",
+    "last_commit": "2025-06-16",
     "n_files": 11,
     "file_types": {
       "config": 4,
@@ -1693,6 +1760,7 @@
   },
   "jupyter-book/demo-scipy-2025": {
     "head": "5e7778b1b37af881cec3ff74465004ec62f501f9",
+    "last_commit": "2025-07-01",
     "n_files": 12,
     "file_types": {
       "config": 2,
@@ -1724,6 +1792,7 @@
   },
   "jupyter-book/example-js-anywidget": {
     "head": "580c7a34f676338ababf659efb1bce671a0a532d",
+    "last_commit": "2026-03-04",
     "n_files": 9,
     "file_types": {
       "config": 5,
@@ -1763,6 +1832,7 @@
   },
   "jupyter-book/example-js-plugin": {
     "head": "74feec2024b4f3e1f4d1c93eb5d47628fa8e92e6",
+    "last_commit": "2026-02-09",
     "n_files": 9,
     "file_types": {
       "config": 5,
@@ -1803,6 +1873,7 @@
   },
   "jupyter-book/example-landing-pages": {
     "head": "427009bc9e9ae43866e24a61afcc57de6e3c8ae8",
+    "last_commit": "2025-07-01",
     "n_files": 14,
     "file_types": {
       "config": 2,
@@ -1834,6 +1905,7 @@
   },
   "jupyter-book/example-multi-language-book": {
     "head": "79f60983934ebcde494250f3c8e97874db548385",
+    "last_commit": "2026-03-04",
     "n_files": 2,
     "file_types": {
       "other": 1,
@@ -1852,6 +1924,7 @@
   },
   "jupyter-book/example-outputs": {
     "head": "d7ee89ea1ee65f9eac0261e99ba866392e832689",
+    "last_commit": "2026-01-31",
     "n_files": 27,
     "file_types": {
       "config": 2,
@@ -1884,6 +1957,7 @@
   },
   "jupyter-book/example-python-plugin": {
     "head": "9795d0499c627384940bb988952394eaae968367",
+    "last_commit": "2025-05-14",
     "n_files": 7,
     "file_types": {
       "config": 2,
@@ -1915,6 +1989,7 @@
   },
   "jupyter-book/example-stylesheets": {
     "head": "e4e99d4fef4acfb205dde38c351597eae958724b",
+    "last_commit": "2025-05-14",
     "n_files": 10,
     "file_types": {
       "config": 2,
@@ -1945,6 +2020,7 @@
   },
   "jupyter-book/example-widgets": {
     "head": "a1710bb8e3102cb1122b36e0e8ab6334eb6869de",
+    "last_commit": "2026-02-24",
     "n_files": 8,
     "file_types": {
       "other": 1,
@@ -1972,6 +2048,7 @@
   },
   "jupyter-book/github-action-playground": {
     "head": "0491103009f6ea6a8fb0970961cc75b873f01d31",
+    "last_commit": "2026-05-18",
     "n_files": 9,
     "file_types": {
       "config": 5,
@@ -1995,6 +2072,7 @@
   },
   "jupyter-book/hatch-deps-selector": {
     "head": "d36eb9c0e3957c1aac163fa601d8ae5b464afad7",
+    "last_commit": "2024-09-04",
     "n_files": 11,
     "file_types": {
       "config": 2,
@@ -2036,6 +2114,7 @@
   },
   "jupyter-book/jb1-redirect-generator": {
     "head": "d70ce6d7df9f2dfc83bb1d409336c0cc3e20697f",
+    "last_commit": "2026-02-26",
     "n_files": 5,
     "file_types": {
       "other": 2,
@@ -2055,6 +2134,7 @@
   },
   "jupyter-book/jupyter-book": {
     "head": "11acb1bbdd51c23ae14663daf0b7d4a0fd1c9d0e",
+    "last_commit": "2026-09-23",
     "n_files": 80,
     "file_types": {
       "config": 17,
@@ -2116,6 +2196,7 @@
   },
   "jupyter-book/jupyter_releaser": {
     "head": "844b46d3bbc499831c32ed3a53469f55334dc9c3",
+    "last_commit": "2024-10-29",
     "n_files": 88,
     "file_types": {
       "config": 24,
@@ -2169,6 +2250,7 @@
   },
   "jupyter-book/jupyterbook.org": {
     "head": "ccb4857f9b10f607e29ce70f83be6e735135bf49",
+    "last_commit": "2026-10-21",
     "n_files": 52,
     "file_types": {
       "config": 6,
@@ -2197,6 +2279,7 @@
   },
   "jupyter-book/jupyterlab-myst": {
     "head": "ada2b284307f20ba00895b671c3a737ee1bf9d55",
+    "last_commit": "2026-10-02",
     "n_files": 122,
     "file_types": {
       "config": 28,
@@ -2265,6 +2348,7 @@
   },
   "jupyter-book/jupyterlab-myst-quickstart": {
     "head": "f6ef75642e3251876633c359b63b0cd76a5c2ce1",
+    "last_commit": "2023-07-05",
     "n_files": 11,
     "file_types": {
       "other": 1,
@@ -2285,6 +2369,7 @@
   },
   "jupyter-book/legacy-demo-book": {
     "head": "8e2b450cf57313bb018aedde922015f82187f51e",
+    "last_commit": "2024-11-13",
     "n_files": 15,
     "file_types": {
       "config": 3,
@@ -2315,6 +2400,7 @@
   },
   "jupyter-book/myst-enhancement-proposals": {
     "head": "d3027b25abd427c24038739aac8c817cc5229d07",
+    "last_commit": "2026-03-22",
     "n_files": 22,
     "file_types": {
       "docs": 10,
@@ -2354,6 +2440,7 @@
   },
   "jupyter-book/myst-plugins": {
     "head": "95626532ae6609acb4ef7af4fc6968850309c41c",
+    "last_commit": "2026-10-12",
     "n_files": 179,
     "file_types": {
       "config": 28,
@@ -2425,6 +2512,7 @@
   },
   "jupyter-book/myst-theme": {
     "head": "f75ec23d244911f05fd055fdcca80c164c3242b5",
+    "last_commit": "2026-10-26",
     "n_files": 450,
     "file_types": {
       "docs": 74,
@@ -2560,6 +2648,7 @@
   },
   "jupyter-book/mystmd": {
     "head": "2210e7003a0b70d0f9884b5da81e98841f7b79e2",
+    "last_commit": "2026-10-26",
     "n_files": 1759,
     "file_types": {
       "docs": 473,
@@ -2833,6 +2922,7 @@
   },
   "jupyter-book/mystmd-quickstart": {
     "head": "caadbd885c2dee8a02b38ead4049d900678dc385",
+    "last_commit": "2025-01-03",
     "n_files": 13,
     "file_types": {
       "other": 1,
@@ -2853,6 +2943,7 @@
   },
   "jupyter-book/mystmd.org": {
     "head": "78f0db446fb3e8c5bee106483bd9f2ffa8a976cc",
+    "last_commit": "2026-09-21",
     "n_files": 78,
     "file_types": {
       "config": 8,
@@ -2886,6 +2977,7 @@
   },
   "jupyter-book/renaissance2026-myst": {
     "head": "547ca233e1f9e79151bc85ab4b64b1484b6502d4",
+    "last_commit": "2026-06-08",
     "n_files": 7,
     "file_types": {
       "other": 1,
@@ -2904,6 +2996,7 @@
   },
   "jupyter-book/team-compass": {
     "head": "4fc155c35c4a08022f9d95f615eddd0db24f3dbb",
+    "last_commit": "2026-10-26",
     "n_files": 22,
     "file_types": {
       "other": 2,
@@ -2932,6 +3025,7 @@
   },
   "jupyter-book/test-repo": {
     "head": "e64cbcbdbf5bf00b744ce874d993452d69fe2239",
+    "last_commit": "2026-01-09",
     "n_files": 1,
     "file_types": {
       "docs": 1
@@ -2949,6 +3043,7 @@
   },
   "jupyter-book/thebe": {
     "head": "0e0c6879dc957b7749825b4da9295e8d88b52f4d",
+    "last_commit": "2026-06-22",
     "n_files": 296,
     "file_types": {
       "docs": 66,
@@ -3024,6 +3119,7 @@
   },
   "jupyter-book/thebe-binder-base": {
     "head": "0f4b0682ec70647edd1c8845d7a48b6eaae594cd",
+    "last_commit": "2023-04-27",
     "n_files": 2,
     "file_types": {
       "docs": 2
@@ -3041,6 +3137,7 @@
   },
   "jupyter-book/vscode-mystmd": {
     "head": "4766925df74501e20e5118dde3b3fbb32309eb2d",
+    "last_commit": "2024-10-22",
     "n_files": 25,
     "file_types": {
       "code": 5,
@@ -3069,6 +3166,7 @@
   },
   "jupyter-book/workshop-template": {
     "head": "e22d306baa2819016eeebb6411ebd05fcd3e6fed",
+    "last_commit": "2026-03-17",
     "n_files": 53,
     "file_types": {
       "config": 2,
@@ -3102,6 +3200,7 @@
   },
   "jupyter-governance/.github": {
     "head": "850678d8a65a245f9081edf3b393df8f84109dfc",
+    "last_commit": "2025-04-16",
     "n_files": 3,
     "file_types": {
       "other": 1,
@@ -3120,6 +3219,7 @@
   },
   "jupyter-governance/ec-team-compass": {
     "head": "b6730b35cdfc4edf1a311ad313399cd77a12b02d",
+    "last_commit": "2026-09-23",
     "n_files": 28,
     "file_types": {
       "config": 3,
@@ -3143,6 +3243,7 @@
   },
   "jupyter-governance/funding-proposals": {
     "head": "a991e042fc2264464ab5a2568ff2c5b365e16f27",
+    "last_commit": "2026-10-12",
     "n_files": 59,
     "file_types": {
       "docs": 40,
@@ -3175,6 +3276,7 @@
   },
   "jupyter-governance/jupyter-foundation-governing-board": {
     "head": "342afb672f020a0539abd31c66c45d172c667c06",
+    "last_commit": "2026-08-24",
     "n_files": 22,
     "file_types": {
       "config": 2,
@@ -3205,6 +3307,7 @@
   },
   "jupyter-incubator/sparkmagic": {
     "head": "41ff10d366acb68a5567d439b87f2d20fbf8b2c7",
+    "last_commit": "2025-09-09",
     "n_files": 194,
     "file_types": {
       "config": 28,
@@ -3261,6 +3364,7 @@
   },
   "jupyter-server/.github": {
     "head": "339ec164a968653f7ca60c79d4a349f797a55702",
+    "last_commit": "2022-08-01",
     "n_files": 10,
     "file_types": {
       "docs": 5,
@@ -3280,6 +3384,7 @@
   },
   "jupyter-server/contributing-hour": {
     "head": "f8f67d039027e829e58edd3062e8829509805ce6",
+    "last_commit": "2022-06-02",
     "n_files": 1,
     "file_types": {
       "docs": 1
@@ -3296,7 +3401,8 @@
     "readme": "# Contributing Hour Whiteboard\n\nThis is a repo that hosts projects/demos we tackled during Jupyter Server's weekly contributing hour.\n\n## List of topics covered:\n\n* [Adding a websocket handler as a server extension](https://github.com/jupyter-server/contributing-hour/tree/2022-04-07)\n* [Jupyter Server Extension backed by a SQLite Database](https://github.com/jupyter-server/contributing-hour/tree/2022-06-02)\n\n## Tips and tricks we've all learned\n\n* `jupyter server --autoreload` runs a Jupyter Server that autoreloads the webapp and all imported Python packages\n    when any changes are made to any Python src files in server or extensions.\n\n## How this repo is organized\n\nWe create a new branch each week that contains the code we wrote together. We'll add references\nto those branches in this README for easy search/access.\n"
   },
   "jupyter-server/enterprise_gateway": {
-    "head": "880ab92b9a9124363a10acafd82daa42ecf402e1",
+    "head": "3be3bb30a09fd022bf093d8e29d9b9131eee1873",
+    "last_commit": "2026-10-27",
     "n_files": 335,
     "file_types": {
       "other": 31,
@@ -3326,11 +3432,11 @@
       "publishes": []
     },
     "uses": [
-      "actions/checkout@v4",
-      "actions/setup-java@v4",
-      "github/codeql-action@v3",
+      "actions/checkout@v7",
+      "actions/setup-java@v6",
+      "github/codeql-action@v4",
       "jupyterlab/maintainer-tools@v1",
-      "nick-invision/retry@v3.0.0",
+      "nick-fields/retry@v4",
       "re-actors/alls-green@release/v1",
       "sbt/setup-sbt@v1"
     ],
@@ -3341,6 +3447,7 @@
   },
   "jupyter-server/extension-cookiecutter": {
     "head": "c03fda1fc878fd873b6482e77e9d34a9977e40b6",
+    "last_commit": "2022-12-07",
     "n_files": 27,
     "file_types": {
       "config": 10,
@@ -3371,6 +3478,7 @@
   },
   "jupyter-server/fps": {
     "head": "b4e2d1f44f1d2e3826a79a8f587c816d86c5941e",
+    "last_commit": "2026-08-14",
     "n_files": 38,
     "file_types": {
       "config": 8,
@@ -3418,6 +3526,7 @@
   },
   "jupyter-server/gateway_provisioners": {
     "head": "d2d6f36c66ef4e0e1e2f154ae1487d1441350b9f",
+    "last_commit": "2026-09-07",
     "n_files": 159,
     "file_types": {
       "other": 12,
@@ -3471,6 +3580,7 @@
   },
   "jupyter-server/jupyter-resource-usage": {
     "head": "2e20198ba8f8789e1d079075c54f77a76e0bce4c",
+    "last_commit": "2026-08-11",
     "n_files": 72,
     "file_types": {
       "other": 5,
@@ -3527,6 +3637,7 @@
   },
   "jupyter-server/jupyter-scheduler": {
     "head": "955883c1b33a7c366df0e3e7d9a9523dff48c9b4",
+    "last_commit": "2026-02-09",
     "n_files": 197,
     "file_types": {
       "other": 9,
@@ -3588,6 +3699,7 @@
   },
   "jupyter-server/jupyter_releaser": {
     "head": "f27bf638436926ec2d2aea586f65e992f91fa44d",
+    "last_commit": "2026-10-22",
     "n_files": 88,
     "file_types": {
       "config": 24,
@@ -3640,7 +3752,8 @@
     "readme": "# Jupyter Releaser\n\n[![Build Status](https://github.com/jupyter-server/jupyter_releaser/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)](https://github.com/jupyter-server/jupyter_releaser/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)\n[![Documentation Status](https://readthedocs.org/projects/jupyter-releaser/badge/?version=latest)](http://jupyter-releaser.readthedocs.io/en/latest/?badge=latest)\n\n**Jupyter Releaser** contains a set of helper scripts and GitHub Actions to aid in automated releases of Python and npm packages.\n\n## Installation\n\nTo install the latest release locally, make sure you have\n[pip installed](https://pip.readthedocs.io/en/stable/installing/) and run:\n\n```bash\npip install git+https://github.com/jupyter-server/jupyter_releaser\n```\n\n## Library Usage\n\n```bash\njupyter-releaser --help\njupyter-releaser build-python --help\njupyter-releaser check-npm --help\n```\n\n## Checklist for Adoption\n\nSee the [adoption guides](https://jupyter-releaser.readthedocs.io/en/latest/how_to_guides/index.html).\n\n## Actions\n\nGitHub actions scripts are available to draft a changelog, draft a release, publish a release, and check a release.\n\nSee the [action details documentation](https://jupyter-releaser.readthedocs.io/en/latest/reference/theory.html#action-details) for more information.\n\nThe actions can be run on a [fork](https://jupyter-releaser.readthedocs.io/en/latest/how_to_guides/convert_repo_from_releaser.html) of `jupyter_releaser` and target multiple\nrepositories, or run as workflows on the [source repositories](https://jupyter-releaser.readthedocs.io/en/latest/how_to_guides/convert_repo_from_repo.html), using\nshared credentials.\n"
   },
   "jupyter-server/jupyter_server": {
-    "head": "f8169d721a0e0abb9ca27266c83db5a3a09e29d7",
+    "head": "e39ebd56b3ed2b201aa615448ec6adbeed8fa99c",
+    "last_commit": "2026-10-28",
     "n_files": 342,
     "file_types": {
       "other": 14,
@@ -3704,6 +3817,7 @@
   },
   "jupyter-server/jupyter_server_fileid": {
     "head": "c2902acd44b63a421e7226c3bc8b6856943d4c0d",
+    "last_commit": "2026-10-13",
     "n_files": 35,
     "file_types": {
       "other": 5,
@@ -3754,6 +3868,7 @@
   },
   "jupyter-server/jupyter_server_mathjax": {
     "head": "286f3852ae2490f649c663638f3f2f2503599cf8",
+    "last_commit": "2022-07-14",
     "n_files": 19,
     "file_types": {
       "config": 7,
@@ -3792,6 +3907,7 @@
   },
   "jupyter-server/jupyter_server_terminals": {
     "head": "46563c0797a2d21526d0cc95c70dafc4e0e0440a",
+    "last_commit": "2026-01-14",
     "n_files": 39,
     "file_types": {
       "other": 5,
@@ -3838,6 +3954,7 @@
   },
   "jupyter-server/jupyter_ydoc": {
     "head": "e3fa4365b42eea792fbddcb9d41e9280c0a259c7",
+    "last_commit": "2026-10-26",
     "n_files": 76,
     "file_types": {
       "config": 22,
@@ -3898,6 +4015,7 @@
   },
   "jupyter-server/jupyverse": {
     "head": "d9bb22a97da09ca3fb521995f34ea5011273faf4",
+    "last_commit": "2026-10-26",
     "n_files": 396,
     "file_types": {
       "config": 53,
@@ -4204,6 +4322,7 @@
   },
   "jupyter-server/kernel_gateway": {
     "head": "8c483ff06e6b88a579137b5045d3b90c2826b8b0",
+    "last_commit": "2024-03-12",
     "n_files": 92,
     "file_types": {
       "other": 5,
@@ -4252,6 +4371,7 @@
   },
   "jupyter-server/pytest-jupyter": {
     "head": "9509dd22d3a29122373d8a5ae134632f10abce21",
+    "last_commit": "2025-10-16",
     "n_files": 33,
     "file_types": {
       "config": 9,
@@ -4297,6 +4417,7 @@
   },
   "jupyter-server/synchronizer": {
     "head": "faa25ac7ba7683021a9026ac9e0512deadd837c8",
+    "last_commit": "2024-03-13",
     "n_files": 27,
     "file_types": {
       "config": 8,
@@ -4342,6 +4463,7 @@
   },
   "jupyter-server/team-compass": {
     "head": "945d10d11e3a73e29b9c2905615feab001ab3d74",
+    "last_commit": "2026-10-20",
     "n_files": 21,
     "file_types": {
       "other": 3,
@@ -4364,6 +4486,7 @@
   },
   "jupyter-standards/.github": {
     "head": "fdeed5444fcdaaf32e99cf45931f4c1e2d843e93",
+    "last_commit": "2023-10-09",
     "n_files": 3,
     "file_types": {
       "other": 1,
@@ -4382,6 +4505,7 @@
   },
   "jupyter-widgets/ipydatagrid": {
     "head": "0685635938395866ba3f9b62bcca8fa4c973d7d7",
+    "last_commit": "2026-01-15",
     "n_files": 328,
     "file_types": {
       "other": 3,
@@ -4444,6 +4568,7 @@
   },
   "jupyter-widgets/ipyleaflet": {
     "head": "612f4ebb800e50c0bae84e4d2b6bd3e622b7a12c",
+    "last_commit": "2026-05-07",
     "n_files": 295,
     "file_types": {
       "config": 27,
@@ -4501,6 +4626,7 @@
   },
   "jupyter-widgets/ipywidgets": {
     "head": "8ada3542abe85fdc52e2bfeeecc07f8db351cb9c",
+    "last_commit": "2026-08-19",
     "n_files": 494,
     "file_types": {
       "other": 35,
@@ -4606,6 +4732,7 @@
   },
   "jupyter-widgets/jupyterlab-sidecar": {
     "head": "02d394841ef3dbd4258b44a5d4ade750ea3167a6",
+    "last_commit": "2026-02-27",
     "n_files": 50,
     "file_types": {
       "other": 7,
@@ -4661,6 +4788,7 @@
   },
   "jupyter-widgets/midicontrols": {
     "head": "54e1cc31842984c7e4b2e9b52960abb7546d25f8",
+    "last_commit": "2019-11-18",
     "n_files": 60,
     "file_types": {
       "other": 5,
@@ -4696,6 +4824,7 @@
   },
   "jupyter-widgets/pythreejs": {
     "head": "584fe393ff593319ce33cd53dd94c8625aa01c88",
+    "last_commit": "2023-02-20",
     "n_files": 172,
     "file_types": {
       "config": 11,
@@ -4745,6 +4874,7 @@
   },
   "jupyter-widgets/team-compass": {
     "head": "1be9a4dd290ca82b1747108e5ad70497adb0bdf7",
+    "last_commit": "2025-12-12",
     "n_files": 2,
     "file_types": {
       "docs": 2
@@ -4762,6 +4892,7 @@
   },
   "jupyter-widgets/traittypes": {
     "head": "9a1db7c182bf2884110958303bc3f54f9ed8414f",
+    "last_commit": "2025-10-22",
     "n_files": 25,
     "file_types": {
       "config": 3,
@@ -4795,6 +4926,7 @@
   },
   "jupyter-widgets/tutorial": {
     "head": "95da869df06b890bd79a7e569672dd8a2725ce01",
+    "last_commit": "2024-06-14",
     "n_files": 144,
     "file_types": {
       "config": 5,
@@ -4830,6 +4962,7 @@
   },
   "jupyter-widgets/tutorial-jupyterlite": {
     "head": "5cc14dcfea0e6a01a90b089d81683665bc2efe11",
+    "last_commit": "2022-07-12",
     "n_files": 6,
     "file_types": {
       "config": 2,
@@ -4860,6 +4993,7 @@
   },
   "jupyter-widgets/widget-cookiecutter": {
     "head": "347b812631f9e92f32bd2a8ccd78958a8fa8abed",
+    "last_commit": "2024-01-22",
     "n_files": 26,
     "file_types": {
       "config": 9,
@@ -4891,6 +5025,7 @@
   },
   "jupyter-widgets/widget-ts-cookiecutter": {
     "head": "7e3339c6d32fc21396c5d32c750db9ea246a9346",
+    "last_commit": "2024-02-07",
     "n_files": 62,
     "file_types": {
       "config": 17,
@@ -4923,6 +5058,7 @@
   },
   "jupyter-xeus/.github": {
     "head": "4bdd59730a3c2a0a93ebf71254ad55eb7f243f0c",
+    "last_commit": "2024-01-12",
     "n_files": 2,
     "file_types": {
       "other": 1,
@@ -4941,6 +5077,7 @@
   },
   "jupyter-xeus/cpp-terminal": {
     "head": "463cc0b501dceeb89ec787e935e3e00115af4d0c",
+    "last_commit": "2026-10-14",
     "n_files": 144,
     "file_types": {
       "other": 9,
@@ -4985,6 +5122,7 @@
   },
   "jupyter-xeus/jupyter-xeus.github.io": {
     "head": "34caebc71cda1171698172dd28dd3a886d69b198",
+    "last_commit": "2019-12-16",
     "n_files": 6,
     "file_types": {
       "other": 1,
@@ -5004,6 +5142,7 @@
   },
   "jupyter-xeus/robotframework-interpreter": {
     "head": "cc2dfe5b595c46dc64701d577b739f58f94d5baa",
+    "last_commit": "2021-10-20",
     "n_files": 20,
     "file_types": {
       "config": 2,
@@ -5043,6 +5182,7 @@
   },
   "jupyter-xeus/xcanvas": {
     "head": "265cb13105039505401de74084c9f98321348e94",
+    "last_commit": "2026-03-06",
     "n_files": 15,
     "file_types": {
       "config": 6,
@@ -5072,6 +5212,7 @@
   },
   "jupyter-xeus/xena": {
     "head": "4b8077be0abaf697907775ea82408f475ffae173",
+    "last_commit": "2020-12-15",
     "n_files": 10,
     "file_types": {
       "other": 2,
@@ -5092,6 +5233,7 @@
   },
   "jupyter-xeus/xeus": {
     "head": "89ddf2a78679c9851ade1c077db5808dce22f18c",
+    "last_commit": "2026-09-21",
     "n_files": 107,
     "file_types": {
       "other": 6,
@@ -5123,6 +5265,7 @@
   },
   "jupyter-xeus/xeus-brainfuck": {
     "head": "0302ecf698b8bace54030eb8eae452110e7418ea",
+    "last_commit": "2026-03-20",
     "n_files": 50,
     "file_types": {
       "other": 4,
@@ -5146,6 +5289,7 @@
   },
   "jupyter-xeus/xeus-calc": {
     "head": "22294b67f4033861644a306f31424243d5a3b848",
+    "last_commit": "2024-12-16",
     "n_files": 20,
     "file_types": {
       "config": 5,
@@ -5176,6 +5320,7 @@
   },
   "jupyter-xeus/xeus-client-test": {
     "head": "07d3a839ccfaf1d626e908d78689fbbc253fe9a0",
+    "last_commit": "2025-12-16",
     "n_files": 2,
     "file_types": {
       "other": 2
@@ -5193,6 +5338,7 @@
   },
   "jupyter-xeus/xeus-cling": {
     "head": "3788b129dbacda2c5653e787412bbfb0319d6c7b",
+    "last_commit": "2025-10-27",
     "n_files": 96,
     "file_types": {
       "config": 16,
@@ -5216,6 +5362,7 @@
   },
   "jupyter-xeus/xeus-cookiecutter": {
     "head": "6a656cbf823141020a21b9ad33be593e873a4e7d",
+    "last_commit": "2026-03-16",
     "n_files": 62,
     "file_types": {
       "docs": 13,
@@ -5249,6 +5396,7 @@
   },
   "jupyter-xeus/xeus-haskell": {
     "head": "7c465750e2e6ac4b9bdbab2764c4ff5683e36db4",
+    "last_commit": "2026-08-28",
     "n_files": 84,
     "file_types": {
       "other": 10,
@@ -5285,6 +5433,7 @@
   },
   "jupyter-xeus/xeus-javascript": {
     "head": "23f7e0081e23b1826aa8798ff45c48aa95cde341",
+    "last_commit": "2025-11-25",
     "n_files": 45,
     "file_types": {
       "docs": 7,
@@ -5321,6 +5470,7 @@
   },
   "jupyter-xeus/xeus-lite": {
     "head": "b5077c994171ebd1fce1cc7a58188426d6cafc5b",
+    "last_commit": "2026-03-05",
     "n_files": 25,
     "file_types": {
       "config": 6,
@@ -5350,6 +5500,7 @@
   },
   "jupyter-xeus/xeus-lua": {
     "head": "a39a123375bba7a8eff6c7f8096e172261929c98",
+    "last_commit": "2026-04-10",
     "n_files": 70,
     "file_types": {
       "docs": 8,
@@ -5380,6 +5531,7 @@
   },
   "jupyter-xeus/xeus-nelson": {
     "head": "786e575970f8e6d34ea9807de67e430371512739",
+    "last_commit": "2024-07-12",
     "n_files": 42,
     "file_types": {
       "docs": 7,
@@ -5409,6 +5561,7 @@
   },
   "jupyter-xeus/xeus-octave": {
     "head": "b203877568c000ebf46811d378fa67893351e470",
+    "last_commit": "2026-03-11",
     "n_files": 89,
     "file_types": {
       "docs": 11,
@@ -5444,6 +5597,7 @@
   },
   "jupyter-xeus/xeus-python": {
     "head": "00563a4773084fb39b2a597b1aec9f3eb918daa2",
+    "last_commit": "2026-09-21",
     "n_files": 101,
     "file_types": {
       "config": 14,
@@ -5477,6 +5631,7 @@
   },
   "jupyter-xeus/xeus-python-shell": {
     "head": "154993acb4aa49d34453dc5495de232c5fa52846",
+    "last_commit": "2026-08-14",
     "n_files": 11,
     "file_types": {
       "config": 2,
@@ -5516,6 +5671,7 @@
   },
   "jupyter-xeus/xeus-python-wheel": {
     "head": "76b782aa3269c59c70270099c1c6b241e9005f5e",
+    "last_commit": "2026-07-23",
     "n_files": 26,
     "file_types": {
       "config": 12,
@@ -5568,6 +5724,7 @@
   },
   "jupyter-xeus/xeus-qt": {
     "head": "67a82db74dcb72c320030dcf55de22bd52957697",
+    "last_commit": "2024-07-02",
     "n_files": 22,
     "file_types": {
       "config": 5,
@@ -5596,6 +5753,7 @@
   },
   "jupyter-xeus/xeus-qt-python": {
     "head": "bc2fdadefc0981f483f49e9ca93a6cd575c86d40",
+    "last_commit": "2023-10-19",
     "n_files": 9,
     "file_types": {
       "config": 2,
@@ -5622,6 +5780,7 @@
   },
   "jupyter-xeus/xeus-r": {
     "head": "b6be174a675d295e29775ff9b94bcbac73c33994",
+    "last_commit": "2026-10-21",
     "n_files": 83,
     "file_types": {
       "docs": 11,
@@ -5658,6 +5817,7 @@
   },
   "jupyter-xeus/xeus-robot": {
     "head": "91f24789d674f33ec18bcfec9bec4efff9fb4048",
+    "last_commit": "2023-01-16",
     "n_files": 42,
     "file_types": {
       "config": 7,
@@ -5688,6 +5848,7 @@
   },
   "jupyter-xeus/xeus-robot-wheel": {
     "head": "49a66adf388fc507e8b6fece7aa9f45d41deff3f",
+    "last_commit": "2022-03-10",
     "n_files": 22,
     "file_types": {
       "config": 10,
@@ -5741,6 +5902,7 @@
   },
   "jupyter-xeus/xeus-sql": {
     "head": "a2b12e5c9c6eec6d68d3025346e35a66544bb162",
+    "last_commit": "2026-03-16",
     "n_files": 53,
     "file_types": {
       "config": 8,
@@ -5772,6 +5934,7 @@
   },
   "jupyter-xeus/xeus-sqlite": {
     "head": "09c14e8487822089a71b7bb5f47396a5801b45d4",
+    "last_commit": "2026-03-16",
     "n_files": 46,
     "file_types": {
       "config": 10,
@@ -5807,6 +5970,7 @@
   },
   "jupyter-xeus/xeus-uv": {
     "head": "7a2a28b197ceb73cf728d328714628b1b9264bba",
+    "last_commit": "2026-01-14",
     "n_files": 23,
     "file_types": {
       "config": 4,
@@ -5835,6 +5999,7 @@
   },
   "jupyter-xeus/xeus-zmq": {
     "head": "111e055a54c09818507db25f6d51dc0c780e3cd7",
+    "last_commit": "2026-10-16",
     "n_files": 116,
     "file_types": {
       "config": 9,
@@ -5865,6 +6030,7 @@
   },
   "jupyter-xeus/xhale": {
     "head": "2027eece5c6c971706b48916dfbe07609621dfac",
+    "last_commit": "2025-10-27",
     "n_files": 21,
     "file_types": {
       "config": 5,
@@ -5894,6 +6060,7 @@
   },
   "jupyter-xeus/xleaflet": {
     "head": "4361a47805f6ad92ee538f4c1e777a9de784398c",
+    "last_commit": "2026-03-06",
     "n_files": 159,
     "file_types": {
       "config": 11,
@@ -5925,6 +6092,7 @@
   },
   "jupyter-xeus/xproperty": {
     "head": "919fb1e3ba720180a0434cb5d4a3b3d7599d47f2",
+    "last_commit": "2026-02-12",
     "n_files": 32,
     "file_types": {
       "config": 5,
@@ -5956,6 +6124,7 @@
   },
   "jupyter-xeus/xvega": {
     "head": "82be020dad61c336bbb20cb52b4e00e9b388e6ee",
+    "last_commit": "2025-09-22",
     "n_files": 290,
     "file_types": {
       "config": 5,
@@ -5983,6 +6152,7 @@
   },
   "jupyter-xeus/xvega-bindings": {
     "head": "f3e91b782ce222335fe05dea6f764b9b0bc54101",
+    "last_commit": "2025-10-21",
     "n_files": 13,
     "file_types": {
       "config": 3,
@@ -6011,6 +6181,7 @@
   },
   "jupyter-xeus/xwidgets": {
     "head": "dc7e49bf9b6ab05c4b2f7a0848772e92279e40de",
+    "last_commit": "2026-10-12",
     "n_files": 145,
     "file_types": {
       "other": 6,
@@ -6049,6 +6220,7 @@
   },
   "jupyter/.github": {
     "head": "c240347f9e5185e6dc1b14af678cbc0532ae3dcf",
+    "last_commit": "2026-09-14",
     "n_files": 3,
     "file_types": {
       "docs": 3
@@ -6066,6 +6238,7 @@
   },
   "jupyter/accessibility": {
     "head": "440e52720df6ca241b04588c67d396b79e453532",
+    "last_commit": "2026-04-20",
     "n_files": 161,
     "file_types": {
       "config": 14,
@@ -6106,6 +6279,7 @@
   },
   "jupyter/atom-notebook": {
     "head": "117e3171eb50f68e3dd22ca87e34e6020e041f6c",
+    "last_commit": "2020-10-29",
     "n_files": 19,
     "file_types": {
       "other": 7,
@@ -6134,6 +6308,7 @@
   },
   "jupyter/cdn.jupyter.org": {
     "head": "a2076225aaaa169086015b62adc83a084c3be9f8",
+    "last_commit": "2020-03-04",
     "n_files": 14,
     "file_types": {
       "other": 11,
@@ -6153,6 +6328,7 @@
   },
   "jupyter/community-committee": {
     "head": "b6d49f3354431fd61f388ed0b0608aaf790ae475",
+    "last_commit": "2026-10-22",
     "n_files": 51,
     "file_types": {
       "other": 3,
@@ -6190,6 +6366,7 @@
   },
   "jupyter/cookiecutter-docker-stacks": {
     "head": "68410a7827ca33e8126bb31a9fb3bc93287d55ac",
+    "last_commit": "2026-10-26",
     "n_files": 43,
     "file_types": {
       "other": 7,
@@ -6217,6 +6394,7 @@
   },
   "jupyter/council": {
     "head": "2e51f59aac5c6fb54d0ee20e12ddd8d086ca3fb9",
+    "last_commit": "2026-05-22",
     "n_files": 3,
     "file_types": {
       "config": 1,
@@ -6236,6 +6414,7 @@
   },
   "jupyter/design": {
     "head": "969b623cd3b7428822a758952b8a7d6646fff658",
+    "last_commit": "2025-01-09",
     "n_files": 104,
     "file_types": {
       "other": 11,
@@ -6256,6 +6435,7 @@
   },
   "jupyter/distinguished-contributors": {
     "head": "cf8e054ae4dce9e9a9aa57a7ef28685a75bb7cd9",
+    "last_commit": "2025-11-07",
     "n_files": 5,
     "file_types": {
       "other": 2,
@@ -6273,7 +6453,8 @@
     "readme": "# Jupyter Distinguished Contributors\n\nThis repository exists to provide a canonical location for resources used by the body of Jupyter Distinguished Contributors.\n"
   },
   "jupyter/docker-stacks": {
-    "head": "4aa9f4159aafd409be2b5cbcce9c7d370ded45f0",
+    "head": "22d92ea8f1a25d077f3641f171f519fedd5e9ed2",
+    "last_commit": "2026-10-28",
     "n_files": 309,
     "file_types": {
       "other": 59,
@@ -6324,6 +6505,7 @@
   },
   "jupyter/docs-team-compass": {
     "head": "1ddc14e6cbfbe4eae04056581106a80dcc2a9ec4",
+    "last_commit": "2025-02-19",
     "n_files": 12,
     "file_types": {
       "config": 1,
@@ -6353,6 +6535,7 @@
   },
   "jupyter/echo_kernel": {
     "head": "ad2ff4f47e9c9ef6b63c440ed5f8739a19b8ad12",
+    "last_commit": "2025-09-09",
     "n_files": 12,
     "file_types": {
       "config": 3,
@@ -6393,6 +6576,7 @@
   },
   "jupyter/enhancement-proposals": {
     "head": "906afd95af965994a3c7cea8af4f01723daa7716",
+    "last_commit": "2026-09-16",
     "n_files": 55,
     "file_types": {
       "docs": 34,
@@ -6427,6 +6611,7 @@
   },
   "jupyter/foundations-and-standards-team-compass": {
     "head": "ebee4937dfddf2cf081d52520d995c9b78a09b28",
+    "last_commit": "2024-10-23",
     "n_files": 17,
     "file_types": {
       "config": 2,
@@ -6449,6 +6634,7 @@
   },
   "jupyter/github-data": {
     "head": "6e358088ba18fab5a0fb8a811c995d191e39f6d4",
+    "last_commit": "2026-09-11",
     "n_files": 15,
     "file_types": {
       "config": 4,
@@ -6488,6 +6674,7 @@
   },
   "jupyter/governance": {
     "head": "d9226e35fa72f8a595966c73a8921c0f0c04b1c2",
+    "last_commit": "2026-10-09",
     "n_files": 64,
     "file_types": {
       "docs": 46,
@@ -6529,6 +6716,7 @@
   },
   "jupyter/ideas": {
     "head": "37bdd6acde0e72515b45e06f35d1f14a6b97b7a2",
+    "last_commit": "2018-09-12",
     "n_files": 1,
     "file_types": {
       "docs": 1
@@ -6546,6 +6734,7 @@
   },
   "jupyter/jupyter": {
     "head": "6b5eb0f469c7bc3ea43d6d2a0ba1057853c9a3a5",
+    "last_commit": "2026-07-09",
     "n_files": 239,
     "file_types": {
       "other": 56,
@@ -6587,6 +6776,7 @@
   },
   "jupyter/jupyter-communitycalls": {
     "head": "cf0213d47b84b2c10630f64d6773d7903ac48d83",
+    "last_commit": "2024-02-01",
     "n_files": 15,
     "file_types": {
       "docs": 9,
@@ -6606,6 +6796,7 @@
   },
   "jupyter/jupyter-packaging": {
     "head": "4915fc8e36e38111b96c23e28e37b2873ca57907",
+    "last_commit": "2024-04-05",
     "n_files": 27,
     "file_types": {
       "other": 3,
@@ -6645,6 +6836,7 @@
   },
   "jupyter/jupyter-sphinx": {
     "head": "bd4c85dc8cc08eab5251ffee2a94ec25a669c5bb",
+    "last_commit": "2026-09-29",
     "n_files": 69,
     "file_types": {
       "config": 8,
@@ -6688,7 +6880,8 @@
     "readme": "# Jupyter Sphinx Extensions\n\n[![BSD licence](https://img.shields.io/badge/License-BSD3-yellow.svg?logo=opensourceinitiative&logoColor=white)](LICENSE)\n[![black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)\n[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier&logoColor=white)](https://github.com/prettier/prettier)\n[![pre-commit](https://img.shields.io/badge/pre--commit-active-yellow?logo=pre-commit&logoColor=white)](https://pre-commit.com/)\n[![pypi version](https://img.shields.io/pypi/v/jupyter-sphinx?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/jupyter-sphinx/)\n[![conda-forge version badge](https://img.shields.io/conda/vn/conda-forge/jupyter-sphinx?logo=anaconda&logoColor=white&color=blue)](https://anaconda.org/conda-forge/jupyter-sphinx)\n[![tests](https://img.shields.io/github/actions/workflow/status/jupyter/jupyter-sphinx/tests.yml?logo=github&logoColor=white)](https://github.com/jupyter/jupyter-sphinx/actions/workflows/tests.yml)\n[![docs](https://img.shields.io/readthedocs/jupyter-sphinx?logo=readthedocs&logoColor=white)](https://jupyter-sphinx.readthedocs.io/)\n\n`jupyter-sphinx` enables running code embedded in Sphinx documentation and\nembedding output of that code into the resulting document. It has support\nfor rich output such as images and even Jupyter interactive widgets.\n\n## Installation\n\nWith pip:\n\n```bash\npip install jupyter_sphinx\n```\n\nwith conda:\n\n```bash\nconda install jupyter_sphinx -c conda-forge\n```\n\n## Usage\n\nYou can check out the documentation on https://jupyter-sphinx.readthedocs.io for up to date\nusage information and examples.\n\n## License\n\nWe use a shared copyright model that enables all contributors to maintain the\ncopyright on their contributions.\n\nAll code is licensed under the terms of the revised BSD license.\n"
   },
   "jupyter/jupyter.github.io": {
-    "head": "c41e13a50df7f9f15ac80652957e53d479a48b0f",
+    "head": "9a1f8c2ed771778a4acdd58018eed89304c55bc8",
+    "last_commit": "2026-10-28",
     "n_files": 330,
     "file_types": {
       "media": 239,
@@ -6723,6 +6916,7 @@
   },
   "jupyter/jupyter_client": {
     "head": "978361b3785dcd9cba6c733f4555e833e88fc0df",
+    "last_commit": "2026-08-28",
     "n_files": 101,
     "file_types": {
       "config": 11,
@@ -6770,6 +6964,7 @@
   },
   "jupyter/jupyter_console": {
     "head": "29f882adec78a60a0891c69087436503493905ce",
+    "last_commit": "2026-09-14",
     "n_files": 32,
     "file_types": {
       "config": 4,
@@ -6811,6 +7006,7 @@
   },
   "jupyter/jupyter_core": {
     "head": "4c4f526adab04ae6bf7821f65a5adbd011aa27ac",
+    "last_commit": "2026-08-24",
     "n_files": 63,
     "file_types": {
       "other": 8,
@@ -6859,6 +7055,7 @@
   },
   "jupyter/jupyter_events": {
     "head": "deb61b4924d808234d295fe316360f6478584acb",
+    "last_commit": "2026-09-28",
     "n_files": 62,
     "file_types": {
       "config": 21,
@@ -6905,6 +7102,7 @@
   },
   "jupyter/jupyter_kernel_test": {
     "head": "5f2c65271b48dc95fc75a9585cb1d6db0bb55557",
+    "last_commit": "2024-03-12",
     "n_files": 20,
     "file_types": {
       "other": 3,
@@ -6951,6 +7149,7 @@
   },
   "jupyter/jvm-magics": {
     "head": "4cba58776d3ceec4b195d9c91a8464321bbca8f7",
+    "last_commit": "2019-02-19",
     "n_files": 17,
     "file_types": {
       "other": 7,
@@ -6971,6 +7170,7 @@
   },
   "jupyter/jvm-repr": {
     "head": "2e50ad4f70bde84018a1f1ee469517d2b63cd343",
+    "last_commit": "2020-01-16",
     "n_files": 21,
     "file_types": {
       "other": 7,
@@ -6991,6 +7191,7 @@
   },
   "jupyter/kernel-protocol": {
     "head": "ea6f3c873925afd0ccd7faf9259ab16555855184",
+    "last_commit": "2023-06-12",
     "n_files": 12,
     "file_types": {
       "other": 3,
@@ -7012,6 +7213,7 @@
   },
   "jupyter/kernel_gateway_demos": {
     "head": "cf92ed7115390c410b50487b490ec92a55fc22f0",
+    "last_commit": "2020-10-07",
     "n_files": 73,
     "file_types": {
       "other": 31,
@@ -7034,6 +7236,7 @@
   },
   "jupyter/kernels-team-compass": {
     "head": "b7e090737d7ee542bfcb2596f1299d51338852f0",
+    "last_commit": "2025-03-13",
     "n_files": 18,
     "file_types": {
       "other": 3,
@@ -7056,6 +7259,7 @@
   },
   "jupyter/markdown": {
     "head": "1165869d3967593bdf622c113ce103ff718ab569",
+    "last_commit": "2023-07-04",
     "n_files": 2,
     "file_types": {
       "other": 1,
@@ -7074,6 +7278,7 @@
   },
   "jupyter/nbclassic": {
     "head": "173fdfecbda8e4e6a70d865fda7970ceb5239137",
+    "last_commit": "2026-04-16",
     "n_files": 464,
     "file_types": {
       "other": 35,
@@ -7132,6 +7337,7 @@
   },
   "jupyter/nbclient": {
     "head": "0811ff44c63c9853c4d6ba7265d7042ca7f8742a",
+    "last_commit": "2026-06-05",
     "n_files": 71,
     "file_types": {
       "config": 11,
@@ -7181,6 +7387,7 @@
   },
   "jupyter/nbconvert": {
     "head": "e681152f214b65387f875aad96a4726994533a0b",
+    "last_commit": "2026-10-12",
     "n_files": 276,
     "file_types": {
       "other": 10,
@@ -7231,6 +7438,7 @@
   },
   "jupyter/nbconvert-examples": {
     "head": "039724f4251cc8183f85534785fbee14809248ac",
+    "last_commit": "2019-01-13",
     "n_files": 56,
     "file_types": {
       "other": 14,
@@ -7252,6 +7460,7 @@
   },
   "jupyter/nbdime": {
     "head": "744c97897e2c33a1b3f04f5834ee6e70478219a2",
+    "last_commit": "2026-06-10",
     "n_files": 417,
     "file_types": {
       "other": 9,
@@ -7325,6 +7534,7 @@
   },
   "jupyter/nbformat": {
     "head": "cfb73afdd2a7f358953f2a34f747fd0d0e9d6288",
+    "last_commit": "2026-10-15",
     "n_files": 130,
     "file_types": {
       "other": 7,
@@ -7378,7 +7588,8 @@
     "readme": "# nbformat: Jupyter Notebook Format\n\n![CI Tests](https://github.com/jupyter/nbformat/workflows/Run%20tests/badge.svg)\n\n`nbformat` contains the reference implementation of the [Jupyter Notebook format],\nand Python APIs for working with notebooks.\n\nThere is also a JSON Schema for nbformat versions >= 3.\n\n## Installation\n\nFrom the command line:\n\n```{.sourceCode .bash}\npip install nbformat\n```\n\n## Using a different json schema validator\n\nWe use `fastjsonschema` by default. To use `jsonschema` instead, set the environment variable `NBFORMAT_VALIDATOR` to the value `jsonschema`.\n\n## Python Version Support\n\nThis library supported Python 2.7 and Python 3.5+ for `4.x.x` releases. With Python 2's end-of-life nbformat `5.x.x` supported Python 3 only. Support for Python 3.x versions will be dropped when they are officially sunset by the python organization.\n\n## Contributing\n\nRead [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to setup a local development environment and make code changes back to nbformat.\n\n## About the Jupyter Development Team\n\nThe Jupyter Development Team is the set of all contributors to the Jupyter project.\nThis includes all of the Jupyter subprojects.\n\nThe core team that coordinates development on GitHub can be found here:\nhttps://github.com/jupyter/.\n\n## Our Copyright Policy\n\nJupyter uses a shared copyright model. Each contributor maintains copyright\nover their contributions to Jupyter. But, it is important to note that these\ncontributions are typically only changes to the repositories. Thus, the Jupyter\nsource code, in its entirety is not the copyright of any single person or\ninstitution. Instead, it is the collective copyright of the entire Jupyter\nDevelopment Team. If individual contributors want to maintain a record of what\nchanges/contributions they have specific copyright on, they should indicate\ntheir copyright in the commit message of the change, when they commit the\nchange to one of the Jupyter repositories.\n\nWith this in mind, the following banner should be used in any source code file\nto indicate the copyright and license terms:\n\n```\n# Copyright (c) Jupyter Development Team.\n# Distributed under the terms of the Modified BSD License.\n```\n\n[jupyter notebook format]: https://nbformat.readthedocs.org/en/latest/format_description.html\n"
   },
   "jupyter/nbgrader": {
-    "head": "c2e1ab63512b766aae2d2018fbc8f60c00fc7d19",
+    "head": "71d340c114a2661e7f0ba9b57cb80b23538d78fa",
+    "last_commit": "2026-10-28",
     "n_files": 609,
     "file_types": {
       "other": 38,
@@ -7444,6 +7655,7 @@
   },
   "jupyter/nbmanager": {
     "head": "dd26a71c0b625773dab582d47d713d574f2af84b",
+    "last_commit": "2019-01-27",
     "n_files": 28,
     "file_types": {
       "other": 3,
@@ -7471,6 +7683,7 @@
   },
   "jupyter/nbviewer": {
     "head": "5fde5fecfbe2c1bdb19d451ca7e2ab698f985aa2",
+    "last_commit": "2026-09-04",
     "n_files": 184,
     "file_types": {
       "other": 9,
@@ -7524,6 +7737,7 @@
   },
   "jupyter/nbviewer.org-deploy": {
     "head": "46d27d053886a4ed2e2ee70b3abc754858476cdd",
+    "last_commit": "2026-09-04",
     "n_files": 26,
     "file_types": {
       "other": 7,
@@ -7565,7 +7779,8 @@
     "readme": "# nbviewer.org-deploy\n\nDeployment repo for nbviewer.org\n\n## Overview\n\nThe nbviewer image and helm chart are defined in https://github.com/jupyter/nbviewer.\nThe helm chart in that repo is not _published_ anywhere,\nso we use a local checkout.\nHelm upgrades are deployed via GitHub actions.\n\nSome _very_ infrequent manual tasks (interacting with the fastly cache layer) are scripted in `tasks.py` for use with `pyinvoke`.\nWe're mostly trying to move away from that, but tasks are infrequent enough.\nLet's not add to them, though.\n\n## Automation\n\n- helm upgrade happens when PRs are merged in `.github/workflows/cd.yml`\n- The nbviewer repo is automatically checked for updates in `.github/workflows/watch-dependencies`\n\n## Quickstart: upgrading nbviewer\n\nnbviewer publishes its images automatically.\nIf a change you want to deploy was merged recently,\nmake sure to wait for the image to be published to Docker Hub\n(takes a few minutes).\n\nChecking for nbviewer updates and deploying to nbviewer.org is done automatically every day.\n\nTo manually run a check for the latest version of nbviewer, run the [watch-dependencies](https://github.com/jupyter/nbviewer.org-deploy/actions/workflows/watch-dependencies.yaml) action.\nThis should open a PR with any changes.\n\nYou can also check for updates manually with `python3 scripts/update-nbviewer.py`, and open a PR yourself.\n\nWhen that PR is merged, the updated nbviewer will be deployed.\n\n### Upgrading details\n\nThe nbviewer version is current in two places:\n\n- the _chart_ version in `.github/workflows/cd.yml`\n- the _image_ version in `config/nbviewer.yaml`\n\nTo deploy an update from nbviewer to nbviewer.org:\n\n1. check the latest version of the nbviewer repo (https://github.com/jupyter/nbviewer/commits)\n2. store the latest commit in `NBVIEWER_VERSION` in [.github/workflows/cd.yaml](.github/workflows/cd.yml)\n3. check the latest tag of the [nbviewer image](https://hub.docker.com/r/jupyter/nbviewer/tags)\n4. update the tag in [config/nbviewer.yaml](config/nbviewer.yaml)\n\nThese steps are scripted in `scripts/update-nbviewer.py`.\n\nOpen a pull request, and it should be deployed to nbviewer.org upon merge.\n\n## Current deployment\n\nRight now, nbviewer is run on OVHCloud via helm in the namespace `nbviewer`.\n\n## Dependencies\n\nPython dependencies:\n\n    pip install -r requirements.in # (or requirements.txt for a locked env)\n\n## TODO\n\n- Fastly is scripted now, but we could do better.\n  Load-balancer DNS/ip is hardcoded in tasks.py and must be updated if ch"
   },
   "jupyter/notebook": {
-    "head": "6cde9b9ddec821312b1ca16492233becfe145fca",
+    "head": "b5a05a862382c90bda0343af3535098a5548c023",
+    "last_commit": "2026-10-29",
     "n_files": 376,
     "file_types": {
       "config": 87,
@@ -7703,6 +7918,7 @@
   },
   "jupyter/notebook_shim": {
     "head": "e1baccba8e2201e41991eb1c6bd96ff94efa10cc",
+    "last_commit": "2026-10-15",
     "n_files": 26,
     "file_types": {
       "config": 9,
@@ -7749,6 +7965,7 @@
   },
   "jupyter/papyri": {
     "head": "31b4436456cb3434e59fe1a34c8b8b780be93d93",
+    "last_commit": "2026-10-07",
     "n_files": 343,
     "file_types": {
       "other": 57,
@@ -7806,6 +8023,7 @@
   },
   "jupyter/pr-triage-board-bot": {
     "head": "a2b556b277251241f05e394cfdfed5f1ad717893",
+    "last_commit": "2026-06-01",
     "n_files": 26,
     "file_types": {
       "config": 6,
@@ -7844,6 +8062,7 @@
   },
   "jupyter/practice": {
     "head": "a32a166b71874d575bab44d69dbd6a0460b58b8f",
+    "last_commit": "2018-08-25",
     "n_files": 1,
     "file_types": {
       "docs": 1
@@ -7861,6 +8080,7 @@
   },
   "jupyter/roadmap": {
     "head": "40c95da21278fd3c1ecf641777febb0259671ba5",
+    "last_commit": "2019-07-16",
     "n_files": 20,
     "file_types": {
       "other": 2,
@@ -7879,6 +8099,7 @@
   },
   "jupyter/schema": {
     "head": "6ab0f1f8d8387a00e08287162112df6b332b27d9",
+    "last_commit": "2025-12-09",
     "n_files": 11,
     "file_types": {
       "other": 3,
@@ -7909,6 +8130,7 @@
   },
   "jupyter/security": {
     "head": "d32454e27c85cef024c019334b4c147365125f56",
+    "last_commit": "2026-10-19",
     "n_files": 75,
     "file_types": {
       "other": 5,
@@ -7930,6 +8152,7 @@
   },
   "jupyter/software-steering-council-team-compass": {
     "head": "0fb17b29f685a3fe6e2c62fb1cdf0a4cd989ea14",
+    "last_commit": "2026-08-31",
     "n_files": 13,
     "file_types": {
       "other": 2,
@@ -7952,6 +8175,7 @@
   },
   "jupyter/sphinxcontrib_github_alt": {
     "head": "d53e47dba537ae17ebecd66e1d23ff05ad94cce3",
+    "last_commit": "2020-04-27",
     "n_files": 6,
     "file_types": {
       "config": 2,
@@ -7980,6 +8204,7 @@
   },
   "jupyter/surveys": {
     "head": "81bbb9b0bc578f7c03387da60cd217b09ca34a92",
+    "last_commit": "2026-09-07",
     "n_files": 71,
     "file_types": {
       "config": 3,
@@ -8015,6 +8240,7 @@
   },
   "jupyter/team-compass-template": {
     "head": "c12f15423ce3ffda5c68bed4dc614c02eb438ddf",
+    "last_commit": "2022-05-25",
     "n_files": 21,
     "file_types": {
       "other": 4,
@@ -8037,6 +8263,7 @@
   },
   "jupyter/telemetry": {
     "head": "2975fcac06cb3ffa5872258669990f488547e0c1",
+    "last_commit": "2024-05-10",
     "n_files": 40,
     "file_types": {
       "config": 7,
@@ -8078,7 +8305,8 @@
     "readme": "# Telemetry\n\n[![Tests](https://github.com/jupyter/telemetry/workflows/Jupyter%20Telemetry%20Unit%20Tests/badge.svg)](https://github.com/jupyter/telemetry/actions?query=workflow%3A%22Jupyter+Telemetry+Unit+Tests%22)\n[![codecov](https://codecov.io/gh/jupyter/telemetry/branch/master/graph/badge.svg)](https://codecov.io/gh/jupyter/telemetry)\n[![Documentation Status](https://readthedocs.org/projects/jupyter-telemetry/badge/?version=latest)](https://jupyter-telemetry.readthedocs.io/en/latest/?badge=latest)\n\n*Telemetry for Jupyter Applications and extensions.*\n\n> Telemetry (təˈlemətrē): the process of recording and transmitting the readings of an instrument. [Oxford Dictionaries]\n\nJupyter Telemetry enables Jupyter Applications (e.g. Jupyter Server, Jupyter Notebook, JupyterLab, JupyterHub, etc.) to record **events**—i.e. actions by application users—and transmit them to remote (or local) destinations as **structured** data. It works with Python's standard `logging` library to handle the transmission of events allowing users to send events to local files, over the web, etc.\n\n## Install\n\nJupyter's Telemetry library can be installed from PyPI.\n```\npip install jupyter_telemetry\n```\n\n## Basic Usage\n\nTelemetry provides a configurable traitlets object, `EventLog`, for structured event-logging in Python. It leverages Python's standard `logging` library for filtering, handling, and recording events. All events are validated (using [jsonschema](https://pypi.org/project/jsonschema/)) against registered [JSON schemas](https://json-schema.org/).\n\nLet's look at a basic example of an `EventLog`.\n```python\nimport logging\nfrom jupyter_telemetry import EventLog\n\n\neventlog = EventLog(\n    # Use logging handlers to route where events\n    # should be record.\n    handlers=[\n        logging.FileHandler('events.log')\n    ],\n    # List schemas of events that should be recorded.\n    allowed_schemas=[\n        'uri.to.event.schema'\n    ]\n)\n```\n\nEventLog has two configurable traits:\n* `handlers`: a list of Python's `logging` handlers.\n* `allowed_schemas`: a list of event schemas to record.\n\nEvent schemas must be registered with the `EventLog` for events to be recorded. An event schema looks something like:\n```json\n{\n  \"$id\": \"url.to.event.schema\",\n  \"title\": \"My Event\",\n  \"description\": \"All events must have a name property.\",\n  \"type\": \"object\",\n  \"properties\": {\n    \"name\": {\n      \"title\": \"Name\",\n      \"description\": \"Name of event\",\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\"name"
   },
   "jupyter/terminado": {
-    "head": "23a0bf771107fb01ddffdf342b1d5348ad6c702d",
+    "head": "16da0b6286d99152f36aeedf17f32e55d426a74f",
+    "last_commit": "2026-10-28",
     "n_files": 41,
     "file_types": {
       "other": 5,
@@ -8112,8 +8340,8 @@
       ]
     },
     "uses": [
-      "actions/checkout@v4",
-      "actions/create-github-app-token@v1",
+      "actions/checkout@v7",
+      "actions/create-github-app-token@v3",
       "jupyter-server/jupyter_releaser@v2",
       "jupyterlab/maintainer-tools@v1",
       "re-actors/alls-green@release/v1"
@@ -8121,10 +8349,11 @@
     "build_requires": [
       "hatchling"
     ],
-    "readme": "# Terminado\n\n[![Build Status](https://github.com/jupyter/terminado/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)](https://github.com/jupyter/terminado/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)\n[![Documentation Status](https://readthedocs.org/projects/terminado/badge/?version=latest)](http://terminado.readthedocs.io/en/latest/?badge=latest)\n\nThis is a [Tornado](http://tornadoweb.org/) websocket backend for the\n[Xterm.js](https://xtermjs.org/) Javascript terminal emulator library.\n\nIt evolved out of [pyxterm](https://github.com/mitotic/pyxterm), which\nwas part of [GraphTerm](https://github.com/mitotic/graphterm) (as\nlineterm.py), v0.57.0 (2014-07-18), and ultimately derived from the\npublic-domain [Ajaxterm](http://antony.lesuisse.org/software/ajaxterm/)\ncode, v0.11 (2008-11-13) (also on Github as part of\n[QWeb](https://github.com/antonylesuisse/qweb)).\n\nModules:\n\n- `terminado.management`: controls launching virtual terminals,\n  connecting them to Tornado's event loop, and closing them down.\n- `terminado.websocket`: Provides a websocket handler for\n  communicating with a terminal.\n- `terminado.uimodule`: Provides a `Terminal` Tornado [UI\n  Module](http://www.tornadoweb.org/en/stable/guide/templates.html#ui-modules).\n\nJS:\n\n- `terminado/_static/terminado.js`: A lightweight wrapper to set up a\n  term.js terminal with a websocket.\n\nLocal Installation:\n\n> $ pip install -e .\\[test\\]\n\nUsage example:\n\n```python\nimport os.path\nimport tornado.web\nimport tornado.ioloop\n\n# This demo requires tornado_xstatic and XStatic-term.js\nimport tornado_xstatic\n\nimport terminado\n\nSTATIC_DIR = os.path.join(os.path.dirname(terminado.__file__), \"_static\")\n\n\nclass TerminalPageHandler(tornado.web.RequestHandler):\n    def get(self):\n        return self.render(\n            \"termpage.html\",\n            static=self.static_url,\n            xstatic=self.application.settings[\"xstatic_url\"],\n            ws_url_path=\"/websocket\",\n        )\n\n\nif __name__ == \"__main__\":\n    term_manager = terminado.SingleTermManager(shell_command=[\"bash\"])\n    handlers = [\n        (r\"/websocket\", terminado.TermSocket, {\"term_manager\": term_manager}),\n        (r\"/\", TerminalPageHandler),\n        (\n            r\"/xstatic/(.*)\",\n            tornado_xstatic.XStaticFileHandler,\n            {\"allowed_modules\": [\"termjs\"]},\n        ),\n    ]\n    app = tornado.web.Application(\n        handlers,\n        static_path=STATIC_DIR,\n        xstatic_url=tornado_xstatic.url_maker(\"/xstatic/\"),\n    )\n "
+    "readme": "# Terminado\n\n[![Build Status](https://github.com/jupyter/terminado/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)](https://github.com/jupyter/terminado/actions/workflows/test.yml/badge.svg?query=branch%3Amain++)\n[![Documentation Status](https://readthedocs.org/projects/terminado/badge/?version=latest)](http://terminado.readthedocs.io/en/latest/?badge=latest)\n\nThis is a [Tornado](http://tornadoweb.org/) websocket backend for the\n[Xterm.js](https://xtermjs.org/) Javascript terminal emulator library.\n\nIt evolved out of [pyxterm](https://github.com/mitotic/pyxterm), which\nwas part of [GraphTerm](https://github.com/mitotic/graphterm) (as\nlineterm.py), v0.57.0 (2014-07-18), and ultimately derived from the\npublic-domain [Ajaxterm](http://antony.lesuisse.org/software/ajaxterm/)\ncode, v0.11 (2008-11-13) (also on Github as part of\n[QWeb](https://github.com/antonylesuisse/qweb)).\n\nModules:\n\n- `terminado.management`: controls launching virtual terminals,\n  connecting them to Tornado's event loop, and closing them down.\n- `terminado.websocket`: Provides a websocket handler for\n  communicating with a terminal.\n- `terminado.uimodule`: Provides a `Terminal` Tornado [UI\n  Module](http://www.tornadoweb.org/en/stable/guide/templates.html#ui-modules).\n\nJS:\n\n- `terminado/_static/terminado.js`: A lightweight wrapper to set up a\n  term.js terminal with a websocket.\n\nLocal Installation:\n\n> $ pip install -e .[test]\n\nUsage example:\n\n```python\nimport os.path\nimport tornado.web\nimport tornado.ioloop\n\n# This demo requires tornado_xstatic and XStatic-term.js\nimport tornado_xstatic\n\nimport terminado\n\nSTATIC_DIR = os.path.join(os.path.dirname(terminado.__file__), \"_static\")\n\n\nclass TerminalPageHandler(tornado.web.RequestHandler):\n    def get(self):\n        return self.render(\n            \"termpage.html\",\n            static=self.static_url,\n            xstatic=self.application.settings[\"xstatic_url\"],\n            ws_url_path=\"/websocket\",\n        )\n\n\nif __name__ == \"__main__\":\n    term_manager = terminado.SingleTermManager(shell_command=[\"bash\"])\n    handlers = [\n        (r\"/websocket\", terminado.TermSocket, {\"term_manager\": term_manager}),\n        (r\"/\", TerminalPageHandler),\n        (\n            r\"/xstatic/(.*)\",\n            tornado_xstatic.XStaticFileHandler,\n            {\"allowed_modules\": [\"termjs\"]},\n        ),\n    ]\n    app = tornado.web.Application(\n        handlers,\n        static_path=STATIC_DIR,\n        xstatic_url=tornado_xstatic.url_maker(\"/xstatic/\"),\n    )\n   "
   },
   "jupyter/testpath": {
     "head": "5c6ccfda4db8ac9d5b89c304c1ede54a6d3d91c6",
+    "last_commit": "2026-09-15",
     "n_files": 28,
     "file_types": {
       "config": 4,
@@ -8159,7 +8388,8 @@
     "readme": "Testpath is a collection of utilities for Python code working with files and commands.\n\nIt contains functions to check things on the filesystem, and tools for mocking\nsystem commands and recording calls to those.\n\n`Documentation on ReadTheDocs <https://testpath.readthedocs.io/en/latest/>`_\n\ne.g.::\n\n    import testpath\n    testpath.assert_isfile(path)\n    \n    with testpath.assert_calls('git', ['add', path]):\n        function_under_test()\n"
   },
   "jupyter/try-jupyter": {
-    "head": "e9cf252030c826c6b6083a7fea6dac880a290e57",
+    "head": "d178bd53e9d234b7936255e2150d11a0270a23dd",
+    "last_commit": "2026-10-28",
     "n_files": 37,
     "file_types": {
       "other": 4,
@@ -8204,6 +8434,7 @@
   },
   "jupyter/try.jupyter.org": {
     "head": "e86948f0248b6a7fb9ffff988c503446b68cfd1d",
+    "last_commit": "2018-03-03",
     "n_files": 9,
     "file_types": {
       "other": 3,
@@ -8224,6 +8455,7 @@
   },
   "jupytercon/2020-Cheukting": {
     "head": "5b2c1c5e59b80fa063547605abf0ab8924e2bfd1",
+    "last_commit": "2020-10-08",
     "n_files": 19,
     "file_types": {
       "config": 1,
@@ -8254,6 +8486,7 @@
   },
   "jupytercon/2020-ClusteringAlgorithms": {
     "head": "fd2eb8bd5f93b7b5f6a3f7f6418e49447a413f86",
+    "last_commit": "2020-10-06",
     "n_files": 50,
     "file_types": {
       "config": 1,
@@ -8284,6 +8517,7 @@
   },
   "jupytercon/2020-ericmjl": {
     "head": "e972b5a4cf50cf236d04a081ee1c49444e8b7416",
+    "last_commit": "2020-11-27",
     "n_files": 94,
     "file_types": {
       "docs": 10,
@@ -8312,6 +8546,7 @@
   },
   "jupytercon/2020-eteq": {
     "head": "29f4c1223135cc3d705e28f09cc425dce9cb719b",
+    "last_commit": "2020-10-08",
     "n_files": 20,
     "file_types": {
       "config": 1,
@@ -8341,6 +8576,7 @@
   },
   "jupytercon/2020-ethics-culture-opensource-tutorial": {
     "head": "693475bdd8bbef6eae8f86574ce84d38d8bbafc3",
+    "last_commit": "2020-10-13",
     "n_files": 11,
     "file_types": {
       "config": 1,
@@ -8368,6 +8604,7 @@
   },
   "jupytercon/2020-jedbrown": {
     "head": "cab67b4b9d5591b27ee27265377ee3358884fa75",
+    "last_commit": "2020-09-21",
     "n_files": 11,
     "file_types": {
       "config": 1,
@@ -8395,6 +8632,7 @@
   },
   "jupytercon/2020-juanklopper": {
     "head": "a29a820280890ac09afbb988b3def13143a49ab7",
+    "last_commit": "2020-10-12",
     "n_files": 15,
     "file_types": {
       "other": 1,
@@ -8416,6 +8654,7 @@
   },
   "jupytercon/2020-jupyterbook-with-turing-way": {
     "head": "7d7baf2b8df420299e6ea0af054693680857a503",
+    "last_commit": "2020-10-28",
     "n_files": 143,
     "file_types": {
       "config": 11,
@@ -8445,6 +8684,7 @@
   },
   "jupytercon/2020-mattharrison": {
     "head": "2124d7e14b1912b508e4fc7d3193e6f8015b15ad",
+    "last_commit": "2020-09-10",
     "n_files": 31,
     "file_types": {
       "config": 1,
@@ -8473,6 +8713,7 @@
   },
   "jupytercon/2020-OpenSourceCommunities": {
     "head": "1c0cec10a92a78185900afe4672cb28b513f7efb",
+    "last_commit": "2020-10-01",
     "n_files": 27,
     "file_types": {
       "config": 1,
@@ -8501,6 +8742,7 @@
   },
   "jupytercon/2020-OpenSourceFunding": {
     "head": "6416d0e8c541cc1db44fc79ca9614a9ea1acf248",
+    "last_commit": "2020-10-09",
     "n_files": 23,
     "file_types": {
       "config": 3,
@@ -8529,6 +8771,7 @@
   },
   "jupytercon/2020-posters-033-stix": {
     "head": "d4d7a030fcc2ccd3dd5e6b65de0f744fbefc5a83",
+    "last_commit": "2020-10-13",
     "n_files": 2,
     "file_types": {
       "notebook": 1,
@@ -8547,6 +8790,7 @@
   },
   "jupytercon/2020-posters-047-lee": {
     "head": "b9632556c31a231d336c617a18464b777d3ef410",
+    "last_commit": "2020-10-13",
     "n_files": 2,
     "file_types": {
       "notebook": 1,
@@ -8565,6 +8809,7 @@
   },
   "jupytercon/2020-posters-048-Grosch": {
     "head": "cddde46a5e62a70629f33d8c787c77cda8e66060",
+    "last_commit": "2020-10-13",
     "n_files": 5,
     "file_types": {
       "notebook": 4,
@@ -8583,6 +8828,7 @@
   },
   "jupytercon/2020-posters-057-lippert": {
     "head": "3d381f12b34096584a6c321f23d173c15c704b40",
+    "last_commit": "2020-10-13",
     "n_files": 2,
     "file_types": {
       "notebook": 1,
@@ -8601,6 +8847,7 @@
   },
   "jupytercon/2020-posters-103-brochart": {
     "head": "bd33d4ad4f86c9378476c16fd5f7c18190318cf1",
+    "last_commit": "2020-10-13",
     "n_files": 2,
     "file_types": {
       "notebook": 1,
@@ -8619,6 +8866,7 @@
   },
   "jupytercon/2020-sdruskat": {
     "head": "25da3574f48c7ea33905f543817f527fc1fb4979",
+    "last_commit": "2020-10-09",
     "n_files": 14,
     "file_types": {
       "config": 1,
@@ -8648,6 +8896,7 @@
   },
   "jupytercon/2020-shlomihod": {
     "head": "c992e2b547192b1fa1c0c5dc9579f03d6ca718bc",
+    "last_commit": "2020-10-06",
     "n_files": 143,
     "file_types": {
       "config": 1,
@@ -8678,6 +8927,7 @@
   },
   "jupytercon/2020-tracks": {
     "head": "0ca4f83411e39908594949f1552247500ee52735",
+    "last_commit": "2020-10-11",
     "n_files": 19,
     "file_types": {
       "docs": 1,
@@ -8696,6 +8946,7 @@
   },
   "jupytercon/2020-widgets-tutorial": {
     "head": "d29de1826a1788a611e3fd5bbaf01dc690fe2f3d",
+    "last_commit": "2026-10-26",
     "n_files": 114,
     "file_types": {
       "config": 3,
@@ -8728,6 +8979,7 @@
   },
   "jupytercon/2020-willingc": {
     "head": "8eda34a294cc8f1e9572fd49cb7aa7c794e762c2",
+    "last_commit": "2020-10-10",
     "n_files": 24,
     "file_types": {
       "config": 1,
@@ -8756,6 +9008,7 @@
   },
   "jupytercon/2020-zronaghi": {
     "head": "b88a9683105d8ed0599b329e3a4b4a35ac8a5897",
+    "last_commit": "2020-10-05",
     "n_files": 22,
     "file_types": {
       "config": 2,
@@ -8786,6 +9039,7 @@
   },
   "jupytercon/conf-session2020": {
     "head": "d3345dcdc2a67ae35981f0ae9849e7b24b5c2ea6",
+    "last_commit": "2020-08-28",
     "n_files": 4,
     "file_types": {
       "docs": 4
@@ -8803,6 +9057,7 @@
   },
   "jupytercon/jupytercon2020-developingextensions": {
     "head": "5b9b902aae6b2ecf28592322160d68503c03d0e8",
+    "last_commit": "2020-10-08",
     "n_files": 39,
     "file_types": {
       "config": 5,
@@ -8853,6 +9108,7 @@
   },
   "jupytercon/jupytercon2020-website": {
     "head": "50e3ab8c5f247526e6e3b001ca6e08f11bfd529d",
+    "last_commit": "2022-10-21",
     "n_files": 174,
     "file_types": {
       "config": 7,
@@ -8884,6 +9140,7 @@
   },
   "jupytercon/jupytercon2025-developingextensions": {
     "head": "cd76a2db4952f5179b14096bff7366f067cdb3ab",
+    "last_commit": "2025-11-19",
     "n_files": 30,
     "file_types": {
       "other": 4,
@@ -8917,6 +9174,7 @@
   },
   "jupytercon/jupytercon2025-developingextensions-demo": {
     "head": "6df5e9939ee090b3760e511a33371a26c66b721d",
+    "last_commit": "2025-10-29",
     "n_files": 53,
     "file_types": {
       "config": 19,
@@ -8977,6 +9235,7 @@
   },
   "jupytercon/tutorial2020": {
     "head": "ed56a9570f7655578ddf42c37185926304a06162",
+    "last_commit": "2020-09-07",
     "n_files": 11,
     "file_types": {
       "config": 1,
@@ -9004,6 +9263,7 @@
   },
   "jupyterhealth/.github": {
     "head": "54e19bd6cd7d319ec36e3f09141af77ae0fc5b7f",
+    "last_commit": "2026-10-22",
     "n_files": 1,
     "file_types": {
       "docs": 1
@@ -9021,6 +9281,7 @@
   },
   "jupyterhealth/demos": {
     "head": "2238d949729466053d100298041173268b9985fd",
+    "last_commit": "2026-10-26",
     "n_files": 63,
     "file_types": {
       "config": 4,
@@ -9055,6 +9316,7 @@
   },
   "jupyterhealth/edgemed-demo-app": {
     "head": "246acc62c92d9124e3a954111e1ddbb9ed1b0d92",
+    "last_commit": "2026-10-20",
     "n_files": 257,
     "file_types": {
       "other": 161,
@@ -9076,6 +9338,7 @@
   },
   "jupyterhealth/fhir-cross-version": {
     "head": "8113cd23751e23824816298af4bed8d41018beb0",
+    "last_commit": "2026-03-25",
     "n_files": 3462,
     "file_types": {
       "other": 1207,
@@ -9096,6 +9359,7 @@
   },
   "jupyterhealth/helm-charts": {
     "head": "81315f1641b81cbb3b045c6adc605e814f44ab6a",
+    "last_commit": "2026-10-08",
     "n_files": 54,
     "file_types": {
       "config": 44,
@@ -9138,6 +9402,7 @@
   },
   "jupyterhealth/hub": {
     "head": "6d82819685895ca683f8f22afe48c18bd03d866d",
+    "last_commit": "2026-10-05",
     "n_files": 17,
     "file_types": {
       "config": 2,
@@ -9169,6 +9434,7 @@
   },
   "jupyterhealth/initiatives": {
     "head": "dba239a3648634610f9a85415ce2510ad929d3f0",
+    "last_commit": "2026-10-14",
     "n_files": 22,
     "file_types": {
       "config": 7,
@@ -9206,6 +9472,7 @@
   },
   "jupyterhealth/jhe-smart-demo": {
     "head": "dd1fa7e1d5204a4f7e68ea5864f941579bf4bca4",
+    "last_commit": "2026-02-04",
     "n_files": 31,
     "file_types": {
       "other": 7,
@@ -9229,6 +9496,7 @@
   },
   "jupyterhealth/jhe-stress": {
     "head": "2c118bfb90ee6ab082d6963bfcc7d357559d8164",
+    "last_commit": "2026-09-23",
     "n_files": 9,
     "file_types": {
       "other": 3,
@@ -9260,6 +9528,7 @@
   },
   "jupyterhealth/jupyter-smart-on-fhir": {
     "head": "a0a31bb850d0c53d5e3b61a7326a36ca6bba5c31",
+    "last_commit": "2026-10-07",
     "n_files": 22,
     "file_types": {
       "config": 6,
@@ -9303,6 +9572,7 @@
   },
   "jupyterhealth/jupyterhealth-client": {
     "head": "15d88eb66276a393f3f6cf0f94ebab42a7e93953",
+    "last_commit": "2026-10-12",
     "n_files": 25,
     "file_types": {
       "config": 8,
@@ -9346,6 +9616,7 @@
   },
   "jupyterhealth/jupyterhealth-demo-deploy": {
     "head": "2020191984f4e530f0b8ee2bbbe57824535071fd",
+    "last_commit": "2026-10-08",
     "n_files": 34,
     "file_types": {
       "config": 26,
@@ -9377,6 +9648,7 @@
   },
   "jupyterhealth/jupyterhealth-exchange": {
     "head": "3cb9e210e3c3a77ff582e2ba02214ac723b0c547",
+    "last_commit": "2026-10-08",
     "n_files": 944,
     "file_types": {
       "other": 10,
@@ -9445,6 +9717,7 @@
   },
   "jupyterhealth/jupyterhealth-sof-provider-template": {
     "head": "4a86d186a433c326504378bdb49983848d6f9623",
+    "last_commit": "2026-10-07",
     "n_files": 35,
     "file_types": {
       "other": 6,
@@ -9489,6 +9762,7 @@
   },
   "jupyterhealth/jupyterhealth-software": {
     "head": "dcf1b072fcd06488968716019d2fe5b59890c96e",
+    "last_commit": "2024-06-20",
     "n_files": 1,
     "file_types": {
       "docs": 1
@@ -9506,6 +9780,7 @@
   },
   "jupyterhealth/jupyterhealth.github.io": {
     "head": "f9f9cc02f407d35aea35ca01ba46165ac0c2f137",
+    "last_commit": "2026-10-23",
     "n_files": 20,
     "file_types": {
       "config": 3,
@@ -9537,6 +9812,7 @@
   },
   "jupyterhealth/jupyterhealth.org": {
     "head": "714d67624e4fb375809e2b8c75a7be96c7c9255d",
+    "last_commit": "2026-10-07",
     "n_files": 963,
     "file_types": {
       "config": 57,
@@ -9583,6 +9859,7 @@
   },
   "jupyterhealth/myst-site-article": {
     "head": "43d27b4bf59c8a990df2dab2a3473c9043e05dd3",
+    "last_commit": "2024-04-22",
     "n_files": 24,
     "file_types": {
       "config": 4,
@@ -9613,6 +9890,7 @@
   },
   "jupyterhealth/myst-site-book": {
     "head": "f27d0813090423b11d7466ea0e2971a792da2b2d",
+    "last_commit": "2024-05-08",
     "n_files": 24,
     "file_types": {
       "config": 4,
@@ -9643,6 +9921,7 @@
   },
   "jupyterhealth/omh-shim": {
     "head": "1892a182d6b6c8255b5663a61086fe27eaa67cc0",
+    "last_commit": "2026-09-19",
     "n_files": 145,
     "file_types": {
       "config": 117,
@@ -9689,6 +9968,7 @@
   },
   "jupyterhealth/partner-client-docker": {
     "head": "27e63298a95c92071beba854ace9bbcc0d1717e4",
+    "last_commit": "2024-04-07",
     "n_files": 16,
     "file_types": {
       "other": 4,
@@ -9709,6 +9989,7 @@
   },
   "jupyterhealth/singleuser-image": {
     "head": "e980a453ad2d7a7871a55747b4d3c45dd29c1595",
+    "last_commit": "2026-10-14",
     "n_files": 16,
     "file_types": {
       "config": 6,
@@ -9741,6 +10022,7 @@
   },
   "jupyterhealth/sof-cgm-demo": {
     "head": "c69e01f6639bfa509434cff4098c4d909e813d5e",
+    "last_commit": "2026-10-08",
     "n_files": 36,
     "file_types": {
       "other": 6,
@@ -9785,6 +10067,7 @@
   },
   "jupyterhealth/software-documentation": {
     "head": "49a35c93b740f9eb4db1a0c055ea391403ca36f2",
+    "last_commit": "2026-10-05",
     "n_files": 71,
     "file_types": {
       "config": 12,
@@ -9825,6 +10108,7 @@
   },
   "jupyterhealth/team-compass": {
     "head": "86708c186b15aa68cfa41b316655d50ef68fced5",
+    "last_commit": "2025-09-15",
     "n_files": 3,
     "file_types": {
       "other": 2,
@@ -9843,6 +10127,7 @@
   },
   "jupyterhub/.github": {
     "head": "1ce38bf4a1d1480cbb16c0d7180ef8bb7fca0493",
+    "last_commit": "2026-08-10",
     "n_files": 10,
     "file_types": {
       "docs": 5,
@@ -9862,6 +10147,7 @@
   },
   "jupyterhub/action-get-quayio-tags": {
     "head": "8104abd2cbd919c41b7e46f76da0c418515c0f77",
+    "last_commit": "2026-09-26",
     "n_files": 30,
     "file_types": {
       "other": 6,
@@ -9892,6 +10178,7 @@
   },
   "jupyterhub/action-k3s-helm": {
     "head": "6da89b79178a4f74d94114306c5c39df06d28b1c",
+    "last_commit": "2026-07-01",
     "n_files": 18,
     "file_types": {
       "config": 13,
@@ -9923,6 +10210,7 @@
   },
   "jupyterhub/action-k8s-await-workloads": {
     "head": "f2f60c4ab11cea683b3ac272a1476d0a6643c03b",
+    "last_commit": "2026-01-12",
     "n_files": 38,
     "file_types": {
       "other": 6,
@@ -9959,6 +10247,7 @@
   },
   "jupyterhub/action-k8s-namespace-report": {
     "head": "c218f103e8e9aa6169879b4317401469c2e925ed",
+    "last_commit": "2026-03-16",
     "n_files": 14,
     "file_types": {
       "config": 9,
@@ -9989,6 +10278,7 @@
   },
   "jupyterhub/action-major-minor-tag-calculator": {
     "head": "b9d9271198eb8d2c3473e7050f60fad7a73e157a",
+    "last_commit": "2026-10-01",
     "n_files": 21,
     "file_types": {
       "other": 5,
@@ -10025,6 +10315,7 @@
   },
   "jupyterhub/autodoc-traits": {
     "head": "339425f57a35c47a1435b0b3330749f3f1d7f1b8",
+    "last_commit": "2026-08-11",
     "n_files": 33,
     "file_types": {
       "other": 3,
@@ -10068,6 +10359,7 @@
   },
   "jupyterhub/batchspawner": {
     "head": "451dcf171cff7883904845d5de8c5e5e250b64d9",
+    "last_commit": "2025-10-01",
     "n_files": 23,
     "file_types": {
       "other": 3,
@@ -10112,6 +10404,7 @@
   },
   "jupyterhub/binder-billing": {
     "head": "03da4faf549955782326cbc3e4d1e30da8be6eb2",
+    "last_commit": "2020-01-03",
     "n_files": 5,
     "file_types": {
       "other": 2,
@@ -10132,6 +10425,7 @@
   },
   "jupyterhub/binder-data": {
     "head": "c66d69e6aa14a5edae56b9b874e0e8b93d31224f",
+    "last_commit": "2026-06-05",
     "n_files": 13,
     "file_types": {
       "config": 4,
@@ -10168,6 +10462,7 @@
   },
   "jupyterhub/binderhub": {
     "head": "1013493a4eaf91d9ad15de0d125cd0e36505d093",
+    "last_commit": "2026-07-01",
     "n_files": 231,
     "file_types": {
       "other": 20,
@@ -10244,6 +10539,7 @@
   },
   "jupyterhub/chartpress": {
     "head": "f7d727abccb67bbb352f330d92c68e8b995c96cb",
+    "last_commit": "2026-06-01",
     "n_files": 56,
     "file_types": {
       "other": 8,
@@ -10288,7 +10584,8 @@
     "readme": "# [chartpress](https://github.com/jupyterhub/chartpress)\n\n[![Latest PyPI version](https://img.shields.io/pypi/v/chartpress?logo=pypi)](https://pypi.python.org/pypi/chartpress)\n[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jupyterhub/chartpress/test.yaml?logo=github)](https://github.com/jupyterhub/chartpress/actions)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/chartpress/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\nChartpress automate basic Helm chart development work. It is tightly used in development of the [JupyterHub](https://github.com/jupyterhub/zero-to-jupyterhub-k8s) and [BinderHub](https://github.com/jupyterhub/binderhub) Helm charts.\n\n## Features\n\nChartpress can do the following with the help of some configuration.\n\n- Update Chart.yaml's version appropriately\n- Build docker images and tag them appropriately\n- Push built images to a docker image repository\n- Update values.yaml to reference the built images\n- Publish a chart to a Helm chart registry based on GitHub pages\n- Reset changes to Chart.yaml and values.yaml\n"
   },
   "jupyterhub/configurable-http-proxy": {
-    "head": "2f1042162a334d4aa4e8124804c7a2b43fdc2b10",
+    "head": "65b3864479631b299d120c289c7b10515169da76",
+    "last_commit": "2026-10-29",
     "n_files": 42,
     "file_types": {
       "other": 9,
@@ -10334,10 +10631,11 @@
       "jupyterhub/action-major-minor-tag-calculator@v4"
     ],
     "build_requires": [],
-    "readme": "# [configurable-http-proxy](https://github.com/jupyterhub/configurable-http-proxy)\n\n[![npm](https://img.shields.io/npm/v/configurable-http-proxy.svg?logo=npm)](https://www.npmjs.com/package/configurable-http-proxy)\n[![Docker Build status](https://img.shields.io/docker/cloud/build/jupyterhub/configurable-http-proxy?logo=docker&label=build)](https://hub.docker.com/r/jupyterhub/configurable-http-proxy/tags)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/actions/workflow/status/jupyterhub/configurable-http-proxy/test.yml?branch=main&logo=github&label=tests)](https://github.com/jupyterhub/configurable-http-proxy/actions)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/configurable-http-proxy/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub/z2jh-k8s)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\n**configurable-http-proxy** (CHP) provides you with a way to update and manage\na proxy table using a command line interface or REST API.\nIt is a simple wrapper around [node-http-proxy][]. node-http-proxy is an HTTP\nprogrammable proxying library that supports websockets and is suitable for\nimplementing components such as reverse proxies and load balancers. By\nwrapping node-http-proxy, **configurable-http-proxy** extends this\nfunctionality to [JupyterHub] deployments.\n\n## Table of Contents\n\n- [Install](#install)\n- [Usage](#usage)\n  - [Starting the proxy](#starting-the-proxy)\n  - [Setting a default target](#setting-a-default-target)\n  - [Command-line options](#command-line-options)\n- [Using the REST API](#using-the-rest-api)\n  - [REST API Basics](#rest-api-basics)\n  - [Authenticating via passing a token](#authenticating-via-passing-a-token)\n  - [Getting the routing table](#getting-the-routing-table)\n  - [Adding new routes](#adding-new-routes)\n  - [Deleting routes](#deleting-routes)\n- [Custom error pages](#custom-error-pages)\n  - [Setting the path for custom error pages](#setting-the-path-for-custom-error-pages)\n  - [Setting a target for custom error handling](#setting-a-target-for-custom-error-handling)\n- [Host-based routing](#host-based-routing)\n- [Troubleshooting](#troubleshooting)\n\n## Install\n\nPrerequisite: [Node.js](https://nodejs.org/en/download/) ≥ 20\n\nIf you're installing `configurable-http-proxy` in Linux, you can follow [the in"
+    "readme": "# [configurable-http-proxy](https://github.com/jupyterhub/configurable-http-proxy)\n\n[![npm](https://img.shields.io/npm/v/configurable-http-proxy.svg?logo=npm)](https://www.npmjs.com/package/configurable-http-proxy)\n[![Docker Build status](https://img.shields.io/docker/cloud/build/jupyterhub/configurable-http-proxy?logo=docker&label=build)](https://hub.docker.com/r/jupyterhub/configurable-http-proxy/tags)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/actions/workflow/status/jupyterhub/configurable-http-proxy/test.yml?branch=main&logo=github&label=tests)](https://github.com/jupyterhub/configurable-http-proxy/actions)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/configurable-http-proxy/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub/z2jh-k8s)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\n**configurable-http-proxy** (CHP) provides you with a way to update and manage\na proxy table using a command line interface or REST API.\nIt is a simple wrapper around [node-http-proxy][]. node-http-proxy is an HTTP\nprogrammable proxying library that supports websockets and is suitable for\nimplementing components such as reverse proxies and load balancers. By\nwrapping node-http-proxy, **configurable-http-proxy** extends this\nfunctionality to [JupyterHub] deployments.\n\n## Table of Contents\n\n- [Install](#install)\n- [Usage](#usage)\n  - [Starting the proxy](#starting-the-proxy)\n  - [Setting a default target](#setting-a-default-target)\n  - [Command-line options](#command-line-options)\n- [Using the REST API](#using-the-rest-api)\n  - [REST API Basics](#rest-api-basics)\n  - [Authenticating via passing a token](#authenticating-via-passing-a-token)\n  - [Getting the routing table](#getting-the-routing-table)\n  - [Adding new routes](#adding-new-routes)\n  - [Deleting routes](#deleting-routes)\n- [Custom error pages](#custom-error-pages)\n  - [Setting the path for custom error pages](#setting-the-path-for-custom-error-pages)\n  - [Setting a target for custom error handling](#setting-a-target-for-custom-error-handling)\n- [Host-based routing](#host-based-routing)\n- [Troubleshooting](#troubleshooting)\n\n## Install\n\nPrerequisite: [Node.js](https://nodejs.org/en/download/) ≥ 22\n\nIf you're installing `configurable-http-proxy` in Linux, you can follow [the in"
   },
   "jupyterhub/design": {
     "head": "a037b7487f24e3735bd0b534d55823fedfcd8edc",
+    "last_commit": "2025-09-16",
     "n_files": 79,
     "file_types": {
       "other": 2,
@@ -10359,6 +10657,7 @@
   },
   "jupyterhub/docker-image-cleaner": {
     "head": "b305d4fd0fd20c0ea38b2fbb6f93c83d3faaed19",
+    "last_commit": "2026-08-27",
     "n_files": 21,
     "file_types": {
       "other": 5,
@@ -10412,6 +10711,7 @@
   },
   "jupyterhub/dockerspawner": {
     "head": "a73d0de667e43a6967d4c870c00d6b11c9a0dd17",
+    "last_commit": "2026-07-01",
     "n_files": 61,
     "file_types": {
       "other": 11,
@@ -10454,6 +10754,7 @@
   },
   "jupyterhub/escapism": {
     "head": "ae458c5ad90e66d42c5e55e97e1b72e128cf0b99",
+    "last_commit": "2026-06-02",
     "n_files": 12,
     "file_types": {
       "config": 5,
@@ -10496,6 +10797,7 @@
   },
   "jupyterhub/firstuseauthenticator": {
     "head": "439b3a7d8920e9ec6ade8e1f38ffedae03d12603",
+    "last_commit": "2026-10-23",
     "n_files": 16,
     "file_types": {
       "config": 4,
@@ -10540,6 +10842,7 @@
   },
   "jupyterhub/gh-scoped-creds": {
     "head": "fe538a4bbc189ae3240301e125828984dc0abf89",
+    "last_commit": "2026-08-27",
     "n_files": 11,
     "file_types": {
       "other": 3,
@@ -10583,6 +10886,7 @@
   },
   "jupyterhub/grafana-dashboards": {
     "head": "f8bf30b77c8bab4c109349f46ba6ec655c7d17c6",
+    "last_commit": "2026-10-12",
     "n_files": 390,
     "file_types": {
       "other": 124,
@@ -10610,6 +10914,7 @@
   },
   "jupyterhub/helm-chart": {
     "head": "63e6e91495bbee32e8dd240719e7d071ab209b98",
+    "last_commit": "2023-06-01",
     "n_files": 2,
     "file_types": {
       "other": 1,
@@ -10628,6 +10933,7 @@
   },
   "jupyterhub/jupyter-remote-desktop-proxy": {
     "head": "390c824aeb5d90633b1803b9009195313dce0ff3",
+    "last_commit": "2026-09-01",
     "n_files": 38,
     "file_types": {
       "code": 11,
@@ -10679,6 +10985,7 @@
   },
   "jupyterhub/jupyter-rsession-proxy": {
     "head": "2bc193994d6167f356c6878afe09b1c923b01575",
+    "last_commit": "2026-09-21",
     "n_files": 18,
     "file_types": {
       "config": 7,
@@ -10719,6 +11026,7 @@
   },
   "jupyterhub/jupyter-server-proxy": {
     "head": "204020060c950dc60a362b7b35bff80b9e8249b7",
+    "last_commit": "2026-10-26",
     "n_files": 90,
     "file_types": {
       "other": 10,
@@ -10784,7 +11092,8 @@
     "readme": "# Jupyter Server Proxy\n\n[![ReadTheDocs badge](https://img.shields.io/readthedocs/jupyter-server-proxy?logo=read-the-docs)](https://jupyter-server-proxy.readthedocs.io/)\n[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jupyterhub/jupyter-server-proxy/test.yaml?logo=github&branch=main)](https://github.com/jupyterhub/jupyter-server-proxy/actions)\n[![PyPI badge](https://img.shields.io/pypi/v/jupyter-server-proxy.svg?logo=pypi)](https://pypi.python.org/pypi/jupyter-server-proxy)\n[![Conda badge](https://img.shields.io/conda/vn/conda-forge/jupyter-server-proxy?logo=conda-forge)](https://anaconda.org/conda-forge/jupyter-server-proxy)\n[![NPM badge](https://img.shields.io/npm/v/@jupyterhub/jupyter-server-proxy.svg?logo=npm)](https://www.npmjs.com/package/@jupyterhub/jupyter-server-proxy)\n\nJupyter Server Proxy lets you run arbitrary external processes (such as\nRStudio, Shiny Server, Syncthing, PostgreSQL, Code Server, etc)\nalongside your notebook server and provide authenticated web access to\nthem using a path like `/rstudio` next to others like `/lab`. Alongside\nthe python package that provides the main functionality, the JupyterLab\nextension (`@jupyterhub/jupyter-server-proxy`) provides buttons in the\nJupyterLab launcher window to get to RStudio for example.\n\n**Note:** This project used to be called **nbserverproxy**. As\nnbserverproxy is an older version of jupyter-server-proxy, uninstall\nnbserverproxy before installing jupyter-server-proxy to avoid conflicts.\n\nThe primary use cases are:\n\n1.  Use with JupyterHub / Binder to allow launching users into web\n    interfaces that have nothing to do with Jupyter - such as RStudio,\n    Shiny, or OpenRefine.\n2.  Allow access from frontend javascript (in classic notebook or\n    JupyterLab extensions) to access web APIs of other processes running\n    locally in a safe manner. This is used by the [JupyterLab\n    extension](https://github.com/dask/dask-labextension) for\n    [dask](https://www.dask.org/).\n\n[The documentation](https://jupyter-server-proxy.readthedocs.io/)\ncontains information on installation & usage.\n\n## Security warning\n\nJupyter Server Proxy is often used to start a user defined process listening to\nsome network port (e.g. `http://localhost:4567`) for a user starting a Jupyter Server\nthat only that user has permission to access. The user can then access the\nstarted process proxied through the Jupyter Server.\n\nFor safe use of Jupyter Server Proxy, you should ensure that the process"
   },
   "jupyterhub/jupyterhub": {
-    "head": "4224d01251779a37112d8ae26dc384244d31cb77",
+    "head": "5dd3832731fd1b17ebdce2e8b4271440410d3ed4",
+    "last_commit": "2026-10-27",
     "n_files": 429,
     "file_types": {
       "other": 18,
@@ -10846,7 +11155,8 @@
     "readme": "**[Technical Overview](#technical-overview)** |\n**[Installation](#installation)** |\n**[Configuration](#configuration)** |\n**[Docker](#docker)** |\n**[Contributing](#contributing)** |\n**[License](#license)** |\n**[Help and Resources](#help-and-resources)**\n\n---\n\n# [JupyterHub](https://github.com/jupyterhub/jupyterhub)\n\n[![Latest PyPI version](https://img.shields.io/pypi/v/jupyterhub?logo=pypi)](https://pypi.python.org/pypi/jupyterhub)\n[![Latest conda-forge version](https://img.shields.io/conda/vn/conda-forge/jupyterhub?logo=conda-forge)](https://anaconda.org/conda-forge/jupyterhub)\n[![Documentation build status](https://img.shields.io/readthedocs/jupyterhub?logo=read-the-docs)](https://jupyterhub.readthedocs.org/en/latest/)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/workflow/status/jupyterhub/jupyterhub/Test?logo=github&label=tests)](https://github.com/jupyterhub/jupyterhub/actions)\n[![Test coverage of code](https://codecov.io/gh/jupyterhub/jupyterhub/branch/main/graph/badge.svg)](https://codecov.io/gh/jupyterhub/jupyterhub)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/jupyterhub/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\nWith [JupyterHub](https://jupyterhub.readthedocs.io) you can create a\n**multi-user Hub** that spawns, manages, and proxies multiple instances of the\nsingle-user [Jupyter notebook](https://jupyter-notebook.readthedocs.io)\nserver.\n\n[Project Jupyter](https://jupyter.org) created JupyterHub to support many\nusers. The Hub can offer notebook servers to a class of students, a corporate\ndata science workgroup, a scientific research project, or a high-performance\ncomputing group.\n\n## Technical overview\n\nThree main actors make up JupyterHub:\n\n- multi-user **Hub** (tornado process)\n- configurable http **proxy** (node-http-proxy)\n- multiple **single-user Jupyter notebook servers** (Python/Jupyter/tornado)\n\nBasic principles for operation are:\n\n- Hub launches a proxy.\n- The Proxy forwards all requests to Hub by default.\n- Hub handles login and spawns single-user servers on demand.\n- Hub configures proxy to forward URL prefixes to the single-user notebook\n  servers.\n\nJupyterHub also provides a\n[REST API][]\nfor administration of the Hub and its users.\n\n[rest ap"
   },
   "jupyterhub/jupyterhub-container-images": {
-    "head": "1b08d200efdcc68786e5f64702b2749672528424",
+    "head": "96b3f05dbb063467899bb4abd869458acf46ed37",
+    "last_commit": "2026-10-28",
     "n_files": 20,
     "file_types": {
       "config": 8,
@@ -10896,6 +11206,7 @@
   },
   "jupyterhub/jupyterhub-deploy-docker": {
     "head": "e2b79700d32662403ad951a13f19030864ad581a",
+    "last_commit": "2026-10-13",
     "n_files": 14,
     "file_types": {
       "other": 5,
@@ -10924,6 +11235,7 @@
   },
   "jupyterhub/jupyterhub-deploy-hpc": {
     "head": "fbffef1aacf15f656ca6a1b7b2b24906212263d7",
+    "last_commit": "2024-06-11",
     "n_files": 16,
     "file_types": {
       "docs": 4,
@@ -10944,6 +11256,7 @@
   },
   "jupyterhub/jupyterhub-deploy-teaching": {
     "head": "609b0eb2e7f1a2c5d025a40e64ef281a304ae249",
+    "last_commit": "2024-06-11",
     "n_files": 69,
     "file_types": {
       "other": 10,
@@ -10965,6 +11278,7 @@
   },
   "jupyterhub/jupyterhub-idle-culler": {
     "head": "0b92132cf9a1ba5f5c425c790e44246b2dfbfe52",
+    "last_commit": "2026-10-21",
     "n_files": 19,
     "file_types": {
       "other": 2,
@@ -11010,6 +11324,7 @@
   },
   "jupyterhub/jupyterhub-on-hadoop": {
     "head": "b4e4171732016e9c27bbb52a854a460c2bf54d7a",
+    "last_commit": "2019-07-16",
     "n_files": 58,
     "file_types": {
       "other": 14,
@@ -11032,6 +11347,7 @@
   },
   "jupyterhub/jupyterhub-python-repo-template": {
     "head": "3bcbc805517686a33b8dfc5bff6e1e15f8afb2b7",
+    "last_commit": "2025-12-08",
     "n_files": 25,
     "file_types": {
       "other": 5,
@@ -11071,6 +11387,7 @@
   },
   "jupyterhub/jupyterhub-sphinx-theme": {
     "head": "33139829eb7840b41cfcdcbff603701e7e468391",
+    "last_commit": "2025-05-15",
     "n_files": 29,
     "file_types": {
       "other": 4,
@@ -11112,6 +11429,7 @@
   },
   "jupyterhub/jupyterhub-the-hard-way": {
     "head": "d938ac4ab17e194e3d15c7b86fa54dfeb5661b90",
+    "last_commit": "2025-12-06",
     "n_files": 25,
     "file_types": {
       "config": 5,
@@ -11139,6 +11457,7 @@
   },
   "jupyterhub/jupyterhub.github.io": {
     "head": "12fcc920d1d350a6d0b0d9e87ecca115319708a7",
+    "last_commit": "2026-08-19",
     "n_files": 16,
     "file_types": {
       "config": 4,
@@ -11172,6 +11491,7 @@
   },
   "jupyterhub/kerberosauthenticator": {
     "head": "3c5f60d084201884de63d5b36d01f0b56d23b0e5",
+    "last_commit": "2026-08-01",
     "n_files": 37,
     "file_types": {
       "other": 8,
@@ -11215,6 +11535,7 @@
   },
   "jupyterhub/kubespawner": {
     "head": "47ce269d515b7b509cb5ebe45d69ebe79d9dd6c6",
+    "last_commit": "2026-09-29",
     "n_files": 68,
     "file_types": {
       "other": 6,
@@ -11261,6 +11582,7 @@
   },
   "jupyterhub/ldapauthenticator": {
     "head": "9d2759a3ca3ab8a311398fbae8f8d4cd114f66b0",
+    "last_commit": "2026-07-01",
     "n_files": 20,
     "file_types": {
       "other": 3,
@@ -11301,6 +11623,7 @@
   },
   "jupyterhub/ltiauthenticator": {
     "head": "c0c3bf3a7a12f81fe09ad858a102a3d6a17fe5d7",
+    "last_commit": "2026-07-01",
     "n_files": 65,
     "file_types": {
       "other": 4,
@@ -11348,6 +11671,7 @@
   },
   "jupyterhub/mybinder-tools": {
     "head": "fa690516b9bf9fa2079fd13474611cbf970d423a",
+    "last_commit": "2018-07-12",
     "n_files": 8,
     "file_types": {
       "other": 2,
@@ -11367,6 +11691,7 @@
   },
   "jupyterhub/mybinder.org-deploy": {
     "head": "4bdea9849b8181b7cb02109dd6ac8af7128fa8b6",
+    "last_commit": "2026-10-26",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -11417,6 +11742,7 @@
   },
   "jupyterhub/mybinder.org-user-guide": {
     "head": "1a4084931e8296769eab9b2ea75c5e29ac8e618b",
+    "last_commit": "2026-09-27",
     "n_files": 50,
     "file_types": {
       "docs": 28,
@@ -11439,6 +11765,7 @@
   },
   "jupyterhub/nativeauthenticator": {
     "head": "67acaf6a1a7305a9b43dec90056dc08b4f5ef98a",
+    "last_commit": "2026-10-13",
     "n_files": 54,
     "file_types": {
       "other": 6,
@@ -11479,6 +11806,7 @@
   },
   "jupyterhub/nbgitpuller": {
     "head": "f7dce435044a769dfab00ed1214a7851f0b60797",
+    "last_commit": "2026-03-31",
     "n_files": 54,
     "file_types": {
       "docs": 15,
@@ -11523,6 +11851,7 @@
   },
   "jupyterhub/nbgitpuller-downloader-dropbox": {
     "head": "d81fa98630cb8a7a35d00365020b5f8c66a6fa76",
+    "last_commit": "2021-11-26",
     "n_files": 9,
     "file_types": {
       "other": 2,
@@ -11553,6 +11882,7 @@
   },
   "jupyterhub/nbgitpuller-downloader-generic-web": {
     "head": "3d6080c92a610d72f02bf1d15a65fbf15b625604",
+    "last_commit": "2021-11-26",
     "n_files": 8,
     "file_types": {
       "other": 2,
@@ -11583,6 +11913,7 @@
   },
   "jupyterhub/nbgitpuller-downloader-googledrive": {
     "head": "4e3688f0ba0a225f71f9e6215eddd6adefbbb125",
+    "last_commit": "2021-11-26",
     "n_files": 8,
     "file_types": {
       "other": 2,
@@ -11613,6 +11944,7 @@
   },
   "jupyterhub/nbgitpuller-downloader-plugins": {
     "head": "646857507fb21a6f2a7222bdd7610d7184492e69",
+    "last_commit": "2022-01-19",
     "n_files": 24,
     "file_types": {
       "other": 10,
@@ -11643,6 +11975,7 @@
   },
   "jupyterhub/oauthenticator": {
     "head": "02344def2a5e57b9fb25424dd806bcaff8de800d",
+    "last_commit": "2026-10-01",
     "n_files": 97,
     "file_types": {
       "other": 9,
@@ -11691,6 +12024,7 @@
   },
   "jupyterhub/pamela": {
     "head": "0894fff26692355414b6e6080acd60ed56613355",
+    "last_commit": "2024-12-18",
     "n_files": 15,
     "file_types": {
       "other": 4,
@@ -11735,6 +12069,7 @@
   },
   "jupyterhub/pebble-helm-chart": {
     "head": "17abfdfb3dd0b44ad75c1fadcdcd56fd633c81b9",
+    "last_commit": "2026-10-12",
     "n_files": 29,
     "file_types": {
       "config": 17,
@@ -11769,6 +12104,7 @@
   },
   "jupyterhub/pytest-jupyterhub": {
     "head": "0bc90cdd06c01c2a63ae56e36878ea25ce7642fd",
+    "last_commit": "2026-06-02",
     "n_files": 33,
     "file_types": {
       "other": 4,
@@ -11811,6 +12147,7 @@
   },
   "jupyterhub/repo2docker": {
     "head": "ebcc593885cc6a7e344520ca1bb8766242093c8f",
+    "last_commit": "2026-09-15",
     "n_files": 381,
     "file_types": {
       "config": 73,
@@ -11890,6 +12227,7 @@
   },
   "jupyterhub/repo2docker-action": {
     "head": "92fefcbd2b46dd9716f5263a9e740cbc972f6dd9",
+    "last_commit": "2026-02-23",
     "n_files": 25,
     "file_types": {
       "config": 9,
@@ -11921,6 +12259,7 @@
   },
   "jupyterhub/roadmap": {
     "head": "039f274863b3c19e3345623a447f4de1b47fc982",
+    "last_commit": "2026-05-06",
     "n_files": 5,
     "file_types": {
       "config": 2,
@@ -11940,6 +12279,7 @@
   },
   "jupyterhub/simpervisor": {
     "head": "24730d8bf9574e1adfb755804882acedd3696855",
+    "last_commit": "2026-07-01",
     "n_files": 23,
     "file_types": {
       "other": 3,
@@ -11981,6 +12321,7 @@
   },
   "jupyterhub/sudospawner": {
     "head": "304be890e24a0d64c394ea26690a82bedb367681",
+    "last_commit": "2026-08-05",
     "n_files": 24,
     "file_types": {
       "other": 6,
@@ -12023,6 +12364,7 @@
   },
   "jupyterhub/systemdspawner": {
     "head": "9a0a7f4efe543f50517f84f9985c38269afc77c3",
+    "last_commit": "2026-07-01",
     "n_files": 21,
     "file_types": {
       "other": 4,
@@ -12064,6 +12406,7 @@
   },
   "jupyterhub/team-compass": {
     "head": "06b322e38d554d87f0ce2e85a0e461d44e74fdcf",
+    "last_commit": "2026-10-26",
     "n_files": 154,
     "file_types": {
       "docs": 136,
@@ -12098,6 +12441,7 @@
   },
   "jupyterhub/the-littlest-jupyterhub": {
     "head": "05637a2fe4bb5b1e91bcdb0efc0059ab4b30d543",
+    "last_commit": "2026-08-24",
     "n_files": 236,
     "file_types": {
       "config": 8,
@@ -12140,6 +12484,7 @@
   },
   "jupyterhub/tmpauthenticator": {
     "head": "49cb1fb144a06e03dfab835f76e8fc5b222446b1",
+    "last_commit": "2026-09-01",
     "n_files": 16,
     "file_types": {
       "other": 3,
@@ -12186,6 +12531,7 @@
   },
   "jupyterhub/traefik-proxy": {
     "head": "d17479605b873158226cccaebefe377531979182",
+    "last_commit": "2026-08-27",
     "n_files": 98,
     "file_types": {
       "other": 8,
@@ -12232,6 +12578,7 @@
   },
   "jupyterhub/wrapspawner": {
     "head": "cb74046aa0217cf48c76944fae2d8c0cbae2a701",
+    "last_commit": "2024-04-08",
     "n_files": 13,
     "file_types": {
       "config": 2,
@@ -12268,7 +12615,8 @@
     "readme": "# wrapspawner for Jupyterhub\n\nThis package includes **WrapSpawner** and **ProfilesSpawner**, which provide mechanisms for runtime configuration of spawners. \nThe inspiration for their development was to allow users to select from a range of pre-defined batch job profiles, but\ntheir operation is completely generic.\n\n## Installation\n\n1. Most users can install via pip:\n\n      `pip install wrapspawner`\n\n   To install an editable copy for development, from root directory of this repo (where setup.py is), run `pip install -e .`\n   See also [pip VCS support](https://pip.pypa.io/en/stable/reference/pip_install/#vcs-support) if you need a specific revision.\n\n2. Add lines in `jupyterhub_config.py` for the spawner you intend to use, e.g.\n   \n   ```python\n      c.JupyterHub.spawner_class = 'wrapspawner.ProfilesSpawner'\n   ```\n3. Depending on the spawner, additional configuration will likely be needed.\n\n## Wrapper and Profile Spawners\n\n### Overview\n\n[`WrapSpawner`](https://github.com/jupyterhub/wrapspawner/blob/master/wrapspawner/wrapspawner.py#L1)\nprovides a mechanism to wrap the interface of a JupyterHub Spawner such that\nthe Spawner class to use for single-user servers can be chosen dynamically.\nSubclasses may modify the class or properties of the child Spawner at any point\nbefore `start()` is called (e.g. from Authenticator `pre_spawn` hooks or options form \nprocessing) and that state will be preserved on restart. The `start/stop/poll`\nmethods are not real coroutines, but simply pass through the Futures returned\nby the wrapped Spawner class.\n\n[`ProfilesSpawner`](https://github.com/jupyterhub/wrapspawner/blob/master/wrapspawner/wrapspawner.py#L120)\nleverages JupyterHub's `Spawner` \"options form\" feature to allow user-driven\nconfiguration of Spawner classes while permitting:\n\n   * configuration of Spawner classes that don't natively implement `options_form`\n   * administrator control of allowed configuration changes\n   * runtime choice of which Spawner backend to launch\n\n### Example\n\nHere is a screenshot of a typical dropdown menu letting the user choose between several SLURM instances:\n![](screenshot.png)\n\nThe following configuration snippet lets the user choose between a Jupyter server\nrunning as a local process or one of two different Docker Images to run within `DockerSpawner`.\n\n   ```python\n   c.JupyterHub.spawner_class = 'wrapspawner.ProfilesSpawner'\n   c.Spawner.http_timeout = 120\n   #----------------------------------------------------------------------------"
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "8cd5651dd3b8077b1d6bb234f668521186ce763c",
+    "head": "e1606f9428d022b66fdc5b2d67953284e6a94c72",
+    "last_commit": "2026-10-28",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -12321,6 +12669,7 @@
   },
   "jupyterlab/.github": {
     "head": "486879676b42459f54bb0c54b8895dcc78f5a94f",
+    "last_commit": "2025-09-16",
     "n_files": 12,
     "file_types": {
       "docs": 5,
@@ -12347,6 +12696,7 @@
   },
   "jupyterlab/assets": {
     "head": "03509a95ff70aafef768dd98f093953cfde106ca",
+    "last_commit": "2025-11-05",
     "n_files": 6,
     "file_types": {
       "other": 1,
@@ -12366,6 +12716,7 @@
   },
   "jupyterlab/benchmarks": {
     "head": "66ed34aa639ed69a236d44a1c45b7dbaa113ec98",
+    "last_commit": "2023-05-28",
     "n_files": 353,
     "file_types": {
       "config": 43,
@@ -12477,7 +12828,8 @@
     "readme": "# Jupyterlab Benchmarks\n\n[![Join the chat at https://gitter.im/jupyterlab/Performance](https://badges.gitter.im/jupyterlab/Performance.svg)](https://gitter.im/jupyterlab/Performance?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\nThis repository is a place to make JupyterLab fast.\n\nIt tracks with benchmarks tooling the performance evolution of [JupyterLab](http://github.com/jupyterlab/jupyterlab). Read more on the [documentation website](https://jupyterlab-benchmarks.readthedocs.io).\n\n## Quickstart\n\nThe best way to use this project for benchmark test execution is to start a manual benchmark workflow in the repository actions for [performance](https://github.com/jupyterlab/benchmarks/actions/workflows/benchmark.yml) or [memory-leaks](https://github.com/jupyterlab/benchmarks/actions/workflows/benchmark.yml).\n\n\n### Performance tests\n\nThe _performance_ tests will measure the execution of the following scenario: \n\n- Opening the test notebook\n- Switching from the test notebook to a copy of it\n- Switching back\n- Switching from the test notebook to a text editor\n- Switching back\n- Search for a word\n- Start the debugger\n- Closing the test notebook\n\nThere are multiple test notebooks available and their size can be tune with a size parameter.\n\nThose cases will be run on the provided challenger repo/branch and in the reference JupyterLab repo at a given branch. Then it will produce a report that can be downloaded as artifacts when done.\n\n![benchmark-workflow](https://raw.githubusercontent.com/jupyterlab/benchmarks/master/docs/source/benchmarks/images/benchmark_workflow.png \"benchmark-workflow\")\n\nThe workflow parameters are:\n\n- JupyterLab Git repo [required]: fork name in format _{owner}/{repo}_\n- Git repository reference [required]: typically branch name of a PR\n- Reference branch [default: `master`]: Branch on `jupyterlab/jupyterlab` to use a reference\n- Number of samples [default: 100]: Number of experiments to run to build the statistical distribution of execution time\n- Test notebooks to use [default: `[\"codeNotebook\", \"mdNotebook\", \"longOutput\", \"errorOutputs\"]`]: \nThe test notebooks to execute; the available test notebooks are: [\"codeNotebook\", \"mdNotebook\", \"largePlotly\", \"longOutput\", \"manyPlotly\", \"manyOutputs\", \"errorOutputs\"]\n- Test files size [default: 100]: tests notebooks are parametrized with an integer that is proportional to their size. \n\n> You need to remember that a GitHub job is limited to 6 hours. This means you may nee"
   },
   "jupyterlab/eslint-plugin": {
-    "head": "92c61195a63a1e3d1da93101f738d2e0f4cfebf2",
+    "head": "3b8c32b5c12d56259d2b1ea4a4165d25b9049355",
+    "last_commit": "2026-10-28",
     "n_files": 143,
     "file_types": {
       "config": 23,
@@ -12561,6 +12913,7 @@
   },
   "jupyterlab/extension-cookiecutter-js": {
     "head": "040d26ddbf6271886dd1ff0a69b22860480c538d",
+    "last_commit": "2023-01-06",
     "n_files": 22,
     "file_types": {
       "config": 8,
@@ -12592,6 +12945,7 @@
   },
   "jupyterlab/extension-cookiecutter-ts": {
     "head": "91d717421398e632d4066d7333b0ef870a422873",
+    "last_commit": "2026-09-04",
     "n_files": 53,
     "file_types": {
       "config": 23,
@@ -12625,6 +12979,7 @@
   },
   "jupyterlab/extension-examples": {
     "head": "0ff7dc53f876a2ad9388eb71c188156a572014fc",
+    "last_commit": "2026-04-08",
     "n_files": 751,
     "file_types": {
       "other": 96,
@@ -13009,7 +13364,8 @@
     "readme": "# JupyterLab Extensions by Examples\n\n[![Github Actions Status](https://github.com/jupyterlab/extension-examples/workflows/CI/badge.svg)](https://github.com/jupyterlab/extension-examples/actions?query=workflow%3ACI)\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyterlab/extension-examples/main?urlpath=lab)\n\n1. [Goal](#tldr)\n1. [Develop by Examples](#develop-by-examples)\n   1. [CodeMirror extension](#codemirror-extension)\n   1. [Commands](#commands)\n   1. [Command Palette](#command-palette)\n   1. [Completer](#completer)\n   1. Main Widget [Content Header](#main-widget-content-header)\n   1. [Context Menu](#context-menu)\n   1. [Custom Log Console](#custom-log-console)\n   1. [Datagrid](#datagrid)\n   1. [Dual Compatibility](#dual-compatibility)\n      1. [Top Area Text Widget](#top-area-text-widget)\n      1. [Shout Button](#shout-button)\n      1. [Clap Button](#clap-button-message)\n   1. [Collaborative Document](#collaborative-document)\n   1. _[Hello World](#hello-world)_\n   1. [Kernel Messaging](#kernel-messaging)\n   1. [Kernel Output](#kernel-output)\n   1. [Launcher](#launcher)\n   1. [Log Messages](#log-messages)\n   1. [Main Menu](#main-menu)\n   1. [Metadata Form](#metadata-form)\n   1. [MIME Renderer](#mime-renderer)\n   1. [Notifications](#notifications)\n   1. [React Widget](#react-widget)\n   1. _[Server Hello World](#server-hello-world)_\n   1. [Settings](#settings)\n   1. [Signals](#signals)\n   1. [State](#state)\n   1. [Toolbar Item](#toolbar-item)\n   1. [Widgets](#widgets)\n1. [Prerequisites](#prerequisites)\n1. [Develop and Use the Examples](#develop-and-use-the-examples)\n1. [Test the Examples](#test-the-examples)\n1. [Install a Published Extension](#install-a-published-extension)\n1. [About JupyterLab](#about-jupyterlab)\n1. [Credits](#credits)\n1. [Community Guidelines and Code of Conduct](#community-guidelines-and-code-of-conduct)\n\n## TL;DR\n\nThe goal of this repository is to show how to develop extensions for [JupyterLab](https://github.com/jupyterlab/jupyterlab), presented as short tutorial series.\n\n**Quick start:**\n\n- Install, build, and run the `hello-world` extension example in JupyterLab by copying the code below.\n- This corresponds to the first three sections of the [hello-world extension tutorial](hello-world/README.md). Read these sections for additional details on what these commands are doing and how to use the JupyterLab extension template.\n- Continue with the tutorial at the [Modify the extension](hello-world/README.md#"
   },
   "jupyterlab/extension-template": {
-    "head": "b3d8fa16b1fa84efbbb9508ef46755976265167a",
+    "head": "d0987d46c84bfaa702c697097becf0491cf2eef7",
+    "last_commit": "2026-10-27",
     "n_files": 56,
     "file_types": {
       "config": 9,
@@ -13045,6 +13401,7 @@
   },
   "jupyterlab/frontends-team-compass": {
     "head": "10350484a13574e18e98d6f8a8a8e0e793ca4277",
+    "last_commit": "2026-09-10",
     "n_files": 21,
     "file_types": {
       "other": 3,
@@ -13067,6 +13424,7 @@
   },
   "jupyterlab/hatch-jupyter-builder": {
     "head": "fedc855da78b965f69a0c6d02e5645adcf2a6fac",
+    "last_commit": "2026-09-18",
     "n_files": 132,
     "file_types": {
       "config": 32,
@@ -13154,6 +13512,7 @@
   },
   "jupyterlab/hatch-nodejs-version": {
     "head": "81c4612da14dec4b260bc956225fa24ab62b377e",
+    "last_commit": "2025-07-24",
     "n_files": 25,
     "file_types": {
       "other": 2,
@@ -13201,7 +13560,8 @@
     "readme": "# hatch-nodejs-version\n\n[![PyPI - Version](https://img.shields.io/pypi/v/hatch-nodejs-version.svg)](https://pypi.org/project/hatch-nodejs-version)\n[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatch-nodejs-version.svg)](https://pypi.org/project/hatch-nodejs-version)\n[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)\n\n-----\nThis package provides two Hatch plugins:\n\n- [version source plugin](https://hatch.pypa.io/latest/plugins/version-source/) that reads/writes the package version\n  from the `version` field of the Node.js `package.json` file.\n- [metadata hook plugin](https://hatch.pypa.io/latest/plugins/metadata-hook/) that reads PEP 621 metadata from the\n  Node.js `package.json` file.\n\n**Table of Contents**\n\n- [Global dependency](#global-dependency)\n- [Version source](#version-source)\n- [Metadata hook](#metadata-hook)\n- [License](#license)\n\n## Global dependency\n\nEnsure `hatch-nodejs-version` is defined within the `build-system.requires` field in your `pyproject.toml` file.\n\n```toml\n[build-system]\nrequires = [\"hatchling\", \"hatch-nodejs-version\"]\nbuild-backend = \"hatchling.build\"\n```\n\n## Version source\n\nThe [version source plugin](https://hatch.pypa.io/latest/plugins/version-source/) name is `nodejs`.\n\n- ***pyproject.toml***\n\n    ```toml\n    [tool.hatch.version]\n    source = \"nodejs\"\n    ```\n\n- ***hatch.toml***\n\n    ```toml\n    [version]\n    source = \"nodejs\"\n    ```\n\n### Semver\n\nThe semver specification defines the following version sections:\n\n- `major`\n- `minor`\n- `patch`\n- `pre-release`\n- `build`\n\nMeanwhile, [PEP 440](https://peps.python.org/pep-0440/#version-scheme) defines:\n\n- `epoch`\n- `major`\n- `minor`\n- `patch`\n- `pre-release`\n- `post-release`\n- `dev-release`\n\nIn order to ensure contentful round-trip support, and ensure semantic consistency between Node.js and Python, this plugin only\naccepts the common version parts:\n\n- `major`\n- `minor`\n- `patch`\n- `pre-release`\n- `dev-release`\n\ne.g. `1.2.3-rc0`.\n\nNote that where normalisation occurs, the round-trip result will differ. This can be avoided by careful choice of the delimeters e.g. `-.`.\n\n\n### Version source options\n\n| Option        | Type | Default       | Description                                |\n|---------------| --- |---------------|--------------------------------------------|\n| `path`        | `str` | `package.json` | Relative path to the `package.json` file. |\n\n## Metadata hook\n\nThe [metadata hook plugin](https://h"
   },
   "jupyterlab/jupyter-ai": {
-    "head": "7299b29e270927e1ef77d4f1935e45b91c5a922a",
+    "head": "a93eadfe57741d1b1be6d08a45231e02b6f37139",
+    "last_commit": "2026-10-29",
     "n_files": 186,
     "file_types": {
       "docs": 33,
@@ -13253,7 +13613,8 @@
     "readme": "<p align=\"center\">\n  <img src=\"docs/source/_static/jupyter_logo.png\" alt=\"Jupyter logo\" width=\"120\">\n</p>\n\n<h1 align=\"center\">Jupyter AI</h1>\n\n<p align=\"center\"><i>An open source extension that connects AI agents to computational notebooks in JupyterLab.</i></p>\n\nJupyter AI brings agentic AI to JupyterLab. It provides a native chat UI where you can collaborate with frontier AI agents — including Claude, Codex, GitHub Copilot, Gemini, Goose, Kiro, Mistral Vibe, and OpenCode — all integrated through the [Agent Client Protocol (ACP)](https://agentclientprotocol.com). Agents are automatically detected when their dependencies are installed, so getting started is as simple as installing Jupyter AI and the agent of your choice.\n\nAgents in Jupyter AI can read and write files, run terminal commands, and interact with notebooks through a built-in [Jupyter MCP server](https://github.com/jupyter-ai-contrib/jupyter-server-mcp). A permission system gives you guardrails over agent actions — agents request approval before writing files or executing commands. You can also create multiple concurrent chats, drag and drop files or notebook cells as context, and collaborate in real time with other users connected to the same server.\n\nJupyter AI is designed to be flexible and extensible. You can add custom [MCP servers](https://modelcontextprotocol.io) to give agents access to domain-specific tools, resources, and prompts. Developers can build and register their own AI personas using the entry points API. By building on open standards like ACP and MCP, Jupyter AI avoids vendor lock-in and gives you access to the full ecosystem of compatible agents and tools.\n\n## Quick Links\n\n- [Getting Started](https://jupyter-ai.readthedocs.io/en/stable/getting-started.html) — installation, agent setup, and first chat\n- [User Guide](https://jupyter-ai.readthedocs.io/en/stable/users/index.html) — chat features, notebook tools, and custom MCP servers\n- [Contributor Guide](https://jupyter-ai.readthedocs.io/en/stable/contributors/index.html) — how to contribute to Jupyter AI\n- [Developer Guide](https://jupyter-ai.readthedocs.io/en/stable/developers/index.html) — building custom agents and MCP servers\n- [Troubleshooting](https://jupyter-ai.readthedocs.io/en/stable/users/troubleshooting.html) — common issues and solutions\n\n## Governance\n\nJupyter AI is currently under incubation as part of the JupyterLab organization.\n"
   },
   "jupyterlab/jupyter-ai-lite": {
-    "head": "6e29270e62bd581aba2de32ff936e0b1656f8299",
+    "head": "ceb956a2bba517c6b52dfa47ad9b34fae49920a8",
+    "last_commit": "2026-10-28",
     "n_files": 155,
     "file_types": {
       "config": 35,
@@ -13347,7 +13708,8 @@
     "readme": "# jupyter-ai-lite\n\n[![Github Actions Status](https://github.com/jupyterlab/jupyter-ai-lite/workflows/Build/badge.svg)](https://github.com/jupyterlab/jupyter-ai-lite/actions/workflows/build.yml)\n[![Documentation Status](https://readthedocs.org/projects/jupyter-ai-lite/badge/?version=latest)](https://jupyter-ai-lite.readthedocs.io/en/latest/?badge=latest)\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlab.github.io/jupyter-ai-lite/lab/index.html)\n\nAI code completions and chat for JupyterLab, Notebook 7 and JupyterLite, with the Jupyternaut persona of [Jupyter AI](https://github.com/jupyterlab/jupyter-ai) running in the browser.\n\n[a screencast showing the Jupyter AI Lite extension in JupyterLite](https://github.com/user-attachments/assets/e33d7d84-53ca-4835-a034-b6757476c98b)\n\n## Requirements\n\n- JupyterLab >= 4.5.0 or Notebook >= 7.5.0\n\n## Try it in your browser\n\nYou can try the extension in your browser using JupyterLite:\n\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlab.github.io/jupyter-ai-lite/lab/index.html)\n\n## Install\n\nTo install the extension, execute:\n\n```bash\npip install jupyter-ai-lite\n```\n\nTo install requirements (JupyterLab, JupyterLite and Notebook):\n\n```bash\npip install jupyter-ai-lite[jupyter]\n```\n\n## Packages\n\n| Package                                                 | npm                            | Description                                                                                    |\n| ------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------- |\n| [`jupyter-ai-agent-lite`](python/jupyter-ai-agent-lite) | `@jupyter-ai/agent-lite`       | The building blocks of in-browser personas: tools, skills, shared settings and sign-in helpers |\n| [`jupyternaut-lite`](python/jupyternaut-lite)           | `@jupyter-ai/jupyternaut-lite` | The Jupyternaut persona: AI chat and code completions with the AI SDK providers                |\n| [`jupyter-ai-lite`](python/jupyter-ai-lite)             |                                | A meta package that installs both                                                              |\n\nSee [Building an in-browser persona](docs/personas.md) to build a persona on `@jupyter-ai/agent-lite` in another repository.\n\n## Documentation\n\nFor detailed usage instructions, including how to configure AI providers, see"
   },
   "jupyterlab/jupyter-builder": {
-    "head": "4978d1b850f0857c5c8aea25782f4aac48d0f6e3",
+    "head": "fec862fedbb5cd7797d7a64c687975039bb8b035",
+    "last_commit": "2026-10-27",
     "n_files": 61,
     "file_types": {
       "config": 19,
@@ -13405,13 +13767,14 @@
     "readme": "# Jupyter Builder\n\n[![Jupyter Builder Tests](https://github.com/jupyterlab/jupyter-builder/actions/workflows/builder-tests.yml/badge.svg)](https://github.com/jupyterlab/jupyter-builder/actions/workflows/builder-tests.yml)\n[![version on npm](https://img.shields.io/npm/v/@jupyter/builder.svg)](https://www.npmjs.com/package/@jupyter/builder)\n[![version on PyPI](https://img.shields.io/pypi/v/jupyter-builder.svg)](https://pypi.org/project/jupyter-builder/)\n[![version on conda-forge](https://img.shields.io/conda/vn/conda-forge/jupyter-builder.svg)](https://anaconda.org/conda-forge/jupyter-builder)\n\nBuild tools for JupyterLab extensions — extracted from the core [JupyterLab](https://github.com/jupyterlab/jupyterlab) codebase to be maintained and used independently.\n\n## Installation\n\n```bash\npip install jupyter_builder\n```\n\n## CLI\n\n### `build`\n\nCompile the extension JavaScript assets for consumption by a Jupyter app.\n\n```bash\njupyter-builder build <path/to/extension>\n```\n\n### `develop`\n\nInstall extension assets in development mode (analogous to `pip install -e`). Uses a symlink by default.\n\n```bash\njupyter-builder develop <path/to/extension>\n```\n\n### `watch`\n\nAutomatically rebuild development assets when source files change.\n\n```bash\njupyter-builder watch <path/to/extension>\n```\n\n> For advanced configuration, see the [Advanced](#advanced) section for available flags.\n\n## `jlpm`\n\n`jupyter-builder` ships `jlpm`, a Jupyter-aware Node.js package manager wrapper:\n\n```bash\njlpm install\njlpm build\n```\n\n## Advanced\n\n### CLI flags\n\n<details>\n<summary><code>build</code></summary>\n\n| Flag                         | Description                                                            |\n| ---------------------------- | ---------------------------------------------------------------------- |\n| `--development`              | Build in development mode (default: `False`)                           |\n| `--source-map`               | Generate source maps (default: `False`)                                |\n| `--static-url=<url>`         | Set the URL for static assets                                          |\n| `--core-version=<version>`   | JupyterLab core version to build against                               |\n| `--core-package-file=<path>` | Path to a core application `package.json` (overrides `--core-version`) |\n\n</details>\n\n<details>\n<summary><code>develop</code></summary>\n\n| Flag                         | Description                                  |\n| ----------------------"
   },
   "jupyterlab/jupyter-chat": {
-    "head": "d37a38a87eff57bba8445248bb4d11a39b5101ca",
-    "n_files": 270,
+    "head": "71473c456d5a28652154a539493e9fab838c10c9",
+    "last_commit": "2026-10-28",
+    "n_files": 271,
     "file_types": {
       "config": 37,
       "other": 11,
       "docs": 16,
-      "code": 170,
+      "code": 171,
       "notebook": 1,
       "web": 12,
       "media": 23
@@ -13487,6 +13850,7 @@
   },
   "jupyterlab/jupyter-collaboration": {
     "head": "1f912d220a47409acc758c81678b6019db270701",
+    "last_commit": "2026-10-26",
     "n_files": 209,
     "file_types": {
       "other": 14,
@@ -13602,6 +13966,7 @@
   },
   "jupyterlab/jupyter-renderers": {
     "head": "b89c093bce24c8d7394177f08a111b3895ed6870",
+    "last_commit": "2025-02-20",
     "n_files": 191,
     "file_types": {
       "other": 30,
@@ -13703,6 +14068,7 @@
   },
   "jupyterlab/jupytercon-jupyterlab-training": {
     "head": "05cbf7eca20a34bc084d090afab45f0dbb893f2f",
+    "last_commit": "2018-08-22",
     "n_files": 1,
     "file_types": {
       "docs": 1
@@ -13720,6 +14086,7 @@
   },
   "jupyterlab/jupytercon-jupyterlab-tutorial": {
     "head": "c14db2b591c9c0484200cde7759efd57f71b7631",
+    "last_commit": "2018-08-22",
     "n_files": 37,
     "file_types": {
       "other": 6,
@@ -13750,15 +14117,16 @@
     "readme": "# JupyterCon 2018 JupyterLab tutorial.\n\nThis repository contain material and instructions to follow the JupyterLab tutorial during JupyterCon 2018.\n\nDuring the tutorial, feel free to get on the [Gitter `jupyterlab/jupyterlab` channel](https://gitter.im/jupyterlab/jupyterlab) for help and updates.\n\nIf you'd like to use JupyterLab without installing anything, you can go to the [JupyterLab demo Binder](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/c9df996a3bd27d9715de6da51b3c52d35def90f9?urlpath=lab/). You can then open a terminal and clone this repo with:\n```\ngit clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n```\n\n# Installation\n\nPlease read the following section and install the required software ahead of\ntime. We may ask you to update versions of the software more closely to the\ntutorial date.\n\nPlease do not rely on cloud hosting to follow this tutorial, as the network\nconnection may be unreliable. If possible, come to the tutorial with a computer\nwhere you have administrative privileges.\n\nFor this tutorial, we are standardizing on a conda-based python distribution\n(miniconda or Anaconda). We may not be able to help with installation issues if\nyou are using a different python distribution.\n\n## Software installation\n\n1. Install either the full [anaconda\n   distribution](https://www.anaconda.com/download/) (very large, includes lots\n   of conda packages by default) or\n   [miniconda](https://conda.io/miniconda.html) (much smaller, with only\n   essential packages by default, but any conda package can be installed).\n\n2. To get the tutorial materials, clone this repository. **Please plan to update the materials shortly before the tutorial.**\n\n    ```\n    git clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n    ```\n\n    To update the materials:\n    ```\n    cd jupytercon-jupyterlab-tutorial\n    git pull\n    ```\n\n    Feel free to open an issue or send a pull request to update these materials if things are unclear.\n\n3. Set up your environment.\n\n    Create a conda environment:\n\n    ```\n    conda create -n jlabtutorial -c conda-forge --override-channels --yes python=3.6 pip cookiecutter notebook pandas=0.23 nodejs jupyterlab ipywidgets matplotlib\n    ```\n\n    (You could instead create the environment from the supplied environment file with `conda env create -f jupytercon-jupyterlab-tutorial/environment.yml`)\n\n    Activate the conda environment:\n\n    ```\n    conda activate jlabtutorial\n    ```\n\n    Install extra Jupy"
   },
   "jupyterlab/jupyterlab": {
-    "head": "7dfda76f13ea6c84f3665fbad4307ee1a2442a1c",
-    "n_files": 3079,
+    "head": "30485445e61fac7014218392eba6534bcf772e59",
+    "last_commit": "2026-10-29",
+    "n_files": 3081,
     "file_types": {
       "config": 605,
       "other": 24,
       "docs": 181,
-      "code": 1378,
+      "code": 1379,
       "web": 259,
-      "media": 597,
+      "media": 598,
       "notebook": 35
     },
     "packages": [
@@ -14495,7 +14863,7 @@
       "github/codeql-action@458d36d7d4f47d0dd16ca424c1d3cda0060f1360",
       "github/codeql-action@c10b8064de6f491fea524254123dbe5e09572f13",
       "jupyter-server/jupyter_releaser@70e58c50c736ad496cca11fe4f2446033b68b027",
-      "jupyterlab/maintainer-tools@4016d4e69656e13e662d629ee3c30dc31e68628f",
+      "jupyterlab/maintainer-tools@b9d5c28489f8b460cef48868f303b97c20f8fe1b",
       "toshimaru/auto-author-assign@4d585cc37690897bd9015942ed6e766aa7cdb97f"
     ],
     "build_requires": [
@@ -14506,6 +14874,7 @@
   },
   "jupyterlab/jupyterlab-commenting": {
     "head": "5196c9787c21b7aebfeb5dde3aa30e27dde28675",
+    "last_commit": "2020-05-01",
     "n_files": 74,
     "file_types": {
       "other": 8,
@@ -14550,6 +14919,7 @@
   },
   "jupyterlab/jupyterlab-demo": {
     "head": "fe0c447c1af3faa361075c2a79f1d9dfb9613ffd",
+    "last_commit": "2025-08-27",
     "n_files": 40,
     "file_types": {
       "config": 7,
@@ -14582,13 +14952,14 @@
     "readme": "# JupyterLab Demonstration\n\n[![Build Status](https://github.com/jupyterlab/jupyterlab-demo/actions/workflows/main.yml/badge.svg)](https://github.com/jupyterlab/jupyterlab-demo/actions/workflows/main.yml)\n\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/master?urlpath=lab)\n\nThis repository contains some demonstrations of\n[JupyterLab](https://github.com/jupyter/jupyterlab), the next\ngeneration user interface of Project Jupyter.\n\n## Installation\n\nThe demo requires `mamba`, available as part of [Mambaforge](https://github.com/conda-forge/miniforge) and the package\n requirements are described in `environment.yml`\n\nTODO: More installation instructions\n\n# Demo guide\n\nThe basic outline of the JupyterLab demo is described in the file `jupyterlab.md`.\n\n# External Repositories\n\nOur `build.py` clones repos from other authors.  The details of these repos are as follows:\n\n| Name  | Author |License |\n|---|---|---|\n| PythonDataScienceHandbook/LICENSE-CODE  | Jake Vanderplas  | [MIT](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/LICENSE-CODE)|\n| PythonDataScienceHandbook/LICENSE-TEXT   |  Jake Vanderplas | [CC-BY-NC-ND-3.0](https://github.com/jakevdp/PythonDataScienceHandbook/blob/master/LICENSE-TEXT) |\n| altair   |  Jake Vanderplas | [BSD 3-clause](https://github.com/altair-viz/altair/blob/master/LICENSE) |\n| Urban-Data-Challenge   |  [Data Canvas](http://datacanvas.org/) | [CC-BY-NC-3.0](http://datacanvas.org/public-transportation/) |\n| QuantEcon.notebooks   |  QuantEcon | [BSD 3-clause \"New\" or \"Revised\" License](https://github.com/QuantEcon/QuantEcon.notebooks/blob/master/LICENSE) |\n| TCGA   |  Gross et. al. | None Listed | None Listed |\n| TensorFlow-Examples   |  Aymeric Damien | [MIT](https://github.com/aymericdamien/TensorFlow-Examples/blob/master/LICENSE) |\n\nThis repository also contains media files (`jupiter.mp4` and `rocket.wav`) part of the Public Domain Archive: https://archive.org/details/public-domain-archive,\nlicensed under CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/\n"
   },
   "jupyterlab/jupyterlab-desktop": {
-    "head": "0e46b48fedc0777fa33946ffe9bc3a16ee0d74a2",
-    "n_files": 222,
+    "head": "0d7e537b04e49c80ed61911d895273eee9af0f44",
+    "last_commit": "2026-10-27",
+    "n_files": 223,
     "file_types": {
       "other": 15,
       "docs": 12,
       "config": 28,
-      "code": 115,
+      "code": 116,
       "media": 51,
       "web": 1
     },
@@ -14646,6 +15017,7 @@
   },
   "jupyterlab/jupyterlab-git": {
     "head": "b62a87b719cd151a2c60eaaa6a70a6755784c4ef",
+    "last_commit": "2026-10-07",
     "n_files": 258,
     "file_types": {
       "other": 10,
@@ -14734,6 +15106,7 @@
   },
   "jupyterlab/jupyterlab-github": {
     "head": "6ab46858aa5dc0b93510b8fdb52e9066178847ea",
+    "last_commit": "2024-03-25",
     "n_files": 45,
     "file_types": {
       "other": 7,
@@ -14792,6 +15165,7 @@
   },
   "jupyterlab/jupyterlab-hdf5": {
     "head": "31ef7b732dbfe98c85d54dfab0f28699a1ab6f62",
+    "last_commit": "2023-10-11",
     "n_files": 77,
     "file_types": {
       "config": 16,
@@ -14840,6 +15214,7 @@
   },
   "jupyterlab/jupyterlab-latex": {
     "head": "4a1d91de0277f47378ffc2894f13dbcc286e2531",
+    "last_commit": "2025-12-17",
     "n_files": 66,
     "file_types": {
       "config": 18,
@@ -14898,6 +15273,7 @@
   },
   "jupyterlab/jupyterlab-probot": {
     "head": "aa41ba7d8cad42cc643ee5e1c33796326d43c9fe",
+    "last_commit": "2023-12-26",
     "n_files": 23,
     "file_types": {
       "other": 6,
@@ -14924,6 +15300,7 @@
   },
   "jupyterlab/jupyterlab-translate": {
     "head": "3120dd14424862ec8135b706e7edadc9a1ef5dfc",
+    "last_commit": "2026-06-10",
     "n_files": 30,
     "file_types": {
       "config": 8,
@@ -14963,6 +15340,7 @@
   },
   "jupyterlab/jupyterlab_apod": {
     "head": "397639e908826072b040aeec20fa050dc11046d4",
+    "last_commit": "2024-07-10",
     "n_files": 38,
     "file_types": {
       "config": 18,
@@ -15022,6 +15400,7 @@
   },
   "jupyterlab/jupyterlab_pygments": {
     "head": "c3380f5c973c74e13f7832504749d6ec11c5f491",
+    "last_commit": "2023-11-23",
     "n_files": 31,
     "file_types": {
       "config": 14,
@@ -15083,6 +15462,7 @@
   },
   "jupyterlab/jupyterlab_server": {
     "head": "475cfc19e0e69444fc7e3b0e41655cbeb32a8756",
+    "last_commit": "2026-09-15",
     "n_files": 94,
     "file_types": {
       "other": 12,
@@ -15146,6 +15526,7 @@
   },
   "jupyterlab/language-pack-cookiecutter": {
     "head": "1ff479f99e2827724cc33bfaa47d9f76f6e6878e",
+    "last_commit": "2023-05-27",
     "n_files": 12,
     "file_types": {
       "other": 2,
@@ -15166,7 +15547,8 @@
     "readme": "# JupyterLab language package template\n\nJupyterlab language pack template using [copier](https://copier.readthedocs.io).\n\n## Creating a package\n\nTo create a package you will need to execute:\n\n```sh\npip install babel copier copier-templates-extensions jinja2-time\nmkdir jupyterlab-language-pack\ncd jupyterlab-language-pack\ncopier gh:jupyterlab/language-pack-cookiecutter.git .\n```\n\n## Updating a existing package\n\nTo update a package you will need to execute in the package folder:\n\n```sh\npip install babel copier copier-templates-extensions jinja2-time\ncopier update\n```\n"
   },
   "jupyterlab/language-packs": {
-    "head": "9b6351601a61efe588017b18045fcce2be3c3fa9",
+    "head": "efdedf50218406eda64c3a89c572e33dd8c3b998",
+    "last_commit": "2026-10-29",
     "n_files": 784,
     "file_types": {
       "docs": 101,
@@ -15394,6 +15776,7 @@
   },
   "jupyterlab/lumino": {
     "head": "44aea979d5d2c77665d651383d27179a63596957",
+    "last_commit": "2026-10-08",
     "n_files": 465,
     "file_types": {
       "other": 13,
@@ -15549,7 +15932,8 @@
     "readme": "# Lumino\n\n[![Tests](https://github.com/jupyterlab/lumino/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jupyterlab/lumino/actions/workflows/tests.yml)\n[![Documentation Status](https://readthedocs.org/projects/jupyterlab/badge/?version=latest)](https://lumino.readthedocs.io/en/latest/)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue.svg)](https://github.com/jupyterlab/lumino/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue.svg)](https://discourse.jupyter.org/c/jupyterlab)\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyterlab/lumino/main?urlpath=lab/tree/examples)\n\nLumino is a set of JavaScript packages, written in TypeScript, that provide\na rich toolkit of widgets, layouts, events, and data structures. These enable\ndevelopers to construct extensible high-performance desktop-like web\napplications, such as JupyterLab. Lumino was formerly known as PhosphorJS.\n\nLumino is Jupyter project and follows the Jupyter\n[Community Guides and Code of Conduct](https://jupyter.readthedocs.io/en/latest/community/content-community.html).\n\n## Examples\n\n### JupyterLab\n\n[JupyterLab](https://github.com/jupyterlab/jupyterlab) is an extensible environment for interactive and reproducible computing.\n\nYou can try it live in a web browser (without installing anything) by clicking on the link below:\n\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyterlab/lumino/main?urlpath=lab/tree/examples)\n\n![jupyterlab](https://user-images.githubusercontent.com/591645/133745885-8905be8e-afc0-466d-afda-21ed3cf0d813.png)\n\n### Examples in the repository\n\nThis repository contains several examples making use of Lumino Widgets such as the `DockPanel` and the `DataGrid`.\n\nThe example can be interacted with live in the browser by following this link:\n\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyterlab/lumino/main?urlpath=lab/tree/examples)\n\n![examples-binder](https://user-images.githubusercontent.com/591645/133746521-ca0debce-f453-417b-bca3-60d10044857f.gif)\n\n### External Examples\n\n- [Using Lumino in a Vue.js application](https://github.com/kinow/vue-lumino)\n- [wasmboy: Game Boy / Game Boy Color Emulator Library, written for WebAssembly using AssemblyScript](https://github.com/torch2424/wasmboy)\n- [HPCC Visualization Framework (Docking, Split and Tab Panels)](https://github.com/hpcc-systems/Visualization/tree/main/packages/phosphor)\n- [U"
   },
   "jupyterlab/maintainer-tools": {
-    "head": "4016d4e69656e13e662d629ee3c30dc31e68628f",
+    "head": "b9d5c28489f8b460cef48868f303b97c20f8fe1b",
+    "last_commit": "2026-10-27",
     "n_files": 38,
     "file_types": {
       "config": 27,
@@ -15608,6 +15992,7 @@
   },
   "jupyterlab/plugin-playground": {
     "head": "b1e21e7440b28afc13a3c534e7fb10828d412d5a",
+    "last_commit": "2026-06-23",
     "n_files": 112,
     "file_types": {
       "config": 24,
@@ -15669,6 +16054,7 @@
   },
   "jupyterlab/pull-requests": {
     "head": "869adab376890eab0bf33816ae69b0964b2fc27f",
+    "last_commit": "2024-12-16",
     "n_files": 91,
     "file_types": {
       "other": 7,
@@ -15708,6 +16094,7 @@
   },
   "jupyterlab/pytest-check-links": {
     "head": "92c89c079d595f8319403fa7d2d1a4df6cf71ad5",
+    "last_commit": "2026-06-25",
     "n_files": 36,
     "file_types": {
       "other": 4,
@@ -15755,6 +16142,7 @@
   },
   "jupyterlab/richoutput-js": {
     "head": "36c7cc43f9a662bc68d2331bc2c5c6c95a63dc8a",
+    "last_commit": "2022-11-01",
     "n_files": 22,
     "file_types": {
       "other": 5,
@@ -15802,6 +16190,7 @@
   },
   "jupyterlab/scipy2018-jupyterlab-tutorial": {
     "head": "b3f8e31a1fb3031bc36dbbb777dfe79999248035",
+    "last_commit": "2025-08-27",
     "n_files": 38,
     "file_types": {
       "other": 4,
@@ -15833,6 +16222,7 @@
   },
   "jupyterlab/scipy2019-jupyterlab-tutorial": {
     "head": "70308c2aa7df74aa31c7661f1bbca581d5006a8d",
+    "last_commit": "2019-07-10",
     "n_files": 37,
     "file_types": {
       "other": 6,
@@ -15864,6 +16254,7 @@
   },
   "jupyterlab/triage-automation": {
     "head": "c1711f3fb09a66b2634bf12ce51fbdfbdb03bcde",
+    "last_commit": "2026-03-31",
     "n_files": 3,
     "file_types": {
       "other": 2,
@@ -15882,6 +16273,7 @@
   },
   "jupyterlab/ui-profiler": {
     "head": "560fb518ff4193143a960707a936af9ad50c22b5",
+    "last_commit": "2026-07-03",
     "n_files": 121,
     "file_types": {
       "other": 8,
@@ -15944,6 +16336,7 @@
   },
   "jupyterlab/ux-research": {
     "head": "30ebc71b9e26a510171eb10f8a1f19d738eec9fb",
+    "last_commit": "2023-02-23",
     "n_files": 15,
     "file_types": {
       "other": 2,
@@ -15963,6 +16356,7 @@
   },
   "jupyterlab/vscode-config-template": {
     "head": "e5acd0bde92988e8ab6a881d68169c013d6b12f4",
+    "last_commit": "2023-06-12",
     "n_files": 13,
     "file_types": {
       "config": 5,
@@ -15990,6 +16384,7 @@
   },
   "jupyterlite/.github": {
     "head": "b18156c68342221c305643eb31d8f350dd0b31f5",
+    "last_commit": "2026-09-15",
     "n_files": 8,
     "file_types": {
       "docs": 7,
@@ -16007,10 +16402,11 @@
     "readme": "# .github\n\nCommunity health files for the @jupyterlite organization\n"
   },
   "jupyterlite/cockle": {
-    "head": "458317d56d696c1fcf231d6fe62f132ceb40a365",
-    "n_files": 252,
+    "head": "3789cee875e76f3bae64b18d11c9ee1ba66da457",
+    "last_commit": "2026-10-29",
+    "n_files": 253,
     "file_types": {
-      "config": 22,
+      "config": 23,
       "other": 5,
       "docs": 5,
       "media": 2,
@@ -16034,6 +16430,7 @@
       ],
       "secrets": [
         "APP_PRIVATE_KEY",
+        "CODECOV_TOKEN",
         "NPM_TOKEN"
       ],
       "publishes": [
@@ -16048,16 +16445,18 @@
       "actions/deploy-pages@v5",
       "actions/upload-artifact@v7",
       "actions/upload-pages-artifact@v5",
+      "codecov/codecov-action@v5",
       "jupyter-server/jupyter_releaser@v2",
       "jupyterlab/maintainer-tools@v1",
       "mamba-org/setup-micromamba@main",
       "mamba-org/setup-micromamba@v3"
     ],
     "build_requires": [],
-    "readme": "# cockle\n\nIn-browser bash-like shell implemented in a combination of TypeScript and WebAssembly.\n\nUsed in the [JupyterLite terminal extension](https://github.com/jupyterlite/terminal).\n\nTry it out outside of JupyterLite on GitHub Pages at https://jupyterlite.github.io/cockle.\n\n<img alt=\"Demo\" src=\"demo.png\" width=\"800px\">\n\nCommands of the following types are supported:\n\n1. Built-in TypeScript commands such as `history`. The source code for these is within this repo.\n2. WebAssembly commands, from C/C++ source code, compiled into `.js` and `.wasm` files.\n   These are usually built by [Emscripten-forge](https://emscripten-forge.org/) although they can be\n   manually built, and are added to a deployment during the deployment build process.\n3. JavaScript commands that are loaded and run in the same as WebAssembly commands except they have\n   a `.js` file and no `.wasm` file. There is an example of creating a JavaScript command from\n   TypeScript source code for use in the Jupyterlite terminal in the\n   [terminal-javascript-command](https://github.com/ianthomas23/terminal-javascript-command) repo.\n4. External commands which are TypeScript commands that run in the main browser UI thread rather\n   than the WebWorker that the `cockle` shell runs in. These are registered when a `cockle` `Shell`\n   is constructed. There is an example of an external command which is packaged as a JupyterLite\n   extension in the\n   [terminal-external-command](https://github.com/ianthomas23/terminal-external-command) repo.\n\n[Emscripten-forge](https://emscripten-forge.org/) packages containing WebAssembly commands that are\ncurrently supported and tested are as follows. Each package contains a single commmand with the same\nname as the package unless otherwise specified:\n\n- `awk`\n- `coreutils`: multiple core commands including `cat`, `cp`, `echo`, `ls`, `mkdir`, `mv`, `rm`, `touch`, `uname`, and `wc`\n- [`git2cpp`](https://git2cpp.readthedocs.io/): a `git` implementation\n- `grep`\n- `less`\n- `lua`\n- `nano`\n- `sed`\n- `tree`\n- `vim`\n\n## Version compatibility\n\nThe filesystem used in `cockle` is built using a specific version of Emscripten, and for maximum\ncompatibility the WebAssembly commands used in `cockle` should be built using the same version of\nEmscripten. WebAssembly commands built on Emscripten-forge are hosted on different\n[prefix.dev](https://prefix.dev/channels) channels depending on the Emscripten version.\n\n| `cockle` version    | `emscripten` version | `prefix.dev` channel   |\n| -"
+    "readme": "# cockle\n\n[![codecov](https://codecov.io/gh/jupyterlite/cockle/graph/badge.svg)](https://codecov.io/gh/jupyterlite/cockle)\n\nIn-browser bash-like shell implemented in a combination of TypeScript and WebAssembly.\n\nUsed in the [JupyterLite terminal extension](https://github.com/jupyterlite/terminal).\n\nTry it out outside of JupyterLite on GitHub Pages at https://jupyterlite.github.io/cockle.\n\n<img alt=\"Demo\" src=\"demo.png\" width=\"800px\">\n\nCommands of the following types are supported:\n\n1. Built-in TypeScript commands such as `history`. The source code for these is within this repo.\n2. WebAssembly commands, from C/C++ source code, compiled into `.js` and `.wasm` files.\n   These are usually built by [Emscripten-forge](https://emscripten-forge.org/) although they can be\n   manually built, and are added to a deployment during the deployment build process.\n3. JavaScript commands that are loaded and run in the same as WebAssembly commands except they have\n   a `.js` file and no `.wasm` file. There is an example of creating a JavaScript command from\n   TypeScript source code for use in the Jupyterlite terminal in the\n   [terminal-javascript-command](https://github.com/ianthomas23/terminal-javascript-command) repo.\n4. External commands which are TypeScript commands that run in the main browser UI thread rather\n   than the WebWorker that the `cockle` shell runs in. These are registered when a `cockle` `Shell`\n   is constructed. There is an example of an external command which is packaged as a JupyterLite\n   extension in the\n   [terminal-external-command](https://github.com/ianthomas23/terminal-external-command) repo.\n\n[Emscripten-forge](https://emscripten-forge.org/) packages containing WebAssembly commands that are\ncurrently supported and tested are as follows. Each package contains a single commmand with the same\nname as the package unless otherwise specified:\n\n- `awk`\n- `coreutils`: multiple core commands including `cat`, `cp`, `echo`, `ls`, `mkdir`, `mv`, `rm`, `touch`, `uname`, and `wc`\n- [`git2cpp`](https://git2cpp.readthedocs.io/): a `git` implementation\n- `grep`\n- `less`\n- `lua`\n- `nano`\n- `sed`\n- `tree`\n- `vim`\n\n## Version compatibility\n\nThe filesystem used in `cockle` is built using a specific version of Emscripten, and for maximum\ncompatibility the WebAssembly commands used in `cockle` should be built using the same version of\nEmscripten. WebAssembly commands built on Emscripten-forge are hosted on different\n[prefix.dev](https://prefix.dev/channels) channels"
   },
   "jupyterlite/demo": {
     "head": "0b56844ad3965ecfc201eaa59de45831eed44334",
+    "last_commit": "2026-06-25",
     "n_files": 31,
     "file_types": {
       "config": 3,
@@ -16090,6 +16489,7 @@
   },
   "jupyterlite/echo-kernel": {
     "head": "16221829f0ba38374db8f2b8fda10f989d1a6cdd",
+    "last_commit": "2025-11-26",
     "n_files": 25,
     "file_types": {
       "config": 12,
@@ -16149,6 +16549,7 @@
   },
   "jupyterlite/javascript-kernel": {
     "head": "7240833fd7fd0253a84ba3fe8b3bf0dd624a7cc4",
+    "last_commit": "2026-10-10",
     "n_files": 75,
     "file_types": {
       "config": 21,
@@ -16216,6 +16617,7 @@
   },
   "jupyterlite/jupyterlab-webrtc-docprovider": {
     "head": "7c3429f78e8e0058f5ac9ecc39336c48e51d18e8",
+    "last_commit": "2022-04-22",
     "n_files": 55,
     "file_types": {
       "other": 8,
@@ -16270,7 +16672,8 @@
     "readme": "# jupyterlab-webrtc-docprovider\n\n[![install from PyPI][pypi-badge]][pypi] [![reuse from npm][npm-badge]][npm]\n[![install from conda-forge][conda-badge]][conda]\n[![demo on Binder][binder-badge]][binder] [![GitHub Actions][ci-badge]][ci]\n\n> Document collaboration for [JupyterLab], powered by [y-webrtc].\n\n## Requirements\n\n- Python >=3.7\n- JupyterLab >=3.1\n  - or a derived application like [JupyterLite] or [RetroLab]\n\n## How to Use It\n\n- [Install](#Install) the package\n- [Configure](#Configuration) your server for collaboration\n- Launch a [Lumino]-based Jupyter client that supports collaboration\n  - e.g. JupyterLab 3.1+, RetroLab 0.3+, or JupyterLite (beta)\n- Open the client with the `room` URL parameters\n  - e.g. `http://localhost:8888/lab?room=demo`\n  - optionally provide `username` and `usercolor`\n    - e.g. `http://localhost:8888/lab?room=demo&username=jo&usercolor=e65100`\n  - these parameters will probably be consumed, but _that's okay_\n- Open a shared editing activity like _Notebook_ or _Editor_\n\n## Install\n\nTo install the extension, run:\n\n```bash\n                 pip install jupyterlab-webrtc-docprovider\nmamba install -c conda-forge jupyterlab-webrtc-docprovider\nconda install -c conda-forge jupyterlab-webrtc-docprovider\n```\n\n> For a development install, see the [contributing guide].\n\n## How it Works\n\nUnlike JupyterLab's built-in, purely WebSocket-based [collaborative] document provider,\n`jupyterlab-webrtc-docprovider` relies on:\n\n- an initialing [signaling server] to locate peers\n- the [WebRTC] protocol to coordinate actual data exchange\n\n## Configuration\n\n### Server Configuration\n\nJupyter Server is configured with `jupyter_server_config.json`:\n\n```json\n{\n  \"LabServerApp\": {\n    \"collaborative\": true\n  }\n}\n```\n\n#### `collaborative`\n\nThis flag must be enabled for the provider to be used.\n\n> In JupyterLite, this is a configurable of `jupyter-config-data` in\n> `jupyter-lite.json`.\n\n### Client Configuration\n\nUser-configurable settings can be pre-populated in\n`{sys.prefix}/share/jupyter/lab/settings/overrides.json`: `roomPrefix` and\n`signalingUrls` are security-related.\n\n```json\n{\n  \"@jupyterlite/webrtc-docprovider:plugin\": {\n    \"disabled\": false,\n    \"room\": \"an pre-shared room name\",\n    \"roomPrefix\": \"a-very-unique-name\",\n    \"signalingUrls\": [\n      \"wss://y-webrtc-signaling-eu.herokuapp.com\",\n      \"wss://y-webrtc-signaling-us.herokuapp.com\",\n      \"wss://signaling.yjs.dev\"\n    ],\n    \"usercolor\": \"f57c00\",\n    \"username\": \"Jo V. Un\"\n  }\n}\n```\n\n> In Ju"
   },
   "jupyterlite/jupyterlite": {
-    "head": "e851060d83a820cb6f315c1792818c389ca25cb0",
+    "head": "8d85c81dc6205c22088b5c1746497040b5f479de",
+    "last_commit": "2026-10-29",
     "n_files": 507,
     "file_types": {
       "config": 94,
@@ -16433,6 +16836,7 @@
   },
   "jupyterlite/jupyterlite-lsp": {
     "head": "b5787b150215a85bdf704aa58947d9fa946ac892",
+    "last_commit": "2022-12-09",
     "n_files": 63,
     "file_types": {
       "config": 20,
@@ -16484,6 +16888,7 @@
   },
   "jupyterlite/jupyterlite-sphinx": {
     "head": "b00b7dc8ec0b2391e047b71fd1bf49b6463b9bfc",
+    "last_commit": "2026-09-08",
     "n_files": 40,
     "file_types": {
       "config": 12,
@@ -16533,7 +16938,8 @@
     "readme": "# JupyterLite Sphinx\n\nA Sphinx extension that provides utilities for embedding [JupyterLite](https://jupyterlite.readthedocs.io) in your documentation.\n\n## Docs\n\nhttps://jupyterlite-sphinx.readthedocs.io\n\n## Example\n\nPractical examples are in the [ipycanvas](https://ipycanvas.readthedocs.io) and [ipyleaflet](https://ipyleaflet.readthedocs.io) documentation.\n\n## Installation:\n\n```bash\npip install jupyterlite-sphinx\n```\n"
   },
   "jupyterlite/litegitpuller": {
-    "head": "b640273cbd1dea4a0f8bb3594e398a3420f88443",
+    "head": "4c0308f706082b1834f1e0eaf0921bfba96a7103",
+    "last_commit": "2026-10-28",
     "n_files": 44,
     "file_types": {
       "config": 20,
@@ -16594,6 +17000,7 @@
   },
   "jupyterlite/p5-kernel": {
     "head": "f74f267d8ea18693ae311a96bb6df50b027dc323",
+    "last_commit": "2026-03-09",
     "n_files": 56,
     "file_types": {
       "other": 5,
@@ -16663,6 +17070,7 @@
   },
   "jupyterlite/pyodide-kernel": {
     "head": "480178b7fe22002b7c3b94e0e1c16cc78b2232f2",
+    "last_commit": "2026-10-08",
     "n_files": 122,
     "file_types": {
       "config": 33,
@@ -16758,6 +17166,7 @@
   },
   "jupyterlite/repo2jupyterlite": {
     "head": "28fa21239656e31fd84aad787e2eec9b45e6f4f6",
+    "last_commit": "2026-07-06",
     "n_files": 21,
     "file_types": {
       "other": 3,
@@ -16793,6 +17202,7 @@
   },
   "jupyterlite/sphinx-demo": {
     "head": "48584934aa0cd463569ad736dc18d25bdb37b133",
+    "last_commit": "2025-10-01",
     "n_files": 44,
     "file_types": {
       "other": 5,
@@ -16829,6 +17239,7 @@
   },
   "jupyterlite/terminal": {
     "head": "0a39730dbea047d30917dee8cd0b510b9f54d236",
+    "last_commit": "2026-10-08",
     "n_files": 84,
     "file_types": {
       "config": 27,
@@ -16896,6 +17307,7 @@
   },
   "jupyterlite/wasm_lua": {
     "head": "a6aba057cce7c4ad915790db1fd6aa34dfed17f9",
+    "last_commit": "2023-11-29",
     "n_files": 79,
     "file_types": {
       "other": 7,
@@ -16916,7 +17328,8 @@
     "readme": "# wasm_lua\nLua VM running in your browser!\n\nOpen [here](https://cdn.rawgit.com/vvanders/wasm_lua/d68f46a8/main.html), if it works you should see \"Hello Lua!\".\n\nEach update is executed in a unique VM instance via WASM + emscripten.\n\nCurrently test on Firefox 52.0 but probably works on other platforms as well.\n\n# Why?\n[Lua](https://en.wikipedia.org/wiki/Lua_(programming_language)) is a fast, highly embeddable VM that boasts a wide set of features allowing it to be adapted to a diverse set of domains and platforms.\n\n* Can be run in 400kb of memory or less.\n* Multi-paradigm via metatables, closures and coroutines.\n* Robust, proven VM that's shipped on platforms including MIPS, x86, ARM and many others(and now WASM!).\n* Small, easy to understand language.\n* Extensible debugger hooks for easy on-target debugging.\n\nThanks to [rawgit](http://rawgit.com/) for hosting.\n"
   },
   "jupyterlite/xeus": {
-    "head": "e505e76bf37ddd598f6f4121f6a30b7764123b53",
+    "head": "ca8c6cc9146ef6de39bb534b16b79df7eaaeb111",
+    "last_commit": "2026-10-29",
     "n_files": 98,
     "file_types": {
       "config": 46,
@@ -16996,6 +17409,7 @@
   },
   "jupyterlite/xeus-lite-demo": {
     "head": "d6cae8aba0731832781df37a4c11f84b95365be8",
+    "last_commit": "2025-11-27",
     "n_files": 8,
     "file_types": {
       "config": 3,
@@ -17028,6 +17442,7 @@
   },
   "voila-dashboards/.github": {
     "head": "1689539fd1e6ab946f9e16f09cd2e9bfa07db05a",
+    "last_commit": "2026-04-29",
     "n_files": 7,
     "file_types": {
       "docs": 6,
@@ -17046,6 +17461,7 @@
   },
   "voila-dashboards/hotpot_km": {
     "head": "6d2f573cb1acbd8ea4682c27b29a3fa2d09ba4e4",
+    "last_commit": "2021-03-31",
     "n_files": 32,
     "file_types": {
       "other": 4,
@@ -17074,6 +17490,7 @@
   },
   "voila-dashboards/tljh-voila-gallery": {
     "head": "431b9eceec9be2dc35090b2518eb86640057eb33",
+    "last_commit": "2020-11-10",
     "n_files": 28,
     "file_types": {
       "config": 3,
@@ -17109,6 +17526,7 @@
   },
   "voila-dashboards/voici": {
     "head": "5417f9acaa47d69354ee89a46d82c7c524b01ab8",
+    "last_commit": "2025-12-30",
     "n_files": 99,
     "file_types": {
       "docs": 15,
@@ -17178,6 +17596,7 @@
   },
   "voila-dashboards/voici-demo": {
     "head": "53d190281d737d10553ec65bbe672b83c1d85ec6",
+    "last_commit": "2026-01-05",
     "n_files": 7,
     "file_types": {
       "config": 3,
@@ -17210,6 +17629,7 @@
   },
   "voila-dashboards/voici-gallery": {
     "head": "17d027e8d304ead97e95a217d5e8765263da4da5",
+    "last_commit": "2024-12-11",
     "n_files": 26,
     "file_types": {
       "config": 7,
@@ -17243,6 +17663,7 @@
   },
   "voila-dashboards/voila": {
     "head": "2993413ffb950476ff7b44abf84fe56f656e7772",
+    "last_commit": "2026-09-04",
     "n_files": 300,
     "file_types": {
       "config": 45,
@@ -17342,6 +17763,7 @@
   },
   "voila-dashboards/voila-dashboards.github.io": {
     "head": "6c6b452754faa7cc3a927edde7bebb56bdd4a7cb",
+    "last_commit": "2025-02-07",
     "n_files": 22,
     "file_types": {
       "other": 1,
@@ -17362,6 +17784,7 @@
   },
   "voila-dashboards/voila-debug": {
     "head": "e1ea954d55ca72cb11e361045f893e06404e0bb2",
+    "last_commit": "2019-09-27",
     "n_files": 14,
     "file_types": {
       "other": 3,
@@ -17385,6 +17808,7 @@
   },
   "voila-dashboards/voila-gridstack": {
     "head": "02f6233da825678438917ab843c16eae0641f0c0",
+    "last_commit": "2024-03-27",
     "n_files": 136,
     "file_types": {
       "other": 7,
@@ -17456,6 +17880,7 @@
   },
   "voila-dashboards/voila-heroku": {
     "head": "81b396621ac268b141da08eca4dacde4dc9a1fbc",
+    "last_commit": "2021-12-20",
     "n_files": 6,
     "file_types": {
       "other": 2,
@@ -17475,6 +17900,7 @@
   },
   "voila-dashboards/voila-huggingface": {
     "head": "7ec5bcdcec06321585c2d65eac9c5a19df3016d2",
+    "last_commit": "2023-08-22",
     "n_files": 15,
     "file_types": {
       "other": 4,
@@ -17503,6 +17929,7 @@
   },
   "voila-dashboards/voila-material": {
     "head": "897c12d793a5f42d61594eaf08b82454639c729a",
+    "last_commit": "2025-08-25",
     "n_files": 27,
     "file_types": {
       "other": 2,
@@ -17533,6 +17960,7 @@
   },
   "voila-dashboards/voila-railway": {
     "head": "cd97640834e71e83d4e08cb6698300262ac053fa",
+    "last_commit": "2023-08-22",
     "n_files": 11,
     "file_types": {
       "other": 1,
@@ -17552,6 +17980,7 @@
   },
   "voila-dashboards/voila-template-cookiecutter": {
     "head": "8c6382e42a561987139d9835c7e40fb39e91a22c",
+    "last_commit": "2019-10-12",
     "n_files": 15,
     "file_types": {
       "other": 6,
@@ -17573,6 +18002,7 @@
   },
   "voila-dashboards/voila-topbar": {
     "head": "8bd6d01541ec83abef33baf1e207c0c075a9b8ff",
+    "last_commit": "2025-03-03",
     "n_files": 27,
     "file_types": {
       "config": 13,
@@ -17629,6 +18059,7 @@
   },
   "voila-dashboards/voila-vuetify": {
     "head": "d280dd6c11a3252df9354cbd641983bb558c56b6",
+    "last_commit": "2022-11-11",
     "n_files": 15,
     "file_types": {
       "other": 1,
@@ -17658,6 +18089,7 @@
   },
   "voila-gallery/cpp-xleaflet": {
     "head": "918c3409e1571d530de63eb74895c507c63488ec",
+    "last_commit": "2021-09-10",
     "n_files": 6,
     "file_types": {
       "other": 1,
@@ -17679,6 +18111,7 @@
   },
   "voila-gallery/electricitymap_dashboard": {
     "head": "11798615d53bdfe7cec97aab96491f36cc1851a4",
+    "last_commit": "2024-04-04",
     "n_files": 10,
     "file_types": {
       "other": 1,
@@ -17701,6 +18134,7 @@
   },
   "voila-gallery/gaussian-density": {
     "head": "7fdbbb06298542a51150f8757b22f1d39d004c3a",
+    "last_commit": "2021-09-13",
     "n_files": 5,
     "file_types": {
       "other": 1,
@@ -17721,6 +18155,7 @@
   },
   "voila-gallery/hello-world-example": {
     "head": "dafcec99ba35e752141612887f30a337e4c98afd",
+    "last_commit": "2019-07-08",
     "n_files": 4,
     "file_types": {
       "docs": 1,
@@ -17741,6 +18176,7 @@
   },
   "voila-gallery/ipympl": {
     "head": "d3b722437ef36e519c92be249afbd55aec93ec00",
+    "last_commit": "2021-09-13",
     "n_files": 8,
     "file_types": {
       "other": 2,
@@ -17762,6 +18198,7 @@
   },
   "voila-gallery/render-stl": {
     "head": "6f2bcc50484a3ba3ee2688a8f2b1464802d2369c",
+    "last_commit": "2021-09-13",
     "n_files": 13,
     "file_types": {
       "other": 8,
@@ -17783,6 +18220,7 @@
   },
   "voila-gallery/voila-gallery.github.io": {
     "head": "ae8f5f9c9bfb6c86cf3e5502220a3fcfbceb1ad5",
+    "last_commit": "2025-08-04",
     "n_files": 23,
     "file_types": {
       "config": 3,
@@ -17811,6 +18249,7 @@
   },
   "voila-gallery/voila-spotify": {
     "head": "625f0d3eb7472db4f355fdd8ab522c5bebf291c7",
+    "last_commit": "2020-03-02",
     "n_files": 9,
     "file_types": {
       "other": 1,

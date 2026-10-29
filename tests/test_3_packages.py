@@ -29,3 +29,24 @@ def test_when_two_repos_declare_a_package_the_one_the_registry_links_to_wins():
 
     accepted, _ = packages.pick_publishers(candidates, entries, repos, jupyter_orgs={"o"})
     assert [p["repo"] for p in accepted] == ["o/widget"]
+
+
+def test_deps_dev_gives_dependents_and_the_date_of_the_newest_version(monkeypatch):
+    versions = [
+        {"versionKey": {"version": "1.0"}, "publishedAt": "2024-01-02T10:00:00Z", "isDefault": False},
+        {"versionKey": {"version": "2.0"}, "publishedAt": "2025-06-30T23:59:59Z", "isDefault": True},
+        {"versionKey": {"version": "3.0b1"}, "publishedAt": "2026-02-01T00:00:01Z", "isDefault": False},
+        {"versionKey": {"version": "0.1"}, "isDefault": False},  # no date recorded
+    ]
+    dependents = {"1.0": 5, "2.0": 40, "3.0b1": 7, "0.1": 1}
+
+    def fake_fetch_json(url, delay=0.0):
+        if url.endswith(":dependents"):
+            return {"dependentCount": dependents[url.split("/versions/")[1].removesuffix(":dependents")]}
+        return {"versions": versions} if url.endswith("/packages/some-lib") else None
+
+    monkeypatch.setattr(packages, "fetch_json", fake_fetch_json)
+
+    # A pre-release counts as the newest version; the default one is only used for the dependents.
+    assert packages.deps_dev("PYPI", "Some_Lib") == {"dependents": 40, "latest_release": "2026-02-01"}
+    assert packages.deps_dev("PYPI", "unknown") == {"dependents": None, "latest_release": None}

@@ -1,0 +1,146 @@
+/* Light and dark colors are variables; the dark set replaces them when the system asks for dark. */
+:root {
+  --bg: #ffffff;
+  --panel: #f6f8fa;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --line: #d1d9e0;
+  --link: #0550ae;
+  --accent: #c2410c;
+  --focus: #0969da;
+  --hover: #eaeef2;
+  --stripe: #fafbfc;
+  --warn-bg: #fff8c5;
+  --warn-line: #d4a72c;
+  --error: #b42318;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --panel: #151b23;
+    --fg: #e6edf3;
+    --muted: #9198a1;
+    --line: #3d444d;
+    --link: #79c0ff;
+    --accent: #fb923c;
+    --focus: #58a6ff;
+    --hover: #1f2933;
+    --stripe: #11161d;
+    --warn-bg: #2d2a12;
+    --warn-line: #7d6a1b;
+    --error: #ff7b72;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrap { width: 100%; max-width: 1280px; margin: 0 auto; padding-inline: 16px; }
+main { flex: 1; padding-block: 8px 48px; min-width: 0; }
+
+a { color: var(--link); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, .tabulator-col:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.tabulator-col:focus-visible { outline-offset: -3px; } /* inside the header, which clips what sticks out */
+h1:focus, main:focus { outline: none; } /* focused by the script after a page change, not interactive */
+h1 { font-size: 1.75rem; line-height: 1.2; margin: 24px 0 8px; overflow-wrap: anywhere; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+p { margin: 8px 0; }
+code { background: var(--panel); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; font-size: 0.9em; }
+.lede { color: var(--muted); max-width: 70ch; }
+.muted { color: var(--muted); font-size: 0.9rem; }
+.notice { background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 6px; padding: 12px 16px; margin-block: 16px; }
+.error { color: var(--error); font-weight: 600; }
+
+.skip { position: absolute; left: -999px; top: 0; background: var(--bg); padding: 8px 12px; z-index: 10; }
+.skip:focus { left: 8px; top: 8px; }
+
+/* Header: the name, and the views as a row that scrolls sideways inside itself on a phone. */
+header.site { background: var(--panel); border-bottom: 1px solid var(--line); }
+header.site .wrap { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 24px; padding-block: 10px 6px; }
+.brand { font-weight: 700; color: var(--fg); text-decoration: none; border-bottom: 3px solid var(--accent); }
+header.site nav { flex: 1 1 100%; min-width: 0; overflow-x: auto; }
+header.site ul { display: flex; gap: 4px; list-style: none; margin: 0; padding: 0 0 4px; white-space: nowrap; }
+header.site li a { display: block; padding: 4px 10px; border-radius: 6px; text-decoration: none; font-size: 0.92rem; }
+header.site li a:hover { background: var(--hover); }
+header.site li a[aria-current="page"] { background: var(--bg); box-shadow: inset 0 -2px 0 var(--accent); font-weight: 600; }
+footer.site { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; padding-block: 16px; }
+
+.crumbs { margin-top: 16px; color: var(--muted); font-size: 0.9rem; overflow-wrap: anywhere; }
+
+/* Home: one card per view; the title link covers the whole card. */
+.cards { list-style: none; padding: 0; margin: 24px 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.card { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; }
+.card:hover { border-color: var(--accent); }
+.card h2 { margin: 0 0 4px; font-size: 1.05rem; }
+.card h2 a::after { content: ""; position: absolute; inset: 0; border-radius: 8px; }
+.card p { margin: 4px 0; font-size: 0.92rem; }
+
+/* Record pages: term and value side by side, stacked on a phone. */
+.facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 24px; margin: 12px 0; }
+.facts dt { color: var(--muted); }
+.facts dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 560px) {
+  .facts { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .facts dd { margin-bottom: 8px; }
+}
+
+/* Views: parameters, search, count and download above the table. */
+.params, .toolbar { display: flex; flex-wrap: wrap; align-items: end; gap: 8px 16px; margin: 12px 0; }
+label { display: grid; gap: 2px; font-size: 0.9rem; color: var(--muted); }
+input, button, select { font: inherit; color: var(--fg); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 5px 10px; }
+.toolbar input { min-width: min(100%, 260px); }
+.params input { width: 8em; }
+button { cursor: pointer; background: var(--panel); }
+button:hover { border-color: var(--accent); }
+.count { color: var(--muted); padding-block: 6px; margin-right: auto; }
+
+/* Tabulator, recolored with our variables. The table scrolls inside its box, never the page. */
+.table { max-width: 100%; margin: 8px 0 16px; }
+.tabulator, .tabulator .tabulator-header, .tabulator .tabulator-header .tabulator-col, .tabulator .tabulator-footer,
+.tabulator .tabulator-tableholder .tabulator-table, .tabulator-row, .tabulator .tabulator-footer .tabulator-page,
+.tabulator .tabulator-footer .tabulator-page-size {
+  color: var(--fg);
+  border-color: var(--line);
+}
+.tabulator { background: var(--bg); border-radius: 8px; font-size: 0.9rem; }
+.tabulator .tabulator-header, .tabulator .tabulator-header .tabulator-col, .tabulator .tabulator-footer { background: var(--panel); }
+.tabulator .tabulator-header .tabulator-col { border-right-color: var(--line); }
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content { padding: 8px 10px 4px; }
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter { margin-top: 4px; }
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter input,
+.tabulator .tabulator-header .tabulator-col .tabulator-header-filter select {
+  background: var(--bg); color: var(--fg); border: 1px solid var(--line); border-radius: 4px; padding: 3px 6px; font-size: 0.85rem; font-weight: 400;
+}
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable.tabulator-col-sorter-element:hover { background: var(--hover); }
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable[aria-sort="none"] .tabulator-col-content .tabulator-col-sorter .tabulator-arrow { border-bottom-color: var(--line); }
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable[aria-sort="ascending"] .tabulator-col-content .tabulator-col-sorter .tabulator-arrow { border-bottom-color: var(--fg); }
+.tabulator .tabulator-header .tabulator-col.tabulator-sortable[aria-sort="descending"] .tabulator-col-content .tabulator-col-sorter .tabulator-arrow { border-top-color: var(--fg); }
+.tabulator .tabulator-tableholder .tabulator-table { background: var(--bg); }
+.tabulator-row { background: var(--bg); min-height: 0; border-bottom: 1px solid var(--line); }
+.tabulator-row.tabulator-row-even { background: var(--stripe); }
+.tabulator-row .tabulator-cell { padding: 6px 10px; border-right-color: transparent; }
+.tabulator-row .tabulator-cell.long-text { white-space: normal; overflow-wrap: anywhere; }
+.tabulator-row .tabulator-cell a { color: var(--link); }
+@media (hover: hover) and (pointer: fine) { .tabulator-row.tabulator-selectable:hover { background: var(--hover); } }
+.tabulator .tabulator-tableholder .tabulator-placeholder .tabulator-placeholder-contents { color: var(--muted); font-size: 1rem; font-weight: 400; }
+.tabulator .tabulator-footer { border-top-color: var(--line); padding: 6px 10px; }
+.tabulator .tabulator-footer .tabulator-paginator { color: var(--muted); text-align: right; }
+.tabulator .tabulator-footer .tabulator-page-size, .tabulator .tabulator-footer .tabulator-page { background: var(--bg); border-color: var(--line); padding: 2px 8px; }
+.tabulator .tabulator-footer .tabulator-page.active { color: var(--accent); border-color: var(--accent); font-weight: 700; }
+.tabulator .tabulator-footer .tabulator-page:not(:disabled):hover { background: var(--hover); color: var(--fg); }
+.tabulator .tabulator-footer .tabulator-page:disabled { opacity: 0.45; }
+.tabulator-popup-container, .tabulator-edit-list { background: var(--bg); color: var(--fg); border-color: var(--line); }
+.tabulator-edit-list .tabulator-edit-list-item, .tabulator-edit-list .tabulator-edit-list-placeholder { color: var(--fg); }
+.tabulator-edit-list .tabulator-edit-list-item.active, .tabulator-edit-list .tabulator-edit-list-item:hover { background: var(--focus); color: #fff; }

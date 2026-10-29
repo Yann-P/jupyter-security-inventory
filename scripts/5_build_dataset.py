@@ -53,7 +53,9 @@ def invert(used_by: dict) -> dict:
         for kind, consumers in kinds.items():
             for consumer in consumers:
                 uses.setdefault(consumer, {"ci": [], "ci_pinned": [], "build": []})[kind].append(provider)
-    return {consumer: {kind: sorted(providers) for kind, providers in kinds.items()} for consumer, kinds in uses.items()}
+    return {
+        consumer: {kind: sorted(providers) for kind, providers in kinds.items()} for consumer, kinds in uses.items()
+    }
 
 
 def main():

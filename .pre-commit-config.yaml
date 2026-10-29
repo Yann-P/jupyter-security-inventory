@@ -1,4 +1,4 @@
-exclude: ^output/
+exclude: ^(output|site/data|site/vendor)/  # generated or vendored: never edited (or reformatted) by hand
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks

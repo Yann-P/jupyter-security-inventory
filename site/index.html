@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Jupyter security inventory</title>
+  <meta name="description" content="The public GitHub repositories and packages of Project Jupyter, and what depends on what.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/tabulator.min.css">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>#loading { display: none; }</style></noscript>
+  <script src="vendor/tabulator.min.js"></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the content</a>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="#/">Jupyter security inventory</a>
+      <nav aria-label="Views"><ul id="views"></ul></nav>
+    </div>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <noscript><p class="notice">This page needs JavaScript: it reads the JSON files in <code>data/</code> and draws the tables in your browser.</p></noscript>
+    <p class="notice" id="loading">Loading the data. If this message stays, the page has to be served over HTTP, for example with <code>python3 -m http.server -d site</code>: browsers do not let a page opened as a file read the JSON files next to it.</p>
+  </main>
+  <footer class="site">
+    <div class="wrap">Public data about the repositories of Project Jupyter, fetched on <span id="fetched">?</span>.</div>
+  </footer>
+</body>
+</html>

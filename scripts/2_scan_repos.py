@@ -1,8 +1,9 @@
 """Step 2: clone every repo and record what it contains.
 
-For each repo: how many files of each type, the packages its manifests declare, what its
-GitHub workflows do, the GitHub Actions it uses, and the start of its README. Only those few
-files are downloaded; for everything else the clone holds just the file names.
+For each repo: the commit and date of its latest commit, how many files of each type, the
+packages its manifests declare, what its GitHub workflows do, the GitHub Actions it uses, and
+the start of its README. Only those few files are downloaded; for everything else the clone
+holds just the file names.
 
 Usage: python scripts/2_scan_repos.py --clone-dir /tmp/clones    Output: output/scan.json
 """
@@ -224,6 +225,7 @@ def scan(full_name: str, clone_dir: Path) -> dict:
     ci_text = "\n".join(read(path) for path in workflows + actions)
     return {
         "head": git(folder, "rev-parse", "HEAD").strip(),
+        "last_commit": git(folder, "log", "-1", "--format=%cs", "HEAD").strip(),  # YYYY-MM-DD; a shallow clone has it
         "n_files": len(paths),
         "file_types": dict(Counter(file_type(path) for path in paths)),
         "packages": packages,
