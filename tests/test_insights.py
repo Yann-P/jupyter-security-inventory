@@ -61,21 +61,20 @@ def test_published_lists_one_registry_most_downloaded_first():
     assert [p["name"] for _, p in insights.published(data, "PYPI")] == ["notebook"]
 
 
-def test_package_row_links_the_package_its_org_and_its_repo_without_the_kind_colors():
+def test_package_row_links_the_package_its_org_and_its_repo():
     data = make_data(make_repo("jupyterhub/jupyterhub", [("PYPI", "jupyterhub", 1234, 56)], "runs multi-user servers"))
     [(name, package)] = insights.published(data, "PYPI")
     assert insights.package_row(data, name, package) == [
         "[jupyterhub](https://pypi.org/project/jupyterhub/)",
         "[jupyterhub](/orgs/jupyterhub.md)",
-        "[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)",  # no {.kind-package}: the table is not about kinds
+        "[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)",
         "[1,234](https://pypistats.org/packages/jupyterhub)",
         "56",
         "[2026-10-20]{.date}",
     ]
 
 
-def test_image_row_has_the_columns_of_the_package_rows_and_links_the_repo_and_the_org():
-    data = make_data(make_repo("jupyterhub/binderhub", []))
+def test_image_row_leaves_unknown_pulls_and_repository_empty():
     image = {
         "registry": "quay.io",
         "namespace": "jupyterhub",
@@ -83,18 +82,22 @@ def test_image_row_has_the_columns_of_the_package_rows_and_links_the_repo_and_th
         "tag": "1.0.0",
         "pulls": None,
         "last_published": "2026-07-01",
-        "repo": "jupyterhub/binderhub",
+        "repo": None,
     }
-    assert insights.image_row(data, image) == [
-        "[jupyterhub\\/k8s\\-binderhub](https://quay.io/repository/jupyterhub/k8s-binderhub)",
-        "quay.io",
-        "1\\.0\\.0",
-        "[jupyterhub](/orgs/jupyterhub.md)",
-        "[jupyterhub\\/binderhub](/orgs/jupyterhub/binderhub.md)",
-        "",  # Quay publishes no pull counts
-        "[2026-07-01]{.date}",
-    ]
-    assert insights.image_row(data, image | {"repo": None})[4] == ""  # an image can come from no known repo
+    row = dict(zip(insights.IMAGE_HEADER, insights.image_row(image)))
+    assert (row["all-time pulls"], row["repository"]) == ("", "")
+
+
+def test_image_rows_list_the_most_pulled_first_and_the_images_without_pull_counts_last():
+    base = {"namespace": "o", "tag": "1", "last_published": None, "repo": None}
+    rows = insights.image_rows(
+        [
+            base | {"registry": "quay.io", "name": "a", "pulls": None},
+            base | {"registry": "docker.io", "name": "b", "pulls": 5},
+            base | {"registry": "docker.io", "name": "c", "pulls": 9},
+        ]
+    )
+    assert [row[5] for row in rows] == ["9", "5", ""]
 
 
 def test_package_pages_write_a_table_per_registry_and_summarize_them(tmp_path, monkeypatch):
@@ -120,3 +123,10 @@ def test_org_body_leaves_out_empty_tables_and_the_sections_they_were_in():
 
     body = insights.org_body("o", software=[["r"]], docs=[["d"]], packages={"PyPI": [], "npm": []}, images=[])
     assert "(#" not in body  # a page with one section needs no links to its sections
+
+
+def test_org_body_lists_the_images_under_their_section_without_a_subheading():
+    body = insights.org_body("o", software=[["r"]], docs=[], packages={"PyPI": [], "npm": []}, images=[["i"], ["j"]])
+    headings = [line for line in body.splitlines() if line.startswith("#")]
+    assert headings == ["## Repositories", "### Software", "## Images"]
+    assert body.startswith("[Repositories (1)](#repositories) · [Images (2)](#images)")

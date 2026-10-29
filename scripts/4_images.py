@@ -117,6 +117,9 @@ def quay_image(namespace: str, repo: dict) -> dict | None:
     }
 
 
+READERS = {"docker.io": (hub_repos, hub_image), "quay.io": (quay_repos, quay_image)}  # list the repos, read an image
+
+
 def main():
     inventory = load_json(OUTPUT / "repos.json")
     scan = load_json(OUTPUT / "scan.json")
@@ -132,9 +135,11 @@ def main():
         for ref in found["images"]:
             builders.setdefault(image_path(ref), set()).add(repo.lower())
 
-    jobs = [(hub_image, namespace, repo) for namespace in NAMESPACES["docker.io"] for repo in hub_repos(namespace)] + [
-        (quay_image, namespace, repo) for namespace in NAMESPACES["quay.io"] for repo in quay_repos(namespace)
-    ]
+    jobs = []
+    for registry, namespaces in NAMESPACES.items():
+        list_repos, get_image = READERS[registry]
+        for namespace in namespaces:
+            jobs += [(get_image, namespace, repo) for repo in list_repos(namespace)]
     with ThreadPoolExecutor(4) as pool:
         found = list(filter(None, pool.map(lambda job: job[0](job[1], job[2]), jobs)))
 

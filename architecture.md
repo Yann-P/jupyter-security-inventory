@@ -77,7 +77,7 @@ committed. The other pages are written by hand and include those tables.
 | Page | Content | Source |
 |---|---|---|
 | Home (`index.md`) | All repos, one row each | `repos.csv` |
-| Organizations (`orgs.md`) | One page per organization: its repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json` |
+| Organizations (`orgs.md`) | One page per organization that has a repo: its repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json` |
 | Published packages (`packages.md`) | A summary table, then a page with one table for PyPI and one for npm | `jupyter_repos.json` |
 | Container images (`images.md`) | One table of images | `images.json` |
 | About (`about.md`) | The README | `README.md` |

@@ -42,3 +42,6 @@ tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind
 
 /* The organization dropdown that tables.js adds beside the search box. */
 .org-filter { margin-right: 0.75em; }
+
+/* {download} wraps its text in <code>: show it as the plain link it is. */
+a.download code { font: inherit; background: none; border: 0; padding: 0; color: inherit; }

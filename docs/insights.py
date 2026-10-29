@@ -336,7 +336,7 @@ def image_link(registry: str, path: str) -> str:
     return f"[{plain(path)}]({url})"
 
 
-def image_row(data: Data, image: dict) -> list:
+def image_row(image: dict) -> list:
     """A row of IMAGE_HEADER. The organization is the registry namespace."""
     path = image_path(image)
     return [
@@ -350,10 +350,10 @@ def image_row(data: Data, image: dict) -> list:
     ]
 
 
-def image_rows(data: Data, images: list[dict]) -> list[list]:
+def image_rows(images: list[dict]) -> list[list]:
     """Rows of IMAGE_HEADER, most pulled first. Quay publishes no pull counts, so its images come last."""
     ordered = sorted(images, key=lambda i: (-(i["pulls"] or 0), i["registry"], i["namespace"], i["name"]))
-    return [image_row(data, image) for image in ordered]
+    return [image_row(image) for image in ordered]
 
 
 def without_org(header: list[str], rows: list[list]) -> tuple[list[str], list[list]]:
@@ -493,7 +493,7 @@ def org_pages(data: Data) -> list[list]:
             header, rows = without_org(PACKAGE_HEADER, [package_row(data, *item) for item in found])
             write_csv(DOCS / "orgs" / f"{org}-{title.lower()}.csv", header, rows)
             packages[title] = rows
-        header, image_table = without_org(IMAGE_HEADER, image_rows(data, org_images))
+        header, image_table = without_org(IMAGE_HEADER, image_rows(org_images))
         write_csv(DOCS / "orgs" / f"{org}-images.csv", header, image_table)
         (DOCS / "orgs" / org).mkdir()
         for name in names:
@@ -564,7 +564,7 @@ def build() -> dict:
     )
 
     # Container images
-    write_csv(GENERATED / "images.csv", IMAGE_HEADER, image_rows(data, data.images))
+    write_csv(GENERATED / "images.csv", IMAGE_HEADER, image_rows(data.images))
 
     # All repositories: the home page
     software = [name for name in names if not data.out_of_the_way(name)]

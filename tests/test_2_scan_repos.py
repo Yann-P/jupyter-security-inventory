@@ -45,3 +45,8 @@ charts:
 """
     assert scan.chartpress_images(chartpress) == ["quay.io/jupyterhub/k8s-hub", "quay.io/jupyterhub/k8s-image-awaiter"]
     assert scan.chartpress_images("not: [valid") == []
+
+
+def test_chartpress_images_ignores_a_file_that_is_not_shaped_like_a_chartpress_file():
+    for text in ("", "- hub", "charts:", "charts: [hub]", "charts: [{images: [hub]}]"):  # "" is what a symlink reads as
+        assert scan.chartpress_images(text) == []
