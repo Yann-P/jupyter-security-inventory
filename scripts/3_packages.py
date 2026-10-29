@@ -76,7 +76,7 @@ def downloads(system: str, name: str) -> int | None:
     if system == "PYPI":
         body = fetch_json(f"https://pypistats.org/api/packages/{quote(pep503(name))}/recent", delay=1.1)
         return body["data"]["last_month"] if body else None
-    body = fetch_json(f"https://api.npmjs.org/downloads/point/last-month/{quote(name)}")
+    body = fetch_json(f"https://api.npmjs.org/downloads/point/last-month/{quote(name)}", delay=1)
     return body["downloads"] if body else None
 
 
@@ -157,7 +157,7 @@ def main():
     with ThreadPoolExecutor(8) as pool:
         known = list(pool.map(lambda p: deps_dev(p["system"], p["name"]), packages))
     for package, deps in zip(packages, known):
-        # One at a time, because pypistats.org limits how often we may call it.
+        # One at a time, because pypistats.org and api.npmjs.org limit how often we may call them.
         package["downloads_last_month"] = downloads(package["system"], package["name"])
         package.update(deps)
 
