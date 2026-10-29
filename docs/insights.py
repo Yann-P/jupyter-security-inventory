@@ -4,7 +4,7 @@ conf.py calls build(), which:
 - writes CSV tables into docs/_generated/ for the pages to include, each with a plain-text copy in downloads/,
 - writes the body of the home page (docs/_generated/home.md), which has the sections of an organization page,
 - writes a page per organization (docs/orgs/<org>.md) and per repository (docs/orgs/<org>/<repo>.md),
-- returns the legend and the notes that the hand-written pages quote, as MyST substitutions: {{ legend }}, ...
+- returns the notes that the hand-written pages quote, as MyST substitutions: {{ downloads_note }}, ...
 
 Text that comes from the repositories themselves (descriptions, labels, workflow contents) goes through
 plain(), so it always shows as text and never becomes HTML, a link or a substitution.
@@ -34,10 +34,11 @@ REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
 # These tables are not tinted by kind: that is for repo tables.
 PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
 IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "all-time pulls", "last published"]
-DOCS_HEADER = ["repo", "kind", "live service"]
-ALL = "all"  # the scope of the home page, which lists every organization; an organization's page is scoped to it
 DOWNLOADS_NOTE = "Downloads are for the last month and include CI."
-PULLS_NOTE = "Only Docker Hub has pull counts; they are all-time and include CI."
+IMAGES_NOTE = (
+    "Only Docker Hub has pull counts; they are all-time and include CI."
+    " The tag is `latest`, or the newest tag if there is no `latest`."
+)
 
 REPO_PAGE = """# {title}
 
@@ -300,7 +301,7 @@ def repo_rows(data: Data, names) -> list[list]:
 
 
 def docs_rows(data: Data, names) -> list[list]:
-    """Rows of DOCS_HEADER for documentation and examples: the ones that deploy a site first."""
+    """Rows for documentation and examples: the ones that deploy a site first."""
     names = sorted(names, key=lambda name: (not data.label(name, "deploys_live_service"), name))
     return [
         [data.cell(name), data.label(name, "kind"), plain(data.label(name, "deploys_live_service"))] for name in names
@@ -384,7 +385,7 @@ def without_org(header: list[str], rows: list[list]) -> tuple[list[str], list[li
     return header[:at] + header[at + 1 :], [row[:at] + row[at + 1 :] for row in rows]
 
 
-def csv_table(stem: str, by_org: bool = False) -> str:
+def csv_table(stem: str, by_org: bool) -> str:
     """The Markdown for a sortable table whose rows are in <stem>.csv, with a link to download them.
 
     `by_org`: the table has an organization column, which gets a filter.
@@ -403,30 +404,29 @@ def sections(scope: str, software: list, docs: list, packages: dict, images: lis
     table. With more than one section, a line of links to them comes first. `by_org`: the package and image tables
     have an organization column.
     """
-    groups = [  # (title, note, [(subtitle, table stem, rows, by_org)])
+    groups = [  # (title, note, whether its tables are filtered by organization, [(subtitle, table stem, rows)])
         (
             "Repositories",
             LEGEND,
-            [
-                ("Software", f"{scope}-repos", software, False),
-                ("Documentation and examples", f"{scope}-docs", docs, False),
-            ],
+            False,
+            [("Software", f"{scope}-repos", software), ("Documentation and examples", f"{scope}-docs", docs)],
         ),
         (
             "Packages",
             DOWNLOADS_NOTE,
-            [(title, f"{scope}-{title.lower()}", rows, by_org) for title, rows in packages.items()],
+            by_org,
+            [(title, f"{scope}-{title.lower()}", rows) for title, rows in packages.items()],
         ),
-        ("Images", PULLS_NOTE, [(None, f"{scope}-images", images, by_org)]),
+        ("Images", IMAGES_NOTE, by_org, [(None, f"{scope}-images", images)]),
     ]
     links, parts = [], []
-    for title, note, tables in groups:
+    for title, note, filtered, tables in groups:
         tables = [table for table in tables if table[2]]
         if tables:
-            links.append(f"[{title} ({sum(len(rows) for _, _, rows, _ in tables)})](#{title.lower()})")
+            links.append(f"[{title} ({sum(len(rows) for *_, rows in tables)})](#{title.lower()})")
             blocks = [
                 f"### {subtitle}\n\n{csv_table(stem, filtered)}" if subtitle else csv_table(stem, filtered)
-                for subtitle, stem, _, filtered in tables
+                for subtitle, stem, _ in tables
             ]
             parts.append(f"## {title}\n\n{note}\n\n" + "\n\n".join(blocks))
     return "\n\n".join(([" · ".join(links)] if len(links) > 1 else []) + parts)
@@ -448,7 +448,7 @@ def write_tables(data: Data, scope: str, names: list[str], images: list[dict], b
     software = repo_rows(data, [name for name in names if not data.out_of_the_way(name)])
     docs = docs_rows(data, [name for name in names if data.out_of_the_way(name)])
     write_table(f"{scope}-repos", list(data.table[0]), software)
-    write_table(f"{scope}-docs", DOCS_HEADER, docs)
+    write_table(f"{scope}-docs", ["repo", "kind", "live service"], docs)
     packages = {
         title: write(
             title.lower(),
@@ -623,7 +623,7 @@ def build() -> dict:
     )
 
     # All organizations: the home page, whose package and image tables the pages of packages and images show too
-    body = write_tables(data, ALL, names, data.images, by_org=True)
+    body = write_tables(data, "all", names, data.images, by_org=True)
     (GENERATED / "home.md").write_text(
         summary_sentence("Project Jupyter", tally(data, names)) + "\n\n" + body, encoding="utf-8"
     )
@@ -635,4 +635,4 @@ def build() -> dict:
         package_summary(data),
     )
 
-    return {"legend": LEGEND, "downloads_note": DOWNLOADS_NOTE, "pulls_note": PULLS_NOTE}
+    return {"downloads_note": DOWNLOADS_NOTE, "images_note": IMAGES_NOTE}

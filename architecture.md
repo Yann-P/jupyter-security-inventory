@@ -93,10 +93,9 @@ How the pages link to each other:
 - Package and image tables share the columns organization, repository and last published. Usage is downloads per
   month for packages and all-time pulls for images. Only the repo tables are tinted by kind.
 
-Every table has a "Download CSV" link: `write_table` writes the rows a table shows to `docs/_generated/<stem>.csv`,
-and the same rows as plain text, without links or thousands separators, to `docs/_generated/downloads/<stem>.csv`.
-A stem is `<organization>-<table>`, or `all-<table>` for the tables of the home page. The hand-written pages
-link to their stems by hand; Sphinx fails the build on a link to a file that does not exist.
+Every table has a "Download CSV" link to its rows as plain text, without links or thousands separators, in
+`docs/_generated/downloads/<stem>.csv`. A stem is `<organization>-<table>`, `all-<table>` for the tables of the home
+page, or `orgs` and `packages`; the hand-written pages link to theirs by hand.
 
 The class `sphinx-datatable` makes a table sortable and searchable (DataTables). `docs/_static/tables.js` hides
 everything but the sorting on a table of 10 rows or fewer, and adds a filter on the column named "organization" to

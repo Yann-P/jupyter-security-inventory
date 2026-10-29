@@ -5,7 +5,7 @@
 {download}`Download CSV </_generated/downloads/packages.csv>`
 
 ```{csv-table}
-:file: _generated/packages.csv
+:file: /_generated/packages.csv
 :header-rows: 1
 ```
 

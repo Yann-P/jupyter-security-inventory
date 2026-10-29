@@ -137,16 +137,15 @@ def test_sections_leave_out_empty_tables_and_the_sections_they_were_in():
     headings = [line for line in body.splitlines() if line.startswith("#")]
     assert headings == ["## Repositories", "### Software", "## Packages", "### npm"]
     assert body.startswith("[Repositories (1)](#repositories) · [Packages (1)](#packages)")  # no link to "Images"
+    assert "filter-by-org" not in body  # an organization's tables have no organization column to filter
 
     body = insights.sections("o", [["r"]], [["d"]], {"PyPI": [], "npm": []}, [], by_org=False)
     assert "(#" not in body  # a page with one section needs no links to its sections
 
 
-def test_sections_list_the_images_without_a_subheading_and_link_each_table_to_its_download():
+def test_sections_list_the_images_without_a_subheading():
     body = insights.sections("all", [["r"]], [], {"PyPI": [], "npm": []}, [["i"], ["j"]], by_org=True)
     headings = [line for line in body.splitlines() if line.startswith("#")]
     assert headings == ["## Repositories", "### Software", "## Images"]
     assert body.startswith("[Repositories (1)](#repositories) · [Images (2)](#images)")
-    assert "{download}`Download CSV </_generated/downloads/all-images.csv>`" in body
-    assert ":file: /_generated/all-images.csv" in body
     assert ":class: sphinx-datatable filter-by-org" in body  # the images have an organization column here
