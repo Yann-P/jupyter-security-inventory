@@ -17,24 +17,15 @@ def test_summary_sentence_reads_as_one_sentence():
     )
 
 
-def test_shown_turns_a_cell_back_into_the_text_it_displays():
-    assert (
-        insights.shown("[[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)]{.kind-package}")
-        == "jupyterhub/jupyterhub"
-    )
-    assert (
-        insights.shown("[]{.fa-brands .fa-python} [jupyterhub](https://pypi.org/project/jupyterhub/)") == "jupyterhub"
-    )
-    assert insights.shown("[1,234](https://pypistats.org/packages/jupyterhub)") == "1234"
-    assert insights.shown("unknown") == ""
-    text = "see [the docs](https://example.org), {{ repos }} <b>"
-    assert insights.shown(insights.plain(text)) == text  # text from a repo comes back as it was
-
-
-def test_write_table_writes_the_download_in_plain_text(tmp_path, monkeypatch):
+def test_a_table_writes_its_cells_for_the_page_and_its_values_for_the_download(tmp_path, monkeypatch):
     monkeypatch.setattr(insights, "GENERATED", tmp_path)
-    insights.write_table("o-repos", ["repo", "downloads/month"], [["[[o\\/r](/orgs/o/r.md)]{.kind-tooling}", "1,234"]])
-    assert (tmp_path / "o-repos.csv").read_text().startswith("repo,downloads/month\n[[o\\/r]")
+    table = insights.Table(
+        ["repo", "organization", "downloads/month"],
+        [["o/r", "o", 1234]],
+        [["[o\\/r](/orgs/o/r.md)", "[o](/orgs/o.md)", "1,234"]],
+    )
+    table.without_org().write("o-repos")
+    assert (tmp_path / "o-repos.csv").read_text() == 'repo,downloads/month\n[o\\/r](/orgs/o/r.md),"1,234"\n'
     assert (tmp_path / "downloads" / "o-repos.csv").read_text() == "repo,downloads/month\no/r,1234\n"
 
 
@@ -82,20 +73,23 @@ def test_published_lists_one_registry_most_downloaded_first():
     assert [p["name"] for _, p in insights.published(data, "PYPI")] == ["notebook"]
 
 
-def test_package_row_links_the_package_its_org_and_its_repo():
+def test_package_table_has_the_values_and_the_links_of_a_package():
     data = make_data(make_repo("jupyterhub/jupyterhub", [("PYPI", "jupyterhub", 1234, 56)], "runs multi-user servers"))
-    [(name, package)] = insights.published(data, "PYPI")
-    assert insights.package_row(data, name, package) == [
-        "[jupyterhub](https://pypi.org/project/jupyterhub/)",
-        "[jupyterhub](/orgs/jupyterhub.md)",
-        "[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)",
-        "[1,234](https://pypistats.org/packages/jupyterhub)",
-        "56",
-        "[2026-10-20]{.date}",
+    table = insights.package_table(data, "PYPI", ["jupyterhub/jupyterhub"])
+    assert table.rows == [["jupyterhub", "jupyterhub", "jupyterhub/jupyterhub", 1234, 56, "2026-10-20"]]
+    assert table.cells == [
+        [
+            "[jupyterhub](https://pypi.org/project/jupyterhub/)",
+            "[jupyterhub](/orgs/jupyterhub.md)",
+            "[jupyterhub\\/jupyterhub](/orgs/jupyterhub/jupyterhub.md)",
+            "[1,234](https://pypistats.org/packages/jupyterhub)",
+            "56",
+            "[2026-10-20]{.date}",
+        ]
     ]
 
 
-def test_image_row_leaves_unknown_pulls_and_repository_empty():
+def test_image_table_leaves_unknown_pulls_and_repository_empty():
     image = {
         "registry": "quay.io",
         "namespace": "jupyterhub",
@@ -105,20 +99,20 @@ def test_image_row_leaves_unknown_pulls_and_repository_empty():
         "last_published": "2026-07-01",
         "repo": None,
     }
-    row = dict(zip(insights.IMAGE_HEADER, insights.image_row(image)))
-    assert (row["all-time pulls"], row["repository"]) == ("", "")
+    cells = dict(zip(insights.IMAGE_HEADER, insights.image_table([image]).cells[0]))
+    assert (cells["all-time pulls"], cells["repository"]) == ("", "")
 
 
-def test_image_rows_list_the_most_pulled_first_and_the_images_without_pull_counts_last():
+def test_image_table_lists_the_most_pulled_first_and_the_images_without_pull_counts_last():
     base = {"namespace": "o", "tag": "1", "last_published": None, "repo": None}
-    rows = insights.image_rows(
+    table = insights.image_table(
         [
             base | {"registry": "quay.io", "name": "a", "pulls": None},
             base | {"registry": "docker.io", "name": "b", "pulls": 5},
             base | {"registry": "docker.io", "name": "c", "pulls": 9},
         ]
     )
-    assert [row[5] for row in rows] == ["9", "5", ""]
+    assert [row[5] for row in table.rows] == [9, 5, None]
 
 
 def test_package_summary_counts_the_packages_of_each_registry():
@@ -126,7 +120,7 @@ def test_package_summary_counts_the_packages_of_each_registry():
         make_repo("jupyterlab/lumino", [("NPM", "@lumino/coreutils", 5, 1), ("NPM", "@lumino/algorithm", 9, 1)]),
         make_repo("jupyter/notebook", [("PYPI", "notebook", 7, 3)]),
     )
-    assert [row[:4] for row in insights.package_summary(data)] == [
+    assert [row[:4] for row in insights.package_summary(data).cells] == [
         ["[PyPI](/packages/pypi.md)", 1, 1, 1],
         ["[npm](/packages/npm.md)", 2, 1, 1],
     ]
