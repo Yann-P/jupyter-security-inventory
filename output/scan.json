@@ -4021,13 +4021,13 @@
     "readme": "[![Build Status](https://github.com/jupyter-server/jupyter_ydoc/workflows/Tests/badge.svg)](https://github.com/jupyter-server/jupyter_ydoc/actions)\n[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n[![PyPI](https://img.shields.io/pypi/v/jupyter-ydoc)](https://pypi.org/project/jupyter-ydoc/)\n[![npm (scoped)](https://img.shields.io/npm/v/@jupyter/ydoc)](https://www.npmjs.com/package/@jupyter/ydoc)\n\n# jupyter_ydoc\n\n`jupyter_ydoc` provides [pycrdt](https://github.com/jupyter-server/pycrdt)-based data structures for various\ndocuments used in the Jupyter ecosystem. Built-in documents include:\n- `YBlob`: a generic immutable binary document.\n- `YUnicode`: a generic UTF8-encoded text document (`YFile` is an alias to `YUnicode`).\n- `YNotebook`: a Jupyter notebook document.\n\nThese documents are registered via an entry point under the `\"jupyter_ydoc\"` group as `\"blob\"`,\n`\"unicode\"` (or `\"file\"`), and `\"notebook\"`, respectively. You can access them as follows:\n\n```py\nfrom jupyter_ydoc import ydocs\n\nprint(ydocs)\n# {\n#     'blob': <class 'jupyter_ydoc.yblob.YBlob'>,\n#     'file': <class 'jupyter_ydoc.yfile.YFile'>,\n#     'notebook': <class 'jupyter_ydoc.ynotebook.YNotebook'>,\n#     'unicode': <class 'jupyter_ydoc.yunicode.YUnicode'>\n# }\n```\n\nWhich is just a shortcut to:\n\n```py\nfrom importlib.metadata import entry_points\n\nydocs = {ep.name: ep.load() for ep in entry_points(group=\"jupyter_ydoc\")}\n```\n\nOr directly import them:\n```py\nfrom jupyter_ydoc import YBlob, YUnicode, YNotebook\n```\n\nThe `\"jupyter_ydoc\"` entry point group can be populated with your own documents, e.g. by adding the\nfollowing to your package's `pyproject.toml`:\n\n```\n[project.entry-points.jupyter_ydoc]\nmy_document = \"my_package.my_file:MyDocumentClass\"\n```\n"
   },
   "jupyter-server/jupyverse": {
-    "head": "d9bb22a97da09ca3fb521995f34ea5011273faf4",
-    "n_files": 396,
+    "head": "d057077a380870b1bdfef7942c36dc90beaee37a",
+    "n_files": 400,
     "file_types": {
       "config": 53,
       "docs": 112,
       "other": 48,
-      "code": 167,
+      "code": 171,
       "media": 11,
       "notebook": 3,
       "web": 2
@@ -5083,7 +5083,7 @@
     "readme": "# .github"
   },
   "jupyter-xeus/cpp-terminal": {
-    "head": "463cc0b501dceeb89ec787e935e3e00115af4d0c",
+    "head": "f0aa76acfaa929e9000be9063233f32ac7f6a619",
     "n_files": 144,
     "file_types": {
       "other": 9,
@@ -5114,7 +5114,7 @@
       "ammaraskar/gcc-problem-matcher@master",
       "ammaraskar/msvc-problem-matcher@master",
       "cpp-linter/cpp-linter-action@v2",
-      "github/codeql-action@v4.38.3",
+      "github/codeql-action@v4.39.1",
       "ilammy/msvc-dev-cmd@v1.13.0",
       "lukka/get-cmake@latest",
       "mamba-org/setup-micromamba@v3.2.1",
@@ -6680,7 +6680,7 @@
     "readme": "# Issue tables for open source projects\n\nThis repository makes GitHub issue data in the Jupyter ecosystem easier to access. It does two things:\n\n1. Publishes issue data. A GitHub workflow runs each night, scrapes issues, pull requests, and comments from several Jupyter organizations, and publishes them as SQLite databases in a GitHub release.\n2. Shows issue tables. A MyST website reads that data and shows, for each organization, the open issues sorted by community reactions (👍 and ❤️).\n\n**🔗 View the live site:** <https://jupyter.org/github-data/>\n\n_🚨 This is not an official Jupyter service, it is just an experiment at making issue data more useful to the community._\n\n## Which organizations are included\n\nThe list lives in [`orgs.toml`](./orgs.toml).\nTo add an organization, add it there.\nThe next nightly run scrapes it and the site gets a page for it.\n\n## How this works\n\n### Collecting and publishing data\n\n[`release.yml`](.github/workflows/release.yml) runs every night.\nIt reads `orgs.toml`, then runs [`scripts/download_issues.py`](scripts/download_issues.py) once per organization, in parallel.\nThat script uses [`github-to-sqlite`](https://github.com/dogsheep/github-to-sqlite) to write repositories, issues, pull requests, and comments into `data/<org>.db`.\nThe workflow then attaches every `.db` file to the [`latest` release](https://github.com/jupyter/github-data/releases/tag/latest).\n\nTo download the data yourself:\n\n```bash\ngh release download latest --repo jupyter/github-data --pattern \"jupyterhub.db\"\n```\n\n### Building the website\n\n[`book.yml`](.github/workflows/book.yml) builds the site after every nightly release and on every push to `main`.\n\n1. [`scripts/generate_pages.py`](scripts/generate_pages.py) fills in [`templates/table.md`](templates/table.md) once per organization and writes the result to `book/org/`. That folder is generated, not committed.\n2. Each generated page downloads its organization's `.db` file from the latest release and renders the issue table.\n3. [MyST](https://mystmd.org) builds the site and GitHub Pages hosts it.\n\n## Local development\n\nPreview the site with a live server:\n\n```bash\nnox -s docs-live\n```\n\nScrape one organization yourself (needs a `GITHUB_TOKEN` environment variable):\n\n```bash\nnox -s download -- jupyter-book\n```\n\nLaunch JupyterLab in the same environment, for debugging:\n\n```bash\nnox -s lab\n```\n\n## Notes for maintainers\n\nGitHub disables scheduled workflows in repositories with no commits for 60 days.\nIf the `latest` re"
   },
   "jupyter/governance": {
-    "head": "60150aac91416dfbc7b1938faa08738cb339e7d2",
+    "head": "e2ba5352344f3b336d3dc43ed0bfe8ebab8533df",
     "n_files": 64,
     "file_types": {
       "docs": 46,
@@ -6887,14 +6887,14 @@
     "readme": "# Jupyter Sphinx Extensions\n\n[![BSD licence](https://img.shields.io/badge/License-BSD3-yellow.svg?logo=opensourceinitiative&logoColor=white)](LICENSE)\n[![black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)\n[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier&logoColor=white)](https://github.com/prettier/prettier)\n[![pre-commit](https://img.shields.io/badge/pre--commit-active-yellow?logo=pre-commit&logoColor=white)](https://pre-commit.com/)\n[![pypi version](https://img.shields.io/pypi/v/jupyter-sphinx?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/jupyter-sphinx/)\n[![conda-forge version badge](https://img.shields.io/conda/vn/conda-forge/jupyter-sphinx?logo=anaconda&logoColor=white&color=blue)](https://anaconda.org/conda-forge/jupyter-sphinx)\n[![tests](https://img.shields.io/github/actions/workflow/status/jupyter/jupyter-sphinx/tests.yml?logo=github&logoColor=white)](https://github.com/jupyter/jupyter-sphinx/actions/workflows/tests.yml)\n[![docs](https://img.shields.io/readthedocs/jupyter-sphinx?logo=readthedocs&logoColor=white)](https://jupyter-sphinx.readthedocs.io/)\n\n`jupyter-sphinx` enables running code embedded in Sphinx documentation and\nembedding output of that code into the resulting document. It has support\nfor rich output such as images and even Jupyter interactive widgets.\n\n## Installation\n\nWith pip:\n\n```bash\npip install jupyter_sphinx\n```\n\nwith conda:\n\n```bash\nconda install jupyter_sphinx -c conda-forge\n```\n\n## Usage\n\nYou can check out the documentation on https://jupyter-sphinx.readthedocs.io for up to date\nusage information and examples.\n\n## License\n\nWe use a shared copyright model that enables all contributors to maintain the\ncopyright on their contributions.\n\nAll code is licensed under the terms of the revised BSD license.\n"
   },
   "jupyter/jupyter.github.io": {
-    "head": "571acbb34144328df97cb6e059bb510f6c8bcac9",
+    "head": "6f9b3e2bdb6637547f022ec38aa90f5e1a891fdf",
     "n_files": 330,
     "file_types": {
-      "media": 239,
-      "config": 10,
+      "media": 240,
+      "config": 12,
       "other": 5,
-      "docs": 14,
-      "web": 52,
+      "docs": 12,
+      "web": 51,
       "code": 10
     },
     "packages": [],
@@ -13586,7 +13586,7 @@
     "readme": "# hatch-nodejs-version\n\n[![PyPI - Version](https://img.shields.io/pypi/v/hatch-nodejs-version.svg)](https://pypi.org/project/hatch-nodejs-version)\n[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hatch-nodejs-version.svg)](https://pypi.org/project/hatch-nodejs-version)\n[![Hatch project](https://img.shields.io/badge/%F0%9F%A5%9A-Hatch-4051b5.svg)](https://github.com/pypa/hatch)\n\n-----\nThis package provides two Hatch plugins:\n\n- [version source plugin](https://hatch.pypa.io/latest/plugins/version-source/) that reads/writes the package version\n  from the `version` field of the Node.js `package.json` file.\n- [metadata hook plugin](https://hatch.pypa.io/latest/plugins/metadata-hook/) that reads PEP 621 metadata from the\n  Node.js `package.json` file.\n\n**Table of Contents**\n\n- [Global dependency](#global-dependency)\n- [Version source](#version-source)\n- [Metadata hook](#metadata-hook)\n- [License](#license)\n\n## Global dependency\n\nEnsure `hatch-nodejs-version` is defined within the `build-system.requires` field in your `pyproject.toml` file.\n\n```toml\n[build-system]\nrequires = [\"hatchling\", \"hatch-nodejs-version\"]\nbuild-backend = \"hatchling.build\"\n```\n\n## Version source\n\nThe [version source plugin](https://hatch.pypa.io/latest/plugins/version-source/) name is `nodejs`.\n\n- ***pyproject.toml***\n\n    ```toml\n    [tool.hatch.version]\n    source = \"nodejs\"\n    ```\n\n- ***hatch.toml***\n\n    ```toml\n    [version]\n    source = \"nodejs\"\n    ```\n\n### Semver\n\nThe semver specification defines the following version sections:\n\n- `major`\n- `minor`\n- `patch`\n- `pre-release`\n- `build`\n\nMeanwhile, [PEP 440](https://peps.python.org/pep-0440/#version-scheme) defines:\n\n- `epoch`\n- `major`\n- `minor`\n- `patch`\n- `pre-release`\n- `post-release`\n- `dev-release`\n\nIn order to ensure contentful round-trip support, and ensure semantic consistency between Node.js and Python, this plugin only\naccepts the common version parts:\n\n- `major`\n- `minor`\n- `patch`\n- `pre-release`\n- `dev-release`\n\ne.g. `1.2.3-rc0`.\n\nNote that where normalisation occurs, the round-trip result will differ. This can be avoided by careful choice of the delimeters e.g. `-.`.\n\n\n### Version source options\n\n| Option        | Type | Default       | Description                                |\n|---------------| --- |---------------|--------------------------------------------|\n| `path`        | `str` | `package.json` | Relative path to the `package.json` file. |\n\n## Metadata hook\n\nThe [metadata hook plugin](https://h"
   },
   "jupyterlab/jupyter-ai": {
-    "head": "b1eabc9d04ddc8e584c02c1853d917c01ac57024",
+    "head": "8b3be5e3ce262c1928547debbe91455d05e41030",
     "n_files": 186,
     "file_types": {
       "docs": 33,
@@ -14143,13 +14143,13 @@
     "readme": "# JupyterCon 2018 JupyterLab tutorial.\n\nThis repository contain material and instructions to follow the JupyterLab tutorial during JupyterCon 2018.\n\nDuring the tutorial, feel free to get on the [Gitter `jupyterlab/jupyterlab` channel](https://gitter.im/jupyterlab/jupyterlab) for help and updates.\n\nIf you'd like to use JupyterLab without installing anything, you can go to the [JupyterLab demo Binder](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/c9df996a3bd27d9715de6da51b3c52d35def90f9?urlpath=lab/). You can then open a terminal and clone this repo with:\n```\ngit clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n```\n\n# Installation\n\nPlease read the following section and install the required software ahead of\ntime. We may ask you to update versions of the software more closely to the\ntutorial date.\n\nPlease do not rely on cloud hosting to follow this tutorial, as the network\nconnection may be unreliable. If possible, come to the tutorial with a computer\nwhere you have administrative privileges.\n\nFor this tutorial, we are standardizing on a conda-based python distribution\n(miniconda or Anaconda). We may not be able to help with installation issues if\nyou are using a different python distribution.\n\n## Software installation\n\n1. Install either the full [anaconda\n   distribution](https://www.anaconda.com/download/) (very large, includes lots\n   of conda packages by default) or\n   [miniconda](https://conda.io/miniconda.html) (much smaller, with only\n   essential packages by default, but any conda package can be installed).\n\n2. To get the tutorial materials, clone this repository. **Please plan to update the materials shortly before the tutorial.**\n\n    ```\n    git clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n    ```\n\n    To update the materials:\n    ```\n    cd jupytercon-jupyterlab-tutorial\n    git pull\n    ```\n\n    Feel free to open an issue or send a pull request to update these materials if things are unclear.\n\n3. Set up your environment.\n\n    Create a conda environment:\n\n    ```\n    conda create -n jlabtutorial -c conda-forge --override-channels --yes python=3.6 pip cookiecutter notebook pandas=0.23 nodejs jupyterlab ipywidgets matplotlib\n    ```\n\n    (You could instead create the environment from the supplied environment file with `conda env create -f jupytercon-jupyterlab-tutorial/environment.yml`)\n\n    Activate the conda environment:\n\n    ```\n    conda activate jlabtutorial\n    ```\n\n    Install extra Jupy"
   },
   "jupyterlab/jupyterlab": {
-    "head": "1c0d33b43b3bf2925b82af0c6e714ca047d2201d",
-    "n_files": 3084,
+    "head": "9653563211289c8d5c93faa7f84e030fe61aea80",
+    "n_files": 3087,
     "file_types": {
       "config": 604,
       "other": 24,
       "docs": 181,
-      "code": 1383,
+      "code": 1386,
       "web": 259,
       "media": 598,
       "notebook": 35
@@ -16695,15 +16695,15 @@
     "readme": "# jupyterlab-webrtc-docprovider\n\n[![install from PyPI][pypi-badge]][pypi] [![reuse from npm][npm-badge]][npm]\n[![install from conda-forge][conda-badge]][conda]\n[![demo on Binder][binder-badge]][binder] [![GitHub Actions][ci-badge]][ci]\n\n> Document collaboration for [JupyterLab], powered by [y-webrtc].\n\n## Requirements\n\n- Python >=3.7\n- JupyterLab >=3.1\n  - or a derived application like [JupyterLite] or [RetroLab]\n\n## How to Use It\n\n- [Install](#Install) the package\n- [Configure](#Configuration) your server for collaboration\n- Launch a [Lumino]-based Jupyter client that supports collaboration\n  - e.g. JupyterLab 3.1+, RetroLab 0.3+, or JupyterLite (beta)\n- Open the client with the `room` URL parameters\n  - e.g. `http://localhost:8888/lab?room=demo`\n  - optionally provide `username` and `usercolor`\n    - e.g. `http://localhost:8888/lab?room=demo&username=jo&usercolor=e65100`\n  - these parameters will probably be consumed, but _that's okay_\n- Open a shared editing activity like _Notebook_ or _Editor_\n\n## Install\n\nTo install the extension, run:\n\n```bash\n                 pip install jupyterlab-webrtc-docprovider\nmamba install -c conda-forge jupyterlab-webrtc-docprovider\nconda install -c conda-forge jupyterlab-webrtc-docprovider\n```\n\n> For a development install, see the [contributing guide].\n\n## How it Works\n\nUnlike JupyterLab's built-in, purely WebSocket-based [collaborative] document provider,\n`jupyterlab-webrtc-docprovider` relies on:\n\n- an initialing [signaling server] to locate peers\n- the [WebRTC] protocol to coordinate actual data exchange\n\n## Configuration\n\n### Server Configuration\n\nJupyter Server is configured with `jupyter_server_config.json`:\n\n```json\n{\n  \"LabServerApp\": {\n    \"collaborative\": true\n  }\n}\n```\n\n#### `collaborative`\n\nThis flag must be enabled for the provider to be used.\n\n> In JupyterLite, this is a configurable of `jupyter-config-data` in\n> `jupyter-lite.json`.\n\n### Client Configuration\n\nUser-configurable settings can be pre-populated in\n`{sys.prefix}/share/jupyter/lab/settings/overrides.json`: `roomPrefix` and\n`signalingUrls` are security-related.\n\n```json\n{\n  \"@jupyterlite/webrtc-docprovider:plugin\": {\n    \"disabled\": false,\n    \"room\": \"an pre-shared room name\",\n    \"roomPrefix\": \"a-very-unique-name\",\n    \"signalingUrls\": [\n      \"wss://y-webrtc-signaling-eu.herokuapp.com\",\n      \"wss://y-webrtc-signaling-us.herokuapp.com\",\n      \"wss://signaling.yjs.dev\"\n    ],\n    \"usercolor\": \"f57c00\",\n    \"username\": \"Jo V. Un\"\n  }\n}\n```\n\n> In Ju"
   },
   "jupyterlite/jupyterlite": {
-    "head": "ae6cd6e1dc113e678971d045d86306a750a018fb",
-    "n_files": 508,
+    "head": "cabf5b1d1bba4b9f470410709593f056f4caf50a",
+    "n_files": 509,
     "file_types": {
       "config": 94,
       "docs": 71,
       "other": 14,
       "code": 168,
       "media": 80,
-      "notebook": 42,
+      "notebook": 43,
       "web": 37,
       "data": 2
     },
