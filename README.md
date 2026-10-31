@@ -78,6 +78,10 @@ nothing. To relabel everything, switch to another model or delete `output/classi
 Change the scripts, never `output/` by hand. Rerun the pipeline from the step you changed, run `pytest`,
 and commit the new outputs with your change. CI runs the tests and checks that `jupyter_repos.json` and `repos.csv` are up to date.
 
+The daily update and the site build install `requirements.txt` and `requirements-docs.txt`, which pin every
+dependency, including indirect ones, to an exact version and hash. After changing the dependencies in
+`pyproject.toml`, regenerate them with the command on the second line of each file.
+
 ## License
 
 BSD 3-Clause.
