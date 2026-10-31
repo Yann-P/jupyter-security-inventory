@@ -70,16 +70,16 @@ they use its packages in their build requirements. "Used in CI" counts `ci` and 
 
 ## The site
 
-`docs/conf.py` calls `insights.build()` every time Sphinx starts. It reads `output/`, then writes the CSV tables to
-`docs/_generated/` and a page per organization and repo to `docs/orgs/`. Both folders are generated and not
-committed. The other pages are written by hand and include those tables.
+`docs/conf.py` calls `insights.build()` every time Sphinx starts. It reads `output/`, then writes the CSV tables and
+the body of the home page to `docs/_generated/` and a page per organization and repo to `docs/orgs/`. Both folders
+are generated and not committed. The other pages are written by hand and include those tables.
 
 | Page | Content | Source |
 |---|---|---|
-| Home (`index.md`) | All repos, one row each | `repos.csv` |
+| All organizations (`index.md`) | The sections of an organization page, for all of them: repos, packages (PyPI, npm) and images. Its body is `_generated/home.md` | `jupyter_repos.json`, `images.json`, `repos.csv` |
 | Organizations (`orgs.md`) | One page per organization that has a repo: its repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json` |
-| Published packages (`packages.md`) | A summary table, then a page with one table for PyPI and one for npm | `jupyter_repos.json` |
-| Container images (`images.md`) | One table of images | `images.json` |
+| Published packages (`packages.md`) | A summary table, then a page with one table for PyPI and one for npm (the home page's tables) | `jupyter_repos.json` |
+| Container images (`images.md`) | One table of images (the home page's table) | `images.json` |
 | About (`about.md`) | The README | `README.md` |
 
 How the pages link to each other:
@@ -92,6 +92,10 @@ How the pages link to each other:
   to the organization of its namespace.
 - Package and image tables share the columns organization, repository and last published. Usage is downloads per
   month for packages and all-time pulls for images. Only the repo tables are tinted by kind.
+
+Every table has a "Download CSV" link to its rows as plain text, without links or thousands separators, in
+`docs/_generated/downloads/<stem>.csv`. A stem is `<organization>-<table>`, `all-<table>` for the tables of the home
+page, or `orgs` and `packages`; the hand-written pages link to theirs by hand.
 
 The class `sphinx-datatable` makes a table sortable and searchable (DataTables). `docs/_static/tables.js` hides
 everything but the sorting on a table of 10 rows or fewer, and adds a filter on the column named "organization" to

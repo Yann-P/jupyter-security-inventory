@@ -4,12 +4,12 @@ html_theme.sidebar_secondary.remove: true
 
 # Container images
 
-{{ pulls_note }} The tag is `latest`, or the newest tag if there is no `latest`.
+{{ images_note }}
 
-{download}`Download list <../output/images.txt>`
+{download}`Download CSV </_generated/downloads/all-images.csv>`
 
 ```{csv-table}
-:file: _generated/images.csv
+:file: /_generated/all-images.csv
 :header-rows: 1
 :class: sphinx-datatable filter-by-org
 ```
