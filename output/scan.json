@@ -10597,7 +10597,7 @@
     "readme": "# [chartpress](https://github.com/jupyterhub/chartpress)\n\n[![Latest PyPI version](https://img.shields.io/pypi/v/chartpress?logo=pypi)](https://pypi.python.org/pypi/chartpress)\n[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jupyterhub/chartpress/test.yaml?logo=github)](https://github.com/jupyterhub/chartpress/actions)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/chartpress/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\nChartpress automate basic Helm chart development work. It is tightly used in development of the [JupyterHub](https://github.com/jupyterhub/zero-to-jupyterhub-k8s) and [BinderHub](https://github.com/jupyterhub/binderhub) Helm charts.\n\n## Features\n\nChartpress can do the following with the help of some configuration.\n\n- Update Chart.yaml's version appropriately\n- Build docker images and tag them appropriately\n- Push built images to a docker image repository\n- Update values.yaml to reference the built images\n- Publish a chart to a Helm chart registry based on GitHub pages\n- Reset changes to Chart.yaml and values.yaml\n"
   },
   "jupyterhub/configurable-http-proxy": {
-    "head": "65b3864479631b299d120c289c7b10515169da76",
+    "head": "dd5b2c56edabf3ecd9f6ae48dedafd9a156264ad",
     "n_files": 42,
     "file_types": {
       "other": 9,
@@ -11105,7 +11105,7 @@
     "readme": "# Jupyter Server Proxy\n\n[![ReadTheDocs badge](https://img.shields.io/readthedocs/jupyter-server-proxy?logo=read-the-docs)](https://jupyter-server-proxy.readthedocs.io/)\n[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jupyterhub/jupyter-server-proxy/test.yaml?logo=github&branch=main)](https://github.com/jupyterhub/jupyter-server-proxy/actions)\n[![PyPI badge](https://img.shields.io/pypi/v/jupyter-server-proxy.svg?logo=pypi)](https://pypi.python.org/pypi/jupyter-server-proxy)\n[![Conda badge](https://img.shields.io/conda/vn/conda-forge/jupyter-server-proxy?logo=conda-forge)](https://anaconda.org/conda-forge/jupyter-server-proxy)\n[![NPM badge](https://img.shields.io/npm/v/@jupyterhub/jupyter-server-proxy.svg?logo=npm)](https://www.npmjs.com/package/@jupyterhub/jupyter-server-proxy)\n\nJupyter Server Proxy lets you run arbitrary external processes (such as\nRStudio, Shiny Server, Syncthing, PostgreSQL, Code Server, etc)\nalongside your notebook server and provide authenticated web access to\nthem using a path like `/rstudio` next to others like `/lab`. Alongside\nthe python package that provides the main functionality, the JupyterLab\nextension (`@jupyterhub/jupyter-server-proxy`) provides buttons in the\nJupyterLab launcher window to get to RStudio for example.\n\n**Note:** This project used to be called **nbserverproxy**. As\nnbserverproxy is an older version of jupyter-server-proxy, uninstall\nnbserverproxy before installing jupyter-server-proxy to avoid conflicts.\n\nThe primary use cases are:\n\n1.  Use with JupyterHub / Binder to allow launching users into web\n    interfaces that have nothing to do with Jupyter - such as RStudio,\n    Shiny, or OpenRefine.\n2.  Allow access from frontend javascript (in classic notebook or\n    JupyterLab extensions) to access web APIs of other processes running\n    locally in a safe manner. This is used by the [JupyterLab\n    extension](https://github.com/dask/dask-labextension) for\n    [dask](https://www.dask.org/).\n\n[The documentation](https://jupyter-server-proxy.readthedocs.io/)\ncontains information on installation & usage.\n\n## Security warning\n\nJupyter Server Proxy is often used to start a user defined process listening to\nsome network port (e.g. `http://localhost:4567`) for a user starting a Jupyter Server\nthat only that user has permission to access. The user can then access the\nstarted process proxied through the Jupyter Server.\n\nFor safe use of Jupyter Server Proxy, you should ensure that the process"
   },
   "jupyterhub/jupyterhub": {
-    "head": "5dd3832731fd1b17ebdce2e8b4271440410d3ed4",
+    "head": "afd52ae2322cf5a53f2170c3d6951a04ca8ca228",
     "n_files": 429,
     "file_types": {
       "other": 18,
@@ -11703,7 +11703,7 @@
     "readme": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "4bdea9849b8181b7cb02109dd6ac8af7128fa8b6",
+    "head": "b2bd3fa36f8ece86a4e542c910969c70768607a1",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -12634,7 +12634,7 @@
     "readme": "# wrapspawner for Jupyterhub\n\nThis package includes **WrapSpawner** and **ProfilesSpawner**, which provide mechanisms for runtime configuration of spawners. \nThe inspiration for their development was to allow users to select from a range of pre-defined batch job profiles, but\ntheir operation is completely generic.\n\n## Installation\n\n1. Most users can install via pip:\n\n      `pip install wrapspawner`\n\n   To install an editable copy for development, from root directory of this repo (where setup.py is), run `pip install -e .`\n   See also [pip VCS support](https://pip.pypa.io/en/stable/reference/pip_install/#vcs-support) if you need a specific revision.\n\n2. Add lines in `jupyterhub_config.py` for the spawner you intend to use, e.g.\n   \n   ```python\n      c.JupyterHub.spawner_class = 'wrapspawner.ProfilesSpawner'\n   ```\n3. Depending on the spawner, additional configuration will likely be needed.\n\n## Wrapper and Profile Spawners\n\n### Overview\n\n[`WrapSpawner`](https://github.com/jupyterhub/wrapspawner/blob/master/wrapspawner/wrapspawner.py#L1)\nprovides a mechanism to wrap the interface of a JupyterHub Spawner such that\nthe Spawner class to use for single-user servers can be chosen dynamically.\nSubclasses may modify the class or properties of the child Spawner at any point\nbefore `start()` is called (e.g. from Authenticator `pre_spawn` hooks or options form \nprocessing) and that state will be preserved on restart. The `start/stop/poll`\nmethods are not real coroutines, but simply pass through the Futures returned\nby the wrapped Spawner class.\n\n[`ProfilesSpawner`](https://github.com/jupyterhub/wrapspawner/blob/master/wrapspawner/wrapspawner.py#L120)\nleverages JupyterHub's `Spawner` \"options form\" feature to allow user-driven\nconfiguration of Spawner classes while permitting:\n\n   * configuration of Spawner classes that don't natively implement `options_form`\n   * administrator control of allowed configuration changes\n   * runtime choice of which Spawner backend to launch\n\n### Example\n\nHere is a screenshot of a typical dropdown menu letting the user choose between several SLURM instances:\n![](screenshot.png)\n\nThe following configuration snippet lets the user choose between a Jupyter server\nrunning as a local process or one of two different Docker Images to run within `DockerSpawner`.\n\n   ```python\n   c.JupyterHub.spawner_class = 'wrapspawner.ProfilesSpawner'\n   c.Spawner.http_timeout = 120\n   #----------------------------------------------------------------------------"
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "e1606f9428d022b66fdc5b2d67953284e6a94c72",
+    "head": "58126cc0a1efaef26a2ad5ab06b97ec825feffc2",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -12854,7 +12854,7 @@
     "readme": "# Jupyterlab Benchmarks\n\n[![Join the chat at https://gitter.im/jupyterlab/Performance](https://badges.gitter.im/jupyterlab/Performance.svg)](https://gitter.im/jupyterlab/Performance?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)\n\nThis repository is a place to make JupyterLab fast.\n\nIt tracks with benchmarks tooling the performance evolution of [JupyterLab](http://github.com/jupyterlab/jupyterlab). Read more on the [documentation website](https://jupyterlab-benchmarks.readthedocs.io).\n\n## Quickstart\n\nThe best way to use this project for benchmark test execution is to start a manual benchmark workflow in the repository actions for [performance](https://github.com/jupyterlab/benchmarks/actions/workflows/benchmark.yml) or [memory-leaks](https://github.com/jupyterlab/benchmarks/actions/workflows/benchmark.yml).\n\n\n### Performance tests\n\nThe _performance_ tests will measure the execution of the following scenario: \n\n- Opening the test notebook\n- Switching from the test notebook to a copy of it\n- Switching back\n- Switching from the test notebook to a text editor\n- Switching back\n- Search for a word\n- Start the debugger\n- Closing the test notebook\n\nThere are multiple test notebooks available and their size can be tune with a size parameter.\n\nThose cases will be run on the provided challenger repo/branch and in the reference JupyterLab repo at a given branch. Then it will produce a report that can be downloaded as artifacts when done.\n\n![benchmark-workflow](https://raw.githubusercontent.com/jupyterlab/benchmarks/master/docs/source/benchmarks/images/benchmark_workflow.png \"benchmark-workflow\")\n\nThe workflow parameters are:\n\n- JupyterLab Git repo [required]: fork name in format _{owner}/{repo}_\n- Git repository reference [required]: typically branch name of a PR\n- Reference branch [default: `master`]: Branch on `jupyterlab/jupyterlab` to use a reference\n- Number of samples [default: 100]: Number of experiments to run to build the statistical distribution of execution time\n- Test notebooks to use [default: `[\"codeNotebook\", \"mdNotebook\", \"longOutput\", \"errorOutputs\"]`]: \nThe test notebooks to execute; the available test notebooks are: [\"codeNotebook\", \"mdNotebook\", \"largePlotly\", \"longOutput\", \"manyPlotly\", \"manyOutputs\", \"errorOutputs\"]\n- Test files size [default: 100]: tests notebooks are parametrized with an integer that is proportional to their size. \n\n> You need to remember that a GitHub job is limited to 6 hours. This means you may nee"
   },
   "jupyterlab/eslint-plugin": {
-    "head": "3b8c32b5c12d56259d2b1ea4a4165d25b9049355",
+    "head": "012aae8d84082855966722758eb90cf3c4bf44ee",
     "n_files": 143,
     "file_types": {
       "config": 23,
@@ -14143,7 +14143,7 @@
     "readme": "# JupyterCon 2018 JupyterLab tutorial.\n\nThis repository contain material and instructions to follow the JupyterLab tutorial during JupyterCon 2018.\n\nDuring the tutorial, feel free to get on the [Gitter `jupyterlab/jupyterlab` channel](https://gitter.im/jupyterlab/jupyterlab) for help and updates.\n\nIf you'd like to use JupyterLab without installing anything, you can go to the [JupyterLab demo Binder](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/c9df996a3bd27d9715de6da51b3c52d35def90f9?urlpath=lab/). You can then open a terminal and clone this repo with:\n```\ngit clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n```\n\n# Installation\n\nPlease read the following section and install the required software ahead of\ntime. We may ask you to update versions of the software more closely to the\ntutorial date.\n\nPlease do not rely on cloud hosting to follow this tutorial, as the network\nconnection may be unreliable. If possible, come to the tutorial with a computer\nwhere you have administrative privileges.\n\nFor this tutorial, we are standardizing on a conda-based python distribution\n(miniconda or Anaconda). We may not be able to help with installation issues if\nyou are using a different python distribution.\n\n## Software installation\n\n1. Install either the full [anaconda\n   distribution](https://www.anaconda.com/download/) (very large, includes lots\n   of conda packages by default) or\n   [miniconda](https://conda.io/miniconda.html) (much smaller, with only\n   essential packages by default, but any conda package can be installed).\n\n2. To get the tutorial materials, clone this repository. **Please plan to update the materials shortly before the tutorial.**\n\n    ```\n    git clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n    ```\n\n    To update the materials:\n    ```\n    cd jupytercon-jupyterlab-tutorial\n    git pull\n    ```\n\n    Feel free to open an issue or send a pull request to update these materials if things are unclear.\n\n3. Set up your environment.\n\n    Create a conda environment:\n\n    ```\n    conda create -n jlabtutorial -c conda-forge --override-channels --yes python=3.6 pip cookiecutter notebook pandas=0.23 nodejs jupyterlab ipywidgets matplotlib\n    ```\n\n    (You could instead create the environment from the supplied environment file with `conda env create -f jupytercon-jupyterlab-tutorial/environment.yml`)\n\n    Activate the conda environment:\n\n    ```\n    conda activate jlabtutorial\n    ```\n\n    Install extra Jupy"
   },
   "jupyterlab/jupyterlab": {
-    "head": "9653563211289c8d5c93faa7f84e030fe61aea80",
+    "head": "07650742fe36a27ce33645f9e0d0ca520594fa5b",
     "n_files": 3087,
     "file_types": {
       "config": 604,
@@ -15570,7 +15570,7 @@
     "readme": "# JupyterLab language package template\n\nJupyterlab language pack template using [copier](https://copier.readthedocs.io).\n\n## Creating a package\n\nTo create a package you will need to execute:\n\n```sh\npip install babel copier copier-templates-extensions jinja2-time\nmkdir jupyterlab-language-pack\ncd jupyterlab-language-pack\ncopier gh:jupyterlab/language-pack-cookiecutter.git .\n```\n\n## Updating a existing package\n\nTo update a package you will need to execute in the package folder:\n\n```sh\npip install babel copier copier-templates-extensions jinja2-time\ncopier update\n```\n"
   },
   "jupyterlab/language-packs": {
-    "head": "f6cb88a3078aece35e385a6aef35c86c6c66a198",
+    "head": "80440f5bb0faa4635b52e8c50806bde26b4f6394",
     "n_files": 832,
     "file_types": {
       "docs": 101,
@@ -15784,12 +15784,12 @@
       ]
     },
     "uses": [
-      "actions/checkout@v7",
-      "actions/download-artifact@v8",
-      "actions/setup-python@v7",
-      "actions/upload-artifact@v7",
-      "crowdin/github-action@v3",
-      "pypa/gh-action-pypi-publish@release/v1"
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+      "crowdin/github-action@959dc74ac104447731cba99a016f85d0ae719788",
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
     "build_requires": [

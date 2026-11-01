@@ -17,7 +17,7 @@
       "name": "nbviewer",
       "tag": "latest",
       "last_published": "2020-12-02",
-      "pulls": 3234,
+      "pulls": 3238,
       "reference": "docker.io/ipython/nbviewer:latest",
       "repo": null,
       "reason": null
@@ -28,7 +28,7 @@
       "name": "notebook",
       "tag": "latest",
       "last_published": "2017-05-18",
-      "pulls": 139491,
+      "pulls": 139494,
       "reference": "docker.io/ipython/notebook:latest",
       "repo": null,
       "reason": null
@@ -39,7 +39,7 @@
       "name": "scipyserver",
       "tag": "latest",
       "last_published": "2016-06-21",
-      "pulls": 321090,
+      "pulls": 321091,
       "reference": "docker.io/ipython/scipyserver:latest",
       "repo": null,
       "reason": null
@@ -50,7 +50,7 @@
       "name": "scipystack",
       "tag": "latest",
       "last_published": "2015-07-23",
-      "pulls": 15011,
+      "pulls": 15014,
       "reference": "docker.io/ipython/scipystack:latest",
       "repo": null,
       "reason": null
@@ -61,7 +61,7 @@
       "name": "all-spark-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 75204312,
+      "pulls": 75204539,
       "reference": "docker.io/jupyter/all-spark-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -72,7 +72,7 @@
       "name": "base-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 14879401,
+      "pulls": 14880656,
       "reference": "docker.io/jupyter/base-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -94,7 +94,7 @@
       "name": "datascience-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 36299105,
+      "pulls": 36301062,
       "reference": "docker.io/jupyter/datascience-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -105,7 +105,7 @@
       "name": "demo",
       "tag": "latest",
       "last_published": "2017-12-18",
-      "pulls": 80368,
+      "pulls": 80372,
       "reference": "docker.io/jupyter/demo:latest",
       "repo": null,
       "reason": null
@@ -116,7 +116,7 @@
       "name": "docker-stacks-foundation",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 205620,
+      "pulls": 205651,
       "reference": "docker.io/jupyter/docker-stacks-foundation:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -127,7 +127,7 @@
       "name": "julia-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 29912,
+      "pulls": 29935,
       "reference": "docker.io/jupyter/julia-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -138,7 +138,7 @@
       "name": "minimal-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 22525630,
+      "pulls": 22530161,
       "reference": "docker.io/jupyter/minimal-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -171,7 +171,7 @@
       "name": "nbcache",
       "tag": "latest",
       "last_published": "2017-08-27",
-      "pulls": 3111,
+      "pulls": 3113,
       "reference": "docker.io/jupyter/nbcache:latest",
       "repo": null,
       "reason": null
@@ -182,7 +182,7 @@
       "name": "nbviewer",
       "tag": "latest",
       "last_published": "2022-01-28",
-      "pulls": 2834715,
+      "pulls": 2834762,
       "reference": "docker.io/jupyter/nbviewer:latest",
       "repo": "jupyter/nbviewer",
       "reason": "named like the image"
@@ -204,7 +204,7 @@
       "name": "pyspark-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 71458762,
+      "pulls": 71460055,
       "reference": "docker.io/jupyter/pyspark-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -215,7 +215,7 @@
       "name": "r-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 2529152,
+      "pulls": 2529555,
       "reference": "docker.io/jupyter/r-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -226,7 +226,7 @@
       "name": "repo2docker",
       "tag": "latest",
       "last_published": "2021-09-16",
-      "pulls": 446505,
+      "pulls": 446520,
       "reference": "docker.io/jupyter/repo2docker:latest",
       "repo": null,
       "reason": null
@@ -237,7 +237,7 @@
       "name": "scipy-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 93343461,
+      "pulls": 93348800,
       "reference": "docker.io/jupyter/scipy-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -248,7 +248,7 @@
       "name": "statuspage",
       "tag": "latest",
       "last_published": "2020-03-04",
-      "pulls": 5253,
+      "pulls": 5254,
       "reference": "docker.io/jupyter/statuspage:latest",
       "repo": null,
       "reason": null
@@ -259,7 +259,7 @@
       "name": "tensorflow-notebook",
       "tag": "latest",
       "last_published": "2023-10-20",
-      "pulls": 75408004,
+      "pulls": 75408437,
       "reference": "docker.io/jupyter/tensorflow-notebook:latest",
       "repo": "jupyter/docker-stacks",
       "reason": "linked from the registry description"
@@ -270,7 +270,7 @@
       "name": "tmpnb",
       "tag": "latest",
       "last_published": "2018-01-24",
-      "pulls": 10479,
+      "pulls": 10481,
       "reference": "docker.io/jupyter/tmpnb:latest",
       "repo": null,
       "reason": null
@@ -281,7 +281,7 @@
       "name": "binderhub-ci-repos_minimal-dockerfile",
       "tag": "latest",
       "last_published": "2025-12-25",
-      "pulls": 35648,
+      "pulls": 35661,
       "reference": "docker.io/jupyterhub/binderhub-ci-repos_minimal-dockerfile:latest",
       "repo": null,
       "reason": null
@@ -291,8 +291,8 @@
       "namespace": "jupyterhub",
       "name": "configurable-http-proxy",
       "tag": "latest",
-      "last_published": "2026-07-08",
-      "pulls": 51126787,
+      "last_published": "2026-10-31",
+      "pulls": 51128770,
       "reference": "docker.io/jupyterhub/configurable-http-proxy:latest",
       "repo": "jupyterhub/configurable-http-proxy",
       "reason": "named like the image"
@@ -303,7 +303,7 @@
       "name": "jupyterhub",
       "tag": "latest",
       "last_published": "2026-10-28",
-      "pulls": 7288275,
+      "pulls": 7292386,
       "reference": "docker.io/jupyterhub/jupyterhub:latest",
       "repo": "jupyterhub/jupyterhub",
       "reason": "named like the image"
@@ -314,7 +314,7 @@
       "name": "jupyterhub-demo",
       "tag": "latest",
       "last_published": "2026-10-28",
-      "pulls": 45725,
+      "pulls": 45865,
       "reference": "docker.io/jupyterhub/jupyterhub-demo:latest",
       "repo": null,
       "reason": null
@@ -325,7 +325,7 @@
       "name": "jupyterhub-onbuild",
       "tag": "latest",
       "last_published": "2024-10-21",
-      "pulls": 114772,
+      "pulls": 114821,
       "reference": "docker.io/jupyterhub/jupyterhub-onbuild:latest",
       "repo": null,
       "reason": null
@@ -336,7 +336,7 @@
       "name": "k8s-binderhub",
       "tag": "1.0.0-0.dev.git.3983.h383374de",
       "last_published": "2026-07-01",
-      "pulls": 223270,
+      "pulls": 223947,
       "reference": "docker.io/jupyterhub/k8s-binderhub:1.0.0-0.dev.git.3983.h383374de",
       "repo": "jupyterhub/binderhub",
       "reason": "built by the repo's chartpress file"
@@ -347,7 +347,7 @@
       "name": "k8s-hub",
       "tag": "5.0.0-0.dev.git.7546.h622e1dac",
       "last_published": "2026-10-21",
-      "pulls": 124046762,
+      "pulls": 124048678,
       "reference": "docker.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7546.h622e1dac",
       "repo": "jupyterhub/zero-to-jupyterhub-k8s",
       "reason": "built by the repo's chartpress file"
@@ -358,7 +358,7 @@
       "name": "k8s-hub-slim",
       "tag": "5.0.0-0.dev.git.7546.h622e1dac",
       "last_published": "2026-10-21",
-      "pulls": 63928,
+      "pulls": 64370,
       "reference": "docker.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7546.h622e1dac",
       "repo": "jupyterhub/zero-to-jupyterhub-k8s",
       "reason": "built by the repo's chartpress file"
@@ -369,7 +369,7 @@
       "name": "k8s-image-awaiter",
       "tag": "4.4.4",
       "last_published": "2026-10-20",
-      "pulls": 1874064,
+      "pulls": 1874306,
       "reference": "docker.io/jupyterhub/k8s-image-awaiter:4.4.4",
       "repo": "jupyterhub/zero-to-jupyterhub-k8s",
       "reason": "built by the repo's chartpress file"
@@ -380,7 +380,7 @@
       "name": "k8s-image-cleaner",
       "tag": "0.2.0-n768.h13978ab",
       "last_published": "2021-09-22",
-      "pulls": 184161,
+      "pulls": 184165,
       "reference": "docker.io/jupyterhub/k8s-image-cleaner:0.2.0-n768.h13978ab",
       "repo": null,
       "reason": null
@@ -391,7 +391,7 @@
       "name": "k8s-network-tools",
       "tag": "4.4.4",
       "last_published": "2026-10-20",
-      "pulls": 118255887,
+      "pulls": 118259902,
       "reference": "docker.io/jupyterhub/k8s-network-tools:4.4.4",
       "repo": "jupyterhub/zero-to-jupyterhub-k8s",
       "reason": "built by the repo's chartpress file"
@@ -402,7 +402,7 @@
       "name": "k8s-pod-culler",
       "tag": "0.7.0",
       "last_published": "2018-09-03",
-      "pulls": 17639,
+      "pulls": 17666,
       "reference": "docker.io/jupyterhub/k8s-pod-culler:0.7.0",
       "repo": null,
       "reason": null
@@ -413,7 +413,7 @@
       "name": "k8s-pre-puller",
       "tag": "a21cecb",
       "last_published": "2018-02-05",
-      "pulls": 108276,
+      "pulls": 108300,
       "reference": "docker.io/jupyterhub/k8s-pre-puller:a21cecb",
       "repo": null,
       "reason": null
@@ -424,7 +424,7 @@
       "name": "k8s-secret-sync",
       "tag": "4.4.4",
       "last_published": "2026-10-20",
-      "pulls": 810888,
+      "pulls": 811308,
       "reference": "docker.io/jupyterhub/k8s-secret-sync:4.4.4",
       "repo": "jupyterhub/zero-to-jupyterhub-k8s",
       "reason": "built by the repo's chartpress file"
@@ -435,7 +435,7 @@
       "name": "k8s-singleuser-sample",
       "tag": "5.0.0-0.dev.git.7546.h622e1dac",
       "last_published": "2026-10-21",
-      "pulls": 66494832,
+      "pulls": 66496198,
       "reference": "docker.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7546.h622e1dac",
       "repo": "jupyterhub/zero-to-jupyterhub-k8s",
       "reason": "built by the repo's chartpress file"
@@ -446,7 +446,7 @@
       "name": "mybinder.org-analytics-publisher",
       "tag": "2020.12.4-0.dev.git.7737.h2710e4f4",
       "last_published": "2026-10-26",
-      "pulls": 13428,
+      "pulls": 13441,
       "reference": "docker.io/jupyterhub/mybinder.org-analytics-publisher:2020.12.4-0.dev.git.7737.h2710e4f4",
       "repo": "jupyterhub/mybinder.org-deploy",
       "reason": "built by the repo's chartpress file"
@@ -457,7 +457,7 @@
       "name": "mybinder.org-federation-redirect",
       "tag": "2020.12.4-0.dev.git.7685.h0302ce25",
       "last_published": "2026-10-01",
-      "pulls": 12675,
+      "pulls": 12708,
       "reference": "docker.io/jupyterhub/mybinder.org-federation-redirect:2020.12.4-0.dev.git.7685.h0302ce25",
       "repo": "jupyterhub/mybinder.org-deploy",
       "reason": "built by the repo's chartpress file"
@@ -468,7 +468,7 @@
       "name": "mybinder.org-minesweeper",
       "tag": "2020.12.4-0.dev.git.7733.hdb2e5d08",
       "last_published": "2026-10-25",
-      "pulls": 18190,
+      "pulls": 18209,
       "reference": "docker.io/jupyterhub/mybinder.org-minesweeper:2020.12.4-0.dev.git.7733.hdb2e5d08",
       "repo": "jupyterhub/mybinder.org-deploy",
       "reason": "built by the repo's chartpress file"
@@ -490,7 +490,7 @@
       "name": "mybinder.org-rsyslog",
       "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
       "last_published": "2026-08-24",
-      "pulls": 910,
+      "pulls": 920,
       "reference": "docker.io/jupyterhub/mybinder.org-rsyslog:2020.12.4-0.dev.git.7606.hffbc9140",
       "repo": "jupyterhub/mybinder.org-deploy",
       "reason": "built by the repo's chartpress file"
@@ -501,7 +501,7 @@
       "name": "mybinder.org-tc-init",
       "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
       "last_published": "2026-08-24",
-      "pulls": 15988,
+      "pulls": 15997,
       "reference": "docker.io/jupyterhub/mybinder.org-tc-init:2020.12.4-0.dev.git.7606.hffbc9140",
       "repo": "jupyterhub/mybinder.org-deploy",
       "reason": "built by the repo's chartpress file"
@@ -512,7 +512,7 @@
       "name": "singleuser",
       "tag": "latest",
       "last_published": "2026-10-28",
-      "pulls": 20282729,
+      "pulls": 20282983,
       "reference": "docker.io/jupyterhub/singleuser:latest",
       "repo": null,
       "reason": null
@@ -523,7 +523,7 @@
       "name": "systemuser",
       "tag": "latest",
       "last_published": "2017-08-11",
-      "pulls": 18243,
+      "pulls": 18244,
       "reference": "docker.io/jupyterhub/systemuser:latest",
       "repo": null,
       "reason": null
@@ -676,7 +676,7 @@
       "namespace": "jupyterhub",
       "name": "configurable-http-proxy",
       "tag": "latest",
-      "last_published": "2026-07-08",
+      "last_published": "2026-10-31",
       "pulls": null,
       "reference": "quay.io/jupyterhub/configurable-http-proxy:latest",
       "repo": "jupyterhub/configurable-http-proxy",

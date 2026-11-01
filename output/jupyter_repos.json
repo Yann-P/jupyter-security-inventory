@@ -1,5 +1,5 @@
 {
-  "fetched_on": "2026-10-31",
+  "fetched_on": "2026-11-01",
   "repos": [
     {
       "full_name": "binder-examples/.github",
@@ -2213,7 +2213,7 @@
           "name": "comm",
           "reason": "registry links to this repo",
           "downloads_last_month": 55663064,
-          "dependents": 11964,
+          "dependents": 11968,
           "last_published": "2025-07-25"
         }
       ],
@@ -2222,7 +2222,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:comm",
       "max_downloads_last_month": 55663064,
-      "top_package_dependents": 11964,
+      "top_package_dependents": 11968,
       "content": {
         "commit": "ba1c862a4cdb28d2aebc9b77c3b9616dbcffc44c",
         "n_files": 17,
@@ -2275,7 +2275,7 @@
           "name": "ipykernel",
           "reason": "registry links to this repo",
           "downloads_last_month": 54614879,
-          "dependents": 7026,
+          "dependents": 7027,
           "last_published": "2026-09-29"
         }
       ],
@@ -2284,7 +2284,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:ipykernel",
       "max_downloads_last_month": 54614879,
-      "top_package_dependents": 7026,
+      "top_package_dependents": 7027,
       "content": {
         "commit": "f87d0e09863101be7a961d53f29549397ff62c72",
         "n_files": 114,
@@ -2456,7 +2456,7 @@
           "name": "ipython",
           "reason": "registry links to this repo",
           "downloads_last_month": 97202828,
-          "dependents": 15413,
+          "dependents": 15418,
           "last_published": "2026-10-30"
         }
       ],
@@ -2476,7 +2476,7 @@
       "top_image_pulls": 18985,
       "top_package": "PYPI:ipython",
       "max_downloads_last_month": 97202828,
-      "top_package_dependents": 15413,
+      "top_package_dependents": 15418,
       "content": {
         "commit": "fb18ef0d9fc66200e884d287067f211d55e721ea",
         "n_files": 510,
@@ -2583,7 +2583,7 @@
           "name": "ipython-pygments-lexers",
           "reason": "registry links to this repo",
           "downloads_last_month": 54818996,
-          "dependents": 15665,
+          "dependents": 15674,
           "last_published": "2025-01-17"
         }
       ],
@@ -2592,7 +2592,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:ipython-pygments-lexers",
       "max_downloads_last_month": 54818996,
-      "top_package_dependents": 15665,
+      "top_package_dependents": 15674,
       "content": {
         "commit": "50791e25b02ebbdc8a13f2bbaf4b1cbea93f82a7",
         "n_files": 8,
@@ -2738,7 +2738,7 @@
           "name": "matplotlib-inline",
           "reason": "registry links to this repo",
           "downloads_last_month": 91853623,
-          "dependents": 16741,
+          "dependents": 16748,
           "last_published": "2026-05-08"
         }
       ],
@@ -2747,7 +2747,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:matplotlib-inline",
       "max_downloads_last_month": 91853623,
-      "top_package_dependents": 16741,
+      "top_package_dependents": 16748,
       "content": {
         "commit": "95c7f835483d1d27e888d4e16f6a78064349ee02",
         "n_files": 16,
@@ -2796,7 +2796,7 @@
           "name": "pickleshare",
           "reason": "declared here; registry links to a same-named repo (this repo's former home)",
           "downloads_last_month": 8533671,
-          "dependents": 1126,
+          "dependents": 1127,
           "last_published": "2018-09-25"
         }
       ],
@@ -2805,7 +2805,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:pickleshare",
       "max_downloads_last_month": 8533671,
-      "top_package_dependents": 1126,
+      "top_package_dependents": 1127,
       "content": {
         "commit": "9f0a267b02063bc01bd8a44c54909dab62a590a8",
         "n_files": 10,
@@ -2850,7 +2850,7 @@
           "name": "traitlets",
           "reason": "registry links to this repo",
           "downloads_last_month": 118414624,
-          "dependents": 19655,
+          "dependents": 19674,
           "last_published": "2026-08-03"
         }
       ],
@@ -2859,7 +2859,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:traitlets",
       "max_downloads_last_month": 118414624,
-      "top_package_dependents": 19655,
+      "top_package_dependents": 19674,
       "content": {
         "commit": "a576f243ec6c7be0ac3d00b3ba294408a84b068e",
         "n_files": 94,
@@ -6004,7 +6004,7 @@
           "name": "jupyter-server",
           "reason": "registry links to this repo",
           "downloads_last_month": 32556872,
-          "dependents": 5038,
+          "dependents": 5044,
           "last_published": "2026-09-15"
         }
       ],
@@ -6013,7 +6013,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-server",
       "max_downloads_last_month": 32556872,
-      "top_package_dependents": 5038,
+      "top_package_dependents": 5044,
       "content": {
         "commit": "e39ebd56b3ed2b201aa615448ec6adbeed8fa99c",
         "n_files": 342,
@@ -6190,7 +6190,7 @@
           "name": "jupyter-server-terminals",
           "reason": "registry links to this repo",
           "downloads_last_month": 28569855,
-          "dependents": 5066,
+          "dependents": 5072,
           "last_published": "2026-01-14"
         }
       ],
@@ -6199,7 +6199,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-server-terminals",
       "max_downloads_last_month": 28569855,
-      "top_package_dependents": 5066,
+      "top_package_dependents": 5072,
       "content": {
         "commit": "46563c0797a2d21526d0cc95c70dafc4e0e0440a",
         "n_files": 39,
@@ -6261,7 +6261,7 @@
           "name": "@jupyter/ydoc",
           "reason": "registry links to this repo",
           "downloads_last_month": 438546,
-          "dependents": 1004,
+          "dependents": 1056,
           "last_published": "2026-10-23"
         }
       ],
@@ -7163,7 +7163,7 @@
           "name": "widgetsnbextension",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 31834051,
-          "dependents": 6757,
+          "dependents": 6760,
           "last_published": "2026-08-18"
         },
         {
@@ -7171,7 +7171,7 @@
           "name": "jupyterlab-widgets",
           "reason": "registry links to this repo",
           "downloads_last_month": 31433178,
-          "dependents": 6781,
+          "dependents": 6784,
           "last_published": "2026-08-18"
         },
         {
@@ -7179,7 +7179,7 @@
           "name": "ipywidgets",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 31105039,
-          "dependents": 6623,
+          "dependents": 6626,
           "last_published": "2026-08-18"
         },
         {
@@ -7244,7 +7244,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:widgetsnbextension",
       "max_downloads_last_month": 31834051,
-      "top_package_dependents": 6757,
+      "top_package_dependents": 6760,
       "content": {
         "commit": "8ada3542abe85fdc52e2bfeeecc07f8db351cb9c",
         "n_files": 494,
@@ -9992,7 +9992,7 @@
           "name": "scipy-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 93343461,
+          "pulls": 93348800,
           "reference": "docker.io/jupyter/scipy-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10002,7 +10002,7 @@
           "name": "tensorflow-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 75408004,
+          "pulls": 75408437,
           "reference": "docker.io/jupyter/tensorflow-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10012,7 +10012,7 @@
           "name": "all-spark-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 75204312,
+          "pulls": 75204539,
           "reference": "docker.io/jupyter/all-spark-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10022,7 +10022,7 @@
           "name": "pyspark-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 71458762,
+          "pulls": 71460055,
           "reference": "docker.io/jupyter/pyspark-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10032,7 +10032,7 @@
           "name": "datascience-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 36299105,
+          "pulls": 36301062,
           "reference": "docker.io/jupyter/datascience-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10042,7 +10042,7 @@
           "name": "minimal-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 22525630,
+          "pulls": 22530161,
           "reference": "docker.io/jupyter/minimal-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10052,7 +10052,7 @@
           "name": "base-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 14879401,
+          "pulls": 14880656,
           "reference": "docker.io/jupyter/base-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10062,7 +10062,7 @@
           "name": "r-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 2529152,
+          "pulls": 2529555,
           "reference": "docker.io/jupyter/r-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10072,7 +10072,7 @@
           "name": "docker-stacks-foundation",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 205620,
+          "pulls": 205651,
           "reference": "docker.io/jupyter/docker-stacks-foundation:latest",
           "reason": "linked from the registry description"
         },
@@ -10082,7 +10082,7 @@
           "name": "julia-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 29912,
+          "pulls": 29935,
           "reference": "docker.io/jupyter/julia-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10198,7 +10198,7 @@
         }
       ],
       "top_image": "docker.io/jupyter/scipy-notebook",
-      "top_image_pulls": 93343461,
+      "top_image_pulls": 93348800,
       "top_package": null,
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
@@ -10608,7 +10608,7 @@
           "name": "jupyter",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 12288648,
-          "dependents": 1879,
+          "dependents": 1881,
           "last_published": "2024-08-30"
         }
       ],
@@ -10617,7 +10617,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter",
       "max_downloads_last_month": 12288648,
-      "top_package_dependents": 1879,
+      "top_package_dependents": 1881,
       "content": {
         "commit": "6b5eb0f469c7bc3ea43d6d2a0ba1057853c9a3a5",
         "n_files": 239,
@@ -10893,7 +10893,7 @@
           "name": "jupyter-client",
           "reason": "registry links to this repo",
           "downloads_last_month": 71447300,
-          "dependents": 9095,
+          "dependents": 9107,
           "last_published": "2026-08-28"
         }
       ],
@@ -10902,7 +10902,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-client",
       "max_downloads_last_month": 71447300,
-      "top_package_dependents": 9095,
+      "top_package_dependents": 9107,
       "content": {
         "commit": "978361b3785dcd9cba6c733f4555e833e88fc0df",
         "n_files": 101,
@@ -10957,7 +10957,7 @@
           "name": "jupyter-console",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 12492174,
-          "dependents": 2007,
+          "dependents": 2009,
           "last_published": "2023-03-06"
         }
       ],
@@ -10966,7 +10966,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-console",
       "max_downloads_last_month": 12492174,
-      "top_package_dependents": 2007,
+      "top_package_dependents": 2009,
       "content": {
         "commit": "29f882adec78a60a0891c69087436503493905ce",
         "n_files": 32,
@@ -11014,7 +11014,7 @@
           "name": "jupyter-core",
           "reason": "registry links to this repo",
           "downloads_last_month": 77056466,
-          "dependents": 11219,
+          "dependents": 11235,
           "last_published": "2025-10-16"
         }
       ],
@@ -11023,7 +11023,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-core",
       "max_downloads_last_month": 77056466,
-      "top_package_dependents": 11219,
+      "top_package_dependents": 11235,
       "content": {
         "commit": "4c4f526adab04ae6bf7821f65a5adbd011aa27ac",
         "n_files": 63,
@@ -11080,7 +11080,7 @@
           "name": "jupyter-events",
           "reason": "registry links to this repo",
           "downloads_last_month": 28962752,
-          "dependents": 5210,
+          "dependents": 5216,
           "last_published": "2026-04-20"
         }
       ],
@@ -11089,7 +11089,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-events",
       "max_downloads_last_month": 28962752,
-      "top_package_dependents": 5210,
+      "top_package_dependents": 5216,
       "content": {
         "commit": "deb61b4924d808234d295fe316360f6478584acb",
         "n_files": 62,
@@ -11467,7 +11467,7 @@
           "name": "nbclassic",
           "reason": "registry links to this repo",
           "downloads_last_month": 1980454,
-          "dependents": 551,
+          "dependents": 550,
           "last_published": "2025-09-16"
         }
       ],
@@ -11476,7 +11476,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:nbclassic",
       "max_downloads_last_month": 1980454,
-      "top_package_dependents": 551,
+      "top_package_dependents": 550,
       "content": {
         "commit": "173fdfecbda8e4e6a70d865fda7970ceb5239137",
         "n_files": 464,
@@ -11533,7 +11533,7 @@
           "name": "nbclient",
           "reason": "registry links to this repo",
           "downloads_last_month": 50729821,
-          "dependents": 6378,
+          "dependents": 6385,
           "last_published": "2026-06-05"
         }
       ],
@@ -11542,7 +11542,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:nbclient",
       "max_downloads_last_month": 50729821,
-      "top_package_dependents": 6378,
+      "top_package_dependents": 6385,
       "content": {
         "commit": "0811ff44c63c9853c4d6ba7265d7042ca7f8742a",
         "n_files": 71,
@@ -11598,7 +11598,7 @@
           "name": "nbconvert",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 49944679,
-          "dependents": 6139,
+          "dependents": 6146,
           "last_published": "2026-10-12"
         }
       ],
@@ -11607,7 +11607,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:nbconvert",
       "max_downloads_last_month": 49944679,
-      "top_package_dependents": 6139,
+      "top_package_dependents": 6146,
       "content": {
         "commit": "e681152f214b65387f875aad96a4726994533a0b",
         "n_files": 276,
@@ -11793,7 +11793,7 @@
           "name": "nbformat",
           "reason": "registry links to this repo",
           "downloads_last_month": 76592205,
-          "dependents": 8348,
+          "dependents": 8362,
           "last_published": "2026-08-17"
         },
         {
@@ -11810,7 +11810,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:nbformat",
       "max_downloads_last_month": 76592205,
-      "top_package_dependents": 8348,
+      "top_package_dependents": 8362,
       "content": {
         "commit": "cfb73afdd2a7f358953f2a34f747fd0d0e9d6288",
         "n_files": 130,
@@ -12003,13 +12003,13 @@
           "name": "nbviewer",
           "tag": "latest",
           "last_published": "2022-01-28",
-          "pulls": 2834715,
+          "pulls": 2834762,
           "reference": "docker.io/jupyter/nbviewer:latest",
           "reason": "named like the image"
         }
       ],
       "top_image": "docker.io/jupyter/nbviewer",
-      "top_image_pulls": 2834715,
+      "top_image_pulls": 2834762,
       "top_package": "PYPI:nbviewer",
       "max_downloads_last_month": 145,
       "top_package_dependents": 1,
@@ -12118,7 +12118,7 @@
           "name": "notebook",
           "reason": "registry links to this repo",
           "downloads_last_month": 28757551,
-          "dependents": 3028,
+          "dependents": 3030,
           "last_published": "2026-10-30"
         },
         {
@@ -12126,7 +12126,7 @@
           "name": "@jupyter-notebook/application",
           "reason": "registry links to this repo",
           "downloads_last_month": 4772,
-          "dependents": 25,
+          "dependents": 22,
           "last_published": "2026-10-30"
         },
         {
@@ -12223,7 +12223,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:notebook",
       "max_downloads_last_month": 28757551,
-      "top_package_dependents": 3028,
+      "top_package_dependents": 3030,
       "content": {
         "commit": "b5a05a862382c90bda0343af3535098a5548c023",
         "n_files": 376,
@@ -12285,7 +12285,7 @@
           "name": "notebook-shim",
           "reason": "declared here; registry entry is Jupyter-owned",
           "downloads_last_month": 27317089,
-          "dependents": 4475,
+          "dependents": 4476,
           "last_published": "2024-02-14"
         }
       ],
@@ -12294,7 +12294,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:notebook-shim",
       "max_downloads_last_month": 27317089,
-      "top_package_dependents": 4475,
+      "top_package_dependents": 4476,
       "content": {
         "commit": "e1baccba8e2201e41991eb1c6bd96ff94efa10cc",
         "n_files": 26,
@@ -12887,7 +12887,7 @@
           "name": "terminado",
           "reason": "registry links to this repo",
           "downloads_last_month": 29806864,
-          "dependents": 5248,
+          "dependents": 5254,
           "last_published": "2024-03-12"
         }
       ],
@@ -12896,7 +12896,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:terminado",
       "max_downloads_last_month": 29806864,
-      "top_package_dependents": 5248,
+      "top_package_dependents": 5254,
       "content": {
         "commit": "b070d12fa1108b482758f2ef6e3a0b54f7273196",
         "n_files": 41,
@@ -16163,7 +16163,7 @@
           "name": "k8s-binderhub",
           "tag": "1.0.0-0.dev.git.3983.h383374de",
           "last_published": "2026-07-01",
-          "pulls": 223270,
+          "pulls": 223947,
           "reference": "docker.io/jupyterhub/k8s-binderhub:1.0.0-0.dev.git.3983.h383374de",
           "reason": "built by the repo's chartpress file"
         },
@@ -16179,7 +16179,7 @@
         }
       ],
       "top_image": "docker.io/jupyterhub/k8s-binderhub",
-      "top_image_pulls": 223270,
+      "top_image_pulls": 223947,
       "top_package": "NPM:@jupyterhub/binderhub-client",
       "max_downloads_last_month": 594,
       "top_package_dependents": 1,
@@ -16303,7 +16303,7 @@
           "reason": "registry links to this repo",
           "downloads_last_month": 52957,
           "dependents": 1,
-          "last_published": "2026-07-08"
+          "last_published": "2026-10-31"
         }
       ],
       "images": [
@@ -16312,8 +16312,8 @@
           "namespace": "jupyterhub",
           "name": "configurable-http-proxy",
           "tag": "latest",
-          "last_published": "2026-07-08",
-          "pulls": 51126787,
+          "last_published": "2026-10-31",
+          "pulls": 51128770,
           "reference": "docker.io/jupyterhub/configurable-http-proxy:latest",
           "reason": "named like the image"
         },
@@ -16322,19 +16322,19 @@
           "namespace": "jupyterhub",
           "name": "configurable-http-proxy",
           "tag": "latest",
-          "last_published": "2026-07-08",
+          "last_published": "2026-10-31",
           "pulls": null,
           "reference": "quay.io/jupyterhub/configurable-http-proxy:latest",
           "reason": "named like the image"
         }
       ],
       "top_image": "docker.io/jupyterhub/configurable-http-proxy",
-      "top_image_pulls": 51126787,
+      "top_image_pulls": 51128770,
       "top_package": "NPM:configurable-http-proxy",
       "max_downloads_last_month": 52957,
       "top_package_dependents": 1,
       "content": {
-        "commit": "65b3864479631b299d120c289c7b10515169da76",
+        "commit": "dd5b2c56edabf3ecd9f6ae48dedafd9a156264ad",
         "n_files": 42,
         "file_types": {
           "other": 9,
@@ -16970,7 +16970,7 @@
           "name": "jupyter-server-proxy",
           "reason": "registry links to this repo",
           "downloads_last_month": 451131,
-          "dependents": 192,
+          "dependents": 193,
           "last_published": "2026-09-21"
         },
         {
@@ -16995,7 +16995,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-server-proxy",
       "max_downloads_last_month": 451131,
-      "top_package_dependents": 192,
+      "top_package_dependents": 193,
       "content": {
         "commit": "204020060c950dc60a362b7b35bff80b9e8249b7",
         "n_files": 90,
@@ -17067,7 +17067,7 @@
           "name": "jupyterhub",
           "tag": "latest",
           "last_published": "2026-10-28",
-          "pulls": 7288275,
+          "pulls": 7292386,
           "reference": "docker.io/jupyterhub/jupyterhub:latest",
           "reason": "named like the image"
         },
@@ -17083,12 +17083,12 @@
         }
       ],
       "top_image": "docker.io/jupyterhub/jupyterhub",
-      "top_image_pulls": 7288275,
+      "top_image_pulls": 7292386,
       "top_package": "PYPI:jupyterhub",
       "max_downloads_last_month": 260478,
       "top_package_dependents": 155,
       "content": {
-        "commit": "5dd3832731fd1b17ebdce2e8b4271440410d3ed4",
+        "commit": "afd52ae2322cf5a53f2170c3d6951a04ca8ca228",
         "n_files": 429,
         "file_types": {
           "other": 18,
@@ -17923,7 +17923,7 @@
           "name": "mybinder.org-minesweeper",
           "tag": "2020.12.4-0.dev.git.7733.hdb2e5d08",
           "last_published": "2026-10-25",
-          "pulls": 18190,
+          "pulls": 18209,
           "reference": "docker.io/jupyterhub/mybinder.org-minesweeper:2020.12.4-0.dev.git.7733.hdb2e5d08",
           "reason": "built by the repo's chartpress file"
         },
@@ -17933,7 +17933,7 @@
           "name": "mybinder.org-tc-init",
           "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
           "last_published": "2026-08-24",
-          "pulls": 15988,
+          "pulls": 15997,
           "reference": "docker.io/jupyterhub/mybinder.org-tc-init:2020.12.4-0.dev.git.7606.hffbc9140",
           "reason": "built by the repo's chartpress file"
         },
@@ -17943,7 +17943,7 @@
           "name": "mybinder.org-analytics-publisher",
           "tag": "2020.12.4-0.dev.git.7737.h2710e4f4",
           "last_published": "2026-10-26",
-          "pulls": 13428,
+          "pulls": 13441,
           "reference": "docker.io/jupyterhub/mybinder.org-analytics-publisher:2020.12.4-0.dev.git.7737.h2710e4f4",
           "reason": "built by the repo's chartpress file"
         },
@@ -17953,7 +17953,7 @@
           "name": "mybinder.org-federation-redirect",
           "tag": "2020.12.4-0.dev.git.7685.h0302ce25",
           "last_published": "2026-10-01",
-          "pulls": 12675,
+          "pulls": 12708,
           "reference": "docker.io/jupyterhub/mybinder.org-federation-redirect:2020.12.4-0.dev.git.7685.h0302ce25",
           "reason": "built by the repo's chartpress file"
         },
@@ -17963,18 +17963,18 @@
           "name": "mybinder.org-rsyslog",
           "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
           "last_published": "2026-08-24",
-          "pulls": 910,
+          "pulls": 920,
           "reference": "docker.io/jupyterhub/mybinder.org-rsyslog:2020.12.4-0.dev.git.7606.hffbc9140",
           "reason": "built by the repo's chartpress file"
         }
       ],
       "top_image": "docker.io/jupyterhub/mybinder.org-minesweeper",
-      "top_image_pulls": 18190,
+      "top_image_pulls": 18209,
       "top_package": null,
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "4bdea9849b8181b7cb02109dd6ac8af7128fa8b6",
+        "commit": "b2bd3fa36f8ece86a4e542c910969c70768607a1",
         "n_files": 315,
         "file_types": {
           "other": 42,
@@ -18785,7 +18785,7 @@
           "name": "simpervisor",
           "reason": "registry links to this repo",
           "downloads_last_month": 434920,
-          "dependents": 205,
+          "dependents": 206,
           "last_published": "2023-05-18"
         }
       ],
@@ -18794,7 +18794,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:simpervisor",
       "max_downloads_last_month": 434920,
-      "top_package_dependents": 205,
+      "top_package_dependents": 206,
       "content": {
         "commit": "24730d8bf9574e1adfb755804882acedd3696855",
         "n_files": 23,
@@ -19243,7 +19243,7 @@
           "name": "k8s-hub",
           "tag": "5.0.0-0.dev.git.7546.h622e1dac",
           "last_published": "2026-10-21",
-          "pulls": 124046762,
+          "pulls": 124048678,
           "reference": "docker.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7546.h622e1dac",
           "reason": "built by the repo's chartpress file"
         },
@@ -19253,7 +19253,7 @@
           "name": "k8s-network-tools",
           "tag": "4.4.4",
           "last_published": "2026-10-20",
-          "pulls": 118255887,
+          "pulls": 118259902,
           "reference": "docker.io/jupyterhub/k8s-network-tools:4.4.4",
           "reason": "built by the repo's chartpress file"
         },
@@ -19263,7 +19263,7 @@
           "name": "k8s-singleuser-sample",
           "tag": "5.0.0-0.dev.git.7546.h622e1dac",
           "last_published": "2026-10-21",
-          "pulls": 66494832,
+          "pulls": 66496198,
           "reference": "docker.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7546.h622e1dac",
           "reason": "built by the repo's chartpress file"
         },
@@ -19273,7 +19273,7 @@
           "name": "k8s-image-awaiter",
           "tag": "4.4.4",
           "last_published": "2026-10-20",
-          "pulls": 1874064,
+          "pulls": 1874306,
           "reference": "docker.io/jupyterhub/k8s-image-awaiter:4.4.4",
           "reason": "built by the repo's chartpress file"
         },
@@ -19283,7 +19283,7 @@
           "name": "k8s-secret-sync",
           "tag": "4.4.4",
           "last_published": "2026-10-20",
-          "pulls": 810888,
+          "pulls": 811308,
           "reference": "docker.io/jupyterhub/k8s-secret-sync:4.4.4",
           "reason": "built by the repo's chartpress file"
         },
@@ -19293,7 +19293,7 @@
           "name": "k8s-hub-slim",
           "tag": "5.0.0-0.dev.git.7546.h622e1dac",
           "last_published": "2026-10-21",
-          "pulls": 63928,
+          "pulls": 64370,
           "reference": "docker.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7546.h622e1dac",
           "reason": "built by the repo's chartpress file"
         },
@@ -19359,12 +19359,12 @@
         }
       ],
       "top_image": "docker.io/jupyterhub/k8s-hub",
-      "top_image_pulls": 124046762,
+      "top_image_pulls": 124048678,
       "top_package": null,
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "e1606f9428d022b66fdc5b2d67953284e6a94c72",
+        "commit": "58126cc0a1efaef26a2ad5ab06b97ec825feffc2",
         "n_files": 211,
         "file_types": {
           "other": 24,
@@ -19576,7 +19576,7 @@
       "max_downloads_last_month": 50272,
       "top_package_dependents": 0,
       "content": {
-        "commit": "3b8c32b5c12d56259d2b1ea4a4165d25b9049355",
+        "commit": "012aae8d84082855966722758eb90cf3c4bf44ee",
         "n_files": 143,
         "file_types": {
           "config": 23,
@@ -20206,7 +20206,7 @@
           "name": "jupyter-builder",
           "reason": "registry links to this repo",
           "downloads_last_month": 17948052,
-          "dependents": 3945,
+          "dependents": 3947,
           "last_published": "2026-10-27"
         },
         {
@@ -20223,7 +20223,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyter-builder",
       "max_downloads_last_month": 17948052,
-      "top_package_dependents": 3945,
+      "top_package_dependents": 3947,
       "content": {
         "commit": "fec862fedbb5cd7797d7a64c687975039bb8b035",
         "n_files": 61,
@@ -20739,7 +20739,7 @@
           "name": "jupyterlab",
           "reason": "registry links to this repo",
           "downloads_last_month": 30253541,
-          "dependents": 3924,
+          "dependents": 3926,
           "last_published": "2026-10-29"
         },
         {
@@ -20747,7 +20747,7 @@
           "name": "@jupyterlab/nbformat",
           "reason": "registry links to this repo",
           "downloads_last_month": 611212,
-          "dependents": 1033,
+          "dependents": 1087,
           "last_published": "2026-10-29"
         },
         {
@@ -20755,7 +20755,7 @@
           "name": "@jupyterlab/services",
           "reason": "registry links to this repo",
           "downloads_last_month": 532846,
-          "dependents": 999,
+          "dependents": 1051,
           "last_published": "2026-10-29"
         },
         {
@@ -20763,7 +20763,7 @@
           "name": "@jupyterlab/coreutils",
           "reason": "registry links to this repo",
           "downloads_last_month": 519906,
-          "dependents": 1006,
+          "dependents": 1062,
           "last_published": "2026-10-29"
         },
         {
@@ -20771,7 +20771,7 @@
           "name": "@jupyterlab/settingregistry",
           "reason": "registry links to this repo",
           "downloads_last_month": 430400,
-          "dependents": 1014,
+          "dependents": 1070,
           "last_published": "2026-10-29"
         },
         {
@@ -20779,7 +20779,7 @@
           "name": "@jupyterlab/statedb",
           "reason": "registry links to this repo",
           "downloads_last_month": 423455,
-          "dependents": 1017,
+          "dependents": 1073,
           "last_published": "2026-10-29"
         },
         {
@@ -20787,7 +20787,7 @@
           "name": "@jupyterlab/observables",
           "reason": "registry links to this repo",
           "downloads_last_month": 349814,
-          "dependents": 714,
+          "dependents": 756,
           "last_published": "2026-10-29"
         },
         {
@@ -20795,7 +20795,7 @@
           "name": "@jupyterlab/apputils",
           "reason": "registry links to this repo",
           "downloads_last_month": 334592,
-          "dependents": 694,
+          "dependents": 733,
           "last_published": "2026-10-29"
         },
         {
@@ -20803,7 +20803,7 @@
           "name": "@jupyterlab/ui-components",
           "reason": "registry links to this repo",
           "downloads_last_month": 313714,
-          "dependents": 700,
+          "dependents": 743,
           "last_published": "2026-10-29"
         },
         {
@@ -20811,7 +20811,7 @@
           "name": "@jupyterlab/rendermime",
           "reason": "registry links to this repo",
           "downloads_last_month": 306248,
-          "dependents": 670,
+          "dependents": 713,
           "last_published": "2026-10-29"
         },
         {
@@ -20819,7 +20819,7 @@
           "name": "@jupyterlab/statusbar",
           "reason": "registry links to this repo",
           "downloads_last_month": 301551,
-          "dependents": 693,
+          "dependents": 736,
           "last_published": "2026-10-29"
         },
         {
@@ -20827,7 +20827,7 @@
           "name": "@jupyterlab/rendermime-interfaces",
           "reason": "registry links to this repo",
           "downloads_last_month": 297090,
-          "dependents": 1072,
+          "dependents": 1114,
           "last_published": "2026-10-29"
         },
         {
@@ -20835,7 +20835,7 @@
           "name": "@jupyterlab/translation",
           "reason": "registry links to this repo",
           "downloads_last_month": 296811,
-          "dependents": 705,
+          "dependents": 748,
           "last_published": "2026-10-29"
         },
         {
@@ -20843,7 +20843,7 @@
           "name": "@jupyterlab/codeeditor",
           "reason": "registry links to this repo",
           "downloads_last_month": 273904,
-          "dependents": 660,
+          "dependents": 703,
           "last_published": "2026-10-29"
         },
         {
@@ -20851,7 +20851,7 @@
           "name": "@jupyterlab/docregistry",
           "reason": "registry links to this repo",
           "downloads_last_month": 258094,
-          "dependents": 647,
+          "dependents": 690,
           "last_published": "2026-10-29"
         },
         {
@@ -20859,7 +20859,7 @@
           "name": "@jupyterlab/codemirror",
           "reason": "registry links to this repo",
           "downloads_last_month": 245466,
-          "dependents": 365,
+          "dependents": 381,
           "last_published": "2026-10-29"
         },
         {
@@ -20867,7 +20867,7 @@
           "name": "@jupyterlab/application",
           "reason": "registry links to this repo",
           "downloads_last_month": 243756,
-          "dependents": 626,
+          "dependents": 668,
           "last_published": "2026-10-29"
         },
         {
@@ -20875,7 +20875,7 @@
           "name": "@jupyterlab/outputarea",
           "reason": "registry links to this repo",
           "downloads_last_month": 236527,
-          "dependents": 336,
+          "dependents": 349,
           "last_published": "2026-10-29"
         },
         {
@@ -20883,7 +20883,7 @@
           "name": "@jupyterlab/docmanager",
           "reason": "registry links to this repo",
           "downloads_last_month": 207747,
-          "dependents": 377,
+          "dependents": 401,
           "last_published": "2026-10-29"
         },
         {
@@ -20891,7 +20891,7 @@
           "name": "@jupyterlab/filebrowser",
           "reason": "registry links to this repo",
           "downloads_last_month": 204136,
-          "dependents": 366,
+          "dependents": 386,
           "last_published": "2026-10-29"
         },
         {
@@ -20899,7 +20899,7 @@
           "name": "@jupyterlab/cells",
           "reason": "registry links to this repo",
           "downloads_last_month": 197896,
-          "dependents": 319,
+          "dependents": 331,
           "last_published": "2026-10-29"
         },
         {
@@ -20907,7 +20907,7 @@
           "name": "@jupyterlab/notebook",
           "reason": "registry links to this repo",
           "downloads_last_month": 196684,
-          "dependents": 295,
+          "dependents": 306,
           "last_published": "2026-10-29"
         },
         {
@@ -20915,7 +20915,7 @@
           "name": "@jupyterlab/attachments",
           "reason": "registry links to this repo",
           "downloads_last_month": 193293,
-          "dependents": 322,
+          "dependents": 334,
           "last_published": "2026-10-29"
         },
         {
@@ -20923,7 +20923,7 @@
           "name": "@jupyterlab/documentsearch",
           "reason": "registry links to this repo",
           "downloads_last_month": 187056,
-          "dependents": 372,
+          "dependents": 388,
           "last_published": "2026-10-29"
         },
         {
@@ -20931,7 +20931,7 @@
           "name": "@jupyterlab/toc",
           "reason": "registry links to this repo",
           "downloads_last_month": 172344,
-          "dependents": 339,
+          "dependents": 353,
           "last_published": "2026-10-29"
         },
         {
@@ -20939,7 +20939,7 @@
           "name": "@jupyterlab/lsp",
           "reason": "registry links to this repo",
           "downloads_last_month": 162044,
-          "dependents": 320,
+          "dependents": 334,
           "last_published": "2026-10-29"
         },
         {
@@ -20947,7 +20947,7 @@
           "name": "@jupyterlab/markedparser-extension",
           "reason": "registry links to this repo",
           "downloads_last_month": 137019,
-          "dependents": 301,
+          "dependents": 313,
           "last_published": "2026-10-29"
         },
         {
@@ -20955,7 +20955,7 @@
           "name": "@jupyterlab/mermaid",
           "reason": "registry links to this repo",
           "downloads_last_month": 135898,
-          "dependents": 306,
+          "dependents": 318,
           "last_published": "2026-10-29"
         },
         {
@@ -20963,7 +20963,7 @@
           "name": "@jupyterlab/mainmenu",
           "reason": "registry links to this repo",
           "downloads_last_month": 132158,
-          "dependents": 170,
+          "dependents": 177,
           "last_published": "2026-10-29"
         },
         {
@@ -20971,7 +20971,7 @@
           "name": "@jupyterlab/console",
           "reason": "registry links to this repo",
           "downloads_last_month": 124898,
-          "dependents": 91,
+          "dependents": 96,
           "last_published": "2026-10-29"
         },
         {
@@ -20979,7 +20979,7 @@
           "name": "@jupyterlab/logconsole",
           "reason": "registry links to this repo",
           "downloads_last_month": 112936,
-          "dependents": 98,
+          "dependents": 100,
           "last_published": "2026-10-29"
         },
         {
@@ -20987,7 +20987,7 @@
           "name": "@jupyterlab/launcher",
           "reason": "registry links to this repo",
           "downloads_last_month": 111198,
-          "dependents": 99,
+          "dependents": 108,
           "last_published": "2026-10-29"
         },
         {
@@ -20995,7 +20995,7 @@
           "name": "@jupyterlab/fileeditor",
           "reason": "registry links to this repo",
           "downloads_last_month": 108424,
-          "dependents": 89,
+          "dependents": 97,
           "last_published": "2026-10-29"
         },
         {
@@ -21019,7 +21019,7 @@
           "name": "@jupyterlab/completer",
           "reason": "registry links to this repo",
           "downloads_last_month": 89442,
-          "dependents": 54,
+          "dependents": 60,
           "last_published": "2026-10-29"
         },
         {
@@ -21043,7 +21043,7 @@
           "name": "@jupyterlab/markdownviewer",
           "reason": "registry links to this repo",
           "downloads_last_month": 80569,
-          "dependents": 36,
+          "dependents": 39,
           "last_published": "2026-10-29"
         },
         {
@@ -21059,7 +21059,7 @@
           "name": "@jupyterlab/running",
           "reason": "registry links to this repo",
           "downloads_last_month": 79480,
-          "dependents": 24,
+          "dependents": 26,
           "last_published": "2026-10-29"
         },
         {
@@ -21299,7 +21299,7 @@
           "name": "@jupyterlab/imageviewer",
           "reason": "registry links to this repo",
           "downloads_last_month": 60445,
-          "dependents": 5,
+          "dependents": 6,
           "last_published": "2026-10-29"
         },
         {
@@ -21307,7 +21307,7 @@
           "name": "@jupyterlab/terminal",
           "reason": "registry links to this repo",
           "downloads_last_month": 59990,
-          "dependents": 60,
+          "dependents": 67,
           "last_published": "2026-10-29"
         },
         {
@@ -21451,7 +21451,7 @@
           "name": "@jupyterlab/debugger",
           "reason": "registry links to this repo",
           "downloads_last_month": 47108,
-          "dependents": 5,
+          "dependents": 6,
           "last_published": "2026-10-29"
         },
         {
@@ -21604,9 +21604,9 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyterlab",
       "max_downloads_last_month": 30253541,
-      "top_package_dependents": 3924,
+      "top_package_dependents": 3926,
       "content": {
-        "commit": "9653563211289c8d5c93faa7f84e030fe61aea80",
+        "commit": "07650742fe36a27ce33645f9e0d0ca520594fa5b",
         "n_files": 3087,
         "file_types": {
           "config": 604,
@@ -22346,7 +22346,7 @@
           "name": "jupyterlab-pygments",
           "reason": "registry links to this repo",
           "downloads_last_month": 48057917,
-          "dependents": 6275,
+          "dependents": 6282,
           "last_published": "2023-11-23"
         },
         {
@@ -22363,7 +22363,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyterlab-pygments",
       "max_downloads_last_month": 48057917,
-      "top_package_dependents": 6275,
+      "top_package_dependents": 6282,
       "content": {
         "commit": "c3380f5c973c74e13f7832504749d6ec11c5f491",
         "n_files": 31,
@@ -22423,7 +22423,7 @@
           "name": "jupyterlab-server",
           "reason": "registry links to this repo",
           "downloads_last_month": 27966465,
-          "dependents": 4354,
+          "dependents": 4356,
           "last_published": "2026-09-15"
         }
       ],
@@ -22432,7 +22432,7 @@
       "top_image_pulls": null,
       "top_package": "PYPI:jupyterlab-server",
       "max_downloads_last_month": 27966465,
-      "top_package_dependents": 4354,
+      "top_package_dependents": 4356,
       "content": {
         "commit": "475cfc19e0e69444fc7e3b0e41655cbeb32a8756",
         "n_files": 94,
@@ -22776,7 +22776,7 @@
       "max_downloads_last_month": 11592,
       "top_package_dependents": 4,
       "content": {
-        "commit": "f6cb88a3078aece35e385a6aef35c86c6c66a198",
+        "commit": "80440f5bb0faa4635b52e8c50806bde26b4f6394",
         "n_files": 832,
         "file_types": {
           "docs": 101,
@@ -22828,7 +22828,7 @@
           "name": "@lumino/coreutils",
           "reason": "registry links to this repo",
           "downloads_last_month": 719261,
-          "dependents": 1433,
+          "dependents": 1458,
           "last_published": "2026-07-03"
         },
         {
@@ -22836,7 +22836,7 @@
           "name": "@lumino/algorithm",
           "reason": "registry links to this repo",
           "downloads_last_month": 649206,
-          "dependents": 1440,
+          "dependents": 1465,
           "last_published": "2026-07-03"
         },
         {
@@ -22844,7 +22844,7 @@
           "name": "@lumino/signaling",
           "reason": "registry links to this repo",
           "downloads_last_month": 605884,
-          "dependents": 1412,
+          "dependents": 1437,
           "last_published": "2026-07-03"
         },
         {
@@ -22852,7 +22852,7 @@
           "name": "@lumino/disposable",
           "reason": "registry links to this repo",
           "downloads_last_month": 595572,
-          "dependents": 1411,
+          "dependents": 1436,
           "last_published": "2026-07-03"
         },
         {
@@ -22860,7 +22860,7 @@
           "name": "@lumino/domutils",
           "reason": "registry links to this repo",
           "downloads_last_month": 594952,
-          "dependents": 1398,
+          "dependents": 1423,
           "last_published": "2026-07-03"
         },
         {
@@ -22868,7 +22868,7 @@
           "name": "@lumino/virtualdom",
           "reason": "registry links to this repo",
           "downloads_last_month": 588718,
-          "dependents": 1398,
+          "dependents": 1423,
           "last_published": "2026-07-03"
         },
         {
@@ -22876,7 +22876,7 @@
           "name": "@lumino/commands",
           "reason": "registry links to this repo",
           "downloads_last_month": 586402,
-          "dependents": 1397,
+          "dependents": 1422,
           "last_published": "2026-07-03"
         },
         {
@@ -22884,7 +22884,7 @@
           "name": "@lumino/keyboard",
           "reason": "registry links to this repo",
           "downloads_last_month": 582369,
-          "dependents": 1398,
+          "dependents": 1423,
           "last_published": "2026-07-03"
         },
         {
@@ -22892,7 +22892,7 @@
           "name": "@lumino/properties",
           "reason": "registry links to this repo",
           "downloads_last_month": 582152,
-          "dependents": 1398,
+          "dependents": 1423,
           "last_published": "2026-07-03"
         },
         {
@@ -22900,7 +22900,7 @@
           "name": "@lumino/messaging",
           "reason": "registry links to this repo",
           "downloads_last_month": 546510,
-          "dependents": 1333,
+          "dependents": 1358,
           "last_published": "2026-07-03"
         },
         {
@@ -22908,7 +22908,7 @@
           "name": "@lumino/collections",
           "reason": "registry links to this repo",
           "downloads_last_month": 542572,
-          "dependents": 1334,
+          "dependents": 1359,
           "last_published": "2026-07-03"
         },
         {
@@ -22916,7 +22916,7 @@
           "name": "@lumino/widgets",
           "reason": "registry links to this repo",
           "downloads_last_month": 536970,
-          "dependents": 986,
+          "dependents": 1011,
           "last_published": "2026-10-08"
         },
         {
@@ -22924,7 +22924,7 @@
           "name": "@lumino/dragdrop",
           "reason": "registry links to this repo",
           "downloads_last_month": 512961,
-          "dependents": 1309,
+          "dependents": 1334,
           "last_published": "2026-07-03"
         },
         {
@@ -22940,7 +22940,7 @@
           "name": "@lumino/application",
           "reason": "registry links to this repo",
           "downloads_last_month": 276809,
-          "dependents": 667,
+          "dependents": 692,
           "last_published": "2026-10-08"
         },
         {
@@ -22973,7 +22973,7 @@
       "top_image_pulls": null,
       "top_package": "NPM:@lumino/coreutils",
       "max_downloads_last_month": 719261,
-      "top_package_dependents": 1433,
+      "top_package_dependents": 1458,
       "content": {
         "commit": "44aea979d5d2c77665d651383d27179a63596957",
         "n_files": 465,
