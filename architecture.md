@@ -95,7 +95,7 @@ topic to `docs/topics/`. These folders are generated and not committed. The othe
 |---|---|---|
 | All organizations (`index.md`) | The sections of an organization page, for all of them: security topics, repos, packages (PyPI, npm) and images. Its body is `_generated/home.md` | `jupyter_repos.json`, `images.json`, `repos.csv` |
 | Organizations (`orgs.md`) | One page per organization that has a repo: its topics, repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json` |
-| Security topics (`topics.md`) | The home page's table of topics, and a page per topic: a table by organization, the repos with something left to do first, and the days the numbers changed | `topics.json`, `topics_history.json` |
+| Security topics (`topics.md`) | The home page's table of topics, and a page per topic: a table by organization, the repos, most downloaded first, and the days the numbers changed | `topics.json`, `topics_history.json` |
 | Published packages (`packages.md`) | A summary table, then a page with one table for PyPI and one for npm (the home page's tables) | `jupyter_repos.json` |
 | Container images (`images.md`) | One table of images (the home page's table) | `images.json` |
 | About (`about.md`) | The README | `README.md` |

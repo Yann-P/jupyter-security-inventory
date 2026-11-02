@@ -485,10 +485,9 @@ def topic_org_table(data: Data, topic: dict) -> Table:
 
 
 def topic_repo_table(data: Data, topic: dict) -> Table:
-    """The repos a topic applies to: those with something left to do first, then by reach."""
+    """The repos a topic applies to, most reached first."""
     results = data.results[topic["id"]]
     names = data.by_reach(name for name, answer in results.items() if answer["status"] != NOT_APPLICABLE)
-    names.sort(key=lambda name: results[name]["status"] == "done")  # a stable sort keeps the order by reach
     header = ["repository", "organization", "status", "via", "downloads/month", "reason", "files"]
     rows, cells = [], []
     for name in names:

@@ -145,7 +145,7 @@ def test_sections_list_the_images_without_a_subheading():
     assert ":class: sphinx-datatable filter-by-org" in body  # the images have an organization column here
 
 
-def test_topic_repo_table_lists_what_is_left_to_do_first_and_leaves_out_what_does_not_apply():
+def test_topic_repo_table_lists_the_most_downloaded_first_and_leaves_out_what_does_not_apply():
     data = make_data(
         make_repo("o/done", [("PYPI", "a", 9, 0)]),
         make_repo("o/missing", [("PYPI", "b", 5, 0)]),
@@ -159,9 +159,9 @@ def test_topic_repo_table_lists_what_is_left_to_do_first_and_leaves_out_what_doe
         repo |= {
             "content": {"commit": "c0ffee"},
             "top_package": "PYPI:x",
-            "max_downloads_last_month": 1,
+            "max_downloads_last_month": repo["packages"][0]["downloads_last_month"],
             "used_by": {"ci": [], "build": []},
         }
     table = insights.topic_repo_table(data, {"id": "t"})
-    assert [row[0] for row in table.rows] == ["o/missing", "o/done"]  # the done one has more downloads
+    assert [row[0] for row in table.rows] == ["o/done", "o/missing"]
     assert "blob/c0ffee/a%20b.yml" in table.cells[0][-1]
