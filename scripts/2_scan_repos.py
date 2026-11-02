@@ -2,11 +2,8 @@
 
 For each repo: how many files of each type, the packages its manifests declare, what its
 GitHub workflows do, the GitHub Actions it uses, the container images its chartpress files build,
-what its pre-commit config sets up, which tools its CI mentions and which tool configs it has,
-and the start of its README. Only those few files are downloaded; for everything else the clone
+which words its CI and pre-commit config mention, and the start of its README. Only those few files are downloaded; for everything else the clone
 holds just the file names.
-
-These are facts, not verdicts: scripts/topics/ decides from them what a repo is missing.
 
 Usage: python scripts/2_scan_repos.py --clone-dir /tmp/clones    Output: output/scan.json
 """
@@ -38,16 +35,6 @@ TYPE_OF = {extension: kind for kind, extensions in FILE_TYPES.items() for extens
 
 MANIFESTS = {"package.json", "pyproject.toml", "setup.py", "setup.cfg"}
 PRE_COMMIT_CONFIG = ".pre-commit-config.yaml"
-# Config files of tools that security topics ask about. We only record which of them exist.
-CONFIG_FILES = {".github/zizmor.yml", ".github/zizmor.yaml", "zizmor.yml", "zizmor.yaml"}
-# Words to look for in what CI runs (workflows and action definitions), with comments left out so that
-# "# zizmor: ignore[...]" does not count. We record the files that mention each word.
-MENTIONS = {
-    "zizmor": r"zizmor",
-    "zizmor-action": r"zizmor-action",
-    # A run of pre-commit (or of prek, a faster pre-commit), not the name of its config file or of the pre-commit-ci branch.
-    "pre-commit": r"(?<![.\w-])pre-commit(?!-ci|-config)\b|\bprek\b(?!\.toml)",
-}
 CHARTPRESS = {"chartpress.yaml", "chartpress.yml"}  # chartpress builds a Helm chart's container images
 # A manifest inside one of these folders is a test, an example or a vendored copy, not a published package.
 NOT_PUBLISHED = {
@@ -75,6 +62,14 @@ PUBLISHES = {
     "website": r"actions/deploy-pages|peaceiris/actions-gh-pages|github-pages-deploy-action|gh-pages|netlify",
     "cloud": r"kubectl\s|helm\s+upgrade|terraform\s+apply|gcloud\s|google-github-actions/auth|"
     r"aws-actions/configure-aws-credentials|azure/login|git-crypt\s+unlock|sops\s",
+}
+# Words to find in the CI files and the pre-commit config, for the security topics. Comments are left out, so
+# "# zizmor: ignore[...]" does not count. "pre-commit" means CI runs pre-commit: a run of it (or of prek), or a `ci:`
+# section, which sets up pre-commit.ci.
+MENTIONS = {
+    "zizmor": r"zizmor",
+    "zizmor-action": r"zizmor-action",
+    "pre-commit": r"(?<![\w./-])pre-commit(?=\s|/action)|\bprek\b(?!\.toml)|^ci:",
 }
 # A secret read by a workflow: "${{ secrets.PYPI_TOKEN }}"
 SECRET = r"\$\{\{\s*secrets\.(\w+)"
@@ -212,26 +207,11 @@ def chartpress_images(text: str) -> list[str]:
     return names
 
 
-def pre_commit_summary(text: str) -> dict:
-    """What a .pre-commit-config.yaml sets up: where its hooks come from, their ids, and whether it has a `ci:` section,
-    which configures pre-commit.ci (a service that runs the hooks on pull requests)."""
-    summary = {"repos": set(), "hooks": set(), "ci": False}
-    try:
-        config = yaml.safe_load(text)
-        summary["ci"] = "ci" in config
-        for entry in config.get("repos") or []:
-            summary["repos"].add(str(entry["repo"]))
-            summary["hooks"].update(str(hook["id"]) for hook in entry.get("hooks") or [])
-    except yaml.YAMLError, AttributeError, KeyError, TypeError:
-        pass  # keep what was read before the file turned out to be shaped differently
-    return summary | {"repos": sorted(summary["repos"] - {"local", "meta"}), "hooks": sorted(summary["hooks"])}
-
-
 def mentions(files: dict[str, str]) -> dict[str, list[str]]:
-    """For each of MENTIONS, the files ({path: text}) that mention it. Words nobody mentions are left out."""
+    """For each of MENTIONS, the files ({path: text}) that mention it."""
     uncommented = {path: re.sub(r"(^|\s)#.*", r"\1", text, flags=re.M) for path, text in files.items()}
     found = {
-        word: sorted(path for path, text in uncommented.items() if re.search(pattern, text, re.I))
+        word: sorted(path for path, text in uncommented.items() if re.search(pattern, text, re.I | re.M))
         for word, pattern in MENTIONS.items()
     }
     return {word: paths for word, paths in found.items() if paths}
@@ -289,6 +269,7 @@ def scan(full_name: str, clone_dir: Path) -> dict:
 
     ci_files = {path: read(path) for path in workflows + actions}
     ci_text = "\n".join(ci_files.values())
+    pre_commit = {path: read(path) for path in to_read if path == PRE_COMMIT_CONFIG}
     return {
         "head": git(folder, "rev-parse", "HEAD").strip(),
         "n_files": len(paths),
@@ -298,9 +279,7 @@ def scan(full_name: str, clone_dir: Path) -> dict:
         "uses": sorted({f"{repo}@{ref}" for repo, ref in re.findall(USES, ci_text)}),
         "images": sorted({image for path in chartpress for image in chartpress_images(read(path))}),
         "build_requires": sorted(build_requirements),
-        "mentions": mentions(ci_files),
-        "pre_commit": pre_commit_summary(read(PRE_COMMIT_CONFIG)) if PRE_COMMIT_CONFIG in to_read else None,
-        "config_files": sorted(CONFIG_FILES & set(paths)),
+        "mentions": mentions(ci_files | pre_commit),
         "readme": read(readme)[:2500] if readme else None,
     }
 

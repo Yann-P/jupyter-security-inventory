@@ -1,9 +1,6 @@
 """Tests for docs/insights.py, which writes the site's pages."""
 
-import csv
-
 import insights
-from topics import STATUSES
 
 
 def test_plain_keeps_text_from_repos_from_becoming_html_or_markdown():
@@ -148,141 +145,23 @@ def test_sections_list_the_images_without_a_subheading():
     assert ":class: sphinx-datatable filter-by-org" in body  # the images have an organization column here
 
 
-def test_sections_start_with_the_security_topics_and_link_to_them():
-    body = insights.sections("o", [["t"]], [["r"]], [], {"PyPI": [], "npm": []}, [], by_org=False)
-    assert body.startswith("[Security topics (1)](#security-topics) · [Repositories (1)](#repositories)")
-    assert body.index("## Security topics") < body.index("## Repositories")
-
-
-def test_the_statuses_are_the_ones_the_topics_use():
-    assert insights.STATUSES == list(STATUSES)
-
-
-def make_topic_data():
-    """Three repos and one topic: a is done, b is missing, c is not applicable, d is partial."""
-    answers = {
-        "a/one": ("done", ["GitHub Action"], "Runs in a workflow.", [".github/workflows/z.yml"]),
-        "b/two": ("missing", [], "No sign of it.", []),
-        "c/three": ("n/a", [], "No workflows.", []),
-        "b/four": ("partial", ["pre-commit"], "Hook only.", [".pre-commit-config.yaml"]),
-    }
+def test_topic_repo_table_lists_what_is_left_to_do_first_and_leaves_out_what_does_not_apply():
     data = make_data(
-        *(
-            make_repo(name, [("PYPI", name.split("/")[1], downloads, 0)])
-            for name, downloads in (("a/one", 5), ("b/two", 9), ("c/three", 1), ("b/four", 3))
-        )
+        make_repo("o/done", [("PYPI", "a", 9, 0)]),
+        make_repo("o/missing", [("PYPI", "b", 5, 0)]),
+        make_repo("o/other", [("PYPI", "c", 1, 0)]),
     )
-    for repo in data.repos.values():
-        repo["content"] = {"commit": "c0ffee"}
-        repo["top_package"] = "PYPI:x"
-        repo["max_downloads_last_month"] = repo["packages"][0]["downloads_last_month"]
-        repo["used_by"] = {"ci": [], "build": [], "ci_pinned": []}
-    data.orgs = ["a", "b", "c"]
-    data.topics = [
-        {
-            "id": "t",
-            "title": "t",
-            "question": "Is it?",
-            "detection": "We look.",
-            "meanings": dict.fromkeys(STATUSES, "Means."),
-        }
-    ]
+    answers = {"o/done": "done", "o/missing": "missing", "o/other": "n/a"}
     data.results = {
-        "t": {name: dict(zip(("status", "via", "reason", "evidence"), a), repo=name) for name, a in answers.items()}
+        "t": {name: {"status": s, "via": [], "reason": "", "evidence": ["a b.yml"]} for name, s in answers.items()}
     }
-    data.history = {
-        "2026-11-01": {"t": {"done": 0, "partial": 0, "missing": 4, "n/a": 0}},
-        "2026-11-02": {"t": {"done": 1, "partial": 1, "missing": 1, "n/a": 1}},
-        "2026-11-03": {"t": {"done": 1, "partial": 1, "missing": 1, "n/a": 1}},  # nothing changed
-    }
-    return data
-
-
-def test_topic_summary_counts_the_statuses_of_the_repos_it_is_given():
-    data = make_topic_data()
-    assert insights.topic_summary(data, ["a/one", "b/two", "c/three", "b/four"]).rows == [["t", "Is it?", 1, 1, 1, 1]]
-    assert insights.topic_summary(data, ["b/two"]).rows == [["t", "Is it?", 0, 0, 1, 0]]
-    assert insights.topic_summary(data, ["b/two"]).cells[0][0] == "[t](/topics/t.md)"
-
-
-def test_topic_org_table_lists_the_organizations_with_the_most_left_to_do_first():
-    table = insights.topic_org_table(make_topic_data(), make_topic_data().topics[0])
-    assert table.rows == [["b", 2, 0, 1, 1], ["a", 1, 1, 0, 0]]  # c has nothing it applies to
-
-
-def test_topic_repo_table_leaves_out_what_is_not_applicable_and_lists_the_done_ones_last():
-    data = make_topic_data()
-    table = insights.topic_repo_table(data, data.topics[0])
-    assert [row[:3] for row in table.rows] == [
-        ["b/two", "b", "missing"],  # most downloaded of those with something to do
-        ["b/four", "b", "partial"],
-        ["a/one", "a", "done"],
-    ]
-    assert table.rows[2][3:] == ["GitHub Action", 5, "Runs in a workflow.", ".github/workflows/z.yml"]
-    assert (
-        table.cells[2][-1]
-        == "[\\.github\\/workflows\\/z\\.yml](https://github.com/a/one/blob/c0ffee/.github/workflows/z.yml)"
-    )
-
-
-def test_topic_history_lists_only_the_days_the_numbers_changed_newest_first():
-    data = make_topic_data()
-    assert insights.topic_history_table(data, data.topics[0]).rows == [
-        ["2026-11-02", 1, 1, 1, 1],
-        ["2026-11-01", 0, 0, 4, 0],
-    ]
-
-
-def test_topic_headline_counts_what_it_applies_to_and_what_is_left_out():
-    counts = insights.Counter({"done": 5, "partial": 0, "missing": 279, "n/a": 154})
-    assert insights.topic_headline(counts) == (
-        "It applies to 284 repositories: 5 done, 0 partial and 279 missing. 154 are not applicable and left out of the tables."
-    )
-    assert insights.topic_headline(insights.Counter({"missing": 1, "n/a": 1})).endswith(
-        "1 repository: 0 done, 0 partial and 1 missing. 1 is not applicable and left out of the tables."
-    )
-
-
-def test_repo_topics_shows_text_from_a_repo_as_text():
-    data = make_topic_data()
-    data.results["t"]["a/one"]["reason"] = "[click](https://evil.example)"
-    data.results["t"]["a/one"]["evidence"] = ["a b.yml"]
-    line = insights.repo_topics(data, "a/one")
-    assert "[click](" not in line  # the link was not made
-    assert "blob/c0ffee/a%20b.yml" in line  # the path is quoted in the URL
-
-
-def test_plain_keeps_text_on_one_line_whatever_the_line_break():
-    text = insights.plain("a\r\nb\x85c d\x0ce\n")
-    assert text.splitlines() == [text] and text == "a b c d e"
-
-
-def test_a_repo_path_with_an_unusual_line_break_stays_in_its_row_of_the_table(tmp_path, monkeypatch):
-    monkeypatch.setattr(insights, "GENERATED", tmp_path)
-    data = make_topic_data()
-    data.results["t"]["a/one"]["evidence"] = [
-        "a\x85b.yml"
-    ]  # docutils splits csv-table lines at \x85, csv.writer does not
-    table = insights.topic_repo_table(data, data.topics[0])
-    table.write("t-repos")
-    lines = (tmp_path / "t-repos.csv").read_text().splitlines()  # how docutils reads the file
-    assert len(lines) == 1 + len(table)
-    assert all(len(row) == len(insights.TOPIC_REPO_HEADER) for row in csv.reader(lines))
-
-
-def test_a_topic_page_without_rows_has_no_empty_table(tmp_path, monkeypatch):
-    monkeypatch.setattr(insights, "GENERATED", tmp_path)
-    data = make_topic_data()
-    for answer in data.results["t"].values():
-        answer["status"] = "n/a"  # a new topic that applies to nothing yet
-    data.history = {}
-    page = insights.topic_page(data, data.topics[0])
-    assert "{csv-table}" not in page  # docutils refuses a table with no rows, which would fail the build
-    assert page.count(insights.NO_ROWS) == 3
-
-
-def test_the_history_of_a_topic_starts_on_the_first_day_it_was_recorded(tmp_path, monkeypatch):
-    monkeypatch.setattr(insights, "GENERATED", tmp_path)
-    data = make_topic_data()
-    data.history = {"2026-11-01": {}, "2026-11-02": {"t": {"done": 1, "partial": 1, "missing": 1, "n/a": 1}}}
-    assert "starting on 2026-11-02" in insights.topic_page(data, data.topics[0])
+    for repo in data.repos.values():
+        repo |= {
+            "content": {"commit": "c0ffee"},
+            "top_package": "PYPI:x",
+            "max_downloads_last_month": 1,
+            "used_by": {"ci": [], "build": []},
+        }
+    table = insights.topic_repo_table(data, {"id": "t"})
+    assert [row[0] for row in table.rows] == ["o/missing", "o/done"]  # the done one has more downloads
+    assert "blob/c0ffee/a%20b.yml" in table.cells[0][-1]

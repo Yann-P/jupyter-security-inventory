@@ -26,7 +26,7 @@ Eight scripts run in order (they depend on each other):
 | 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
 | 6. Merge | Puts it all together and works out which repositories run each other's code | |
 | 7. Table | Writes `output/repos.csv` | |
-| 8. Topics | Answers each security topic for every repository, and counts the answers each day | |
+| 8. Topics | Answers each security topic for every repository and counts the answers each day | |
 
 [architecture.md](https://github.com/Yann-P/jupyter-security-inventory/blob/main/architecture.md) explains how the pieces fit together.
 
@@ -44,9 +44,9 @@ Eight scripts run in order (they depend on each other):
 ## Security topics
 
 A topic asks one question about every repository, like "does it check its workflows with zizmor?", and answers
-with a status: done, partial, missing or not applicable. Each topic has its own page, and each organization and
-repository page shows how that organization or repository does on each topic. So far there is one: zizmor, run as its
-GitHub Action, as a command in a workflow, or as a pre-commit hook.
+with a status: done, partial, missing or not applicable. Each topic has a page, and every organization and
+repository page shows how it does. For now there is one: zizmor, run as its GitHub Action, as a command in a
+workflow or as a pre-commit hook.
 
 ## Caveats
 
@@ -57,8 +57,8 @@ GitHub Action, as a command in a workflow, or as a pre-commit hook.
   The namespaces are listed by hand in `scripts/4_images.py`. Many older images match no repository.
 - "Used in CI" only sees the repositories listed here.
 - Topics read the repository's files, so they show what is set up, not what is enforced. pre-commit.ci can't be seen
-  from the repository, so a pre-commit hook counts as run by CI only if a workflow runs pre-commit or the config has
-  a `ci:` section.
+  from the files, so a pre-commit hook counts as run by CI only if a workflow runs pre-commit or the config has a
+  `ci:` section.
 
 ## Running it
 

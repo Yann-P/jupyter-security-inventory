@@ -16,8 +16,7 @@ scripts/1..8  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.p
 - `output/` is written by the scripts only. Never edit it by hand (see Contributing in the README).
 - The outputs are committed, so the site builds without network access and every change shows up in git.
 - Inputs written by hand: `ORGS` (step 1), `NAMESPACES` (step 4), the prompt and model (step 5), the topics (step 8).
-- Deciding and showing are separate. What a repo is missing is decided in `scripts/topics/`; the site only shows
-  what `topics.json` says.
+- Deciding and showing are separate. `scripts/topics/` decides what a repo is missing; the site only shows `topics.json`.
 
 ## The pipeline
 
@@ -37,9 +36,9 @@ scripts/1..8  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.p
 
 Step 2 keeps, for each repo: file counts by type, the packages its manifests declare, a summary of its workflows
 (triggers, secrets, what they publish), the actions it uses, the images its chartpress files build, the build
-requirements of its `pyproject.toml`, and the start of its README. It also keeps plain facts for the topics: which
-workflow files mention zizmor or pre-commit (comments left out), what the pre-commit config sets up, and which tool config
-files exist. A clone is shallow and holds only the files it reads. Symbolic links are never followed.
+requirements of its `pyproject.toml`, the start of its README, and which of a few words (zizmor, pre-commit) its CI files and
+pre-commit config mention. A clone is shallow and holds only those files.
+Symbolic links are never followed.
 
 ## Matching packages and images to repos
 
@@ -67,8 +66,8 @@ All in `output/`. Repos are named `org/repo`.
 | `classification.json` | `{repo: kind, security_boundary, deploys_live_service, rationale, model}`. Written by an LLM. |
 | `jupyter_repos.json` | The repo from step 1, plus its packages, images, content, `used_by` and classification. |
 | `repos.csv` | The columns of the repo tables. |
-| `topics.json` | `topics`: id, title, question, how it is detected, what each status means. `results`: one row per topic and repo, with its status, reason, how it is done (`via`) and the files that show it (`evidence`). |
-| `topics_history.json` | `{day: {topic: {status: number of repos}}}`, one entry per day the inventory was fetched. |
+| `topics.json` | `topics`: id, title, question, how it is detected, what each status means. `results`: a row per topic and repo with its status, reason, how it is done (`via`) and the files that show it (`evidence`). |
+| `topics_history.json` | `{day: {topic: {status: number of repos}}}`, for each day the inventory was fetched. |
 
 `used_by` (step 6) lists the other repos that run a repo's code. `ci`: they use its GitHub Actions in a workflow.
 `ci_pinned`: the same, pinned to a commit, so a compromise of the action does not reach them by itself. `build`:
@@ -76,33 +75,27 @@ they use its packages in their build requirements. "Used in CI" counts `ci` and 
 
 ## Security topics
 
-A topic answers one question about every repo, like "does it check its workflows with zizmor?". It is a module in
-`scripts/topics/` with the question, what each status means, and a `check` function. `check` reads one repo's entry in
-`scan.json` and returns a status (`done`, `partial`, `missing` or `n/a`), a short reason, how the repo does it, and the
-files that show it.
+A topic answers one question about every repo, like "does it run zizmor?". It is a module in `scripts/topics/` with a
+`check` function. `check` reads a repo's entry in `scan.json` and returns a status (`done`, `partial`, `missing` or
+`n/a`), a short reason, how the repo does it, and the files that show it. Step 8 writes a row per repo and topic, so a
+new topic adds rows, not columns, and counts the statuses once a day for the "over time" table.
 
-Step 8 runs every topic on every repo and writes one short row for each pair. A new topic adds rows, not columns,
-so the tables do not grow wider. It also counts the statuses of each topic once a day, for the "over time" table.
-A change in how a topic detects things changes its numbers from that day on.
-
-The zizmor topic knows three ways to run it: its GitHub Action, a command in a workflow (`uvx zizmor`), and a
-pre-commit hook. The first two are `done`. A hook is `done` only if CI runs pre-commit: a workflow runs it, or the
-config has a `ci:` section, which sets up pre-commit.ci (we can't see from the files whether it is installed).
-Otherwise the hook is `partial`, and so is a zizmor config file that nothing runs. A repo with no workflows is `n/a`.
-A repo that gets zizmor from super-linter is not recognized yet.
+The zizmor topic knows three ways to run it: its GitHub Action, a command in a workflow (`uvx zizmor`) and a pre-commit
+hook. The first two are `done`. A hook is `done` if CI runs pre-commit: a workflow runs it, or the config has a `ci:`
+section for pre-commit.ci (we can't see whether it is installed). Otherwise it is `partial`. A repo with no workflows is
+`n/a`. Zizmor from super-linter is not recognized.
 
 ## The site
 
 `docs/conf.py` calls `insights.build()` every time Sphinx starts. It reads `output/`, then writes the CSV tables and
-the body of the home page to `docs/_generated/`, a page per organization and repo to `docs/orgs/` and a page per
-topic to `docs/topics/`. These folders are generated and not committed. The other pages are written by hand and
-include those tables.
+the body of the home page to `docs/_generated/` and a page per organization and repo to `docs/orgs/`, and a page per
+topic to `docs/topics/`. These folders are generated and not committed. The other pages are written by hand and include those tables.
 
 | Page | Content | Source |
 |---|---|---|
-| All organizations (`index.md`) | The sections of an organization page, for all of them: security topics, repos, packages (PyPI, npm) and images. Its body is `_generated/home.md` | `jupyter_repos.json`, `images.json`, `repos.csv`, `topics.json` |
-| Organizations (`orgs.md`) | One page per organization that has a repo: its topics, repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json`, `topics.json` |
-| Security topics (`topics.md`) | A table of the topics (the home page's), and a page per topic: what it checks, a table by organization, the repos with something left to do first, and the days the numbers changed | `topics.json`, `topics_history.json` |
+| All organizations (`index.md`) | The sections of an organization page, for all of them: security topics, repos, packages (PyPI, npm) and images. Its body is `_generated/home.md` | `jupyter_repos.json`, `images.json`, `repos.csv` |
+| Organizations (`orgs.md`) | One page per organization that has a repo: its topics, repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json` |
+| Security topics (`topics.md`) | The home page's table of topics, and a page per topic: a table by organization, the repos with something left to do first, and the days the numbers changed | `topics.json`, `topics_history.json` |
 | Published packages (`packages.md`) | A summary table, then a page with one table for PyPI and one for npm (the home page's tables) | `jupyter_repos.json` |
 | Container images (`images.md`) | One table of images (the home page's table) | `images.json` |
 | About (`about.md`) | The README | `README.md` |
@@ -111,8 +104,7 @@ How the pages link to each other:
 
 - The repo tables (home and organization pages) link each repo to its page. The `image` column shows its most
   pulled image, as `package` does for packages.
-- A repo page lists its packages and its images, with links to the registries, and what each topic found, with links to
-  the files that show it.
+- A repo page lists its packages and its images, with links to the registries, and what each topic found.
 - The package and image tables link each row to the registry, and to its organization page and its repo page when
   there is one. On an organization page they are the same tables without the organization column. An image belongs
   to the organization of its namespace.
@@ -145,8 +137,8 @@ Actions are pinned to commit SHAs.
 - **A registry namespace:** add it to `NAMESPACES` in step 4, after checking that it belongs to Jupyter. A Docker Hub
   namespace named like a Jupyter organization can belong to someone else. It must also be an organization of `ORGS`.
 - **A column in the repo tables:** add it in `7_table.py` and in `repo_rows` of `insights.py`.
-- **A security topic:** if it needs a fact step 2 does not keep yet (a file to look for, a word to find in workflows),
-  add it there and rerun step 2. Write a module in `scripts/topics/` with a `TOPIC`, like `zizmor.py`, add it to
-  `TOPICS` in step 8 and test it. The site needs no change. Then rerun step 8, since its output is committed.
+- **A security topic:** write a module in `scripts/topics/` like `zizmor.py` and add it to `TOPICS` in step 8. If it needs a
+  fact step 2 does not keep, such as a word to find in workflows, add it to `MENTIONS` there and rerun step 2. The site
+  needs no change.
 - **Another kind of published thing:** a new step before step 6 that writes its own file with a `repo` and a
   `reason`; read it in step 6; add a table like the package and image tables.

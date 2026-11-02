@@ -4,6 +4,7 @@ conf.py calls build(), which:
 - writes CSV tables into docs/_generated/ for the pages to include, each with its plain values in downloads/,
 - writes the body of the home page (docs/_generated/home.md), which has the sections of an organization page,
 - writes a page per organization (docs/orgs/<org>.md) and per repository (docs/orgs/<org>/<repo>.md),
+  and a page per security topic (docs/topics/<topic>.md),
 - returns the notes that the hand-written pages quote, as MyST substitutions: {{ downloads_note }}, ...
 
 Text that comes from the repositories themselves (descriptions, labels, workflow contents) goes through
@@ -35,17 +36,12 @@ REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
 # These tables are not tinted by kind: that is for repo tables.
 PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
 IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "all-time pulls", "last published"]
-# The statuses of a security topic, as scripts/topics/ defines them (a test checks that), in the order the tables list them.
-STATUSES = ["done", "partial", "missing", "n/a"]
+STATUSES = ["done", "partial", "missing", "n/a"]  # as in scripts/topics/
 NOT_APPLICABLE = "n/a"
-TOPIC_HEADER = ["topic", "question", "done", "partial", "missing", "not applicable"]
-TOPIC_ORG_HEADER = ["organization", "repos it applies to", "done", "partial", "missing"]
-TOPIC_REPO_HEADER = ["repository", "organization", "status", "via", "downloads/month", "reason", "files"]
-TOPIC_HISTORY_HEADER = ["date", "done", "partial", "missing", "not applicable"]
-NO_ROWS = "Nothing to list."
 TOPICS_NOTE = (
     "Each topic checks one practice in every repository. Open a topic to see which repositories still need work."
 )
+NO_ROWS = "Nothing to list."  # a csv-table without rows is an error
 DOWNLOADS_NOTE = "Downloads are for the last month and include CI."
 IMAGES_NOTE = (
     "Only Docker Hub has pull counts; they are all-time and include CI."
@@ -110,6 +106,8 @@ html_theme.sidebar_secondary.remove: true
 
 ## Over time
 
+The days the numbers changed.
+
 {history}
 """
 
@@ -136,11 +134,8 @@ def load(name: str):
 
 
 def plain(text) -> str:
-    """Text shown exactly as it is: Markdown can't interpret any of it once punctuation is escaped.
-
-    It stays on one line: a table row ends at any line break, which is more than "\\n" (\\r, \\x85, \\u2028 ...).
-    """
-    return " ".join(re.sub(r"([!-/:-@\[-`{-~])", r"\\\1", str(text or "")).splitlines())
+    """Text shown exactly as it is: Markdown can't interpret any of it once punctuation is escaped."""
+    return " ".join(re.sub(r"([!-/:-@\[-`{-~])", r"\\\1", str(text or "")).splitlines())  # any line break ends a row
 
 
 def n(number) -> str:
@@ -282,7 +277,7 @@ class Data:
         self.orgs = load("repos.json")["orgs"]
         topics = load("topics.json")
         self.topics = topics["topics"]
-        self.results = {topic["id"]: {} for topic in self.topics}  # topic -> repo -> its answer
+        self.results = {topic["id"]: {} for topic in self.topics}  # topic -> repo -> answer
         for row in topics["results"]:
             self.results[row["topic"]][row["repo"]] = row
         self.history = load("topics_history.json")  # day -> topic -> status -> number of repos
@@ -450,8 +445,7 @@ def image_cells(row: list) -> list:
 
 
 def status_chip(status: str) -> str:
-    """A status as a colored label: 'done' on green, 'missing' on red (docs/_static/custom.css)."""
-    return f"[{plain(status)}]{{.status .status-{status.replace('/', '')}}}"  # 'n/a' -> status-na
+    return f"[{plain(status)}]{{.status .status-{status.replace('/', '')}}}"
 
 
 def file_link(data: Data, name: str, path: str) -> str:
@@ -461,123 +455,114 @@ def file_link(data: Data, name: str, path: str) -> str:
 
 
 def topic_counts(data: Data, topic: dict, names) -> Counter:
-    """How many of these repos have each status for this topic."""
     results = data.results[topic["id"]]
     return Counter(results[name]["status"] for name in names)
 
 
 def topic_summary(data: Data, names) -> Table:
-    """One row per topic: how many of these repos are done, partial, missing or not applicable."""
+    """One row per topic: how many of these repos have each status."""
+    header = ["topic", "question", "done", "partial", "missing", "not applicable"]
     rows, cells = [], []
     for topic in data.topics:
         counts = topic_counts(data, topic, names)
         rows.append([topic["title"], topic["question"], *(counts[status] for status in STATUSES)])
-        title = f"[{plain(topic['title'])}](/topics/{topic['id']}.md)"
-        cells.append([title, plain(topic["question"]), *rows[-1][2:]])
-    return Table(TOPIC_HEADER, rows, cells)
+        cells.append([f"[{plain(topic['title'])}](/topics/{topic['id']}.md)", plain(topic["question"]), *rows[-1][2:]])
+    return Table(header, rows, cells)
 
 
 def topic_org_table(data: Data, topic: dict) -> Table:
-    """Per organization, how many of the repos the topic applies to are done, partial or missing. Most to do first."""
+    """The repos a topic applies to, by organization. The most left to do first."""
+    results = data.results[topic["id"]]
     rows = []
     for org in data.orgs:
-        counts = topic_counts(
-            data, topic, [name for name in data.results[topic["id"]] if data.repos[name]["org"] == org]
-        )
-        todo = [counts["partial"], counts["missing"]]
-        if counts["done"] or any(todo):
-            rows.append([org, counts["done"] + sum(todo), counts["done"], *todo])
+        counts = topic_counts(data, topic, [name for name in results if data.repos[name]["org"] == org])
+        applies = counts["done"] + counts["partial"] + counts["missing"]
+        if applies:
+            rows.append([org, applies, counts["done"], counts["partial"], counts["missing"]])
     rows.sort(key=lambda row: (-(row[3] + row[4]), row[0]))
-    return Table(TOPIC_ORG_HEADER, rows, [[org_link(row[0]), *row[1:]] for row in rows])
+    header = ["organization", "repos it applies to", "done", "partial", "missing"]
+    return Table(header, rows, [[org_link(row[0]), *row[1:]] for row in rows])
 
 
 def topic_repo_table(data: Data, topic: dict) -> Table:
-    """The repos the topic applies to: those with something left to do first, most reached first."""
+    """The repos a topic applies to: those with something left to do first, then by reach."""
     results = data.results[topic["id"]]
     names = data.by_reach(name for name, answer in results.items() if answer["status"] != NOT_APPLICABLE)
-    names.sort(key=lambda name: results[name]["status"] == "done")  # a stable sort: keeps the order by reach
+    names.sort(key=lambda name: results[name]["status"] == "done")  # a stable sort keeps the order by reach
+    header = ["repository", "organization", "status", "via", "downloads/month", "reason", "files"]
     rows, cells = [], []
     for name in names:
         answer, repo = results[name], data.repos[name]
-        rows.append(
-            [
-                name,
-                repo["org"],
-                answer["status"],
-                ", ".join(answer["via"]),
-                repo["max_downloads_last_month"] if repo["top_package"] else "",
-                answer["reason"],
-                "; ".join(answer["evidence"]),
-            ]
-        )
+        via = ", ".join(answer["via"])
+        downloads = repo["max_downloads_last_month"] if repo["top_package"] else ""
+        evidence = "; ".join(answer["evidence"])
+        rows.append([name, repo["org"], answer["status"], via, downloads, answer["reason"], evidence])
+        files = ", ".join(file_link(data, name, path) for path in answer["evidence"])
         cells.append(
             [
                 data.cell(name),
                 org_link(repo["org"]),
                 status_chip(answer["status"]),
-                plain(", ".join(answer["via"])),
+                plain(via),
                 data.downloads(name),
                 plain(answer["reason"]),
-                ", ".join(file_link(data, name, path) for path in answer["evidence"]),
+                files,
             ]
         )
-    return Table(TOPIC_REPO_HEADER, rows, cells)
+    return Table(header, rows, cells)
 
 
 def topic_history_table(data: Data, topic: dict) -> Table:
-    """The days on which the numbers of a topic changed, newest first."""
+    """The days the numbers of a topic changed, newest first."""
     rows, last = [], None
     for day, topics in sorted(data.history.items()):
-        counts = topics.get(topic["id"])  # a topic added later has no line for the earlier days
+        counts = topics.get(topic["id"])  # a topic added later has nothing for the earlier days
         if counts and counts != last:
             rows.append([day, *(counts[status] for status in STATUSES)])
             last = counts
     rows.reverse()
-    return Table(TOPIC_HISTORY_HEADER, rows, [[date(row[0]), *row[1:]] for row in rows])
+    header = ["date", "done", "partial", "missing", "not applicable"]
+    return Table(header, rows, [[date(row[0]), *row[1:]] for row in rows])
 
 
-def topic_headline(counts: Counter) -> str:
+def topic_page(data: Data, topic: dict) -> str:
+    stem = f"topic-{topic['id']}"
+    tables = {
+        "orgs": topic_org_table(data, topic),
+        "repos": topic_repo_table(data, topic),
+        "history": topic_history_table(data, topic),
+    }
+    for part, table in tables.items():
+        table.write(f"{stem}-{part}")
+
+    counts = topic_counts(data, topic, data.results[topic["id"]])
     applies = counts["done"] + counts["partial"] + counts["missing"]
-    sentence = (
+    headline = (
         f"It applies to {counted(applies, 'repository', 'repositories')}:"
         f" {counts['done']} done, {counts['partial']} partial and {counts['missing']} missing."
     )
     if counts[NOT_APPLICABLE]:
-        sentence += " " + counted(counts[NOT_APPLICABLE], "is not applicable", "are not applicable")
-        sentence += " and left out of the tables."
-    return sentence
+        not_applicable = counted(counts[NOT_APPLICABLE], "is not applicable", "are not applicable")
+        headline += f" {not_applicable} and left out of the tables."
 
+    def table(part: str, by_org: bool) -> str:
+        return csv_table(f"{stem}-{part}", by_org) if len(tables[part]) else NO_ROWS
 
-def topic_page(data: Data, topic: dict) -> str:
-    """Writes the tables of a topic's page and returns the page."""
-    stem = f"topic-{topic['id']}"
-    orgs, repos, history = topic_org_table(data, topic), topic_repo_table(data, topic), topic_history_table(data, topic)
-    orgs.write(f"{stem}-orgs")
-    repos.write(f"{stem}-repos")
-    history.write(f"{stem}-history")
-    # A topic added later has no line for the earlier days. An empty table is an error in csv-table, so say so instead.
-    first_day = min((day for day, topics in data.history.items() if topic["id"] in topics), default=None)
     return TOPIC_PAGE.format(
         title=plain(topic["title"]),
         question=plain(topic["question"]),
-        headline=topic_headline(topic_counts(data, topic, data.results[topic["id"]])),
+        headline=headline,
         detection=plain(topic["detection"]),
         legend="\n".join(f"- {status_chip(status)} {plain(topic['meanings'][status])}" for status in STATUSES),
-        orgs=csv_table(f"{stem}-orgs", False) if len(orgs) else NO_ROWS,
+        orgs=table("orgs", False),
         legend_of_kinds=LEGEND,
-        repos=csv_table(f"{stem}-repos", True) if len(repos) else NO_ROWS,
-        history=(
-            f"The numbers are recorded every day, starting on {first_day}. This table lists the days they changed.\n\n"
-            + csv_table(f"{stem}-history", False)
-            if first_day
-            else NO_ROWS
-        ),
+        repos=table("repos", True),
+        history=table("history", False),
     )
 
 
 def topic_pages(data: Data):
-    """A page per topic, and the list of them for the page of topics."""
-    shutil.rmtree(DOCS / "topics", ignore_errors=True)  # generated, like the pages of organizations
+    shutil.rmtree(DOCS / "topics", ignore_errors=True)
     (DOCS / "topics").mkdir()
     for topic in data.topics:
         (DOCS / "topics" / f"{topic['id']}.md").write_text(topic_page(data, topic), encoding="utf-8")
@@ -586,7 +571,6 @@ def topic_pages(data: Data):
 
 
 def repo_topics(data: Data, name: str) -> str:
-    """The answer of each topic for a repo, with links to the files that show it."""
     lines = []
     for topic in data.topics:
         answer = data.results[topic["id"]][name]
@@ -596,7 +580,7 @@ def repo_topics(data: Data, name: str) -> str:
             f"- **[{plain(topic['title'])}](/topics/{topic['id']}.md):** {plain(answer['status'])}{via}."
             f" {plain(answer['reason'])}" + (f" Files: {files}" if files else "")
         )
-    return "\n".join(lines) or "none"
+    return "\n".join(lines)
 
 
 def csv_table(stem: str, by_org: bool) -> str:
@@ -650,7 +634,7 @@ def sections(
 
 
 def write_tables(data: Data, scope: str, names: list[str], images: list[dict], by_org: bool) -> str:
-    """Writes the tables of a page that lists repositories, their security topics, packages and images. Returns its sections.
+    """Writes the tables of a page that lists repositories, their packages and images. Returns its sections.
 
     `names` are the repositories of the page. Without `by_org`, the tables of packages and images
     leave out the organization column, which is the same on every row of an organization's page.
@@ -834,8 +818,6 @@ def build() -> dict:
 
     # Organizations, with a page per organization and repository
     org_pages(data).write("orgs")
-
-    # Security topics, with a page per topic
     topic_pages(data)
 
     # All organizations: the home page, whose package and image tables the pages of packages and images show too

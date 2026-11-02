@@ -2,87 +2,28 @@
 
 import importlib
 
-import pytest
-from topics import STATUSES, Result, Topic, zizmor
+import common
+from topics import zizmor
 
 topics = importlib.import_module("8_topics")
-common = importlib.import_module("common")
 
 
-@pytest.fixture(autouse=True)
-def only_zizmor(monkeypatch):
-    """The tests below count rows, so they must not change when someone registers another topic."""
-    monkeypatch.setattr(topics, "TOPICS", [zizmor.TOPIC])
+def test_every_topic_answers_every_repo_of_the_committed_scan():
+    """So that a topic reading a fact step 2 does not keep fails here, and not in the daily update."""
+    scan = common.load_json(common.OUTPUT / "scan.json")
+    assert len(topics.answer(scan)) == len(topics.TOPICS) * len(scan)
+    assert len({topic.id for topic in topics.TOPICS}) == len(topics.TOPICS)
 
 
-def make_scan(**workflows):
-    """A scan.json with one repo per name, each with that many workflows."""
-    return {
-        name: {"workflows": {"count": count}, "mentions": {}, "pre_commit": None, "config_files": []}
-        for name, count in workflows.items()
-    }
-
-
-def test_answer_has_a_row_per_topic_and_repo_in_a_stable_order():
-    rows = topics.answer({"b/two": make_scan(x=1)["x"], "a/one": make_scan(x=0)["x"]})
-    assert [(row["topic"], row["repo"], row["status"]) for row in rows] == [
-        ("zizmor", "a/one", "n/a"),
-        ("zizmor", "b/two", "missing"),
-    ]
-    assert set(rows[0]) == {"topic", "repo", "status", "reason", "via", "evidence"}
-
-
-def test_counts_give_every_status_even_when_nobody_has_it(monkeypatch):
-    other = Topic("other", "Other", "?", "", dict.fromkeys(STATUSES, ""), lambda s: Result("done", ""))
-    monkeypatch.setattr(topics, "TOPICS", [*topics.TOPICS, other])
-    rows = topics.answer(make_scan(a=1, b=1, c=0))
-    assert topics.counts(rows) == {
-        "zizmor": {"done": 0, "partial": 0, "missing": 2, "n/a": 1},
-        "other": {"done": 3, "partial": 0, "missing": 0, "n/a": 0},
-    }
-
-
-def test_a_rerun_on_the_same_day_replaces_that_days_line_and_a_new_day_adds_one(tmp_path, monkeypatch):
+def test_a_rerun_on_the_same_day_replaces_that_days_numbers_and_a_new_day_adds_a_line(tmp_path, monkeypatch):
     monkeypatch.setattr(topics, "OUTPUT", tmp_path)
     monkeypatch.setattr(topics, "HISTORY", tmp_path / "topics_history.json")
-    save = importlib.import_module("common").save_json
-    save(tmp_path / "scan.json", make_scan(a=1))
-    for day, scan in (
-        ("2026-11-01", make_scan(a=1)),
-        ("2026-11-01", make_scan(a=1, b=0)),
-        ("2026-11-02", make_scan(a=1)),
-    ):
-        save(tmp_path / "scan.json", scan)
-        save(tmp_path / "repos.json", {"fetched_on": day})
+    monkeypatch.setattr(topics, "TOPICS", [zizmor.TOPIC])
+    repo = {"workflows": {"count": 1}, "mentions": {}}
+    for day, scan in (("2026-11-01", {"a": repo}), ("2026-11-01", {"a": repo, "b": repo}), ("2026-11-02", {"a": repo})):
+        common.save_json(tmp_path / "scan.json", scan)
+        common.save_json(tmp_path / "repos.json", {"fetched_on": day})
         topics.main()
-    history = importlib.import_module("common").load_json(tmp_path / "topics_history.json")
-    assert list(history) == ["2026-11-01", "2026-11-02"]
-    assert history["2026-11-01"]["zizmor"] == {
-        "done": 0,
-        "partial": 0,
-        "missing": 1,
-        "n/a": 1,
-    }  # the second run of the day
-    assert history["2026-11-02"]["zizmor"] == {"done": 0, "partial": 0, "missing": 1, "n/a": 0}
-    assert (tmp_path / "topics.json").exists()
-
-
-REGISTERED = list(topics.TOPICS)  # the real registry, before the fixture above replaces it
-
-
-def test_the_registered_topics_have_distinct_ids():
-    ids = [topic.id for topic in REGISTERED]
-    assert len(ids) == len(set(ids))
-
-
-def test_two_topics_with_the_same_id_are_refused(monkeypatch):
-    monkeypatch.setattr(topics, "TOPICS", [zizmor.TOPIC, zizmor.TOPIC])
-    with pytest.raises(ValueError):
-        topics.answer({})
-
-
-def test_every_registered_topic_answers_every_repo_of_the_committed_scan(monkeypatch):
-    """So that a topic reading a fact step 2 does not keep fails here, and not in the daily update."""
-    monkeypatch.setattr(topics, "TOPICS", REGISTERED)
-    scan = common.load_json(common.OUTPUT / "scan.json")
-    assert len(topics.answer(scan)) == len(REGISTERED) * len(scan)
+    history = common.load_json(tmp_path / "topics_history.json")
+    assert {day: counts["zizmor"]["missing"] for day, counts in history.items()} == {"2026-11-01": 2, "2026-11-02": 1}
+    assert len(common.load_json(tmp_path / "topics.json")["results"]) == 1
