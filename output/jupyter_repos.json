@@ -3015,16 +3015,16 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "0d730afbfac036e88e4745e950f418e8ebd84239",
-        "n_files": 47,
+        "commit": "0c5efc3f5d177e834ef0ce3f45b8d0a85f4ac92d",
+        "n_files": 48,
         "file_types": {
-          "docs": 29,
+          "docs": 30,
           "config": 6,
           "other": 1,
           "media": 10,
           "code": 1
         },
-        "prose_ratio": 0.975,
+        "prose_ratio": 0.976,
         "workflows": {
           "count": 1,
           "triggers": [
@@ -6689,18 +6689,18 @@
       "max_downloads_last_month": 1705,
       "top_package_dependents": 43,
       "content": {
-        "commit": "d057077a380870b1bdfef7942c36dc90beaee37a",
-        "n_files": 400,
+        "commit": "b3e3a7a99ce965ed75c8e695616da09d9fda2e85",
+        "n_files": 401,
         "file_types": {
           "config": 53,
-          "docs": 112,
+          "docs": 113,
           "other": 48,
           "code": 171,
           "media": 11,
           "notebook": 3,
           "web": 2
         },
-        "prose_ratio": 0.428,
+        "prose_ratio": 0.43,
         "workflows": {
           "count": 2,
           "triggers": [
@@ -24589,7 +24589,7 @@
       "max_downloads_last_month": 51057,
       "top_package_dependents": 8,
       "content": {
-        "commit": "480178b7fe22002b7c3b94e0e1c16cc78b2232f2",
+        "commit": "e09b53c1c5315ba8f07252f05d0e8dc32638c7dc",
         "n_files": 122,
         "file_types": {
           "config": 33,

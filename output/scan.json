@@ -1775,10 +1775,10 @@
     "readme": null
   },
   "jupyter-book/blog": {
-    "head": "0d730afbfac036e88e4745e950f418e8ebd84239",
-    "n_files": 47,
+    "head": "0c5efc3f5d177e834ef0ce3f45b8d0a85f4ac92d",
+    "n_files": 48,
     "file_types": {
-      "docs": 29,
+      "docs": 30,
       "config": 6,
       "other": 1,
       "media": 10,
@@ -4225,11 +4225,11 @@
     "readme": "[![Build Status](https://github.com/jupyter-server/jupyter_ydoc/workflows/Tests/badge.svg)](https://github.com/jupyter-server/jupyter_ydoc/actions)\n[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n[![PyPI](https://img.shields.io/pypi/v/jupyter-ydoc)](https://pypi.org/project/jupyter-ydoc/)\n[![npm (scoped)](https://img.shields.io/npm/v/@jupyter/ydoc)](https://www.npmjs.com/package/@jupyter/ydoc)\n\n# jupyter_ydoc\n\n`jupyter_ydoc` provides [pycrdt](https://github.com/jupyter-server/pycrdt)-based data structures for various\ndocuments used in the Jupyter ecosystem. Built-in documents include:\n- `YBlob`: a generic immutable binary document.\n- `YUnicode`: a generic UTF8-encoded text document (`YFile` is an alias to `YUnicode`).\n- `YNotebook`: a Jupyter notebook document.\n\nThese documents are registered via an entry point under the `\"jupyter_ydoc\"` group as `\"blob\"`,\n`\"unicode\"` (or `\"file\"`), and `\"notebook\"`, respectively. You can access them as follows:\n\n```py\nfrom jupyter_ydoc import ydocs\n\nprint(ydocs)\n# {\n#     'blob': <class 'jupyter_ydoc.yblob.YBlob'>,\n#     'file': <class 'jupyter_ydoc.yfile.YFile'>,\n#     'notebook': <class 'jupyter_ydoc.ynotebook.YNotebook'>,\n#     'unicode': <class 'jupyter_ydoc.yunicode.YUnicode'>\n# }\n```\n\nWhich is just a shortcut to:\n\n```py\nfrom importlib.metadata import entry_points\n\nydocs = {ep.name: ep.load() for ep in entry_points(group=\"jupyter_ydoc\")}\n```\n\nOr directly import them:\n```py\nfrom jupyter_ydoc import YBlob, YUnicode, YNotebook\n```\n\nThe `\"jupyter_ydoc\"` entry point group can be populated with your own documents, e.g. by adding the\nfollowing to your package's `pyproject.toml`:\n\n```\n[project.entry-points.jupyter_ydoc]\nmy_document = \"my_package.my_file:MyDocumentClass\"\n```\n"
   },
   "jupyter-server/jupyverse": {
-    "head": "d057077a380870b1bdfef7942c36dc90beaee37a",
-    "n_files": 400,
+    "head": "b3e3a7a99ce965ed75c8e695616da09d9fda2e85",
+    "n_files": 401,
     "file_types": {
       "config": 53,
-      "docs": 112,
+      "docs": 113,
       "other": 48,
       "code": 171,
       "media": 11,
@@ -18040,7 +18040,7 @@
     "readme": "# jupyterlite-p5-kernel\n\n[![Github Actions Status](https://github.com/jupyterlite/p5-kernel/workflows/Build/badge.svg)](https://github.com/jupyterlite/p5-kernel/actions/workflows/build.yml)\n[![JupyterLite](https://jupyterlite.rtfd.io/en/latest/_static/badge-launch.svg)](https://jupyterlite.github.io/p5-kernel)\n\nA p5.js kernel for JupyterLite, built on top of the [JavaScript kernel](https://github.com/jupyterlite/javascript-kernel).\n\n![image](https://user-images.githubusercontent.com/591645/135318337-8e63861c-c598-48db-8c90-2c86d3a8936b.png)\n\n## Requirements\n\n- [JupyterLite](https://github.com/jupyterlite/jupyterlite) `0.1.0b18+`\n\n## Install\n\nThis JupyterLite kernel can be installed as a federated server extension.\n\n```bash\n# Install the kernel\npip install jupyterlite-p5-kernel\n\n# Build a new JupyterLite site\njupyter lite build\n```\n\n## Uninstall\n\n```bash\npip uninstall jupyterlite-p5-kernel\n```\n\n## Contributing\n\n### Development install\n\n```bash\n# Clone the repo to your local environment\n# Change directory to the fork directory\n\n# create a new enviroment\nmamba create --name jupyterlite-p5-kernel -c conda-forge python=3.9 yarn jupyterlab\nmamba activate jupyterlite-p5-kernel\n\n# Install package in development mode\npython -m pip install -e .\n\n# Link your development version of the extension with JupyterLab\njlpm run install:extension\n\n# Rebuild the extension Typescript source after making changes\njlpm run build\n```\n\nThe extension should be linked to `PREFIX/share/jupyter/labextensions` and can be picked up by `jupyterlite`:\n\n```bash\n# Install jupyterlite\npython -m pip install jupyterlite\n\n# Build a new JupyterLite site\njupyter lite build\n\n# Serve the site\njupyter lite serve\n\n# Launch a browser to the Jupyterlite server url\npython -m webbrowser http://localhost:8000/\n```\n\n## References\n\n### p5.js\n\n- Processing > ProcessingJS > p5.js\n  https://en.wikipedia.org/wiki/Processing#p5.js\n- https://github.com/processing/p5.js\n- https://p5js.org/tutorials/\n- https://p5js.org/reference/ API docs\n- https://p5js.org/examples/\n  - https://p5js.org/examples/angles-and-motion-sine-cosine/\n  - https://p5js.org/examples/animation-and-variables-animation-with-events/\n- https://p5js.org/examples/classes-and-objects-snowflakes/\n- https://github.com/processing/p5.js/wiki/Beyond-the-canvas#creating-html-images\n- https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5#introducing-webgl-in-p5js\n- Summer of Code\n  https://github.com/processing/p5.js/wiki#google-summer-of-"
   },
   "jupyterlite/pyodide-kernel": {
-    "head": "480178b7fe22002b7c3b94e0e1c16cc78b2232f2",
+    "head": "e09b53c1c5315ba8f07252f05d0e8dc32638c7dc",
     "n_files": 122,
     "file_types": {
       "config": 33,
