@@ -6,7 +6,7 @@ Project Jupyter has over 400 public repositories across 20 GitHub organizations.
 
 - Expose a "todo list" of bite-sized security improvements from which contributors can pick from.
 - Be a tool to prioritize where security time is spent first using metrics
-- And eventually aggregate more data (trusted publishing, zizmor, check SECURITY.mds) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.
+- And eventually aggregate more data (trusted publishing, check SECURITY.mds) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.
 
 ## Structure
 
@@ -15,17 +15,18 @@ Project Jupyter has over 400 public repositories across 20 GitHub organizations.
 
 ## How it works
 
-Seven scripts run in order (they depend on each other):
+Eight scripts run in order (they depend on each other):
 
 | Step | What it does | Data from |
 |---|---|---|
 | 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
-| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files and README | GitHub |
+| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config and README | GitHub |
 | 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents and the date of the last release | PyPI, npm, pypistats.org, deps.dev |
 | 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |
 | 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
 | 6. Merge | Puts it all together and works out which repositories run each other's code | |
 | 7. Table | Writes `output/repos.csv` | |
+| 8. Topics | Answers each security topic for every repository and counts the answers each day | |
 
 [architecture.md](https://github.com/Yann-P/jupyter-security-inventory/blob/main/architecture.md) explains how the pieces fit together.
 
@@ -40,6 +41,13 @@ Seven scripts run in order (they depend on each other):
 - **security boundary**: whether its bugs can be exploited over the network, because it handles logins,
   proxies traffic, runs multi-user servers or runs code and content from the network, and why.
 
+## Security topics
+
+A topic asks one question about every repository, like "does it check its workflows with zizmor?", and answers
+with a status: done, partial, missing or not applicable. Each topic has a page, and every organization and
+repository page shows how it does. For now there is one: zizmor, run as its GitHub Action, as a command in a
+workflow or as a pre-commit hook.
+
 ## Caveats
 
 - **Repository type, and security boundary come from a language model**
@@ -48,6 +56,9 @@ Seven scripts run in order (they depend on each other):
 - Images: ghcr.io is not covered, Quay has no pull counts, and one tag is recorded per image: `latest`, or the newest.
   The namespaces are listed by hand in `scripts/4_images.py`. Many older images match no repository.
 - "Used in CI" only sees the repositories listed here.
+- Topics read the repository's files, so they show what is set up, not what is enforced. pre-commit.ci can't be seen
+  from the files, so a pre-commit hook counts as run by CI only if a workflow runs pre-commit or the config has a
+  `ci:` section.
 
 ## Running it
 
@@ -63,6 +74,7 @@ python scripts/4_images.py
 python scripts/5_classify.py --clone-dir ~/clones
 python scripts/6_build_dataset.py
 python scripts/7_table.py
+python scripts/8_topics.py
 ```
 
 ## Daily updates
@@ -76,7 +88,7 @@ nothing. To relabel everything, switch to another model or delete `output/classi
 ## Contributing
 
 Change the scripts, never `output/` by hand. Rerun the pipeline from the step you changed, run `pytest`,
-and commit the new outputs with your change. CI runs the tests and checks that `jupyter_repos.json` and `repos.csv` are up to date.
+and commit the new outputs with your change. CI runs the tests and checks that the outputs of steps 6 to 8 are up to date.
 
 The daily update and the site build install `requirements.txt` and `requirements-docs.txt`, which pin every
 dependency, including indirect ones, to an exact version. After changing the dependencies in `pyproject.toml`,

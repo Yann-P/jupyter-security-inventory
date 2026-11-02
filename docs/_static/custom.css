@@ -45,3 +45,9 @@ tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind
 
 /* {download} wraps its text in <code>: show it as the plain link it is. */
 a.download code { font: inherit; background: none; border: 0; padding: 0; color: inherit; }
+
+.status { padding: 0.1em 0.45em; border-radius: 0.3em; white-space: nowrap; }
+.status-done { background: rgba(76, 175, 80, 0.25); }
+.status-partial { background: rgba(255, 159, 28, 0.25); }
+.status-missing { background: rgba(239, 83, 80, 0.25); }
+.status-na { background: rgba(128, 128, 128, 0.25); }

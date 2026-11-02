@@ -31,6 +31,21 @@ def test_summarize_workflows_finds_triggers_secrets_and_publishing():
     }
 
 
+def test_mentions_lists_the_files_with_a_word_and_ignores_comments_and_look_alikes():
+    files = {
+        "lint.yml": "steps:\n  - run: uvx zizmor .\n  - run: pre-commit run -a",
+        "ci.yml": "steps:\n  - uses: zizmorcore/zizmor-action@abc  # v1\n  - uses: j178/prek-action@v1",
+        "test.yml": "# zizmor is great\non: push  # zizmor: ignore[dangerous-triggers]\npaths-ignore: [.pre-commit-config.yaml]",
+        "branches.yml": "branches-ignore: [pre-commit-ci-update-config]",
+        ".pre-commit-config.yaml": "ci:\n  autofix_prs: false\nrepos:\n  - repo: https://github.com/pre-commit/pre-commit-hooks",
+    }
+    assert scan.mentions(files) == {
+        "zizmor": ["ci.yml", "lint.yml"],
+        "zizmor-action": ["ci.yml"],
+        "pre-commit": [".pre-commit-config.yaml", "ci.yml", "lint.yml"],  # the ci: section sets up pre-commit.ci
+    }
+
+
 def test_chartpress_images_are_the_prefix_and_the_name_of_each_image():
     chartpress = """
 charts:
