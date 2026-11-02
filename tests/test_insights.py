@@ -1,6 +1,7 @@
 """Tests for docs/insights.py, which writes the site's pages."""
 
 import insights
+from topics import STATUSES
 
 
 def test_plain_keeps_text_from_repos_from_becoming_html_or_markdown():
@@ -127,19 +128,123 @@ def test_package_summary_counts_the_packages_of_each_registry():
 
 
 def test_sections_leave_out_empty_tables_and_the_sections_they_were_in():
-    body = insights.sections("o", [["r"]], [], {"PyPI": [], "npm": [["p"]]}, [], by_org=False)
+    body = insights.sections("o", [], [["r"]], [], {"PyPI": [], "npm": [["p"]]}, [], by_org=False)
     headings = [line for line in body.splitlines() if line.startswith("#")]
     assert headings == ["## Repositories", "### Software", "## Packages", "### npm"]
     assert body.startswith("[Repositories (1)](#repositories) · [Packages (1)](#packages)")  # no link to "Images"
     assert "filter-by-org" not in body  # an organization's tables have no organization column to filter
 
-    body = insights.sections("o", [["r"]], [["d"]], {"PyPI": [], "npm": []}, [], by_org=False)
+    body = insights.sections("o", [], [["r"]], [["d"]], {"PyPI": [], "npm": []}, [], by_org=False)
     assert "(#" not in body  # a page with one section needs no links to its sections
 
 
 def test_sections_list_the_images_without_a_subheading():
-    body = insights.sections("all", [["r"]], [], {"PyPI": [], "npm": []}, [["i"], ["j"]], by_org=True)
+    body = insights.sections("all", [], [["r"]], [], {"PyPI": [], "npm": []}, [["i"], ["j"]], by_org=True)
     headings = [line for line in body.splitlines() if line.startswith("#")]
     assert headings == ["## Repositories", "### Software", "## Images"]
     assert body.startswith("[Repositories (1)](#repositories) · [Images (2)](#images)")
     assert ":class: sphinx-datatable filter-by-org" in body  # the images have an organization column here
+
+
+def test_sections_start_with_the_security_topics_and_link_to_them():
+    body = insights.sections("o", [["t"]], [["r"]], [], {"PyPI": [], "npm": []}, [], by_org=False)
+    assert body.startswith("[Security topics (1)](#security-topics) · [Repositories (1)](#repositories)")
+    assert body.index("## Security topics") < body.index("## Repositories")
+
+
+def test_the_statuses_are_the_ones_the_topics_use():
+    assert insights.STATUSES == list(STATUSES)
+
+
+def make_topic_data():
+    """Three repos and one topic: a is done, b is missing, c is not applicable, d is partial."""
+    answers = {
+        "a/one": ("done", ["GitHub Action"], "Runs in a workflow.", [".github/workflows/z.yml"]),
+        "b/two": ("missing", [], "No sign of it.", []),
+        "c/three": ("n/a", [], "No workflows.", []),
+        "b/four": ("partial", ["pre-commit"], "Hook only.", [".pre-commit-config.yaml"]),
+    }
+    data = make_data(
+        *(
+            make_repo(name, [("PYPI", name.split("/")[1], downloads, 0)])
+            for name, downloads in (("a/one", 5), ("b/two", 9), ("c/three", 1), ("b/four", 3))
+        )
+    )
+    for repo in data.repos.values():
+        repo["content"] = {"commit": "c0ffee"}
+        repo["top_package"] = "PYPI:x"
+        repo["max_downloads_last_month"] = repo["packages"][0]["downloads_last_month"]
+        repo["used_by"] = {"ci": [], "build": [], "ci_pinned": []}
+    data.orgs = ["a", "b", "c"]
+    data.topics = [
+        {
+            "id": "t",
+            "title": "t",
+            "question": "Is it?",
+            "detection": "We look.",
+            "meanings": dict.fromkeys(STATUSES, "Means."),
+        }
+    ]
+    data.results = {
+        "t": {name: dict(zip(("status", "via", "reason", "evidence"), a), repo=name) for name, a in answers.items()}
+    }
+    data.history = {
+        "2026-11-01": {"t": {"done": 0, "partial": 0, "missing": 4, "n/a": 0}},
+        "2026-11-02": {"t": {"done": 1, "partial": 1, "missing": 1, "n/a": 1}},
+        "2026-11-03": {"t": {"done": 1, "partial": 1, "missing": 1, "n/a": 1}},  # nothing changed
+    }
+    return data
+
+
+def test_topic_summary_counts_the_statuses_of_the_repos_it_is_given():
+    data = make_topic_data()
+    assert insights.topic_summary(data, ["a/one", "b/two", "c/three", "b/four"]).rows == [["t", "Is it?", 1, 1, 1, 1]]
+    assert insights.topic_summary(data, ["b/two"]).rows == [["t", "Is it?", 0, 0, 1, 0]]
+    assert insights.topic_summary(data, ["b/two"]).cells[0][0] == "[t](/topics/t.md)"
+
+
+def test_topic_org_table_lists_the_organizations_with_the_most_left_to_do_first():
+    table = insights.topic_org_table(make_topic_data(), make_topic_data().topics[0])
+    assert table.rows == [["b", 2, 0, 1, 1], ["a", 1, 1, 0, 0]]  # c has nothing it applies to
+
+
+def test_topic_repo_table_leaves_out_what_is_not_applicable_and_lists_the_done_ones_last():
+    data = make_topic_data()
+    table = insights.topic_repo_table(data, data.topics[0])
+    assert [row[:3] for row in table.rows] == [
+        ["b/two", "b", "missing"],  # most downloaded of those with something to do
+        ["b/four", "b", "partial"],
+        ["a/one", "a", "done"],
+    ]
+    assert table.rows[2][3:] == ["GitHub Action", 5, "Runs in a workflow.", ".github/workflows/z.yml"]
+    assert (
+        table.cells[2][-1]
+        == "[\\.github\\/workflows\\/z\\.yml](https://github.com/a/one/blob/c0ffee/.github/workflows/z.yml)"
+    )
+
+
+def test_topic_history_lists_only_the_days_the_numbers_changed_newest_first():
+    data = make_topic_data()
+    assert insights.topic_history_table(data, data.topics[0]).rows == [
+        ["2026-11-02", 1, 1, 1, 1],
+        ["2026-11-01", 0, 0, 4, 0],
+    ]
+
+
+def test_topic_headline_counts_what_it_applies_to_and_what_is_left_out():
+    counts = insights.Counter({"done": 5, "partial": 0, "missing": 279, "n/a": 154})
+    assert insights.topic_headline(counts) == (
+        "It applies to 284 repositories: 5 done, 0 partial and 279 missing. 154 are not applicable and left out of the tables."
+    )
+    assert insights.topic_headline(insights.Counter({"missing": 1, "n/a": 1})).endswith(
+        "1 repository: 0 done, 0 partial and 1 missing. 1 is not applicable and left out of the tables."
+    )
+
+
+def test_repo_topics_shows_text_from_a_repo_as_text():
+    data = make_topic_data()
+    data.results["t"]["a/one"]["reason"] = "[click](https://evil.example)"
+    data.results["t"]["a/one"]["evidence"] = ["a b.yml"]
+    line = insights.repo_topics(data, "a/one")
+    assert "[click](" not in line  # the link was not made
+    assert "blob/c0ffee/a%20b.yml" in line  # the path is quoted in the URL

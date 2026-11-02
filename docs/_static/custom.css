@@ -45,3 +45,16 @@ tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind
 
 /* {download} wraps its text in <code>: show it as the plain link it is. */
 a.download code { font: inherit; background: none; border: 0; padding: 0; color: inherit; }
+
+/* The status of a security topic in a table: a colored label, so the table can be scanned. */
+:root {
+  --status-done: 76, 175, 80;
+  --status-partial: 255, 159, 28;
+  --status-missing: 239, 83, 80;
+  --status-na: 128, 128, 128;
+}
+.status { padding: 0.1em 0.45em; border-radius: 0.3em; white-space: nowrap; }
+.status-done { background-color: rgba(var(--status-done), 0.25); }
+.status-partial { background-color: rgba(var(--status-partial), 0.25); }
+.status-missing { background-color: rgba(var(--status-missing), 0.25); }
+.status-na { background-color: rgba(var(--status-na), 0.25); }

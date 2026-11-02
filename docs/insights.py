@@ -35,6 +35,16 @@ REGISTRIES = {"PYPI": "PyPI", "NPM": "npm"}
 # These tables are not tinted by kind: that is for repo tables.
 PACKAGE_HEADER = ["package", "organization", "repository", "downloads/month", "dependents", "last published"]
 IMAGE_HEADER = ["image", "registry", "tag", "organization", "repository", "all-time pulls", "last published"]
+# The statuses of a security topic, as scripts/topics/ defines them (a test checks that), in the order the tables list them.
+STATUSES = ["done", "partial", "missing", "n/a"]
+NOT_APPLICABLE = "n/a"
+TOPIC_HEADER = ["topic", "question", "done", "partial", "missing", "not applicable"]
+TOPIC_ORG_HEADER = ["organization", "repos it applies to", "done", "partial", "missing"]
+TOPIC_REPO_HEADER = ["repository", "organization", "status", "via", "downloads/month", "reason", "files"]
+TOPIC_HISTORY_HEADER = ["date", "done", "partial", "missing", "not applicable"]
+TOPICS_NOTE = (
+    "Each topic checks one practice in every repository. Open a topic to see which repositories still need work."
+)
 DOWNLOADS_NOTE = "Downloads are for the last month and include CI."
 IMAGES_NOTE = (
     "Only Docker Hub has pull counts; they are all-time and include CI."
@@ -56,6 +66,10 @@ REPO_PAGE = """# {title}
 - **Security boundary:** {boundary}
 - **Why these labels:** {rationale} ({model})
 
+## Security topics
+
+{topics}
+
 ## CI and releases
 
 - **Workflows:** {workflows}
@@ -67,6 +81,35 @@ REPO_PAGE = """# {title}
 ## Details
 
 {details}
+"""
+
+TOPIC_PAGE = """---
+html_theme.sidebar_secondary.remove: true
+---
+
+# {title}
+
+{question}
+
+{headline}
+
+{detection}
+
+{legend}
+
+## By organization
+
+{orgs}
+
+## Repositories
+
+{legend_of_kinds}
+
+{repos}
+
+## Over time
+
+{history}
 """
 
 ORG_PAGE = """---
@@ -233,6 +276,12 @@ class Data:
         self.scan = load("scan.json")
         self.images = load("images.json")["images"]
         self.orgs = load("repos.json")["orgs"]
+        topics = load("topics.json")
+        self.topics = topics["topics"]
+        self.results = {topic["id"]: {} for topic in self.topics}  # topic -> repo -> its answer
+        for row in topics["results"]:
+            self.results[row["topic"]][row["repo"]] = row
+        self.history = load("topics_history.json")  # day -> topic -> status -> number of repos
         with open(OUTPUT / "repos.csv", encoding="utf-8") as file:
             self.table = list(csv.DictReader(file))
         self.jupyter = {org.lower() for org in self.orgs}
@@ -396,6 +445,153 @@ def image_cells(row: list) -> list:
     ]
 
 
+def status_chip(status: str) -> str:
+    """A status as a colored label: 'done' on green, 'missing' on red (docs/_static/custom.css)."""
+    return f"[{plain(status)}]{{.status .status-{status.replace('/', '')}}}"  # 'n/a' -> status-na
+
+
+def file_link(data: Data, name: str, path: str) -> str:
+    """A link to a file of a repo, at the commit that was scanned."""
+    commit = data.repos[name]["content"]["commit"]
+    return f"[{plain(path)}](https://github.com/{name}/blob/{commit}/{quote(path, safe='/')})"
+
+
+def topic_counts(data: Data, topic: dict, names) -> Counter:
+    """How many of these repos have each status for this topic."""
+    results = data.results[topic["id"]]
+    return Counter(results[name]["status"] for name in names)
+
+
+def topic_summary(data: Data, names) -> Table:
+    """One row per topic: how many of these repos are done, partial, missing or not applicable."""
+    rows, cells = [], []
+    for topic in data.topics:
+        counts = topic_counts(data, topic, names)
+        rows.append([topic["title"], topic["question"], *(counts[status] for status in STATUSES)])
+        title = f"[{plain(topic['title'])}](/topics/{topic['id']}.md)"
+        cells.append([title, plain(topic["question"]), *rows[-1][2:]])
+    return Table(TOPIC_HEADER, rows, cells)
+
+
+def topic_org_table(data: Data, topic: dict) -> Table:
+    """Per organization, how many of the repos the topic applies to are done, partial or missing. Most to do first."""
+    rows = []
+    for org in data.orgs:
+        counts = topic_counts(
+            data, topic, [name for name in data.results[topic["id"]] if data.repos[name]["org"] == org]
+        )
+        todo = [counts["partial"], counts["missing"]]
+        if counts["done"] or any(todo):
+            rows.append([org, counts["done"] + sum(todo), counts["done"], *todo])
+    rows.sort(key=lambda row: (-(row[3] + row[4]), row[0]))
+    return Table(TOPIC_ORG_HEADER, rows, [[org_link(row[0]), *row[1:]] for row in rows])
+
+
+def topic_repo_table(data: Data, topic: dict) -> Table:
+    """The repos the topic applies to: those with something left to do first, most reached first."""
+    results = data.results[topic["id"]]
+    names = data.by_reach(name for name, answer in results.items() if answer["status"] != NOT_APPLICABLE)
+    names.sort(key=lambda name: results[name]["status"] == "done")  # a stable sort: keeps the order by reach
+    rows, cells = [], []
+    for name in names:
+        answer, repo = results[name], data.repos[name]
+        rows.append(
+            [
+                name,
+                repo["org"],
+                answer["status"],
+                ", ".join(answer["via"]),
+                repo["max_downloads_last_month"] if repo["top_package"] else "",
+                answer["reason"],
+                "; ".join(answer["evidence"]),
+            ]
+        )
+        cells.append(
+            [
+                data.cell(name),
+                org_link(repo["org"]),
+                status_chip(answer["status"]),
+                plain(", ".join(answer["via"])),
+                data.downloads(name),
+                plain(answer["reason"]),
+                ", ".join(file_link(data, name, path) for path in answer["evidence"]),
+            ]
+        )
+    return Table(TOPIC_REPO_HEADER, rows, cells)
+
+
+def topic_history_table(data: Data, topic: dict) -> Table:
+    """The days on which the numbers of a topic changed, newest first."""
+    rows, last = [], None
+    for day, topics in sorted(data.history.items()):
+        counts = topics.get(topic["id"])  # a topic added later has no line for the earlier days
+        if counts and counts != last:
+            rows.append([day, *(counts[status] for status in STATUSES)])
+            last = counts
+    rows.reverse()
+    return Table(TOPIC_HISTORY_HEADER, rows, [[date(row[0]), *row[1:]] for row in rows])
+
+
+def topic_headline(counts: Counter) -> str:
+    applies = counts["done"] + counts["partial"] + counts["missing"]
+    sentence = (
+        f"It applies to {counted(applies, 'repository', 'repositories')}:"
+        f" {counts['done']} done, {counts['partial']} partial and {counts['missing']} missing."
+    )
+    if counts[NOT_APPLICABLE]:
+        sentence += " " + counted(counts[NOT_APPLICABLE], "is not applicable", "are not applicable")
+        sentence += " and left out of the tables."
+    return sentence
+
+
+def topic_page(data: Data, topic: dict) -> str:
+    """Writes the tables of a topic's page and returns the page."""
+    stem = f"topic-{topic['id']}"
+    orgs, repos, history = topic_org_table(data, topic), topic_repo_table(data, topic), topic_history_table(data, topic)
+    orgs.write(f"{stem}-orgs")
+    repos.write(f"{stem}-repos")
+    history.write(f"{stem}-history")
+    first_day = min(data.history)
+    return TOPIC_PAGE.format(
+        title=plain(topic["title"]),
+        question=plain(topic["question"]),
+        headline=topic_headline(topic_counts(data, topic, data.results[topic["id"]])),
+        detection=plain(topic["detection"]),
+        legend="\n".join(f"- {status_chip(status)} {plain(topic['meanings'][status])}" for status in STATUSES),
+        orgs=csv_table(f"{stem}-orgs", False),
+        legend_of_kinds=LEGEND,
+        repos=csv_table(f"{stem}-repos", True),
+        history=(
+            f"The numbers are recorded every day, starting on {first_day}. This table lists the days they changed.\n\n"
+            + csv_table(f"{stem}-history", False)
+        ),
+    )
+
+
+def topic_pages(data: Data):
+    """A page per topic, and the list of them for the page of topics."""
+    shutil.rmtree(DOCS / "topics", ignore_errors=True)  # generated, like the pages of organizations
+    (DOCS / "topics").mkdir()
+    for topic in data.topics:
+        (DOCS / "topics" / f"{topic['id']}.md").write_text(topic_page(data, topic), encoding="utf-8")
+    pages = "\n".join(f"topics/{topic['id']}" for topic in data.topics)
+    (GENERATED / "topics-toctree.md").write_text(f"```{{toctree}}\n:hidden:\n\n{pages}\n```\n", encoding="utf-8")
+
+
+def repo_topics(data: Data, name: str) -> str:
+    """The answer of each topic for a repo, with links to the files that show it."""
+    lines = []
+    for topic in data.topics:
+        answer = data.results[topic["id"]][name]
+        via = f" via {plain(', '.join(answer['via']))}" if answer["via"] else ""
+        files = ", ".join(file_link(data, name, path) for path in answer["evidence"])
+        lines.append(
+            f"- **[{plain(topic['title'])}](/topics/{topic['id']}.md):** {plain(answer['status'])}{via}."
+            f" {plain(answer['reason'])}" + (f" Files: {files}" if files else "")
+        )
+    return "\n".join(lines) or "none"
+
+
 def csv_table(stem: str, by_org: bool) -> str:
     """The Markdown for a sortable table whose rows are in <stem>.csv, with a link to download them.
 
@@ -408,14 +604,17 @@ def csv_table(stem: str, by_org: bool) -> str:
     )
 
 
-def sections(scope: str, software: Table, docs: Table, packages: dict, images: Table, by_org: bool) -> str:
-    """The sections of a page: repositories, packages (a table per registry) and images.
+def sections(
+    scope: str, topics: Table, software: Table, docs: Table, packages: dict, images: Table, by_org: bool
+) -> str:
+    """The sections of a page: security topics, repositories, packages (a table per registry) and images.
 
     `packages` maps a registry's title to its table. A table with no rows is left out, and so is a section with no
     table. With more than one section, a line of links to them comes first. `by_org`: the package and image tables
     have an organization column.
     """
     groups = [  # (title, note, whether its tables are filtered by organization, [(subtitle, table stem, table)])
+        ("Security topics", TOPICS_NOTE, False, [(None, f"{scope}-topics", topics)]),
         (
             "Repositories",
             LEGEND,
@@ -434,7 +633,7 @@ def sections(scope: str, software: Table, docs: Table, packages: dict, images: T
     for title, note, filtered, tables in groups:
         tables = [(subtitle, stem, table) for subtitle, stem, table in tables if len(table)]
         if tables:
-            links.append(f"[{title} ({sum(len(table) for _, _, table in tables)})](#{title.lower()})")
+            links.append(f"[{title} ({sum(len(table) for _, _, table in tables)})](#{title.lower().replace(' ', '-')})")
             blocks = [
                 f"### {subtitle}\n\n{csv_table(stem, filtered)}" if subtitle else csv_table(stem, filtered)
                 for subtitle, stem, _ in tables
@@ -444,11 +643,12 @@ def sections(scope: str, software: Table, docs: Table, packages: dict, images: T
 
 
 def write_tables(data: Data, scope: str, names: list[str], images: list[dict], by_org: bool) -> str:
-    """Writes the tables of a page that lists repositories, their packages and images. Returns its sections.
+    """Writes the tables of a page that lists repositories, their security topics, packages and images. Returns its sections.
 
     `names` are the repositories of the page. Without `by_org`, the tables of packages and images
     leave out the organization column, which is the same on every row of an organization's page.
     """
+    topics = topic_summary(data, names)
     software = repo_table(data, [name for name in names if not data.out_of_the_way(name)])
     docs = docs_table(data, [name for name in names if data.out_of_the_way(name)])
     packages = {title: package_table(data, system, names) for system, title in REGISTRIES.items()}
@@ -457,12 +657,13 @@ def write_tables(data: Data, scope: str, names: list[str], images: list[dict], b
         packages = {title: table.without_org() for title, table in packages.items()}
         images = images.without_org()
 
+    topics.write(f"{scope}-topics")
     software.write(f"{scope}-repos")
     docs.write(f"{scope}-docs")
     for title, table in packages.items():
         table.write(f"{scope}-{title.lower()}")
     images.write(f"{scope}-images")
-    return sections(scope, software, docs, packages, images, by_org)
+    return sections(scope, topics, software, docs, packages, images, by_org)
 
 
 def image_item(image: dict) -> str:
@@ -538,6 +739,7 @@ def repo_page(data: Data, name: str) -> str:
         else "no",
         rationale=plain(data.label(name, "rationale")),
         model=plain(data.label(name, "model")),
+        topics=repo_topics(data, name),
         workflows=f"{workflows['count']}, run on " + ", ".join(map(plain, workflows["triggers"]))
         if workflows["count"]
         else "none",
@@ -625,6 +827,9 @@ def build() -> dict:
 
     # Organizations, with a page per organization and repository
     org_pages(data).write("orgs")
+
+    # Security topics, with a page per topic
+    topic_pages(data)
 
     # All organizations: the home page, whose package and image tables the pages of packages and images show too
     body = write_tables(data, "all", names, data.images, by_org=True)

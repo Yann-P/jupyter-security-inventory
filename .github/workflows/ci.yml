@@ -22,11 +22,12 @@ jobs:
       - run: pip install . --group dev
       - run: pre-commit run --all-files --show-diff-on-failure
       - run: pytest
-      - name: Check that output/jupyter_repos.json and output/repos.csv are up to date
+      - name: Check that the outputs of steps 6 to 8 are up to date
         run: |
           python scripts/6_build_dataset.py
           python scripts/7_table.py
-          git diff --exit-code output/jupyter_repos.json output/repos.csv || {
-            echo "::error::Outputs are out of date: run the two commands above and commit the result."
+          python scripts/8_topics.py
+          git diff --exit-code output/jupyter_repos.json output/repos.csv output/topics.json output/topics_history.json || {
+            echo "::error::Outputs are out of date: run the three commands above and commit the result."
             exit 1
           }

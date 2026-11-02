@@ -12,6 +12,7 @@ html_theme.sidebar_secondary.remove: true
 
 self
 orgs
+topics
 packages
 images
 about
