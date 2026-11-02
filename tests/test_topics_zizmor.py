@@ -25,8 +25,17 @@ def test_a_result_must_have_a_known_status():
 
 def test_a_topic_must_say_what_each_status_means():
     with pytest.raises(ValueError):
-        Topic("t", "T", "?", "all", "", {"done": "yes"}, lambda scan: Result(MISSING, ""))
+        Topic("t", "T", "?", "", {"done": "yes"}, lambda scan: Result(MISSING, ""))
     assert set(zizmor.TOPIC.meanings) == set(STATUSES)
+
+
+def test_a_topic_id_is_safe_in_a_url_and_a_file_name():
+    meanings = dict.fromkeys(STATUSES, "")
+    for good in ("zizmor", "trusted-publishing", "python-3"):
+        Topic(good, "T", "?", "", meanings, lambda scan: Result(MISSING, ""))
+    for bad in ("", "Zizmor", "my topic", "a/b", "x#y", "a_b", "-a", "a--b"):
+        with pytest.raises(ValueError):
+            Topic(bad, "T", "?", "", meanings, lambda scan: Result(MISSING, ""))
 
 
 def test_the_github_action_counts_as_running_in_ci():
@@ -73,6 +82,11 @@ def test_a_config_file_alone_is_partial():
     assert zizmor.check(facts(config_files=[".github/dependabot.yml"])).status == "missing"  # not a zizmor file
 
 
-def test_workflows_and_no_sign_of_zizmor_is_missing_and_no_workflows_is_not_applicable():
+def test_workflows_and_no_sign_of_zizmor_is_missing():
     assert zizmor.check(facts()).status == MISSING
+
+
+def test_no_workflows_is_not_applicable_even_with_a_hook_or_a_config_file():
     assert zizmor.check(facts(workflows=0)).status == NOT_APPLICABLE
+    assert zizmor.check(facts(workflows=0, pre_commit=hook(ci=True))).status == NOT_APPLICABLE  # nothing to check
+    assert zizmor.check(facts(workflows=0, config_files=["zizmor.yaml"])).status == NOT_APPLICABLE

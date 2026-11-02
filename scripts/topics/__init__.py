@@ -5,6 +5,7 @@ output/topics.json says, and knows nothing about any particular topic. To add on
 in scripts/8_topics.py.
 """
 
+import re
 from collections.abc import Callable
 from dataclasses import dataclass, field
 
@@ -32,16 +33,20 @@ class Result:
 
 @dataclass
 class Topic:
-    """`check` takes a repo's entry of scan.json. `meanings` says what each status means for this topic."""
+    """`check` takes a repo's entry of scan.json. `meanings` says what each status means for this topic.
+
+    The id names the topic's page and files, so it is lower case letters, digits and hyphens.
+    """
 
     id: str
     title: str
     question: str
-    applies_to: str
     detection: str
     meanings: dict[str, str]
     check: Callable[[dict], Result]
 
     def __post_init__(self):
+        if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", self.id):
+            raise ValueError(f"topic id {self.id!r}: use lower case letters, digits and hyphens")
         if set(self.meanings) != set(STATUSES):
             raise ValueError(f"topic {self.id}: meanings must cover exactly {STATUSES}")

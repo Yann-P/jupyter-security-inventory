@@ -45,7 +45,8 @@ CONFIG_FILES = {".github/zizmor.yml", ".github/zizmor.yaml", "zizmor.yml", "zizm
 MENTIONS = {
     "zizmor": r"zizmor",
     "zizmor-action": r"zizmor-action",
-    "pre-commit": r"pre-commit|\bprek\b",  # prek is a faster pre-commit
+    # A run of pre-commit (or of prek, a faster pre-commit), not the name of its config file or of the pre-commit-ci branch.
+    "pre-commit": r"(?<![.\w-])pre-commit(?!-ci|-config)\b|\bprek\b(?!\.toml)",
 }
 CHARTPRESS = {"chartpress.yaml", "chartpress.yml"}  # chartpress builds a Helm chart's container images
 # A manifest inside one of these folders is a test, an example or a vendored copy, not a published package.

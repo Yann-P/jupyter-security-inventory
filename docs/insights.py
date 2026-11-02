@@ -42,6 +42,7 @@ TOPIC_HEADER = ["topic", "question", "done", "partial", "missing", "not applicab
 TOPIC_ORG_HEADER = ["organization", "repos it applies to", "done", "partial", "missing"]
 TOPIC_REPO_HEADER = ["repository", "organization", "status", "via", "downloads/month", "reason", "files"]
 TOPIC_HISTORY_HEADER = ["date", "done", "partial", "missing", "not applicable"]
+NO_ROWS = "Nothing to list."
 TOPICS_NOTE = (
     "Each topic checks one practice in every repository. Open a topic to see which repositories still need work."
 )
@@ -135,8 +136,11 @@ def load(name: str):
 
 
 def plain(text) -> str:
-    """Text shown exactly as it is: Markdown can't interpret any of it once punctuation is escaped."""
-    return re.sub(r"([!-/:-@\[-`{-~])", r"\\\1", str(text or "")).replace("\n", " ")
+    """Text shown exactly as it is: Markdown can't interpret any of it once punctuation is escaped.
+
+    It stays on one line: a table row ends at any line break, which is more than "\\n" (\\r, \\x85, \\u2028 ...).
+    """
+    return " ".join(re.sub(r"([!-/:-@\[-`{-~])", r"\\\1", str(text or "")).splitlines())
 
 
 def n(number) -> str:
@@ -551,19 +555,22 @@ def topic_page(data: Data, topic: dict) -> str:
     orgs.write(f"{stem}-orgs")
     repos.write(f"{stem}-repos")
     history.write(f"{stem}-history")
-    first_day = min(data.history)
+    # A topic added later has no line for the earlier days. An empty table is an error in csv-table, so say so instead.
+    first_day = min((day for day, topics in data.history.items() if topic["id"] in topics), default=None)
     return TOPIC_PAGE.format(
         title=plain(topic["title"]),
         question=plain(topic["question"]),
         headline=topic_headline(topic_counts(data, topic, data.results[topic["id"]])),
         detection=plain(topic["detection"]),
         legend="\n".join(f"- {status_chip(status)} {plain(topic['meanings'][status])}" for status in STATUSES),
-        orgs=csv_table(f"{stem}-orgs", False),
+        orgs=csv_table(f"{stem}-orgs", False) if len(orgs) else NO_ROWS,
         legend_of_kinds=LEGEND,
-        repos=csv_table(f"{stem}-repos", True),
+        repos=csv_table(f"{stem}-repos", True) if len(repos) else NO_ROWS,
         history=(
             f"The numbers are recorded every day, starting on {first_day}. This table lists the days they changed.\n\n"
             + csv_table(f"{stem}-history", False)
+            if first_day
+            else NO_ROWS
         ),
     )
 

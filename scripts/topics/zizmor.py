@@ -11,6 +11,8 @@ PRE_COMMIT_CONFIG = ".pre-commit-config.yaml"
 
 
 def check(scan: dict) -> Result:
+    if not scan["workflows"]["count"]:
+        return Result(NOT_APPLICABLE, "No GitHub workflows.")  # nothing to check, whatever is set up
     in_workflows = scan["mentions"].get("zizmor", [])
     action = scan["mentions"].get("zizmor-action", [])
     pre_commit = scan["pre_commit"]
@@ -39,16 +41,13 @@ def check(scan: dict) -> Result:
         return Result(PARTIAL, "Pre-commit hook, but nothing shows that CI runs pre-commit.", via, sorted(evidence))
     if configs:
         return Result(PARTIAL, "Has a zizmor config file, but nothing runs zizmor.", via, sorted(evidence))
-    if scan["workflows"]["count"]:
-        return Result(MISSING, "No sign of zizmor.")
-    return Result(NOT_APPLICABLE, "No GitHub workflows.")
+    return Result(MISSING, "No sign of zizmor.")
 
 
 TOPIC = Topic(
     id="zizmor",
     title="zizmor",
     question="Does the repository check its GitHub workflows with zizmor?",
-    applies_to="Repositories with GitHub workflows",
     detection=(
         "We look for zizmor in the repository's workflows and action files (its GitHub Action or a command), in its"
         ' pre-commit hooks, and for a zizmor config file. Comments are ignored, so a note like "zizmor: ignore" does'

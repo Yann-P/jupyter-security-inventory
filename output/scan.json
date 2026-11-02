@@ -1092,10 +1092,7 @@
     "build_requires": [],
     "mentions": {
       "pre-commit": [
-        ".github/workflows/publish.yml",
-        ".github/workflows/test-chart.yaml",
-        ".github/workflows/test-docker-build.yaml",
-        ".github/workflows/test-docs.yaml"
+        ".github/workflows/test-chart.yaml"
       ]
     },
     "pre_commit": {
@@ -1562,14 +1559,7 @@
       "hatchling",
       "jupyterlab"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yml",
-        ".github/workflows/test-docs.yml",
-        ".github/workflows/test-ssh.yml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -9859,11 +9849,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/cd.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -10021,9 +10007,6 @@
     "mentions": {
       "zizmor": [
         ".github/workflows/zizmor.yml"
-      ],
-      "pre-commit": [
-        ".github/workflows/buildutils.yml"
       ]
     },
     "pre_commit": {
@@ -11792,11 +11775,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/flake8",
@@ -12143,11 +12122,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -12297,11 +12272,7 @@
       "setuptools",
       "wheel"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/image.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -12363,11 +12334,7 @@
     "build_requires": [
       "setuptools"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/image.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -12625,11 +12592,7 @@
       "setuptools",
       "wheel"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -12703,11 +12666,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/publish.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -12775,11 +12734,7 @@
     "build_requires": [
       "setuptools"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/image.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -12966,11 +12921,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test_k3s.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/adrienverge/yamllint",
@@ -13068,11 +13019,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/lovesegfault/beautysh"
@@ -13167,12 +13114,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -13243,11 +13185,7 @@
       "setuptools",
       "wheel"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -13417,17 +13355,7 @@
       "setuptools",
       "wheel"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/diff.yml",
-        ".github/workflows/eslint.yml",
-        ".github/workflows/jest.yml",
-        ".github/workflows/playwright.yaml",
-        ".github/workflows/publish.yml",
-        ".github/workflows/test-docker-build.yaml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/flake8",
@@ -13502,12 +13430,7 @@
       "setuptools",
       "setuptools-scm"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/flake8",
@@ -13583,12 +13506,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/publish.yml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/lovesegfault/beautysh",
@@ -13698,12 +13616,7 @@
       "setuptools",
       "setuptools-scm"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/publish.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -13772,12 +13685,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -13913,12 +13821,7 @@
     "build_requires": [
       "setuptools"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": null,
     "config_files": [],
     "readme": "[![Latest PyPI version](https://img.shields.io/pypi/v/jupyterhub-firstuseauthenticator?logo=pypi)](https://pypi.python.org/pypi/jupyterhub-firstuseauthenticator)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/workflow/status/jupyterhub/firstuseauthenticator/Test?logo=github&label=tests)](https://github.com/jupyterhub/zero-to-jupyterhub-k8s/actions)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/jupyterhub-firstuseauthenticator/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\n# JupyterHub First Use Authenticator\n\nA [JupyterHub](https://jupyterhub.readthedocs.io) authenticator that helps new users set their password on their first login to JupyterHub.\n\n**Are you running a workshop from a single physical location, such as a university seminar or a user group?**\n\nJupyterHub First Use Authenticator can simplify the user set up for you. It's very useful when using transient\nJupyterHub instances in a single physical location. It allows multiple users to log in, but you do not have install a pre-existing authentication setup. With this authenticator, users can just pick a username and password and get to work!\n\n## Installation\n\nYou can install this authenticator with:\n\n```bash\npip install jupyterhub-firstuseauthenticator\n```\n\nOnce installed, configure JupyterHub to use it by adding the following to your `jupyterhub_config.py` file:\n\n```python\nc.JupyterHub.authenticator_class = 'firstuseauthenticator.FirstUseAuthenticator'\n```\n\n## Configuration\n\n### FirstUseAuthenticator.dbm_path\n\nPath to the [dbm](https://docs.python.org/3.5/library/dbm.html) file, or a UNIX database file such as `passwords.dbm`, used to store usernames and passwords. The dbm file should be put where regular users do not have read/write access to it.\n\nThis authenticator's default setting for the path to the `passwords.dbm` is the current directory from which JupyterHub is spawned.\n\n### FirstUseAuthenticator.create_users\n\nCreate users if they do not exist already.\n\nWhen set to False, users would have to be explicitly created before\nthey can log in. Users can be created via the admin panel or by setting\nwhitelist / admin list.\n\nDefaults to True.\n\n## FAQ\n\n### Why have a password DB and not use PAM ?\n\nFor security Re"
@@ -13965,11 +13868,7 @@
       "setuptools",
       "setuptools-scm"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/flake8",
@@ -14014,11 +13913,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -14119,12 +14014,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -14193,11 +14083,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": null,
     "config_files": [],
     "readme": "# jupyter-rsession-proxy\n\n[![Test JupyterLab](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterlab.yaml/badge.svg)](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterlab.yaml)\n[![Test JupyterHub](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterhub.yaml/badge.svg)](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterhub.yaml)\n\n**jupyter-rsession-proxy** provides Jupyter server and notebook extensions to proxy RStudio.\n\n![Screenshot](screenshot.png)\n\nIf you have a JupyterHub deployment, jupyter-rsession-proxy can take advantage of JupyterHub's existing authenticator and spawner to launch RStudio in users' Jupyter environments. You can also run this from within Jupyter.\nNote that [RStudio Server Pro](https://rstudio.com/products/rstudio-server-pro) has more featureful authentication and spawning than the standard version, in the event that you do not want to use Jupyter's.\n\nThis extension used to proxy Shiny server as well, however that functionality has been [separated](https://github.com/ryanlovett/jupyter-shiny-proxy).\n\n## Installation\n\n### Pre-reqs\n\n#### Install rstudio\nUse conda `conda install rstudio` or [download](https://www.rstudio.com/products/rstudio/download-server/) the corresponding package for your platform\n\nNote that rstudio server is needed to work with this extension.\n\n### Install jupyter-rsession-proxy\n\nInstall the library via `pip`:\n```\npip install jupyter-rsession-proxy\n```\nOr via `conda`:\n```\nconda install -c conda-forge jupyter-rsession-proxy\n```\n\n### Traitlets configuration\n\nYou may also manually configure this extension inside a [traitlets](https://traitlets.readthedocs.io/en/stable/) configuration file for [jupyter-server-proxy](https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html#specifying-config-via-traitlets). This also allows you to configure multiple different RStudio applications, for instance using different versions of R:\n\n```python\nfrom jupyter_rsession_proxy import setup_rserver\n# update the jupyter-server-proxy config by adding two RStudio servers\nc.ServerProxy.servers.update({\n  \"rstudio1\": setup_rserver(prefix=\"rstudio1\", r_path=\"/usr/bin/R\", launcher_title=\"RStudio (default R)\"),\n  \"rstudio2\": setup_rserver(prefix=\"rstudio2\", r_path=\"/opt/miniconda3/bin/R\", launcher_title=\"RStudio (other R)\")\n})\n# note that the prefix and the dict key are the same for each server (bot"
@@ -14267,13 +14153,7 @@
       "hatchling",
       "jupyterlab"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/linkcheck.yaml",
-        ".github/workflows/publish.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -14362,14 +14242,7 @@
       "setuptools",
       "setuptools-scm"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yml",
-        ".github/workflows/test-docs.yml",
-        ".github/workflows/test-javascript.yml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -14453,11 +14326,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/build.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/astral-sh/ruff-pre-commit",
@@ -14620,12 +14489,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -14717,11 +14581,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -14789,11 +14649,7 @@
     "build_requires": [
       "sphinx-theme-builder"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -14847,11 +14703,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/executablebooks/mdformat",
@@ -15030,12 +14882,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/publish.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/flake8",
@@ -15102,12 +14949,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -15180,13 +15022,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/publish.yaml",
-        ".github/workflows/test-docs.yaml",
-        ".github/workflows/test-package.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/flake8",
@@ -15292,10 +15128,7 @@
     "build_requires": [],
     "mentions": {
       "pre-commit": [
-        ".github/workflows/cd.yml",
-        ".github/workflows/terraform.yml",
-        ".github/workflows/test-helm-template.yaml",
-        ".github/workflows/test-yamllint.yml"
+        ".github/workflows/terraform.yml"
       ]
     },
     "pre_commit": {
@@ -15388,12 +15221,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -15464,13 +15292,7 @@
       "jupyter-packaging",
       "setuptools"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/docs.yml",
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/flake8",
@@ -15673,13 +15495,7 @@
       "hatch-requirements-txt",
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test-docs.yaml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -15805,11 +15621,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/jupyterhub/chartpress",
@@ -15867,12 +15679,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -15978,13 +15785,7 @@
       "setuptools-scm",
       "wheel"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/docker.yml",
-        ".github/workflows/release.yml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/asottile/pyupgrade",
@@ -16033,11 +15834,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": null,
     "config_files": [],
     "readme": "![](https://github.com/jupyterhub/repo2docker-action/workflows/Test/badge.svg) [![MLOps](https://img.shields.io/badge/MLOps-black.svg?logo=github&?logoColor=blue)](https://mlops-github.com)\n\n\n# <a href=\"https://github.com/jupyterhub/repo2docker\"><img src=\"https://raw.githubusercontent.com/jupyterhub/repo2docker/71eb8058c790a88d223470a55f3ea5b744614dcf/docs/source/_static/images/repo2docker.png\" height=\"40px\" /></a>  repo2docker GitHub Action\n\n\n<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->\n\n- [What Can I Do With This Action?](#what-can-i-do-with-this-action)\n- [API Reference](#api-reference)\n\t- [Mandatory Inputs](#mandatory-inputs)\n\t- [Optional Inputs](#optional-inputs)\n\t- [Outputs](#outputs)\n- [Testing the built image](#testing-the-built-image)\n- [Examples](#examples)\n\t- [mybinder.org](#mybinderorg)\n\t\t- [Cache builds on mybinder.org](#cache-builds-on-mybinderorg)\n\t\t- [Cache Builds On mybinder.org And Provide A Link](#cache-builds-on-mybinderorg-and-provide-a-link)\n\t\t- [Use GitHub Actions To Cache The Build For BinderHub](#use-github-actions-to-cache-the-build-for-binderhub)\n\t- [Push Repo2Docker Image To DockerHub](#push-repo2docker-image-to-dockerhub)\n\t- [Push Repo2Docker Image To quay.io](#push-repo2docker-image-to-quayio)\n\t- [Push Repo2Docker Image To Amazon ECR](#push-repo2docker-image-to-amazon-ecr)\n\t- [Push Repo2Docker Image To Google Container Registry](#push-repo2docker-image-to-google-container-registry)\n\t- [Push Repo2Docker Image To Google Artifact Registry](#push-repo2docker-image-to-google-artifact-registry)\n  \t- [Push Repo2Docker Image To GitHub Package Registry](#push-repo2docker-image-to-github-package-registry)\n\t- [Push Repo2Docker Image To Azure Container Registry](#push-repo2docker-image-to-azure-container-registry)\n\t- [Push Repo2Docker Image To Other Registries](#push-repo2docker-image-to-other-registries)\n\t- [Change Image Name](#change-image-name)\n\t- [Test Image Build](#test-image-build)\n- [Contributing](#contributing-to-repo2docker-action)\n\n<!-- /TOC -->\n\n\nTrigger [repo2docker](https://github.com/jupyter/repo2docker) to build a Jupyter enabled Docker image from your GitHub repository and push this image to a Docker registry of your choice.  This will automatically attempt to build an environment from configuration files found in your repository in the [manner described here](https://repo2docker.readthedocs.io/en/latest/usage.html#where-to-put-configuration-files).\n\nRead the full docs on repo2docker for more"
@@ -16120,12 +15917,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -16194,12 +15986,7 @@
       "setuptools",
       "setuptools-scm"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -16264,12 +16051,7 @@
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -16329,11 +16111,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/test-docs.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": null,
     "config_files": [],
     "readme": "# The JupyterHub team compass\n\nThis meta-repository is meant to help us organize ourselves across the many organizations,\nprojects, and use-cases in the JupyterHub community. It's meant to make the project more\nwelcoming, transparent, and inclusive. If you've got an idea for how this can be improved,\nplease reach out!\n\nMost of the Team Compass lives in the website [The JupyterHub Team Compass](http://compass.hub.jupyter.org/).\n\nAnd please familiarise yourself with [Jupyter's Code of Conduct](https://jupyter.org/governance/conduct/code_of_conduct.html).\n\n## Team Meetings\n\nSee [our team meetings page](https://compass.hub.jupyter.org/meetings/) for information about team meetings and how to join.\n\n## Team Membership\n\nThe list of \"core\" members of the JupyterHub project can be found on\n[\"Our team\" page](https://compass.hub.jupyter.org/team/).\n"
@@ -16379,12 +16157,7 @@
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/integration-test.yaml",
-        ".github/workflows/unit-test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -16456,12 +16229,7 @@
       "setuptools",
       "setuptools-scm"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yaml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -16534,12 +16302,7 @@
       "setuptools",
       "wheel"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/release.yaml",
-        ".github/workflows/test.yml"
-      ]
-    },
+    "mentions": {},
     "pre_commit": {
       "repos": [
         "https://github.com/PyCQA/autoflake",
@@ -16668,10 +16431,7 @@
     "build_requires": [],
     "mentions": {
       "pre-commit": [
-        ".github/workflows/publish.yml",
-        ".github/workflows/test-chart.yaml",
-        ".github/workflows/test-docker-build.yaml",
-        ".github/workflows/test-docs.yaml"
+        ".github/workflows/test-chart.yaml"
       ]
     },
     "pre_commit": {
@@ -17980,7 +17740,7 @@
     "readme": "# Jupyter Builder\n\n[![Jupyter Builder Tests](https://github.com/jupyterlab/jupyter-builder/actions/workflows/builder-tests.yml/badge.svg)](https://github.com/jupyterlab/jupyter-builder/actions/workflows/builder-tests.yml)\n[![version on npm](https://img.shields.io/npm/v/@jupyter/builder.svg)](https://www.npmjs.com/package/@jupyter/builder)\n[![version on PyPI](https://img.shields.io/pypi/v/jupyter-builder.svg)](https://pypi.org/project/jupyter-builder/)\n[![version on conda-forge](https://img.shields.io/conda/vn/conda-forge/jupyter-builder.svg)](https://anaconda.org/conda-forge/jupyter-builder)\n\nBuild tools for JupyterLab extensions — extracted from the core [JupyterLab](https://github.com/jupyterlab/jupyterlab) codebase to be maintained and used independently.\n\n## Installation\n\n```bash\npip install jupyter_builder\n```\n\n## CLI\n\n### `build`\n\nCompile the extension JavaScript assets for consumption by a Jupyter app.\n\n```bash\njupyter-builder build <path/to/extension>\n```\n\n### `develop`\n\nInstall extension assets in development mode (analogous to `pip install -e`). Uses a symlink by default.\n\n```bash\njupyter-builder develop <path/to/extension>\n```\n\n### `watch`\n\nAutomatically rebuild development assets when source files change.\n\n```bash\njupyter-builder watch <path/to/extension>\n```\n\n> For advanced configuration, see the [Advanced](#advanced) section for available flags.\n\n## `jlpm`\n\n`jupyter-builder` ships `jlpm`, a Jupyter-aware Node.js package manager wrapper:\n\n```bash\njlpm install\njlpm build\n```\n\n## Advanced\n\n### CLI flags\n\n<details>\n<summary><code>build</code></summary>\n\n| Flag                         | Description                                                            |\n| ---------------------------- | ---------------------------------------------------------------------- |\n| `--development`              | Build in development mode (default: `False`)                           |\n| `--source-map`               | Generate source maps (default: `False`)                                |\n| `--static-url=<url>`         | Set the URL for static assets                                          |\n| `--core-version=<version>`   | JupyterLab core version to build against                               |\n| `--core-package-file=<path>` | Path to a core application `package.json` (overrides `--core-version`) |\n\n</details>\n\n<details>\n<summary><code>develop</code></summary>\n\n| Flag                         | Description                                  |\n| ----------------------"
   },
   "jupyterlab/jupyter-chat": {
-    "head": "1f4f9ddf58f46365dc7cebc0b6d3761ddc622f11",
+    "head": "9c624e682ef53328a46052d7d5eae2630fd30d9e",
     "n_files": 271,
     "file_types": {
       "config": 37,
@@ -18379,7 +18139,7 @@
     "readme": "# JupyterCon 2018 JupyterLab tutorial.\n\nThis repository contain material and instructions to follow the JupyterLab tutorial during JupyterCon 2018.\n\nDuring the tutorial, feel free to get on the [Gitter `jupyterlab/jupyterlab` channel](https://gitter.im/jupyterlab/jupyterlab) for help and updates.\n\nIf you'd like to use JupyterLab without installing anything, you can go to the [JupyterLab demo Binder](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/c9df996a3bd27d9715de6da51b3c52d35def90f9?urlpath=lab/). You can then open a terminal and clone this repo with:\n```\ngit clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n```\n\n# Installation\n\nPlease read the following section and install the required software ahead of\ntime. We may ask you to update versions of the software more closely to the\ntutorial date.\n\nPlease do not rely on cloud hosting to follow this tutorial, as the network\nconnection may be unreliable. If possible, come to the tutorial with a computer\nwhere you have administrative privileges.\n\nFor this tutorial, we are standardizing on a conda-based python distribution\n(miniconda or Anaconda). We may not be able to help with installation issues if\nyou are using a different python distribution.\n\n## Software installation\n\n1. Install either the full [anaconda\n   distribution](https://www.anaconda.com/download/) (very large, includes lots\n   of conda packages by default) or\n   [miniconda](https://conda.io/miniconda.html) (much smaller, with only\n   essential packages by default, but any conda package can be installed).\n\n2. To get the tutorial materials, clone this repository. **Please plan to update the materials shortly before the tutorial.**\n\n    ```\n    git clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n    ```\n\n    To update the materials:\n    ```\n    cd jupytercon-jupyterlab-tutorial\n    git pull\n    ```\n\n    Feel free to open an issue or send a pull request to update these materials if things are unclear.\n\n3. Set up your environment.\n\n    Create a conda environment:\n\n    ```\n    conda create -n jlabtutorial -c conda-forge --override-channels --yes python=3.6 pip cookiecutter notebook pandas=0.23 nodejs jupyterlab ipywidgets matplotlib\n    ```\n\n    (You could instead create the environment from the supplied environment file with `conda env create -f jupytercon-jupyterlab-tutorial/environment.yml`)\n\n    Activate the conda environment:\n\n    ```\n    conda activate jlabtutorial\n    ```\n\n    Install extra Jupy"
   },
   "jupyterlab/jupyterlab": {
-    "head": "07650742fe36a27ce33645f9e0d0ca520594fa5b",
+    "head": "a98efbf8f55e8f5b55280c221f8648b9a95aa78e",
     "n_files": 3087,
     "file_types": {
       "config": 604,
@@ -19132,9 +18892,6 @@
     "mentions": {
       "zizmor": [
         ".github/workflows/zizmor.yml"
-      ],
-      "pre-commit": [
-        ".github/workflows/spell-check.yml"
       ]
     },
     "pre_commit": {
@@ -20409,7 +20166,6 @@
         ".github/workflows/zizmor.yml"
       ],
       "pre-commit": [
-        ".github/actions/enforce-label/action.yml",
         ".github/actions/pr-script/action.yml",
         ".github/actions/pre-commit/action.yml",
         ".github/workflows/pr_script.yml"
@@ -21898,7 +21654,7 @@
     "readme": "# `jupyterlite-sphinx-demo`\n\nThis repository showcases JupyterLite deployed as a static site on GitHub Pages as a part of a [Sphinx](https://www.sphinx-doc.org/) site using [the `jupyterlite-sphinx` extension](https://jupyterlite-sphinx.rtfd.io) for demo purposes. It is meant to be used as a reference for documentation website authors who want to add interactive documentation elements to their Sphinx sites.\n\nFor similar demos that deploy JupyterLite as a standalone site instead, please check out the following:\n\n- [the JupyterLite demo](https://github.com/jupyterlite/demo) for a deployment that uses the Pyodide kernel (`jupyterlite-pyodide-kernel`).\n- [the JupyterLite Xeus demo](https://github.com/jupyterlite/xeus-lite-demo/) for a deployment that uses the Xeus kernel (via `jupyterlite-xeus` and `xeus-python`).\n\n## ✨ Try it in your browser ✨\n\n[pyodide-badge]: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg\n[pyodide-url]: https://jupyterlite.github.io/sphinx-demo/pyodide/\n[xeus-badge]: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg\n[xeus-url]: https://jupyterlite.github.io/sphinx-demo/xeus/\n\n| Kernel                                 |                         URL                         |\n| :------------------------------------- | :-------------------------------------------------: |\n| Pyodide (`jupyterlite-pyodide-kernel`) | [![lite-badge-pyodide][pyodide-badge]][pyodide-url] |\n| Xeus (`xeus-python` kernel)            |     [![lite-badge-xeus][xeus-badge]][xeus-url]      |\n\n## 🗂️ Folder structure\n\nThis repository is divided into two sections:\n\n- `pyodide-kernel-example/`: this folder contains a JupyterLite deployment with a Sphinx site using the Pyodide kernel, which is a Python kernel that runs in the browser using WebAssembly and uses [the Pyodide distribution](https://pyodide.org/en/stable/).\n- `xeus-kernel-example/`: this folder contains a JupyterLite deployment with a Sphinx site using the Xeus kernel, which uses [the emscripten-forge channel](https://emscripten-forge.org/).\n\nBoth examples use the [PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/en/stable/).\n\nPlease check out the README files under each folder to understand the file structure and the use of configuration files in the JupyterLite deployment.\n\n## 📖 Walkthrough\n\nHere is an end-to-end guide to set up your own deployment to use JupyterLite and `jupyterlite-sphinx`:\n\n1. Install `jupyterlite-sphinx` and a kernel of your choice in your Python environment that is "
   },
   "jupyterlite/terminal": {
-    "head": "0a39730dbea047d30917dee8cd0b510b9f54d236",
+    "head": "5c079d988b638e03567806a96895e09e48771779",
     "n_files": 84,
     "file_types": {
       "config": 27,

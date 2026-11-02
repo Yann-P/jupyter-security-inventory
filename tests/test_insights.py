@@ -1,5 +1,7 @@
 """Tests for docs/insights.py, which writes the site's pages."""
 
+import csv
+
 import insights
 from topics import STATUSES
 
@@ -248,3 +250,39 @@ def test_repo_topics_shows_text_from_a_repo_as_text():
     line = insights.repo_topics(data, "a/one")
     assert "[click](" not in line  # the link was not made
     assert "blob/c0ffee/a%20b.yml" in line  # the path is quoted in the URL
+
+
+def test_plain_keeps_text_on_one_line_whatever_the_line_break():
+    text = insights.plain("a\r\nb\x85c d\x0ce\n")
+    assert text.splitlines() == [text] and text == "a b c d e"
+
+
+def test_a_repo_path_with_an_unusual_line_break_stays_in_its_row_of_the_table(tmp_path, monkeypatch):
+    monkeypatch.setattr(insights, "GENERATED", tmp_path)
+    data = make_topic_data()
+    data.results["t"]["a/one"]["evidence"] = [
+        "a\x85b.yml"
+    ]  # docutils splits csv-table lines at \x85, csv.writer does not
+    table = insights.topic_repo_table(data, data.topics[0])
+    table.write("t-repos")
+    lines = (tmp_path / "t-repos.csv").read_text().splitlines()  # how docutils reads the file
+    assert len(lines) == 1 + len(table)
+    assert all(len(row) == len(insights.TOPIC_REPO_HEADER) for row in csv.reader(lines))
+
+
+def test_a_topic_page_without_rows_has_no_empty_table(tmp_path, monkeypatch):
+    monkeypatch.setattr(insights, "GENERATED", tmp_path)
+    data = make_topic_data()
+    for answer in data.results["t"].values():
+        answer["status"] = "n/a"  # a new topic that applies to nothing yet
+    data.history = {}
+    page = insights.topic_page(data, data.topics[0])
+    assert "{csv-table}" not in page  # docutils refuses a table with no rows, which would fail the build
+    assert page.count(insights.NO_ROWS) == 3
+
+
+def test_the_history_of_a_topic_starts_on_the_first_day_it_was_recorded(tmp_path, monkeypatch):
+    monkeypatch.setattr(insights, "GENERATED", tmp_path)
+    data = make_topic_data()
+    data.history = {"2026-11-01": {}, "2026-11-02": {"t": {"done": 1, "partial": 1, "missing": 1, "n/a": 1}}}
+    assert "starting on 2026-11-02" in insights.topic_page(data, data.topics[0])

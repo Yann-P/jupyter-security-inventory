@@ -20,7 +20,7 @@ Eight scripts run in order (they depend on each other):
 | Step | What it does | Data from |
 |---|---|---|
 | 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
-| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files and README | GitHub |
+| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config and README | GitHub |
 | 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents and the date of the last release | PyPI, npm, pypistats.org, deps.dev |
 | 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |
 | 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
@@ -45,8 +45,8 @@ Eight scripts run in order (they depend on each other):
 
 A topic asks one question about every repository, like "does it check its workflows with zizmor?", and answers
 with a status: done, partial, missing or not applicable. Each topic has its own page, and each organization and
-repository page shows how it does. So far there is one: zizmor, whether run as its GitHub Action, as a command in a
-workflow or as a pre-commit hook.
+repository page shows how that organization or repository does on each topic. So far there is one: zizmor, run as its
+GitHub Action, as a command in a workflow, or as a pre-commit hook.
 
 ## Caveats
 
@@ -56,9 +56,9 @@ workflow or as a pre-commit hook.
 - Images: ghcr.io is not covered, Quay has no pull counts, and one tag is recorded per image: `latest`, or the newest.
   The namespaces are listed by hand in `scripts/4_images.py`. Many older images match no repository.
 - "Used in CI" only sees the repositories listed here.
-- Topics read the repository's files, so they show what is set up, not what is enforced. A pre-commit hook counts
-  as run by CI when a workflow runs pre-commit or the config has a `ci:` section, because pre-commit.ci itself
-  can't be seen from the repository.
+- Topics read the repository's files, so they show what is set up, not what is enforced. pre-commit.ci can't be seen
+  from the repository, so a pre-commit hook counts as run by CI only if a workflow runs pre-commit or the config has
+  a `ci:` section.
 
 ## Running it
 
@@ -88,7 +88,7 @@ nothing. To relabel everything, switch to another model or delete `output/classi
 ## Contributing
 
 Change the scripts, never `output/` by hand. Rerun the pipeline from the step you changed, run `pytest`,
-and commit the new outputs with your change. CI runs the tests and checks that `jupyter_repos.json` and `repos.csv` are up to date.
+and commit the new outputs with your change. CI runs the tests and checks that the outputs of steps 6 to 8 are up to date.
 
 ## License
 

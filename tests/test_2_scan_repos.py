@@ -67,6 +67,21 @@ def test_mentions_lists_the_files_that_mention_a_word_and_ignores_comments():
     assert scan.mentions({"a.yml": "url: https://example.org/page#zizmor"}) == {"zizmor": ["a.yml"]}  # not a comment
 
 
+def test_mentions_of_pre_commit_are_runs_of_it_not_its_config_file_or_its_branch():
+    runs = ["uses: pre-commit/action@v3", "run: uvx pre-commit run -a", "uses: j178/prek-action@v1", "run: prek run"]
+    for text in runs:
+        assert scan.mentions({"a.yml": text}) == {"pre-commit": ["a.yml"]}, text
+    not_runs = [
+        "paths-ignore:\n  - .pre-commit-config.yaml",
+        "paths: ['.pre-commit-config.yaml']",
+        "branches-ignore:\n  - pre-commit-ci-update-config",
+        "branches-ignore: ['pre-commit-ci*']",
+        "paths: [prek.toml]",
+    ]
+    for text in not_runs:
+        assert scan.mentions({"a.yml": text}) == {}, text
+
+
 def test_pre_commit_summary_lists_hook_sources_and_ids_and_whether_precommit_ci_is_set_up():
     config = """
 ci:

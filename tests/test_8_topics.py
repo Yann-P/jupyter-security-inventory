@@ -2,9 +2,17 @@
 
 import importlib
 
-from topics import Result, Topic
+import pytest
+from topics import STATUSES, Result, Topic, zizmor
 
 topics = importlib.import_module("8_topics")
+common = importlib.import_module("common")
+
+
+@pytest.fixture(autouse=True)
+def only_zizmor(monkeypatch):
+    """The tests below count rows, so they must not change when someone registers another topic."""
+    monkeypatch.setattr(topics, "TOPICS", [zizmor.TOPIC])
 
 
 def make_scan(**workflows):
@@ -25,15 +33,7 @@ def test_answer_has_a_row_per_topic_and_repo_in_a_stable_order():
 
 
 def test_counts_give_every_status_even_when_nobody_has_it(monkeypatch):
-    other = Topic(
-        "other",
-        "Other",
-        "?",
-        "all",
-        "",
-        dict.fromkeys(("done", "partial", "missing", "n/a"), ""),
-        lambda s: Result("done", ""),
-    )
+    other = Topic("other", "Other", "?", "", dict.fromkeys(STATUSES, ""), lambda s: Result("done", ""))
     monkeypatch.setattr(topics, "TOPICS", [*topics.TOPICS, other])
     rows = topics.answer(make_scan(a=1, b=1, c=0))
     assert topics.counts(rows) == {
@@ -65,3 +65,24 @@ def test_a_rerun_on_the_same_day_replaces_that_days_line_and_a_new_day_adds_one(
     }  # the second run of the day
     assert history["2026-11-02"]["zizmor"] == {"done": 0, "partial": 0, "missing": 1, "n/a": 0}
     assert (tmp_path / "topics.json").exists()
+
+
+REGISTERED = list(topics.TOPICS)  # the real registry, before the fixture above replaces it
+
+
+def test_the_registered_topics_have_distinct_ids():
+    ids = [topic.id for topic in REGISTERED]
+    assert len(ids) == len(set(ids))
+
+
+def test_two_topics_with_the_same_id_are_refused(monkeypatch):
+    monkeypatch.setattr(topics, "TOPICS", [zizmor.TOPIC, zizmor.TOPIC])
+    with pytest.raises(ValueError):
+        topics.answer({})
+
+
+def test_every_registered_topic_answers_every_repo_of_the_committed_scan(monkeypatch):
+    """So that a topic reading a fact step 2 does not keep fails here, and not in the daily update."""
+    monkeypatch.setattr(topics, "TOPICS", REGISTERED)
+    scan = common.load_json(common.OUTPUT / "scan.json")
+    assert len(topics.answer(scan)) == len(REGISTERED) * len(scan)

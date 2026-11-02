@@ -20,6 +20,8 @@ HISTORY = OUTPUT / "topics_history.json"
 
 def answer(scan: dict) -> list[dict]:
     """A row per topic and repo, in the order of TOPICS and then of the repo names."""
+    if len({topic.id for topic in TOPICS}) != len(TOPICS):
+        raise ValueError("two topics have the same id")
     return [
         {"topic": topic.id, "repo": repo, **asdict(topic.check(scan[repo]))}
         for topic in TOPICS
