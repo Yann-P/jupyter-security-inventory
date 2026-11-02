@@ -1288,7 +1288,7 @@
     "readme": "# Interactive Parallel Computing with IPython\n\nIPython Parallel (`ipyparallel`) is a Python package and collection of CLI scripts for controlling clusters of IPython processes, built on the Jupyter protocol.\n\nIPython Parallel provides the following commands:\n\n- ipcluster - start/stop/list clusters\n- ipcontroller - start a controller\n- ipengine - start an engine\n\n## Install\n\nInstall IPython Parallel:\n\n    pip install ipyparallel\n\nThis will install and enable the IPython Parallel extensions\nfor Jupyter Notebook and (as of 7.0) Jupyter Lab 3.0.\n\n## Run\n\nStart a cluster:\n\n    ipcluster start\n\nUse it from Python:\n\n```python\nimport os\nimport ipyparallel as ipp\n\ncluster = ipp.Cluster(n=4)\nwith cluster as rc:\n    ar = rc[:].apply_async(os.getpid)\n    pid_map = ar.get_dict()\n```\n\nSee [the docs](https://ipyparallel.readthedocs.io) for more info.\n"
   },
   "ipython/ipython": {
-    "head": "fb18ef0d9fc66200e884d287067f211d55e721ea",
+    "head": "cf63afd11e2fca4eb4645e9d5b4a712f3549f632",
     "n_files": 510,
     "file_types": {
       "other": 18,
@@ -1330,12 +1330,12 @@
     "uses": [
       "actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9",
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
-      "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
-      "astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2",
       "codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5",
-      "github/codeql-action@2892aa5e19bbd11bc0cff5427e3b750a04d9e3c2",
+      "github/codeql-action@9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
       "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086",
-      "scientific-python/upload-nightly-action@16fa02eacee1655195143de09f03676e60ef2bf5",
+      "scientific-python/upload-nightly-action@5a74a2a4ec19d7ab8b5317c1cdd356c150d92cd0",
       "zulip/github-actions-zulip@f675f2b4eb2a95fae974215476dcb7ad8dfeff6b"
     ],
     "images": [],
@@ -2140,7 +2140,7 @@
     "readme": "# JB1 Redirect Generator\n\nGenerate HTML redirect files when migrating from Jupyter Book v1 to MyST/Jupyter Book v2.\n\n## What This Does\n\nWhen you migrate from Jupyter Book v1 to JB2/MyST, your URL structure changes:\n\n- **Old (JB1):** `https://example.com/Overview Page.html`\n- **New (JB2):** `https://example.com/overview-page/`\n\nThis tool generates HTML redirect files so old links continue to work.\n\n## Prerequisites\n\n- [uv](https://docs.astral.sh/uv/) (optional, but convenient for running the script directly)\n\nIf not running with `uv`:\n\n- click\n- pyyaml\n\n## Usage\n\nBuild your site, then generate redirects:\n\n```bash\n# With Jupyter Book 2\njupyter book build --html \nuv run https://raw.githubusercontent.com/jupyter-book/jb1-redirect-generator/main/generate_redirects.py \\\n  --base-url https://example.com/\n\n# With MyST CLI\nmyst build --html\nuv run https://raw.githubusercontent.com/jupyter-book/jb1-redirect-generator/main/generate_redirects.py \\\n  --base-url https://example.com/\n```\n\n**Note:** The examples use `uv run` for convenience. You can also download the script and run it with `python generate_redirects.py` instead.\n\n### Options\n\n- `--base-url` (required): Base URL of your site\n- `--output-dir`: Where to create redirect files (default: `_build/html`)\n- `--myst-config`: Path to `myst.yml` (default: auto-discovers in `./` or `./docs/`)\n\n## How It Works\n\n1. Reads your `myst.yml` to find all content files\n2. Generates old-style `.html` URLs based on assumptions from Jupyter Book 1 / Sphinx\n3. Applies MyST's URL sanitization (lowercase, hyphens, etc.)\n4. Creates redirect HTML files with meta-refresh tags\n\nThe redirect files are created in your build output directory, ready to deploy alongside your new site.\n\n## GitHub Actions Example\n\nHere's how to integrate redirect generation into your deployment workflow:\n\n```yaml\nname: deploy\n\non:\n  push:\n    branches:\n    - main\n\njobs:\n  deploy:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n\n    steps:\n    - uses: actions/checkout@v4\n\n    - name: Set up Python\n      uses: actions/setup-python@v5\n      with:\n        python-version: 3.x\n\n    - name: Install uv\n      uses: astral-sh/setup-uv@v4\n\n    - name: Install dependencies\n      run: pip install jupyter-book\n\n    - name: Build the Jupyter Book site\n      run: cd docs && jupyter book build --html\n\n    - name: Generate redirects\n      run: |\n        uv run https://raw.githubusercontent.com/jupyter-book/jb1-redirect-generator/main/generate_redirects.py \\\n  "
   },
   "jupyter-book/jupyter-book": {
-    "head": "11acb1bbdd51c23ae14663daf0b7d4a0fd1c9d0e",
+    "head": "526cfa7e76db12b0f4b6b08bbe8910439849413b",
     "n_files": 80,
     "file_types": {
       "config": 17,
@@ -2184,11 +2184,11 @@
     "uses": [
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
       "actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d",
-      "actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1",
+      "actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510",
       "actions/deploy-pages@v5",
-      "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
+      "actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
       "actions/setup-python@v7.0.0",
-      "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9",
       "jupyter-server/jupyter_releaser@v2",
       "jupyterlab/maintainer-tools@v1"
@@ -10153,7 +10153,7 @@
     "readme": "# .github\n\nCommunity health files for the @JupyterHub organization.\n\nFor more information, please see this article on [creating a default community health file](https://help.github.com/en/articles/creating-a-default-community-health-file-for-your-organization).\n"
   },
   "jupyterhub/action-get-quayio-tags": {
-    "head": "8104abd2cbd919c41b7e46f76da0c418515c0f77",
+    "head": "8cdb6a3e9706ba590836f863bde8ae9f055e1d65",
     "n_files": 30,
     "file_types": {
       "other": 6,
@@ -10173,10 +10173,10 @@
       "publishes": []
     },
     "uses": [
-      "actions/checkout@v6.0.2",
-      "actions/setup-node@v6.4.0",
-      "github/codeql-action@v4.36.3",
-      "stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d",
+      "actions/checkout@v7.0.1",
+      "actions/setup-node@v7.0.0",
+      "github/codeql-action@v4.39.1",
+      "stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c",
       "super-linter/super-linter@4ce20838b8ab83717e78138c5b3a1407148e0918"
     ],
     "images": [],
@@ -10284,7 +10284,7 @@
     "readme": "# GitHub Action: Emit a k8s namespace report\n\n[![GitHub Action badge](https://github.com/jupyterhub/action-k8s-namespace-report/workflows/test/badge.svg)](https://github.com/jupyterhub/action-k8s-namespace-report/actions)\n\nGitHub Action to report info and logs from the current namespace.\n\n## Optional input parameters\n\n- `namespace`: Emit a report for another namespace than the kubeconfig's current\n  context.\n- `pod-selector`: Limit pod reporting to pods with certain labels, example:\n  `app.kubernetes.io/component notin (secret-server,boring-server)`.\n- `important-workloads`: Always provide logs of these workloads. Use space a\n  separator, example: `deploy/my-deployment sts/my-statefulset`.\n\n## Example\n\n```yaml\nname: Example workflow\n\non:\n  pull_request:\n  push:\n  workflow_dispatch:\n\njobs:\n  k8s-test:\n    runs-on: ubuntu-22.04\n    steps:\n      # GitHub Action reference: https://github.com/jupyterhub/action-k3s-helm\n      - name: Setup k8s\n        uses: jupyterhub/action-k3s-helm@v4\n        with:\n          k3s-channel: stable    # https://update.k3s.io/v1-release/channels\n\n      # GitHub Action reference: https://github.com/jupyterhub/action-k8s-namespace-report\n      - name: Kubernetes namespace report\n        uses: jupyterhub/action-k8s-namespace-report@v1\n        if: always()\n        # with:\n        #   namespace: my-namespace\n        #   pod-selector: app.kubernetes.io/component notin (secret-server,boring-server)\n        #   important-workloads: deploy/my-deployment sts/my-statefulset\n```\n\n## Preview\n\n__Live example__\n\nYou can inspect recent test runs [here](https://github.com/jupyterhub/action-k8s-namespace-report/actions?query=workflow%3ATest).\n\n__GIF Animation__\n\n![](https://user-images.githubusercontent.com/3837114/104154471-4b3f7c00-53e5-11eb-8ebf-d54c22af12ed.gif)\n"
   },
   "jupyterhub/action-major-minor-tag-calculator": {
-    "head": "4b09a6d6d66ac73e10be124dfa789ed7a39f643f",
+    "head": "f93a48b0c9dfc41a8940353bd8cfb24351c5294b",
     "n_files": 21,
     "file_types": {
       "other": 5,
@@ -10314,7 +10314,7 @@
       "Actions-R-Us/actions-tagger@330ddfac760021349fef7ff62b372f2f691c20fb",
       "actions/checkout@v7",
       "actions/setup-node@v7",
-      "stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d"
+      "stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c"
     ],
     "images": [],
     "build_requires": [],
@@ -10468,7 +10468,7 @@
     "readme": "# Binder Data\n\nA place to store data for Binder. Analysis / description / etc should be done in other\nrepositories so that we can decouple data and code to analyze it!\n\n## Preview the documentation dashboards\n\nInstall nox:\n\n```shell\npip install nox\n```\n\nBuild the documentation:\n\n```shell\nnox -s docs\n```\n\nRun a live preview server:\n\n```shell\nnox -s docs-live\n```\n\n## Navigate this repository\n\n`traffic/` contains a Python script to scrape the latest launch data from [archive.analytics.mybinder.org](https://archive.analytics.mybinder.org). It reads and writes from a [Parquet file](https://arrow.apache.org/docs/python/parquet.html) for efficient storage. It is meant to *update a pre-existing datastore* rather than download everything at once in order to save time.\n\n`.github/workflows/release.yml` is a GitHub workflow that regularly runs and scrapes the latest data using the script above, and publishes it as a GitHub release that we can share. It [publishes the data as a GitHub release here](https://github.com/jupyterhub/binder-data/releases/tag/latest).\n\n`analysis/` is a Jupyter Notebook that analyzes the data generated by `release.yml` and displays some visualizations and summary statistics, both to show off how to analyze the data, and to provide interesting information for people to understand what's going on with Binder. It is hosted as a [Jupyter Book 2 site](https://mystmd.org/guide) at http://hub.jupyter.org/binder-data/.\n"
   },
   "jupyterhub/binderhub": {
-    "head": "1013493a4eaf91d9ad15de0d125cd0e36505d093",
+    "head": "05666ec83128365f77738e6dbf82da4c15a4e59a",
     "n_files": 231,
     "file_types": {
       "other": 20,
@@ -10524,8 +10524,8 @@
     "uses": [
       "actions/cache@v5",
       "actions/checkout@v7",
-      "actions/setup-node@v6",
-      "actions/setup-python@v6",
+      "actions/setup-node@v7",
+      "actions/setup-python@v7",
       "actions/upload-artifact@v7",
       "azure/setup-helm@v5",
       "codecov/codecov-action@v7",
@@ -11038,7 +11038,7 @@
     "readme": "# jupyter-rsession-proxy\n\n[![Test JupyterLab](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterlab.yaml/badge.svg)](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterlab.yaml)\n[![Test JupyterHub](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterhub.yaml/badge.svg)](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterhub.yaml)\n\n**jupyter-rsession-proxy** provides Jupyter server and notebook extensions to proxy RStudio.\n\n![Screenshot](screenshot.png)\n\nIf you have a JupyterHub deployment, jupyter-rsession-proxy can take advantage of JupyterHub's existing authenticator and spawner to launch RStudio in users' Jupyter environments. You can also run this from within Jupyter.\nNote that [RStudio Server Pro](https://rstudio.com/products/rstudio-server-pro) has more featureful authentication and spawning than the standard version, in the event that you do not want to use Jupyter's.\n\nThis extension used to proxy Shiny server as well, however that functionality has been [separated](https://github.com/ryanlovett/jupyter-shiny-proxy).\n\n## Installation\n\n### Pre-reqs\n\n#### Install rstudio\nUse conda `conda install rstudio` or [download](https://www.rstudio.com/products/rstudio/download-server/) the corresponding package for your platform\n\nNote that rstudio server is needed to work with this extension.\n\n### Install jupyter-rsession-proxy\n\nInstall the library via `pip`:\n```\npip install jupyter-rsession-proxy\n```\nOr via `conda`:\n```\nconda install -c conda-forge jupyter-rsession-proxy\n```\n\n### Traitlets configuration\n\nYou may also manually configure this extension inside a [traitlets](https://traitlets.readthedocs.io/en/stable/) configuration file for [jupyter-server-proxy](https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html#specifying-config-via-traitlets). This also allows you to configure multiple different RStudio applications, for instance using different versions of R:\n\n```python\nfrom jupyter_rsession_proxy import setup_rserver\n# update the jupyter-server-proxy config by adding two RStudio servers\nc.ServerProxy.servers.update({\n  \"rstudio1\": setup_rserver(prefix=\"rstudio1\", r_path=\"/usr/bin/R\", launcher_title=\"RStudio (default R)\"),\n  \"rstudio2\": setup_rserver(prefix=\"rstudio2\", r_path=\"/opt/miniconda3/bin/R\", launcher_title=\"RStudio (other R)\")\n})\n# note that the prefix and the dict key are the same for each server (bot"
   },
   "jupyterhub/jupyter-server-proxy": {
-    "head": "204020060c950dc60a362b7b35bff80b9e8249b7",
+    "head": "e5f6497a9e8727ce7dbfac26b1956850cd5269a5",
     "n_files": 90,
     "file_types": {
       "other": 10,
@@ -11089,12 +11089,12 @@
       "actions/download-artifact@v8",
       "actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
       "actions/setup-node@v7",
-      "actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405",
-      "actions/setup-python@v6",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "actions/setup-python@v7",
       "actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
       "actions/upload-artifact@v7",
       "codecov/codecov-action@v7",
-      "pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33"
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
     "build_requires": [
@@ -11105,7 +11105,7 @@
     "readme": "# Jupyter Server Proxy\n\n[![ReadTheDocs badge](https://img.shields.io/readthedocs/jupyter-server-proxy?logo=read-the-docs)](https://jupyter-server-proxy.readthedocs.io/)\n[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/jupyterhub/jupyter-server-proxy/test.yaml?logo=github&branch=main)](https://github.com/jupyterhub/jupyter-server-proxy/actions)\n[![PyPI badge](https://img.shields.io/pypi/v/jupyter-server-proxy.svg?logo=pypi)](https://pypi.python.org/pypi/jupyter-server-proxy)\n[![Conda badge](https://img.shields.io/conda/vn/conda-forge/jupyter-server-proxy?logo=conda-forge)](https://anaconda.org/conda-forge/jupyter-server-proxy)\n[![NPM badge](https://img.shields.io/npm/v/@jupyterhub/jupyter-server-proxy.svg?logo=npm)](https://www.npmjs.com/package/@jupyterhub/jupyter-server-proxy)\n\nJupyter Server Proxy lets you run arbitrary external processes (such as\nRStudio, Shiny Server, Syncthing, PostgreSQL, Code Server, etc)\nalongside your notebook server and provide authenticated web access to\nthem using a path like `/rstudio` next to others like `/lab`. Alongside\nthe python package that provides the main functionality, the JupyterLab\nextension (`@jupyterhub/jupyter-server-proxy`) provides buttons in the\nJupyterLab launcher window to get to RStudio for example.\n\n**Note:** This project used to be called **nbserverproxy**. As\nnbserverproxy is an older version of jupyter-server-proxy, uninstall\nnbserverproxy before installing jupyter-server-proxy to avoid conflicts.\n\nThe primary use cases are:\n\n1.  Use with JupyterHub / Binder to allow launching users into web\n    interfaces that have nothing to do with Jupyter - such as RStudio,\n    Shiny, or OpenRefine.\n2.  Allow access from frontend javascript (in classic notebook or\n    JupyterLab extensions) to access web APIs of other processes running\n    locally in a safe manner. This is used by the [JupyterLab\n    extension](https://github.com/dask/dask-labextension) for\n    [dask](https://www.dask.org/).\n\n[The documentation](https://jupyter-server-proxy.readthedocs.io/)\ncontains information on installation & usage.\n\n## Security warning\n\nJupyter Server Proxy is often used to start a user defined process listening to\nsome network port (e.g. `http://localhost:4567`) for a user starting a Jupyter Server\nthat only that user has permission to access. The user can then access the\nstarted process proxied through the Jupyter Server.\n\nFor safe use of Jupyter Server Proxy, you should ensure that the process"
   },
   "jupyterhub/jupyterhub": {
-    "head": "afd52ae2322cf5a53f2170c3d6951a04ca8ca228",
+    "head": "84c8cc589b2cfc5467b812549677ede45db8772f",
     "n_files": 429,
     "file_types": {
       "other": 18,
@@ -11151,14 +11151,14 @@
     },
     "uses": [
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
-      "actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c",
-      "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
-      "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
-      "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+      "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
+      "actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5",
       "dessant/support-requests@04320880d61b7fcaac4216e60522cb569478a63d",
       "manics/action-sphinx-linkcheck-summary@main",
-      "pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33"
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
     "build_requires": [
@@ -11168,7 +11168,7 @@
     "readme": "**[Technical Overview](#technical-overview)** |\n**[Installation](#installation)** |\n**[Configuration](#configuration)** |\n**[Docker](#docker)** |\n**[Contributing](#contributing)** |\n**[License](#license)** |\n**[Help and Resources](#help-and-resources)**\n\n---\n\n# [JupyterHub](https://github.com/jupyterhub/jupyterhub)\n\n[![Latest PyPI version](https://img.shields.io/pypi/v/jupyterhub?logo=pypi)](https://pypi.python.org/pypi/jupyterhub)\n[![Latest conda-forge version](https://img.shields.io/conda/vn/conda-forge/jupyterhub?logo=conda-forge)](https://anaconda.org/conda-forge/jupyterhub)\n[![Documentation build status](https://img.shields.io/readthedocs/jupyterhub?logo=read-the-docs)](https://jupyterhub.readthedocs.org/en/latest/)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/workflow/status/jupyterhub/jupyterhub/Test?logo=github&label=tests)](https://github.com/jupyterhub/jupyterhub/actions)\n[![Test coverage of code](https://codecov.io/gh/jupyterhub/jupyterhub/branch/main/graph/badge.svg)](https://codecov.io/gh/jupyterhub/jupyterhub)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/jupyterhub/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\nWith [JupyterHub](https://jupyterhub.readthedocs.io) you can create a\n**multi-user Hub** that spawns, manages, and proxies multiple instances of the\nsingle-user [Jupyter notebook](https://jupyter-notebook.readthedocs.io)\nserver.\n\n[Project Jupyter](https://jupyter.org) created JupyterHub to support many\nusers. The Hub can offer notebook servers to a class of students, a corporate\ndata science workgroup, a scientific research project, or a high-performance\ncomputing group.\n\n## Technical overview\n\nThree main actors make up JupyterHub:\n\n- multi-user **Hub** (tornado process)\n- configurable http **proxy** (node-http-proxy)\n- multiple **single-user Jupyter notebook servers** (Python/Jupyter/tornado)\n\nBasic principles for operation are:\n\n- Hub launches a proxy.\n- The Proxy forwards all requests to Hub by default.\n- Hub handles login and spawns single-user servers on demand.\n- Hub configures proxy to forward URL prefixes to the single-user notebook\n  servers.\n\nJupyterHub also provides a\n[REST API][]\nfor administration of the Hub and its users.\n\n[rest ap"
   },
   "jupyterhub/jupyterhub-container-images": {
-    "head": "96b3f05dbb063467899bb4abd869458acf46ed37",
+    "head": "5a2e21b77cfcf19041331ba009a3ca35a95e6299",
     "n_files": 20,
     "file_types": {
       "config": 8,
@@ -11290,7 +11290,7 @@
     "readme": "# Deploy JupyterHub for teaching\n\n[![Google Group](https://img.shields.io/badge/-Google%20Group-lightgrey.svg)](https://groups.google.com/forum/#!forum/jupyter)\n[![Documentation Status](http://readthedocs.org/projects/jupyterhub-deploy-teaching/badge/?version=latest)](http://jupyterhub-deploy-teaching.readthedocs.org/en/latest/?badge=latest)\n\nThe goal of this repository is to produce a reference deployment of JupyterHub\nfor teaching with nbgrader.\n\nThe repository started from [this deployment](https://github.com/calpolydatascience/jupyterhub-deploy-data301) of JupyterHub\nfor \"Introduction to Data Science\" at Cal Poly.\nIt is designed to be a simple and reusable JupyterHub deployment, while\nfollowing best practices.\n\nThe main use case targeted is **small to medium groups of trusted users\nworking on a single server**.\n\n## Design goal of this reference deployment\n\nCreate a JupyterHub teaching reference deployment that is simple yet\nfunctional:\n\n- Use a single server.\n- Use Nginx as a frontend proxy, serving static assets, and a termination\n  point for SSL/TLS.\n- Configure using Ansible scripts.\n- Use (optionally) https://letsencrypt.org/ for generating SSL certificates.\n- Does not use Docker or containers\n\n## Prerequisites\n\nTo *deploy* this JupyterHub reference deployment, you should have:\n\n- An empty Ubuntu server running the latest stable release\n- Local drives to be mounted\n- A formatted and mounted directory to store user home directories\n- A valid DNS name\n- SSL certificate\n- Ansible 2.1+ installed for JupyterHub configuration (`pip install \"ansible>=2.1\"`)\n    - [Verified](https://github.com/jupyterhub/jupyterhub-deploy-teaching/issues/48#issuecomment-277407265) Ansible 2.2.1.0 works with Ubuntu 16.04 and Python3\n\nFor *administration* of the server, you should also:\n\n- Specify the admin users of JupyterHub.\n- Allow SSH key based access to server and add the public SSH keys of GitHub\n  users who need to be able to SSH to the server as `root` for administration.\n\nFor *managing users and services* on the server, you will:\n\n- Create \"Trusted\" users on the system, meaning that you would give them a\n  user-level shell account on the server\n- Authenticate and manage users with either:\n  * Regular Unix users and PAM.\n  * GitHub OAuth\n- Manage the running of jupyterhub and nbgrader using supervisor.\n- Monitor the state of the server (optional feature) using NewRelic or your\n  cloud provider.\n\n## Installation\n\nFollow the detailed instructions in the [Installation "
   },
   "jupyterhub/jupyterhub-idle-culler": {
-    "head": "0b92132cf9a1ba5f5c425c790e44246b2dfbfe52",
+    "head": "65c60ecb5979e46a16d5acbfb6023719f882ae83",
     "n_files": 19,
     "file_types": {
       "other": 2,
@@ -11321,13 +11321,13 @@
     "uses": [
       "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
       "actions/checkout@v7",
-      "actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c",
+      "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
       "actions/setup-node@v7",
       "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
       "actions/setup-python@v7",
-      "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "codecov/codecov-action@v7",
-      "pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33"
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
     "build_requires": [
@@ -11703,7 +11703,7 @@
     "readme": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "b2bd3fa36f8ece86a4e542c910969c70768607a1",
+    "head": "d5884ba625d038a4800181bf2ed2b0bc9ba7b89c",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -11993,7 +11993,7 @@
     "readme": "# nbgitpuller-downloader-plugins\njupyterhub/nbgitpuller allows for content provider plugins, this python package provides downloader plugins\n\nThere are three downloader-plugins included in this repository:\n- nbgitpuller-downloader-generic-web\n- nbgitpuller-downloader-googledrive\n- nbgitpuller-downloader-dropbox\n\nWhen this package is installed next to nbgitpuller in a jupyterhub instance, you can use nbgitpuller links\nto compressed archives(zip an tar) in Google Drive, Dropbox or any publicly exposed URL to download your notebooks(or any files)\ninto a jupyterhub. \n\nThis plugin expects URLs included in the nbgitpuller link to be in the following format:\n- Generic Web: https://www.example.com/materials-sp20-external.zip\n- Dropbox: https://www.dropbox.com%/<dropbox-idd>/materials-sp20-external.zip?dl=0\n- Google Drive: https://drive.google.com/file/d/<google-file-id/view?usp=sharing\n\nIn all of these cases, the archive must be publicly available or \"shared\" with everyone in the case of Google Drive.\n\n## Installation\n\n```shell\npython3 -m pip install nbgitpuller-downloader-plugins\n"
   },
   "jupyterhub/oauthenticator": {
-    "head": "02344def2a5e57b9fb25424dd806bcaff8de800d",
+    "head": "d3ae420ac2af7b71b486a4dcfebcb6bb5d200e66",
     "n_files": 97,
     "file_types": {
       "other": 9,
@@ -12027,12 +12027,12 @@
     "uses": [
       "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
       "actions/checkout@v7",
-      "actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c",
+      "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
       "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
       "actions/setup-python@v7",
-      "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "codecov/codecov-action@v7",
-      "pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33"
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
     "build_requires": [
@@ -12502,7 +12502,7 @@
     "readme": "# The Littlest JupyterHub\n\n[![Documentation build status](https://img.shields.io/readthedocs/the-littlest-jupyterhub?logo=read-the-docs)](https://tljh.jupyter.org/en/latest/?badge=latest)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/actions/workflow/status/jupyterhub/the-littlest-jupyterhub/integration-test.yaml?logo=github&label=tests)](https://github.com/jupyterhub/the-littlest-jupyterhub/actions)\n[![Test coverage of code](https://codecov.io/gh/jupyterhub/the-littlest-jupyterhub/branch/main/graph/badge.svg)](https://codecov.io/gh/jupyterhub/the-littlest-jupyterhub)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/the-littlest-jupyterhub/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub/tljh)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n[![Contribute](https://img.shields.io/badge/I_want_to_contribute!-grey?logo=jupyter)](https://tljh.jupyter.org/en/latest/contributing/index.html)\n\n**The Littlest JupyterHub** (TLJH) distribution helps you provide Jupyter Notebooks\nto 1-100 users on a single server.\n\nThe primary audience are people who do not consider themselves 'system administrators'\nbut would like to provide hosted Jupyter Notebooks for their students or users.\nAll users are provided with the same environment, and administrators\ncan easily install libraries into this environment without any specialized knowledge.\n\nSee the [latest documentation](https://the-littlest-jupyterhub.readthedocs.io)\nfor more information on using The Littlest JupyterHub.\n\nFor support questions please search or post to [our forum](https://discourse.jupyter.org/c/jupyterhub/).\n\nSee the [contributing guide](https://the-littlest-jupyterhub.readthedocs.io/en/latest/contributing/index.html)\nfor information on the different ways of contributing to The Littlest JupyterHub.\n\nSee [this blog post](http://words.yuvi.in/post/the-littlest-jupyterhub/) for\nmore information.\n\n## Installation\n\nThe Littlest JupyterHub (TLJH) aims to support Debian and Ubuntu versions that have current Long-Term Support (LTS), on amd64 or arm64 CPU architectures.\nOther Linux distributions are not supported.\nWe have several tutorials to get you started.\n\n- Tutorials to create a new server from scratch on a cloud provider & run TLJH\n  on it. These are **recommended** if you do no"
   },
   "jupyterhub/tmpauthenticator": {
-    "head": "49cb1fb144a06e03dfab835f76e8fc5b222446b1",
+    "head": "cb77416b5c202864e1a243028651a6ed9fd641e6",
     "n_files": 16,
     "file_types": {
       "other": 3,
@@ -12533,13 +12533,13 @@
     "uses": [
       "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0",
       "actions/checkout@v7",
-      "actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c",
+      "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
       "actions/setup-node@v6",
       "actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405",
       "actions/setup-python@v6",
-      "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "codecov/codecov-action@v7",
-      "pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33"
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
     "build_requires": [
@@ -12634,7 +12634,7 @@
     "readme": "# wrapspawner for Jupyterhub\n\nThis package includes **WrapSpawner** and **ProfilesSpawner**, which provide mechanisms for runtime configuration of spawners. \nThe inspiration for their development was to allow users to select from a range of pre-defined batch job profiles, but\ntheir operation is completely generic.\n\n## Installation\n\n1. Most users can install via pip:\n\n      `pip install wrapspawner`\n\n   To install an editable copy for development, from root directory of this repo (where setup.py is), run `pip install -e .`\n   See also [pip VCS support](https://pip.pypa.io/en/stable/reference/pip_install/#vcs-support) if you need a specific revision.\n\n2. Add lines in `jupyterhub_config.py` for the spawner you intend to use, e.g.\n   \n   ```python\n      c.JupyterHub.spawner_class = 'wrapspawner.ProfilesSpawner'\n   ```\n3. Depending on the spawner, additional configuration will likely be needed.\n\n## Wrapper and Profile Spawners\n\n### Overview\n\n[`WrapSpawner`](https://github.com/jupyterhub/wrapspawner/blob/master/wrapspawner/wrapspawner.py#L1)\nprovides a mechanism to wrap the interface of a JupyterHub Spawner such that\nthe Spawner class to use for single-user servers can be chosen dynamically.\nSubclasses may modify the class or properties of the child Spawner at any point\nbefore `start()` is called (e.g. from Authenticator `pre_spawn` hooks or options form \nprocessing) and that state will be preserved on restart. The `start/stop/poll`\nmethods are not real coroutines, but simply pass through the Futures returned\nby the wrapped Spawner class.\n\n[`ProfilesSpawner`](https://github.com/jupyterhub/wrapspawner/blob/master/wrapspawner/wrapspawner.py#L120)\nleverages JupyterHub's `Spawner` \"options form\" feature to allow user-driven\nconfiguration of Spawner classes while permitting:\n\n   * configuration of Spawner classes that don't natively implement `options_form`\n   * administrator control of allowed configuration changes\n   * runtime choice of which Spawner backend to launch\n\n### Example\n\nHere is a screenshot of a typical dropdown menu letting the user choose between several SLURM instances:\n![](screenshot.png)\n\nThe following configuration snippet lets the user choose between a Jupyter server\nrunning as a local process or one of two different Docker Images to run within `DockerSpawner`.\n\n   ```python\n   c.JupyterHub.spawner_class = 'wrapspawner.ProfilesSpawner'\n   c.Spawner.http_timeout = 120\n   #----------------------------------------------------------------------------"
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "58126cc0a1efaef26a2ad5ab06b97ec825feffc2",
+    "head": "7cce063b7f2d4f4685677883cbdda0e417e16ca9",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -13793,7 +13793,7 @@
     "readme": "# Jupyter Builder\n\n[![Jupyter Builder Tests](https://github.com/jupyterlab/jupyter-builder/actions/workflows/builder-tests.yml/badge.svg)](https://github.com/jupyterlab/jupyter-builder/actions/workflows/builder-tests.yml)\n[![version on npm](https://img.shields.io/npm/v/@jupyter/builder.svg)](https://www.npmjs.com/package/@jupyter/builder)\n[![version on PyPI](https://img.shields.io/pypi/v/jupyter-builder.svg)](https://pypi.org/project/jupyter-builder/)\n[![version on conda-forge](https://img.shields.io/conda/vn/conda-forge/jupyter-builder.svg)](https://anaconda.org/conda-forge/jupyter-builder)\n\nBuild tools for JupyterLab extensions — extracted from the core [JupyterLab](https://github.com/jupyterlab/jupyterlab) codebase to be maintained and used independently.\n\n## Installation\n\n```bash\npip install jupyter_builder\n```\n\n## CLI\n\n### `build`\n\nCompile the extension JavaScript assets for consumption by a Jupyter app.\n\n```bash\njupyter-builder build <path/to/extension>\n```\n\n### `develop`\n\nInstall extension assets in development mode (analogous to `pip install -e`). Uses a symlink by default.\n\n```bash\njupyter-builder develop <path/to/extension>\n```\n\n### `watch`\n\nAutomatically rebuild development assets when source files change.\n\n```bash\njupyter-builder watch <path/to/extension>\n```\n\n> For advanced configuration, see the [Advanced](#advanced) section for available flags.\n\n## `jlpm`\n\n`jupyter-builder` ships `jlpm`, a Jupyter-aware Node.js package manager wrapper:\n\n```bash\njlpm install\njlpm build\n```\n\n## Advanced\n\n### CLI flags\n\n<details>\n<summary><code>build</code></summary>\n\n| Flag                         | Description                                                            |\n| ---------------------------- | ---------------------------------------------------------------------- |\n| `--development`              | Build in development mode (default: `False`)                           |\n| `--source-map`               | Generate source maps (default: `False`)                                |\n| `--static-url=<url>`         | Set the URL for static assets                                          |\n| `--core-version=<version>`   | JupyterLab core version to build against                               |\n| `--core-package-file=<path>` | Path to a core application `package.json` (overrides `--core-version`) |\n\n</details>\n\n<details>\n<summary><code>develop</code></summary>\n\n| Flag                         | Description                                  |\n| ----------------------"
   },
   "jupyterlab/jupyter-chat": {
-    "head": "1f4f9ddf58f46365dc7cebc0b6d3761ddc622f11",
+    "head": "9c624e682ef53328a46052d7d5eae2630fd30d9e",
     "n_files": 271,
     "file_types": {
       "config": 37,
@@ -14143,7 +14143,7 @@
     "readme": "# JupyterCon 2018 JupyterLab tutorial.\n\nThis repository contain material and instructions to follow the JupyterLab tutorial during JupyterCon 2018.\n\nDuring the tutorial, feel free to get on the [Gitter `jupyterlab/jupyterlab` channel](https://gitter.im/jupyterlab/jupyterlab) for help and updates.\n\nIf you'd like to use JupyterLab without installing anything, you can go to the [JupyterLab demo Binder](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/c9df996a3bd27d9715de6da51b3c52d35def90f9?urlpath=lab/). You can then open a terminal and clone this repo with:\n```\ngit clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n```\n\n# Installation\n\nPlease read the following section and install the required software ahead of\ntime. We may ask you to update versions of the software more closely to the\ntutorial date.\n\nPlease do not rely on cloud hosting to follow this tutorial, as the network\nconnection may be unreliable. If possible, come to the tutorial with a computer\nwhere you have administrative privileges.\n\nFor this tutorial, we are standardizing on a conda-based python distribution\n(miniconda or Anaconda). We may not be able to help with installation issues if\nyou are using a different python distribution.\n\n## Software installation\n\n1. Install either the full [anaconda\n   distribution](https://www.anaconda.com/download/) (very large, includes lots\n   of conda packages by default) or\n   [miniconda](https://conda.io/miniconda.html) (much smaller, with only\n   essential packages by default, but any conda package can be installed).\n\n2. To get the tutorial materials, clone this repository. **Please plan to update the materials shortly before the tutorial.**\n\n    ```\n    git clone https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial.git\n    ```\n\n    To update the materials:\n    ```\n    cd jupytercon-jupyterlab-tutorial\n    git pull\n    ```\n\n    Feel free to open an issue or send a pull request to update these materials if things are unclear.\n\n3. Set up your environment.\n\n    Create a conda environment:\n\n    ```\n    conda create -n jlabtutorial -c conda-forge --override-channels --yes python=3.6 pip cookiecutter notebook pandas=0.23 nodejs jupyterlab ipywidgets matplotlib\n    ```\n\n    (You could instead create the environment from the supplied environment file with `conda env create -f jupytercon-jupyterlab-tutorial/environment.yml`)\n\n    Activate the conda environment:\n\n    ```\n    conda activate jlabtutorial\n    ```\n\n    Install extra Jupy"
   },
   "jupyterlab/jupyterlab": {
-    "head": "07650742fe36a27ce33645f9e0d0ca520594fa5b",
+    "head": "0f7f4e4d998ddc6a42441bcd082171ee4ad64af5",
     "n_files": 3087,
     "file_types": {
       "config": 604,
@@ -17261,7 +17261,7 @@
     "readme": "# `jupyterlite-sphinx-demo`\n\nThis repository showcases JupyterLite deployed as a static site on GitHub Pages as a part of a [Sphinx](https://www.sphinx-doc.org/) site using [the `jupyterlite-sphinx` extension](https://jupyterlite-sphinx.rtfd.io) for demo purposes. It is meant to be used as a reference for documentation website authors who want to add interactive documentation elements to their Sphinx sites.\n\nFor similar demos that deploy JupyterLite as a standalone site instead, please check out the following:\n\n- [the JupyterLite demo](https://github.com/jupyterlite/demo) for a deployment that uses the Pyodide kernel (`jupyterlite-pyodide-kernel`).\n- [the JupyterLite Xeus demo](https://github.com/jupyterlite/xeus-lite-demo/) for a deployment that uses the Xeus kernel (via `jupyterlite-xeus` and `xeus-python`).\n\n## ✨ Try it in your browser ✨\n\n[pyodide-badge]: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg\n[pyodide-url]: https://jupyterlite.github.io/sphinx-demo/pyodide/\n[xeus-badge]: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg\n[xeus-url]: https://jupyterlite.github.io/sphinx-demo/xeus/\n\n| Kernel                                 |                         URL                         |\n| :------------------------------------- | :-------------------------------------------------: |\n| Pyodide (`jupyterlite-pyodide-kernel`) | [![lite-badge-pyodide][pyodide-badge]][pyodide-url] |\n| Xeus (`xeus-python` kernel)            |     [![lite-badge-xeus][xeus-badge]][xeus-url]      |\n\n## 🗂️ Folder structure\n\nThis repository is divided into two sections:\n\n- `pyodide-kernel-example/`: this folder contains a JupyterLite deployment with a Sphinx site using the Pyodide kernel, which is a Python kernel that runs in the browser using WebAssembly and uses [the Pyodide distribution](https://pyodide.org/en/stable/).\n- `xeus-kernel-example/`: this folder contains a JupyterLite deployment with a Sphinx site using the Xeus kernel, which uses [the emscripten-forge channel](https://emscripten-forge.org/).\n\nBoth examples use the [PyData Sphinx Theme](https://pydata-sphinx-theme.readthedocs.io/en/stable/).\n\nPlease check out the README files under each folder to understand the file structure and the use of configuration files in the JupyterLite deployment.\n\n## 📖 Walkthrough\n\nHere is an end-to-end guide to set up your own deployment to use JupyterLite and `jupyterlite-sphinx`:\n\n1. Install `jupyterlite-sphinx` and a kernel of your choice in your Python environment that is "
   },
   "jupyterlite/terminal": {
-    "head": "0a39730dbea047d30917dee8cd0b510b9f54d236",
+    "head": "5c079d988b638e03567806a96895e09e48771779",
     "n_files": 84,
     "file_types": {
       "config": 27,

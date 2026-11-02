@@ -15,7 +15,7 @@
       "repo": "ipython/ipykernel",
       "reason": "registry links to this repo",
       "downloads_last_month": 54614879,
-      "dependents": 7027,
+      "dependents": 7028,
       "last_published": "2026-09-29"
     },
     {
@@ -42,8 +42,8 @@
       "repo": "ipython/ipython",
       "reason": "registry links to this repo",
       "downloads_last_month": 97202828,
-      "dependents": 15418,
-      "last_published": "2026-10-30"
+      "dependents": 15424,
+      "last_published": "2026-11-02"
     },
     {
       "system": "PYPI",
@@ -51,7 +51,7 @@
       "repo": "ipython/ipython-pygments-lexers",
       "reason": "registry links to this repo",
       "downloads_last_month": 54818996,
-      "dependents": 15674,
+      "dependents": 15675,
       "last_published": "2025-01-17"
     },
     {
@@ -60,7 +60,7 @@
       "repo": "ipython/matplotlib-inline",
       "reason": "registry links to this repo",
       "downloads_last_month": 91853623,
-      "dependents": 16748,
+      "dependents": 16751,
       "last_published": "2026-05-08"
     },
     {
@@ -78,7 +78,7 @@
       "repo": "ipython/traitlets",
       "reason": "registry links to this repo",
       "downloads_last_month": 118414624,
-      "dependents": 19674,
+      "dependents": 19679,
       "last_published": "2026-08-03"
     },
     {
@@ -708,7 +708,7 @@
       "repo": "jupyter-server/jupyter_server",
       "reason": "registry links to this repo",
       "downloads_last_month": 32556872,
-      "dependents": 5044,
+      "dependents": 5046,
       "last_published": "2026-09-15"
     },
     {
@@ -735,7 +735,7 @@
       "repo": "jupyter-server/jupyter_server_terminals",
       "reason": "registry links to this repo",
       "downloads_last_month": 28569855,
-      "dependents": 5072,
+      "dependents": 5074,
       "last_published": "2026-01-14"
     },
     {
@@ -744,7 +744,7 @@
       "repo": "jupyter-server/jupyter_ydoc",
       "reason": "registry links to this repo",
       "downloads_last_month": 438546,
-      "dependents": 1056,
+      "dependents": 1089,
       "last_published": "2026-10-23"
     },
     {
@@ -1302,7 +1302,7 @@
       "repo": "jupyter-widgets/ipywidgets",
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 31105039,
-      "dependents": 6626,
+      "dependents": 6628,
       "last_published": "2026-08-18"
     },
     {
@@ -1311,7 +1311,7 @@
       "repo": "jupyter-widgets/ipywidgets",
       "reason": "registry links to this repo",
       "downloads_last_month": 31433178,
-      "dependents": 6784,
+      "dependents": 6786,
       "last_published": "2026-08-18"
     },
     {
@@ -1320,7 +1320,7 @@
       "repo": "jupyter-widgets/ipywidgets",
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 31834051,
-      "dependents": 6760,
+      "dependents": 6762,
       "last_published": "2026-08-18"
     },
     {
@@ -1491,7 +1491,7 @@
       "repo": "jupyter/jupyter_events",
       "reason": "registry links to this repo",
       "downloads_last_month": 28962752,
-      "dependents": 5216,
+      "dependents": 5218,
       "last_published": "2026-04-20"
     },
     {
@@ -1518,7 +1518,7 @@
       "repo": "jupyter/nbclient",
       "reason": "registry links to this repo",
       "downloads_last_month": 50729821,
-      "dependents": 6385,
+      "dependents": 6390,
       "last_published": "2026-06-05"
     },
     {
@@ -1527,7 +1527,7 @@
       "repo": "jupyter/nbconvert",
       "reason": "declared here; registry entry is Jupyter-owned",
       "downloads_last_month": 49944679,
-      "dependents": 6146,
+      "dependents": 6151,
       "last_published": "2026-10-12"
     },
     {
@@ -1572,7 +1572,7 @@
       "repo": "jupyter/nbformat",
       "reason": "registry links to this repo",
       "downloads_last_month": 76592205,
-      "dependents": 8362,
+      "dependents": 8365,
       "last_published": "2026-08-17"
     },
     {
@@ -1770,7 +1770,7 @@
       "repo": "jupyter/terminado",
       "reason": "registry links to this repo",
       "downloads_last_month": 29806864,
-      "dependents": 5254,
+      "dependents": 5256,
       "last_published": "2024-03-12"
     },
     {
@@ -2481,7 +2481,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 243756,
-      "dependents": 668,
+      "dependents": 700,
       "last_published": "2026-10-29"
     },
     {
@@ -2499,7 +2499,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 334592,
-      "dependents": 733,
+      "dependents": 765,
       "last_published": "2026-10-29"
     },
     {
@@ -2517,7 +2517,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 193293,
-      "dependents": 334,
+      "dependents": 338,
       "last_published": "2026-10-29"
     },
     {
@@ -2562,7 +2562,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 197896,
-      "dependents": 331,
+      "dependents": 335,
       "last_published": "2026-10-29"
     },
     {
@@ -2580,7 +2580,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 273904,
-      "dependents": 703,
+      "dependents": 735,
       "last_published": "2026-10-29"
     },
     {
@@ -2589,7 +2589,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 245466,
-      "dependents": 381,
+      "dependents": 387,
       "last_published": "2026-10-29"
     },
     {
@@ -2652,7 +2652,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 519906,
-      "dependents": 1062,
+      "dependents": 1095,
       "last_published": "2026-10-29"
     },
     {
@@ -2697,7 +2697,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 207747,
-      "dependents": 401,
+      "dependents": 412,
       "last_published": "2026-10-29"
     },
     {
@@ -2715,7 +2715,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 258094,
-      "dependents": 690,
+      "dependents": 722,
       "last_published": "2026-10-29"
     },
     {
@@ -2724,7 +2724,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 187056,
-      "dependents": 388,
+      "dependents": 394,
       "last_published": "2026-10-29"
     },
     {
@@ -2760,7 +2760,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 204136,
-      "dependents": 386,
+      "dependents": 396,
       "last_published": "2026-10-29"
     },
     {
@@ -2778,7 +2778,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 108424,
-      "dependents": 97,
+      "dependents": 99,
       "last_published": "2026-10-29"
     },
     {
@@ -2814,7 +2814,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 58918,
-      "dependents": 3,
+      "dependents": 4,
       "last_published": "2026-10-29"
     },
     {
@@ -2895,7 +2895,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 111198,
-      "dependents": 108,
+      "dependents": 109,
       "last_published": "2026-10-29"
     },
     {
@@ -2931,7 +2931,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 162044,
-      "dependents": 334,
+      "dependents": 339,
       "last_published": "2026-10-29"
     },
     {
@@ -2949,7 +2949,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 132158,
-      "dependents": 177,
+      "dependents": 178,
       "last_published": "2026-10-29"
     },
     {
@@ -2967,7 +2967,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 80569,
-      "dependents": 39,
+      "dependents": 41,
       "last_published": "2026-10-29"
     },
     {
@@ -2985,7 +2985,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 137019,
-      "dependents": 313,
+      "dependents": 317,
       "last_published": "2026-10-29"
     },
     {
@@ -3003,7 +3003,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 135898,
-      "dependents": 318,
+      "dependents": 324,
       "last_published": "2026-10-29"
     },
     {
@@ -3057,7 +3057,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 611212,
-      "dependents": 1087,
+      "dependents": 1120,
       "last_published": "2026-10-29"
     },
     {
@@ -3066,7 +3066,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 196684,
-      "dependents": 306,
+      "dependents": 310,
       "last_published": "2026-10-29"
     },
     {
@@ -3084,7 +3084,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 349814,
-      "dependents": 756,
+      "dependents": 788,
       "last_published": "2026-10-29"
     },
     {
@@ -3093,7 +3093,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 236527,
-      "dependents": 349,
+      "dependents": 353,
       "last_published": "2026-10-29"
     },
     {
@@ -3138,7 +3138,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 306248,
-      "dependents": 713,
+      "dependents": 745,
       "last_published": "2026-10-29"
     },
     {
@@ -3156,7 +3156,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 297090,
-      "dependents": 1114,
+      "dependents": 1146,
       "last_published": "2026-10-29"
     },
     {
@@ -3183,7 +3183,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 532846,
-      "dependents": 1051,
+      "dependents": 1083,
       "last_published": "2026-10-29"
     },
     {
@@ -3219,7 +3219,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 430400,
-      "dependents": 1070,
+      "dependents": 1103,
       "last_published": "2026-10-29"
     },
     {
@@ -3237,7 +3237,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 423455,
-      "dependents": 1073,
+      "dependents": 1106,
       "last_published": "2026-10-29"
     },
     {
@@ -3246,7 +3246,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 301551,
-      "dependents": 736,
+      "dependents": 768,
       "last_published": "2026-10-29"
     },
     {
@@ -3273,7 +3273,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 59990,
-      "dependents": 67,
+      "dependents": 72,
       "last_published": "2026-10-29"
     },
     {
@@ -3327,7 +3327,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 172344,
-      "dependents": 353,
+      "dependents": 359,
       "last_published": "2026-10-29"
     },
     {
@@ -3363,7 +3363,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 296811,
-      "dependents": 748,
+      "dependents": 780,
       "last_published": "2026-10-29"
     },
     {
@@ -3381,7 +3381,7 @@
       "repo": "jupyterlab/jupyterlab",
       "reason": "registry links to this repo",
       "downloads_last_month": 313714,
-      "dependents": 743,
+      "dependents": 775,
       "last_published": "2026-10-29"
     },
     {
@@ -3579,7 +3579,7 @@
       "repo": "jupyterlab/jupyterlab_pygments",
       "reason": "registry links to this repo",
       "downloads_last_month": 48057917,
-      "dependents": 6282,
+      "dependents": 6286,
       "last_published": "2023-11-23"
     },
     {
@@ -3867,7 +3867,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 649206,
-      "dependents": 1465,
+      "dependents": 1500,
       "last_published": "2026-07-03"
     },
     {
@@ -3876,7 +3876,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 276809,
-      "dependents": 692,
+      "dependents": 724,
       "last_published": "2026-10-08"
     },
     {
@@ -3894,7 +3894,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 542572,
-      "dependents": 1359,
+      "dependents": 1393,
       "last_published": "2026-07-03"
     },
     {
@@ -3903,7 +3903,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 586402,
-      "dependents": 1422,
+      "dependents": 1457,
       "last_published": "2026-07-03"
     },
     {
@@ -3912,7 +3912,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 719261,
-      "dependents": 1458,
+      "dependents": 1493,
       "last_published": "2026-07-03"
     },
     {
@@ -3939,7 +3939,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 595572,
-      "dependents": 1436,
+      "dependents": 1471,
       "last_published": "2026-07-03"
     },
     {
@@ -3948,7 +3948,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 594952,
-      "dependents": 1423,
+      "dependents": 1458,
       "last_published": "2026-07-03"
     },
     {
@@ -3957,7 +3957,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 512961,
-      "dependents": 1334,
+      "dependents": 1368,
       "last_published": "2026-07-03"
     },
     {
@@ -3966,7 +3966,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 582369,
-      "dependents": 1423,
+      "dependents": 1458,
       "last_published": "2026-07-03"
     },
     {
@@ -3975,7 +3975,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 546510,
-      "dependents": 1358,
+      "dependents": 1392,
       "last_published": "2026-07-03"
     },
     {
@@ -3984,7 +3984,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 423231,
-      "dependents": 1079,
+      "dependents": 1104,
       "last_published": "2026-07-03"
     },
     {
@@ -3993,7 +3993,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 582152,
-      "dependents": 1423,
+      "dependents": 1458,
       "last_published": "2026-07-03"
     },
     {
@@ -4002,7 +4002,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 605884,
-      "dependents": 1437,
+      "dependents": 1472,
       "last_published": "2026-07-03"
     },
     {
@@ -4011,7 +4011,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 588718,
-      "dependents": 1423,
+      "dependents": 1458,
       "last_published": "2026-07-03"
     },
     {
@@ -4020,7 +4020,7 @@
       "repo": "jupyterlab/lumino",
       "reason": "registry links to this repo",
       "downloads_last_month": 536970,
-      "dependents": 1011,
+      "dependents": 1043,
       "last_published": "2026-10-08"
     },
     {
@@ -4408,7 +4408,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 660,
       "dependents": 1,
-      "last_published": "2026-09-29"
+      "last_published": "2026-11-02"
     },
     {
       "system": "PYPI",
@@ -4417,7 +4417,7 @@
       "reason": "registry links to this repo",
       "downloads_last_month": 1640,
       "dependents": 1,
-      "last_published": "2026-09-29"
+      "last_published": "2026-11-02"
     },
     {
       "system": "NPM",
