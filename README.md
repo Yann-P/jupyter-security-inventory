@@ -6,7 +6,7 @@ Project Jupyter has over 400 public repositories across 20 GitHub organizations.
 
 - Expose a "todo list" of bite-sized security improvements from which contributors can pick from.
 - Be a tool to prioritize where security time is spent first using metrics
-- And eventually aggregate more data (trusted publishing, check SECURITY.mds) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.
+- And eventually aggregate more data (like trusted publishing) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.
 
 ## Structure
 
@@ -20,7 +20,7 @@ Eight scripts run in order (they depend on each other):
 | Step | What it does | Data from |
 |---|---|---|
 | 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
-| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config and README | GitHub |
+| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config, README and SECURITY.md | GitHub |
 | 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents and the date of the last release | PyPI, npm, pypistats.org, deps.dev |
 | 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |
 | 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
@@ -45,8 +45,11 @@ Eight scripts run in order (they depend on each other):
 
 A topic asks one question about every repository, like "does it check its workflows with zizmor?", and answers
 with a status: done, partial, missing or not applicable. Each topic has a page, and every organization and
-repository page shows how it does. For now there is one: zizmor, run as its GitHub Action, as a command in a
-workflow or as a pre-commit hook.
+repository page shows how it does. There are two for now:
+
+- **zizmor**, run as its GitHub Action, as a command in a workflow or as a pre-commit hook.
+- **SECURITY.md**, in the repository or in the organization's `.github` repository, for the repositories that ship a
+  package or an image.
 
 ## Caveats
 

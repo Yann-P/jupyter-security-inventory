@@ -9,10 +9,11 @@ from topics import DONE, MISSING, NOT_APPLICABLE, PARTIAL, Result, Topic
 PRE_COMMIT_CONFIG = ".pre-commit-config.yaml"
 
 
-def check(scan: dict) -> Result:
-    if not scan["workflows"]["count"]:
+def check(repo: dict, scan: dict) -> Result:
+    facts = scan[repo["full_name"]]
+    if not facts["workflows"]["count"]:
         return Result(NOT_APPLICABLE, "No GitHub workflows.")
-    mentions = scan["mentions"]
+    mentions = facts["mentions"]
     files = mentions.get("zizmor", [])
     workflows = [path for path in files if path != PRE_COMMIT_CONFIG]
     hook = PRE_COMMIT_CONFIG in files

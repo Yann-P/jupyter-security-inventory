@@ -1,7 +1,8 @@
 """Step 8: answer every security topic for every repo.
 
-Each topic in scripts/topics/ reads a repo's facts from scan.json. The answers are one row per repo and topic, so a
-new topic adds rows, not columns. It also keeps the number of repos per topic and status for each day, to show progress.
+Each topic in scripts/topics/ reads a repo's facts from scan.json and jupyter_repos.json. The answers are one row per
+repo and topic, so a new topic adds rows, not columns. It also keeps the number of repos per topic and status for each
+day, to show progress.
 
 Usage: python scripts/8_topics.py    Output: output/topics.json, output/topics_history.json
 """
@@ -11,17 +12,17 @@ from collections import Counter
 from dataclasses import asdict
 
 from common import OUTPUT, load_json, save_json
-from topics import STATUSES, zizmor
+from topics import STATUSES, security_policy, zizmor
 
-TOPICS = [zizmor.TOPIC]
+TOPICS = [zizmor.TOPIC, security_policy.TOPIC]
 HISTORY = OUTPUT / "topics_history.json"
 
 
-def answer(scan: dict) -> list[dict]:
+def answer(repos: dict, scan: dict) -> list[dict]:
     return [
-        {"topic": topic.id, "repo": repo, **asdict(topic.check(scan[repo]))}
+        {"topic": topic.id, "repo": name, **asdict(topic.check(repos[name], scan))}
         for topic in TOPICS
-        for repo in sorted(scan)
+        for name in sorted(scan)
     ]
 
 
@@ -41,11 +42,12 @@ def save_topics(topics: list[dict], rows: list[dict]):
 
 def main():
     scan = load_json(OUTPUT / "scan.json")
-    rows = answer(scan)
+    inventory = load_json(OUTPUT / "jupyter_repos.json")
+    rows = answer({repo["full_name"]: repo for repo in inventory["repos"]}, scan)
     save_topics([{key: value for key, value in asdict(topic).items() if key != "check"} for topic in TOPICS], rows)
 
     history = load_json(HISTORY) if HISTORY.exists() else {}
-    history[load_json(OUTPUT / "repos.json")["fetched_on"]] = counts(rows)  # a rerun on the same day replaces it
+    history[inventory["fetched_on"]] = counts(rows)  # a rerun on the same day replaces it
     save_json(HISTORY, dict(sorted(history.items())))
     print(f"answered {len(TOPICS)} topics for {len(scan)} repos")
 

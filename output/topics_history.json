@@ -13,6 +13,12 @@
       "partial": 3,
       "missing": 259,
       "n/a": 154
+    },
+    "security-policy": {
+      "done": 94,
+      "partial": 2,
+      "missing": 55,
+      "n/a": 287
     }
   }
 }
