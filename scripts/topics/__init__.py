@@ -1,4 +1,4 @@
-"""Security topics: each asks one question about every repo and answers it from the facts of scan.json.
+"""Security topics: each asks one question about every repo and answers it from scan.json and jupyter_repos.json.
 
 A topic is a module here with a TOPIC. All detection lives in these modules; the site only shows topics.json.
 """
@@ -26,14 +26,15 @@ class Result:
 
 @dataclass
 class Topic:
-    """`check` takes a repo's entry of scan.json. The id is used in URLs and file names."""
+    """`check` takes a repo's record of jupyter_repos.json and all of scan.json, to look at other repos like the
+    org's .github. The id is used in URLs and file names."""
 
     id: str
     title: str
     question: str
     detection: str
     meanings: dict[str, str]
-    check: Callable[[dict], Result]
+    check: Callable[[dict, dict], Result]
 
     def __post_init__(self):
         assert re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", self.id), self.id

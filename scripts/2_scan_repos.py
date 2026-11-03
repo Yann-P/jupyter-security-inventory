@@ -2,8 +2,8 @@
 
 For each repo: how many files of each type, the packages its manifests declare, what its
 GitHub workflows do, the GitHub Actions it uses, the container images its chartpress files build,
-which words its CI and pre-commit config mention, and the start of its README. Only those few files are downloaded; for everything else the clone
-holds just the file names.
+which words its CI and pre-commit config mention, the emails of its SECURITY.md, and the start of its README.
+Only those few files are downloaded; for everything else the clone holds just the file names.
 
 Usage: python scripts/2_scan_repos.py --clone-dir /tmp/clones    Output: output/scan.json
 """
@@ -71,6 +71,9 @@ MENTIONS = {
     "zizmor-action": r"zizmor-action",
     "pre-commit": r"(?<![\w./-])pre-commit(?=\s|/action)|\bprek\b(?!\.toml)|^ci:",
 }
+# Where GitHub looks for a security policy, in its order. Names are matched in lowercase.
+SECURITY_POLICIES = (".github/security.md", "security.md", "docs/security.md")
+EMAIL = r"[A-Za-z0-9][\w.+-]*@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+"
 # A secret read by a workflow: "${{ secrets.PYPI_TOKEN }}"
 SECRET = r"\$\{\{\s*secrets\.(\w+)"
 # An action used by a workflow: "uses: org/repo@ref" or "uses: org/repo/path/to/action@ref"
@@ -127,8 +130,8 @@ def is_workflow(path: str) -> bool:
 
 
 def worth_reading(path: str) -> bool:
-    """The README, package manifests, workflows, action definitions, chartpress files and pre-commit config: the only
-    files we download."""
+    """The README, package manifests, workflows, action definitions, chartpress files, pre-commit config and
+    SECURITY.md: the only files we download."""
     if "node_modules" in PurePosixPath(path).parts:
         return False
     name = PurePosixPath(path).name
@@ -138,6 +141,7 @@ def worth_reading(path: str) -> bool:
         or is_action(path)
         or is_workflow(path)
         or path == PRE_COMMIT_CONFIG
+        or path.lower() in SECURITY_POLICIES
     )
 
 
@@ -217,6 +221,10 @@ def mentions(files: dict[str, str]) -> dict[str, list[str]]:
     return {word: paths for word, paths in found.items() if paths}
 
 
+def emails(text: str) -> list[str]:
+    return sorted({email.lower() for email in re.findall(EMAIL, text)})
+
+
 def triggers(workflow: str) -> set[str]:
     """The events that start a workflow: its `on:` is a name, a list of names or a mapping keyed by name."""
     try:
@@ -258,6 +266,7 @@ def scan(full_name: str, clone_dir: Path) -> dict:
     manifests = [path for path in to_read if PurePosixPath(path).name in MANIFESTS]
     chartpress = [path for path in to_read if PurePosixPath(path).name in CHARTPRESS]
     readme = next((path for path in to_read if is_readme(path)), None)
+    policy = next((path for name in SECURITY_POLICIES for path in to_read if path.lower() == name), None)
 
     packages, build_requirements = [], set()
     for manifest in manifests:
@@ -281,6 +290,7 @@ def scan(full_name: str, clone_dir: Path) -> dict:
         "build_requires": sorted(build_requirements),
         "mentions": mentions(ci_files | pre_commit),
         "readme": read(readme)[:2500] if readme else None,
+        "security_policy": {"path": policy, "emails": emails(read(policy))} if policy else None,
     }
 
 

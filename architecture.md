@@ -29,14 +29,14 @@ scripts/1..8  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.p
 | 5 | `5_classify.py` | `repos.json`, `scan.json`, `packages.json`, clones, LLM | `classification.json` |
 | 6 | `6_build_dataset.py` | steps 1 to 5 | `jupyter_repos.json` |
 | 7 | `7_table.py` | `jupyter_repos.json` | `repos.csv` |
-| 8 | `8_topics.py` | `scan.json`, `repos.json` | `topics.json`, `topics_history.json` |
+| 8 | `8_topics.py` | `scan.json`, `jupyter_repos.json` | `topics.json`, `topics_history.json` |
 
 `common.py` has what the scripts share: reading and writing JSON, and `fetch_json`, which caches answers for
 24 hours in `.cache/http/` and retries on rate limits (HTTP 429) and server errors.
 
 Step 2 keeps, for each repo: file counts by type, the packages its manifests declare, a summary of its workflows
 (triggers, secrets, what they publish), the actions it uses, the images its chartpress files build, the build
-requirements of its `pyproject.toml`, the start of its README, and which of a few words (zizmor, pre-commit) its CI files and
+requirements of its `pyproject.toml`, the start of its README, its SECURITY.md and the emails in it, and which of a few words (zizmor, pre-commit) its CI files and
 pre-commit config mention. A clone is shallow and holds only those files.
 Symbolic links are never followed.
 
@@ -76,7 +76,7 @@ they use its packages in their build requirements. "Used in CI" counts `ci` and 
 ## Security topics
 
 A topic answers one question about every repo, like "does it run zizmor?". It is a module in `scripts/topics/` with a
-`check` function. `check` reads a repo's entry in `scan.json` and returns a status (`done`, `partial`, `missing` or
+`check` function. `check` reads a repo's record in `jupyter_repos.json` and all of `scan.json`, and returns a status (`done`, `partial`, `missing` or
 `n/a`), a short reason, how the repo does it, and the files that show it. Step 8 writes a row per repo and topic, so a
 new topic adds rows, not columns, and counts the statuses once a day for the "over time" table.
 
@@ -84,6 +84,11 @@ The zizmor topic knows three ways to run it: its GitHub Action, a command in a w
 hook. The first two are `done`. A hook is `done` if CI runs pre-commit: a workflow runs it, or the config has a `ci:`
 section for pre-commit.ci (we can't see whether it is installed). Otherwise it is `partial`. A repo with no workflows is
 `n/a`. Zizmor from super-linter is not recognized.
+
+The SECURITY.md topic looks where GitHub does: the repo's `.github` folder, root and `docs` folder, then the same in
+the org's `.github` repo. Only repos that ship a package or an image need one. When the repo and its org both have
+one, the repo's file is likely a copy (`done`) if it lists the same emails, and `partial` if not, since reports may
+go to an old address.
 
 ## The site
 

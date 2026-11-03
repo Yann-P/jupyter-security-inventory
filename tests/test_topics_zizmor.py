@@ -7,7 +7,7 @@ WORKFLOW = ".github/workflows/zizmor.yml"
 
 
 def status(mentions, workflows=1):
-    return zizmor.check({"workflows": {"count": workflows}, "mentions": mentions}).status
+    return zizmor.check({"full_name": "a"}, {"a": {"workflows": {"count": workflows}, "mentions": mentions}}).status
 
 
 def test_each_way_of_running_zizmor_is_told_apart():
@@ -20,7 +20,6 @@ def test_each_way_of_running_zizmor_is_told_apart():
 
 
 def test_the_result_says_how_and_shows_the_files():
-    result = zizmor.check(
-        {"workflows": {"count": 1}, "mentions": {"zizmor": [HOOK, WORKFLOW], "zizmor-action": [WORKFLOW]}}
-    )
+    mentions = {"zizmor": [HOOK, WORKFLOW], "zizmor-action": [WORKFLOW]}
+    result = zizmor.check({"full_name": "a"}, {"a": {"workflows": {"count": 1}, "mentions": mentions}})
     assert (result.via, result.evidence) == (["GitHub Action", "pre-commit"], [HOOK, WORKFLOW])
