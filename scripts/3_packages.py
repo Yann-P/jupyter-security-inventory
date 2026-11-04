@@ -7,6 +7,7 @@ shallowest folder (deeper copies are usually stubs or vendored).
 
 Downloads: pypistats.org (last 30 days) and api.npmjs.org (last month).
 Dependents and last published date: deps.dev (see deps_dev).
+How the latest release was published: PyPI and npm (see publishing).
 
 Usage: python scripts/3_packages.py    Output: output/packages.json
 """
@@ -81,15 +82,16 @@ def downloads(system: str, name: str) -> int | None:
 
 
 def deps_dev(system: str, name: str) -> dict:
-    """What deps.dev knows about a package: how many packages depend on it, and when it was last published.
+    """What deps.dev knows about a package: how many packages depend on it, when it was last published, and when its
+    default version (the one installed when no version is asked for) was published.
 
-    dependents is the largest count over its default and 12 newest versions. Both are None if deps.dev does not
+    dependents is the largest count over its default and 12 newest versions. All are None if deps.dev does not
     know the package.
     """
     package = f"systems/{system.lower()}/packages/{quote(pep503(name) if system == 'PYPI' else name)}"
     info = fetch_json(f"https://api.deps.dev/v3/{package}")
     if info is None:
-        return {"dependents": None, "last_published": None}
+        return {"dependents": None, "last_published": None, "latest_published": None}
     versions = info["versions"]
     newest = sorted(versions, key=lambda v: v.get("publishedAt") or "")[-12:]
     default = [v for v in versions if v.get("isDefault")]
@@ -98,7 +100,23 @@ def deps_dev(system: str, name: str) -> dict:
         answer = fetch_json(f"https://api.deps.dev/v3alpha/{package}/versions/{quote(version)}:dependents") or {}
         counts.append(answer.get("dependentCount", 0))
     last_published = max((v.get("publishedAt") or "" for v in versions), default="")[:10]
-    return {"dependents": max(counts, default=0), "last_published": last_published or None}
+    latest_published = (default[0].get("publishedAt") or "")[:10] if default else ""
+    return {
+        "dependents": max(counts, default=0),
+        "last_published": last_published or None,
+        "latest_published": latest_published or None,
+    }
+
+
+def publishing(system: str, name: str) -> dict:
+    """Whether the latest release has an attestation on every file (PyPI) or used trusted publishing (npm)."""
+    if system == "PYPI":
+        body = fetch_json(f"https://pypi.org/pypi/{quote(name)}/json")
+        version, files = body["info"]["version"], [file["filename"] for file in body["urls"]]
+        base = f"https://pypi.org/integrity/{quote(name)}/{quote(version)}"
+        return {"attested": bool(files) and all(fetch_json(f"{base}/{quote(file)}/provenance") for file in files)}
+    body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=2)
+    return {"trusted_publishing": bool((body.get("_npmUser") or {}).get("trustedPublisher"))}
 
 
 def find_candidates(repos: dict, scan: dict) -> dict:
@@ -155,7 +173,9 @@ def main():
     packages, rejected = pick_publishers(candidates, entries, repos, set(inventory["orgs"]))
 
     with ThreadPoolExecutor(8) as pool:
-        known = list(pool.map(lambda p: deps_dev(p["system"], p["name"]), packages))
+        known = list(
+            pool.map(lambda p: deps_dev(p["system"], p["name"]) | publishing(p["system"], p["name"]), packages)
+        )
     for package, deps in zip(packages, known):
         # One at a time, because pypistats.org and api.npmjs.org limit how often we may call them.
         package["downloads_last_month"] = downloads(package["system"], package["name"])

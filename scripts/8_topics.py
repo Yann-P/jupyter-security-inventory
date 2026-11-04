@@ -12,9 +12,9 @@ from collections import Counter
 from dataclasses import asdict
 
 from common import OUTPUT, load_json, save_json
-from topics import STATUSES, security_policy, zizmor
+from topics import STATUSES, npm_trusted_publishing, pypi_attestations, security_policy, zizmor
 
-TOPICS = [zizmor.TOPIC, security_policy.TOPIC]
+TOPICS = [zizmor.TOPIC, security_policy.TOPIC, pypi_attestations.TOPIC, npm_trusted_publishing.TOPIC]
 HISTORY = OUTPUT / "topics_history.json"
 
 

@@ -60,7 +60,7 @@ All in `output/`. Repos are named `org/repo`.
 |---|---|
 | `repos.json` | `fetched_on`, `orgs`, and `repos`: full_name, org, name, description, is_fork. |
 | `scan.json` | `{repo: facts from step 2}`. |
-| `packages.json` | `accepted`: system (PYPI or NPM), name, repo, reason, downloads_last_month, dependents, last_published. `rejected`: candidates that were not confirmed. |
+| `packages.json` | `accepted`: system (PYPI or NPM), name, repo, reason, downloads_last_month, dependents, last_published, and for the latest release (the default version): latest_published, and `attested` (PyPI) or `trusted_publishing` (npm). `rejected`: candidates that were not confirmed. |
 | `images.json` | `images`: registry, namespace, name, tag, last_published, pulls (all time), reference, repo, reason. |
 | `images.txt` | One image reference per line. |
 | `classification.json` | `{repo: kind, security_boundary, deploys_live_service, rationale, model}`. Written by an LLM. |
@@ -89,6 +89,10 @@ The SECURITY.md topic looks where GitHub does: the repo's `.github` folder, root
 the org's `.github` repo. Only repos that ship a package or an image need one. When the repo and its org both have
 one, the repo's file is likely a copy (`done`) if it lists the same emails, and `partial` if not, since reports may
 go to an old address.
+
+The PyPI attestations and npm trusted publishing topics read what step 3 asked the registries about each package's
+latest release. A package whose latest release is older than attestations being the default (PyPI) or npm trusted
+publishing is left out: only a new release could have it.
 
 ## The site
 

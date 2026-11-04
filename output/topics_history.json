@@ -33,6 +33,18 @@
       "partial": 2,
       "missing": 55,
       "n/a": 287
+    },
+    "pypi-attestations": {
+      "done": 22,
+      "partial": 0,
+      "missing": 64,
+      "n/a": 352
+    },
+    "npm-trusted-publishing": {
+      "done": 30,
+      "partial": 1,
+      "missing": 3,
+      "n/a": 404
     }
   }
 }
