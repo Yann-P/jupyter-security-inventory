@@ -21,7 +21,7 @@ Eight scripts run in order (they depend on each other):
 |---|---|---|
 | 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
 | 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config, README and SECURITY.md | GitHub |
-| 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents and the date of the last release | PyPI, npm, pypistats.org, deps.dev |
+| 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents, the date of the last release and how the latest release was published | PyPI, npm, pypistats.org, deps.dev |
 | 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |
 | 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |
 | 6. Merge | Puts it all together and works out which repositories run each other's code | |
@@ -45,11 +45,14 @@ Eight scripts run in order (they depend on each other):
 
 A topic asks one question about every repository, like "does it check its workflows with zizmor?", and answers
 with a status: done, partial, missing or not applicable. Each topic has a page, and every organization and
-repository page shows how it does. There are two for now:
+repository page shows how it does. There are four for now:
 
 - **zizmor**, run as its GitHub Action, as a command in a workflow or as a pre-commit hook.
 - **SECURITY.md**, in the repository or in the organization's `.github` repository, for the repositories that ship a
   package or an image.
+- **PyPI attestations**, on every file of the latest release of each PyPI package. PyPI's API shows trusted publishing
+  only through attestations, so it has no topic of its own.
+- **npm trusted publishing**, for the latest version of each npm package.
 
 ## Caveats
 
@@ -59,9 +62,9 @@ repository page shows how it does. There are two for now:
 - Images: ghcr.io is not covered, Quay has no pull counts, and one tag is recorded per image: `latest`, or the newest.
   The namespaces are listed by hand in `scripts/4_images.py`. Many older images match no repository.
 - "Used in CI" only sees the repositories listed here.
-- Topics read the repository's files, so they show what is set up, not what is enforced. pre-commit.ci can't be seen
-  from the files, so a pre-commit hook counts as run by CI only if a workflow runs pre-commit or the config has a
-  `ci:` section.
+- The zizmor and SECURITY.md topics read the repository's files, so they show what is set up, not what is enforced.
+  pre-commit.ci can't be seen from the files, so a pre-commit hook counts as run by CI only if a workflow runs
+  pre-commit or the config has a `ci:` section.
 
 ## Running it
 
