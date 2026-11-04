@@ -1775,11 +1775,11 @@
     "security_policy": null
   },
   "ipython/xkcd-font": {
-    "head": "d6a83979937c7c36475926009c1eb471e6d62b9d",
-    "n_files": 134,
+    "head": "07bbde819cb01bf3f2476abe677149eeb7d64988",
+    "n_files": 135,
     "file_types": {
       "other": 8,
-      "config": 11,
+      "config": 12,
       "docs": 9,
       "code": 24,
       "web": 5,
@@ -1787,7 +1787,7 @@
     },
     "packages": [],
     "workflows": {
-      "count": 4,
+      "count": 5,
       "triggers": [
         "pull_request",
         "pull_request_target",
@@ -1801,18 +1801,27 @@
       ]
     },
     "uses": [
-      "actions/checkout@v4",
-      "actions/configure-pages@v5",
-      "actions/deploy-pages@v4",
-      "actions/upload-artifact@v4",
-      "actions/upload-pages-artifact@v3",
-      "docker/build-push-action@v6",
-      "docker/login-action@v3",
-      "docker/setup-buildx-action@v3"
+      "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b",
+      "actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa",
+      "docker/build-push-action@10e90e3645eae34f1e60eeb005ba3a3d33f178e8",
+      "docker/login-action@c94ce9fb468520275223c153574b00df6fe4bcc9",
+      "docker/setup-buildx-action@8d2750c68a42422c14e847fe6c8ac0403b4cbd6f",
+      "zizmorcore/zizmor-action@85b2b9fb8e3325e7a23d7d0a9d7ba5ae0f999e3e"
     ],
     "images": [],
     "build_requires": [],
-    "mentions": {},
+    "mentions": {
+      "zizmor": [
+        ".github/workflows/zizmor.yml"
+      ],
+      "zizmor-action": [
+        ".github/workflows/zizmor.yml"
+      ]
+    },
     "readme": "# xkcd-font\n\nFonts derived from the handwriting of @randallmunroe, the [xkcd](https://xkcd.com) webcomic author.\nYes, it really is his handwriting, and he hopes we [fix the pesky kerning](http://xkcd.com/1015/):\n\n![I have never been as self-conscious about my handwriting as when I was inking in the caption for this comic.](https://imgs.xkcd.com/comics/kerning.png)\n[Credit to xkcd]\n\nThis repository contains two fonts, ``xkcd Script`` and ``xkcd``, each with their own characteristics (and limitations):\n\n### Font: ``xkcd Script``\n\n``xkcd Script`` is a font derived from a [handwriting sample](xkcd-script/generator/handwriting_minimal.png) provided by Randall.\nIt is far less uniform than ``xkcd``, and we think it is therefore more like a true script font.\n\n![Sample of xkcd-script](xkcd-script/samples/ipsum.png)\n\nYou can see the font as a [live preview](https://ipython.org/xkcd-font/xkcd-script/), or \nfor more information about the font and how it is constructed see the [xkcd-script/README](xkcd-script/README.md).\n\nPre-built font files are available directly in this repository:\n[xkcd-script.ttf](xkcd-script/font/xkcd-script.ttf) | [xkcd-script.woff](xkcd-script/font/xkcd-script.woff)\n\n\n### Font: ``xkcd``\n\nThe ``xkcd`` font was originally created by Randall, and was used in [xkcd \"The Pace of Modern Life\" (April 1st, 2013)](https://xkcd.com/1227/).\nIt is considerably more uniform than ``xkcd Script``, which can result in more legibility at the cost of being slightly less like the actual xkcd comic.\n\n![Sample of xkcd](xkcd/samples/ipsum.png)\n\nThe pre-built font file is available directly in this repository: [xkcd.otf](xkcd/build/xkcd.otf)\n\n[Read more...](xkcd/README.md)\n\n## License\n\nThis work is licensed under a [Creative Commons Attribution-NonCommercial 3.0 License](LICENSE).\n\n## Contributing\n\nContribution [guidelines](.github/CONTRIBUTING) exist to simplify the review process and ensure constency in the repository.\nIn addition, font specific contribution guidelines can be found in the README of each font ([xkcd-script](xkcd-script/README.md), [xkcd](xkcd/README.md)).\n",
     "security_policy": null
   },
@@ -2885,10 +2894,10 @@
     "security_policy": null
   },
   "jupyter-book/mystmd": {
-    "head": "2210e7003a0b70d0f9884b5da81e98841f7b79e2",
-    "n_files": 1759,
+    "head": "8055648ac9a50bc3848625e43c66b6fe671a8094",
+    "n_files": 1760,
     "file_types": {
-      "docs": 473,
+      "docs": 474,
       "config": 413,
       "other": 78,
       "code": 689,
@@ -3771,7 +3780,7 @@
     "security_policy": null
   },
   "jupyter-server/fps": {
-    "head": "b4e2d1f44f1d2e3826a79a8f587c816d86c5941e",
+    "head": "e379983b18cc28a657e2b03e5f209d99b55942d9",
     "n_files": 38,
     "file_types": {
       "config": 8,
@@ -5649,7 +5658,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus": {
-    "head": "89ddf2a78679c9851ade1c077db5808dce22f18c",
+    "head": "cb6d8bb18d026faf0d9eab156346f9abfeb237a6",
     "n_files": 107,
     "file_types": {
       "other": 6,
@@ -6869,7 +6878,7 @@
     "security_policy": null
   },
   "jupyter/cookiecutter-docker-stacks": {
-    "head": "68410a7827ca33e8126bb31a9fb3bc93287d55ac",
+    "head": "f80c1af0855781a744dd5a7aa8e266d68f15be67",
     "n_files": 43,
     "file_types": {
       "other": 7,
@@ -6970,7 +6979,7 @@
     "security_policy": null
   },
   "jupyter/docker-stacks": {
-    "head": "354b12a5fcee8bba58c2d9e85fb7f4a61a81e73b",
+    "head": "90b46d6b8248d6c6e85ba4015b96a58671c3729a",
     "n_files": 309,
     "file_types": {
       "other": 59,
@@ -7106,10 +7115,10 @@
     "security_policy": null
   },
   "jupyter/enhancement-proposals": {
-    "head": "906afd95af965994a3c7cea8af4f01723daa7716",
-    "n_files": 55,
+    "head": "79bfd37cf31bd9e3b706b1fbfdb269ea87307c10",
+    "n_files": 56,
     "file_types": {
-      "docs": 34,
+      "docs": 35,
       "config": 7,
       "other": 2,
       "media": 8,
@@ -7580,7 +7589,7 @@
     "security_policy": null
   },
   "jupyter/jupyter_core": {
-    "head": "4c4f526adab04ae6bf7821f65a5adbd011aa27ac",
+    "head": "21b34b5a662165a4ea3dd5f86bc6e06374393468",
     "n_files": 63,
     "file_types": {
       "other": 8,
@@ -8231,7 +8240,7 @@
     "security_policy": null
   },
   "jupyter/nbgrader": {
-    "head": "71d340c114a2661e7f0ba9b57cb80b23538d78fa",
+    "head": "91d5c12f989bda6f4937997d63b5f6608b28aac5",
     "n_files": 609,
     "file_types": {
       "other": 38,
@@ -8638,7 +8647,7 @@
     "security_policy": null
   },
   "jupyter/papyri": {
-    "head": "31b4436456cb3434e59fe1a34c8b8b780be93d93",
+    "head": "3ef74d2eab807c7850f18cd22d3a04bc1467a423",
     "n_files": 343,
     "file_types": {
       "other": 57,
@@ -12799,7 +12808,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "d5884ba625d038a4800181bf2ed2b0bc9ba7b89c",
+    "head": "100add0cfc8ff21be418a339d30eb235b20a2523",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -14830,7 +14839,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "ee7c0832351ce36115b62249759d53b78cc6d525",
+    "head": "205d19ab7d921db2abd1b462a89ac170426a0ba4",
     "n_files": 186,
     "file_types": {
       "docs": 33,
@@ -15054,13 +15063,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-chat": {
-    "head": "021c6d38da6c154844e5e81867c19c89a138425a",
-    "n_files": 271,
+    "head": "d2127e796e43e2a7538b449b4be104fb604ebb80",
+    "n_files": 272,
     "file_types": {
       "config": 37,
       "other": 11,
       "docs": 16,
-      "code": 171,
+      "code": 172,
       "notebook": 1,
       "web": 12,
       "media": 23
@@ -15138,7 +15147,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-collaboration": {
-    "head": "1f912d220a47409acc758c81678b6019db270701",
+    "head": "89829a00c9ef1a813b902c136a17579163f64fd7",
     "n_files": 209,
     "file_types": {
       "other": 14,
@@ -15419,7 +15428,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "29752fe1f6f0950a387afbe941dce5dcfbd60c0a",
+    "head": "6425b77d769daaa17c20071557d2f00abdc4082f",
     "n_files": 3087,
     "file_types": {
       "config": 604,

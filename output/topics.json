@@ -89,7 +89,7 @@
     {"topic": "zizmor", "repo": "ipython/matplotlib-inline", "status": "done", "reason": "Runs in a workflow.", "via": ["workflow command"], "evidence": [".github/workflows/zizmor.yml"]},
     {"topic": "zizmor", "repo": "ipython/pickleshare", "status": "missing", "reason": "No sign of zizmor.", "via": [], "evidence": []},
     {"topic": "zizmor", "repo": "ipython/traitlets", "status": "done", "reason": "Runs in a workflow.", "via": ["GitHub Action"], "evidence": [".github/workflows/zizmor.yml"]},
-    {"topic": "zizmor", "repo": "ipython/xkcd-font", "status": "missing", "reason": "No sign of zizmor.", "via": [], "evidence": []},
+    {"topic": "zizmor", "repo": "ipython/xkcd-font", "status": "done", "reason": "Runs in a workflow.", "via": ["GitHub Action"], "evidence": [".github/workflows/zizmor.yml"]},
     {"topic": "zizmor", "repo": "jupyter-book/.github", "status": "missing", "reason": "No sign of zizmor.", "via": [], "evidence": []},
     {"topic": "zizmor", "repo": "jupyter-book/blog", "status": "missing", "reason": "No sign of zizmor.", "via": [], "evidence": []},
     {"topic": "zizmor", "repo": "jupyter-book/blog-plugin", "status": "missing", "reason": "No sign of zizmor.", "via": [], "evidence": []},
