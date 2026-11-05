@@ -2756,7 +2756,7 @@
     "security_policy": null
   },
   "jupyter-book/myst-theme": {
-    "head": "f75ec23d244911f05fd055fdcca80c164c3242b5",
+    "head": "7542ac7e1c12e591b27ed72acf70c8c182a71649",
     "n_files": 450,
     "file_types": {
       "docs": 74,
@@ -2894,10 +2894,10 @@
     "security_policy": null
   },
   "jupyter-book/mystmd": {
-    "head": "8055648ac9a50bc3848625e43c66b6fe671a8094",
-    "n_files": 1760,
+    "head": "5d87e8b8a6a0fe176a872eb79e3ee1f0cd61b9c3",
+    "n_files": 1762,
     "file_types": {
-      "docs": 474,
+      "docs": 476,
       "config": 413,
       "other": 78,
       "code": 689,
@@ -5658,7 +5658,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus": {
-    "head": "cb6d8bb18d026faf0d9eab156346f9abfeb237a6",
+    "head": "9062faa21383709676b020f5aa8be1c9f2e85720",
     "n_files": 107,
     "file_types": {
       "other": 6,
@@ -5682,7 +5682,7 @@
     "uses": [
       "SimenB/github-actions-cpu-cores@v2",
       "actions/checkout@v4",
-      "mamba-org/setup-micromamba@v2",
+      "mamba-org/setup-micromamba@v3",
       "nick-fields/retry@v3"
     ],
     "images": [],
@@ -6243,14 +6243,14 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-r": {
-    "head": "b6be174a675d295e29775ff9b94bcbac73c33994",
-    "n_files": 83,
+    "head": "33475c0b3f3bb2779ecba9c31548ecd236ea99a8",
+    "n_files": 85,
     "file_types": {
       "docs": 11,
       "config": 13,
-      "other": 23,
+      "other": 24,
       "media": 8,
-      "code": 26,
+      "code": 27,
       "web": 1,
       "notebook": 1
     },
@@ -7398,7 +7398,7 @@
     "security_policy": null
   },
   "jupyter/jupyter-sphinx": {
-    "head": "bd4c85dc8cc08eab5251ffee2a94ec25a669c5bb",
+    "head": "b4b65080b56e9255ed038101237e1de52b5c4d6a",
     "n_files": 69,
     "file_types": {
       "config": 8,
@@ -7434,7 +7434,7 @@
       "actions/checkout@v7",
       "actions/setup-python@v7",
       "pre-commit/action@v3.0.1",
-      "pypa/gh-action-pypi-publish@v1.14.2"
+      "pypa/gh-action-pypi-publish@v1.14.3"
     ],
     "images": [],
     "build_requires": [
@@ -11549,7 +11549,7 @@
     "security_policy": null
   },
   "jupyterhub/configurable-http-proxy": {
-    "head": "dd5b2c56edabf3ecd9f6ae48dedafd9a156264ad",
+    "head": "15d65da1d1c542a5d82980aeb64416621daac161",
     "n_files": 42,
     "file_types": {
       "other": 9,
@@ -12192,7 +12192,7 @@
     }
   },
   "jupyterhub/jupyterhub-container-images": {
-    "head": "7e6089458e27f6e423627a2acbd99c89c97ccd10",
+    "head": "7a125d71181ee93476afc8345d57aa4e59071c05",
     "n_files": 20,
     "file_types": {
       "config": 8,
@@ -14839,7 +14839,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "205d19ab7d921db2abd1b462a89ac170426a0ba4",
+    "head": "1c6dd2cf3d521b9aeb1efcb8ec0d0d657c321695",
     "n_files": 186,
     "file_types": {
       "docs": 33,
@@ -15428,13 +15428,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "6425b77d769daaa17c20071557d2f00abdc4082f",
-    "n_files": 3087,
+    "head": "bf95588e60c876e869408cabf92efb9a1ea322c8",
+    "n_files": 3090,
     "file_types": {
       "config": 604,
       "other": 24,
       "docs": 181,
-      "code": 1386,
+      "code": 1389,
       "web": 259,
       "media": 598,
       "notebook": 35
@@ -16344,7 +16344,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab-git": {
-    "head": "b62a87b719cd151a2c60eaaa6a70a6755784c4ef",
+    "head": "006b477839a2e718a8d3823901acaa7915cef288",
     "n_files": 258,
     "file_types": {
       "other": 10,
@@ -16903,7 +16903,7 @@
     "security_policy": null
   },
   "jupyterlab/language-packs": {
-    "head": "80440f5bb0faa4635b52e8c50806bde26b4f6394",
+    "head": "802f1658485e7149b2c8843af628d6119122f923",
     "n_files": 832,
     "file_types": {
       "docs": 101,
@@ -18089,7 +18089,7 @@
     "security_policy": null
   },
   "jupyterlite/jupyterlite": {
-    "head": "cabf5b1d1bba4b9f470410709593f056f4caf50a",
+    "head": "798e9808b1418b76763ae3c8e5046ac16e160577",
     "n_files": 509,
     "file_types": {
       "config": 94,
@@ -18683,10 +18683,10 @@
     "security_policy": null
   },
   "jupyterlite/terminal": {
-    "head": "5c079d988b638e03567806a96895e09e48771779",
-    "n_files": 84,
+    "head": "60fa70f487d6703528eb61f4a64dfa93ac86520d",
+    "n_files": 85,
     "file_types": {
-      "config": 27,
+      "config": 28,
       "other": 4,
       "docs": 9,
       "code": 32,
