@@ -39,3 +39,11 @@ class Topic:
     def __post_init__(self):
         assert re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", self.id), self.id
         assert set(self.meanings) == set(STATUSES), f"{self.id}: say what each status means"
+
+
+def names(packages: list[dict]) -> str:
+    """Packages with the date of their latest release: 'a (2024-01-31), b (2025-02-01), c and 2 more'."""
+    items = [f"{p['name']} ({p['latest_published']})" if p["latest_published"] else p["name"] for p in packages]
+    if len(items) > 3:
+        return f"{', '.join(items[:3])} and {len(items) - 3} more"
+    return f"{', '.join(items[:-1])} and {items[-1]}" if len(items) > 1 else items[0]

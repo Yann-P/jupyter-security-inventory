@@ -91,8 +91,7 @@ one, the repo's file is likely a copy (`done`) if it lists the same emails, and 
 go to an old address.
 
 The PyPI attestations and npm trusted publishing topics read what step 3 asked the registries about each package's
-latest release. A package whose latest release is older than attestations being the default (PyPI) or npm trusted
-publishing is left out: only a new release could have it.
+latest release, however old it is.
 
 ## The site
 
