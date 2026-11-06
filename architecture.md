@@ -60,7 +60,7 @@ All in `output/`. Repos are named `org/repo`.
 |---|---|
 | `repos.json` | `fetched_on`, `orgs`, and `repos`: full_name, org, name, description, is_fork. |
 | `scan.json` | `{repo: facts from step 2}`. |
-| `packages.json` | `accepted`: system (PYPI or NPM), name, repo, reason, downloads_last_month, dependents, last_published, and for the latest release (the default version): latest_published, and `attested` (PyPI) or `trusted_publishing` (npm). `rejected`: candidates that were not confirmed. |
+| `packages.json` | `accepted`: system (PYPI or NPM), name, repo, reason, downloads_last_month, dependents, last_published, and for the latest release (the default version): latest_published, and `attested` and `requires_python` (PyPI) or `trusted_publishing` (npm). `rejected`: candidates that were not confirmed. |
 | `images.json` | `images`: registry, namespace, name, tag, last_published, pulls (all time), reference, repo, reason. |
 | `images.txt` | One image reference per line. |
 | `classification.json` | `{repo: kind, security_boundary, deploys_live_service, rationale, model}`. Written by an LLM. |
@@ -76,7 +76,7 @@ they use its packages in their build requirements. "Used in CI" counts `ci` and 
 ## Security topics
 
 A topic answers one question about every repo, like "does it run zizmor?". It is a module in `scripts/topics/` with a
-`check` function. `check` reads a repo's record in `jupyter_repos.json` and all of `scan.json`, and returns a status (`done`, `partial`, `missing` or
+`check` function. `check` reads a repo's record in `jupyter_repos.json`, with the day it was fetched, and all of `scan.json`, and returns a status (`done`, `partial`, `missing` or
 `n/a`), a short reason, how the repo does it, and the files that show it. Step 8 writes a row per repo and topic, so a
 new topic adds rows, not columns, and counts the statuses once a day for the "over time" table.
 
@@ -92,6 +92,10 @@ go to an old address.
 
 The PyPI attestations and npm trusted publishing topics read what step 3 asked the registries about each package's
 latest release, however old it is.
+
+The supported Python topic finds the oldest Python that the Requires-Python of each package's latest release allows,
+and compares the day CPython stops its security fixes with the day the inventory was fetched, not today, so that CI
+gets the same answers. Those days are written in the topic, from peps.python.org.
 
 ## The site
 

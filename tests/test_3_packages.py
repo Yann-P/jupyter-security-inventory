@@ -40,6 +40,6 @@ def test_a_pypi_release_is_attested_only_if_every_file_is(monkeypatch):
         "https://pypi.org/integrity/a/1.0/a.whl/provenance": {"attestation_bundles": []},
     }
     monkeypatch.setattr(packages, "fetch_json", lambda url, delay=0: answers.get(url))  # PyPI answers 404 otherwise
-    assert packages.publishing("PYPI", "a") == {"attested": False}
+    assert packages.publishing("PYPI", "a")["attested"] is False
     answers["https://pypi.org/integrity/a/1.0/a.zip/provenance"] = {"attestation_bundles": []}
-    assert packages.publishing("PYPI", "a") == {"attested": True}
+    assert packages.publishing("PYPI", "a")["attested"] is True

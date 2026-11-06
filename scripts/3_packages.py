@@ -7,7 +7,7 @@ shallowest folder (deeper copies are usually stubs or vendored).
 
 Downloads: pypistats.org (last 30 days) and api.npmjs.org (last month).
 Dependents and last published date: deps.dev (see deps_dev).
-How the latest release was published: PyPI and npm (see publishing).
+How the latest release was published, and the Python versions it allows: PyPI and npm (see publishing).
 
 Usage: python scripts/3_packages.py    Output: output/packages.json
 """
@@ -109,12 +109,16 @@ def deps_dev(system: str, name: str) -> dict:
 
 
 def publishing(system: str, name: str) -> dict:
-    """Whether the latest release has an attestation on every file (PyPI) or used trusted publishing (npm)."""
+    """Whether the latest release has an attestation on every file (PyPI) or used trusted publishing (npm). For
+    PyPI, also its Requires-Python, the Python versions pip installs it on."""
     if system == "PYPI":
         body = fetch_json(f"https://pypi.org/pypi/{quote(name)}/json")
         version, files = body["info"]["version"], [file["filename"] for file in body["urls"]]
         base = f"https://pypi.org/integrity/{quote(name)}/{quote(version)}"
-        return {"attested": bool(files) and all(fetch_json(f"{base}/{quote(file)}/provenance") for file in files)}
+        return {
+            "attested": bool(files) and all(fetch_json(f"{base}/{quote(file)}/provenance") for file in files),
+            "requires_python": body["info"].get("requires_python") or None,  # PyPI says "" or null when it's unset
+        }
     body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=2)
     return {"trusted_publishing": bool((body.get("_npmUser") or {}).get("trustedPublisher"))}
 
