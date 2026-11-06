@@ -26,8 +26,8 @@ class Result:
 
 @dataclass
 class Topic:
-    """`check` takes a repo's record of jupyter_repos.json and all of scan.json, to look at other repos like the
-    org's .github. The id is used in URLs and file names."""
+    """`check` takes a repo's record of jupyter_repos.json, with the day the inventory was fetched as `fetched_on`, and
+    all of scan.json, to look at other repos like the org's .github. The id is used in URLs and file names."""
 
     id: str
     title: str

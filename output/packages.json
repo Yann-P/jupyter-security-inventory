@@ -9,7 +9,8 @@
       "dependents": 11994,
       "last_published": "2025-07-25",
       "latest_published": "2025-07-25",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -20,7 +21,8 @@
       "dependents": 7049,
       "last_published": "2026-09-29",
       "latest_published": "2026-09-29",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.11"
     },
     {
       "system": "PYPI",
@@ -31,7 +33,8 @@
       "dependents": 4,
       "last_published": "2017-10-23",
       "latest_published": "2017-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -42,7 +45,8 @@
       "dependents": 78,
       "last_published": "2026-05-12",
       "latest_published": "2026-05-12",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -53,7 +57,8 @@
       "dependents": 15452,
       "last_published": "2026-11-02",
       "latest_published": "2026-11-02",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.11"
     },
     {
       "system": "PYPI",
@@ -64,7 +69,8 @@
       "dependents": 15704,
       "last_published": "2025-01-17",
       "latest_published": "2025-01-17",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -75,7 +81,8 @@
       "dependents": 16779,
       "last_published": "2026-05-08",
       "latest_published": "2026-05-08",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -86,7 +93,8 @@
       "dependents": 1127,
       "last_published": "2018-09-25",
       "latest_published": "2018-09-25",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -97,7 +105,8 @@
       "dependents": 19715,
       "last_published": "2026-08-03",
       "latest_published": "2026-08-03",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -108,7 +117,8 @@
       "dependents": 0,
       "last_published": "2024-09-04",
       "latest_published": "2024-09-04",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -130,7 +140,8 @@
       "dependents": 22,
       "last_published": "2026-09-23",
       "latest_published": "2026-09-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "NPM",
@@ -152,7 +163,8 @@
       "dependents": 32,
       "last_published": "2026-10-02",
       "latest_published": "2026-06-17",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -713,7 +725,8 @@
       "dependents": 6,
       "last_published": "2026-10-27",
       "latest_published": "2026-10-27",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -768,7 +781,8 @@
       "dependents": 1,
       "last_published": "2025-07-07",
       "latest_published": "2025-07-07",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -779,7 +793,8 @@
       "dependents": 1,
       "last_published": "2026-06-01",
       "latest_published": "2026-06-01",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -790,7 +805,8 @@
       "dependents": 79,
       "last_published": "2026-07-30",
       "latest_published": "2026-07-30",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -801,7 +817,8 @@
       "dependents": 0,
       "last_published": "2026-09-07",
       "latest_published": "2026-09-07",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -823,7 +840,8 @@
       "dependents": 12,
       "last_published": "2026-08-11",
       "latest_published": "2026-08-11",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -845,7 +863,8 @@
       "dependents": 5,
       "last_published": "2026-08-07",
       "latest_published": "2026-08-07",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -856,7 +875,8 @@
       "dependents": 0,
       "last_published": "2026-11-05",
       "latest_published": "2026-11-05",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -867,7 +887,8 @@
       "dependents": 5053,
       "last_published": "2026-09-15",
       "latest_published": "2026-09-15",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -878,7 +899,8 @@
       "dependents": 326,
       "last_published": "2026-10-13",
       "latest_published": "2026-10-13",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.11"
     },
     {
       "system": "PYPI",
@@ -889,7 +911,8 @@
       "dependents": 22,
       "last_published": "2022-07-14",
       "latest_published": "2022-07-14",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -900,7 +923,8 @@
       "dependents": 5081,
       "last_published": "2026-01-14",
       "latest_published": "2026-01-14",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -922,7 +946,8 @@
       "dependents": 122,
       "last_published": "2026-11-02",
       "latest_published": "2026-11-02",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.11"
     },
     {
       "system": "PYPI",
@@ -933,7 +958,8 @@
       "dependents": 10,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -944,7 +970,8 @@
       "dependents": 0,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -955,7 +982,8 @@
       "dependents": 0,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -966,7 +994,8 @@
       "dependents": 6,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -977,7 +1006,8 @@
       "dependents": 2,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -988,7 +1018,8 @@
       "dependents": 4,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -999,7 +1030,8 @@
       "dependents": 0,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1010,7 +1042,8 @@
       "dependents": 7,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1021,7 +1054,8 @@
       "dependents": 2,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1032,7 +1066,8 @@
       "dependents": 4,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1043,7 +1078,8 @@
       "dependents": 0,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1054,7 +1090,8 @@
       "dependents": 0,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1065,7 +1102,8 @@
       "dependents": 4,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1076,7 +1114,8 @@
       "dependents": 0,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1087,7 +1126,8 @@
       "dependents": 6,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1098,7 +1138,8 @@
       "dependents": 7,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1109,7 +1150,8 @@
       "dependents": 3,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1120,7 +1162,8 @@
       "dependents": 4,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1131,7 +1174,8 @@
       "dependents": 3,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1142,7 +1186,8 @@
       "dependents": 0,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1153,7 +1198,8 @@
       "dependents": 1,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1164,7 +1210,8 @@
       "dependents": 4,
       "last_published": "2026-11-02",
       "latest_published": "2026-11-02",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1175,7 +1222,8 @@
       "dependents": 0,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1186,7 +1234,8 @@
       "dependents": 2,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1197,7 +1246,8 @@
       "dependents": 1,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1208,7 +1258,8 @@
       "dependents": 1,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1219,7 +1270,8 @@
       "dependents": 3,
       "last_published": "2026-11-02",
       "latest_published": "2026-11-02",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1230,7 +1282,8 @@
       "dependents": 43,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1241,7 +1294,8 @@
       "dependents": 31,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1252,7 +1306,8 @@
       "dependents": 9,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1263,7 +1318,8 @@
       "dependents": 5,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1274,7 +1330,8 @@
       "dependents": 10,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1285,7 +1342,8 @@
       "dependents": 15,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1296,7 +1354,8 @@
       "dependents": 11,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1307,7 +1366,8 @@
       "dependents": 10,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1318,7 +1378,8 @@
       "dependents": 7,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1329,7 +1390,8 @@
       "dependents": 9,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1340,7 +1402,8 @@
       "dependents": 4,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1351,7 +1414,8 @@
       "dependents": 5,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1362,7 +1426,8 @@
       "dependents": 1,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1373,7 +1438,8 @@
       "dependents": 2,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1384,7 +1450,8 @@
       "dependents": 5,
       "last_published": "2026-10-23",
       "latest_published": "2026-10-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1395,7 +1462,8 @@
       "dependents": 7,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1406,7 +1474,8 @@
       "dependents": 4,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1417,7 +1486,8 @@
       "dependents": 2,
       "last_published": "2026-08-05",
       "latest_published": "2026-08-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1428,7 +1498,8 @@
       "dependents": 15,
       "last_published": "2024-03-12",
       "latest_published": "2024-03-12",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -1439,7 +1510,8 @@
       "dependents": 1,
       "last_published": "2025-10-16",
       "latest_published": "2025-10-16",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1450,7 +1522,8 @@
       "dependents": 0,
       "last_published": "2024-03-13",
       "latest_published": "2024-03-13",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -1472,7 +1545,8 @@
       "dependents": 35,
       "last_published": "2024-12-17",
       "latest_published": "2024-12-17",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "NPM",
@@ -1494,7 +1568,8 @@
       "dependents": 288,
       "last_published": "2025-06-13",
       "latest_published": "2025-06-13",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -1505,7 +1580,8 @@
       "dependents": 290,
       "last_published": "2025-06-13",
       "latest_published": "2025-06-13",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -1593,7 +1669,8 @@
       "dependents": 6643,
       "last_published": "2026-08-18",
       "latest_published": "2026-08-18",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -1604,7 +1681,8 @@
       "dependents": 6800,
       "last_published": "2026-08-18",
       "latest_published": "2026-08-18",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -1615,7 +1693,8 @@
       "dependents": 6776,
       "last_published": "2026-08-18",
       "latest_published": "2026-08-18",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "NPM",
@@ -1637,7 +1716,8 @@
       "dependents": 28,
       "last_published": "2026-02-27",
       "latest_published": "2026-02-27",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -1659,7 +1739,8 @@
       "dependents": 0,
       "last_published": "2019-07-12",
       "latest_published": "2019-07-12",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -1681,7 +1762,8 @@
       "dependents": 122,
       "last_published": "2023-02-20",
       "latest_published": "2023-02-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -1692,7 +1774,8 @@
       "dependents": 572,
       "last_published": "2025-10-22",
       "latest_published": "2025-10-22",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -1703,7 +1786,8 @@
       "dependents": 1,
       "last_published": "2021-10-20",
       "latest_published": "2021-10-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "PYPI",
@@ -1714,7 +1798,8 @@
       "dependents": 4,
       "last_published": "2026-08-14",
       "latest_published": "2026-08-14",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "PYPI",
@@ -1725,7 +1810,8 @@
       "dependents": 2,
       "last_published": "2026-07-07",
       "latest_published": "2026-07-07",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -1736,7 +1822,8 @@
       "dependents": 0,
       "last_published": "2021-10-26",
       "latest_published": "2021-10-26",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -1747,7 +1834,8 @@
       "dependents": 0,
       "last_published": "2017-01-18",
       "latest_published": "2017-01-18",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -1758,7 +1846,8 @@
       "dependents": 1883,
       "last_published": "2024-08-30",
       "latest_published": "2024-08-30",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -1769,7 +1858,8 @@
       "dependents": 80,
       "last_published": "2022-08-25",
       "latest_published": "2022-08-25",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -1780,7 +1870,8 @@
       "dependents": 10,
       "last_published": "2023-12-28",
       "latest_published": "2023-12-28",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -1791,7 +1882,8 @@
       "dependents": 9130,
       "last_published": "2026-08-28",
       "latest_published": "2026-08-28",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1802,7 +1894,8 @@
       "dependents": 2011,
       "last_published": "2023-03-06",
       "latest_published": "2023-03-06",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -1813,7 +1906,8 @@
       "dependents": 11262,
       "last_published": "2025-10-16",
       "latest_published": "2025-10-16",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -1824,7 +1918,8 @@
       "dependents": 5226,
       "last_published": "2026-04-20",
       "latest_published": "2026-04-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -1835,7 +1930,8 @@
       "dependents": 0,
       "last_published": "2024-03-12",
       "latest_published": "2024-03-12",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -1846,7 +1942,8 @@
       "dependents": 550,
       "last_published": "2025-09-16",
       "latest_published": "2025-09-16",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -1857,7 +1954,8 @@
       "dependents": 6399,
       "last_published": "2026-06-05",
       "latest_published": "2026-06-05",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10.0"
     },
     {
       "system": "PYPI",
@@ -1868,7 +1966,8 @@
       "dependents": 6159,
       "last_published": "2026-10-12",
       "latest_published": "2026-10-12",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "NPM",
@@ -1901,7 +2000,8 @@
       "dependents": 52,
       "last_published": "2026-02-10",
       "latest_published": "2026-02-10",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "NPM",
@@ -1923,7 +2023,8 @@
       "dependents": 8382,
       "last_published": "2026-08-17",
       "latest_published": "2026-08-17",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -1956,7 +2057,8 @@
       "dependents": 17,
       "last_published": "2026-09-30",
       "latest_published": "2026-09-30",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.11"
     },
     {
       "system": "PYPI",
@@ -1967,7 +2069,8 @@
       "dependents": 1,
       "last_published": "2017-10-15",
       "latest_published": "2017-10-15",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -2110,7 +2213,8 @@
       "dependents": 3034,
       "last_published": "2026-10-30",
       "latest_published": "2026-10-30",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2121,7 +2225,8 @@
       "dependents": 4481,
       "last_published": "2024-02-14",
       "latest_published": "2024-02-14",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -2132,7 +2237,8 @@
       "dependents": 0,
       "last_published": "2024-03-01",
       "latest_published": "2024-03-01",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.11"
     },
     {
       "system": "PYPI",
@@ -2143,7 +2249,8 @@
       "dependents": 0,
       "last_published": "2020-04-27",
       "latest_published": "2020-04-27",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -2154,7 +2261,8 @@
       "dependents": 27,
       "last_published": "2020-04-10",
       "latest_published": "2020-04-10",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.5"
     },
     {
       "system": "PYPI",
@@ -2165,7 +2273,8 @@
       "dependents": 5263,
       "last_published": "2024-03-12",
       "latest_published": "2024-03-12",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2176,7 +2285,8 @@
       "dependents": 145,
       "last_published": "2022-02-23",
       "latest_published": "2022-02-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">= 3.5"
     },
     {
       "system": "PYPI",
@@ -2187,7 +2297,8 @@
       "dependents": 0,
       "last_published": "2026-10-08",
       "latest_published": "2026-10-08",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2198,7 +2309,8 @@
       "dependents": 0,
       "last_published": "2026-10-12",
       "latest_published": "2026-10-12",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2209,7 +2321,8 @@
       "dependents": 0,
       "last_published": "2026-09-19",
       "latest_published": "2026-09-19",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.11"
     },
     {
       "system": "PYPI",
@@ -2220,7 +2333,8 @@
       "dependents": 0,
       "last_published": "2026-03-10",
       "latest_published": "2026-03-10",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2231,7 +2345,8 @@
       "dependents": 5,
       "last_published": "2024-03-19",
       "latest_published": "2024-03-19",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "NPM",
@@ -2264,7 +2379,8 @@
       "dependents": 0,
       "last_published": "2018-11-07",
       "latest_published": "2018-11-07",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "PYPI",
@@ -2275,7 +2391,8 @@
       "dependents": 0,
       "last_published": "2026-05-01",
       "latest_published": "2026-05-01",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -2297,7 +2414,8 @@
       "dependents": 0,
       "last_published": "2023-01-02",
       "latest_published": "2023-01-02",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2308,7 +2426,8 @@
       "dependents": 10,
       "last_published": "2025-02-12",
       "latest_published": "2025-02-12",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2319,7 +2438,8 @@
       "dependents": 71,
       "last_published": "2025-12-11",
       "latest_published": "2025-12-11",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2330,7 +2450,8 @@
       "dependents": 0,
       "last_published": "2025-03-28",
       "latest_published": "2025-03-28",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "PYPI",
@@ -2341,7 +2462,8 @@
       "dependents": 0,
       "last_published": "2022-04-20",
       "latest_published": "2022-04-20",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -2352,7 +2474,8 @@
       "dependents": 0,
       "last_published": "2025-04-11",
       "latest_published": "2025-04-11",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2363,7 +2486,8 @@
       "dependents": 1,
       "last_published": "2026-05-12",
       "latest_published": "2026-05-12",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -2385,7 +2509,8 @@
       "dependents": 195,
       "last_published": "2026-09-21",
       "latest_published": "2026-09-21",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2396,7 +2521,8 @@
       "dependents": 0,
       "last_published": "2019-01-03",
       "latest_published": "2019-01-03",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -2418,7 +2544,8 @@
       "dependents": 156,
       "last_published": "2026-11-05",
       "latest_published": "2026-11-05",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2429,7 +2556,8 @@
       "dependents": 0,
       "last_published": "2026-06-16",
       "latest_published": "2026-06-16",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -2440,7 +2568,8 @@
       "dependents": 0,
       "last_published": "2023-09-19",
       "latest_published": "2023-09-19",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2451,7 +2580,8 @@
       "dependents": 0,
       "last_published": "2026-05-27",
       "latest_published": "2026-05-27",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2462,7 +2592,8 @@
       "dependents": 6,
       "last_published": "2026-07-16",
       "latest_published": "2026-07-16",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -2473,7 +2604,8 @@
       "dependents": 0,
       "last_published": "2024-11-06",
       "latest_published": "2024-11-06",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2484,7 +2616,8 @@
       "dependents": 0,
       "last_published": "2026-03-26",
       "latest_published": "2026-03-26",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2495,7 +2628,8 @@
       "dependents": 1,
       "last_published": "2024-09-17",
       "latest_published": "2024-09-17",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2506,7 +2640,8 @@
       "dependents": 6,
       "last_published": "2026-03-31",
       "latest_published": "2026-03-31",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -2517,7 +2652,8 @@
       "dependents": 0,
       "last_published": "2021-11-28",
       "latest_published": "2021-11-28",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2528,7 +2664,8 @@
       "dependents": 0,
       "last_published": "2021-11-28",
       "latest_published": "2021-11-28",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2539,7 +2676,8 @@
       "dependents": 0,
       "last_published": "2021-11-28",
       "latest_published": "2021-11-28",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2550,7 +2688,8 @@
       "dependents": 18,
       "last_published": "2026-03-26",
       "latest_published": "2026-03-26",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2561,7 +2700,8 @@
       "dependents": 0,
       "last_published": "2023-04-25",
       "latest_published": "2023-04-25",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2572,7 +2712,8 @@
       "dependents": 14,
       "last_published": "2026-04-23",
       "latest_published": "2026-04-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2583,7 +2724,8 @@
       "dependents": 208,
       "last_published": "2023-05-18",
       "latest_published": "2023-05-18",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2594,7 +2736,8 @@
       "dependents": 0,
       "last_published": "2025-10-17",
       "latest_published": "2025-10-17",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2605,7 +2748,8 @@
       "dependents": 3,
       "last_published": "2024-10-20",
       "latest_published": "2024-10-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2616,7 +2760,8 @@
       "dependents": 0,
       "last_published": "2023-05-22",
       "latest_published": "2023-05-22",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2627,7 +2772,8 @@
       "dependents": 1,
       "last_published": "2025-03-28",
       "latest_published": "2025-03-28",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -2638,7 +2784,8 @@
       "dependents": 0,
       "last_published": "2022-03-02",
       "latest_published": "2022-03-02",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -2660,7 +2807,8 @@
       "dependents": 0,
       "last_published": "2022-03-01",
       "latest_published": "2022-03-01",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "PYPI",
@@ -2671,7 +2819,8 @@
       "dependents": 1,
       "last_published": "2026-09-18",
       "latest_published": "2026-09-18",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2682,7 +2831,8 @@
       "dependents": 1,
       "last_published": "2025-07-24",
       "latest_published": "2025-07-24",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2693,7 +2843,8 @@
       "dependents": 9,
       "last_published": "2026-09-03",
       "latest_published": "2026-09-03",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "PYPI",
@@ -2704,7 +2855,8 @@
       "dependents": 0,
       "last_published": "2026-10-16",
       "latest_published": "2026-10-16",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -2737,7 +2889,8 @@
       "dependents": 4,
       "last_published": "2026-10-20",
       "latest_published": "2026-10-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2748,7 +2901,8 @@
       "dependents": 0,
       "last_published": "2026-10-20",
       "latest_published": "2026-10-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2759,7 +2913,8 @@
       "dependents": 1,
       "last_published": "2026-10-20",
       "latest_published": "2026-10-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -2781,7 +2936,8 @@
       "dependents": 3952,
       "last_published": "2026-10-27",
       "latest_published": "2026-10-27",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -2825,7 +2981,8 @@
       "dependents": 14,
       "last_published": "2026-11-03",
       "latest_published": "2026-11-03",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -2891,7 +3048,8 @@
       "dependents": 29,
       "last_published": "2026-11-04",
       "latest_published": "2026-09-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2902,7 +3060,8 @@
       "dependents": 38,
       "last_published": "2026-11-04",
       "latest_published": "2026-09-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2913,7 +3072,8 @@
       "dependents": 39,
       "last_published": "2026-11-04",
       "latest_published": "2026-09-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -2924,7 +3084,8 @@
       "dependents": 32,
       "last_published": "2026-11-04",
       "latest_published": "2026-09-20",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -2990,7 +3151,8 @@
       "dependents": 1,
       "last_published": "2023-05-23",
       "latest_published": "2023-05-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -3001,7 +3163,8 @@
       "dependents": 2,
       "last_published": "2023-05-23",
       "latest_published": "2023-05-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -3012,7 +3175,8 @@
       "dependents": 2,
       "last_published": "2023-05-23",
       "latest_published": "2023-05-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -3023,7 +3187,8 @@
       "dependents": 0,
       "last_published": "2023-05-23",
       "latest_published": "2023-05-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -3034,7 +3199,8 @@
       "dependents": 0,
       "last_published": "2023-05-23",
       "latest_published": "2023-05-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -4222,7 +4388,8 @@
       "dependents": 3931,
       "last_published": "2026-10-29",
       "latest_published": "2026-10-29",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -4266,7 +4433,8 @@
       "dependents": 19,
       "last_published": "2026-10-07",
       "latest_published": "2026-10-07",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -4277,7 +4445,8 @@
       "dependents": 21,
       "last_published": "2026-10-07",
       "latest_published": "2026-10-07",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -4299,7 +4468,8 @@
       "dependents": 0,
       "last_published": "2023-08-03",
       "latest_published": "2023-08-03",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -4321,7 +4491,8 @@
       "dependents": 1,
       "last_published": "2023-03-08",
       "latest_published": "2023-03-08",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "NPM",
@@ -4343,7 +4514,8 @@
       "dependents": 1,
       "last_published": "2025-12-17",
       "latest_published": "2025-12-17",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -4354,7 +4526,8 @@
       "dependents": 0,
       "last_published": "2024-05-15",
       "latest_published": "2024-05-15",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "PYPI",
@@ -4365,7 +4538,8 @@
       "dependents": 0,
       "last_published": "2023-01-13",
       "latest_published": "2023-01-13",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "NPM",
@@ -4387,7 +4561,8 @@
       "dependents": 6295,
       "last_published": "2023-11-23",
       "latest_published": "2023-11-23",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -4398,7 +4573,8 @@
       "dependents": 4361,
       "last_published": "2026-09-15",
       "latest_published": "2026-09-15",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -4409,7 +4585,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4420,7 +4597,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4431,7 +4609,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4442,7 +4621,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4453,7 +4633,8 @@
       "dependents": 1,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4464,7 +4645,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4475,7 +4657,8 @@
       "dependents": 1,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4486,7 +4669,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4497,7 +4681,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4508,7 +4693,8 @@
       "dependents": 2,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4519,7 +4705,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4530,7 +4717,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4541,7 +4729,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4552,7 +4741,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4563,7 +4753,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4574,7 +4765,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4585,7 +4777,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4596,7 +4789,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4607,7 +4801,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4618,7 +4813,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4629,7 +4825,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4640,7 +4837,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4651,7 +4849,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4662,7 +4861,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4673,7 +4873,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4684,7 +4885,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4695,7 +4897,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4706,7 +4909,8 @@
       "dependents": 4,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4717,7 +4921,8 @@
       "dependents": 0,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "PYPI",
@@ -4728,7 +4933,8 @@
       "dependents": 1,
       "last_published": "2026-04-13",
       "latest_published": "2026-04-13",
-      "attested": true
+      "attested": true,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -4948,7 +5154,8 @@
       "dependents": 0,
       "last_published": "2026-05-06",
       "latest_published": "2026-05-06",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "NPM",
@@ -4970,7 +5177,8 @@
       "dependents": 1,
       "last_published": "2024-04-10",
       "latest_published": "2020-07-29",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -4992,7 +5200,8 @@
       "dependents": 0,
       "last_published": "2026-07-03",
       "latest_published": "2026-07-03",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "NPM",
@@ -5025,7 +5234,8 @@
       "dependents": 0,
       "last_published": "2025-11-26",
       "latest_published": "2025-11-26",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.9"
     },
     {
       "system": "NPM",
@@ -5058,7 +5268,8 @@
       "dependents": 4,
       "last_published": "2026-07-14",
       "latest_published": "2024-03-26",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -5080,7 +5291,8 @@
       "dependents": 0,
       "last_published": "2022-04-22",
       "latest_published": "2022-04-22",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.7"
     },
     {
       "system": "NPM",
@@ -5267,7 +5479,8 @@
       "dependents": 8,
       "last_published": "2026-10-30",
       "latest_published": "2026-10-30",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -5278,7 +5491,8 @@
       "dependents": 21,
       "last_published": "2026-10-30",
       "latest_published": "2026-10-30",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -5289,7 +5503,8 @@
       "dependents": 0,
       "last_published": "2026-08-11",
       "latest_published": "2026-08-11",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -5311,7 +5526,8 @@
       "dependents": 0,
       "last_published": "2026-09-15",
       "latest_published": "2026-09-15",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "NPM",
@@ -5344,7 +5560,8 @@
       "dependents": 1,
       "last_published": "2026-03-09",
       "latest_published": "2025-12-02",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -5377,7 +5594,8 @@
       "dependents": 8,
       "last_published": "2026-11-05",
       "latest_published": "2026-11-05",
-      "attested": true
+      "attested": true,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -5388,7 +5606,8 @@
       "dependents": 0,
       "last_published": "2022-11-02",
       "latest_published": "2022-11-02",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.6"
     },
     {
       "system": "NPM",
@@ -5410,7 +5629,8 @@
       "dependents": 1,
       "last_published": "2026-11-02",
       "latest_published": "2026-11-02",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -5454,7 +5674,8 @@
       "dependents": 2,
       "last_published": "2026-11-03",
       "latest_published": "2026-09-11",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -5465,7 +5686,8 @@
       "dependents": 0,
       "last_published": "2021-03-31",
       "latest_published": "2021-03-31",
-      "attested": false
+      "attested": false,
+      "requires_python": "~=3.7"
     },
     {
       "system": "PYPI",
@@ -5476,7 +5698,8 @@
       "dependents": 0,
       "last_published": "2025-12-30",
       "latest_published": "2025-12-30",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "PYPI",
@@ -5487,7 +5710,8 @@
       "dependents": 1,
       "last_published": "2025-12-30",
       "latest_published": "2025-12-30",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -5542,7 +5766,8 @@
       "dependents": 60,
       "last_published": "2026-09-04",
       "latest_published": "2026-09-04",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.10"
     },
     {
       "system": "NPM",
@@ -5564,7 +5789,8 @@
       "dependents": 3,
       "last_published": "2024-02-06",
       "latest_published": "2024-02-06",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -5575,7 +5801,8 @@
       "dependents": 1,
       "last_published": "2023-03-07",
       "latest_published": "2023-03-07",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     },
     {
       "system": "NPM",
@@ -5597,7 +5824,8 @@
       "dependents": 3,
       "last_published": "2023-08-22",
       "latest_published": "2023-08-22",
-      "attested": false
+      "attested": false,
+      "requires_python": ">=3.8"
     },
     {
       "system": "PYPI",
@@ -5608,7 +5836,8 @@
       "dependents": 2,
       "last_published": "2022-11-11",
       "latest_published": "2022-11-11",
-      "attested": false
+      "attested": false,
+      "requires_python": null
     }
   ],
   "rejected": [

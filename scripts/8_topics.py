@@ -12,15 +12,21 @@ from collections import Counter
 from dataclasses import asdict
 
 from common import OUTPUT, load_json, save_json
-from topics import STATUSES, npm_trusted_publishing, pypi_attestations, security_policy, zizmor
+from topics import STATUSES, npm_trusted_publishing, pypi_attestations, security_policy, supported_python, zizmor
 
-TOPICS = [zizmor.TOPIC, security_policy.TOPIC, pypi_attestations.TOPIC, npm_trusted_publishing.TOPIC]
+TOPICS = [
+    zizmor.TOPIC,
+    security_policy.TOPIC,
+    pypi_attestations.TOPIC,
+    npm_trusted_publishing.TOPIC,
+    supported_python.TOPIC,
+]
 HISTORY = OUTPUT / "topics_history.json"
 
 
-def answer(repos: dict, scan: dict) -> list[dict]:
+def answer(repos: dict, scan: dict, day: str) -> list[dict]:
     return [
-        {"topic": topic.id, "repo": name, **asdict(topic.check(repos[name], scan))}
+        {"topic": topic.id, "repo": name, **asdict(topic.check(repos[name] | {"fetched_on": day}, scan))}
         for topic in TOPICS
         for name in sorted(scan)
     ]
@@ -43,7 +49,7 @@ def save_topics(topics: list[dict], rows: list[dict]):
 def main():
     scan = load_json(OUTPUT / "scan.json")
     inventory = load_json(OUTPUT / "jupyter_repos.json")
-    rows = answer({repo["full_name"]: repo for repo in inventory["repos"]}, scan)
+    rows = answer({repo["full_name"]: repo for repo in inventory["repos"]}, scan, inventory["fetched_on"])
     save_topics([{key: value for key, value in asdict(topic).items() if key != "check"} for topic in TOPICS], rows)
 
     history = load_json(HISTORY) if HISTORY.exists() else {}

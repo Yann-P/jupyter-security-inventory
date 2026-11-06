@@ -11,8 +11,9 @@ topics = importlib.import_module("8_topics")
 def test_every_topic_answers_every_repo_of_the_committed_scan():
     """So that a topic reading a fact step 2 does not keep fails here, and not in the daily update."""
     scan = common.load_json(common.OUTPUT / "scan.json")
-    repos = {repo["full_name"]: repo for repo in common.load_json(common.OUTPUT / "jupyter_repos.json")["repos"]}
-    assert len(topics.answer(repos, scan)) == len(topics.TOPICS) * len(scan)
+    inventory = common.load_json(common.OUTPUT / "jupyter_repos.json")
+    repos = {repo["full_name"]: repo for repo in inventory["repos"]}
+    assert len(topics.answer(repos, scan, inventory["fetched_on"])) == len(topics.TOPICS) * len(scan)
     assert len({topic.id for topic in topics.TOPICS}) == len(topics.TOPICS)
 
 

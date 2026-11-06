@@ -97,6 +97,12 @@
       "partial": 3,
       "missing": 21,
       "n/a": 386
+    },
+    "supported-python": {
+      "done": 7,
+      "partial": 0,
+      "missing": 132,
+      "n/a": 299
     }
   }
 }
