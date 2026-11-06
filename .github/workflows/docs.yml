@@ -12,7 +12,7 @@ on:
 permissions:
   contents: read
 
-# A new push to a pull request, or its close, cancels the older run, so an old build can't bring back a removed preview.
+# A new push to a pull request, or its close, cancels its older run, so that run can't bring back a removed preview.
 concurrency:
   group: docs-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: true
@@ -40,7 +40,7 @@ jobs:
 
   # The build runs pip and Sphinx, so it gets a read-only token. The jobs below can push, but run none of that code.
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main'  # not a manual update run on another branch, which would replace the live site
     needs: build
     runs-on: ubuntu-latest
     permissions:
