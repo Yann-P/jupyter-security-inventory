@@ -1,17 +1,25 @@
-# Builds the web page from docs/ and, on main, publishes it with GitHub Pages. The daily update calls it too.
+# Builds the web page from docs/ and pushes it to the gh-pages branch, which GitHub Pages serves. The daily update
+# calls it too. Main goes to the root, and each pull request from this repo to pr-preview/pr-<number>/ until it closes.
 name: Docs
 
 on:
   push:
     branches: [main]
   pull_request:
+    types: [opened, synchronize, reopened, closed]  # closed, to remove the preview
   workflow_call:
 
 permissions:
   contents: read
 
+# A new push to a pull request, or its close, cancels the older run, so an old build can't bring back a removed preview.
+concurrency:
+  group: docs-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   build:
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
@@ -23,23 +31,86 @@ jobs:
           python-version: "3.14"
       - run: pip install -r requirements-docs.txt
       - run: sphinx-build --fail-on-warning docs docs/_build/html
-      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
+      # Hidden files are left out, so the 16 MB of .doctrees never reach gh-pages.
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9  # v7.0.2
         with:
+          name: site
           path: docs/_build/html
+          retention-days: 1  # only the jobs below read it
 
+  # The build runs pip and Sphinx, so it gets a read-only token. The jobs below can push, but run none of that code.
   deploy:
     if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      pages: write
-      id-token: write
+      contents: write  # pushes the site to the gh-pages branch
     concurrency:
       group: pages
       cancel-in-progress: false
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false  # the deploy action needs a git repository, but brings its own token
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
+        with:
+          name: site
+          path: site
+      - run: touch site/.nojekyll  # otherwise Pages runs Jekyll, which drops _static/
+      - uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445  # v4.9.0
+        with:
+          folder: site
+          clean-exclude: pr-preview/
+          force: false  # rebase onto a preview pushed meanwhile, instead of erasing it
+
+  # A fork's token can't push, so pull requests from forks get no preview.
+  preview:
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # pushes the preview to gh-pages
+      pull-requests: write  # to comment the link
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}  # the deploy action needs a repository; not the PR's files
+          persist-credentials: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
+        with:
+          name: site
+          path: site
+      - uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445  # v4.9.0
+        with:
+          folder: site
+          target-folder: pr-preview/pr-${{ github.event.number }}
+          force: false
+      - name: Comment the link, once per pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.number }}
+        run: |
+          url="https://yann-p.github.io/jupyter-security-inventory/pr-preview/pr-$PR/"
+          # Only our own comment counts: anyone can comment on a pull request.
+          gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR/comments" \
+            --jq '.[] | select(.user.login == "github-actions[bot]") | .body' | grep -qF "$url" ||
+            gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="Preview of the site, updated on every push: $url"
+
+  # A pull request closed while it has a merge conflict starts no run, so its preview then stays until
+  # removed by hand.
+  remove-preview:
+    if: github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # deletes the preview from gh-pages
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          ref: ${{ github.event.repository.default_branch }}  # the deploy action needs a repository; not the PR's files
+          persist-credentials: false
+      - run: mkdir empty
+      - uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445  # v4.9.0
+        with:
+          folder: empty  # syncing an empty folder deletes the preview
+          target-folder: pr-preview/pr-${{ github.event.number }}
+          force: false
