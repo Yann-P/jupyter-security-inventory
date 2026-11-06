@@ -2756,10 +2756,10 @@
     "security_policy": null
   },
   "jupyter-book/myst-theme": {
-    "head": "7542ac7e1c12e591b27ed72acf70c8c182a71649",
-    "n_files": 450,
+    "head": "1c50887c46b1166f8fca90b5b0ec76594e305c97",
+    "n_files": 452,
     "file_types": {
-      "docs": 74,
+      "docs": 76,
       "config": 60,
       "code": 260,
       "other": 19,
@@ -4017,7 +4017,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyter_releaser": {
-    "head": "fb873e098a95b1c510af2481e7cbeccb21d81d7c",
+    "head": "ae340ad3f2f83e1a2f50b988050bf453b932e69a",
     "n_files": 88,
     "file_types": {
       "config": 24,
@@ -5658,7 +5658,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus": {
-    "head": "9062faa21383709676b020f5aa8be1c9f2e85720",
+    "head": "45ea4507a3a66102a07d91bc14627b5651515a13",
     "n_files": 107,
     "file_types": {
       "other": 6,
@@ -6128,7 +6128,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-python-wheel": {
-    "head": "76b782aa3269c59c70270099c1c6b241e9005f5e",
+    "head": "310bd3bc96438e4881a56825b5e0f33bdb40d53b",
     "n_files": 26,
     "file_types": {
       "config": 12,
@@ -6474,7 +6474,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-zmq": {
-    "head": "111e055a54c09818507db25f6d51dc0c780e3cd7",
+    "head": "f84b101c03f46a010f54f621016f124cc8b493ae",
     "n_files": 116,
     "file_types": {
       "config": 9,
@@ -7115,7 +7115,7 @@
     "security_policy": null
   },
   "jupyter/enhancement-proposals": {
-    "head": "79bfd37cf31bd9e3b706b1fbfdb269ea87307c10",
+    "head": "6e4edce4445bd6d4cbd57741723d33f27a57cc4f",
     "n_files": 56,
     "file_types": {
       "docs": 35,
@@ -7398,14 +7398,15 @@
     "security_policy": null
   },
   "jupyter/jupyter-sphinx": {
-    "head": "b4b65080b56e9255ed038101237e1de52b5c4d6a",
-    "n_files": 69,
+    "head": "9c9dd5d6151f1b168caa02637d4fc3594aa9fbe5",
+    "n_files": 72,
     "file_types": {
       "config": 8,
       "other": 2,
       "docs": 8,
-      "code": 12,
-      "web": 39
+      "web": 40,
+      "media": 1,
+      "code": 13
     },
     "packages": [
       {
@@ -7425,26 +7426,26 @@
         "workflow_call",
         "workflow_dispatch"
       ],
-      "secrets": [],
+      "secrets": [
+        "CODECOV_TOKEN"
+      ],
       "publishes": [
         "pypi"
       ]
     },
     "uses": [
       "actions/checkout@v7",
+      "actions/download-artifact@v8",
       "actions/setup-python@v7",
-      "pre-commit/action@v3.0.1",
+      "actions/upload-artifact@v7",
+      "codecov/codecov-action@v7",
       "pypa/gh-action-pypi-publish@v1.14.3"
     ],
     "images": [],
     "build_requires": [
       "hatchling"
     ],
-    "mentions": {
-      "pre-commit": [
-        ".github/workflows/tests.yml"
-      ]
-    },
+    "mentions": {},
     "readme": "# Jupyter Sphinx Extensions\n\n[![BSD licence](https://img.shields.io/badge/License-BSD3-yellow.svg?logo=opensourceinitiative&logoColor=white)](LICENSE)\n[![black](https://img.shields.io/badge/code%20style-black-000000)](https://github.com/psf/black)\n[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier&logoColor=white)](https://github.com/prettier/prettier)\n[![pre-commit](https://img.shields.io/badge/pre--commit-active-yellow?logo=pre-commit&logoColor=white)](https://pre-commit.com/)\n[![pypi version](https://img.shields.io/pypi/v/jupyter-sphinx?color=blue&logo=pypi&logoColor=white)](https://pypi.org/project/jupyter-sphinx/)\n[![conda-forge version badge](https://img.shields.io/conda/vn/conda-forge/jupyter-sphinx?logo=anaconda&logoColor=white&color=blue)](https://anaconda.org/conda-forge/jupyter-sphinx)\n[![tests](https://img.shields.io/github/actions/workflow/status/jupyter/jupyter-sphinx/tests.yml?logo=github&logoColor=white)](https://github.com/jupyter/jupyter-sphinx/actions/workflows/tests.yml)\n[![docs](https://img.shields.io/readthedocs/jupyter-sphinx?logo=readthedocs&logoColor=white)](https://jupyter-sphinx.readthedocs.io/)\n\n`jupyter-sphinx` enables running code embedded in Sphinx documentation and\nembedding output of that code into the resulting document. It has support\nfor rich output such as images and even Jupyter interactive widgets.\n\n## Installation\n\nWith pip:\n\n```bash\npip install jupyter_sphinx\n```\n\nwith conda:\n\n```bash\nconda install jupyter_sphinx -c conda-forge\n```\n\n## Usage\n\nYou can check out the documentation on https://jupyter-sphinx.readthedocs.io for up to date\nusage information and examples.\n\n## License\n\nWe use a shared copyright model that enables all contributors to maintain the\ncopyright on their contributions.\n\nAll code is licensed under the terms of the revised BSD license.\n",
     "security_policy": null
   },
@@ -8793,14 +8794,14 @@
     "security_policy": null
   },
   "jupyter/schema": {
-    "head": "6ab0f1f8d8387a00e08287162112df6b332b27d9",
-    "n_files": 11,
+    "head": "d36ebab55dd07d04d35058b24017d2b92234feb3",
+    "n_files": 13,
     "file_types": {
       "other": 3,
       "docs": 1,
       "web": 1,
-      "code": 1,
-      "config": 5
+      "config": 7,
+      "code": 1
     },
     "packages": [
       {
@@ -11056,7 +11057,7 @@
     "security_policy": null
   },
   "jupyterhub/action-get-quayio-tags": {
-    "head": "8cdb6a3e9706ba590836f863bde8ae9f055e1d65",
+    "head": "76c9599145d979528766aba530180188308b1e52",
     "n_files": 30,
     "file_types": {
       "other": 6,
@@ -11077,10 +11078,10 @@
     },
     "uses": [
       "actions/checkout@v7.0.1",
-      "actions/setup-node@v7.0.0",
+      "actions/setup-node@v7.1.0",
       "github/codeql-action@v4.39.1",
       "stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c",
-      "super-linter/super-linter@4ce20838b8ab83717e78138c5b3a1407148e0918"
+      "super-linter/super-linter@2da136927bd4a73596db63044b504547c62cb854"
     ],
     "images": [],
     "build_requires": [],
@@ -11549,7 +11550,7 @@
     "security_policy": null
   },
   "jupyterhub/configurable-http-proxy": {
-    "head": "15d65da1d1c542a5d82980aeb64416621daac161",
+    "head": "03cdac9cad603f280e9a6b8dc0ac676fa4c7328a",
     "n_files": 42,
     "file_types": {
       "other": 9,
@@ -12117,7 +12118,7 @@
     "security_policy": null
   },
   "jupyterhub/jupyterhub": {
-    "head": "84c8cc589b2cfc5467b812549677ede45db8772f",
+    "head": "41fffb935326c9e732d999950fd56beb9bc9fbec",
     "n_files": 429,
     "file_types": {
       "other": 18,
@@ -13654,7 +13655,7 @@
     "security_policy": null
   },
   "jupyterhub/the-littlest-jupyterhub": {
-    "head": "05637a2fe4bb5b1e91bcdb0efc0059ab4b30d543",
+    "head": "4ad828943d8acaa631708b317a5cfbddb258d3db",
     "n_files": 236,
     "file_types": {
       "config": 8,
@@ -13689,8 +13690,8 @@
     },
     "uses": [
       "actions/checkout@v6",
-      "actions/setup-python@v6",
-      "codecov/codecov-action@v6"
+      "actions/setup-python@v7",
+      "codecov/codecov-action@v7"
     ],
     "images": [],
     "build_requires": [],
@@ -13849,7 +13850,7 @@
     "security_policy": null
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "7cce063b7f2d4f4685677883cbdda0e417e16ca9",
+    "head": "5ab26676c5e11bcfb8d0bff74241f0ce057afc8a",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -14087,13 +14088,13 @@
     "security_policy": null
   },
   "jupyterlab/eslint-plugin": {
-    "head": "012aae8d84082855966722758eb90cf3c4bf44ee",
-    "n_files": 143,
+    "head": "df83dbf97994ee85fb95aa4fee780982bf9ae9d0",
+    "n_files": 144,
     "file_types": {
       "config": 23,
       "other": 3,
       "docs": 32,
-      "code": 79,
+      "code": 80,
       "media": 4,
       "web": 2
     },
@@ -14839,21 +14840,33 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "1c6dd2cf3d521b9aeb1efcb8ec0d0d657c321695",
-    "n_files": 186,
+    "head": "96eaa7dac2942c4f6ded87070816a3bd559f9252",
+    "n_files": 197,
     "file_types": {
-      "docs": 33,
-      "config": 15,
-      "other": 18,
-      "code": 23,
+      "other": 21,
+      "docs": 35,
+      "config": 19,
+      "code": 25,
       "media": 93,
       "web": 4
     },
     "packages": [
       {
         "system": "PYPI",
-        "name": "jupyter_ai",
+        "name": "jupyter_ai_root",
         "path": "pyproject.toml",
+        "in_test_or_example_folder": false
+      },
+      {
+        "system": "PYPI",
+        "name": "jupyter-ai-core",
+        "path": "python/jupyter-ai-core/pyproject.toml",
+        "in_test_or_example_folder": false
+      },
+      {
+        "system": "PYPI",
+        "name": "jupyter_ai",
+        "path": "python/jupyter-ai/pyproject.toml",
         "in_test_or_example_folder": false
       }
     ],
@@ -14881,7 +14894,7 @@
       "actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
       "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
       "astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86",
-      "jupyter-server/jupyter_releaser@70e58c50c736ad496cca11fe4f2446033b68b027",
+      "jupyter-server/jupyter_releaser@fb873e098a95b1c510af2481e7cbeccb21d81d7c",
       "jupyterlab/maintainer-tools@95d85449e4f3f352e261221f6529f8ed307f5728",
       "zizmorcore/zizmor-action@5f14fd08f7cf1cb1609c1e344975f152c7ee938d"
     ],
@@ -14897,7 +14910,7 @@
         ".github/workflows/check-release.yml"
       ]
     },
-    "readme": "<p align=\"center\">\n  <img src=\"docs/source/_static/jupyter_logo.png\" alt=\"Jupyter logo\" width=\"120\">\n</p>\n\n<h1 align=\"center\">Jupyter AI</h1>\n\n<p align=\"center\"><i>An open source extension that connects AI agents to computational notebooks in JupyterLab.</i></p>\n\nJupyter AI brings agentic AI to JupyterLab. It provides a native chat UI where you can collaborate with frontier AI agents — including Claude, Codex, GitHub Copilot, Gemini, Goose, Kiro, Mistral Vibe, and OpenCode — all integrated through the [Agent Client Protocol (ACP)](https://agentclientprotocol.com). Agents are automatically detected when their dependencies are installed, so getting started is as simple as installing Jupyter AI and the agent of your choice.\n\nAgents in Jupyter AI can read and write files, run terminal commands, and interact with notebooks through a built-in [Jupyter MCP server](https://github.com/jupyter-ai-contrib/jupyter-server-mcp). A permission system gives you guardrails over agent actions — agents request approval before writing files or executing commands. You can also create multiple concurrent chats, drag and drop files or notebook cells as context, and collaborate in real time with other users connected to the same server.\n\nJupyter AI is designed to be flexible and extensible. You can add custom [MCP servers](https://modelcontextprotocol.io) to give agents access to domain-specific tools, resources, and prompts. Developers can build and register their own AI personas using the entry points API. By building on open standards like ACP and MCP, Jupyter AI avoids vendor lock-in and gives you access to the full ecosystem of compatible agents and tools.\n\n## Quick Links\n\n- [Getting Started](https://jupyter-ai.readthedocs.io/en/stable/getting-started.html) — installation, agent setup, and first chat\n- [User Guide](https://jupyter-ai.readthedocs.io/en/stable/users/index.html) — chat features, notebook tools, and custom MCP servers\n- [Contributor Guide](https://jupyter-ai.readthedocs.io/en/stable/contributors/index.html) — how to contribute to Jupyter AI\n- [Developer Guide](https://jupyter-ai.readthedocs.io/en/stable/developers/index.html) — building custom agents and MCP servers\n- [Troubleshooting](https://jupyter-ai.readthedocs.io/en/stable/users/troubleshooting.html) — common issues and solutions\n\n## Governance\n\nJupyter AI is currently under incubation as part of the JupyterLab organization.\n",
+    "readme": "<p align=\"center\">\n  <img src=\"docs/source/_static/jupyter_logo.png\" alt=\"Jupyter logo\" width=\"120\">\n</p>\n\n<h1 align=\"center\">Jupyter AI</h1>\n\n<p align=\"center\"><i>An open source extension that connects AI agents to computational notebooks in JupyterLab.</i></p>\n\nJupyter AI brings agentic AI to JupyterLab. It provides a native chat UI where you can collaborate with frontier AI agents — including Claude, Codex, GitHub Copilot, Gemini, Goose, Kiro, Mistral Vibe, and OpenCode — all integrated through the [Agent Client Protocol (ACP)](https://agentclientprotocol.com). Agents are automatically detected when their dependencies are installed, so getting started is as simple as installing Jupyter AI and the agent of your choice.\n\nAgents in Jupyter AI can read and write files, run terminal commands, and interact with notebooks through a built-in [Jupyter MCP server](https://github.com/jupyter-ai-contrib/jupyter-server-mcp). A permission system gives you guardrails over agent actions — agents request approval before writing files or executing commands. You can also create multiple concurrent chats, drag and drop files or notebook cells as context, and collaborate in real time with other users connected to the same server.\n\nJupyter AI is designed to be flexible and extensible. You can add custom [MCP servers](https://modelcontextprotocol.io) to give agents access to domain-specific tools, resources, and prompts. Developers can build and register their own AI personas using the entry points API. By building on open standards like ACP and MCP, Jupyter AI avoids vendor lock-in and gives you access to the full ecosystem of compatible agents and tools.\n\n## Packages\n\nThis repository contains two packages, released together:\n\n- [`jupyter-ai`](python/jupyter-ai): the agent chat for JupyterLab. It includes `jupyter-ai-core`.\n- [`jupyter-ai-core`](python/jupyter-ai-core): JupyterLab with the extensions that let a coding agent in your terminal work in it.\n\n## Quick Links\n\n- [Getting Started](https://jupyter-ai.readthedocs.io/en/stable/getting-started.html) — installation, agent setup, and first chat\n- [User Guide](https://jupyter-ai.readthedocs.io/en/stable/users/index.html) — chat features, notebook tools, and custom MCP servers\n- [Contributor Guide](https://jupyter-ai.readthedocs.io/en/stable/contributors/index.html) — how to contribute to Jupyter AI\n- [Developer Guide](https://jupyter-ai.readthedocs.io/en/stable/developers/index.html) — building custom agents and MCP servers",
     "security_policy": null
   },
   "jupyterlab/jupyter-ai-lite": {
@@ -14998,13 +15011,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-builder": {
-    "head": "fec862fedbb5cd7797d7a64c687975039bb8b035",
-    "n_files": 61,
+    "head": "a271749cb56ea9f3d1c4175a4b3a3ec578172c9c",
+    "n_files": 63,
     "file_types": {
       "config": 19,
       "other": 4,
       "docs": 5,
-      "code": 33
+      "code": 35
     },
     "packages": [
       {
@@ -15428,15 +15441,15 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "bf95588e60c876e869408cabf92efb9a1ea322c8",
-    "n_files": 3090,
+    "head": "c0a095d1fb65e3b24fe13609ee8f887a5af43e49",
+    "n_files": 3095,
     "file_types": {
       "config": 604,
       "other": 24,
       "docs": 181,
-      "code": 1389,
+      "code": 1392,
       "web": 259,
-      "media": 598,
+      "media": 600,
       "notebook": 35
     },
     "packages": [
@@ -16169,7 +16182,7 @@
       "astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884",
       "dessant/lock-threads@89ae32b08ed1a541efecbab17912962a5e38981c",
       "github/codeql-action@6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
-      "jupyter-server/jupyter_releaser@0bdca04f31abd7dfa75f8f8d33c52620ed3c8357",
+      "jupyter-server/jupyter_releaser@22aa25e85d4813f996f30ba5ba8a9a82be495a94",
       "jupyterlab/maintainer-tools@b9d5c28489f8b460cef48868f303b97c20f8fe1b",
       "toshimaru/auto-author-assign@a78a94b219445cece8ccf0d45fec60af449f212a"
     ],
@@ -18504,10 +18517,10 @@
     "security_policy": null
   },
   "jupyterlite/pyodide-kernel": {
-    "head": "629fe6584f26bec4e482c12388efdae01a62a894",
-    "n_files": 122,
+    "head": "ebdcafd780afa1c6f8e3c3b507d4b46652449f9f",
+    "n_files": 123,
     "file_types": {
-      "config": 33,
+      "config": 34,
       "other": 11,
       "docs": 16,
       "web": 5,

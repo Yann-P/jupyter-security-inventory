@@ -1,5 +1,5 @@
 {
-  "fetched_on": "2026-11-05",
+  "fetched_on": "2026-11-06",
   "repos": [
     {
       "full_name": "binder-examples/.github",
@@ -4361,10 +4361,10 @@
       "max_downloads_last_month": 5933,
       "top_package_dependents": 22,
       "content": {
-        "commit": "7542ac7e1c12e591b27ed72acf70c8c182a71649",
-        "n_files": 450,
+        "commit": "1c50887c46b1166f8fca90b5b0ec76594e305c97",
+        "n_files": 452,
         "file_types": {
-          "docs": 74,
+          "docs": 76,
           "config": 60,
           "code": 260,
           "other": 19,
@@ -4372,7 +4372,7 @@
           "data": 2,
           "web": 31
         },
-        "prose_ratio": 0.295,
+        "prose_ratio": 0.299,
         "workflows": {
           "count": 5,
           "triggers": [
@@ -6050,7 +6050,7 @@
       "max_downloads_last_month": 1278,
       "top_package_dependents": 0,
       "content": {
-        "commit": "fb873e098a95b1c510af2481e7cbeccb21d81d7c",
+        "commit": "ae340ad3f2f83e1a2f50b988050bf453b932e69a",
         "n_files": 88,
         "file_types": {
           "config": 24,
@@ -8463,7 +8463,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "9062faa21383709676b020f5aa8be1c9f2e85720",
+        "commit": "45ea4507a3a66102a07d91bc14627b5651515a13",
         "n_files": 107,
         "file_types": {
           "other": 6,
@@ -9173,7 +9173,7 @@
       "max_downloads_last_month": 1778,
       "top_package_dependents": 2,
       "content": {
-        "commit": "76b782aa3269c59c70270099c1c6b241e9005f5e",
+        "commit": "310bd3bc96438e4881a56825b5e0f33bdb40d53b",
         "n_files": 26,
         "file_types": {
           "config": 12,
@@ -9638,7 +9638,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "111e055a54c09818507db25f6d51dc0c780e3cd7",
+        "commit": "f84b101c03f46a010f54f621016f124cc8b493ae",
         "n_files": 116,
         "file_types": {
           "config": 9,
@@ -10395,7 +10395,7 @@
           "name": "scipy-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 93369722,
+          "pulls": 93375621,
           "reference": "docker.io/jupyter/scipy-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10405,7 +10405,7 @@
           "name": "tensorflow-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 75410695,
+          "pulls": 75411231,
           "reference": "docker.io/jupyter/tensorflow-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10415,7 +10415,7 @@
           "name": "all-spark-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 75205902,
+          "pulls": 75206169,
           "reference": "docker.io/jupyter/all-spark-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10425,7 +10425,7 @@
           "name": "pyspark-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 71466517,
+          "pulls": 71467970,
           "reference": "docker.io/jupyter/pyspark-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10435,7 +10435,7 @@
           "name": "datascience-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 36311533,
+          "pulls": 36314061,
           "reference": "docker.io/jupyter/datascience-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10445,7 +10445,7 @@
           "name": "minimal-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 22544429,
+          "pulls": 22547620,
           "reference": "docker.io/jupyter/minimal-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10455,7 +10455,7 @@
           "name": "base-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 14887592,
+          "pulls": 14889225,
           "reference": "docker.io/jupyter/base-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10465,7 +10465,7 @@
           "name": "r-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 2531306,
+          "pulls": 2531684,
           "reference": "docker.io/jupyter/r-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10475,7 +10475,7 @@
           "name": "docker-stacks-foundation",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 205752,
+          "pulls": 205798,
           "reference": "docker.io/jupyter/docker-stacks-foundation:latest",
           "reason": "linked from the registry description"
         },
@@ -10485,7 +10485,7 @@
           "name": "julia-notebook",
           "tag": "latest",
           "last_published": "2023-10-20",
-          "pulls": 30039,
+          "pulls": 30061,
           "reference": "docker.io/jupyter/julia-notebook:latest",
           "reason": "linked from the registry description"
         },
@@ -10601,7 +10601,7 @@
         }
       ],
       "top_image": "docker.io/jupyter/scipy-notebook",
-      "top_image_pulls": 93369722,
+      "top_image_pulls": 93375621,
       "top_package": null,
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
@@ -10777,7 +10777,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "79bfd37cf31bd9e3b706b1fbfdb269ea87307c10",
+        "commit": "6e4edce4445bd6d4cbd57741723d33f27a57cc4f",
         "n_files": 56,
         "file_types": {
           "docs": 35,
@@ -11206,16 +11206,17 @@
       "max_downloads_last_month": 60358,
       "top_package_dependents": 10,
       "content": {
-        "commit": "b4b65080b56e9255ed038101237e1de52b5c4d6a",
-        "n_files": 69,
+        "commit": "9c9dd5d6151f1b168caa02637d4fc3594aa9fbe5",
+        "n_files": 72,
         "file_types": {
           "config": 8,
           "other": 2,
           "docs": 8,
-          "code": 12,
-          "web": 39
+          "web": 40,
+          "media": 1,
+          "code": 13
         },
-        "prose_ratio": 0.797,
+        "prose_ratio": 0.79,
         "workflows": {
           "count": 3,
           "triggers": [
@@ -11226,7 +11227,9 @@
             "workflow_call",
             "workflow_dispatch"
           ],
-          "secrets": [],
+          "secrets": [
+            "CODECOV_TOKEN"
+          ],
           "publishes": [
             "pypi"
           ]
@@ -12464,13 +12467,13 @@
           "name": "nbviewer",
           "tag": "latest",
           "last_published": "2022-01-28",
-          "pulls": 2835056,
+          "pulls": 2835089,
           "reference": "docker.io/jupyter/nbviewer:latest",
           "reason": "named like the image"
         }
       ],
       "top_image": "docker.io/jupyter/nbviewer",
-      "top_image_pulls": 2835056,
+      "top_image_pulls": 2835089,
       "top_package": "PYPI:nbviewer",
       "max_downloads_last_month": 145,
       "top_package_dependents": 1,
@@ -13040,14 +13043,14 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "6ab0f1f8d8387a00e08287162112df6b332b27d9",
-        "n_files": 11,
+        "commit": "d36ebab55dd07d04d35058b24017d2b92234feb3",
+        "n_files": 13,
         "file_types": {
           "other": 3,
           "docs": 1,
           "web": 1,
-          "code": 1,
-          "config": 5
+          "config": 7,
+          "code": 1
         },
         "prose_ratio": 0.667,
         "workflows": {
@@ -16170,7 +16173,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "8cdb6a3e9706ba590836f863bde8ae9f055e1d65",
+        "commit": "76c9599145d979528766aba530180188308b1e52",
         "n_files": 30,
         "file_types": {
           "other": 6,
@@ -16691,7 +16694,7 @@
           "name": "k8s-binderhub",
           "tag": "1.0.0-0.dev.git.3987.h1b454db5",
           "last_published": "2026-11-01",
-          "pulls": 225356,
+          "pulls": 225601,
           "reference": "docker.io/jupyterhub/k8s-binderhub:1.0.0-0.dev.git.3987.h1b454db5",
           "reason": "built by the repo's chartpress file"
         },
@@ -16707,7 +16710,7 @@
         }
       ],
       "top_image": "docker.io/jupyterhub/k8s-binderhub",
-      "top_image_pulls": 225356,
+      "top_image_pulls": 225601,
       "top_package": "NPM:@jupyterhub/binderhub-client",
       "max_downloads_last_month": 554,
       "top_package_dependents": 1,
@@ -16846,7 +16849,7 @@
           "name": "configurable-http-proxy",
           "tag": "latest",
           "last_published": "2026-10-31",
-          "pulls": 51136265,
+          "pulls": 51138260,
           "reference": "docker.io/jupyterhub/configurable-http-proxy:latest",
           "reason": "named like the image"
         },
@@ -16862,12 +16865,12 @@
         }
       ],
       "top_image": "docker.io/jupyterhub/configurable-http-proxy",
-      "top_image_pulls": 51136265,
+      "top_image_pulls": 51138260,
       "top_package": "NPM:configurable-http-proxy",
       "max_downloads_last_month": 49865,
       "top_package_dependents": 1,
       "content": {
-        "commit": "15d65da1d1c542a5d82980aeb64416621daac161",
+        "commit": "03cdac9cad603f280e9a6b8dc0ac676fa4c7328a",
         "n_files": 42,
         "file_types": {
           "other": 9,
@@ -17634,7 +17637,7 @@
           "name": "jupyterhub",
           "tag": "latest",
           "last_published": "2026-11-04",
-          "pulls": 7314950,
+          "pulls": 7323100,
           "reference": "docker.io/jupyterhub/jupyterhub:latest",
           "reason": "named like the image"
         },
@@ -17650,12 +17653,12 @@
         }
       ],
       "top_image": "docker.io/jupyterhub/jupyterhub",
-      "top_image_pulls": 7314950,
+      "top_image_pulls": 7323100,
       "top_package": "PYPI:jupyterhub",
       "max_downloads_last_month": 260478,
       "top_package_dependents": 156,
       "content": {
-        "commit": "84c8cc589b2cfc5467b812549677ede45db8772f",
+        "commit": "41fffb935326c9e732d999950fd56beb9bc9fbec",
         "n_files": 429,
         "file_types": {
           "other": 18,
@@ -18508,7 +18511,7 @@
           "name": "mybinder.org-minesweeper",
           "tag": "2020.12.4-0.dev.git.7753.h0486a7bb",
           "last_published": "2026-11-02",
-          "pulls": 18338,
+          "pulls": 18348,
           "reference": "docker.io/jupyterhub/mybinder.org-minesweeper:2020.12.4-0.dev.git.7753.h0486a7bb",
           "reason": "built by the repo's chartpress file"
         },
@@ -18518,7 +18521,7 @@
           "name": "mybinder.org-tc-init",
           "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
           "last_published": "2026-08-24",
-          "pulls": 16017,
+          "pulls": 16030,
           "reference": "docker.io/jupyterhub/mybinder.org-tc-init:2020.12.4-0.dev.git.7606.hffbc9140",
           "reason": "built by the repo's chartpress file"
         },
@@ -18528,7 +18531,7 @@
           "name": "mybinder.org-analytics-publisher",
           "tag": "2020.12.4-0.dev.git.7753.h0486a7bb",
           "last_published": "2026-11-02",
-          "pulls": 13534,
+          "pulls": 13546,
           "reference": "docker.io/jupyterhub/mybinder.org-analytics-publisher:2020.12.4-0.dev.git.7753.h0486a7bb",
           "reason": "built by the repo's chartpress file"
         },
@@ -18548,13 +18551,13 @@
           "name": "mybinder.org-rsyslog",
           "tag": "2020.12.4-0.dev.git.7606.hffbc9140",
           "last_published": "2026-08-24",
-          "pulls": 928,
+          "pulls": 931,
           "reference": "docker.io/jupyterhub/mybinder.org-rsyslog:2020.12.4-0.dev.git.7606.hffbc9140",
           "reason": "built by the repo's chartpress file"
         }
       ],
       "top_image": "docker.io/jupyterhub/mybinder.org-minesweeper",
-      "top_image_pulls": 18338,
+      "top_image_pulls": 18348,
       "top_package": null,
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
@@ -19633,7 +19636,7 @@
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "05637a2fe4bb5b1e91bcdb0efc0059ab4b30d543",
+        "commit": "4ad828943d8acaa631708b317a5cfbddb258d3db",
         "n_files": 236,
         "file_types": {
           "config": 8,
@@ -19868,10 +19871,10 @@
           "registry": "docker.io",
           "namespace": "jupyterhub",
           "name": "k8s-hub",
-          "tag": "5.0.0-0.dev.git.7584.h5aaf184b",
-          "last_published": "2026-11-02",
-          "pulls": 124056842,
-          "reference": "docker.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7584.h5aaf184b",
+          "tag": "5.0.0-0.dev.git.7590.h748aa539",
+          "last_published": "2026-11-05",
+          "pulls": 124058661,
+          "reference": "docker.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7590.h748aa539",
           "reason": "built by the repo's chartpress file"
         },
         {
@@ -19880,7 +19883,7 @@
           "name": "k8s-network-tools",
           "tag": "4.4.4",
           "last_published": "2026-10-20",
-          "pulls": 118279300,
+          "pulls": 118284530,
           "reference": "docker.io/jupyterhub/k8s-network-tools:4.4.4",
           "reason": "built by the repo's chartpress file"
         },
@@ -19888,10 +19891,10 @@
           "registry": "docker.io",
           "namespace": "jupyterhub",
           "name": "k8s-singleuser-sample",
-          "tag": "5.0.0-0.dev.git.7584.h96f03f4c",
-          "last_published": "2026-11-02",
-          "pulls": 66503491,
-          "reference": "docker.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7584.h96f03f4c",
+          "tag": "5.0.0-0.dev.git.7590.h748aa539",
+          "last_published": "2026-11-05",
+          "pulls": 66505461,
+          "reference": "docker.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7590.h748aa539",
           "reason": "built by the repo's chartpress file"
         },
         {
@@ -19900,7 +19903,7 @@
           "name": "k8s-image-awaiter",
           "tag": "4.4.4",
           "last_published": "2026-10-20",
-          "pulls": 1875901,
+          "pulls": 1876305,
           "reference": "docker.io/jupyterhub/k8s-image-awaiter:4.4.4",
           "reason": "built by the repo's chartpress file"
         },
@@ -19910,7 +19913,7 @@
           "name": "k8s-secret-sync",
           "tag": "5.0.0-0.dev.git.7584.h45b578df",
           "last_published": "2026-11-02",
-          "pulls": 811710,
+          "pulls": 811896,
           "reference": "docker.io/jupyterhub/k8s-secret-sync:5.0.0-0.dev.git.7584.h45b578df",
           "reason": "built by the repo's chartpress file"
         },
@@ -19918,30 +19921,30 @@
           "registry": "docker.io",
           "namespace": "jupyterhub",
           "name": "k8s-hub-slim",
-          "tag": "5.0.0-0.dev.git.7584.h5aaf184b",
-          "last_published": "2026-11-02",
-          "pulls": 64888,
-          "reference": "docker.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7584.h5aaf184b",
+          "tag": "5.0.0-0.dev.git.7590.h748aa539",
+          "last_published": "2026-11-05",
+          "pulls": 65073,
+          "reference": "docker.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7590.h748aa539",
           "reason": "built by the repo's chartpress file"
         },
         {
           "registry": "quay.io",
           "namespace": "jupyterhub",
           "name": "k8s-hub",
-          "tag": "5.0.0-0.dev.git.7584.h5aaf184b",
-          "last_published": "2026-11-02",
+          "tag": "5.0.0-0.dev.git.7590.h748aa539",
+          "last_published": "2026-11-05",
           "pulls": null,
-          "reference": "quay.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7584.h5aaf184b",
+          "reference": "quay.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7590.h748aa539",
           "reason": "built by the repo's chartpress file"
         },
         {
           "registry": "quay.io",
           "namespace": "jupyterhub",
           "name": "k8s-hub-slim",
-          "tag": "5.0.0-0.dev.git.7584.h5aaf184b",
-          "last_published": "2026-11-02",
+          "tag": "5.0.0-0.dev.git.7590.h748aa539",
+          "last_published": "2026-11-05",
           "pulls": null,
-          "reference": "quay.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7584.h5aaf184b",
+          "reference": "quay.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7590.h748aa539",
           "reason": "built by the repo's chartpress file"
         },
         {
@@ -19978,20 +19981,20 @@
           "registry": "quay.io",
           "namespace": "jupyterhub",
           "name": "k8s-singleuser-sample",
-          "tag": "5.0.0-0.dev.git.7584.h96f03f4c",
-          "last_published": "2026-11-02",
+          "tag": "5.0.0-0.dev.git.7590.h748aa539",
+          "last_published": "2026-11-05",
           "pulls": null,
-          "reference": "quay.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7584.h96f03f4c",
+          "reference": "quay.io/jupyterhub/k8s-singleuser-sample:5.0.0-0.dev.git.7590.h748aa539",
           "reason": "built by the repo's chartpress file"
         }
       ],
       "top_image": "docker.io/jupyterhub/k8s-hub",
-      "top_image_pulls": 124056842,
+      "top_image_pulls": 124058661,
       "top_package": null,
       "max_downloads_last_month": 0,
       "top_package_dependents": 0,
       "content": {
-        "commit": "7cce063b7f2d4f4685677883cbdda0e417e16ca9",
+        "commit": "5ab26676c5e11bcfb8d0bff74241f0ce057afc8a",
         "n_files": 211,
         "file_types": {
           "other": 24,
@@ -20205,17 +20208,17 @@
       "max_downloads_last_month": 48792,
       "top_package_dependents": 0,
       "content": {
-        "commit": "012aae8d84082855966722758eb90cf3c4bf44ee",
-        "n_files": 143,
+        "commit": "df83dbf97994ee85fb95aa4fee780982bf9ae9d0",
+        "n_files": 144,
         "file_types": {
           "config": 23,
           "other": 3,
           "docs": 32,
-          "code": 79,
+          "code": 80,
           "media": 4,
           "web": 2
         },
-        "prose_ratio": 0.325,
+        "prose_ratio": 0.322,
         "workflows": {
           "count": 7,
           "triggers": [
@@ -20687,6 +20690,17 @@
           "latest_published": "2026-09-03",
           "attested": false,
           "requires_python": ">=3.9"
+        },
+        {
+          "system": "PYPI",
+          "name": "jupyter-ai-core",
+          "reason": "declared here under the repo's own name; registry has no conflicting link",
+          "downloads_last_month": 0,
+          "dependents": 0,
+          "last_published": "2026-10-16",
+          "latest_published": "2026-10-16",
+          "attested": false,
+          "requires_python": null
         }
       ],
       "images": [],
@@ -20696,17 +20710,17 @@
       "max_downloads_last_month": 119717,
       "top_package_dependents": 9,
       "content": {
-        "commit": "1c6dd2cf3d521b9aeb1efcb8ec0d0d657c321695",
-        "n_files": 186,
+        "commit": "96eaa7dac2942c4f6ded87070816a3bd559f9252",
+        "n_files": 197,
         "file_types": {
-          "docs": 33,
-          "config": 15,
-          "other": 18,
-          "code": 23,
+          "other": 21,
+          "docs": 35,
+          "config": 19,
+          "code": 25,
           "media": 93,
           "web": 4
         },
-        "prose_ratio": 0.85,
+        "prose_ratio": 0.841,
         "workflows": {
           "count": 8,
           "triggers": [
@@ -20884,15 +20898,15 @@
       "max_downloads_last_month": 17948052,
       "top_package_dependents": 3952,
       "content": {
-        "commit": "fec862fedbb5cd7797d7a64c687975039bb8b035",
-        "n_files": 61,
+        "commit": "a271749cb56ea9f3d1c4175a4b3a3ec578172c9c",
+        "n_files": 63,
         "file_types": {
           "config": 19,
           "other": 4,
           "docs": 5,
-          "code": 33
+          "code": 35
         },
-        "prose_ratio": 0.132,
+        "prose_ratio": 0.125,
         "workflows": {
           "count": 8,
           "triggers": [
@@ -22538,15 +22552,15 @@
       "max_downloads_last_month": 30253541,
       "top_package_dependents": 3931,
       "content": {
-        "commit": "bf95588e60c876e869408cabf92efb9a1ea322c8",
-        "n_files": 3090,
+        "commit": "c0a095d1fb65e3b24fe13609ee8f887a5af43e49",
+        "n_files": 3095,
         "file_types": {
           "config": 604,
           "other": 24,
           "docs": 181,
-          "code": 1389,
+          "code": 1392,
           "web": 259,
-          "media": 598,
+          "media": 600,
           "notebook": 35
         },
         "prose_ratio": 0.436,
@@ -25782,10 +25796,10 @@
       "max_downloads_last_month": 51057,
       "top_package_dependents": 8,
       "content": {
-        "commit": "629fe6584f26bec4e482c12388efdae01a62a894",
-        "n_files": 122,
+        "commit": "ebdcafd780afa1c6f8e3c3b507d4b46652449f9f",
+        "n_files": 123,
         "file_types": {
-          "config": 33,
+          "config": 34,
           "other": 11,
           "docs": 16,
           "web": 5,

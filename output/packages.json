@@ -2847,6 +2847,18 @@
       "requires_python": ">=3.9"
     },
     {
+      "system": "PYPI",
+      "name": "jupyter-ai-core",
+      "repo": "jupyterlab/jupyter-ai",
+      "reason": "declared here under the repo's own name; registry has no conflicting link",
+      "downloads_last_month": 0,
+      "dependents": 0,
+      "last_published": "2026-10-16",
+      "latest_published": "2026-10-16",
+      "attested": false,
+      "requires_python": null
+    },
+    {
       "system": "NPM",
       "name": "@jupyter-ai/agent-lite",
       "repo": "jupyterlab/jupyter-ai-lite",

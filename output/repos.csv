@@ -180,7 +180,7 @@ jupyter/cookiecutter-docker-stacks,tooling,,,,,,,,
 jupyter/council,documentation,,,,,,,,
 jupyter/design,other,,,,,,,,
 jupyter/distinguished-contributors,documentation,,,,,,,,
-jupyter/docker-stacks,application,,,,docker.io/jupyter/scipy-notebook,93369722,,,
+jupyter/docker-stacks,application,,,,docker.io/jupyter/scipy-notebook,93375621,,,
 jupyter/docs-team-compass,documentation,,,,,,,documentation issues website,
 jupyter/echo_kernel,example,PYPI:echo-kernel,67,0,,,,,
 jupyter/enhancement-proposals,documentation,,,,,,,,
@@ -212,7 +212,7 @@ jupyter/nbdime,package,PYPI:nbdime,174529,52,,,,,
 jupyter/nbformat,package,PYPI:nbformat,76592205,8382,,,,,
 jupyter/nbgrader,package,PYPI:nbgrader,11171,17,,,,,executes and grades user-submitted Jupyter notebooks in multi-user deployments
 jupyter/nbmanager,tooling,,,,,,,,
-jupyter/nbviewer,application,PYPI:nbviewer,145,1,docker.io/jupyter/nbviewer,2835056,,nbviewer.org,renders untrusted notebook content received over the network
+jupyter/nbviewer,application,PYPI:nbviewer,145,1,docker.io/jupyter/nbviewer,2835089,,nbviewer.org,renders untrusted notebook content received over the network
 jupyter/nbviewer.org-deploy,deployment,,,,,,,nbviewer.jupyter.org,
 jupyter/notebook,package,PYPI:notebook,28757551,3034,,,,,executes untrusted user code in kernels and serves notebook web interface
 jupyter/notebook_shim,package,PYPI:notebook-shim,27317089,4481,,,,,
@@ -294,9 +294,9 @@ jupyterhub/autodoc-traits,package,PYPI:autodoc-traits,1660,0,,,,,
 jupyterhub/batchspawner,package,PYPI:batchspawner,8938,5,,,,,
 jupyterhub/binder-billing,example,,,,,,,,
 jupyterhub/binder-data,tooling,,,,,,,binder-data website,
-jupyterhub/binderhub,application,NPM:@jupyterhub/binderhub-client,554,1,docker.io/jupyterhub/k8s-binderhub,225356,,mybinder.org,
+jupyterhub/binderhub,application,NPM:@jupyterhub/binderhub-client,554,1,docker.io/jupyterhub/k8s-binderhub,225601,,mybinder.org,
 jupyterhub/chartpress,tooling,PYPI:chartpress,4436,0,,,,,
-jupyterhub/configurable-http-proxy,package,NPM:configurable-http-proxy,49865,1,docker.io/jupyterhub/configurable-http-proxy,51136265,,,proxies HTTP/WebSocket traffic and manages routing rules via CLI/REST API
+jupyterhub/configurable-http-proxy,package,NPM:configurable-http-proxy,49865,1,docker.io/jupyterhub/configurable-http-proxy,51138260,,,proxies HTTP/WebSocket traffic and manages routing rules via CLI/REST API
 jupyterhub/design,other,,,,,,,,
 jupyterhub/docker-image-cleaner,package,PYPI:docker-image-cleaner,40,0,quay.io/jupyterhub/docker-image-cleaner,,,,
 jupyterhub/dockerspawner,package,PYPI:dockerspawner,24371,10,,,,,spawns per-user containers after authentication
@@ -308,7 +308,7 @@ jupyterhub/helm-chart,deployment,,,,,,,hub.jupyter.org/helm-chart/,
 jupyterhub/jupyter-remote-desktop-proxy,package,PYPI:jupyter-remote-desktop-proxy,1078,0,quay.io/jupyterhub/jupyter-remote-desktop-proxy,,,,proxies VNC traffic and launches desktop environments for users
 jupyterhub/jupyter-rsession-proxy,package,PYPI:jupyter-rsession-proxy,5599,1,,,,,"proxies RStudio sessions within Jupyter, handling network traffic between users and RStudio servers"
 jupyterhub/jupyter-server-proxy,package,PYPI:jupyter-server-proxy,451131,195,,,,,proxies web services and provides authenticated web access
-jupyterhub/jupyterhub,application,PYPI:jupyterhub,260478,156,docker.io/jupyterhub/jupyterhub,7314950,,,"authenticates users, proxies traffic, and spawns notebook servers"
+jupyterhub/jupyterhub,application,PYPI:jupyterhub,260478,156,docker.io/jupyterhub/jupyterhub,7323100,,,"authenticates users, proxies traffic, and spawns notebook servers"
 jupyterhub/jupyterhub-container-images,application,,,,,,,,
 jupyterhub/jupyterhub-deploy-docker,deployment,,,,,,,,
 jupyterhub/jupyterhub-deploy-hpc,example,,,,,,,,
@@ -324,7 +324,7 @@ jupyterhub/kubespawner,package,PYPI:jupyterhub-kubespawner,15220,6,,,,,
 jupyterhub/ldapauthenticator,package,PYPI:jupyterhub-ldapauthenticator,6160,0,,,,,authenticates users against LDAP for JupyterHub
 jupyterhub/ltiauthenticator,package,PYPI:jupyterhub-ltiauthenticator,1725,0,,,,,authenticates users and authorizes JupyterHub access via LTI
 jupyterhub/mybinder-tools,tooling,,,,,,,,
-jupyterhub/mybinder.org-deploy,deployment,,,,docker.io/jupyterhub/mybinder.org-minesweeper,18338,,mybinder.org,
+jupyterhub/mybinder.org-deploy,deployment,,,,docker.io/jupyterhub/mybinder.org-minesweeper,18348,,mybinder.org,
 jupyterhub/mybinder.org-user-guide,documentation,,,,,,,,
 jupyterhub/nativeauthenticator,package,PYPI:jupyterhub-nativeauthenticator,21091,1,,,,,authenticates users and manages signup for JupyterHub
 jupyterhub/nbgitpuller,package,PYPI:nbgitpuller,25586,6,,,,,executes git pull operations triggered by user-provided URLs on a Jupyter server
@@ -347,7 +347,7 @@ jupyterhub/the-littlest-jupyterhub,package,,,,,,,,
 jupyterhub/tmpauthenticator,package,PYPI:jupyterhub-tmpauthenticator,2921,0,,,,,authenticates users by granting temporary accounts without login and spawns notebook servers
 jupyterhub/traefik-proxy,package,PYPI:jupyterhub-traefik-proxy,3497,1,,,,,
 jupyterhub/wrapspawner,package,PYPI:wrapspawner,928,0,,,,,
-jupyterhub/zero-to-jupyterhub-k8s,deployment,,,,docker.io/jupyterhub/k8s-hub,124056842,,JupyterHub on Kubernetes,authenticates users and spawns their notebook servers via JupyterHub
+jupyterhub/zero-to-jupyterhub-k8s,deployment,,,,docker.io/jupyterhub/k8s-hub,124058661,,JupyterHub on Kubernetes,authenticates users and spawns their notebook servers via JupyterHub
 jupyterlab/.github,documentation,,,,,,,,
 jupyterlab/assets,documentation,,,,,,,jupyterlab.github.io/assets site,
 jupyterlab/benchmarks,tooling,,,,,,,,
