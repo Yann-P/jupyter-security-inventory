@@ -36,81 +36,67 @@ jobs:
         with:
           name: site
           path: docs/_build/html
-          retention-days: 1  # only the jobs below read it
+          retention-days: 1  # only the job below reads it
 
-  # The build runs pip and Sphinx, so it gets a read-only token. The jobs below can push, but run none of that code.
-  deploy:
-    if: github.ref == 'refs/heads/main'  # not a manual update run on another branch, which would replace the live site
+  # The build runs pip and Sphinx with a read-only token. This job can push, but runs none of that code. A fork's
+  # token can't push, so pull requests from forks get no preview.
+  publish:
     needs: build
+    if: >-
+      !cancelled() && (needs.build.result == 'success' || github.event.action == 'closed') &&
+      (github.ref == 'refs/heads/main' || github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # pushes the site to the gh-pages branch
+      contents: write  # pushes to the gh-pages branch
+      pull-requests: write  # comments the preview link
     concurrency:
-      group: pages
+      group: gh-pages-${{ github.event.pull_request.number || 'main' }}
       cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number }}
+      ACTION: ${{ github.event.action }}
     steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-        with:
-          persist-credentials: false  # the deploy action needs a git repository, but brings its own token
-      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
+      - if: github.event.action != 'closed'
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
         with:
           name: site
           path: site
-      - run: touch site/.nojekyll  # otherwise Pages runs Jekyll, which drops _static/
-      - uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445  # v4.9.0
-        with:
-          folder: site
-          clean-exclude: pr-preview/
-          force: false  # rebase onto a preview pushed meanwhile, instead of erasing it
-
-  # A fork's token can't push, so pull requests from forks get no preview.
-  preview:
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write  # pushes the preview to gh-pages
-      pull-requests: write  # to comment the link
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-        with:
-          ref: ${{ github.event.repository.default_branch }}  # the deploy action needs a repository; not the PR's files
-          persist-credentials: false
-      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
-        with:
-          name: site
-          path: site
-      - uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445  # v4.9.0
-        with:
-          folder: site
-          target-folder: pr-preview/pr-${{ github.event.number }}
-          force: false
+      - name: Push to gh-pages
+        run: |
+          remote="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git clone --quiet --depth 1 --branch gh-pages "$remote" pages || {
+            git init --quiet --initial-branch gh-pages pages  # the first run
+            git -C pages remote add origin "$remote"
+          }
+          if [ -z "$PR" ]; then
+            rsync -a --delete --exclude /.git --exclude /pr-preview site/ pages/
+            touch pages/.nojekyll  # otherwise Pages runs Jekyll, which drops _static/
+            message="Publish main"
+          elif [ "$ACTION" = closed ]; then
+            rm -rf "pages/pr-preview/pr-$PR"
+            message="Remove the preview of pull request $PR"
+          else
+            mkdir -p "pages/pr-preview/pr-$PR"
+            rsync -a --delete site/ "pages/pr-preview/pr-$PR/"
+            message="Publish a preview of pull request $PR"
+          fi
+          cd pages
+          git add --all
+          git diff --cached --quiet && exit 0
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit --quiet -m "$message"
+          # Another run may push first. Each writes its own folder, so a rebase is enough.
+          for attempt in 1 2 3; do
+            git push --quiet origin HEAD:gh-pages && exit 0
+            git pull --quiet --rebase origin gh-pages
+          done
+          exit 1
       - name: Comment the link, once per pull request
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR: ${{ github.event.number }}
+        if: github.event_name == 'pull_request' && github.event.action != 'closed'
         run: |
           url="https://yann-p.github.io/jupyter-security-inventory/pr-preview/pr-$PR/"
           # Only our own comment counts: anyone can comment on a pull request.
           gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR/comments" \
             --jq '.[] | select(.user.login == "github-actions[bot]") | .body' | grep -qF "$url" ||
-            gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="Preview of the site, updated on every push: $url"
-
-  # A pull request closed while it has a merge conflict starts no run, so its preview then stays until
-  # removed by hand.
-  remove-preview:
-    if: github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write  # deletes the preview from gh-pages
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-        with:
-          ref: ${{ github.event.repository.default_branch }}  # the deploy action needs a repository; not the PR's files
-          persist-credentials: false
-      - run: mkdir empty
-      - uses: JamesIves/github-pages-deploy-action@fa24774553152dd7873cd16ebd8d959b010c5445  # v4.9.0
-        with:
-          folder: empty  # syncing an empty folder deletes the preview
-          target-folder: pr-preview/pr-${{ github.event.number }}
-          force: false
+            gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="Preview, updated on every push: $url"
