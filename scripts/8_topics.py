@@ -25,7 +25,6 @@ HISTORY = OUTPUT / "topics_history.json"
 
 
 def answer(repos: dict, scan: dict, day: str) -> list[dict]:
-    """`day` is when the inventory was fetched, so that a rerun of a later day gives the same answers."""
     return [
         {"topic": topic.id, "repo": name, **asdict(topic.check(repos[name] | {"fetched_on": day}, scan))}
         for topic in TOPICS

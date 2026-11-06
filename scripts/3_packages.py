@@ -109,15 +109,15 @@ def deps_dev(system: str, name: str) -> dict:
 
 
 def publishing(system: str, name: str) -> dict:
-    """Whether the latest release has an attestation on every file (PyPI) or used trusted publishing (npm). For
-    PyPI, also its Requires-Python, the Python versions pip installs it on."""
+    """Whether the latest release has an attestation on every file (PyPI) or used trusted publishing (npm), and for
+    PyPI its Requires-Python."""
     if system == "PYPI":
         body = fetch_json(f"https://pypi.org/pypi/{quote(name)}/json")
         version, files = body["info"]["version"], [file["filename"] for file in body["urls"]]
         base = f"https://pypi.org/integrity/{quote(name)}/{quote(version)}"
         return {
             "attested": bool(files) and all(fetch_json(f"{base}/{quote(file)}/provenance") for file in files),
-            "requires_python": body["info"].get("requires_python") or None,  # PyPI says "" or null when it's unset
+            "requires_python": body["info"].get("requires_python") or None,
         }
     body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=2)
     return {"trusted_publishing": bool((body.get("_npmUser") or {}).get("trustedPublisher"))}

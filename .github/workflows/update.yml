@@ -56,5 +56,5 @@ jobs:
     needs: update
     uses: ./.github/workflows/docs.yml
     permissions:
-      contents: write  # docs.yml pushes the site to the gh-pages branch
+      contents: write
       pull-requests: write  # unused here, but GitHub requires it because docs.yml's preview job asks for it

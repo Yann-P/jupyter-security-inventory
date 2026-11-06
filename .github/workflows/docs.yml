@@ -1,18 +1,16 @@
-# Builds the web page from docs/ and pushes it to the gh-pages branch, which GitHub Pages serves. The daily update
-# calls it too. Main goes to the root, and each pull request from this repo to pr-preview/pr-<number>/ until it closes.
+# Builds the site and pushes it to the gh-pages branch: main at the root, each pull request in pr-preview/pr-<number>/.
 name: Docs
 
 on:
   push:
     branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened, closed]  # closed, to remove the preview
+    types: [opened, synchronize, reopened, closed]
   workflow_call:
 
 permissions:
   contents: read
 
-# A new push to a pull request, or its close, cancels its older run, so that run can't bring back a removed preview.
 concurrency:
   group: docs-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: true
@@ -31,15 +29,13 @@ jobs:
           python-version: "3.14"
       - run: pip install -r requirements-docs.txt
       - run: sphinx-build --fail-on-warning docs docs/_build/html
-      # Hidden files are left out, so the 16 MB of .doctrees never reach gh-pages.
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9  # v7.0.2
         with:
           name: site
           path: docs/_build/html
-          retention-days: 1  # only the job below reads it
+          retention-days: 1
 
-  # The build runs pip and Sphinx with a read-only token. This job can push, but runs none of that code. A fork's
-  # token can't push, so pull requests from forks get no preview.
+  # Only this job can push, and it runs none of the build's code.
   publish:
     needs: build
     if: >-
@@ -47,8 +43,8 @@ jobs:
       (github.ref == 'refs/heads/main' || github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # pushes to the gh-pages branch
-      pull-requests: write  # comments the preview link
+      contents: write
+      pull-requests: write
     concurrency:
       group: gh-pages-${{ github.event.pull_request.number || 'main' }}
       cancel-in-progress: false
@@ -66,7 +62,7 @@ jobs:
         run: |
           remote="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git clone --quiet --depth 1 --branch gh-pages "$remote" pages || {
-            git init --quiet --initial-branch gh-pages pages  # the first run
+            git init --quiet --initial-branch gh-pages pages
             git -C pages remote add origin "$remote"
           }
           if [ -z "$PR" ]; then
@@ -86,7 +82,6 @@ jobs:
           git diff --cached --quiet && exit 0
           git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
             commit --quiet -m "$message"
-          # Another run may push first. Each writes its own folder, so a rebase is enough.
           for attempt in 1 2 3; do
             git push --quiet origin HEAD:gh-pages && exit 0
             git pull --quiet --rebase origin gh-pages
@@ -96,7 +91,6 @@ jobs:
         if: github.event_name == 'pull_request' && github.event.action != 'closed'
         run: |
           url="https://yann-p.github.io/jupyter-security-inventory/pr-preview/pr-$PR/"
-          # Only our own comment counts: anyone can comment on a pull request.
           gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR/comments" \
             --jq '.[] | select(.user.login == "github-actions[bot]") | .body' | grep -qF "$url" ||
             gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="Preview, updated on every push: $url"

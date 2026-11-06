@@ -1,16 +1,13 @@
 """Topic: do the repo's PyPI packages require a Python that still gets security fixes?
 
-The Requires-Python of a release is the range of Python versions pip and uv install it on. A package that still allows
-an end-of-life Python lets its users stay on an interpreter without security fixes, where they also get old releases
-of every dependency that has dropped that version.
+On an end-of-life Python, users also get old releases of every dependency that has dropped it.
 """
 
 from packaging.specifiers import InvalidSpecifier, SpecifierSet
 
 from topics import DONE, MISSING, NOT_APPLICABLE, PARTIAL, Result, Topic, names
 
-# When each CPython version stopped, or will stop, getting security fixes, oldest version first, from
-# https://peps.python.org/api/release-cycle.json. A month alone means its first day.
+# From https://peps.python.org/api/release-cycle.json. A month alone means its first day.
 END_OF_LIFE = {
     "2.6": "2013-10-29",
     "2.7": "2020-01-01",
@@ -35,10 +32,7 @@ END_OF_LIFE = {
 
 
 def oldest_python(requires_python: str | None) -> str | None:
-    """The oldest version of END_OF_LIFE that a Requires-Python allows: ">=3.9.2" -> "3.9".
-
-    pip ignores a missing or invalid Requires-Python, so those allow every version. None if it allows none of them.
-    """
+    """ ">=3.9.2" -> "3.9". pip ignores a missing or invalid Requires-Python, so those allow every version."""
     try:
         allowed = SpecifierSet(requires_python or "")
     except InvalidSpecifier:
@@ -49,12 +43,15 @@ def oldest_python(requires_python: str | None) -> str | None:
 
 
 def check(repo: dict, scan: dict) -> Result:
-    packages = [p for p in repo["packages"] if p["system"] == "PYPI"]
+    packages = [package for package in repo["packages"] if package["system"] == "PYPI"]
     if not packages:
         return Result(NOT_APPLICABLE, "No PyPI package.")
-    oldest = {p["name"]: oldest_python(p["requires_python"]) for p in packages}
-    # Dates compare as text, and "2027-10" comes before every day of October 2027.
-    without = [p for p in packages if oldest[p["name"]] and END_OF_LIFE[oldest[p["name"]]] <= repo["fetched_on"]]
+    oldest = {package["name"]: oldest_python(package["requires_python"]) for package in packages}
+    without = [
+        package
+        for package in packages
+        if oldest[package["name"]] and END_OF_LIFE[oldest[package["name"]]] <= repo["fetched_on"]
+    ]
     if not without:
         version = min(filter(None, oldest.values()), key=list(END_OF_LIFE).index, default=None)
         least = f"at least Python {version}" if version else "a Python newer than any we know"
