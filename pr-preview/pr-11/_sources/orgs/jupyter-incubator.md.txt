@@ -1,0 +1,55 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyter\-incubator
+
+[github.com/jupyter-incubator](https://github.com/jupyter-incubator) has 1 public repository: 1 publishes a package.
+
+[Security topics (5)](#security-topics) · [Repositories (1)](#repositories) · [Packages (1)](#packages)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyter-incubator-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-incubator-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyter-incubator-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-incubator-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyter-incubator-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-incubator-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyter-incubator/sparkmagic
+```

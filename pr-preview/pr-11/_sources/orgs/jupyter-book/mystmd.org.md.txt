@@ -1,0 +1,35 @@
+# jupyter\-book\/mystmd\.org
+
+The website theme and landing content for mystmd\.org
+
+application · [on GitHub](https://github.com/jupyter-book/mystmd.org) · scanned at commit [78f0db4](https://github.com/jupyter-book/mystmd.org/tree/78f0db446fb3e8c5bee106483bd9f2ffa8a976cc)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** mystmd\.org
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Remix web application theme and landing content for mystmd\.org\, as evidenced by theme\/app and content directories\, with deploy workflow \.github\/workflows\/deploy\.yml using Vercel\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** VERCEL\_ORG\_ID, VERCEL\_PROJECT\_ID, VERCEL\_TOKEN
+- **Actions:** 2, 2 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/setup\-node\@v3
+- **Files:** 78: 36 code, 21 media, 8 config, 7 other, 5 docs, 1 web

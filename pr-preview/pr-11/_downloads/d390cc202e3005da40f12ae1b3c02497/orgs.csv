@@ -1,0 +1,21 @@
+organization,repos,publish a package,container images,security boundaries,live services,long-lived tokens,most installed package,downloads/month
+ipython,14,9,5,1,3,0,PYPI:traitlets,118414624
+jupyter,60,23,32,5,12,7,PYPI:jupyter-core,77056466
+jupyterlab,46,26,0,3,1,16,PYPI:jupyterlab-pygments,48057917
+jupyter-server,19,15,0,5,0,6,PYPI:jupyter-server,32556872
+jupyter-widgets,12,7,0,0,1,2,PYPI:widgetsnbextension,31834051
+jupyterhub,64,34,38,19,6,9,PYPI:jupyter-server-proxy,451131
+jupyter-book,35,6,0,0,9,4,PYPI:jupyter-book,217891
+voila-dashboards,17,7,0,1,4,4,PYPI:voila,111632
+jupyterlite,18,12,0,1,4,10,PYPI:jupyterlite-core,60813
+jupyter-incubator,1,1,0,0,0,1,PYPI:sparkmagic,12187
+jupyter-xeus,36,4,0,6,2,4,PYPI:xeus-python,1778
+jupyterhealth,25,3,1,5,7,0,PYPI:omh-shim,838
+binder-examples,44,0,0,1,0,0,,
+jupytercon,28,0,0,0,8,1,,
+voila-gallery,8,0,0,0,1,0,,
+binderhub-ci-repos,6,0,0,0,0,0,,
+jupyter-governance,4,0,0,0,2,0,,
+jupyter-standards,1,0,0,0,0,0,,
+jupyter-resources,0,0,0,0,0,0,,
+jupyter-standard,0,0,0,0,0,0,,

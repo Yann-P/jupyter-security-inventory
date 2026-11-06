@@ -1,0 +1,35 @@
+# ipython\/ipython\.github\.com
+
+Auto\-generated sphinx version of the IPython website\. Since this is an auto\-generated directory\, do \*not\* submit pull requests against this repository\.  The actual sources are in the ipython\-website repository\.
+
+documentation · [on GitHub](https://github.com/ipython/ipython.github.com) · scanned at commit [f4cb7dc](https://github.com/ipython/ipython.github.com/tree/f4cb7dcf177990f6bf65bbe5b8c3c789ecb91613)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** ipython\.github\.com
+- **Security boundary:** no
+- **Why these labels:** The repository contains an Astro website with src\/pages\, \.github\/workflows\/deploy\.yml deploying to GitHub Pages\, and a CNAME file\, but no installation packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** BASE\_PATH
+- **Actions:** 4, 4 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/deploy\-pages\@v4, actions\/setup\-node\@v4, actions\/upload\-pages\-artifact\@v3
+- **Files:** 107: 39 media, 22 code, 20 other, 18 web, 7 config, 1 docs

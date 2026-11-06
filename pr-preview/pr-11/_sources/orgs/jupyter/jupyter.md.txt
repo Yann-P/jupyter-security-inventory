@@ -1,0 +1,35 @@
+# jupyter\/jupyter
+
+Jupyter metapackage for installation and documentation
+
+package · [on GitHub](https://github.com/jupyter/jupyter) · scanned at commit [6b5eb0f](https://github.com/jupyter/jupyter/tree/6b5eb0f469c7bc3ea43d6d2a0ba1057853c9a3a5)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter](https://pypi.org/project/jupyter/), [12,288,648](https://pypistats.org/packages/jupyter) downloads/month, 1,883 dependents, last published 2024-08-30
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a metapackage for installing Jupyter and contains extensive documentation under docs\/\, with setup\.py and PyPI publication\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** partial via repository. Not the same emails as jupyter\/\.github\: check where reports go\. Files: [SECURITY\.md](https://github.com/jupyter/jupyter/blob/6b5eb0f469c7bc3ea43d6d2a0ba1057853c9a3a5/SECURITY.md)
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter \(2024\-08\-30\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter \(2024\-08\-30\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** pypi
+- **Secrets:** pypi\_password
+- **Actions:** 4, 4 by tag. Third-party, not pinned: pypa\/gh\-action\-pypi\-publish\@v1\.5\.1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/setup\-python\@v2, actions\/upload\-artifact\@v4, pypa\/gh\-action\-pypi\-publish\@v1\.5\.1
+- **Files:** 239: 123 docs, 56 other, 45 media, 8 config, 5 code, 2 web

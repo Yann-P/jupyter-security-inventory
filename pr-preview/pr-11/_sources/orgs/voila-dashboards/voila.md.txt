@@ -1,0 +1,36 @@
+# voila\-dashboards\/voila
+
+Voilà turns Jupyter notebooks into standalone web applications
+
+package · [on GitHub](https://github.com/voila-dashboards/voila) · scanned at commit [2993413](https://github.com/voila-dashboards/voila/tree/2993413ffb950476ff7b44abf84fe56f656e7772)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [voila](https://pypi.org/project/voila/), [111,632](https://pypistats.org/packages/voila) downloads/month, 60 dependents, last published 2026-09-04; []{.fa-brands .fa-npm} [\@voila\-dashboards\/voila](https://www.npmjs.com/package/@voila-dashboards/voila), [902](https://npm-stat.com/charts.html?package=@voila-dashboards/voila) downloads/month, 2 dependents, last published 2026-09-04; []{.fa-brands .fa-npm} [\@voila\-dashboards\/widgets\-manager8](https://www.npmjs.com/package/@voila-dashboards/widgets-manager8), [374](https://npm-stat.com/charts.html?package=@voila-dashboards/widgets-manager8) downloads/month, 3 dependents, last published 2026-09-04; []{.fa-brands .fa-npm} [\@voila\-dashboards\/jupyterlab\-preview](https://www.npmjs.com/package/@voila-dashboards/jupyterlab-preview), [324](https://npm-stat.com/charts.html?package=@voila-dashboards/jupyterlab-preview) downloads/month, 0 dependents, last published 2026-09-04; []{.fa-brands .fa-npm} [\@voila\-dashboards\/widgets\-manager7](https://www.npmjs.com/package/@voila-dashboards/widgets-manager7), [69](https://npm-stat.com/charts.html?package=@voila-dashboards/widgets-manager7) downloads/month, 0 dependents, last published 2026-09-04
+- **Container images:** none
+- **Run by other repositories:** 1 in their builds
+- **Live service:** none
+- **Security boundary:** yes, it renders untrusted Jupyter notebooks and executes kernel callbacks per user
+- **Why these labels:** The repo has Python package structure \(\'voila\/\' package directory\)\, published packages on PyPI and NPM\, and CI publishing steps\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of voila\-dashboards\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of voila \(2026\-09\-04\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm versions used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of voila \(2026\-09\-04\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 11, run on issue\_comment, pull\_request, pull\_request\_target, push, schedule, workflow\_dispatch, workflow\_run
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN, github\_token
+- **Actions:** 13, 12 by tag, 1 by branch. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v2
+- **Build requirements:** hatchling, jupyter\_core, jupyterlab
+
+## Details
+
+- **Run it in their builds:** [voila\-dashboards\/voila\-gridstack](/orgs/voila-dashboards/voila-gridstack.md)
+- **All actions it uses:** actions\/checkout\@v2, actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v4, actions\/github\-script\@v3, actions\/github\-script\@v3\.1\.0, actions\/setup\-node\@v2, actions\/setup\-python\@v5, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@main, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, mamba\-org\/setup\-micromamba\@v2
+- **Files:** 300: 134 code, 45 config, 36 notebook, 30 media, 22 web, 17 docs, 16 other

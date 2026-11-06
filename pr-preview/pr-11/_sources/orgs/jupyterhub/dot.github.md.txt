@@ -1,0 +1,34 @@
+# jupyterhub\/\.github
+
+
+
+other · [on GitHub](https://github.com/jupyterhub/.github) · scanned at commit [1ce38bf](https://github.com/jupyterhub/.github/tree/1ce38bf4a1d1480cbb16c0d7180ef8bb7fca0493)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only community health files \(CODE\_OF\_CONDUCT\.md\, issue templates\, support\.yml\) and its README states it exists to provide default GitHub organization health files\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 10: 5 docs, 3 config, 2 media

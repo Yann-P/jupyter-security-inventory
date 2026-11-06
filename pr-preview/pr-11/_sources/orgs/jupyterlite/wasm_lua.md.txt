@@ -1,0 +1,34 @@
+# jupyterlite\/wasm\_lua
+
+Lua VM running in a WASM environment
+
+example · [on GitHub](https://github.com/jupyterlite/wasm_lua) · scanned at commit [a6aba05](https://github.com/jupyterlite/wasm_lua/tree/a6aba057cce7c4ad915790db1fd6aa34dfed17f9) · fork
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Lua VM \(lua\-5\.3\.4\/src\/\*\.c\) compiled to WASM to run in the browser\, with a demo HTML page \(main\.html\) and no CI workflows\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 79: 62 code, 7 other, 7 web, 2 media, 1 docs

@@ -1,0 +1,34 @@
+# jupyter\-book\/renaissance2026\-myst
+
+
+
+documentation · [on GitHub](https://github.com/jupyter-book/renaissance2026-myst) · scanned at commit [547ca23](https://github.com/jupyter-book/renaissance2026-myst/tree/547ca233e1f9e79151bc85ab4b64b1484b6502d4)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only proposal and coordination documents \(CALL\.md\, LOI\.md\, proposal\.md\) with no code\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 7: 6 docs, 1 other

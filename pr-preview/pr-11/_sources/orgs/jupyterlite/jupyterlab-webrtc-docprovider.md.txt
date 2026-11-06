@@ -1,0 +1,35 @@
+# jupyterlite\/jupyterlab\-webrtc\-docprovider
+
+Document collaboration for JupyterLab and JupyterLite\, powered by y\-webrtc
+
+package · [on GitHub](https://github.com/jupyterlite/jupyterlab-webrtc-docprovider) · scanned at commit [7c3429f](https://github.com/jupyterlite/jupyterlab-webrtc-docprovider/tree/7c3429f78e8e0058f5ac9ecc39336c48e51d18e8)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-webrtc\-docprovider](https://pypi.org/project/jupyterlab-webrtc-docprovider/), [38](https://pypistats.org/packages/jupyterlab-webrtc-docprovider) downloads/month, 0 dependents, last published 2022-04-22; []{.fa-brands .fa-npm} [\@jupyterlite\/webrtc\-docprovider](https://www.npmjs.com/package/@jupyterlite/webrtc-docprovider), [25](https://npm-stat.com/charts.html?package=@jupyterlite/webrtc-docprovider) downloads/month, 0 dependents, last published 2022-04-23
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes untrusted collaboration messages from peers over WebRTC
+- **Why these labels:** The repository is a JupyterLab and JupyterLite extension \(\'jupyterlab\-webrtc\-docprovider\'\) with Python and NPM packages\, documented as \'Document collaboration for JupyterLab and JupyterLite\, powered by y\-webrtc\' in README\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlite\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-webrtc\-docprovider \(2022\-04\-22\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of \@jupyterlite\/webrtc\-docprovider \(2022\-04\-23\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-webrtc\-docprovider \(2022\-04\-22\) allows Python 3\.7\, which has had no security fixes since 2023\-06\-27\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, pull\_request\_target, push
+- **Publishes:** jupyter\_releaser
+- **Secrets:** none
+- **Actions:** 10, 10 by tag
+- **Build requirements:** jupyter\_packaging, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v3, actions\/checkout\@v3, actions\/download\-artifact\@v3, actions\/github\-script\@v3, actions\/setup\-node\@v2, actions\/setup\-node\@v3, actions\/setup\-python\@v3, actions\/upload\-artifact\@v2, actions\/upload\-artifact\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v1
+- **Files:** 55: 19 code, 14 config, 9 docs, 8 other, 3 media, 2 web

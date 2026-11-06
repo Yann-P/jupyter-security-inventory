@@ -1,0 +1,35 @@
+# jupyterhub\/batchspawner
+
+Custom Spawner for Jupyterhub to start servers in batch scheduled systems
+
+package · [on GitHub](https://github.com/jupyterhub/batchspawner) · scanned at commit [451dcf1](https://github.com/jupyterhub/batchspawner/tree/451dcf171cff7883904845d5de8c5e5e250b64d9)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [batchspawner](https://pypi.org/project/batchspawner/), [8,938](https://pypistats.org/packages/batchspawner) downloads/month, 5 dependents, last published 2024-03-19
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Repository contains a Python package named batchspawner \(pyproject\.toml\, setup\.py\, package directory batchspawner\/\) that provides a custom JupyterHub spawner\, with CI publishing to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of batchspawner \(2024\-03\-19\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of batchspawner \(2024\-03\-19\) allows Python 3\.6\, which has had no security fixes since 2021\-12\-23\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, release, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** PYPI\_TOKEN
+- **Actions:** 4, 4 by tag. Third-party, not pinned: codecov\/codecov\-action\@v5
+- **Build requirements:** setuptools, wheel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v5, actions\/setup\-node\@v5, actions\/setup\-python\@v6, codecov\/codecov\-action\@v5
+- **Files:** 23: 9 code, 6 config, 5 docs, 3 other

@@ -1,0 +1,18 @@
+organization,repos it applies to,done,partial,missing
+jupyterhub,50,4,0,46
+jupyterlab,37,4,0,33
+jupyter,36,4,0,32
+jupyter-xeus,29,0,0,29
+jupyter-book,25,0,0,25
+jupytercon,19,0,0,19
+jupyter-server,16,0,0,16
+jupyterlite,15,0,0,15
+jupyterhealth,17,5,3,9
+jupyter-widgets,10,0,0,10
+voila-dashboards,9,0,0,9
+binder-examples,5,0,0,5
+ipython,10,6,0,4
+jupyter-governance,3,0,0,3
+binderhub-ci-repos,1,0,0,1
+jupyter-incubator,1,0,0,1
+voila-gallery,1,0,0,1

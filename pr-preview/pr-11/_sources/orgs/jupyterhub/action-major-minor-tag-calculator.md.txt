@@ -1,0 +1,36 @@
+# jupyterhub\/action\-major\-minor\-tag\-calculator
+
+GitHub action to calculate major and minor semver tags\, e\.g\. for tagging containers
+
+tooling · [on GitHub](https://github.com/jupyterhub/action-major-minor-tag-calculator) · scanned at commit [f93a48b](https://github.com/jupyterhub/action-major-minor-tag-calculator/tree/f93a48b0c9dfc41a8940353bd8cfb24351c5294b)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** 4 in their CI
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains action\.yml\, src\/index\.js\, and dist\/index\.js\, indicating a GitHub Action used to calculate version tags for container image tagging\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, release
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 4, 2 by commit, 2 by tag
+- **Build requirements:** none
+
+## Details
+
+- **Run it in their CI:** [jupyterhub\/configurable\-http\-proxy](/orgs/jupyterhub/configurable-http-proxy.md), [jupyterhub\/docker\-image\-cleaner](/orgs/jupyterhub/docker-image-cleaner.md), [jupyterhub\/jupyter\-remote\-desktop\-proxy](/orgs/jupyterhub/jupyter-remote-desktop-proxy.md), [jupyterhub\/jupyterhub\-container\-images](/orgs/jupyterhub/jupyterhub-container-images.md)
+- **All actions it uses:** Actions\-R\-Us\/actions\-tagger\@330ddfa, actions\/checkout\@v7, actions\/setup\-node\@v7, stefanzweifel\/git\-auto\-commit\-action\@d0b0110
+- **Files:** 21: 8 config, 6 code, 5 other, 2 docs

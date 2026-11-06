@@ -1,0 +1,34 @@
+# jupyter\/design
+
+Design related materials for Project Jupyter
+
+other · [on GitHub](https://github.com/jupyter/design) · scanned at commit [969b623](https://github.com/jupyter/design/tree/969b623cd3b7428822a758952b8a7d6646fff658)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository primarily contains design assets and documents like logos\, brand guides\, and UI mockups\, as stated in the README\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 104: 90 media, 11 other, 2 web, 1 docs

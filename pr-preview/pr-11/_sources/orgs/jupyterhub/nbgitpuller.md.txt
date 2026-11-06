@@ -1,0 +1,35 @@
+# jupyterhub\/nbgitpuller
+
+Jupyter server extension to sync a git repository one\-way to a local path
+
+package · [on GitHub](https://github.com/jupyterhub/nbgitpuller) · scanned at commit [f7dce43](https://github.com/jupyterhub/nbgitpuller/tree/f7dce435044a769dfab00ed1214a7851f0b60797)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [nbgitpuller](https://pypi.org/project/nbgitpuller/), [25,586](https://pypistats.org/packages/nbgitpuller) downloads/month, 6 dependents, last published 2026-03-31
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes git pull operations triggered by user\-provided URLs on a Jupyter server
+- **Why these labels:** nbgitpuller is a Jupyter server extension distributed via PyPI \(published\_packages\) and installed with pip\, with code in nbgitpuller\/handlers\.py that syncs a git repository to a local path\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of nbgitpuller \(2026\-03\-31\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 4, 3 by tag, 1 by branch. Third-party, not pinned: pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** build, jupyter\-packaging, setuptools
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6, actions\/setup\-node\@v6, actions\/setup\-python\@v6, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 54: 17 code, 15 docs, 13 config, 5 other, 2 media, 2 web

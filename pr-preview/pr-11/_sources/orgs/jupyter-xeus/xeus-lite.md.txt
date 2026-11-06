@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-lite
+
+Emscripten\-based middleware for xeus
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-lite) · scanned at commit [b5077c9](https://github.com/jupyter-xeus/xeus-lite/tree/b5077c994171ebd1fce1cc7a58188426d6cafc5b)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a middleware library for xeus using Emscripten\, as evidenced by the README and source files like src\/xserver\_emscripten\.cpp\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: SimenB\/github\-actions\-cpu\-cores\@v2, mamba\-org\/setup\-micromamba\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** SimenB\/github\-actions\-cpu\-cores\@v2, actions\/checkout\@v4, mamba\-org\/setup\-micromamba\@v2
+- **Files:** 25: 11 code, 6 config, 3 other, 3 docs, 2 media

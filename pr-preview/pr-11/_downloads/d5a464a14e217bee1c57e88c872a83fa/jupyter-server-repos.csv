@@ -1,0 +1,17 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+jupyter-server/jupyter_server,package,PYPI:jupyter-server,32556872,5053,,,1,,authenticates users and serves API endpoints for Jupyter web applications
+jupyter-server/jupyter_server_terminals,package,PYPI:jupyter-server-terminals,28569855,5081,,,,,executes terminal commands on behalf of authenticated users
+jupyter-server/jupyter_ydoc,package,PYPI:jupyter-ydoc,864279,122,,,,,
+jupyter-server/jupyter_server_fileid,package,PYPI:jupyter-server-fileid,813515,326,,,,,
+jupyter-server/kernel_gateway,application,PYPI:jupyter-kernel-gateway,555039,15,,,,,authenticates requests and executes untrusted notebook code on kernels
+jupyter-server/jupyter_server_mathjax,package,PYPI:jupyter-server-mathjax,47561,22,,,,,
+jupyter-server/jupyter-resource-usage,package,PYPI:jupyter-resource-usage,43356,12,,,,,
+jupyter-server/pytest-jupyter,package,PYPI:pytest-jupyter,25571,1,,,,,
+jupyter-server/enterprise_gateway,package,PYPI:jupyter-enterprise-gateway,10266,1,,,,,authenticates users and spawns remote kernel processes
+jupyter-server/jupyter-scheduler,package,PYPI:jupyter-scheduler,9489,5,,,,,
+jupyter-server/gateway_provisioners,package,PYPI:gateway-provisioners,2807,0,,,,,
+jupyter-server/fps,package,PYPI:fps,2373,79,,,,,
+jupyter-server/jupyverse,application,PYPI:jupyverse-api,1705,43,,,,,serves Jupyter notebooks and executes user code
+jupyter-server/jupyter_releaser,tooling,PYPI:jupyter-releaser,1278,0,,,62,,
+jupyter-server/synchronizer,package,PYPI:jupyter-server-synchronizer,37,0,,,,,
+jupyter-server/extension-cookiecutter,tooling,,,,,,,,

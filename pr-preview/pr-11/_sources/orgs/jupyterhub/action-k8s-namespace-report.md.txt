@@ -1,0 +1,36 @@
+# jupyterhub\/action\-k8s\-namespace\-report
+
+GitHub Action to report info and logs from the current namespace\.
+
+tooling · [on GitHub](https://github.com/jupyterhub/action-k8s-namespace-report) · scanned at commit [c218f10](https://github.com/jupyterhub/action-k8s-namespace-report/tree/c218f103e8e9aa6169879b4317401469c2e925ed)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** 7 in their CI
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a GitHub Action with action\.yaml and a k8s\-namespace\-report script\, and its README shows usage in a CI workflow\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, release, workflow\_dispatch
+- **Publishes:** cloud
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: Actions\-R\-Us\/actions\-tagger\@v2
+- **Build requirements:** none
+
+## Details
+
+- **Run it in their CI:** [binder\-examples\/zero\-to\-jupyterhub\-k8s](/orgs/binder-examples/zero-to-jupyterhub-k8s.md), [jupyterhub\/action\-k3s\-helm](/orgs/jupyterhub/action-k3s-helm.md), [jupyterhub\/action\-k8s\-await\-workloads](/orgs/jupyterhub/action-k8s-await-workloads.md), [jupyterhub\/binderhub](/orgs/jupyterhub/binderhub.md), [jupyterhub\/kubespawner](/orgs/jupyterhub/kubespawner.md), [jupyterhub\/pebble\-helm\-chart](/orgs/jupyterhub/pebble-helm-chart.md), [jupyterhub\/zero\-to\-jupyterhub\-k8s](/orgs/jupyterhub/zero-to-jupyterhub-k8s.md)
+- **All actions it uses:** Actions\-R\-Us\/actions\-tagger\@v2, actions\/checkout\@v6, [jupyterhub\/action\-k3s\-helm](/orgs/jupyterhub/action-k3s-helm.md)\@v4
+- **Files:** 14: 9 config, 3 docs, 2 other

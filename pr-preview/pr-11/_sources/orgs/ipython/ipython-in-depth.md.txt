@@ -1,0 +1,34 @@
+# ipython\/ipython\-in\-depth
+
+IPython and Jupyter in\-depth Tutorial\, first presented at PyCon 2012
+
+documentation · [on GitHub](https://github.com/ipython/ipython-in-depth) · scanned at commit [b2f9442](https://github.com/ipython/ipython-in-depth/tree/b2f9442aa52118dec44ccb0ee749ea63ac578bba)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a large collection of tutorial notebooks under examples\/ and a Binder setup\, making it an educational resource rather than installable software\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 249: 94 notebook, 84 code, 41 media, 22 other, 4 docs, 2 config, 1 web, 1 data

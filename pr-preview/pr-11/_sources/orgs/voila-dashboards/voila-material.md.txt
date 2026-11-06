@@ -1,0 +1,34 @@
+# voila\-dashboards\/voila\-material
+
+Material design template for Voilà
+
+package · [on GitHub](https://github.com/voila-dashboards/voila-material) · scanned at commit [897c12d](https://github.com/voila-dashboards/voila-material/tree/897c12d793a5f42d61594eaf08b82454639c729a)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [voila\-material](https://pypi.org/project/voila-material/), [303](https://pypistats.org/packages/voila-material) downloads/month, 1 dependents, last published 2023-03-07
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides a pip\/conda installable Voilà template\, with template files under share\/jupyter\/voila\/templates\/material and a published PyPI package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of voila\-dashboards\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of voila\-material \(2023\-03\-07\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of voila\-material \(2023\-03\-07\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 27: 8 media, 8 web, 4 config, 2 other, 2 notebook, 2 code, 1 docs

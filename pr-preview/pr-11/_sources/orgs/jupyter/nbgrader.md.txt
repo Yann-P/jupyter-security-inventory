@@ -1,0 +1,35 @@
+# jupyter\/nbgrader
+
+A system for assigning and grading notebooks
+
+package · [on GitHub](https://github.com/jupyter/nbgrader) · scanned at commit [91d5c12](https://github.com/jupyter/nbgrader/tree/91d5c12f989bda6f4937997d63b5f6608b28aac5)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [nbgrader](https://pypi.org/project/nbgrader/), [11,171](https://pypistats.org/packages/nbgrader) downloads/month, 17 dependents, last published 2026-09-30; []{.fa-brands .fa-npm} [\@jupyter\/nbgrader](https://www.npmjs.com/package/@jupyter/nbgrader), [67](https://npm-stat.com/charts.html?package=@jupyter/nbgrader) downloads/month, 0 dependents, last published 2026-09-30; []{.fa-brands .fa-npm} [nbgrader](https://www.npmjs.com/package/nbgrader), [58](https://npm-stat.com/charts.html?package=nbgrader) downloads/month, 0 dependents, last published 2024-03-26
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes and grades user\-submitted Jupyter notebooks in multi\-user deployments
+- **Why these labels:** The repository is nbgrader\, a package with Python and TypeScript code \(nbgrader\/ and src\/\) published to PyPI and npm\, as shown by pyproject\.toml\, package\.json\, and CI workflows\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of nbgrader \(2026\-09\-30\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** partial. The latest version of nbgrader \(2024\-03\-26\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** done. Its latest PyPI release requires at least Python 3\.11\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, pull\_request\_target, push, release, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN, github\_token
+- **Actions:** 5, 5 by tag
+- **Build requirements:** hatchling, jupyter\-builder
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 609: 275 code, 87 notebook, 71 media, 67 docs, 47 config, 38 other, 20 web, 4 data

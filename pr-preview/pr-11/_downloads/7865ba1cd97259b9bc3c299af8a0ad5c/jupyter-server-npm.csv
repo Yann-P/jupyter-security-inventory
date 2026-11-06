@@ -1,0 +1,4 @@
+package,repository,downloads/month,dependents,last published
+@jupyter/ydoc,jupyter-server/jupyter_ydoc,478864,1090,2026-11-02
+@jupyter-server/resource-usage,jupyter-server/jupyter-resource-usage,2382,0,2026-08-11
+@jupyterlab/scheduler,jupyter-server/jupyter-scheduler,133,0,2025-05-16

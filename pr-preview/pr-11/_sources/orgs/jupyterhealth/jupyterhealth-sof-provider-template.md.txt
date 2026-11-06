@@ -1,0 +1,35 @@
+# jupyterhealth\/jupyterhealth\-sof\-provider\-template
+
+
+
+application · [on GitHub](https://github.com/jupyterhealth/jupyterhealth-sof-provider-template) · scanned at commit [4a86d18](https://github.com/jupyterhealth/jupyterhealth-sof-provider-template/tree/4a86d186a433c326504378bdb49983848d6f9623)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it authenticates via SMART on FHIR and renders patient data from EHR
+- **Why these labels:** This is a template repository for building a SMART on FHIR provider\-launch application that renders patient data via Voilà\, as stated in the README and evidenced by files like dashboard\.ipynb and provider\_app\/\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** partial via pre\-commit. Pre\-commit hook\, but nothing shows that CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/jupyterhealth/jupyterhealth-sof-provider-template/blob/4a86d186a433c326504378bdb49983848d6f9623/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** container
+- **Secrets:** none
+- **Actions:** 7, all pinned to a commit
+- **Build requirements:** setuptools
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/setup\-python\@5fda3b9, docker\/build\-push\-action\@c3c9e26, docker\/login\-action\@783ae9c, docker\/metadata\-action\@8e671d8, docker\/setup\-buildx\-action\@f87e599, docker\/setup\-qemu\-action\@9901266
+- **Files:** 35: 15 code, 7 config, 6 other, 5 docs, 2 notebook

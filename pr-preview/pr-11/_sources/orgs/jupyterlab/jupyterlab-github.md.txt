@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\-github
+
+GitHub integration for JupyterLab
+
+package · [on GitHub](https://github.com/jupyterlab/jupyterlab-github) · scanned at commit [6ab4685](https://github.com/jupyterlab/jupyterlab-github/tree/6ab46858aa5dc0b93510b8fdb52e9066178847ea)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-github](https://pypi.org/project/jupyterlab-github/), [1,293](https://pypistats.org/packages/jupyterlab-github) downloads/month, 0 dependents, last published 2023-08-03; []{.fa-brands .fa-npm} [\@jupyterlab\/github](https://www.npmjs.com/package/@jupyterlab/github), [153](https://npm-stat.com/charts.html?package=@jupyterlab/github) downloads/month, 0 dependents, last published 2023-08-02
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a JupyterLab extension with both Python server code and TypeScript client code\, published on PyPI and npm\, as seen from package\.json\, setup\.py\, and published\_packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-github \(2023\-08\-03\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of \@jupyterlab\/github \(2023\-08\-02\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-github \(2023\-08\-03\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 7, run on pull\_request, pull\_request\_target, push, release, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY
+- **Actions:** 8, 8 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v3, actions\/github\-script\@v3, actions\/setup\-python\@v4, actions\/upload\-artifact\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 45: 19 config, 9 code, 7 other, 5 media, 3 docs, 2 web

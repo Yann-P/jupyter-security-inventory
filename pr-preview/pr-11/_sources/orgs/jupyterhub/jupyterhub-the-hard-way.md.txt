@@ -1,0 +1,35 @@
+# jupyterhub\/jupyterhub\-the\-hard\-way
+
+Understanding JupyterHub by deploying it step by step
+
+documentation · [on GitHub](https://github.com/jupyterhub/jupyterhub-the-hard-way) · scanned at commit [d938ac4](https://github.com/jupyterhub/jupyterhub-the-hard-way/tree/d938ac4ab17e194e3d15c7b86fa54dfeb5661b90)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only tutorial documentation \(docs\/\*\.md\) with no code\, packages\, or deployment configs\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6, actions\/setup\-python\@v6
+- **Files:** 25: 14 docs, 5 config, 4 media, 2 other

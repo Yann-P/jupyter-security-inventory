@@ -1,0 +1,35 @@
+# jupyterlite\/cockle
+
+In\-browser bash\-like shell implemented in TypeScript\.
+
+package · [on GitHub](https://github.com/jupyterlite/cockle) · scanned at commit [d424f00](https://github.com/jupyterlite/cockle/tree/d424f00ae7996fd8e65bfbd19b6eee19dc337d4a)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [\@jupyterlite\/cockle](https://www.npmjs.com/package/@jupyterlite/cockle), [2,094](https://npm-stat.com/charts.html?package=@jupyterlite/cockle) downloads/month, 3 dependents, last published 2026-09-29
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterlite\.github\.io\/cockle
+- **Security boundary:** no
+- **Why these labels:** It is a TypeScript library implementing an in\-browser bash\-like shell\, published as NPM package \@jupyterlite\/cockle and used by the JupyterLite terminal extension\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlite\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm version used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 6, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser, website
+- **Secrets:** APP\_PRIVATE\_KEY, CODECOV\_TOKEN, NPM\_TOKEN
+- **Actions:** 10, 9 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v5, mamba\-org\/setup\-micromamba\@main, mamba\-org\/setup\-micromamba\@v3
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/create\-github\-app\-token\@v3, actions\/deploy\-pages\@v5, actions\/upload\-artifact\@v7, actions\/upload\-pages\-artifact\@v5, codecov\/codecov\-action\@v5, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, mamba\-org\/setup\-micromamba\@main, mamba\-org\/setup\-micromamba\@v3
+- **Files:** 256: 217 code, 23 config, 5 other, 5 docs, 4 web, 2 media

@@ -1,0 +1,34 @@
+# jupyter\-governance\/ec\-team\-compass
+
+A repository for Executive Council discussion\, syncing\, and meeting notes\. 
+
+documentation · [on GitHub](https://github.com/jupyter-governance/ec-team-compass) · scanned at commit [b6730b3](https://github.com/jupyter-governance/ec-team-compass/tree/b6730b35cdfc4edf1a311ad313399cd77a12b02d)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains meeting notes\, governance documents\, and documentation built with MyST\/Read the Docs\; no code besides noxfile\.py for docs\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on issues
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 28: 18 docs, 4 media, 3 config, 2 other, 1 code

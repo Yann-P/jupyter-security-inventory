@@ -1,0 +1,34 @@
+# binder\-examples\/bokeh
+
+
+
+example · [on GitHub](https://github.com/binder-examples/bokeh) · scanned at commit [407bbe9](https://github.com/binder-examples/bokeh/tree/407bbe93bbfd2d0a1e3bcd10e2571a61a55661aa)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Repository is a Binder example demonstrating how to run a Bokeh server\, with a Binder badge and example app files like bokeh\-app\/main\.py\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 9: 3 other, 2 docs, 2 code, 1 data, 1 config

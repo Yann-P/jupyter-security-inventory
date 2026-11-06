@@ -1,0 +1,35 @@
+# jupyter\-book\/jupyter\-book
+
+Create beautiful\, publication\-quality books and documents from computational content\.
+
+package · [on GitHub](https://github.com/jupyter-book/jupyter-book) · scanned at commit [526cfa7](https://github.com/jupyter-book/jupyter-book/tree/526cfa7e76db12b0f4b6b08bbe8910439849413b)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-book](https://pypi.org/project/jupyter-book/), [217,891](https://pypistats.org/packages/jupyter-book) downloads/month, 22 dependents, last published 2026-09-23; []{.fa-brands .fa-npm} [jupyter\-book](https://www.npmjs.com/package/jupyter-book), [4,591](https://npm-stat.com/charts.html?package=jupyter-book) downloads/month, 0 dependents, last published 2026-09-23
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** This repository provides the \'jupyter\-book\' package \(published on PyPI and npm\) and a CLI tool for building books from Markdown and notebooks\, as evidenced by the pyproject\.toml\, package\.json\, and the \_\_main\_\_\.py entry point\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-book\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-book \(2026\-09\-23\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm version used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-book \(2026\-09\-23\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, push, release, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser, website
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 10, 6 by commit, 4 by tag
+- **Build requirements:** hatch\-deps\-selector, hatch\-nodejs\-version, hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/configure\-pages\@45bfe01, actions\/create\-github\-app\-token\@64ab729, actions\/deploy\-pages\@v5, actions\/setup\-node\@949feb2, actions\/setup\-python\@v7\.0\.0, actions\/upload\-artifact\@cf430e0, actions\/upload\-pages\-artifact\@fc324d3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 80: 42 docs, 17 config, 16 code, 3 media, 2 other

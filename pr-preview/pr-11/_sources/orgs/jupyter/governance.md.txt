@@ -1,0 +1,35 @@
+# jupyter\/governance
+
+The governance process and model for Project Jupyter
+
+documentation · [on GitHub](https://github.com/jupyter/governance) · scanned at commit [e2ba535](https://github.com/jupyter/governance/tree/e2ba5352344f3b336d3dc43ed0bfe8ebab8533df)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyter\.org\/governance
+- **Security boundary:** no
+- **Why these labels:** The repository contains governance process documents\, meeting notes\, election data\, and a website built with MyST and deployed via GitHub Pages\, indicating documentation purposes\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 6, 6 by tag. Third-party, not pinned: astral\-sh\/setup\-uv\@v4, peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v4, actions\/checkout\@v4, actions\/setup\-python\@v5, actions\/upload\-artifact\@v4, astral\-sh\/setup\-uv\@v4, peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Files:** 64: 46 docs, 9 config, 3 code, 3 media, 2 other, 1 data

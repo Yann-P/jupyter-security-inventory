@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\-desktop
+
+JupyterLab desktop application\, based on Electron\.
+
+application · [on GitHub](https://github.com/jupyterlab/jupyterlab-desktop) · scanned at commit [0d7e537](https://github.com/jupyterlab/jupyterlab-desktop/tree/0d7e537b04e49c80ed61911d895273eee9af0f44)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo is an Electron\-based desktop application for JupyterLab\, as stated in its README and evidenced by files like package\.json\, electron\-builder\-scripts\, and media\/screenshots\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via workflow command. Runs in a workflow\. Files: [\.github\/workflows\/zizmor\.yml](https://github.com/jupyterlab/jupyterlab-desktop/blob/0d7e537b04e49c80ed61911d895273eee9af0f44/.github/workflows/zizmor.yml)
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** container
+- **Secrets:** APPLEID, APPLEIDPASS, APPLE\_TEAM\_ID, APP\_PRIVATE\_KEY, CSC\_KEY\_PASSWORD, CSC\_LINK, ENV\_INSTALLER\_KEYCHAIN\_PASS, SNAPCRAFT\_STORE\_CREDENTIALS, WINGET\_TOKEN
+- **Actions:** 16, all pinned to a commit
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@34e1148, actions\/checkout\@93cb6ef, actions\/checkout\@de0fac2, actions\/create\-github\-app\-token\@fee1f7d, actions\/download\-artifact\@d3f86a1, actions\/github\-script\@f28e40c, actions\/setup\-node\@a0853c2, actions\/setup\-python\@a309ff8, actions\/upload\-artifact\@ea165f8, astral\-sh\/setup\-uv\@cec2083, conda\-incubator\/setup\-miniconda\@fc2d68f, github\/codeql\-action\@c10b806, snapcore\/action\-publish\@214b86e, softprops\/action\-gh\-release\@3bb1273, svenstaro\/upload\-release\-action\@29e53e9, vedantmgoyal9\/winget\-releaser\@4ffc788
+- **Files:** 223: 116 code, 51 media, 28 config, 15 other, 12 docs, 1 web

@@ -1,0 +1,13 @@
+organization,repos it applies to,done,partial,missing
+jupyterhub,33,0,0,33
+jupyterlab,22,0,0,22
+jupyter,23,2,0,21
+jupyter-server,15,2,0,13
+jupyterlite,11,0,0,11
+ipython,9,2,0,7
+jupyter-widgets,7,0,0,7
+voila-dashboards,7,0,0,7
+jupyter-book,4,0,0,4
+jupyter-xeus,4,0,0,4
+jupyterhealth,3,1,0,2
+jupyter-incubator,1,0,0,1

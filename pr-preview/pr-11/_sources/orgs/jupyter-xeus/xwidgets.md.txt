@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xwidgets
+
+C\+\+ backend for Jupyter interactive widgets
+
+package · [on GitHub](https://github.com/jupyter-xeus/xwidgets) · scanned at commit [dc7e49b](https://github.com/jupyter-xeus/xwidgets/tree/dc7e49bf9b6ab05c4b2f7a0848772e92279e40de)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains C\+\+ source code and headers in src\/ and include\/xwidgets\/\, a CMake build system\, and documentation for a library that serves as a backend for Jupyter widgets\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 8, 8 by tag. Third-party, not pinned: SimenB\/github\-actions\-cpu\-cores\@v2, mamba\-org\/setup\-micromamba\@v2, nick\-invision\/retry\@v2, nick\-invision\/retry\@v3, pre\-commit\/action\@v3\.0\.1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** SimenB\/github\-actions\-cpu\-cores\@v2, actions\/checkout\@v6, actions\/deploy\-pages\@v4, actions\/upload\-pages\-artifact\@v3, mamba\-org\/setup\-micromamba\@v2, nick\-invision\/retry\@v2, nick\-invision\/retry\@v3, pre\-commit\/action\@v3\.0\.1
+- **Files:** 145: 99 code, 13 media, 11 config, 10 docs, 6 other, 3 web, 3 notebook

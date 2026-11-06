@@ -1,0 +1,35 @@
+# jupyter\/nbformat
+
+Reference implementation of the Jupyter Notebook format
+
+package · [on GitHub](https://github.com/jupyter/nbformat) · scanned at commit [cfb73af](https://github.com/jupyter/nbformat/tree/cfb73afdd2a7f358953f2a34f747fd0d0e9d6288)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [nbformat](https://pypi.org/project/nbformat/), [76,592,205](https://pypistats.org/packages/nbformat) downloads/month, 8,382 dependents, last published 2026-08-17; []{.fa-brands .fa-npm} [nbformat\-schema](https://www.npmjs.com/package/nbformat-schema), [274](https://npm-stat.com/charts.html?package=nbformat-schema) downloads/month, 0 dependents, last published 2024-04-04
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** nbformat is a Python package \(\`pip install nbformat\`\) providing APIs and schemas for the Jupyter Notebook format\, as stated in its README and published as PYPI\:nbformat\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via workflow command\, pre\-commit. Runs in a workflow\. Files: [\.github\/workflows\/zizmor\.yml](https://github.com/jupyter/nbformat/blob/cfb73afdd2a7f358953f2a34f747fd0d0e9d6288/.github/workflows/zizmor.yml), [\.pre\-commit\-config\.yaml](https://github.com/jupyter/nbformat/blob/cfb73afdd2a7f358953f2a34f747fd0d0e9d6288/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of nbformat \(2026\-08\-17\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of nbformat\-schema \(2024\-04\-04\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of nbformat \(2026\-08\-17\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY
+- **Actions:** 6, 6 by tag. Third-party, not pinned: astral\-sh\/setup\-uv\@v7
+- **Build requirements:** hatch\-nodejs\-version, hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/create\-github\-app\-token\@v3, astral\-sh\/setup\-uv\@v7, github\/codeql\-action\@v4\.37\.6, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 130: 76 code, 20 notebook, 19 config, 8 docs, 7 other

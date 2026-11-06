@@ -1,0 +1,6 @@
+repo,kind,live service
+jupyterlite/demo,example,jupyterlite.github.io/demo
+jupyterlite/sphinx-demo,example,jupyterlite.github.io/sphinx-demo
+jupyterlite/xeus-lite-demo,example,GitHub Pages site
+jupyterlite/.github,documentation,
+jupyterlite/wasm_lua,example,

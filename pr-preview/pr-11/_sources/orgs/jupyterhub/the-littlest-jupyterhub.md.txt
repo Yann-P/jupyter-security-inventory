@@ -1,0 +1,35 @@
+# jupyterhub\/the\-littlest\-jupyterhub
+
+Simple JupyterHub distribution for 1\-100 users on a single server
+
+package · [on GitHub](https://github.com/jupyterhub/the-littlest-jupyterhub) · scanned at commit [4ad8289](https://github.com/jupyterhub/the-littlest-jupyterhub/tree/4ad828943d8acaa631708b317a5cfbddb258d3db)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository includes a Python package under \'tljh\/\' with setup\.py and provides a JupyterHub distribution for 1\-100 users\, as described in the README and supported by systemd and traefik configuration code\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6, actions\/setup\-python\@v7, codecov\/codecov\-action\@v7
+- **Files:** 236: 104 media, 70 docs, 45 code, 9 other, 8 config

@@ -1,0 +1,36 @@
+# jupyter\-widgets\/ipywidgets
+
+Interactive Widgets for the Jupyter Notebook
+
+package · [on GitHub](https://github.com/jupyter-widgets/ipywidgets) · scanned at commit [8ada354](https://github.com/jupyter-widgets/ipywidgets/tree/8ada3542abe85fdc52e2bfeeecc07f8db351cb9c)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [widgetsnbextension](https://pypi.org/project/widgetsnbextension/), [31,834,051](https://pypistats.org/packages/widgetsnbextension) downloads/month, 6,776 dependents, last published 2026-08-18; []{.fa-brands .fa-python} [jupyterlab\-widgets](https://pypi.org/project/jupyterlab-widgets/), [31,433,178](https://pypistats.org/packages/jupyterlab-widgets) downloads/month, 6,800 dependents, last published 2026-08-18; []{.fa-brands .fa-python} [ipywidgets](https://pypi.org/project/ipywidgets/), [31,105,039](https://pypistats.org/packages/ipywidgets) downloads/month, 6,643 dependents, last published 2026-08-18; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/base](https://www.npmjs.com/package/@jupyter-widgets/base), [256,751](https://npm-stat.com/charts.html?package=@jupyter-widgets/base) downloads/month, 227 dependents, last published 2026-08-18; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/controls](https://www.npmjs.com/package/@jupyter-widgets/controls), [212,012](https://npm-stat.com/charts.html?package=@jupyter-widgets/controls) downloads/month, 73 dependents, last published 2026-08-18; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/output](https://www.npmjs.com/package/@jupyter-widgets/output), [139,695](https://npm-stat.com/charts.html?package=@jupyter-widgets/output) downloads/month, 56 dependents, last published 2026-08-18; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/base\-manager](https://www.npmjs.com/package/@jupyter-widgets/base-manager), [123,708](https://npm-stat.com/charts.html?package=@jupyter-widgets/base-manager) downloads/month, 60 dependents, last published 2026-08-18; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/jupyterlab\-manager](https://www.npmjs.com/package/@jupyter-widgets/jupyterlab-manager), [92,937](https://npm-stat.com/charts.html?package=@jupyter-widgets/jupyterlab-manager) downloads/month, 49 dependents, last published 2026-08-18; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/schema](https://www.npmjs.com/package/@jupyter-widgets/schema), [77,767](https://npm-stat.com/charts.html?package=@jupyter-widgets/schema) downloads/month, 38 dependents, last published 2024-08-22; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/html\-manager](https://www.npmjs.com/package/@jupyter-widgets/html-manager), [75,136](https://npm-stat.com/charts.html?package=@jupyter-widgets/html-manager) downloads/month, 32 dependents, last published 2026-08-18
+- **Container images:** none
+- **Run by other repositories:** 1 in their builds
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Repo publishes multiple PyPI and NPM packages \(ipywidgets\, widgetsnbextension\, jupyterlab\-widgets\) as core interactive widgets library\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-widgets\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest releases of widgetsnbextension \(2026\-08\-18\)\, jupyterlab\-widgets \(2026\-08\-18\) and ipywidgets \(2026\-08\-18\) have no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest versions of \@jupyter\-widgets\/base \(2026\-08\-18\)\, \@jupyter\-widgets\/controls \(2026\-08\-18\)\, \@jupyter\-widgets\/output \(2026\-08\-18\) and 4 more did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest releases of widgetsnbextension \(2026\-08\-18\)\, jupyterlab\-widgets \(2026\-08\-18\) and ipywidgets \(2026\-08\-18\) allow a Python that no longer gets security fixes\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, pull\_request\_target, push, schedule
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 9, 9 by tag. Third-party, not pinned: dessant\/lock\-threads\@v6
+- **Build requirements:** hatchling, jupyter\_builder, jupyter\_packaging, setuptools, wheel
+
+## Details
+
+- **Run it in their builds:** [voila\-dashboards\/voila\-gridstack](/orgs/voila-dashboards/voila-gridstack.md)
+- **All actions it uses:** actions\/cache\@v6, actions\/checkout\@v7, actions\/download\-artifact\@v4, actions\/github\-script\@v9, actions\/setup\-node\@v6, actions\/setup\-python\@v6, actions\/stale\@v11, actions\/upload\-artifact\@v4, dessant\/lock\-threads\@v6
+- **Files:** 494: 201 code, 94 media, 69 config, 49 docs, 35 other, 27 notebook, 19 web

@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\-git
+
+A Git extension for JupyterLab
+
+package · [on GitHub](https://github.com/jupyterlab/jupyterlab-git) · scanned at commit [006b477](https://github.com/jupyterlab/jupyterlab-git/tree/006b477839a2e718a8d3823901acaa7915cef288)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-git](https://pypi.org/project/jupyterlab-git/), [89,418](https://pypistats.org/packages/jupyterlab-git) downloads/month, 19 dependents, last published 2026-10-07; []{.fa-brands .fa-python} [jupyterlab\-git\-core](https://pypi.org/project/jupyterlab-git-core/), [40,856](https://pypistats.org/packages/jupyterlab-git-core) downloads/month, 21 dependents, last published 2026-10-07; []{.fa-brands .fa-npm} [\@jupyterlab\/git](https://www.npmjs.com/package/@jupyterlab/git), [2,448](https://npm-stat.com/charts.html?package=@jupyterlab/git) downloads/month, 1 dependents, last published 2026-10-07
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a JupyterLab extension for Git version control\, providing a Python package and npm package for installation\, as evidenced by package\.json\, pyproject\.toml\, and published packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest releases of jupyterlab\-git \(2026\-10\-07\) and jupyterlab\-git\-core \(2026\-10\-07\) have no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm version used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest releases of jupyterlab\-git \(2026\-10\-07\) and jupyterlab\-git\-core \(2026\-10\-07\) allow a Python that no longer gets security fixes\.
+
+## CI and releases
+
+- **Workflows:** 8, run on issue\_comment, pull\_request, pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN, github\_token
+- **Actions:** 9, 8 by tag, 1 by branch
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyter\-builder
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v3, actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v4\.1\.7, actions\/setup\-python\@v4, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@main, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 258: 154 code, 39 config, 24 media, 11 docs, 10 other, 9 notebook, 7 web, 4 data

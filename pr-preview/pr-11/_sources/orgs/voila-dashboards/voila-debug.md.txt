@@ -1,0 +1,34 @@
+# voila\-dashboards\/voila\-debug
+
+Voilà template to show debug information
+
+package · [on GitHub](https://github.com/voila-dashboards/voila-debug) · scanned at commit [e1ea954](https://github.com/voila-dashboards/voila-debug/tree/e1ea954d55ca72cb11e361045f893e06404e0bb2)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** This repo is a Voilà template installed via pip\, containing template files and static assets for Voilà applications\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 14: 3 other, 3 config, 3 code, 2 web, 1 docs, 1 notebook, 1 media

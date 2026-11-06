@@ -1,0 +1,35 @@
+# jupyterhub\/ltiauthenticator
+
+A JupyterHub authenticator for LTI
+
+package · [on GitHub](https://github.com/jupyterhub/ltiauthenticator) · scanned at commit [c0c3bf3](https://github.com/jupyterhub/ltiauthenticator/tree/c0c3bf3a7a12f81fe09ad858a102a3d6a17fe5d7)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterhub\-ltiauthenticator](https://pypi.org/project/jupyterhub-ltiauthenticator/), [1,725](https://pypistats.org/packages/jupyterhub-ltiauthenticator) downloads/month, 0 dependents, last published 2026-03-26
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it authenticates users and authorizes JupyterHub access via LTI
+- **Why these labels:** The repository implements LTI authentication for JupyterHub\, as evidenced by README and code in ltiauthenticator\/\, making it a package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterhub\-ltiauthenticator \(2026\-03\-26\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 9, 6 by commit, 3 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@8e8c483, actions\/checkout\@v6, actions\/download\-artifact\@3e5f45b, actions\/setup\-node\@53b8394, actions\/setup\-python\@83679a8, actions\/setup\-python\@v6, actions\/upload\-artifact\@bbbca2d, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@ed0c539
+- **Files:** 65: 35 code, 16 docs, 7 config, 4 other, 2 media, 1 web

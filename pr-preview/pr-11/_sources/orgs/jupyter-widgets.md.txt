@@ -1,0 +1,86 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyter\-widgets
+
+[github.com/jupyter-widgets](https://github.com/jupyter-widgets) has 12 public repositories: 7 publish a package and 1 deploys a live service.
+
+[Security topics (5)](#security-topics) · [Repositories (12)](#repositories) · [Packages (22)](#packages)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyter-widgets-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-widgets-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyter-widgets-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-widgets-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupyter-widgets-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-widgets-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyter-widgets-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-widgets-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### npm
+
+{download}`Download CSV </_generated/downloads/jupyter-widgets-npm.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-widgets-npm.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyter-widgets/ipywidgets
+jupyter-widgets/traittypes
+jupyter-widgets/ipyleaflet
+jupyter-widgets/pythreejs
+jupyter-widgets/jupyterlab-sidecar
+jupyter-widgets/ipydatagrid
+jupyter-widgets/midicontrols
+jupyter-widgets/team-compass
+jupyter-widgets/tutorial
+jupyter-widgets/tutorial-jupyterlite
+jupyter-widgets/widget-cookiecutter
+jupyter-widgets/widget-ts-cookiecutter
+```

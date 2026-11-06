@@ -1,0 +1,35 @@
+# jupyter\/surveys
+
+Surveys and datasets collected by Project Jupyter
+
+documentation · [on GitHub](https://github.com/jupyter/surveys) · scanned at commit [81bbb9b](https://github.com/jupyter/surveys/tree/81bbb9b0bc578f7c03387da60cd217b09ca34a92)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyter\.github\.io\/surveys
+- **Security boundary:** no
+- **Why these labels:** The repository contains survey datasets\, analysis notebooks\, and documentation\; it\'s not a package\, application\, tooling\, deployment\, or example\, but primarily data and documentation\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/setup\-node\@v4, actions\/upload\-pages\-artifact\@v3
+- **Files:** 71: 20 data, 16 notebook, 12 docs, 11 media, 4 code, 3 config, 3 other, 2 web

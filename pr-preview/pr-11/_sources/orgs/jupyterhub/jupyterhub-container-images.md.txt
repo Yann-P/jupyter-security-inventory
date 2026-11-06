@@ -1,0 +1,35 @@
+# jupyterhub\/jupyterhub\-container\-images
+
+Container images for JupyterHub
+
+application · [on GitHub](https://github.com/jupyterhub/jupyterhub-container-images) · scanned at commit [7a125d7](https://github.com/jupyterhub/jupyterhub-container-images/tree/7a125d71181ee93476afc8345d57aa4e59071c05)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository defines and publishes JupyterHub container images for the Hub\, demo\, and singleuser\, with CI workflows building and pushing containers\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via pre\-commit. Pre\-commit hook\, and CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/jupyterhub/jupyterhub-container-images/blob/7a125d71181ee93476afc8345d57aa4e59071c05/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** container
+- **Secrets:** DOCKERHUB\_TOKEN, DOCKERHUB\_USERNAME, QUAY\_PASSWORD, QUAY\_USERNAME, jupyterhub\_bot\_pat
+- **Actions:** 8, 1 by commit, 7 by tag. Third-party, not pinned: docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-python\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, [jupyterhub\/action\-get\-quayio\-tags](/orgs/jupyterhub/action-get-quayio-tags.md)\@v1\.0\.0, [jupyterhub\/action\-major\-minor\-tag\-calculator](/orgs/jupyterhub/action-major-minor-tag-calculator.md)\@v4, peter\-evans\/create\-pull\-request\@5f6978f
+- **Files:** 20: 8 config, 5 other, 5 docs, 2 code

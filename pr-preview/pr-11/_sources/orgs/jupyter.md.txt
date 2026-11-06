@@ -1,0 +1,146 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyter
+
+[github.com/jupyter](https://github.com/jupyter) has 60 public repositories: 23 publish a package, 5 are security boundaries and 12 deploy a live service.
+
+[Security topics (5)](#security-topics) · [Repositories (60)](#repositories) · [Packages (40)](#packages) · [Images (32)](#images)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyter-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyter-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupyter-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyter-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### npm
+
+{download}`Download CSV </_generated/downloads/jupyter-npm.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-npm.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Images
+
+Only Docker Hub has pull counts; they are all-time and include CI. The tag is `latest`, or the newest tag if there is no `latest`.
+
+{download}`Download CSV </_generated/downloads/jupyter-images.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-images.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyter/jupyter_core
+jupyter/nbformat
+jupyter/jupyter_client
+jupyter/nbclient
+jupyter/nbconvert
+jupyter/terminado
+jupyter/jupyter_events
+jupyter/notebook
+jupyter/notebook_shim
+jupyter/jupyter_console
+jupyter/jupyter
+jupyter/nbclassic
+jupyter/testpath
+jupyter/jupyter-packaging
+jupyter/nbdime
+jupyter/jupyter-sphinx
+jupyter/telemetry
+jupyter/nbgrader
+jupyter/jupyter_kernel_test
+jupyter/sphinxcontrib_github_alt
+jupyter/nbviewer
+jupyter/echo_kernel
+jupyter/papyri
+jupyter/pr-triage-board-bot
+jupyter/dot.github
+jupyter/accessibility
+jupyter/atom-notebook
+jupyter/cdn.jupyter.org
+jupyter/community-committee
+jupyter/cookiecutter-docker-stacks
+jupyter/council
+jupyter/design
+jupyter/distinguished-contributors
+jupyter/docker-stacks
+jupyter/docs-team-compass
+jupyter/enhancement-proposals
+jupyter/foundations-and-standards-team-compass
+jupyter/github-data
+jupyter/governance
+jupyter/ideas
+jupyter/jupyter-communitycalls
+jupyter/jupyter.github.io
+jupyter/jvm-magics
+jupyter/jvm-repr
+jupyter/kernel-protocol
+jupyter/kernel_gateway_demos
+jupyter/kernels-team-compass
+jupyter/markdown
+jupyter/nbconvert-examples
+jupyter/nbmanager
+jupyter/nbviewer.org-deploy
+jupyter/practice
+jupyter/roadmap
+jupyter/schema
+jupyter/security
+jupyter/software-steering-council-team-compass
+jupyter/surveys
+jupyter/team-compass-template
+jupyter/try-jupyter
+jupyter/try.jupyter.org
+```

@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-nelson
+
+Jupyter kernel for Nelson
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-nelson) · scanned at commit [786e575](https://github.com/jupyter-xeus/xeus-nelson/tree/786e575970f8e6d34ea9807de67e430371512739)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains source code for a Jupyter kernel \(src\/\)\, kernel\.json\, and CMakeLists\.txt for building\/installing the kernel\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, mamba\-org\/setup\-micromamba\@v1
+- **Files:** 42: 11 code, 10 config, 8 media, 7 docs, 4 other, 1 web, 1 notebook

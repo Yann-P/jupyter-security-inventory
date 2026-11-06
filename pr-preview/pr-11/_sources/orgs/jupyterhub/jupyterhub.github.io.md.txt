@@ -1,0 +1,35 @@
+# jupyterhub\/jupyterhub\.github\.io
+
+A landing page and overview for the JupyterHub project and team
+
+documentation · [on GitHub](https://github.com/jupyterhub/jupyterhub.github.io) · scanned at commit [12fcc92](https://github.com/jupyterhub/jupyterhub.github.io/tree/12fcc920d1d350a6d0b0d9e87ecca115319708a7)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** hub\.jupyter\.org landing page
+- **Security boundary:** no
+- **Why these labels:** The repo contains a GitHub Pages site with docs\/ content built by mystmd and deployed via \.github\/workflows\/deploy\.yml\, serving a landing page at hub\.jupyter\.org\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, schedule, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/setup\-python\@v2, actions\/upload\-pages\-artifact\@v3
+- **Files:** 16: 4 config, 4 docs, 3 other, 3 code, 2 media

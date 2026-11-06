@@ -1,0 +1,35 @@
+# binder\-examples\/zero\-to\-jupyterhub\-k8s
+
+Helm Chart \& Documentation for deploying JupyterHub on Kubernetes
+
+application · [on GitHub](https://github.com/binder-examples/zero-to-jupyterhub-k8s) · scanned at commit [d078c0e](https://github.com/binder-examples/zero-to-jupyterhub-k8s/tree/d078c0eac148f3bee443f3d0cd18d1dbfacafe01) · fork
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it deploys JupyterHub which authenticates users and spawns multi\-user notebook servers
+- **Why these labels:** Contains Helm chart \(jupyterhub\/Chart\.yaml\, values\.yaml\, templates\) and documentation\; CI publishes Helm chart and container images\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 8, run on issues, pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** container, website, cloud
+- **Secrets:** DOCKER\_PASSWORD, DOCKER\_USERNAME, JUPYTERHUB\_HELM\_CHART\_DEPLOY\_KEY, jupyterhub\_bot\_pat
+- **Actions:** 12, 2 by commit, 10 by tag. Third-party, not pinned: dessant\/support\-requests\@v3, docker\/setup\-buildx\-action\@v2, docker\/setup\-qemu\-action\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/github\-script\@v6, actions\/setup\-python\@v4, actions\/upload\-artifact\@v3, aquasecurity\/trivy\-action\@8bd2f9f, dessant\/support\-requests\@v3, docker\/setup\-buildx\-action\@v2, docker\/setup\-qemu\-action\@v2, [jupyterhub\/action\-k3s\-helm](/orgs/jupyterhub/action-k3s-helm.md)\@v3, [jupyterhub\/action\-k8s\-await\-workloads](/orgs/jupyterhub/action-k8s-await-workloads.md)\@v2, [jupyterhub\/action\-k8s\-namespace\-report](/orgs/jupyterhub/action-k8s-namespace-report.md)\@v1, peter\-evans\/create\-pull\-request\@2b011fa
+- **Files:** 205: 69 config, 60 docs, 33 media, 24 other, 18 code, 1 web

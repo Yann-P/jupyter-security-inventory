@@ -1,0 +1,35 @@
+# jupyterhub\/jupyter\-rsession\-proxy
+
+Jupyter extensions for running an RStudio rsession proxy
+
+package · [on GitHub](https://github.com/jupyterhub/jupyter-rsession-proxy) · scanned at commit [a63034e](https://github.com/jupyterhub/jupyter-rsession-proxy/tree/a63034e8d917cc9f4ae5b885bf7eb598f45bc2a4)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-rsession\-proxy](https://pypi.org/project/jupyter-rsession-proxy/), [5,599](https://pypistats.org/packages/jupyter-rsession-proxy) downloads/month, 1 dependents, last published 2026-05-12
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it proxies RStudio sessions within Jupyter\, handling network traffic between users and RStudio servers
+- **Why these labels:** The repository jupyterhub\/jupyter\-rsession\-proxy contains a Python package with setup\.py\, pyproject\.toml\, and a package directory jupyter\_rsession\_proxy\, and publishes PYPI package jupyter\-rsession\-proxy\, indicating it is a library for proxying RStudio in Jupyter environments\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-rsession\-proxy \(2026\-05\-12\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi, container
+- **Secrets:** none
+- **Actions:** 4, 3 by tag, 1 by branch. Third-party, not pinned: pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/checkout\@v7, actions\/setup\-python\@v7, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 18: 7 config, 5 docs, 2 other, 2 code, 2 media

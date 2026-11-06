@@ -1,0 +1,100 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyter\-xeus
+
+[github.com/jupyter-xeus](https://github.com/jupyter-xeus) has 36 public repositories: 4 publish a package, 6 are security boundaries and 2 deploy a live service.
+
+[Security topics (5)](#security-topics) · [Repositories (36)](#repositories) · [Packages (4)](#packages)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyter-xeus-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-xeus-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyter-xeus-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-xeus-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupyter-xeus-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-xeus-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyter-xeus-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-xeus-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyter-xeus/xeus-python-wheel
+jupyter-xeus/xeus-python-shell
+jupyter-xeus/xeus-robot-wheel
+jupyter-xeus/robotframework-interpreter
+jupyter-xeus/dot.github
+jupyter-xeus/cpp-terminal
+jupyter-xeus/jupyter-xeus.github.io
+jupyter-xeus/xcanvas
+jupyter-xeus/xena
+jupyter-xeus/xeus
+jupyter-xeus/xeus-brainfuck
+jupyter-xeus/xeus-calc
+jupyter-xeus/xeus-client-test
+jupyter-xeus/xeus-cling
+jupyter-xeus/xeus-cookiecutter
+jupyter-xeus/xeus-haskell
+jupyter-xeus/xeus-javascript
+jupyter-xeus/xeus-lite
+jupyter-xeus/xeus-lua
+jupyter-xeus/xeus-nelson
+jupyter-xeus/xeus-octave
+jupyter-xeus/xeus-python
+jupyter-xeus/xeus-qt
+jupyter-xeus/xeus-qt-python
+jupyter-xeus/xeus-r
+jupyter-xeus/xeus-robot
+jupyter-xeus/xeus-sql
+jupyter-xeus/xeus-sqlite
+jupyter-xeus/xeus-uv
+jupyter-xeus/xeus-zmq
+jupyter-xeus/xhale
+jupyter-xeus/xleaflet
+jupyter-xeus/xproperty
+jupyter-xeus/xvega
+jupyter-xeus/xvega-bindings
+jupyter-xeus/xwidgets
+```

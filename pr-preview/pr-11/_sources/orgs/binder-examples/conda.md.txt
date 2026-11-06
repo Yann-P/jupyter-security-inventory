@@ -1,0 +1,35 @@
+# binder\-examples\/conda
+
+Specifying a conda environment with \`environment\.yml\`
+
+example · [on GitHub](https://github.com/binder-examples/conda) · scanned at commit [f00a783](https://github.com/binder-examples/conda/tree/f00a783146e9c6a2ed9726f01fc09fbfbad2f89e)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a Binder example with a notebook \(index\.ipynb\)\, environment\.yml\, and README instructing users to run it on mybinder\.org\, classified as an example\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request\_target
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 1, 1 by branch. Third-party, not pinned: manics\/action\-binderbadge\@main
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** manics\/action\-binderbadge\@main
+- **Files:** 5: 2 config, 1 other, 1 docs, 1 notebook

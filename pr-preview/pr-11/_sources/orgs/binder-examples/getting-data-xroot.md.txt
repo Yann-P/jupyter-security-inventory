@@ -1,0 +1,34 @@
+# binder\-examples\/getting\-data\-xroot
+
+Using the xroot protocol to access very large datasets
+
+example · [on GitHub](https://github.com/binder-examples/getting-data-xroot) · scanned at commit [c13d2a9](https://github.com/binder-examples/getting-data-xroot/tree/c13d2a92cd8e0e2e81773ea21029ef85ac8eabd8)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only a README and LICENSE\, showing a usage example of the XRoot protocol without any deployable code or CI workflows\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 2: 1 other, 1 docs

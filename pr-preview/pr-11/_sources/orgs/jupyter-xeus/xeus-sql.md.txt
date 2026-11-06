@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-sql
+
+Jupyter kernel for SQL databases
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-sql) · scanned at commit [a2b12e5](https://github.com/jupyter-xeus/xeus-sql/tree/a2b12e5c9c6eec6d68d3025346e35a66544bb162)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** xeus\-sql is a Jupyter kernel that enables SQL notebooks\, as evidenced by the kernel\.json file and README usage instructions\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: SimenB\/github\-actions\-cpu\-cores\@v2, mamba\-org\/setup\-micromamba\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** SimenB\/github\-actions\-cpu\-cores\@v2, actions\/checkout\@v4, mamba\-org\/setup\-micromamba\@v2
+- **Files:** 53: 16 docs, 11 code, 8 config, 8 other, 5 notebook, 4 media, 1 data

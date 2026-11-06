@@ -1,0 +1,35 @@
+# jupyterhub\/grafana\-dashboards
+
+Grafana Dashboards useful for k8s \+ JupyterHub
+
+tooling · [on GitHub](https://github.com/jupyterhub/grafana-dashboards) · scanned at commit [f8bf30b](https://github.com/jupyterhub/grafana-dashboards/tree/f8bf30b77c8bab4c109349f46ba6ec655c7d17c6)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides Grafana dashboards as Jsonnet code for JupyterHub deployments\, with documentation on deployment and usage\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 1, 1 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6
+- **Files:** 390: 250 docs, 124 other, 11 config, 4 code, 1 media

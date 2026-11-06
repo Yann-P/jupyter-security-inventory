@@ -1,0 +1,36 @@
+# jupyter\-book\/hatch\-deps\-selector
+
+Select additional dependencies for pyproject\.toml from the environment
+
+tooling · [on GitHub](https://github.com/jupyter-book/hatch-deps-selector) · scanned at commit [d36eb9c](https://github.com/jupyter-book/hatch-deps-selector/tree/d36eb9c0e3957c1aac163fa601d8ae5b464afad7)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [hatch\-deps\-selector](https://pypi.org/project/hatch-deps-selector/), [107](https://pypistats.org/packages/hatch-deps-selector) downloads/month, 0 dependents, last published 2024-09-04
+- **Container images:** none
+- **Run by other repositories:** 2 in their builds
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** It is a Hatch plugin for selecting environment\-specific dependencies in pyproject\.toml\, published to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-book\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of hatch\-deps\-selector \(2024\-09\-04\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of hatch\-deps\-selector \(2024\-09\-04\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, release, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 4, 3 by tag, 1 by branch. Third-party, not pinned: hynek\/build\-and\-inspect\-python\-package\@v2, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **Run it in their builds:** [jupyter\-book\/jupyter\-book](/orgs/jupyter-book/jupyter-book.md), [jupyter\-book\/mystmd](/orgs/jupyter-book/mystmd.md)
+- **All actions it uses:** actions\/checkout\@v4, actions\/download\-artifact\@v4, hynek\/build\-and\-inspect\-python\-package\@v2, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 11: 5 code, 2 config, 2 other, 2 docs

@@ -1,0 +1,35 @@
+# jupyter\-server\/jupyter\-scheduler
+
+Run Jupyter notebooks as jobs
+
+package · [on GitHub](https://github.com/jupyter-server/jupyter-scheduler) · scanned at commit [955883c](https://github.com/jupyter-server/jupyter-scheduler/tree/955883c1b33a7c366df0e3e7d9a9523dff48c9b4)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-scheduler](https://pypi.org/project/jupyter-scheduler/), [9,489](https://pypistats.org/packages/jupyter-scheduler) downloads/month, 5 dependents, last published 2026-08-07; []{.fa-brands .fa-npm} [\@jupyterlab\/scheduler](https://www.npmjs.com/package/@jupyterlab/scheduler), [133](https://npm-stat.com/charts.html?package=@jupyterlab/scheduler) downloads/month, 0 dependents, last published 2025-05-16
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Python package \'jupyter\_scheduler\' and an NPM package \'\@jupyterlab\/scheduler\'\, with published packages on PyPI and NPM\, and CI workflows that publish releases\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-scheduler \(2026\-08\-07\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of \@jupyterlab\/scheduler \(2025\-05\-16\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-scheduler \(2026\-08\-07\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 8, run on issue\_comment, pull\_request, push, release, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 8, 8 by tag
+- **Build requirements:** hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v3, actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v4, actions\/setup\-python\@v4, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 197: 106 code, 25 config, 22 media, 15 docs, 12 web, 9 other, 7 notebook, 1 data

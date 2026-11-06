@@ -1,0 +1,35 @@
+# jupytercon\/2020\-sdruskat
+
+2020\-sdruskat created by GitHub Classroom
+
+documentation · [on GitHub](https://github.com/jupytercon/2020-sdruskat) · scanned at commit [25da357](https://github.com/jupytercon/2020-sdruskat/tree/25da3574f48c7ea33905f543817f527fc1fb4979)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains tutorial materials for a JupyterCon 2020 session\, including a Jupyter notebook\, slides\, and associated data\/images\, with no published packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/setup\-python\@v1, peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Files:** 14: 7 docs, 4 media, 1 config, 1 other, 1 notebook

@@ -1,0 +1,34 @@
+# jupyter\-book\/example\-multi\-language\-book
+
+A simple book to demonstrate what\'s possible with multi\-language books\.
+
+example · [on GitHub](https://github.com/jupyter-book/example-multi-language-book) · scanned at commit [79f6098](https://github.com/jupyter-book/example-multi-language-book/tree/79f60983934ebcde494250f3c8e97874db548385)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only LICENSE and README\.md\, with no code\; the README describes it as a demonstration of multi\-language books\, indicating documentation\/example content\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 2: 1 other, 1 docs

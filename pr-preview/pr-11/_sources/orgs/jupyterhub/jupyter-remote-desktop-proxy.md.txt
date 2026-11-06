@@ -1,0 +1,36 @@
+# jupyterhub\/jupyter\-remote\-desktop\-proxy
+
+ Run a Linux Desktop on a JupyterHub 
+
+package · [on GitHub](https://github.com/jupyterhub/jupyter-remote-desktop-proxy) · scanned at commit [390c824](https://github.com/jupyterhub/jupyter-remote-desktop-proxy/tree/390c824aeb5d90633b1803b9009195313dce0ff3)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-remote\-desktop\-proxy](https://pypi.org/project/jupyter-remote-desktop-proxy/), [1,078](https://pypistats.org/packages/jupyter-remote-desktop-proxy) downloads/month, 0 dependents, last published 2025-04-11
+- **Container images:**
+  - [jupyterhub\/jupyter\-remote\-desktop\-proxy](https://quay.io/repository/jupyterhub/jupyter-remote-desktop-proxy) on quay.io, last published 2025-04-11
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it proxies VNC traffic and launches desktop environments for users
+- **Why these labels:** The repository contains a Jupyter server extension \(jupyter\_remote\_desktop\_proxy\/\) with handlers that proxy VNC and is published as a PyPI package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-remote\-desktop\-proxy \(2025\-04\-11\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** pypi, container
+- **Secrets:** QUAY\_PASSWORD, QUAY\_USERNAME
+- **Actions:** 10, 9 by tag, 1 by branch. Third-party, not pinned: docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, manics\/action\-binderbadge\@v3\.0\.0, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v6, actions\/checkout\@v7, actions\/setup\-python\@v7, actions\/upload\-artifact\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, [jupyterhub\/action\-major\-minor\-tag\-calculator](/orgs/jupyterhub/action-major-minor-tag-calculator.md)\@v4, manics\/action\-binderbadge\@v3\.0\.0, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 38: 11 code, 11 config, 5 other, 4 docs, 4 media, 3 web

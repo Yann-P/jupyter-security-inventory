@@ -1,0 +1,35 @@
+# jupyter\-widgets\/tutorial\-jupyterlite
+
+A JupyterLite configured for the Jupyter Widgets Tutorial
+
+example · [on GitHub](https://github.com/jupyter-widgets/tutorial-jupyterlite) · scanned at commit [5cc14dc](https://github.com/jupyter-widgets/tutorial-jupyterlite/tree/5cc14dcfea0e6a01a90b089d81683665bc2efe11)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterlite\.github\.io\/demo
+- **Security boundary:** no
+- **Why these labels:** The repository is a JupyterLite demo deployed to GitHub Pages via a deploy workflow\, with README focusing on trying the demo and deployment guide\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag. Third-party, not pinned: JamesIves\/github\-pages\-deploy\-action\@4\.1\.3
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** JamesIves\/github\-pages\-deploy\-action\@4\.1\.3, actions\/checkout\@v3, actions\/download\-artifact\@v2, actions\/setup\-python\@v2, actions\/upload\-artifact\@v2
+- **Files:** 6: 2 config, 2 other, 2 docs

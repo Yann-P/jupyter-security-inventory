@@ -1,0 +1,35 @@
+# jupyterhealth\/singleuser\-image
+
+Build singleuser image for Jupyter Health Hub
+
+package · [on GitHub](https://github.com/jupyterhealth/singleuser-image) · scanned at commit [e980a45](https://github.com/jupyterhealth/singleuser-image/tree/e980a453ad2d7a7871a55747b4d3c45dd29c1595)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it runs code from users after authentication as single user servers
+- **Why these labels:** Contains a Dockerfile that builds a singleuser container image for the Jupyter Health pre\-MVP\, published via CI workflow to quay\.io\/jupyterhealth\/singleuser\-premvp\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** container
+- **Secrets:** QUAY\_PASSWORD, QUAY\_USERNAME
+- **Actions:** 2, 2 by tag. Third-party, not pinned: docker\/build\-push\-action\@v7
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, docker\/build\-push\-action\@v7
+- **Files:** 16: 6 config, 5 other, 3 code, 2 docs

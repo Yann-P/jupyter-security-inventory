@@ -1,0 +1,35 @@
+# voila\-dashboards\/voila\-huggingface
+
+Voila deployed on Hugging Face Spaces 🤗
+
+example · [on GitHub](https://github.com/voila-dashboards/voila-huggingface) · scanned at commit [7ec5bcd](https://github.com/voila-dashboards/voila-huggingface/tree/7ec5bcdcec06321585c2d65eac9c5a19df3016d2)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** voila\-dashboards\-voila\-huggingface\.hf\.space
+- **Security boundary:** no
+- **Why these labels:** The repo is a template\/demo for deploying Voila dashboards to Hugging Face Spaces\, containing notebooks and deployment configuration\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** HF\_TOKEN, HF\_USER
+- **Actions:** 1, 1 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3
+- **Files:** 15: 7 notebook, 4 other, 3 config, 1 docs

@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xproperty
+
+Traitlets\-like C\+\+ properties and implementation of the observer pattern
+
+package · [on GitHub](https://github.com/jupyter-xeus/xproperty) · scanned at commit [919fb1e](https://github.com/jupyter-xeus/xproperty/tree/919fb1e3ba720180a0434cb5d4a3b3d7599d47f2)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Header\-only C\+\+ library providing traitlets\-style properties and observer pattern\, evidenced by include\/xproperty headers and README describing installation via mamba\/conda\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: SimenB\/github\-actions\-cpu\-cores\@v2, mamba\-org\/setup\-micromamba\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** SimenB\/github\-actions\-cpu\-cores\@v2, actions\/checkout\@v4, mamba\-org\/setup\-micromamba\@v1
+- **Files:** 32: 11 code, 7 docs, 5 config, 4 other, 3 media, 1 web, 1 notebook

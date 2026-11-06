@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-r
+
+Jupyter kernel for the R programming language
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-r) · scanned at commit [33475c0](https://github.com/jupyter-xeus/xeus-r/tree/33475c0b3f3bb2779ecba9c31548ecd236ea99a8)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes R code from notebook users
+- **Why these labels:** The repository implements and packages a Jupyter kernel for R\, with kernel\.json\, source\, and install instructions via conda\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v3, r\-lib\/actions\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6, actions\/deploy\-pages\@v5, actions\/upload\-pages\-artifact\@v5, mamba\-org\/setup\-micromamba\@v3, r\-lib\/actions\@v2
+- **Files:** 85: 27 code, 24 other, 13 config, 11 docs, 8 media, 1 web, 1 notebook

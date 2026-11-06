@@ -1,0 +1,11 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+ipython/traitlets,package,PYPI:traitlets,118414624,19715,,,,,
+ipython/ipython,package,PYPI:ipython,97202828,15452,docker.io/ipython/ipython,19004,,,
+ipython/matplotlib-inline,package,PYPI:matplotlib-inline,91853623,16779,,,,,
+ipython/comm,package,PYPI:comm,55663064,11994,,,,,
+ipython/ipython-pygments-lexers,package,PYPI:ipython-pygments-lexers,54818996,15704,,,,,
+ipython/ipykernel,package,PYPI:ipykernel,54614879,7049,,,1,,executes code from Jupyter clients over the network as a kernel
+ipython/pickleshare,package,PYPI:pickleshare,8533671,1127,,,,,
+ipython/ipyparallel,package,PYPI:ipyparallel,94773,78,,,,,
+ipython/ipynb,package,PYPI:ipynb,54116,4,,,,,
+ipython/xkcd-font,package,,,,,,,ipython.org/xkcd-font,

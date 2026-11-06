@@ -1,0 +1,34 @@
+# jupyter\/try\.jupyter\.org
+
+Try Jupyter\!
+
+documentation · [on GitHub](https://github.com/jupyter/try.jupyter.org) · scanned at commit [e86948f](https://github.com/jupyter/try.jupyter.org/tree/e86948f0248b6a7fb9ffff988c503446b68cfd1d)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** try\.jupyter\.org
+- **Security boundary:** no
+- **Why these labels:** Static HTML site for try\.jupyter\.org with CNAME and index\.html\, no workflows or packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 9: 4 media, 3 other, 1 docs, 1 web

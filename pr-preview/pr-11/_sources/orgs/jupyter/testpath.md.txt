@@ -1,0 +1,35 @@
+# jupyter\/testpath
+
+Test utilities for Python code working with files and commands
+
+package · [on GitHub](https://github.com/jupyter/testpath) · scanned at commit [5c6ccfd](https://github.com/jupyter/testpath/tree/5c6ccfda4db8ac9d5b89c304c1ede54a6d3d91c6)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [testpath](https://pypi.org/project/testpath/), [1,460,262](https://pypistats.org/packages/testpath) downloads/month, 145 dependents, last published 2022-02-23
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a Python package published on PyPI \(testpath\) with code in testpath\/ and tests in tests\/\, documented via Read the Docs\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of testpath \(2022\-02\-23\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of testpath \(2022\-02\-23\) allows Python 3\.5\, which has had no security fixes since 2020\-09\-30\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag
+- **Build requirements:** flit\_core
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-python\@v7
+- **Files:** 28: 11 code, 8 docs, 5 other, 4 config

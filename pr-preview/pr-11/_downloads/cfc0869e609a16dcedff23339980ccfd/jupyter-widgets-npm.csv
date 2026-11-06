@@ -1,0 +1,13 @@
+package,repository,downloads/month,dependents,last published
+@jupyter-widgets/base,jupyter-widgets/ipywidgets,256751,227,2026-08-18
+@jupyter-widgets/controls,jupyter-widgets/ipywidgets,212012,73,2026-08-18
+@jupyter-widgets/output,jupyter-widgets/ipywidgets,139695,56,2026-08-18
+@jupyter-widgets/base-manager,jupyter-widgets/ipywidgets,123708,60,2026-08-18
+@jupyter-widgets/jupyterlab-manager,jupyter-widgets/ipywidgets,92937,49,2026-08-18
+@jupyter-widgets/schema,jupyter-widgets/ipywidgets,77767,38,2024-08-22
+@jupyter-widgets/html-manager,jupyter-widgets/ipywidgets,75136,32,2026-08-18
+jupyter-leaflet,jupyter-widgets/ipyleaflet,1665,1,2025-06-13
+ipydatagrid,jupyter-widgets/ipydatagrid,533,0,2024-12-17
+jupyter-threejs,jupyter-widgets/pythreejs,399,4,2023-02-20
+@jupyter-widgets/jupyterlab-sidecar,jupyter-widgets/jupyterlab-sidecar,140,0,2026-02-27
+@jupyter-widgets/midicontrols,jupyter-widgets/midicontrols,33,0,2019-07-12

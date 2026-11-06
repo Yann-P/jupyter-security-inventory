@@ -1,0 +1,11 @@
+repo,kind,live service
+jupyterlab/assets,documentation,jupyterlab.github.io/assets site
+jupyterlab/.github,documentation,
+jupyterlab/frontends-team-compass,documentation,
+jupyterlab/jupytercon-jupyterlab-training,documentation,
+jupyterlab/jupytercon-jupyterlab-tutorial,example,
+jupyterlab/jupyterlab-demo,example,
+jupyterlab/scipy2018-jupyterlab-tutorial,example,
+jupyterlab/scipy2019-jupyterlab-tutorial,example,
+jupyterlab/triage-automation,documentation,
+jupyterlab/ux-research,documentation,

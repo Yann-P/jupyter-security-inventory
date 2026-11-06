@@ -1,0 +1,34 @@
+# binderhub\-ci\-repos\/repo2docker\-subdir\-support
+
+A repository to test building from a subdirectory with repo2docker
+
+example · [on GitHub](https://github.com/binderhub-ci-repos/repo2docker-subdir-support) · scanned at commit [cff1a76](https://github.com/binderhub-ci-repos/repo2docker-subdir-support/tree/cff1a76da66a249822fdcaf3b858ee5536e37876)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository only contains test dependency files and a README describing its purpose to test repo2docker\'s \-\-subdir flag\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 3: 3 docs

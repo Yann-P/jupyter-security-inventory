@@ -1,0 +1,35 @@
+# jupyterlite\/javascript\-kernel
+
+A simple JavaScript kernel for JupyterLite\, running in a Web Worker
+
+package · [on GitHub](https://github.com/jupyterlite/javascript-kernel) · scanned at commit [7240833](https://github.com/jupyterlite/javascript-kernel/tree/7240833fd7fd0253a84ba3fe8b3bf0dd624a7cc4)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlite\-javascript\-kernel](https://pypi.org/project/jupyterlite-javascript-kernel/), [2,056](https://pypistats.org/packages/jupyterlite-javascript-kernel) downloads/month, 4 dependents, last published 2026-07-14; []{.fa-brands .fa-npm} [\@jupyterlite\/javascript\-kernel](https://www.npmjs.com/package/@jupyterlite/javascript-kernel), [643](https://npm-stat.com/charts.html?package=@jupyterlite/javascript-kernel) downloads/month, 3 dependents, last published 2026-07-14; []{.fa-brands .fa-npm} [\@jupyterlite\/javascript\-kernel\-extension](https://www.npmjs.com/package/@jupyterlite/javascript-kernel-extension), [261](https://npm-stat.com/charts.html?package=@jupyterlite/javascript-kernel-extension) downloads/month, 2 dependents, last published 2026-07-14
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a JupyterLite kernel implemented in TypeScript and packaged for PyPI and npm \(packages\/javascript\-kernel\, packages\/javascript\-kernel\-extension\, published\_packages\)\. It is an extension\/kernel that users install\, not an application itself\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlite\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlite\-javascript\-kernel \(2024\-03\-26\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest versions of \@jupyterlite\/javascript\-kernel \(2024\-03\-26\) and \@jupyterlite\/javascript\-kernel\-extension \(2024\-03\-26\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlite\-javascript\-kernel \(2024\-03\-26\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser, website
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 9, 9 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyter\-builder
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/deploy\-pages\@v4, actions\/download\-artifact\@v4, actions\/setup\-python\@v5, actions\/upload\-artifact\@v4, actions\/upload\-pages\-artifact\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 75: 37 code, 21 config, 5 other, 5 notebook, 3 docs, 2 media, 2 web

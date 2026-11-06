@@ -1,0 +1,35 @@
+# ipython\/ipython\-pygments\-lexers
+
+Pygments lexers for syntax\-highlighting IPython code \& sessions
+
+package · [on GitHub](https://github.com/ipython/ipython-pygments-lexers) · scanned at commit [50791e2](https://github.com/ipython/ipython-pygments-lexers/tree/50791e25b02ebbdc8a13f2bbaf4b1cbea93f82a7)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [ipython\-pygments\-lexers](https://pypi.org/project/ipython-pygments-lexers/), [54,818,996](https://pypistats.org/packages/ipython-pygments-lexers) downloads/month, 15,704 dependents, last published 2025-01-17
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo publishes the \'ipython\-pygments\-lexers\' PyPI package \(584M downloads\) and contains lexer code in ipython\_pygments\_lexers\.py\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of ipython\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of ipython\-pygments\-lexers \(2025\-01\-17\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 4, 3 by tag, 1 by branch. Third-party, not pinned: pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** flit\_core
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v4, actions\/checkout\@v4, actions\/setup\-python\@v6, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 8: 3 config, 2 other, 2 code, 1 docs

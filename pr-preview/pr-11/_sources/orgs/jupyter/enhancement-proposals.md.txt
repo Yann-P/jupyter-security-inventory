@@ -1,0 +1,35 @@
+# jupyter\/enhancement\-proposals
+
+Enhancement proposals for the Jupyter Ecosystem
+
+documentation · [on GitHub](https://github.com/jupyter/enhancement-proposals) · scanned at commit [6e4edce](https://github.com/jupyter/enhancement-proposals/tree/6e4edce4445bd6d4cbd57741723d33f27a57cc4f)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains Markdown proposals and a documentation build workflow \(docs\.yml publishing to GitHub Pages\)\, with README describing JEPs\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 4, 4 by tag. Third-party, not pinned: peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/github\-script\@v7, actions\/setup\-python\@v6, peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Files:** 56: 35 docs, 8 media, 7 config, 3 code, 2 other, 1 data

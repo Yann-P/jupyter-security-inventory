@@ -1,0 +1,35 @@
+# jupyter\/jupyter\-sphinx
+
+Sphinx extension for rendering of Jupyter interactive widgets\.
+
+package · [on GitHub](https://github.com/jupyter/jupyter-sphinx) · scanned at commit [9c9dd5d](https://github.com/jupyter/jupyter-sphinx/tree/9c9dd5d6151f1b168caa02637d4fc3594aa9fbe5)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-sphinx](https://pypi.org/project/jupyter-sphinx/), [60,358](https://pypistats.org/packages/jupyter-sphinx) downloads/month, 10 dependents, last published 2023-12-28
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Publishes the jupyter\-sphinx PyPI package \(60k downloads\/month\) and contains a jupyter\_sphinx\/ source package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-sphinx \(2023\-12\-28\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-sphinx \(2023\-12\-28\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, release, schedule, workflow\_call, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** CODECOV\_TOKEN
+- **Actions:** 6, 6 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@v1\.14\.3
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/download\-artifact\@v8, actions\/setup\-python\@v7, actions\/upload\-artifact\@v7, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@v1\.14\.3
+- **Files:** 72: 40 web, 13 code, 8 config, 8 docs, 2 other, 1 media

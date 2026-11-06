@@ -1,0 +1,78 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupytercon
+
+[github.com/jupytercon](https://github.com/jupytercon) has 28 public repositories: 8 deploy a live service.
+
+[Security topics (5)](#security-topics) · [Repositories (28)](#repositories)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupytercon-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupytercon-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupytercon-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupytercon-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupytercon-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupytercon-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupytercon/2020-Cheukting
+jupytercon/2020-ClusteringAlgorithms
+jupytercon/2020-OpenSourceCommunities
+jupytercon/2020-OpenSourceFunding
+jupytercon/2020-ericmjl
+jupytercon/2020-eteq
+jupytercon/2020-ethics-culture-opensource-tutorial
+jupytercon/2020-jedbrown
+jupytercon/2020-juanklopper
+jupytercon/2020-jupyterbook-with-turing-way
+jupytercon/2020-mattharrison
+jupytercon/2020-posters-033-stix
+jupytercon/2020-posters-047-lee
+jupytercon/2020-posters-048-Grosch
+jupytercon/2020-posters-057-lippert
+jupytercon/2020-posters-103-brochart
+jupytercon/2020-sdruskat
+jupytercon/2020-shlomihod
+jupytercon/2020-tracks
+jupytercon/2020-widgets-tutorial
+jupytercon/2020-willingc
+jupytercon/2020-zronaghi
+jupytercon/conf-session2020
+jupytercon/jupytercon2020-developingextensions
+jupytercon/jupytercon2020-website
+jupytercon/jupytercon2025-developingextensions
+jupytercon/jupytercon2025-developingextensions-demo
+jupytercon/tutorial2020
+```

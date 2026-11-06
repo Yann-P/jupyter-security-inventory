@@ -1,0 +1,50 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# npm trusted publishing
+
+Does the repository publish its npm packages with trusted publishing\?
+
+It applies to 52 repositories: 28 done, 3 partial and 21 missing. 386 are not applicable and left out of the tables.
+
+We ask npm whether the latest version of each npm package was published with trusted publishing\: from CI\, with a short\-lived token instead of a stored one\. Maintainers set it up for each package on npmjs\.com and in their release workflow\, so a package gets it only from its next release on\.
+
+- [done]{.status .status-done} The latest version of each of its npm packages used trusted publishing\.
+- [partial]{.status .status-partial} Some of its npm packages used trusted publishing for their latest version\, and some didn\'t\.
+- [missing]{.status .status-missing} None of its npm packages used trusted publishing for its latest version\.
+- [n\/a]{.status .status-na} It has no npm package\.
+
+## By organization
+
+{download}`Download CSV </_generated/downloads/topic-npm-trusted-publishing-orgs.csv>`
+
+```{csv-table}
+:file: /_generated/topic-npm-trusted-publishing-orgs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+{download}`Download CSV </_generated/downloads/topic-npm-trusted-publishing-repos.csv>`
+
+```{csv-table}
+:file: /_generated/topic-npm-trusted-publishing-repos.csv
+:header-rows: 1
+:class: sphinx-datatable filter-by-org
+```
+
+## Over time
+
+The days the numbers changed.
+
+{download}`Download CSV </_generated/downloads/topic-npm-trusted-publishing-history.csv>`
+
+```{csv-table}
+:file: /_generated/topic-npm-trusted-publishing-history.csv
+:header-rows: 1
+:class: sphinx-datatable
+```

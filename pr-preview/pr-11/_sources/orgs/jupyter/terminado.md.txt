@@ -1,0 +1,35 @@
+# jupyter\/terminado
+
+Terminals served by tornado websockets
+
+package · [on GitHub](https://github.com/jupyter/terminado) · scanned at commit [b070d12](https://github.com/jupyter/terminado/tree/b070d12fa1108b482758f2ef6e3a0b54f7273196)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [terminado](https://pypi.org/project/terminado/), [29,806,864](https://pypistats.org/packages/terminado) downloads/month, 5,263 dependents, last published 2024-03-12
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes untrusted terminal input received over websockets
+- **Why these labels:** Terminado is a Python package on PyPI that provides a Tornado websocket backend for Xterm\.js\, as shown by its package structure and module paths\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of terminado \(2024\-03\-12\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of terminado \(2024\-03\-12\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY
+- **Actions:** 5, 4 by tag, 1 by branch. Third-party, not pinned: re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/create\-github\-app\-token\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1
+- **Files:** 41: 16 code, 9 config, 9 docs, 5 other, 2 web

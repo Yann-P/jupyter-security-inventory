@@ -1,0 +1,35 @@
+# voila\-dashboards\/voici\-gallery
+
+A gallery of Voici examples
+
+example · [on GitHub](https://github.com/voila-dashboards/voici-gallery) · scanned at commit [17d027e](https://github.com/voila-dashboards/voici-gallery/tree/17d027e8d304ead97e95a217d5e8765263da4da5)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** voila\-dashboards\.github\.io\/voici\-gallery
+- **Security boundary:** no
+- **Why these labels:** The repository is a gallery website of Voici examples\, as evidenced by README stating \'This is a gallery of Voici examples\' and it appears to be a static site deployed via GitHub Actions\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/deploy\-pages\@v1, actions\/setup\-python\@v4, actions\/upload\-pages\-artifact\@v1, mamba\-org\/setup\-micromamba\@v1
+- **Files:** 26: 9 code, 7 config, 3 other, 3 docs, 2 media, 2 web

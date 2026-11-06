@@ -1,0 +1,24 @@
+package,repository,downloads/month,dependents,last published
+jupyter-core,jupyter/jupyter_core,77056466,11262,2025-10-16
+nbformat,jupyter/nbformat,76592205,8382,2026-08-17
+jupyter-client,jupyter/jupyter_client,71447300,9130,2026-08-28
+nbclient,jupyter/nbclient,50729821,6399,2026-06-05
+nbconvert,jupyter/nbconvert,49944679,6159,2026-10-12
+terminado,jupyter/terminado,29806864,5263,2024-03-12
+jupyter-events,jupyter/jupyter_events,28962752,5226,2026-04-20
+notebook,jupyter/notebook,28757551,3034,2026-10-30
+notebook-shim,jupyter/notebook_shim,27317089,4481,2024-02-14
+jupyter-console,jupyter/jupyter_console,12492174,2011,2023-03-06
+jupyter,jupyter/jupyter,12288648,1883,2024-08-30
+nbclassic,jupyter/nbclassic,1980454,550,2025-09-16
+testpath,jupyter/testpath,1460262,145,2022-02-23
+jupyter-packaging,jupyter/jupyter-packaging,516852,80,2022-08-25
+nbdime,jupyter/nbdime,174529,52,2026-02-10
+jupyter-sphinx,jupyter/jupyter-sphinx,60358,10,2023-12-28
+jupyter-telemetry,jupyter/telemetry,35634,27,2020-04-10
+nbgrader,jupyter/nbgrader,11171,17,2026-09-30
+jupyter-kernel-test,jupyter/jupyter_kernel_test,7064,0,2024-03-12
+sphinxcontrib_github_alt,jupyter/sphinxcontrib_github_alt,2857,0,2020-04-27
+nbviewer,jupyter/nbviewer,145,1,2017-10-15
+echo-kernel,jupyter/echo_kernel,67,0,2017-01-18
+papyri,jupyter/papyri,21,0,2024-03-01

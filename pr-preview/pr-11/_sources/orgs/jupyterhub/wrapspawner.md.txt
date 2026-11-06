@@ -1,0 +1,35 @@
+# jupyterhub\/wrapspawner
+
+Mechanism for runtime configuration of spawners for JupyterHub
+
+package · [on GitHub](https://github.com/jupyterhub/wrapspawner) · scanned at commit [cb74046](https://github.com/jupyterhub/wrapspawner/tree/cb74046aa0217cf48c76944fae2d8c0cbae2a701)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [wrapspawner](https://pypi.org/project/wrapspawner/), [928](https://pypistats.org/packages/wrapspawner) downloads/month, 0 dependents, last published 2022-03-02
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a pip\-installable package \(wrapspawner\) that provides spawner configuration mechanisms for JupyterHub\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of wrapspawner \(2022\-03\-02\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of wrapspawner \(2022\-03\-02\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 1, run on release
+- **Publishes:** pypi
+- **Secrets:** PYPI\_TOKEN
+- **Actions:** 2, 2 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/setup\-python\@v2
+- **Files:** 13: 4 docs, 4 code, 2 config, 2 other, 1 media

@@ -1,0 +1,35 @@
+# jupyter\-book\/thebe
+
+Turn static HTML pages into live documents with Jupyter kernels\.
+
+package · [on GitHub](https://github.com/jupyter-book/thebe) · scanned at commit [0e0c687](https://github.com/jupyter-book/thebe/tree/0e0c6879dc957b7749825b4da9295e8d88b52f4d)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [thebe\-core](https://www.npmjs.com/package/thebe-core), [10,372](https://npm-stat.com/charts.html?package=thebe-core) downloads/month, 11 dependents, last published 2025-01-28; []{.fa-brands .fa-npm} [thebe\-lite](https://www.npmjs.com/package/thebe-lite), [10,256](https://npm-stat.com/charts.html?package=thebe-lite) downloads/month, 7 dependents, last published 2025-01-28; []{.fa-brands .fa-npm} [thebe\-react](https://www.npmjs.com/package/thebe-react), [10,024](https://npm-stat.com/charts.html?package=thebe-react) downloads/month, 8 dependents, last published 2025-01-28; []{.fa-brands .fa-npm} [thebe](https://www.npmjs.com/package/thebe), [1,458](https://npm-stat.com/charts.html?package=thebe) downloads/month, 0 dependents, last published 2025-01-28
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Publishes multiple NPM packages \(thebe\, thebe\-core\, thebe\-lite\, thebe\-react\) and CI publishes to npm\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-book\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest versions of thebe\-core \(2025\-01\-28\)\, thebe\-lite \(2025\-01\-28\)\, thebe\-react \(2025\-01\-28\) and 1 more did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, release
+- **Publishes:** npm, website
+- **Secrets:** NPM\_TOKEN, npm\_token
+- **Actions:** 10, 10 by tag. Third-party, not pinned: JamesIves\/github\-pages\-deploy\-action\@v4, changesets\/action\@v1, codecov\/codecov\-action\@v1, conda\-incubator\/setup\-miniconda\@v2, rossjrw\/pr\-preview\-action\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** JamesIves\/github\-pages\-deploy\-action\@v4, actions\/cache\@v3, actions\/checkout\@v2, actions\/checkout\@v3, actions\/setup\-node\@v1, actions\/setup\-node\@v3, changesets\/action\@v1, codecov\/codecov\-action\@v1, conda\-incubator\/setup\-miniconda\@v2, rossjrw\/pr\-preview\-action\@v1
+- **Files:** 296: 116 code, 66 docs, 37 web, 35 config, 22 media, 17 other, 3 notebook

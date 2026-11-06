@@ -1,0 +1,34 @@
+# binder\-examples\/jupyter\-stacks\-datascience
+
+
+
+example · [on GitHub](https://github.com/binder-examples/jupyter-stacks-datascience) · scanned at commit [2df974b](https://github.com/binder-examples/jupyter-stacks-datascience/tree/2df974bf0ba288933a34ae4da1a95e823cd046e9)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only a Dockerfile that pulls the Jupyter Datascience image\, with no CI workflows or published packages\, indicating it is an example for prototyping Binder functionality\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 4: 3 other, 1 docs

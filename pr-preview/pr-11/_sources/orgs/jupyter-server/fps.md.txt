@@ -1,0 +1,35 @@
+# jupyter\-server\/fps
+
+Fast Pluggable System
+
+package · [on GitHub](https://github.com/jupyter-server/fps) · scanned at commit [e379983](https://github.com/jupyter-server/fps/tree/e379983b18cc28a657e2b03e5f209d99b55942d9)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [fps](https://pypi.org/project/fps/), [2,373](https://pypistats.org/packages/fps) downloads/month, 79 dependents, last published 2026-07-30
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository publishes a PyPI package \'fps\' and defines a modular\, configurable\, pluggable system via its source and README\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of fps \(2026\-07\-30\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of fps \(2026\-07\-30\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 4, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 6, 6 by tag. Third-party, not pinned: pre\-commit\/action\@v3\.0\.1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/create\-github\-app\-token\@v3, actions\/setup\-python\@v7, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, pre\-commit\/action\@v3\.0\.1
+- **Files:** 38: 20 code, 8 config, 6 docs, 3 other, 1 media

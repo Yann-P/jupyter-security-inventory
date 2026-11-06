@@ -1,0 +1,35 @@
+# jupyter\/jupyter\_console
+
+Jupyter Terminal Console
+
+package · [on GitHub](https://github.com/jupyter/jupyter_console) · scanned at commit [29f882a](https://github.com/jupyter/jupyter_console/tree/29f882adec78a60a0891c69087436503493905ce)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-console](https://pypi.org/project/jupyter-console/), [12,492,174](https://pypistats.org/packages/jupyter-console) downloads/month, 2,011 dependents, last published 2023-03-06
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes user\-supplied code via Jupyter kernels in the console
+- **Why these labels:** The repository provides a terminal\-based console frontend for Jupyter kernels\, installable via pip as \'jupyter\-console\'\, as evidenced by pyproject\.toml\, README installation instructions\, and published package on PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-console \(2023\-03\-06\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-console \(2023\-03\-06\) allows Python 3\.7\, which has had no security fixes since 2023\-06\-27\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** jupyter\_releaser
+- **Secrets:** none
+- **Actions:** 6, 5 by tag, 1 by branch. Third-party, not pinned: re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/checkout\@v3, actions\/setup\-python\@v2, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1
+- **Files:** 32: 16 code, 7 docs, 5 other, 4 config

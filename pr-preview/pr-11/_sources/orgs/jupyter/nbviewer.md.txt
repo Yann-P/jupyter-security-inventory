@@ -1,0 +1,36 @@
+# jupyter\/nbviewer
+
+nbconvert as a web service\: Render Jupyter Notebooks as static web pages
+
+application · [on GitHub](https://github.com/jupyter/nbviewer) · scanned at commit [5fde5fe](https://github.com/jupyter/nbviewer/tree/5fde5fecfbe2c1bdb19d451ca7e2ab698f985aa2)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [nbviewer](https://pypi.org/project/nbviewer/), [145](https://pypistats.org/packages/nbviewer) downloads/month, 1 dependents, last published 2017-10-15
+- **Container images:**
+  - [jupyter\/nbviewer](https://hub.docker.com/r/jupyter/nbviewer) on docker.io, 2,835,089 pulls, last published 2022-01-28
+- **Run by other repositories:** none
+- **Live service:** nbviewer\.org
+- **Security boundary:** yes, it renders untrusted notebook content received over the network
+- **Why these labels:** The repository contains a Tornado web application \(nbviewer\/app\.py\, handlers\.py\) that renders notebooks as web pages\, with a Dockerfile and Helm chart for deployment\; it is the code behind nbviewer\.org\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of nbviewer \(2017\-10\-15\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of nbviewer \(2017\-10\-15\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push
+- **Publishes:** container
+- **Secrets:** DOCKER\_PASSWORD, DOCKER\_USERNAME
+- **Actions:** 4, 4 by tag. Third-party, not pinned: docker\/build\-push\-action\@v6, docker\/login\-action\@v3
+- **Build requirements:** invoke, setuptools, setuptools\-scm
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6, actions\/setup\-python\@v6, docker\/build\-push\-action\@v6, docker\/login\-action\@v3
+- **Files:** 184: 58 media, 51 code, 32 web, 21 config, 12 docs, 9 other, 1 notebook

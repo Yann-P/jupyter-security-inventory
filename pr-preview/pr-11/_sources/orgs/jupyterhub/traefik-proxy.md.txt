@@ -1,0 +1,35 @@
+# jupyterhub\/traefik\-proxy
+
+JupyterHub proxy implementation with traefik
+
+package · [on GitHub](https://github.com/jupyterhub/traefik-proxy) · scanned at commit [d174796](https://github.com/jupyterhub/traefik-proxy/tree/d17479605b873158226cccaebefe377531979182)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterhub\-traefik\-proxy](https://pypi.org/project/jupyterhub-traefik-proxy/), [3,497](https://pypistats.org/packages/jupyterhub-traefik-proxy) downloads/month, 1 dependents, last published 2025-03-28
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Repo implements a JupyterHub proxy plugin using Traefik\, with code under jupyterhub\_traefik\_proxy\/ and CI publishing to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterhub\-traefik\-proxy \(2025\-03\-28\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterhub\-traefik\-proxy \(2025\-03\-28\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** pypi\_password
+- **Actions:** 4, 3 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** setuptools, wheel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-python\@v7, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 98: 33 code, 26 data, 19 docs, 9 config, 8 other, 2 media, 1 notebook

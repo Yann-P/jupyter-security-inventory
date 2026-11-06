@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-robot
+
+Jupyter kernel for Robot Framework
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-robot) · scanned at commit [91f2478](https://github.com/jupyter-xeus/xeus-robot/tree/91f24789d674f33ec18bcfec9bec4efff9fb4048)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes untrusted user code in the Jupyter kernel
+- **Why these labels:** The repository implements a Jupyter kernel for Robot Framework\, as stated in the README and evidenced by source files like src\/xinterpreter\.cpp and kernel specification in share\/jupyter\/kernels\/xrobot\/\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 3, 2 by tag, 1 by branch. Third-party, not pinned: SimenB\/github\-actions\-cpu\-cores\@v1, mamba\-org\/provision\-with\-micromamba\@main
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** SimenB\/github\-actions\-cpu\-cores\@v1, actions\/checkout\@v2, mamba\-org\/provision\-with\-micromamba\@main
+- **Files:** 42: 18 code, 9 media, 7 config, 3 docs, 3 notebook, 2 other

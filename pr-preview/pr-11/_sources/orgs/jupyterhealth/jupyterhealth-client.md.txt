@@ -1,0 +1,35 @@
+# jupyterhealth\/jupyterhealth\-client
+
+client library for jupyterhealth data exchange
+
+package · [on GitHub](https://github.com/jupyterhealth/jupyterhealth-client) · scanned at commit [15d88eb](https://github.com/jupyterhealth/jupyterhealth-client/tree/15d88eb66276a393f3f6cf0f94ebab42a7e93953)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterhealth\-client](https://pypi.org/project/jupyterhealth-client/), [120](https://pypistats.org/packages/jupyterhealth-client) downloads/month, 0 dependents, last published 2026-10-12
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo contains a Python package \(jupyterhealth\_client\/\) with install instructions and publishes to PyPI via pypa\/gh\-action\-pypi\-publish\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via pre\-commit. Pre\-commit hook\, and CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/jupyterhealth/jupyterhealth-client/blob/15d88eb66276a393f3f6cf0f94ebab42a7e93953/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhealth\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterhealth\-client \(2026\-10\-12\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 6, all pinned to a commit
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/download\-artifact\@3e5f45b, actions\/setup\-python\@5fda3b9, actions\/upload\-artifact\@043fb46, codecov\/codecov\-action\@303a32d, pypa\/gh\-action\-pypi\-publish\@dc37677
+- **Files:** 25: 8 config, 7 code, 6 docs, 3 other, 1 notebook

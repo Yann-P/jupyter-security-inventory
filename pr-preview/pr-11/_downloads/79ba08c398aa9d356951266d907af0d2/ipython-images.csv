@@ -1,0 +1,6 @@
+image,registry,tag,repository,all-time pulls,last published
+ipython/scipyserver,docker.io,latest,,321097,2016-06-21
+ipython/notebook,docker.io,latest,,139502,2017-05-18
+ipython/ipython,docker.io,latest,ipython/ipython,19004,2017-05-18
+ipython/scipystack,docker.io,latest,,15020,2015-07-23
+ipython/nbviewer,docker.io,latest,,3287,2020-12-02

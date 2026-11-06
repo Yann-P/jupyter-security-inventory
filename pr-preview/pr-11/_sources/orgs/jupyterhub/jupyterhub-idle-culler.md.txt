@@ -1,0 +1,35 @@
+# jupyterhub\/jupyterhub\-idle\-culler
+
+JupyterHub service to cull idle servers and users
+
+package · [on GitHub](https://github.com/jupyterhub/jupyterhub-idle-culler) · scanned at commit [65c60ec](https://github.com/jupyterhub/jupyterhub-idle-culler/tree/65c60ecb5979e46a16d5acbfb6023719f882ae83)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterhub\-idle\-culler](https://pypi.org/project/jupyterhub-idle-culler/), [15,786](https://pypistats.org/packages/jupyterhub-idle-culler) downloads/month, 0 dependents, last published 2026-06-16
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The package is installed from PyPI \(jupyterhub\-idle\-culler\) and provides a JupyterHub service that interacts with the API to cull idle servers\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterhub\-idle\-culler \(2026\-06\-16\) allows Python 3\.7\, which has had no security fixes since 2023\-06\-27\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 9, 5 by commit, 4 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@9c091bb, actions\/checkout\@v7, actions\/download\-artifact\@9000827, actions\/setup\-node\@v7, actions\/setup\-python\@5fda3b9, actions\/setup\-python\@v7, actions\/upload\-artifact\@cf430e0, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@7245906
+- **Files:** 19: 7 code, 6 config, 4 docs, 2 other

@@ -1,0 +1,34 @@
+# jupyter\-book\/jupyterbook\.org
+
+The landing page and site for the Jupyter Book project
+
+documentation · [on GitHub](https://github.com/jupyter-book/jupyterbook.org) · scanned at commit [ccb4857](https://github.com/jupyter-book/jupyterbook.org/tree/ccb4857f9b10f607e29ce70f83be6e735135bf49)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterbook\.org
+- **Security boundary:** no
+- **Why these labels:** Publishes the Jupyter Book website via Netlify \(netlify\.toml\, daily\-deploy\.yml\) with mostly documentation content\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on schedule, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** NETLIFY\_DEPLOY\_HOOK
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 52: 26 docs, 13 media, 6 config, 6 code, 1 other

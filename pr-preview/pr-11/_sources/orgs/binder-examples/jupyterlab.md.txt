@@ -1,0 +1,34 @@
+# binder\-examples\/jupyterlab
+
+Demonstrating how to get JupyterLab working with Binder
+
+example · [on GitHub](https://github.com/binder-examples/jupyterlab) · scanned at commit [be84880](https://github.com/binder-examples/jupyterlab/tree/be84880214e57de971825161a2cd02137de3b4ef)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository demonstrates using JupyterLab with Binder and contains a Binder configuration \(binder\/postBuild\, binder\/requirements\.txt\) and an example notebook \(index\.ipynb\)\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 8: 4 other, 2 docs, 1 data, 1 notebook

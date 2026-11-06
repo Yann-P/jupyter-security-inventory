@@ -1,0 +1,35 @@
+# jupyter\-book\/example\-js\-plugin
+
+A demonstration JS plugin for use with the MyST Document Engine
+
+example · [on GitHub](https://github.com/jupyter-book/example-js-plugin) · scanned at commit [74feec2](https://github.com/jupyter-book/example-js-plugin/tree/74feec2024b4f3e1f4d1c93eb5d47628fa8e92e6)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is an example MyST JS plugin demonstrating bundling and usage\, as stated in README and evidenced by plugin\.mjs and package\.json\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on push, release
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 7, 7 by tag. Third-party, not pinned: softprops\/action\-gh\-release\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/setup\-node\@v4, actions\/setup\-python\@v5, actions\/upload\-pages\-artifact\@v3, softprops\/action\-gh\-release\@v2
+- **Files:** 9: 5 config, 2 docs, 1 other, 1 code

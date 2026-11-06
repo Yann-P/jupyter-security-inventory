@@ -1,0 +1,34 @@
+# jupyter\-xeus\/jupyter\-xeus\.github\.io
+
+Organization and project management for Xeus
+
+documentation · [on GitHub](https://github.com/jupyter-xeus/jupyter-xeus.github.io) · scanned at commit [34caebc](https://github.com/jupyter-xeus/jupyter-xeus.github.io/tree/34caebc71cda1171698172dd28dd3a886d69b198)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only web files \(index\.html\, layouts\) and assets with no CI workflows or published packages\, indicating a simple static website for Xeus organization management\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 6: 3 web, 2 media, 1 other

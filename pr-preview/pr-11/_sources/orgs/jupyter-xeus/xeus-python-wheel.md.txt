@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-python\-wheel
+
+Building a PyPI wheel for xeus\-python
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-python-wheel) · scanned at commit [310bd3b](https://github.com/jupyter-xeus/xeus-python-wheel/tree/310bd3bc96438e4881a56825b5e0f33bdb40d53b)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [xeus\-python](https://pypi.org/project/xeus-python/), [1,778](https://pypistats.org/packages/xeus-python) downloads/month, 2 dependents, last published 2026-07-07
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a build recipe that produces PyPI wheels \(published package \'xeus\-python\'\) and contains a build workflow \'\.github\/workflows\/build\_wheel\.yml\' publishing to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-xeus\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of xeus\-python \(2026\-07\-07\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of xeus\-python \(2026\-07\-07\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 1, run on create, pull\_request, push
+- **Publishes:** pypi, container
+- **Secrets:** PYPI\_API\_TOKEN
+- **Actions:** 6, 6 by tag. Third-party, not pinned: ilammy\/setup\-nasm\@v1, maxim\-lobanov\/setup\-xcode\@v1
+- **Build requirements:** cmake, ninja, packaging, scikit\-build, setuptools, wheel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/download\-artifact\@v8, actions\/setup\-python\@v7, actions\/upload\-artifact\@v7, ilammy\/setup\-nasm\@v1, maxim\-lobanov\/setup\-xcode\@v1
+- **Files:** 26: 12 config, 4 code, 4 media, 2 other, 2 docs, 2 notebook

@@ -1,0 +1,2 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+binder-examples/zero-to-jupyterhub-k8s,application,,,,,,,,deploys JupyterHub which authenticates users and spawns multi-user notebook servers

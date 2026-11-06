@@ -1,0 +1,92 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyterlite
+
+[github.com/jupyterlite](https://github.com/jupyterlite) has 18 public repositories: 12 publish a package, 1 is a security boundary and 4 deploy a live service.
+
+[Security topics (5)](#security-topics) · [Repositories (18)](#repositories) · [Packages (42)](#packages)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyterlite-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlite-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyterlite-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlite-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupyterlite-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlite-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyterlite-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlite-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### npm
+
+{download}`Download CSV </_generated/downloads/jupyterlite-npm.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlite-npm.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyterlite/jupyterlite
+jupyterlite/pyodide-kernel
+jupyterlite/jupyterlite-sphinx
+jupyterlite/xeus
+jupyterlite/cockle
+jupyterlite/javascript-kernel
+jupyterlite/terminal
+jupyterlite/p5-kernel
+jupyterlite/litegitpuller
+jupyterlite/echo-kernel
+jupyterlite/jupyterlab-webrtc-docprovider
+jupyterlite/repo2jupyterlite
+jupyterlite/dot.github
+jupyterlite/demo
+jupyterlite/jupyterlite-lsp
+jupyterlite/sphinx-demo
+jupyterlite/wasm_lua
+jupyterlite/xeus-lite-demo
+```

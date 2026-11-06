@@ -1,0 +1,34 @@
+# binder\-examples\/minimal\-dockerfile
+
+A starting point for your custom Dockerfile that works on binder\. You probably don\'t want to use this\.
+
+example · [on GitHub](https://github.com/binder-examples/minimal-dockerfile) · scanned at commit [2cd2202](https://github.com/binder-examples/minimal-dockerfile/tree/2cd2202f6e6fa8c47c644a38262eb0c093f82d15)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only a Dockerfile and README as a starting point for Binder images\, with no CI workflows or published packages\, indicating an example repository\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 3: 2 other, 1 docs

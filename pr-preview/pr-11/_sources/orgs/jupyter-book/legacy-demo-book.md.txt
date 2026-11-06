@@ -1,0 +1,35 @@
+# jupyter\-book\/legacy\-demo\-book
+
+A simple Jupyter Book
+
+documentation · [on GitHub](https://github.com/jupyter-book/legacy-demo-book) · scanned at commit [8e2b450](https://github.com/jupyter-book/legacy-demo-book/tree/8e2b450cf57313bb018aedde922015f82187f51e)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Jupyter Book \(markdown\/notebook sources in my\_book\/\) and a GitHub Actions workflow \(deploy\.yml\) that publishes the built book to GitHub Pages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 4, 4 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/deploy\-pages\@v2, actions\/setup\-python\@v4, actions\/upload\-pages\-artifact\@v2
+- **Files:** 15: 9 docs, 3 config, 1 other, 1 media, 1 notebook

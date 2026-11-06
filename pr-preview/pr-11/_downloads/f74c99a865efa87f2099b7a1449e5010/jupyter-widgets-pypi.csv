@@ -1,0 +1,11 @@
+package,repository,downloads/month,dependents,last published
+widgetsnbextension,jupyter-widgets/ipywidgets,31834051,6776,2026-08-18
+jupyterlab-widgets,jupyter-widgets/ipywidgets,31433178,6800,2026-08-18
+ipywidgets,jupyter-widgets/ipywidgets,31105039,6643,2026-08-18
+traittypes,jupyter-widgets/traittypes,727236,572,2025-10-22
+ipyleaflet,jupyter-widgets/ipyleaflet,198711,288,2025-06-13
+jupyter-leaflet,jupyter-widgets/ipyleaflet,189039,290,2025-06-13
+pythreejs,jupyter-widgets/pythreejs,69126,122,2023-02-20
+sidecar,jupyter-widgets/jupyterlab-sidecar,25574,28,2026-02-27
+ipydatagrid,jupyter-widgets/ipydatagrid,20180,35,2024-12-17
+ipymidicontrols,jupyter-widgets/midicontrols,37,0,2019-07-12

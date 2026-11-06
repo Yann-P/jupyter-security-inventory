@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\_pygments
+
+Pygments theme making use of JupyterLab CSS variables
+
+package · [on GitHub](https://github.com/jupyterlab/jupyterlab_pygments) · scanned at commit [c3380f5](https://github.com/jupyterlab/jupyterlab_pygments/tree/c3380f5c973c74e13f7832504749d6ec11c5f491)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-pygments](https://pypi.org/project/jupyterlab-pygments/), [48,057,917](https://pypistats.org/packages/jupyterlab-pygments) downloads/month, 6,295 dependents, last published 2023-11-23; []{.fa-brands .fa-npm} [jupyterlab\_pygments](https://www.npmjs.com/package/jupyterlab_pygments), [22](https://npm-stat.com/charts.html?package=jupyterlab_pygments) downloads/month, 0 dependents, last published 2022-04-14
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides a Pygments theme package installable via pip\/conda and published to PyPI with high download counts\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-pygments \(2023\-11\-23\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of jupyterlab\_pygments \(2022\-04\-14\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-pygments \(2023\-11\-23\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 6, run on pull\_request, pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** ADMIN\_GITHUB\_TOKEN, NPM\_TOKEN, PYPI\_TOKEN, PYPI\_TOKEN\_MAP, github\_token
+- **Actions:** 6, 6 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/download\-artifact\@v3, actions\/setup\-python\@v4, actions\/upload\-artifact\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 31: 14 config, 6 code, 5 other, 3 docs, 1 notebook, 1 media, 1 web

@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xvega
+
+A C\+\+ API to Vega\-Lite\.
+
+package · [on GitHub](https://github.com/jupyter-xeus/xvega) · scanned at commit [82be020](https://github.com/jupyter-xeus/xvega/tree/82be020dad61c336bbb20cb52b4e00e9b388e6ee)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides a C\+\+ API for Vega\-Lite with build configuration and test files\, indicating a software library\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, mamba\-org\/setup\-micromamba\@v1
+- **Files:** 290: 279 code, 5 config, 3 docs, 2 other, 1 notebook

@@ -1,0 +1,35 @@
+# jupyterhub\/chartpress
+
+automate building and publishing images for helm charts
+
+tooling · [on GitHub](https://github.com/jupyterhub/chartpress) · scanned at commit [f7d727a](https://github.com/jupyterhub/chartpress/tree/f7d727abccb67bbb352f330d92c68e8b995c96cb)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [chartpress](https://pypi.org/project/chartpress/), [4,436](https://pypistats.org/packages/chartpress) downloads/month, 0 dependents, last published 2026-05-01
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Chartpress is a PyPI\-published CLI tool \(chartpress\.py\) that automates building and publishing images for Helm charts\, used in CI workflows of other projects\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via pre\-commit. Pre\-commit hook\, and CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/jupyterhub/chartpress/blob/f7d727abccb67bbb352f330d92c68e8b995c96cb/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of chartpress \(2026\-05\-01\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 8, all pinned to a commit
+- **Build requirements:** setuptools, setuptools\-scm
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@de0fac2, actions\/download\-artifact\@3e5f45b, actions\/setup\-python\@a309ff8, actions\/upload\-artifact\@043fb46, azure\/setup\-helm\@dda3372, codecov\/codecov\-action\@e79a696, docker\/setup\-buildx\-action\@d7f5e7f, pypa\/gh\-action\-pypi\-publish\@cef2210
+- **Files:** 56: 25 config, 14 docs, 9 code, 8 other

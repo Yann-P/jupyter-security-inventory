@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>jupyter-book &#8212; Jupyter Security Inventory</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2ef5feca" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.js"></script>
+    <script src="../_static/activate_datatables.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'orgs/jupyter-book';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/tables.js?v=f93e9670"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="jupyter-book/jupyter-book" href="jupyter-book/jupyter-book.html" />
+    <link rel="prev" title="jupyterhub/zero-to-jupyterhub-k8s" href="jupyterhub/zero-to-jupyterhub-k8s.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Security Inventory</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links" aria-label="Site navigation">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">All organizations</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../orgs.html">Organizations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ipython.html">ipython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlab.html">jupyterlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-server.html">jupyter-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-widgets.html">jupyter-widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterhub.html">jupyterhub</a></li>
+<li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">jupyter-book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voila-dashboards.html">voila-dashboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlite.html">jupyterlite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-incubator.html">jupyter-incubator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-xeus.html">jupyter-xeus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterhealth.html">jupyterhealth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binder-examples.html">binder-examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupytercon.html">jupytercon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voila-gallery.html">voila-gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binderhub-ci-repos.html">binderhub-ci-repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-governance.html">jupyter-governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-standards.html">jupyter-standards</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../topics.html">Security topics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../topics/zizmor.html">zizmor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/security-policy.html">SECURITY.md</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/pypi-attestations.html">PyPI attestations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/npm-trusted-publishing.html">npm trusted publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/supported-python.html">Supported Python</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../packages.html">Published packages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../packages/pypi.html">PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../packages/npm.html">npm</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../images.html">Container images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../orgs.html" class="nav-link">Organizations</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">jupyter-book</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="jupyter-book">
+<h1>jupyter-book<a class="headerlink" href="#jupyter-book" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://github.com/jupyter-book">github.com/jupyter-book</a> has 35 public repositories: 6 publish a package and 9 deploy a live service.</p>
+<p><a class="reference internal" href="#security-topics">Security topics (5)</a> · <a class="reference internal" href="#repositories">Repositories (35)</a> · <a class="reference internal" href="#packages">Packages (60)</a></p>
+<section id="security-topics">
+<h2>Security topics<a class="headerlink" href="#security-topics" title="Link to this heading">#</a></h2>
+<p>Each topic checks one practice in every repository. Open a topic to see which repositories still need work.</p>
+<p><a class="reference download internal" download="" href="../_downloads/d605918c0f3e32fccbe1c0ae3301d802/jupyter-book-topics.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>topic</p></th>
+<th class="head"><p>question</p></th>
+<th class="head"><p>done</p></th>
+<th class="head"><p>partial</p></th>
+<th class="head"><p>missing</p></th>
+<th class="head"><p>not applicable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../topics/zizmor.html"><span class="std std-doc">zizmor</span></a></p></td>
+<td><p>Does the repository check its GitHub workflows with zizmor?</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>25</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../topics/security-policy.html"><span class="std std-doc">SECURITY.md</span></a></p></td>
+<td><p>Does the repository say how to report a vulnerability?</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>6</p></td>
+<td><p>29</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../topics/pypi-attestations.html"><span class="std std-doc">PyPI attestations</span></a></p></td>
+<td><p>Do the repository’s PyPI releases have attestations?</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>31</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../topics/npm-trusted-publishing.html"><span class="std std-doc">npm trusted publishing</span></a></p></td>
+<td><p>Does the repository publish its npm packages with trusted publishing?</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../topics/supported-python.html"><span class="std std-doc">Supported Python</span></a></p></td>
+<td><p>Do the repository’s PyPI packages require a Python that still gets security fixes?</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+<td><p>31</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="repositories">
+<h2>Repositories<a class="headerlink" href="#repositories" title="Link to this heading">#</a></h2>
+<p>Rows are colored by kind: <span class="kind-package legend">package</span> <span class="kind-application legend">application</span> <span class="kind-tooling legend">tooling</span> <span class="kind-deployment legend">deployment</span> <span class="kind-documentation legend">documentation</span> <span class="kind-example legend">example</span> <span class="kind-other legend">other</span></p>
+<section id="software">
+<h3>Software<a class="headerlink" href="#software" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/4a40c83a27c471683a1c6e4399637973/jupyter-book-repos.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>repo</p></th>
+<th class="head"><p>kind</p></th>
+<th class="head"><p>package</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>dependents</p></th>
+<th class="head"><p>image</p></th>
+<th class="head"><p>all-time pulls</p></th>
+<th class="head"><p>used in CI</p></th>
+<th class="head"><p>live service</p></th>
+<th class="head"><p>security boundary</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/jupyter-book.html"><span class="std std-doc">jupyter-book/jupyter-book</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyter-book/">jupyter-book</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-book">217,891</a></p></td>
+<td><p>22</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/myst-spec">myst-spec</a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-spec">89,985</a></p></td>
+<td><p>103</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/thebe.html"><span class="std std-doc">jupyter-book/thebe</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/thebe-core">thebe-core</a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=thebe-core">10,372</a></p></td>
+<td><p>11</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/jupyterlab-myst.html"><span class="std std-doc">jupyter-book/jupyterlab-myst</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterlab-myst/">jupyterlab-myst</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-myst">8,807</a></p></td>
+<td><p>32</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/providers">&#64;myst-theme/providers</a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/providers">5,933</a></p></td>
+<td><p>22</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyter-book/hatch-deps-selector.html"><span class="std std-doc">jupyter-book/hatch-deps-selector</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/hatch-deps-selector/">hatch-deps-selector</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-deps-selector">107</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td><p>2</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-other"><a class="reference internal" href="jupyter-book/dot.github.html"><span class="std std-doc">jupyter-book/.github</span></a></span></p></td>
+<td><p>other</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/blog-plugin.html"><span class="std std-doc">jupyter-book/blog-plugin</span></a></span></p></td>
+<td><p>package</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyter-book/github-action-playground.html"><span class="std std-doc">jupyter-book/github-action-playground</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyter-book/jb1-redirect-generator.html"><span class="std std-doc">jupyter-book/jb1-redirect-generator</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyter-book/jupyter_releaser.html"><span class="std std-doc">jupyter-book/jupyter_releaser</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/myst-plugins.html"><span class="std std-doc">jupyter-book/myst-plugins</span></a></span></p></td>
+<td><p>package</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="jupyter-book/mystmd.org.html"><span class="std std-doc">jupyter-book/mystmd.org</span></a></span></p></td>
+<td><p>application</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>mystmd.org</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyter-book/vscode-mystmd.html"><span class="std std-doc">jupyter-book/vscode-mystmd</span></a></span></p></td>
+<td><p>package</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="documentation-and-examples">
+<h3>Documentation and examples<a class="headerlink" href="#documentation-and-examples" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/c685a98a98be4320512efa6dadd5f37d/jupyter-book-docs.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>repo</p></th>
+<th class="head"><p>kind</p></th>
+<th class="head"><p>live service</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/blog.html"><span class="std std-doc">jupyter-book/blog</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td><p>blog.jupyterbook.org</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/demo-scipy-2025.html"><span class="std std-doc">jupyter-book/demo-scipy-2025</span></a></span></p></td>
+<td><p>example</p></td>
+<td><p>demo-scipy-2025 website</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/example-outputs.html"><span class="std std-doc">jupyter-book/example-outputs</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td><p>jupyter.org/example-outputs</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/example-python-plugin.html"><span class="std std-doc">jupyter-book/example-python-plugin</span></a></span></p></td>
+<td><p>example</p></td>
+<td><p>example-python-plugin website</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/jupyterbook.org.html"><span class="std std-doc">jupyter-book/jupyterbook.org</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td><p>jupyterbook.org</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/myst-enhancement-proposals.html"><span class="std std-doc">jupyter-book/myst-enhancement-proposals</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td><p>mep.mystmd.org</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/team-compass.html"><span class="std std-doc">jupyter-book/team-compass</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td><p>jupyterbook.org/compass</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/workshop-template.html"><span class="std std-doc">jupyter-book/workshop-template</span></a></span></p></td>
+<td><p>example</p></td>
+<td><p>jupyter-book.github.io/workshop-template</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/book-theme-tailwind-quickstart.html"><span class="std std-doc">jupyter-book/book-theme-tailwind-quickstart</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/example-js-anywidget.html"><span class="std std-doc">jupyter-book/example-js-anywidget</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/example-js-plugin.html"><span class="std std-doc">jupyter-book/example-js-plugin</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/example-landing-pages.html"><span class="std std-doc">jupyter-book/example-landing-pages</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/example-multi-language-book.html"><span class="std std-doc">jupyter-book/example-multi-language-book</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/example-stylesheets.html"><span class="std std-doc">jupyter-book/example-stylesheets</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/example-widgets.html"><span class="std std-doc">jupyter-book/example-widgets</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/jupyterlab-myst-quickstart.html"><span class="std std-doc">jupyter-book/jupyterlab-myst-quickstart</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/legacy-demo-book.html"><span class="std std-doc">jupyter-book/legacy-demo-book</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/mystmd-quickstart.html"><span class="std std-doc">jupyter-book/mystmd-quickstart</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/renaissance2026-myst.html"><span class="std std-doc">jupyter-book/renaissance2026-myst</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyter-book/test-repo.html"><span class="std std-doc">jupyter-book/test-repo</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="jupyter-book/thebe-binder-base.html"><span class="std std-doc">jupyter-book/thebe-binder-base</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="packages">
+<h2>Packages<a class="headerlink" href="#packages" title="Link to this heading">#</a></h2>
+<p>Downloads are for the last month and include CI.</p>
+<section id="pypi">
+<h3>PyPI<a class="headerlink" href="#pypi" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/ccd2e4f75aea4ca0f9d9fccfe48e8acb/jupyter-book-pypi.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>package</p></th>
+<th class="head"><p>repository</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>dependents</p></th>
+<th class="head"><p>last published</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyter-book/">jupyter-book</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/jupyter-book.html"><span class="std std-doc">jupyter-book/jupyter-book</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-book">217,891</a></p></td>
+<td><p>22</p></td>
+<td><p><span class="date">2026-09-23</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/mystmd/">mystmd</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/mystmd">10,278</a></p></td>
+<td><p>6</p></td>
+<td><p><span class="date">2026-10-27</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyterlab-myst/">jupyterlab-myst</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/jupyterlab-myst.html"><span class="std std-doc">jupyter-book/jupyterlab-myst</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-myst">8,807</a></p></td>
+<td><p>32</p></td>
+<td><p><span class="date">2026-10-02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/hatch-deps-selector/">hatch-deps-selector</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/hatch-deps-selector.html"><span class="std std-doc">jupyter-book/hatch-deps-selector</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-deps-selector">107</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2024-09-04</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="npm">
+<h3>npm<a class="headerlink" href="#npm" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/d72da1cbb4b8230199dd18e80f07cbda/jupyter-book-npm.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>package</p></th>
+<th class="head"><p>repository</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>dependents</p></th>
+<th class="head"><p>last published</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-spec">myst-spec</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-spec">89,985</a></p></td>
+<td><p>103</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-frontmatter">myst-frontmatter</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-frontmatter">56,550</a></p></td>
+<td><p>103</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-common">myst-common</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-common">56,390</a></p></td>
+<td><p>100</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/simple-validators">simple-validators</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=simple-validators">54,690</a></p></td>
+<td><p>108</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-toc">myst-toc</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-toc">54,069</a></p></td>
+<td><p>105</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-spec-ext">myst-spec-ext</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-spec-ext">46,398</a></p></td>
+<td><p>79</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-to-html">myst-to-html</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-to-html">40,314</a></p></td>
+<td><p>31</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-directives">myst-directives</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-directives">39,135</a></p></td>
+<td><p>38</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-roles">myst-roles</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-roles">39,056</a></p></td>
+<td><p>32</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/markdown-it-myst">markdown-it-myst</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=markdown-it-myst">38,836</a></p></td>
+<td><p>31</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-parser">myst-parser</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-parser">38,615</a></p></td>
+<td><p>30</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-cli-utils">myst-cli-utils</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-cli-utils">35,202</a></p></td>
+<td><p>62</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-transforms">myst-transforms</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-transforms">21,281</a></p></td>
+<td><p>27</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/mystmd">mystmd</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=mystmd">19,980</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/thebe-core">thebe-core</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/thebe.html"><span class="std std-doc">jupyter-book/thebe</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=thebe-core">10,372</a></p></td>
+<td><p>11</p></td>
+<td><p><span class="date">2025-01-28</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/thebe-lite">thebe-lite</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/thebe.html"><span class="std std-doc">jupyter-book/thebe</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=thebe-lite">10,256</a></p></td>
+<td><p>7</p></td>
+<td><p><span class="date">2025-01-28</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/thebe-react">thebe-react</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/thebe.html"><span class="std std-doc">jupyter-book/thebe</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=thebe-react">10,024</a></p></td>
+<td><p>8</p></td>
+<td><p><span class="date">2025-01-28</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-execute">myst-execute</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-execute">9,928</a></p></td>
+<td><p>9</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/providers">&#64;myst-theme/providers</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/providers">5,933</a></p></td>
+<td><p>22</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-tabs">myst-ext-tabs</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-tabs">5,925</a></p></td>
+<td><p>15</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/common">&#64;myst-theme/common</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/common">5,603</a></p></td>
+<td><p>25</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-to-react">myst-to-react</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-to-react">5,592</a></p></td>
+<td><p>18</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-config">myst-config</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-config">4,900</a></p></td>
+<td><p>46</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/jupyter-book">jupyter-book</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/jupyter-book.html"><span class="std std-doc">jupyter-book/jupyter-book</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=jupyter-book">4,591</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-09-23</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-proof">myst-ext-proof</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-proof">4,159</a></p></td>
+<td><p>17</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-exercise">myst-ext-exercise</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-exercise">4,087</a></p></td>
+<td><p>15</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/search">&#64;myst-theme/search</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/search">4,009</a></p></td>
+<td><p>26</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-card">myst-ext-card</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-card">3,980</a></p></td>
+<td><p>15</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-grid">myst-ext-grid</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-grid">3,890</a></p></td>
+<td><p>15</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-to-md">myst-to-md</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-to-md">3,541</a></p></td>
+<td><p>14</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-button">myst-ext-button</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-button">3,482</a></p></td>
+<td><p>16</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-migrate">myst-migrate</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-migrate">3,285</a></p></td>
+<td><p>28</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/styles">&#64;myst-theme/styles</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/styles">2,962</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/search-minisearch">&#64;myst-theme/search-minisearch</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/search-minisearch">2,776</a></p></td>
+<td><p>5</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/anywidget">&#64;myst-theme/anywidget</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/anywidget">2,709</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-cli">myst-cli</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-cli">2,618</a></p></td>
+<td><p>8</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/landing-pages">&#64;myst-theme/landing-pages</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/landing-pages">2,565</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-templates">myst-templates</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-templates">2,357</a></p></td>
+<td><p>32</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-to-docx">myst-to-docx</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-to-docx">2,233</a></p></td>
+<td><p>15</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/citation-js-utils">citation-js-utils</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=citation-js-utils">2,190</a></p></td>
+<td><p>17</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-to-tex">myst-to-tex</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-to-tex">2,142</a></p></td>
+<td><p>15</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-to-jats">myst-to-jats</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-to-jats">2,137</a></p></td>
+<td><p>16</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-to-typst">myst-to-typst</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-to-typst">2,136</a></p></td>
+<td><p>9</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-icon">myst-ext-icon</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-icon">1,969</a></p></td>
+<td><p>9</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/jtex">jtex</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=jtex">1,804</a></p></td>
+<td><p>9</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-ext-reactive">myst-ext-reactive</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-ext-reactive">1,740</a></p></td>
+<td><p>9</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/frontmatter">&#64;myst-theme/frontmatter</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/frontmatter">1,529</a></p></td>
+<td><p>3</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/tex-to-myst">tex-to-myst</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=tex-to-myst">1,482</a></p></td>
+<td><p>9</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/thebe">thebe</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/thebe.html"><span class="std std-doc">jupyter-book/thebe</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=thebe">1,458</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2025-01-28</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/diagrams">&#64;myst-theme/diagrams</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/diagrams">1,369</a></p></td>
+<td><p>3</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/icons">&#64;myst-theme/icons</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/icons">540</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/site">&#64;myst-theme/site</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/site">477</a></p></td>
+<td><p>2</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/myst-demo">myst-demo</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-demo">430</a></p></td>
+<td><p>3</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;myst-theme/jupyter">&#64;myst-theme/jupyter</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/jupyter">406</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/jats-to-myst">jats-to-myst</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=jats-to-myst">394</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-10-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/jupyterlab-myst">jupyterlab-myst</a></p></td>
+<td><p><a class="reference internal" href="jupyter-book/jupyterlab-myst.html"><span class="std std-doc">jupyter-book/jupyterlab-myst</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=jupyterlab-myst">341</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="date">2026-10-02</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

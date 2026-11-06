@@ -1,0 +1,9 @@
+organization,repos it applies to,done,partial,missing
+jupyterlab,17,9,2,6
+jupyter-widgets,6,0,0,6
+jupyter,4,2,1,1
+jupyterhub,4,2,0,2
+jupyterlite,10,8,0,2
+voila-dashboards,3,1,0,2
+jupyter-book,5,4,0,1
+jupyter-server,3,2,0,1

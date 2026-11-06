@@ -1,0 +1,35 @@
+# jupyterlite\/demo
+
+JupyterLite demo deployed to GitHub Pages 🚀
+
+example · [on GitHub](https://github.com/jupyterlite/demo) · scanned at commit [0b56844](https://github.com/jupyterlite/demo/tree/0b56844ad3965ecfc201eaa59de45831eed44334)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterlite\.github\.io\/demo
+- **Security boundary:** no
+- **Why these labels:** Contains many example notebooks \(content\/\*\.ipynb\) and a GitHub Actions deploy workflow to publish a static JupyterLite site on GitHub Pages\, demonstrating usage rather than a library or application\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 4, 4 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/deploy\-pages\@v4, actions\/setup\-python\@v5, actions\/upload\-pages\-artifact\@v3
+- **Files:** 31: 19 notebook, 4 other, 3 config, 2 docs, 2 data, 1 media

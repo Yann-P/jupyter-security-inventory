@@ -1,0 +1,36 @@
+# jupyterhub\/docker\-image\-cleaner
+
+Python script to cleanup unused docker images
+
+package · [on GitHub](https://github.com/jupyterhub/docker-image-cleaner) · scanned at commit [b305d4f](https://github.com/jupyterhub/docker-image-cleaner/tree/b305d4fd0fd20c0ea38b2fbb6f93c83d3faaed19)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [docker\-image\-cleaner](https://pypi.org/project/docker-image-cleaner/), [40](https://pypistats.org/packages/docker-image-cleaner) downloads/month, 0 dependents, last published 2023-01-02
+- **Container images:**
+  - [jupyterhub\/docker\-image\-cleaner](https://quay.io/repository/jupyterhub/docker-image-cleaner) on quay.io, last published 2023-01-02
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a Python package with a published PyPI package and Docker image for cleaning unused docker images\, evidenced by pyproject\.toml\, Dockerfile\, and CI workflows publishing to PyPI and container registry\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of docker\-image\-cleaner \(2023\-01\-02\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of docker\-image\-cleaner \(2023\-01\-02\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** pypi, container
+- **Secrets:** DOCKER\_REGISTRY\_PASSWORD, DOCKER\_REGISTRY\_USERNAME, jupyterhub\_bot\_pat, pypi\_password
+- **Actions:** 9, 8 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, peter\-evans\/create\-pull\-request\@v8, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** setuptools, setuptools\-scm
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-python\@v6, codecov\/codecov\-action\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, [jupyterhub\/action\-major\-minor\-tag\-calculator](/orgs/jupyterhub/action-major-minor-tag-calculator.md)\@v4, peter\-evans\/create\-pull\-request\@v8, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 21: 7 config, 5 other, 5 code, 4 docs

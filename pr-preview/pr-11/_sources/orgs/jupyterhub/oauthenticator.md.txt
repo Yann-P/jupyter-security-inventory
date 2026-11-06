@@ -1,0 +1,35 @@
+# jupyterhub\/oauthenticator
+
+OAuth \+ JupyterHub Authenticator \= OAuthenticator
+
+package · [on GitHub](https://github.com/jupyterhub/oauthenticator) · scanned at commit [d3ae420](https://github.com/jupyterhub/oauthenticator/tree/d3ae420ac2af7b71b486a4dcfebcb6bb5d200e66)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [oauthenticator](https://pypi.org/project/oauthenticator/), [89,857](https://pypistats.org/packages/oauthenticator) downloads/month, 18 dependents, last published 2026-03-26
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it authenticates users via OAuth for JupyterHub
+- **Why these labels:** The repository contains a Python package named \'oauthenticator\' that is published to PyPI and provides OAuth authentication handlers for JupyterHub\, as evidenced by the code in the oauthenticator\/ directory and the pyproject\.toml with a PyPI publish workflow\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of oauthenticator \(2026\-03\-26\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 8, 5 by commit, 3 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7
+- **Build requirements:** hatch\-requirements\-txt, hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@9c091bb, actions\/checkout\@v7, actions\/download\-artifact\@9000827, actions\/setup\-python\@5fda3b9, actions\/setup\-python\@v7, actions\/upload\-artifact\@cf430e0, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@7245906
+- **Files:** 97: 40 code, 35 docs, 9 other, 8 config, 3 media, 1 notebook, 1 web

@@ -1,0 +1,34 @@
+# binder\-examples\/rocker
+
+Using a pre\-existing rocker image on mybinder\.org
+
+example · [on GitHub](https://github.com/binder-examples/rocker) · scanned at commit [0040956](https://github.com/binder-examples/rocker/tree/0040956c9b1b1b6972e6182f5f1420109aac1db2)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is an example Binder project\, as evidenced by the README containing Binder launch badges and the description \'Using a pre\-existing rocker image on mybinder\.org\'\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 13: 6 other, 4 code, 2 docs, 1 notebook

@@ -1,0 +1,56 @@
+# jupyter\/docker\-stacks
+
+Ready\-to\-run Docker images containing Jupyter applications
+
+application · [on GitHub](https://github.com/jupyter/docker-stacks) · scanned at commit [90b46d6](https://github.com/jupyter/docker-stacks/tree/90b46d6b8248d6c6e85ba4015b96a58671c3729a)
+
+## Reach
+
+- **Packages:** none
+- **Container images:**
+  - [jupyter\/scipy\-notebook](https://hub.docker.com/r/jupyter/scipy-notebook) on docker.io, 93,375,621 pulls, last published 2023-10-20
+  - [jupyter\/tensorflow\-notebook](https://hub.docker.com/r/jupyter/tensorflow-notebook) on docker.io, 75,411,231 pulls, last published 2023-10-20
+  - [jupyter\/all\-spark\-notebook](https://hub.docker.com/r/jupyter/all-spark-notebook) on docker.io, 75,206,169 pulls, last published 2023-10-20
+  - [jupyter\/pyspark\-notebook](https://hub.docker.com/r/jupyter/pyspark-notebook) on docker.io, 71,467,970 pulls, last published 2023-10-20
+  - [jupyter\/datascience\-notebook](https://hub.docker.com/r/jupyter/datascience-notebook) on docker.io, 36,314,061 pulls, last published 2023-10-20
+  - [jupyter\/minimal\-notebook](https://hub.docker.com/r/jupyter/minimal-notebook) on docker.io, 22,547,620 pulls, last published 2023-10-20
+  - [jupyter\/base\-notebook](https://hub.docker.com/r/jupyter/base-notebook) on docker.io, 14,889,225 pulls, last published 2023-10-20
+  - [jupyter\/r\-notebook](https://hub.docker.com/r/jupyter/r-notebook) on docker.io, 2,531,684 pulls, last published 2023-10-20
+  - [jupyter\/docker\-stacks\-foundation](https://hub.docker.com/r/jupyter/docker-stacks-foundation) on docker.io, 205,798 pulls, last published 2023-10-20
+  - [jupyter\/julia\-notebook](https://hub.docker.com/r/jupyter/julia-notebook) on docker.io, 30,061 pulls, last published 2023-10-20
+  - [jupyter\/all\-spark\-notebook](https://quay.io/repository/jupyter/all-spark-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/base\-notebook](https://quay.io/repository/jupyter/base-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/datascience\-notebook](https://quay.io/repository/jupyter/datascience-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/docker\-stacks\-foundation](https://quay.io/repository/jupyter/docker-stacks-foundation) on quay.io, last published 2026-11-02
+  - [jupyter\/julia\-notebook](https://quay.io/repository/jupyter/julia-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/minimal\-notebook](https://quay.io/repository/jupyter/minimal-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/pyspark\-notebook](https://quay.io/repository/jupyter/pyspark-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/pytorch\-notebook](https://quay.io/repository/jupyter/pytorch-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/r\-notebook](https://quay.io/repository/jupyter/r-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/scipy\-notebook](https://quay.io/repository/jupyter/scipy-notebook) on quay.io, last published 2026-11-02
+  - [jupyter\/tensorflow\-notebook](https://quay.io/repository/jupyter/tensorflow-notebook) on quay.io, last published 2026-11-02
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository primarily builds and publishes Docker images \(container\) as evidenced by numerous Dockerfiles in images\/ and CI workflows like docker\-build\-test\-upload\.yml\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** partial via repository. Not the same emails as jupyter\/\.github\: check where reports go\. Files: [SECURITY\.md](https://github.com/jupyter/docker-stacks/blob/90b46d6b8248d6c6e85ba4015b96a58671c3729a/SECURITY.md)
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 14, run on branch\_protection\_rule, pull\_request, push, schedule, workflow\_call, workflow\_dispatch
+- **Publishes:** container
+- **Secrets:** APIKEY\_\_QUAY\_IO, QUAY\_ROBOT\_TOKEN, QUAY\_USERNAME, REGISTRY\_TOKEN, REGISTRY\_USERNAME, SCORECARD\_TOKEN
+- **Actions:** 11, all pinned to a commit
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/download\-artifact\@9000827, actions\/setup\-python\@6d4fd22, actions\/upload\-artifact\@cf430e0, anchore\/sbom\-action\@66cbf4b, cargo\-bins\/cargo\-binstall\@81df5c2, christian\-korneck\/update\-container\-description\-action\@d360055, github\/codeql\-action\@9b32540, ossf\/scorecard\-action\@fa7117d, sigstore\/cosign\-installer\@6f9f177, stefanzweifel\/git\-auto\-commit\-action\@d0b0110
+- **Files:** 309: 143 code, 59 other, 50 docs, 36 config, 11 media, 10 notebook

@@ -1,0 +1,35 @@
+# jupyterlite\/sphinx\-demo
+
+A Sphinx demo website using jupyterlite\-sphinx deployed to GitHub Pages 🚀
+
+example · [on GitHub](https://github.com/jupyterlite/sphinx-demo) · scanned at commit [4858493](https://github.com/jupyterlite/sphinx-demo/tree/48584934aa0cd463569ad736dc18d25bdb37b133)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterlite\.github\.io\/sphinx\-demo
+- **Security boundary:** no
+- **Why these labels:** The repository is a demo website using jupyterlite\-sphinx\, with content primarily in docs\/source directories and deployed to GitHub Pages via \.github\/workflows\/pages\.yml\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 6, all pinned to a commit
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@08c6903, actions\/download\-artifact\@634f93c, actions\/upload\-artifact\@ea165f8, astral\-sh\/setup\-uv\@d0cc045, mamba\-org\/setup\-micromamba\@add3a49, peaceiris\/actions\-gh\-pages\@4f9cc66
+- **Files:** 44: 13 docs, 12 config, 9 code, 5 other, 3 web, 2 media

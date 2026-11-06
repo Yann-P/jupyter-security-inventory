@@ -1,0 +1,35 @@
+# jupytercon\/2020\-widgets\-tutorial
+
+2020\-mwcraig created by GitHub Classroom
+
+example · [on GitHub](https://github.com/jupytercon/2020-widgets-tutorial) · scanned at commit [d29de18](https://github.com/jupytercon/2020-widgets-tutorial/tree/d29de1826a1788a611e3fd5bbaf01dc690fe2f3d)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains many tutorial notebooks \(e\.g\.\, notebooks\/01\.Basics\/\*\.ipynb\) and a README describing installation for a JupyterCon 2020 tutorial\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/setup\-python\@v1, peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Files:** 114: 55 media, 24 notebook, 12 code, 11 docs, 7 other, 3 config, 1 web, 1 data

@@ -1,0 +1,36 @@
+# jupyterhub\/repo2docker
+
+Turn repositories into Jupyter\-enabled Docker images
+
+package · [on GitHub](https://github.com/jupyterhub/repo2docker) · scanned at commit [ebcc593](https://github.com/jupyterhub/repo2docker/tree/ebcc593885cc6a7e344520ca1bb8766242093c8f)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-repo2docker](https://pypi.org/project/jupyter-repo2docker/), [2,884](https://pypistats.org/packages/jupyter-repo2docker) downloads/month, 14 dependents, last published 2026-04-23
+- **Container images:**
+  - [jupyterhub\/repo2docker](https://quay.io/repository/jupyterhub/repo2docker) on quay.io, last published 2026-04-23
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains a Python package \(pyproject\.toml\, repo2docker\/\) that builds Docker images and is published to PyPI as jupyter\-repo2docker\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-repo2docker \(2026\-04\-23\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-repo2docker \(2026\-04\-23\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** pypi, container
+- **Secrets:** DOCKER\_REGISTRY\_TOKEN, DOCKER\_REGISTRY\_USERNAME, PYPI\_PASSWORD
+- **Actions:** 8, 7 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** hatchling, setuptools, setuptools\-scm, wheel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-python\@v7, actions\/upload\-artifact\@v7, codecov\/codecov\-action\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 381: 101 other, 101 docs, 99 code, 73 config, 6 media, 1 web

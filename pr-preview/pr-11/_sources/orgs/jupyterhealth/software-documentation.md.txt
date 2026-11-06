@@ -1,0 +1,35 @@
+# jupyterhealth\/software\-documentation
+
+Documentation for JupyterHealth
+
+documentation · [on GitHub](https://github.com/jupyterhealth/software-documentation) · scanned at commit [49a35c9](https://github.com/jupyterhealth/software-documentation/tree/49a35c93b740f9eb4db1a0c055ea391403ca36f2)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterhealth\.github\.io\/software\-documentation
+- **Security boundary:** no
+- **Why these labels:** The repository contains only documentation files \(index\.md\, explanation\/\, howto\/\, tutorial\/\) and a README stating it is the MyST\-based documentation website for JupyterHealth\; the CI workflow publishes the website via GitHub Pages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, all pinned to a commit
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/configure\-pages\@45bfe01, actions\/deploy\-pages\@cd2ce8f, actions\/setup\-node\@8207627, actions\/upload\-pages\-artifact\@fc324d3
+- **Files:** 71: 50 docs, 12 config, 6 media, 2 notebook, 1 other

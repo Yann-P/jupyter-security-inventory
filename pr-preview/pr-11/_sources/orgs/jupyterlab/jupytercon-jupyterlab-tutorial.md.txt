@@ -1,0 +1,34 @@
+# jupyterlab\/jupytercon\-jupyterlab\-tutorial
+
+JupyterCon 2018 JupyterLab tutorial 
+
+example · [on GitHub](https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial) · scanned at commit [c14db2b](https://github.com/jupyterlab/jupytercon-jupyterlab-tutorial/tree/c14db2b591c9c0484200cde7759efd57f71b7631)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is named \'jupytercon\-jupyterlab\-tutorial\' and contains tutorial materials\, including notebooks and markdown files\, for a JupyterCon 2018 tutorial\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 37: 9 docs, 8 notebook, 7 config, 6 other, 3 code, 2 data, 1 web, 1 media

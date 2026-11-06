@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\-translate
+
+JupyterLab Language pack helper
+
+package · [on GitHub](https://github.com/jupyterlab/jupyterlab-translate) · scanned at commit [3120dd1](https://github.com/jupyterlab/jupyterlab-translate/tree/3120dd14424862ec8135b706e7edadc9a1ef5dfc)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-translate](https://pypi.org/project/jupyterlab-translate/), [510](https://pypistats.org/packages/jupyterlab-translate) downloads/month, 0 dependents, last published 2024-05-15
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a Python package \(jupyterlab\-translate\) used to generate language packs and provides a Hatch build hook\, with files like pyproject\.toml and jupyterlab\_translate\/ containing package code\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-translate \(2024\-05\-15\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-translate \(2024\-05\-15\) allows Python 3\.7\, which has had no security fixes since 2023\-06\-27\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 4, 1 by commit, 2 by tag, 1 by branch. Third-party, not pinned: pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/setup\-python\@v5, ncipollo\/release\-action\@4f8867f, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 30: 15 code, 8 config, 4 docs, 3 other

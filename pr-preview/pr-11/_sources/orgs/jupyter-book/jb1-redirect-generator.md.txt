@@ -1,0 +1,34 @@
+# jupyter\-book\/jb1\-redirect\-generator
+
+Generate HTML redirect files when migrating from Jupyter Book v1 to MyST\/Jupyter Book v2
+
+tooling · [on GitHub](https://github.com/jupyter-book/jb1-redirect-generator) · scanned at commit [d70ce6d](https://github.com/jupyter-book/jb1-redirect-generator/tree/d70ce6d7df9f2dfc83bb1d409336c0cc3e20697f)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** This repo contains a standalone script \(generate\_redirects\.py\) and test\_examples\.py that generate HTML redirect files during Jupyter Book v1 to v2 migration\, with no CI workflows or published packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 5: 2 other, 2 code, 1 docs

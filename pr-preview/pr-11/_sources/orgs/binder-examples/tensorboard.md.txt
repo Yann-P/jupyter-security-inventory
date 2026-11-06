@@ -1,0 +1,34 @@
+# binder\-examples\/tensorboard
+
+
+
+example · [on GitHub](https://github.com/binder-examples/tensorboard) · scanned at commit [4a93712](https://github.com/binder-examples/tensorboard/tree/4a93712656de76499f636b61130aedb8f41c6a60)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** README\.md describes it as an example of running Jupyter notebook \+ tensorboard on mybinder\.org\, with files train\_model\.ipynb\, tensorboardserverextension\.py\, and Binder launch badges\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 9: 5 other, 1 docs, 1 config, 1 code, 1 notebook

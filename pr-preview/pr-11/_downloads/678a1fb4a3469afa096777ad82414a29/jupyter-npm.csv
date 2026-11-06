@@ -1,0 +1,18 @@
+package,repository,downloads/month,dependents,last published
+nbdime,jupyter/nbdime,30962,18,2026-02-10
+nbdime-jupyterlab,jupyter/nbdime,7511,4,2026-02-10
+@jupyter-notebook/application,jupyter/notebook,5066,22,2026-10-30
+@jupyter-notebook/help-extension,jupyter/notebook,3620,0,2026-10-30
+@jupyter-notebook/tree,jupyter/notebook,2753,6,2026-10-30
+@jupyter-notebook/ui-components,jupyter/notebook,2164,2,2026-10-30
+@jupyter-notebook/docmanager-extension,jupyter/notebook,2007,0,2026-10-30
+@jupyter-notebook/application-extension,jupyter/notebook,1959,0,2026-10-30
+@jupyter-notebook/console-extension,jupyter/notebook,1950,0,2026-10-30
+@jupyter-notebook/notebook-extension,jupyter/notebook,1839,0,2026-10-30
+@jupyter-notebook/tree-extension,jupyter/notebook,1717,0,2026-10-30
+@jupyter-notebook/lab-extension,jupyter/notebook,1062,0,2026-10-30
+@jupyter-notebook/terminal-extension,jupyter/notebook,1044,0,2026-10-30
+@jupyter-notebook/documentsearch-extension,jupyter/notebook,555,0,2026-10-30
+nbformat-schema,jupyter/nbformat,274,0,2024-04-04
+@jupyter/nbgrader,jupyter/nbgrader,67,0,2026-09-30
+nbgrader,jupyter/nbgrader,58,0,2024-03-26

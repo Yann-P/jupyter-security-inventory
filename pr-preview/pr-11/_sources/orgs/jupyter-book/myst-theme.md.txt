@@ -1,0 +1,35 @@
+# jupyter\-book\/myst\-theme
+
+Packages for creating MyST websites themes using React and Remix
+
+package · [on GitHub](https://github.com/jupyter-book/myst-theme) · scanned at commit [1c50887](https://github.com/jupyter-book/myst-theme/tree/1c50887c46b1166f8fca90b5b0ec76594e305c97)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [\@myst\-theme\/providers](https://www.npmjs.com/package/@myst-theme/providers), [5,933](https://npm-stat.com/charts.html?package=@myst-theme/providers) downloads/month, 22 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/common](https://www.npmjs.com/package/@myst-theme/common), [5,603](https://npm-stat.com/charts.html?package=@myst-theme/common) downloads/month, 25 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [myst\-to\-react](https://www.npmjs.com/package/myst-to-react), [5,592](https://npm-stat.com/charts.html?package=myst-to-react) downloads/month, 18 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/search](https://www.npmjs.com/package/@myst-theme/search), [4,009](https://npm-stat.com/charts.html?package=@myst-theme/search) downloads/month, 26 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/styles](https://www.npmjs.com/package/@myst-theme/styles), [2,962](https://npm-stat.com/charts.html?package=@myst-theme/styles) downloads/month, 0 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/search\-minisearch](https://www.npmjs.com/package/@myst-theme/search-minisearch), [2,776](https://npm-stat.com/charts.html?package=@myst-theme/search-minisearch) downloads/month, 5 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/anywidget](https://www.npmjs.com/package/@myst-theme/anywidget), [2,709](https://npm-stat.com/charts.html?package=@myst-theme/anywidget) downloads/month, 1 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/landing\-pages](https://www.npmjs.com/package/@myst-theme/landing-pages), [2,565](https://npm-stat.com/charts.html?package=@myst-theme/landing-pages) downloads/month, 0 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/frontmatter](https://www.npmjs.com/package/@myst-theme/frontmatter), [1,529](https://npm-stat.com/charts.html?package=@myst-theme/frontmatter) downloads/month, 3 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/diagrams](https://www.npmjs.com/package/@myst-theme/diagrams), [1,369](https://npm-stat.com/charts.html?package=@myst-theme/diagrams) downloads/month, 3 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/icons](https://www.npmjs.com/package/@myst-theme/icons), [540](https://npm-stat.com/charts.html?package=@myst-theme/icons) downloads/month, 0 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/site](https://www.npmjs.com/package/@myst-theme/site), [477](https://npm-stat.com/charts.html?package=@myst-theme/site) downloads/month, 2 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [myst\-demo](https://www.npmjs.com/package/myst-demo), [430](https://npm-stat.com/charts.html?package=myst-demo) downloads/month, 3 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@myst\-theme\/jupyter](https://www.npmjs.com/package/@myst-theme/jupyter), [406](https://npm-stat.com/charts.html?package=@myst-theme/jupyter) downloads/month, 0 dependents, last published 2026-09-21
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains NPM packages \(published under \@myst\-theme\) and React\/Remix theme components for rendering MyST content\, as evidenced by package\.json and published packages like \@myst\-theme\/providers\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-book\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm versions used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, release, workflow\_call, workflow\_dispatch
+- **Publishes:** jupyter\_releaser, website
+- **Secrets:** MYST\_TEMPLATES\_TOKEN, MYST\_TEMPLATES\_USER
+- **Actions:** 8, 8 by tag. Third-party, not pinned: berkeley\-cdss\/myst\-a11y\@v1, changesets\/action\@v1, oven\-sh\/setup\-bun\@v2, softprops\/action\-gh\-release\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/checkout\@v4, actions\/setup\-node\@v4, actions\/setup\-python\@v5, berkeley\-cdss\/myst\-a11y\@v1, changesets\/action\@v1, oven\-sh\/setup\-bun\@v2, softprops\/action\-gh\-release\@v2
+- **Files:** 452: 260 code, 76 docs, 60 config, 31 web, 19 other, 4 media, 2 data

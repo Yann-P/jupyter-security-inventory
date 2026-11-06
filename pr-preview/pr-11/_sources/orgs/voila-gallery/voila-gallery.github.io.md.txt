@@ -1,0 +1,35 @@
+# voila\-gallery\/voila\-gallery\.github\.io
+
+Public facing deployment for voila\-gallery\.org
+
+documentation · [on GitHub](https://github.com/voila-gallery/voila-gallery.github.io) · scanned at commit [ae8f5f9](https://github.com/voila-gallery/voila-gallery.github.io/tree/ae8f5f9c9bfb6c86cf3e5502220a3fcfbceb1ad5)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** voila\-gallery\.github\.io
+- **Security boundary:** no
+- **Why these labels:** The repository is the website for voila\-gallery\.org\, as noted in the README \'View the gallery at https\:\/\/voila\-gallery\.github\.io\' and contains HTML\/CSS\/JS files under index\.html\, css\/style\.css\, and js\/index\.js\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, schedule
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v1, actions\/setup\-python\@v1
+- **Files:** 23: 5 web, 4 other, 4 media, 4 code, 3 config, 3 docs

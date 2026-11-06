@@ -1,0 +1,35 @@
+# jupytercon\/2020\-ethics\-culture\-opensource\-tutorial
+
+2020\-acabunoc created by GitHub Classroom
+
+documentation · [on GitHub](https://github.com/jupytercon/2020-ethics-culture-opensource-tutorial) · scanned at commit [693475b](https://github.com/jupytercon/2020-ethics-culture-opensource-tutorial/tree/693475bdd8bbef6eae8f86574ce84d38d8bbafc3)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** JupyterCon 2020 tutorial website
+- **Security boundary:** no
+- **Why these labels:** The repository is a tutorial site for a JupyterCon talk\, containing slides and notebooks that are published as a website via GitHub Pages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/setup\-python\@v1, peaceiris\/actions\-gh\-pages\@v3\.5\.9
+- **Files:** 11: 7 docs, 3 media, 1 config

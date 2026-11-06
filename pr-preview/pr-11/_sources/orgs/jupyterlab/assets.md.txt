@@ -1,0 +1,34 @@
+# jupyterlab\/assets
+
+Static assets for JupyterLab extensions
+
+documentation · [on GitHub](https://github.com/jupyterlab/assets) · scanned at commit [03509a9](https://github.com/jupyterlab/assets/tree/03509a95ff70aafef768dd98f093953cfde106ca)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterlab\.github\.io\/assets site
+- **Security boundary:** no
+- **Why these labels:** The repository describes itself as \'Static assets for JupyterLab extensions\' and explains that it builds a GitHub Pages website serving a Jekyll\-based news feed for JupyterLab\, with files like index\.md and posts\.md being documentation content\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 6: 4 docs, 1 other, 1 config

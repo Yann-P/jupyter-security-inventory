@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\-hdf5
+
+Open and explore HDF5 files in JupyterLab\. Can handle very large \(TB\) sized files\, and datasets of any dimensionality
+
+package · [on GitHub](https://github.com/jupyterlab/jupyterlab-hdf5) · scanned at commit [31ef7b7](https://github.com/jupyterlab/jupyterlab-hdf5/tree/31ef7b732dbfe98c85d54dfab0f28699a1ab6f62)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [\@jupyterlab\/hdf5](https://www.npmjs.com/package/@jupyterlab/hdf5), [75](https://npm-stat.com/charts.html?package=@jupyterlab/hdf5) downloads/month, 0 dependents, last published 2023-03-08; []{.fa-brands .fa-python} [jupyterlab\-hdf](https://pypi.org/project/jupyterlab-hdf/), [65](https://pypistats.org/packages/jupyterlab-hdf) downloads/month, 1 dependents, last published 2023-03-08
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a JupyterLab extension that opens and explores HDF5 files\, with both Python server extension and TypeScript labextension published on PyPI and NPM\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-hdf \(2023\-03\-08\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of \@jupyterlab\/hdf5 \(2023\-03\-08\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-hdf \(2023\-03\-08\) allows Python 3\.6\, which has had no security fixes since 2021\-12\-23\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, pull\_request\_target, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 6, 6 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v2, actions\/checkout\@v2, actions\/github\-script\@v1, actions\/setup\-node\@v2, actions\/setup\-python\@v1, actions\/setup\-python\@v2
+- **Files:** 77: 36 code, 16 config, 6 other, 5 notebook, 5 data, 5 media, 2 docs, 2 web

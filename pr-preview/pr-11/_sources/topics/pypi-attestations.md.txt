@@ -1,0 +1,50 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# PyPI attestations
+
+Do the repository\'s PyPI releases have attestations\?
+
+It applies to 139 repositories: 23 done, 1 partial and 115 missing. 299 are not applicable and left out of the tables.
+
+We ask PyPI whether every file of the latest release of each PyPI package has an attestation\. Maintainers set this up in their release workflow\: it needs trusted publishing and a tool that signs the files\, which pypa\/gh\-action\-pypi\-publish does by default\. Attestations are uploaded with a release\, so a package gets them only from its next release on\. PyPI\'s API shows trusted publishing only through attestations\, so a release without them may still have used it\.
+
+- [done]{.status .status-done} The latest release of each of its PyPI packages has attestations\.
+- [partial]{.status .status-partial} Some of its PyPI packages have attestations on their latest release\, and some don\'t\.
+- [missing]{.status .status-missing} None of its PyPI packages has attestations on its latest release\.
+- [n\/a]{.status .status-na} It has no PyPI package\.
+
+## By organization
+
+{download}`Download CSV </_generated/downloads/topic-pypi-attestations-orgs.csv>`
+
+```{csv-table}
+:file: /_generated/topic-pypi-attestations-orgs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+{download}`Download CSV </_generated/downloads/topic-pypi-attestations-repos.csv>`
+
+```{csv-table}
+:file: /_generated/topic-pypi-attestations-repos.csv
+:header-rows: 1
+:class: sphinx-datatable filter-by-org
+```
+
+## Over time
+
+The days the numbers changed.
+
+{download}`Download CSV </_generated/downloads/topic-pypi-attestations-history.csv>`
+
+```{csv-table}
+:file: /_generated/topic-pypi-attestations-history.csv
+:header-rows: 1
+:class: sphinx-datatable
+```

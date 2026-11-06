@@ -1,0 +1,34 @@
+# jupyterhealth\/jhe\-smart\-demo
+
+demo SMART app launch with JupyterHealth
+
+example · [on GitHub](https://github.com/jupyterhealth/jhe-smart-demo) · scanned at commit [dd1fa7e](https://github.com/jupyterhealth/jhe-smart-demo/tree/dd1fa7e1d5204a4f7e68ea5864f941579bf4bca4)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a self\-contained Docker\-Compose demo \(docker\-compose\.yaml\) that runs a SMART\-on\-FHIR app with FHIR and JupyterHealth Exchange for demonstration\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 31: 10 code, 9 config, 7 other, 2 docs, 1 data, 1 web, 1 media

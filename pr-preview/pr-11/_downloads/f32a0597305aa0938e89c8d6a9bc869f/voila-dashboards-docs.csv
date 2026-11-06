@@ -1,0 +1,7 @@
+repo,kind,live service
+voila-dashboards/voici-demo,example,voila-dashboards.github.io/voici-demo
+voila-dashboards/voici-gallery,example,voila-dashboards.github.io/voici-gallery
+voila-dashboards/voila-dashboards.github.io,documentation,voila-dashboards.github.io
+voila-dashboards/voila-huggingface,example,voila-dashboards-voila-huggingface.hf.space
+voila-dashboards/.github,documentation,
+voila-dashboards/voila-heroku,example,

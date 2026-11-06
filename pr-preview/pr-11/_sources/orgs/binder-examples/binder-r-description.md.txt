@@ -1,0 +1,34 @@
+# binder\-examples\/binder\-r\-description
+
+
+
+example · [on GitHub](https://github.com/binder-examples/binder-r-description) · scanned at commit [435def5](https://github.com/binder-examples/binder-r-description/tree/435def5c37d4e3839396ef30854a6b4db0482252)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo is a Binder example demonstrating R environment setup via DESCRIPTION\, with a README explaining Binder usage and a sample notebook\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 6: 3 other, 1 code, 1 docs, 1 notebook

@@ -1,0 +1,12 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+voila-dashboards/voila,package,PYPI:voila,111632,60,,,1,,renders untrusted Jupyter notebooks and executes kernel callbacks per user
+voila-dashboards/voila-gridstack,package,PYPI:voila-gridstack,472,3,,,,,
+voila-dashboards/voila-topbar,package,PYPI:voila-topbar,376,3,,,,,
+voila-dashboards/voila-material,package,PYPI:voila-material,303,1,,,,,
+voila-dashboards/voila-vuetify,package,PYPI:voila-vuetify,266,2,,,,,
+voila-dashboards/voici,package,PYPI:voici-core,231,1,,,,,
+voila-dashboards/hotpot_km,package,PYPI:hotpot-km,26,0,,,,,
+voila-dashboards/tljh-voila-gallery,package,,,,,,,,
+voila-dashboards/voila-debug,package,,,,,,,,
+voila-dashboards/voila-railway,tooling,,,,,,,,
+voila-dashboards/voila-template-cookiecutter,tooling,,,,,,,,

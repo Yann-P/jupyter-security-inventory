@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-haskell
+
+jupyter \/ jupyterlite kernel for Haskell powered by WebAssembly
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-haskell) · scanned at commit [7c46575](https://github.com/jupyter-xeus/xeus-haskell/tree/7c465750e2e6ac4b9bdbab2764c4ff5683e36db4)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyter\-xeus\.github\.io
+- **Security boundary:** yes, it executes untrusted Haskell code in a Jupyter kernel
+- **Why these labels:** The repository provides Haskell Jupyter kernels built on xeus\, with kernel\.json files for Jupyter installation\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 6, 6 by tag. Third-party, not pinned: prefix\-dev\/setup\-pixi\@v0
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v4, actions\/checkout\@v4, actions\/checkout\@v5, actions\/deploy\-pages\@v4, actions\/upload\-pages\-artifact\@v4, prefix\-dev\/setup\-pixi\@v0
+- **Files:** 84: 46 code, 10 other, 10 config, 8 docs, 7 media, 2 notebook, 1 web

@@ -1,0 +1,34 @@
+# binder\-examples\/matplotlib\-versions
+
+Illustrating what can change when a dependency is upgraded
+
+example · [on GitHub](https://github.com/binder-examples/matplotlib-versions) · scanned at commit [31e07ab](https://github.com/binder-examples/matplotlib-versions/tree/31e07abfcd47d2bf33322eca29e7ba53bd82b2d6)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a single Jupyter notebook and README explaining how to launch it on Binder to demonstrate changes between Matplotlib versions\, making it an example\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 3: 1 other, 1 docs, 1 notebook

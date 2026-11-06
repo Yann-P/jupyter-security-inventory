@@ -1,0 +1,94 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# binder\-examples
+
+[github.com/binder-examples](https://github.com/binder-examples) has 44 public repositories: 1 is a security boundary.
+
+[Security topics (5)](#security-topics) · [Repositories (44)](#repositories)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/binder-examples-topics.csv>`
+
+```{csv-table}
+:file: /_generated/binder-examples-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/binder-examples-repos.csv>`
+
+```{csv-table}
+:file: /_generated/binder-examples-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/binder-examples-docs.csv>`
+
+```{csv-table}
+:file: /_generated/binder-examples-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+binder-examples/dot.github
+binder-examples/appmode
+binder-examples/apt_install
+binder-examples/binder-r-description
+binder-examples/bokeh
+binder-examples/conda
+binder-examples/conda-freeze
+binder-examples/continuous-build
+binder-examples/data-quilt
+binder-examples/demo-julia
+binder-examples/dockerfile-rstudio
+binder-examples/getting-data
+binder-examples/getting-data-xroot
+binder-examples/julia-python
+binder-examples/jupyter-extension
+binder-examples/jupyter-rise
+binder-examples/jupyter-sos
+binder-examples/jupyter-stacks
+binder-examples/jupyter-stacks-datascience
+binder-examples/jupyterlab
+binder-examples/latex
+binder-examples/matplotlib-versions
+binder-examples/minimal-dockerfile
+binder-examples/multi-language-demo
+binder-examples/nix
+binder-examples/octave
+binder-examples/pipfile
+binder-examples/python-conda_pip
+binder-examples/python2_runtime
+binder-examples/python2_with_3
+binder-examples/r
+binder-examples/r-conda
+binder-examples/r_with_python
+binder-examples/remote_storage
+binder-examples/requirements
+binder-examples/rocker
+binder-examples/setup.py
+binder-examples/stencila-multi
+binder-examples/stencila-py
+binder-examples/stencila-r
+binder-examples/tensorboard
+binder-examples/voila
+binder-examples/zero-to-binder
+binder-examples/zero-to-jupyterhub-k8s
+```

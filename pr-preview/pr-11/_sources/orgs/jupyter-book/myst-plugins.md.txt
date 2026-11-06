@@ -1,0 +1,35 @@
+# jupyter\-book\/myst\-plugins
+
+A place for community\-maintained MyST plugins
+
+package · [on GitHub](https://github.com/jupyter-book/myst-plugins) · scanned at commit [9562653](https://github.com/jupyter-book/myst-plugins/tree/95626532ae6609acb4ef7af4fc6968850309c41c)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo contains a collection of MyST plugins in the plugins\/ directory\, each with \.mjs files\, and the README lists plugins and embed links\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 3, run on push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** READ\_ONLY\_TOKEN
+- **Actions:** 10, 10 by tag. Third-party, not pinned: typst\-community\/setup\-typst\@v4
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/checkout\@v4, actions\/checkout\@v5, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v5, actions\/setup\-node\@v4, actions\/setup\-node\@v5, actions\/setup\-python\@v5, actions\/upload\-pages\-artifact\@v5, typst\-community\/setup\-typst\@v4
+- **Files:** 179: 93 code, 36 docs, 28 config, 9 media, 7 web, 6 other

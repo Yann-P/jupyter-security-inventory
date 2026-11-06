@@ -1,0 +1,35 @@
+# jupyterhub\/dockerspawner
+
+Spawns JupyterHub single user servers in Docker containers 
+
+package · [on GitHub](https://github.com/jupyterhub/dockerspawner) · scanned at commit [a73d0de](https://github.com/jupyterhub/dockerspawner/tree/a73d0de667e43a6967d4c870c00d6b11c9a0dd17)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [dockerspawner](https://pypi.org/project/dockerspawner/), [24,371](https://pypistats.org/packages/dockerspawner) downloads/month, 10 dependents, last published 2025-02-12
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it spawns per\-user containers after authentication
+- **Why these labels:** The repository contains a Python package named dockerspawner with core modules \(dockerspawner\.py\, swarmspawner\.py\, systemuserspawner\.py\) and is published to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of dockerspawner \(2025\-02\-12\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 5, 4 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-node\@v6, actions\/setup\-python\@v6, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 61: 21 code, 19 docs, 11 other, 8 config, 2 media

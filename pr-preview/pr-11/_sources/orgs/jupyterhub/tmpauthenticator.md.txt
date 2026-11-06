@@ -1,0 +1,35 @@
+# jupyterhub\/tmpauthenticator
+
+JupyterHub authenticator that hands out temporary accounts for everyone\.
+
+package · [on GitHub](https://github.com/jupyterhub/tmpauthenticator) · scanned at commit [cb77416](https://github.com/jupyterhub/tmpauthenticator/tree/cb77416b5c202864e1a243028651a6ed9fd641e6)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterhub\-tmpauthenticator](https://pypi.org/project/jupyterhub-tmpauthenticator/), [2,921](https://pypistats.org/packages/jupyterhub-tmpauthenticator) downloads/month, 0 dependents, last published 2023-05-22
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it authenticates users by granting temporary accounts without login and spawns notebook servers
+- **Why these labels:** The repository is a Python package on PyPI \(jupyterhub\-tmpauthenticator\) with code in tmpauthenticator\/ and tests\, fulfilling a JupyterHub authenticator role\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterhub\-tmpauthenticator \(2023\-05\-22\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterhub\-tmpauthenticator \(2023\-05\-22\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 9, 5 by commit, 4 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7
+- **Build requirements:** setuptools, setuptools\-scm
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@9c091bb, actions\/checkout\@v7, actions\/download\-artifact\@9000827, actions\/setup\-node\@v6, actions\/setup\-python\@a309ff8, actions\/setup\-python\@v6, actions\/upload\-artifact\@cf430e0, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@7245906
+- **Files:** 16: 5 config, 4 docs, 4 code, 3 other

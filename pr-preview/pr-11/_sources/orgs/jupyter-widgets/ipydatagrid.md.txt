@@ -1,0 +1,35 @@
+# jupyter\-widgets\/ipydatagrid
+
+Fast Datagrid widget for the Jupyter Notebook and JupyterLab
+
+package · [on GitHub](https://github.com/jupyter-widgets/ipydatagrid) · scanned at commit [0685635](https://github.com/jupyter-widgets/ipydatagrid/tree/0685635938395866ba3f9b62bcca8fa4c973d7d7)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [ipydatagrid](https://pypi.org/project/ipydatagrid/), [20,180](https://pypistats.org/packages/ipydatagrid) downloads/month, 35 dependents, last published 2024-12-17; []{.fa-brands .fa-npm} [ipydatagrid](https://www.npmjs.com/package/ipydatagrid), [533](https://npm-stat.com/charts.html?package=ipydatagrid) downloads/month, 0 dependents, last published 2024-12-17
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo contains a Python and JavaScript package \`ipydatagrid\` that is published to PyPI and npm\, and its README describes it as a \'Fast Datagrid widget for the Jupyter Notebook and JupyterLab\'\, indicating an installable widget package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-widgets\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of ipydatagrid \(2024\-12\-17\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of ipydatagrid \(2024\-12\-17\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of ipydatagrid \(2024\-12\-17\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 3, run on issue\_comment, pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** pypi\_password
+- **Actions:** 11, 9 by tag, 2 by branch. Third-party, not pinned: ifaxity\/wait\-on\-action\@v1, mamba\-org\/setup\-micromamba\@v2, pre\-commit\/action\@v3\.0\.0, pypa\/gh\-action\-pypi\-publish\@master
+- **Build requirements:** hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/download\-artifact\@v3, actions\/setup\-node\@v4, actions\/setup\-python\@v5, actions\/upload\-artifact\@v3, ifaxity\/wait\-on\-action\@v1, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@main, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, mamba\-org\/setup\-micromamba\@v2, pre\-commit\/action\@v3\.0\.0, pypa\/gh\-action\-pypi\-publish\@master
+- **Files:** 328: 203 media, 59 code, 31 notebook, 24 config, 4 web, 3 other, 3 docs, 1 data

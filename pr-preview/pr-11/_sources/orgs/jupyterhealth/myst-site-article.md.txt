@@ -1,0 +1,35 @@
+# jupyterhealth\/myst\-site\-article
+
+
+
+documentation · [on GitHub](https://github.com/jupyterhealth/myst-site-article) · scanned at commit [43d27b4](https://github.com/jupyterhealth/myst-site-article/tree/43d27b4bf59c8a990df2dab2a3473c9043e05dd3)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterhealth\.github\.io\/myst\-site
+- **Security boundary:** no
+- **Why these labels:** The repository contains a MyST website for JupyterHealth documentation with markdown files\, a \_toc\.yml\, and a GitHub Actions workflow deploy\.yml that publishes to GitHub Pages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v2, actions\/setup\-node\@v4, actions\/upload\-pages\-artifact\@v1
+- **Files:** 24: 16 media, 4 config, 4 docs

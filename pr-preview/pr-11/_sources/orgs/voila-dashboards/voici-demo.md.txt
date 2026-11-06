@@ -1,0 +1,35 @@
+# voila\-dashboards\/voici\-demo
+
+Voici deployment template 
+
+example · [on GitHub](https://github.com/voila-dashboards/voici-demo) · scanned at commit [53d1902](https://github.com/voila-dashboards/voici-demo/tree/53d190281d737d10553ec65bbe672b83c1d85ec6)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** voila\-dashboards\.github\.io\/voici\-demo
+- **Security boundary:** no
+- **Why these labels:** The repository is a template for deploying Voici dashboards as static sites\, as indicated by its README and deploy workflow publishing to GitHub Pages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/deploy\-pages\@v4, actions\/setup\-python\@v5, actions\/upload\-pages\-artifact\@v3, mamba\-org\/setup\-micromamba\@v1
+- **Files:** 7: 3 config, 1 other, 1 docs, 1 notebook, 1 data

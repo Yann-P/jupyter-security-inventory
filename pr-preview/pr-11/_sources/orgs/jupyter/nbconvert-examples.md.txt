@@ -1,0 +1,34 @@
+# jupyter\/nbconvert\-examples
+
+Examples that illustrate how nbconvert can be used
+
+example · [on GitHub](https://github.com/jupyter/nbconvert-examples) · scanned at commit [039724f](https://github.com/jupyter/nbconvert-examples/tree/039724f4251cc8183f85534785fbee14809248ac)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository name and description explicitly state it contains examples for nbconvert\, and the file list includes only example notebooks\, templates\, and configuration files organized into scenario folders\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 56: 16 code, 15 notebook, 14 other, 6 media, 5 docs

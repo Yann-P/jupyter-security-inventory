@@ -1,0 +1,36 @@
+# jupyter\-server\/jupyter\_server
+
+The backend—i\.e\. core services\, APIs\, and REST endpoints—to Jupyter web applications\.
+
+package · [on GitHub](https://github.com/jupyter-server/jupyter_server) · scanned at commit [e39ebd5](https://github.com/jupyter-server/jupyter_server/tree/e39ebd56b3ed2b201aa615448ec6adbeed8fa99c)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-server](https://pypi.org/project/jupyter-server/), [32,556,872](https://pypistats.org/packages/jupyter-server) downloads/month, 5,053 dependents, last published 2026-09-15
+- **Container images:** none
+- **Run by other repositories:** 1 in their builds
+- **Live service:** none
+- **Security boundary:** yes, it authenticates users and serves API endpoints for Jupyter web applications
+- **Why these labels:** Jupyter Server is a PyPI package \(jupyter\-server\) that provides the backend core services\, APIs\, and REST endpoints for Jupyter web applications\, evidenced by its pyproject\.toml\, published PyPI package\, and README describing installation via pip\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-server \(2026\-09\-15\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-server \(2026\-09\-15\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 6, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, ZULIP\_API\_KEY, ZULIP\_EMAIL
+- **Actions:** 6, 1 by commit, 4 by tag, 1 by branch. Third-party, not pinned: re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatch\-nodejs\-version, hatchling
+
+## Details
+
+- **Run it in their builds:** [jupyter\/nbclassic](/orgs/jupyter/nbclassic.md)
+- **All actions it uses:** actions\/checkout\@v6, actions\/create\-github\-app\-token\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1, zulip\/github\-actions\-zulip\@08b6fbd
+- **Files:** 342: 203 code, 61 docs, 29 config, 20 web, 15 media, 14 other

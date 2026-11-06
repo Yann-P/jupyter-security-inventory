@@ -1,0 +1,34 @@
+# jupyterhub\/jupyterhub\-on\-hadoop
+
+Documentation and resources for deploying JupyterHub on Hadoop
+
+documentation · [on GitHub](https://github.com/jupyterhub/jupyterhub-on-hadoop) · scanned at commit [b4e4171](https://github.com/jupyterhub/jupyterhub-on-hadoop/tree/b4e4171732016e9c27bbb52a854a460c2bf54d7a)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository primarily contains RST documentation in docs\/ and a manual setup\/demo guide\, with a clear description stating it provides \'Documentation and resources for deploying JupyterHub on Hadoop\'\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 58: 16 config, 15 docs, 14 other, 7 code, 4 media, 2 web

@@ -1,0 +1,9 @@
+repo,kind,live service
+jupyterhub/jupyterhub.github.io,documentation,hub.jupyter.org landing page
+jupyterhub/binder-billing,example,
+jupyterhub/jupyterhub-deploy-hpc,example,
+jupyterhub/jupyterhub-on-hadoop,documentation,
+jupyterhub/jupyterhub-the-hard-way,documentation,
+jupyterhub/mybinder.org-user-guide,documentation,
+jupyterhub/roadmap,documentation,
+jupyterhub/team-compass,documentation,

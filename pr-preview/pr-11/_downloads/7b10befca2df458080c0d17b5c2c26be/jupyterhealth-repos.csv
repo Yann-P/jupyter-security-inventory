@@ -1,0 +1,14 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+jupyterhealth/omh-shim,package,PYPI:omh-shim,838,0,,,,,
+jupyterhealth/jupyter-smart-on-fhir,package,PYPI:jupyter-smart-on-fhir,213,0,,,,,acts as OAuth client handling authentication with SMART on FHIR
+jupyterhealth/jupyterhealth-client,package,PYPI:jupyterhealth-client,120,0,,,,,
+jupyterhealth/edgemed-demo-app,application,,,,,,,,
+jupyterhealth/helm-charts,deployment,,,,,,,,
+jupyterhealth/initiatives,tooling,,,,,,,,
+jupyterhealth/jhe-stress,tooling,,,,,,,,
+jupyterhealth/jupyterhealth-demo-deploy,deployment,,,,,,,JupyterHealth demo at Berkeley,
+jupyterhealth/jupyterhealth-exchange,application,,,,,,,,"authenticates users, enforces RBAC, and shares patient health data via APIs"
+jupyterhealth/jupyterhealth-sof-provider-template,application,,,,,,,,authenticates via SMART on FHIR and renders patient data from EHR
+jupyterhealth/partner-client-docker,application,,,,,,,,
+jupyterhealth/singleuser-image,package,,,,,,,,runs code from users after authentication as single user servers
+jupyterhealth/sof-cgm-demo,application,,,,,,,,authenticates SMART on FHIR launches and fetches patient health data

@@ -1,0 +1,34 @@
+# voila\-dashboards\/voila\-vuetify
+
+Dashboard template for Voilà based on VuetifyJS
+
+package · [on GitHub](https://github.com/voila-dashboards/voila-vuetify) · scanned at commit [d280dd6](https://github.com/voila-dashboards/voila-vuetify/tree/d280dd6c11a3252df9354cbd641983bb558c56b6)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [voila\-vuetify](https://pypi.org/project/voila-vuetify/), [266](https://pypistats.org/packages/voila-vuetify) downloads/month, 2 dependents, last published 2022-11-11
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides a Voilà dashboard template based on VuetifyJS\, distributed as the PyPI package \'voila\-vuetify\'\, and contains template files under share\/jupyter\/voila\/templates\/\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of voila\-dashboards\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of voila\-vuetify \(2022\-11\-11\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of voila\-vuetify \(2022\-11\-11\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 15: 4 config, 4 web, 3 code, 2 notebook, 1 other, 1 docs

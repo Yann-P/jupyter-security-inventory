@@ -1,0 +1,35 @@
+# jupyterlab\/jupyter\-renderers
+
+Renderers and renderer extensions for JupyterLab
+
+package · [on GitHub](https://github.com/jupyterlab/jupyter-renderers) · scanned at commit [b89c093](https://github.com/jupyterlab/jupyter-renderers/tree/b89c093bce24c8d7394177f08a111b3895ed6870)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [\@jupyterlab\/mathjax2\-extension](https://www.npmjs.com/package/@jupyterlab/mathjax2-extension), [8,489](https://npm-stat.com/charts.html?package=@jupyterlab/mathjax2-extension) downloads/month, 4 dependents, last published 2024-08-26; []{.fa-brands .fa-python} [jupyterlab\-geojson](https://pypi.org/project/jupyterlab-geojson/), [2,411](https://pypistats.org/packages/jupyterlab-geojson) downloads/month, 2 dependents, last published 2023-05-23; []{.fa-brands .fa-python} [jupyterlab\-fasta](https://pypi.org/project/jupyterlab-fasta/), [1,454](https://pypistats.org/packages/jupyterlab-fasta) downloads/month, 1 dependents, last published 2023-05-23; []{.fa-brands .fa-npm} [\@jupyterlab\/geojson\-extension](https://www.npmjs.com/package/@jupyterlab/geojson-extension), [377](https://npm-stat.com/charts.html?package=@jupyterlab/geojson-extension) downloads/month, 0 dependents, last published 2023-08-01; []{.fa-brands .fa-npm} [\@jupyterlab\/vega3\-extension](https://www.npmjs.com/package/@jupyterlab/vega3-extension), [354](https://npm-stat.com/charts.html?package=@jupyterlab/vega3-extension) downloads/month, 0 dependents, last published 2023-08-01; []{.fa-brands .fa-python} [jupyterlab\-katex](https://pypi.org/project/jupyterlab-katex/), [242](https://pypistats.org/packages/jupyterlab-katex) downloads/month, 2 dependents, last published 2023-05-23; []{.fa-brands .fa-python} [jupyterlab\-mathjax2](https://pypi.org/project/jupyterlab-mathjax2/), [138](https://pypistats.org/packages/jupyterlab-mathjax2) downloads/month, 0 dependents, last published 2023-05-23; []{.fa-brands .fa-python} [jupyterlab\-vega3](https://pypi.org/project/jupyterlab-vega3/), [78](https://pypistats.org/packages/jupyterlab-vega3) downloads/month, 0 dependents, last published 2023-05-23; []{.fa-brands .fa-npm} [\@jupyterlab\/katex\-extension](https://www.npmjs.com/package/@jupyterlab/katex-extension), [76](https://npm-stat.com/charts.html?package=@jupyterlab/katex-extension) downloads/month, 0 dependents, last published 2023-08-01; []{.fa-brands .fa-npm} [\@jupyterlab\/fasta\-extension](https://www.npmjs.com/package/@jupyterlab/fasta-extension), [65](https://npm-stat.com/charts.html?package=@jupyterlab/fasta-extension) downloads/month, 0 dependents, last published 2023-08-01
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a monorepo containing multiple JupyterLab renderer extensions \(e\.g\.\, fasta\-extension\, geojson\-extension\, katex\-extension\, mathjax2\-extension\, vega3\-extension\) that are published as installable packages on npm and PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest releases of jupyterlab\-geojson \(2023\-05\-23\)\, jupyterlab\-fasta \(2023\-05\-23\)\, jupyterlab\-katex \(2023\-05\-23\) and 2 more have no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest versions of \@jupyterlab\/mathjax2\-extension \(2023\-08\-01\)\, \@jupyterlab\/geojson\-extension \(2023\-08\-01\)\, \@jupyterlab\/vega3\-extension \(2023\-08\-01\) and 2 more did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest releases of jupyterlab\-geojson \(2023\-05\-23\)\, jupyterlab\-fasta \(2023\-05\-23\)\, jupyterlab\-katex \(2023\-05\-23\) and 2 more allow a Python that no longer gets security fixes\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, pull\_request\_target, push
+- **Publishes:** nothing
+- **Secrets:** github\_token
+- **Actions:** 5, 5 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v3, actions\/checkout\@v3, actions\/download\-artifact\@v3, actions\/upload\-artifact\@v3, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 191: 57 config, 44 code, 30 other, 21 web, 19 media, 13 docs, 5 notebook, 2 data

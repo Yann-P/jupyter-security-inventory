@@ -1,0 +1,36 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+jupyter-xeus/xeus-python-wheel,package,PYPI:xeus-python,1778,2,,,,,
+jupyter-xeus/xeus-python-shell,package,PYPI:xeus-python-shell,1504,4,,,,,
+jupyter-xeus/xeus-robot-wheel,package,PYPI:xeus-robot,215,0,,,,,
+jupyter-xeus/robotframework-interpreter,package,PYPI:robotframework-interpreter,137,1,,,,,
+jupyter-xeus/.github,other,,,,,,,,
+jupyter-xeus/cpp-terminal,package,,,,,,,,
+jupyter-xeus/xcanvas,package,,,,,,,,
+jupyter-xeus/xena,package,,,,,,,,
+jupyter-xeus/xeus,package,,,,,,,,
+jupyter-xeus/xeus-brainfuck,package,,,,,,,,
+jupyter-xeus/xeus-calc,package,,,,,,,,
+jupyter-xeus/xeus-client-test,other,,,,,,,,
+jupyter-xeus/xeus-cling,package,,,,,,,,executes C++ code from notebook cells
+jupyter-xeus/xeus-cookiecutter,tooling,,,,,,,,
+jupyter-xeus/xeus-haskell,package,,,,,,,jupyter-xeus.github.io,executes untrusted Haskell code in a Jupyter kernel
+jupyter-xeus/xeus-javascript,package,,,,,,,xeus-javascript.readthedocs.io,
+jupyter-xeus/xeus-lite,package,,,,,,,,
+jupyter-xeus/xeus-lua,package,,,,,,,,executes untrusted Lua code submitted over Jupyter protocol
+jupyter-xeus/xeus-nelson,package,,,,,,,,
+jupyter-xeus/xeus-octave,package,,,,,,,,
+jupyter-xeus/xeus-python,package,,,,,,,,executes user-submitted Python code in a Jupyter kernel
+jupyter-xeus/xeus-qt,package,,,,,,,,
+jupyter-xeus/xeus-qt-python,package,,,,,,,,
+jupyter-xeus/xeus-r,package,,,,,,,,executes R code from notebook users
+jupyter-xeus/xeus-robot,package,,,,,,,,executes untrusted user code in the Jupyter kernel
+jupyter-xeus/xeus-sql,package,,,,,,,,
+jupyter-xeus/xeus-sqlite,package,,,,,,,,
+jupyter-xeus/xeus-uv,package,,,,,,,,
+jupyter-xeus/xeus-zmq,package,,,,,,,,
+jupyter-xeus/xhale,package,,,,,,,,
+jupyter-xeus/xleaflet,package,,,,,,,,
+jupyter-xeus/xproperty,package,,,,,,,,
+jupyter-xeus/xvega,package,,,,,,,,
+jupyter-xeus/xvega-bindings,package,,,,,,,,
+jupyter-xeus/xwidgets,package,,,,,,,,

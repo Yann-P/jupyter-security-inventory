@@ -1,0 +1,35 @@
+# jupyterhub\/jupyter\-server\-proxy
+
+Jupyter notebook server extension to proxy web services\.
+
+package · [on GitHub](https://github.com/jupyterhub/jupyter-server-proxy) · scanned at commit [e5f6497](https://github.com/jupyterhub/jupyter-server-proxy/tree/e5f6497a9e8727ce7dbfac26b1956850cd5269a5)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-server\-proxy](https://pypi.org/project/jupyter-server-proxy/), [451,131](https://pypistats.org/packages/jupyter-server-proxy) downloads/month, 195 dependents, last published 2026-09-21; []{.fa-brands .fa-npm} [\@jupyterhub\/jupyter\-server\-proxy](https://www.npmjs.com/package/@jupyterhub/jupyter-server-proxy), [158](https://npm-stat.com/charts.html?package=@jupyterhub/jupyter-server-proxy) downloads/month, 0 dependents, last published 2026-09-21; []{.fa-brands .fa-python} [jupyter\-theia\-proxy](https://pypi.org/project/jupyter-theia-proxy/), [13](https://pypistats.org/packages/jupyter-theia-proxy) downloads/month, 0 dependents, last published 2019-01-03
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it proxies web services and provides authenticated web access
+- **Why these labels:** It is a Jupyter server extension that proxies web services\, evidenced by README and handlers\.py\. Published as PyPI and npm packages\. The repo also includes docs and contrib examples\, but primary content is the package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** partial. The latest release of jupyter\-theia\-proxy \(2019\-01\-03\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm version used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest releases of jupyter\-server\-proxy \(2026\-09\-21\) and jupyter\-theia\-proxy \(2019\-01\-03\) allow a Python that no longer gets security fixes\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** pypi, npm
+- **Secrets:** none
+- **Actions:** 12, 6 by commit, 6 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7
+- **Build requirements:** hatch\-jupyter\-builder, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/checkout\@v7\.0\.1, actions\/download\-artifact\@3e5f45b, actions\/download\-artifact\@v8, actions\/setup\-node\@949feb2, actions\/setup\-node\@v7, actions\/setup\-python\@6d4fd22, actions\/setup\-python\@v7, actions\/upload\-artifact\@bbbca2d, actions\/upload\-artifact\@v7, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@7245906
+- **Files:** 90: 38 code, 17 config, 17 docs, 10 other, 7 media, 1 web

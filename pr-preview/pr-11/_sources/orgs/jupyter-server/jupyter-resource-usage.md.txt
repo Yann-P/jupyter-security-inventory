@@ -1,0 +1,35 @@
+# jupyter\-server\/jupyter\-resource\-usage
+
+Jupyter Notebook Extension for monitoring your own Resource Usage
+
+package · [on GitHub](https://github.com/jupyter-server/jupyter-resource-usage) · scanned at commit [2e20198](https://github.com/jupyter-server/jupyter-resource-usage/tree/2e20198ba8f8789e1d079075c54f77a76e0bce4c)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-resource\-usage](https://pypi.org/project/jupyter-resource-usage/), [43,356](https://pypistats.org/packages/jupyter-resource-usage) downloads/month, 12 dependents, last published 2026-08-11; []{.fa-brands .fa-npm} [\@jupyter\-server\/resource\-usage](https://www.npmjs.com/package/@jupyter-server/resource-usage), [2,382](https://npm-stat.com/charts.html?package=@jupyter-server/resource-usage) downloads/month, 0 dependents, last published 2026-08-11
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Jupyter server\/notebook extension with Python server code \(jupyter\_resource\_usage\/\) and TypeScript frontend code \(packages\/labextension\/\)\, and publishes to PyPI and npm\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-resource\-usage \(2026\-08\-11\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm version used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-resource\-usage \(2026\-08\-11\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, push, release, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 5, 5 by tag
+- **Build requirements:** hatchling, jupyterlab, pip
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 72: 29 code, 23 config, 9 media, 5 other, 4 docs, 2 web

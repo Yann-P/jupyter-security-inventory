@@ -1,0 +1,93 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyter\-server
+
+[github.com/jupyter-server](https://github.com/jupyter-server) has 19 public repositories: 15 publish a package and 5 are security boundaries.
+
+[Security topics (5)](#security-topics) · [Repositories (19)](#repositories) · [Packages (62)](#packages)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyter-server-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-server-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyter-server-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-server-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupyter-server-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-server-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyter-server-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-server-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### npm
+
+{download}`Download CSV </_generated/downloads/jupyter-server-npm.csv>`
+
+```{csv-table}
+:file: /_generated/jupyter-server-npm.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyter-server/jupyter_server
+jupyter-server/jupyter_server_terminals
+jupyter-server/jupyter_ydoc
+jupyter-server/jupyter_server_fileid
+jupyter-server/kernel_gateway
+jupyter-server/jupyter_server_mathjax
+jupyter-server/jupyter-resource-usage
+jupyter-server/pytest-jupyter
+jupyter-server/enterprise_gateway
+jupyter-server/jupyter-scheduler
+jupyter-server/gateway_provisioners
+jupyter-server/fps
+jupyter-server/jupyverse
+jupyter-server/jupyter_releaser
+jupyter-server/synchronizer
+jupyter-server/dot.github
+jupyter-server/contributing-hour
+jupyter-server/extension-cookiecutter
+jupyter-server/team-compass
+```

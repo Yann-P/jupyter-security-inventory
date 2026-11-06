@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>zizmor &#8212; Jupyter Security Inventory</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2ef5feca" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.js"></script>
+    <script src="../_static/activate_datatables.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'topics/zizmor';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/tables.js?v=f93e9670"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SECURITY.md" href="security-policy.html" />
+    <link rel="prev" title="Security topics" href="../topics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Security Inventory</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links" aria-label="Site navigation">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">All organizations</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orgs.html">Organizations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/ipython.html">ipython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter.html">jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterlab.html">jupyterlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-server.html">jupyter-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-widgets.html">jupyter-widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterhub.html">jupyterhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-book.html">jupyter-book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/voila-dashboards.html">voila-dashboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterlite.html">jupyterlite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-incubator.html">jupyter-incubator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-xeus.html">jupyter-xeus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterhealth.html">jupyterhealth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/binder-examples.html">binder-examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupytercon.html">jupytercon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/voila-gallery.html">voila-gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/binderhub-ci-repos.html">binderhub-ci-repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-governance.html">jupyter-governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-standards.html">jupyter-standards</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../topics.html">Security topics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">zizmor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security-policy.html">SECURITY.md</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pypi-attestations.html">PyPI attestations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="npm-trusted-publishing.html">npm trusted publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supported-python.html">Supported Python</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../packages.html">Published packages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../packages/pypi.html">PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../packages/npm.html">npm</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../images.html">Container images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../topics.html" class="nav-link">Security topics</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">zizmor</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="zizmor">
+<h1>zizmor<a class="headerlink" href="#zizmor" title="Link to this heading">#</a></h1>
+<p>Does the repository check its GitHub workflows with zizmor?</p>
+<p>It applies to 284 repositories: 23 done, 3 partial and 258 missing. 154 are not applicable and left out of the tables.</p>
+<p>We look for zizmor in the repository’s workflows and action files (its GitHub Action or a command) and in its pre-commit hooks. Comments are ignored, so a note like “zizmor: ignore” does not count. A pre-commit hook counts as running in CI when a workflow runs pre-commit or the pre-commit config has a “ci” section, which sets up pre-commit.ci.</p>
+<ul class="simple">
+<li><p><span class="status status-done">done</span> zizmor runs in CI.</p></li>
+<li><p><span class="status status-partial">partial</span> zizmor is set up, but nothing shows that CI runs it.</p></li>
+<li><p><span class="status status-missing">missing</span> The repository has workflows and no sign of zizmor.</p></li>
+<li><p><span class="status status-na">n/a</span> The repository has no GitHub workflows to check.</p></li>
+</ul>
+<section id="by-organization">
+<h2>By organization<a class="headerlink" href="#by-organization" title="Link to this heading">#</a></h2>
+<p><a class="reference download internal" download="" href="../_downloads/8fab1df8d5506eb68728d0c33fe1de59/topic-zizmor-orgs.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>organization</p></th>
+<th class="head"><p>repos it applies to</p></th>
+<th class="head"><p>done</p></th>
+<th class="head"><p>partial</p></th>
+<th class="head"><p>missing</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p>50</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>46</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p>37</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>33</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p>36</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>32</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p>29</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>29</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p>25</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>25</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p>19</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>19</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p>16</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p>15</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p>17</p></td>
+<td><p>5</p></td>
+<td><p>3</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p>10</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p>9</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>9</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/binder-examples.html"><span class="std std-doc">binder-examples</span></a></p></td>
+<td><p>5</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p>10</p></td>
+<td><p>6</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyter-governance.html"><span class="std std-doc">jupyter-governance</span></a></p></td>
+<td><p>3</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/binderhub-ci-repos.html"><span class="std std-doc">binderhub-ci-repos</span></a></p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyter-incubator.html"><span class="std std-doc">jupyter-incubator</span></a></p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/voila-gallery.html"><span class="std std-doc">voila-gallery</span></a></p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="repositories">
+<h2>Repositories<a class="headerlink" href="#repositories" title="Link to this heading">#</a></h2>
+<p>Rows are colored by kind: <span class="kind-package legend">package</span> <span class="kind-application legend">application</span> <span class="kind-tooling legend">tooling</span> <span class="kind-deployment legend">deployment</span> <span class="kind-documentation legend">documentation</span> <span class="kind-example legend">example</span> <span class="kind-other legend">other</span></p>
+<p><a class="reference download internal" download="" href="../_downloads/addeb32b5e97664cfb31776e1df55dab/topic-zizmor-repos.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable filter-by-org table">
+<thead>
+<tr class="row-odd"><th class="head"><p>repository</p></th>
+<th class="head"><p>organization</p></th>
+<th class="head"><p>status</p></th>
+<th class="head"><p>via</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>reason</p></th>
+<th class="head"><p>files</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/traitlets.html"><span class="std std-doc">ipython/traitlets</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>GitHub Action</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/traitlets">118,414,624</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/ipython/traitlets/blob/a576f243ec6c7be0ac3d00b3ba294408a84b068e/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipython.html"><span class="std std-doc">ipython/ipython</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipython">97,202,828</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/ipython/ipython/blob/cf63afd11e2fca4eb4645e9d5b4a712f3549f632/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/matplotlib-inline.html"><span class="std std-doc">ipython/matplotlib-inline</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/matplotlib-inline">91,853,623</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/ipython/matplotlib-inline/blob/28f8f3a1b4654b85a45a12626eb99a18e03bb162/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_core.html"><span class="std std-doc">jupyter/jupyter_core</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-core">77,056,466</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbformat.html"><span class="std std-doc">jupyter/nbformat</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command, pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbformat">76,592,205</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyter/nbformat/blob/cfb73afdd2a7f358953f2a34f747fd0d0e9d6288/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a>, <a class="reference external" href="https://github.com/jupyter/nbformat/blob/cfb73afdd2a7f358953f2a34f747fd0d0e9d6288/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_client.html"><span class="std std-doc">jupyter/jupyter_client</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-client">71,447,300</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/comm.html"><span class="std std-doc">ipython/comm</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/comm">55,663,064</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipython-pygments-lexers.html"><span class="std std-doc">ipython/ipython-pygments-lexers</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipython-pygments-lexers">54,818,996</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipykernel.html"><span class="std std-doc">ipython/ipykernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>GitHub Action</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipykernel">54,614,879</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/ipython/ipykernel/blob/f87d0e09863101be7a961d53f29549397ff62c72/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbclient.html"><span class="std std-doc">jupyter/nbclient</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>GitHub Action</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbclient">50,729,821</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyter/nbclient/blob/0811ff44c63c9853c4d6ba7265d7042ca7f8742a/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbconvert.html"><span class="std std-doc">jupyter/nbconvert</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbconvert">49,944,679</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab_pygments.html"><span class="std std-doc">jupyterlab/jupyterlab_pygments</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-pygments">48,057,917</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server.html"><span class="std std-doc">jupyter-server/jupyter_server</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server">32,556,872</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/ipywidgets.html"><span class="std std-doc">jupyter-widgets/ipywidgets</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/widgetsnbextension">31,834,051</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab.html"><span class="std std-doc">jupyterlab/jupyterlab</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command, pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab">30,253,541</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterlab/jupyterlab/blob/c0a095d1fb65e3b24fe13609ee8f887a5af43e49/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a>, <a class="reference external" href="https://github.com/jupyterlab/jupyterlab/blob/c0a095d1fb65e3b24fe13609ee8f887a5af43e49/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/terminado.html"><span class="std std-doc">jupyter/terminado</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/terminado">29,806,864</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_events.html"><span class="std std-doc">jupyter/jupyter_events</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-events">28,962,752</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/notebook.html"><span class="std std-doc">jupyter/notebook</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/notebook">28,757,551</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyter/notebook/blob/b5a05a862382c90bda0343af3535098a5548c023/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server_terminals.html"><span class="std std-doc">jupyter-server/jupyter_server_terminals</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-terminals">28,569,855</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab_server.html"><span class="std std-doc">jupyterlab/jupyterlab_server</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-server">27,966,465</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/notebook_shim.html"><span class="std std-doc">jupyter/notebook_shim</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/notebook-shim">27,317,089</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/jupyter-builder.html"><span class="std std-doc">jupyterlab/jupyter-builder</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-builder">17,948,052</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_console.html"><span class="std std-doc">jupyter/jupyter_console</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-console">12,492,174</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter.html"><span class="std std-doc">jupyter/jupyter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter">12,288,648</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/pickleshare.html"><span class="std std-doc">ipython/pickleshare</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pickleshare">8,533,671</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbclassic.html"><span class="std std-doc">jupyter/nbclassic</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbclassic">1,980,454</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/testpath.html"><span class="std std-doc">jupyter/testpath</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/testpath">1,460,262</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_ydoc.html"><span class="std std-doc">jupyter-server/jupyter_ydoc</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-ydoc">864,279</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/lumino.html"><span class="std std-doc">jupyterlab/lumino</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;lumino/coreutils">841,017</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-collaboration.html"><span class="std std-doc">jupyterlab/jupyter-collaboration</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-ydoc">815,532</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server_fileid.html"><span class="std std-doc">jupyter-server/jupyter_server_fileid</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-fileid">813,515</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/traittypes.html"><span class="std std-doc">jupyter-widgets/traittypes</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/traittypes">727,236</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter-server/kernel_gateway.html"><span class="std std-doc">jupyter-server/kernel_gateway</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-kernel-gateway">555,039</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter-packaging.html"><span class="std std-doc">jupyter/jupyter-packaging</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-packaging">516,852</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyter-server-proxy.html"><span class="std std-doc">jupyterhub/jupyter-server-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-proxy">451,131</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/simpervisor.html"><span class="std std-doc">jupyterhub/simpervisor</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/simpervisor">434,920</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub.html"><span class="std std-doc">jupyterhub/jupyterhub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub">260,478</a></p></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhub/jupyterhub/blob/41fffb935326c9e732d999950fd56beb9bc9fbec/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/jupyter-book.html"><span class="std std-doc">jupyter-book/jupyter-book</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-book">217,891</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/ipyleaflet.html"><span class="std std-doc">jupyter-widgets/ipyleaflet</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipyleaflet">198,711</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/escapism.html"><span class="std std-doc">jupyterhub/escapism</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/escapism">175,967</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbdime.html"><span class="std std-doc">jupyter/nbdime</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbdime">174,529</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/hatch-jupyter-builder.html"><span class="std std-doc">jupyterlab/hatch-jupyter-builder</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-jupyter-builder">155,361</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-ai.html"><span class="std std-doc">jupyterlab/jupyter-ai</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>GitHub Action</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-ai">119,717</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterlab/jupyter-ai/blob/96eaa7dac2942c4f6ded87070816a3bd559f9252/.github/workflows/check-release.yml">.github/workflows/check-release.yml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/hatch-nodejs-version.html"><span class="std std-doc">jupyterlab/hatch-nodejs-version</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-nodejs-version">112,295</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila.html"><span class="std std-doc">voila-dashboards/voila</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila">111,632</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipyparallel.html"><span class="std std-doc">ipython/ipyparallel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipyparallel">94,773</a></p></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/ipython/ipyparallel/blob/d724f99d7e4949e116ca986ad00576bc1d86a843/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-spec">89,985</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/oauthenticator.html"><span class="std std-doc">jupyterhub/oauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/oauthenticator">89,857</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-git.html"><span class="std std-doc">jupyterlab/jupyterlab-git</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-git">89,418</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/pythreejs.html"><span class="std std-doc">jupyter-widgets/pythreejs</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pythreejs">69,126</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/jupyterlite.html"><span class="std std-doc">jupyterlite/jupyterlite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-core">60,813</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter-sphinx.html"><span class="std std-doc">jupyter/jupyter-sphinx</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-sphinx">60,358</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/pyodide-kernel.html"><span class="std std-doc">jupyterlite/pyodide-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-pyodide-kernel">51,057</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/configurable-http-proxy.html"><span class="std std-doc">jupyterhub/configurable-http-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=configurable-http-proxy">49,865</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/eslint-plugin.html"><span class="std std-doc">jupyterlab/eslint-plugin</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyter/eslint-plugin">48,792</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server_mathjax.html"><span class="std std-doc">jupyter-server/jupyter_server_mathjax</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-mathjax">47,561</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter-resource-usage.html"><span class="std std-doc">jupyter-server/jupyter-resource-usage</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-resource-usage">43,356</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/telemetry.html"><span class="std std-doc">jupyter/telemetry</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-telemetry">35,634</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/nbgitpuller.html"><span class="std std-doc">jupyterhub/nbgitpuller</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller">25,586</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/jupyterlab-sidecar.html"><span class="std std-doc">jupyter-widgets/jupyterlab-sidecar</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sidecar">25,574</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/pytest-jupyter.html"><span class="std std-doc">jupyter-server/pytest-jupyter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-jupyter">25,571</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/dockerspawner.html"><span class="std std-doc">jupyterhub/dockerspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/dockerspawner">24,371</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-chat.html"><span class="std std-doc">jupyterlab/jupyter-chat</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-chat">22,763</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/nativeauthenticator.html"><span class="std std-doc">jupyterhub/nativeauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-nativeauthenticator">21,091</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/ipydatagrid.html"><span class="std std-doc">jupyter-widgets/ipydatagrid</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipydatagrid">20,180</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/jupyterlite-sphinx.html"><span class="std std-doc">jupyterlite/jupyterlite-sphinx</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-sphinx">17,684</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-idle-culler.html"><span class="std std-doc">jupyterhub/jupyterhub-idle-culler</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-idle-culler">15,786</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/kubespawner.html"><span class="std std-doc">jupyterhub/kubespawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kubespawner">15,220</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/pytest-check-links.html"><span class="std std-doc">jupyterlab/pytest-check-links</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-check-links">12,459</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-incubator/sparkmagic.html"><span class="std std-doc">jupyter-incubator/sparkmagic</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-incubator.html"><span class="std std-doc">jupyter-incubator</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sparkmagic">12,187</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/language-packs.html"><span class="std std-doc">jupyterlab/language-packs</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-language-pack-zh-cn">11,592</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbgrader.html"><span class="std std-doc">jupyter/nbgrader</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgrader">11,171</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/thebe.html"><span class="std std-doc">jupyter-book/thebe</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=thebe-core">10,372</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/enterprise_gateway.html"><span class="std std-doc">jupyter-server/enterprise_gateway</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-enterprise-gateway">10,266</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter-scheduler.html"><span class="std std-doc">jupyter-server/jupyter-scheduler</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-scheduler">9,489</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/batchspawner.html"><span class="std std-doc">jupyterhub/batchspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/batchspawner">8,938</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/jupyterlab-myst.html"><span class="std std-doc">jupyter-book/jupyterlab-myst</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-myst">8,807</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-renderers.html"><span class="std std-doc">jupyterlab/jupyter-renderers</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/mathjax2-extension">8,489</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_kernel_test.html"><span class="std std-doc">jupyter/jupyter_kernel_test</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-kernel-test">7,064</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/ldapauthenticator.html"><span class="std std-doc">jupyterhub/ldapauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ldapauthenticator">6,160</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/myst-theme.html"><span class="std std-doc">jupyter-book/myst-theme</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;myst-theme/providers">5,933</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyter-rsession-proxy.html"><span class="std std-doc">jupyterhub/jupyter-rsession-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-rsession-proxy">5,599</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/chartpress.html"><span class="std std-doc">jupyterhub/chartpress</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/chartpress">4,436</a></p></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhub/chartpress/blob/f7d727abccb67bbb352f330d92c68e8b995c96cb/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/traefik-proxy.html"><span class="std std-doc">jupyterhub/traefik-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-traefik-proxy">3,497</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/firstuseauthenticator.html"><span class="std std-doc">jupyterhub/firstuseauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-firstuseauthenticator">3,211</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/systemdspawner.html"><span class="std std-doc">jupyterhub/systemdspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-systemdspawner">3,179</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/xeus.html"><span class="std std-doc">jupyterlite/xeus</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-xeus">3,091</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/tmpauthenticator.html"><span class="std std-doc">jupyterhub/tmpauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-tmpauthenticator">2,921</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/repo2docker.html"><span class="std std-doc">jupyterhub/repo2docker</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-repo2docker">2,884</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/sphinxcontrib_github_alt.html"><span class="std std-doc">jupyter/sphinxcontrib_github_alt</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sphinxcontrib-github-alt">2,857</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/gateway_provisioners.html"><span class="std std-doc">jupyter-server/gateway_provisioners</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/gateway-provisioners">2,807</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/fps.html"><span class="std std-doc">jupyter-server/fps</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/fps">2,373</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/cockle.html"><span class="std std-doc">jupyterlite/cockle</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlite/cockle">2,094</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/javascript-kernel.html"><span class="std std-doc">jupyterlite/javascript-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-javascript-kernel">2,056</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-latex.html"><span class="std std-doc">jupyterlab/jupyterlab-latex</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-latex">2,054</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-python-wheel.html"><span class="std std-doc">jupyter-xeus/xeus-python-wheel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/xeus-python">1,778</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/ltiauthenticator.html"><span class="std std-doc">jupyterhub/ltiauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ltiauthenticator">1,725</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter-server/jupyverse.html"><span class="std std-doc">jupyter-server/jupyverse</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyverse-api">1,705</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/autodoc-traits.html"><span class="std std-doc">jupyterhub/autodoc-traits</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/autodoc-traits">1,660</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/terminal.html"><span class="std std-doc">jupyterlite/terminal</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-terminal">1,640</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-python-shell.html"><span class="std std-doc">jupyter-xeus/xeus-python-shell</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/xeus-python-shell">1,504</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-github.html"><span class="std std-doc">jupyterlab/jupyterlab-github</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-github">1,293</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-server/jupyter_releaser.html"><span class="std std-doc">jupyter-server/jupyter_releaser</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-releaser">1,278</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/p5-kernel.html"><span class="std std-doc">jupyterlite/p5-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-p5-kernel">1,246</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyter-remote-desktop-proxy.html"><span class="std std-doc">jupyterhub/jupyter-remote-desktop-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-remote-desktop-proxy">1,078</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/sudospawner.html"><span class="std std-doc">jupyterhub/sudospawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sudospawner">1,038</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/wrapspawner.html"><span class="std std-doc">jupyterhub/wrapspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/wrapspawner">928</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhealth/omh-shim.html"><span class="std std-doc">jupyterhealth/omh-shim</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/omh-shim">838</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/gh-scoped-creds.html"><span class="std std-doc">jupyterhub/gh-scoped-creds</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/gh-scoped-creds">721</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterhub/binderhub-client">554</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-translate.html"><span class="std std-doc">jupyterlab/jupyterlab-translate</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-translate">510</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila-gridstack.html"><span class="std std-doc">voila-dashboards/voila-gridstack</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila-gridstack">472</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila-topbar.html"><span class="std std-doc">voila-dashboards/voila-topbar</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila-topbar">376</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-sphinx-theme.html"><span class="std std-doc">jupyterhub/jupyterhub-sphinx-theme</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-sphinx-theme">373</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/plugin-playground.html"><span class="std std-doc">jupyterlab/plugin-playground</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-plugin-playground">267</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voici.html"><span class="std std-doc">voila-dashboards/voici</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voici-core">231</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-robot-wheel.html"><span class="std std-doc">jupyter-xeus/xeus-robot-wheel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/xeus-robot">215</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhealth/jupyter-smart-on-fhir.html"><span class="std std-doc">jupyterhealth/jupyter-smart-on-fhir</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-smart-on-fhir">213</a></p></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/jupyter-smart-on-fhir/blob/a0a31bb850d0c53d5e3b61a7326a36ca6bba5c31/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-ai-lite.html"><span class="std std-doc">jupyterlab/jupyter-ai-lite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyter-ai/agent-lite">208</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/pytest-jupyterhub.html"><span class="std std-doc">jupyterhub/pytest-jupyterhub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-jupyterhub">198</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/litegitpuller.html"><span class="std std-doc">jupyterlite/litegitpuller</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/litegitpuller">161</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter/nbviewer.html"><span class="std std-doc">jupyter/nbviewer</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbviewer">145</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/kerberosauthenticator.html"><span class="std std-doc">jupyterhub/kerberosauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kerberosauthenticator">139</a></p></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhub/kerberosauthenticator/blob/3c5f60d084201884de63d5b36d01f0b56d23b0e5/.github/workflows/build.yaml">.github/workflows/build.yaml</a>, <a class="reference external" href="https://github.com/jupyterhub/kerberosauthenticator/blob/3c5f60d084201884de63d5b36d01f0b56d23b0e5/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/robotframework-interpreter.html"><span class="std std-doc">jupyter-xeus/robotframework-interpreter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/robotframework-interpreter">137</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhealth/jupyterhealth-client.html"><span class="std std-doc">jupyterhealth/jupyterhealth-client</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhealth-client">120</a></p></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/jupyterhealth-client/blob/15d88eb66276a393f3f6cf0f94ebab42a7e93953/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-book/hatch-deps-selector.html"><span class="std std-doc">jupyter-book/hatch-deps-selector</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-deps-selector">107</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/ui-profiler.html"><span class="std std-doc">jupyterlab/ui-profiler</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/ui-profiler">83</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-hdf5.html"><span class="std std-doc">jupyterlab/jupyterlab-hdf5</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/hdf5">75</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter/echo_kernel.html"><span class="std std-doc">jupyter/echo_kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/echo-kernel">67</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/echo-kernel.html"><span class="std std-doc">jupyterlite/echo-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-echo-kernel">58</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/docker-image-cleaner.html"><span class="std std-doc">jupyterhub/docker-image-cleaner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/docker-image-cleaner">40</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/jupyterlab-webrtc-docprovider.html"><span class="std std-doc">jupyterlite/jupyterlab-webrtc-docprovider</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-webrtc-docprovider">38</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/synchronizer.html"><span class="std std-doc">jupyter-server/synchronizer</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-synchronizer">37</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/pull-requests.html"><span class="std std-doc">jupyterlab/pull-requests</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/pullrequests">36</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/hotpot_km.html"><span class="std std-doc">voila-dashboards/hotpot_km</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hotpot-km">26</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-commenting.html"><span class="std std-doc">jupyterlab/jupyterlab-commenting</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/commenting-extension">23</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/papyri.html"><span class="std std-doc">jupyter/papyri</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command</p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/papyri">21</a></p></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyter/papyri/blob/3ef74d2eab807c7850f18cd22d3a04bc1467a423/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab_apod.html"><span class="std std-doc">jupyterlab/jupyterlab_apod</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-apod">20</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyterlab/extension-examples.html"><span class="std std-doc">jupyterlab/extension-examples</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-examples-hello-world">15</a></p></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/maintainer-tools.html"><span class="std std-doc">jupyterlab/maintainer-tools</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command</p></td>
+<td></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterlab/maintainer-tools/blob/b9d5c28489f8b460cef48868f303b97c20f8fe1b/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/action-k3s-helm.html"><span class="std std-doc">jupyterhub/action-k3s-helm</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/action-k8s-namespace-report.html"><span class="std std-doc">jupyterhub/action-k8s-namespace-report</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/action-k8s-await-workloads.html"><span class="std std-doc">jupyterhub/action-k8s-await-workloads</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/action-major-minor-tag-calculator.html"><span class="std std-doc">jupyterhub/action-major-minor-tag-calculator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter/pr-triage-board-bot.html"><span class="std std-doc">jupyter/pr-triage-board-bot</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/action-get-quayio-tags.html"><span class="std std-doc">jupyterhub/action-get-quayio-tags</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/binder-examples/conda.html"><span class="std std-doc">binder-examples/conda</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/binder-examples.html"><span class="std std-doc">binder-examples</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/binder-examples/r.html"><span class="std std-doc">binder-examples/r</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/binder-examples.html"><span class="std std-doc">binder-examples</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/binder-examples/r-conda.html"><span class="std std-doc">binder-examples/r-conda</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/binder-examples.html"><span class="std std-doc">binder-examples</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/binder-examples/requirements.html"><span class="std std-doc">binder-examples/requirements</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/binder-examples.html"><span class="std std-doc">binder-examples</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/binder-examples/zero-to-jupyterhub-k8s.html"><span class="std std-doc">binder-examples/zero-to-jupyterhub-k8s</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/binder-examples.html"><span class="std std-doc">binder-examples</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/binderhub-ci-repos/minimal-dockerfile.html"><span class="std std-doc">binderhub-ci-repos/minimal-dockerfile</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/binderhub-ci-repos.html"><span class="std std-doc">binderhub-ci-repos</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/ipython/ipython.github.com.html"><span class="std std-doc">ipython/ipython.github.com</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/xkcd-font.html"><span class="std std-doc">ipython/xkcd-font</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>GitHub Action</p></td>
+<td></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/ipython/xkcd-font/blob/07bbde819cb01bf3f2476abe677149eeb7d64988/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-other"><a class="reference internal" href="../orgs/jupyter-book/dot.github.html"><span class="std std-doc">jupyter-book/.github</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-book/blog.html"><span class="std std-doc">jupyter-book/blog</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/blog-plugin.html"><span class="std std-doc">jupyter-book/blog-plugin</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/book-theme-tailwind-quickstart.html"><span class="std std-doc">jupyter-book/book-theme-tailwind-quickstart</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/demo-scipy-2025.html"><span class="std std-doc">jupyter-book/demo-scipy-2025</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/example-js-anywidget.html"><span class="std std-doc">jupyter-book/example-js-anywidget</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/example-js-plugin.html"><span class="std std-doc">jupyter-book/example-js-plugin</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/example-landing-pages.html"><span class="std std-doc">jupyter-book/example-landing-pages</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-book/example-outputs.html"><span class="std std-doc">jupyter-book/example-outputs</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/example-python-plugin.html"><span class="std std-doc">jupyter-book/example-python-plugin</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/example-stylesheets.html"><span class="std std-doc">jupyter-book/example-stylesheets</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-book/github-action-playground.html"><span class="std std-doc">jupyter-book/github-action-playground</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-book/jupyter_releaser.html"><span class="std std-doc">jupyter-book/jupyter_releaser</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-book/jupyterbook.org.html"><span class="std std-doc">jupyter-book/jupyterbook.org</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-book/legacy-demo-book.html"><span class="std std-doc">jupyter-book/legacy-demo-book</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-book/myst-enhancement-proposals.html"><span class="std std-doc">jupyter-book/myst-enhancement-proposals</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/myst-plugins.html"><span class="std std-doc">jupyter-book/myst-plugins</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter-book/mystmd.org.html"><span class="std std-doc">jupyter-book/mystmd.org</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-book/workshop-template.html"><span class="std std-doc">jupyter-book/workshop-template</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-governance/ec-team-compass.html"><span class="std std-doc">jupyter-governance/ec-team-compass</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-governance.html"><span class="std std-doc">jupyter-governance</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-governance/funding-proposals.html"><span class="std std-doc">jupyter-governance/funding-proposals</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-governance.html"><span class="std std-doc">jupyter-governance</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-governance/jupyter-foundation-governing-board.html"><span class="std std-doc">jupyter-governance/jupyter-foundation-governing-board</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-governance.html"><span class="std std-doc">jupyter-governance</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-server/extension-cookiecutter.html"><span class="std std-doc">jupyter-server/extension-cookiecutter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter-widgets/tutorial.html"><span class="std std-doc">jupyter-widgets/tutorial</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter-widgets/tutorial-jupyterlite.html"><span class="std std-doc">jupyter-widgets/tutorial-jupyterlite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-widgets/widget-cookiecutter.html"><span class="std std-doc">jupyter-widgets/widget-cookiecutter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-widgets/widget-ts-cookiecutter.html"><span class="std std-doc">jupyter-widgets/widget-ts-cookiecutter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/cpp-terminal.html"><span class="std std-doc">jupyter-xeus/cpp-terminal</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xcanvas.html"><span class="std std-doc">jupyter-xeus/xcanvas</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus.html"><span class="std std-doc">jupyter-xeus/xeus</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-calc.html"><span class="std std-doc">jupyter-xeus/xeus-calc</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-cookiecutter.html"><span class="std std-doc">jupyter-xeus/xeus-cookiecutter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-haskell.html"><span class="std std-doc">jupyter-xeus/xeus-haskell</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-javascript.html"><span class="std std-doc">jupyter-xeus/xeus-javascript</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-lite.html"><span class="std std-doc">jupyter-xeus/xeus-lite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-lua.html"><span class="std std-doc">jupyter-xeus/xeus-lua</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-nelson.html"><span class="std std-doc">jupyter-xeus/xeus-nelson</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-octave.html"><span class="std std-doc">jupyter-xeus/xeus-octave</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-python.html"><span class="std std-doc">jupyter-xeus/xeus-python</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-qt.html"><span class="std std-doc">jupyter-xeus/xeus-qt</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-qt-python.html"><span class="std std-doc">jupyter-xeus/xeus-qt-python</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-r.html"><span class="std std-doc">jupyter-xeus/xeus-r</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-robot.html"><span class="std std-doc">jupyter-xeus/xeus-robot</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-sql.html"><span class="std std-doc">jupyter-xeus/xeus-sql</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-sqlite.html"><span class="std std-doc">jupyter-xeus/xeus-sqlite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-uv.html"><span class="std std-doc">jupyter-xeus/xeus-uv</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-zmq.html"><span class="std std-doc">jupyter-xeus/xeus-zmq</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xleaflet.html"><span class="std std-doc">jupyter-xeus/xleaflet</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xproperty.html"><span class="std std-doc">jupyter-xeus/xproperty</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xvega.html"><span class="std std-doc">jupyter-xeus/xvega</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xvega-bindings.html"><span class="std std-doc">jupyter-xeus/xvega-bindings</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xwidgets.html"><span class="std std-doc">jupyter-xeus/xwidgets</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter/accessibility.html"><span class="std std-doc">jupyter/accessibility</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter/community-committee.html"><span class="std std-doc">jupyter/community-committee</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter/cookiecutter-docker-stacks.html"><span class="std std-doc">jupyter/cookiecutter-docker-stacks</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter/docker-stacks.html"><span class="std std-doc">jupyter/docker-stacks</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter/docs-team-compass.html"><span class="std std-doc">jupyter/docs-team-compass</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter/enhancement-proposals.html"><span class="std std-doc">jupyter/enhancement-proposals</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter/github-data.html"><span class="std std-doc">jupyter/github-data</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter/governance.html"><span class="std std-doc">jupyter/governance</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter/jupyter.github.io.html"><span class="std std-doc">jupyter/jupyter.github.io</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-deployment"><a class="reference internal" href="../orgs/jupyter/nbviewer.org-deploy.html"><span class="std std-doc">jupyter/nbviewer.org-deploy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyter/surveys.html"><span class="std std-doc">jupyter/surveys</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter/try-jupyter.html"><span class="std std-doc">jupyter/try-jupyter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupytercon/2020-Cheukting.html"><span class="std std-doc">jupytercon/2020-Cheukting</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-ClusteringAlgorithms.html"><span class="std std-doc">jupytercon/2020-ClusteringAlgorithms</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-OpenSourceCommunities.html"><span class="std std-doc">jupytercon/2020-OpenSourceCommunities</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-OpenSourceFunding.html"><span class="std std-doc">jupytercon/2020-OpenSourceFunding</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-eteq.html"><span class="std std-doc">jupytercon/2020-eteq</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-ethics-culture-opensource-tutorial.html"><span class="std std-doc">jupytercon/2020-ethics-culture-opensource-tutorial</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-jedbrown.html"><span class="std std-doc">jupytercon/2020-jedbrown</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-jupyterbook-with-turing-way.html"><span class="std std-doc">jupytercon/2020-jupyterbook-with-turing-way</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-mattharrison.html"><span class="std std-doc">jupytercon/2020-mattharrison</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-sdruskat.html"><span class="std std-doc">jupytercon/2020-sdruskat</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-shlomihod.html"><span class="std std-doc">jupytercon/2020-shlomihod</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupytercon/2020-widgets-tutorial.html"><span class="std std-doc">jupytercon/2020-widgets-tutorial</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/2020-willingc.html"><span class="std std-doc">jupytercon/2020-willingc</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupytercon/2020-zronaghi.html"><span class="std std-doc">jupytercon/2020-zronaghi</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/jupytercon2020-developingextensions.html"><span class="std std-doc">jupytercon/jupytercon2020-developingextensions</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/jupytercon2020-website.html"><span class="std std-doc">jupytercon/jupytercon2020-website</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupytercon/jupytercon2025-developingextensions.html"><span class="std std-doc">jupytercon/jupytercon2025-developingextensions</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupytercon/jupytercon2025-developingextensions-demo.html"><span class="std std-doc">jupytercon/jupytercon2025-developingextensions-demo</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupytercon/tutorial2020.html"><span class="std std-doc">jupytercon/tutorial2020</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupytercon.html"><span class="std std-doc">jupytercon</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyterhealth/demos.html"><span class="std std-doc">jupyterhealth/demos</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-deployment"><a class="reference internal" href="../orgs/jupyterhealth/helm-charts.html"><span class="std std-doc">jupyterhealth/helm-charts</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/helm-charts/blob/81315f1641b81cbb3b045c6adc605e814f44ab6a/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhealth/hub.html"><span class="std std-doc">jupyterhealth/hub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhealth/initiatives.html"><span class="std std-doc">jupyterhealth/initiatives</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>GitHub Action</p></td>
+<td></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/initiatives/blob/dba239a3648634610f9a85415ce2510ad929d3f0/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-deployment"><a class="reference internal" href="../orgs/jupyterhealth/jupyterhealth-demo-deploy.html"><span class="std std-doc">jupyterhealth/jupyterhealth-demo-deploy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/jupyterhealth-demo-deploy/blob/2020191984f4e530f0b8ee2bbbe57824535071fd/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhealth/jupyterhealth-exchange.html"><span class="std std-doc">jupyterhealth/jupyterhealth-exchange</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-partial">partial</span></p></td>
+<td><p>pre-commit</p></td>
+<td></td>
+<td><p>Pre-commit hook, but nothing shows that CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/jupyterhealth-exchange/blob/3cb9e210e3c3a77ff582e2ba02214ac723b0c547/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhealth/jupyterhealth-sof-provider-template.html"><span class="std std-doc">jupyterhealth/jupyterhealth-sof-provider-template</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-partial">partial</span></p></td>
+<td><p>pre-commit</p></td>
+<td></td>
+<td><p>Pre-commit hook, but nothing shows that CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/jupyterhealth-sof-provider-template/blob/4a86d186a433c326504378bdb49983848d6f9623/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhealth/jupyterhealth.github.io.html"><span class="std std-doc">jupyterhealth/jupyterhealth.github.io</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhealth/jupyterhealth.org.html"><span class="std std-doc">jupyterhealth/jupyterhealth.org</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhealth/myst-site-article.html"><span class="std std-doc">jupyterhealth/myst-site-article</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhealth/myst-site-book.html"><span class="std std-doc">jupyterhealth/myst-site-book</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhealth/singleuser-image.html"><span class="std std-doc">jupyterhealth/singleuser-image</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhealth/sof-cgm-demo.html"><span class="std std-doc">jupyterhealth/sof-cgm-demo</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-partial">partial</span></p></td>
+<td><p>pre-commit</p></td>
+<td></td>
+<td><p>Pre-commit hook, but nothing shows that CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhealth/sof-cgm-demo/blob/c69e01f6639bfa509434cff4098c4d909e813d5e/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhealth/software-documentation.html"><span class="std std-doc">jupyterhealth/software-documentation</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/binder-data.html"><span class="std std-doc">jupyterhub/binder-data</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/grafana-dashboards.html"><span class="std std-doc">jupyterhub/grafana-dashboards</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-container-images.html"><span class="std std-doc">jupyterhub/jupyterhub-container-images</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>pre-commit</p></td>
+<td></td>
+<td><p>Pre-commit hook, and CI runs pre-commit.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterhub/jupyterhub-container-images/blob/7a125d71181ee93476afc8345d57aa4e59071c05/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-deployment"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-deploy-docker.html"><span class="std std-doc">jupyterhub/jupyterhub-deploy-docker</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-python-repo-template.html"><span class="std std-doc">jupyterhub/jupyterhub-python-repo-template</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-the-hard-way.html"><span class="std std-doc">jupyterhub/jupyterhub-the-hard-way</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub.github.io.html"><span class="std std-doc">jupyterhub/jupyterhub.github.io</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-deployment"><a class="reference internal" href="../orgs/jupyterhub/mybinder.org-deploy.html"><span class="std std-doc">jupyterhub/mybinder.org-deploy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/pamela.html"><span class="std std-doc">jupyterhub/pamela</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhub/pebble-helm-chart.html"><span class="std std-doc">jupyterhub/pebble-helm-chart</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/repo2docker-action.html"><span class="std std-doc">jupyterhub/repo2docker-action</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterhub/team-compass.html"><span class="std std-doc">jupyterhub/team-compass</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/the-littlest-jupyterhub.html"><span class="std std-doc">jupyterhub/the-littlest-jupyterhub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-deployment"><a class="reference internal" href="../orgs/jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/jupyterlab/dot.github.html"><span class="std std-doc">jupyterlab/.github</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/benchmarks.html"><span class="std std-doc">jupyterlab/benchmarks</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/extension-cookiecutter-js.html"><span class="std std-doc">jupyterlab/extension-cookiecutter-js</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/extension-cookiecutter-ts.html"><span class="std std-doc">jupyterlab/extension-cookiecutter-ts</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/extension-template.html"><span class="std std-doc">jupyterlab/extension-template</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-demo.html"><span class="std std-doc">jupyterlab/jupyterlab-demo</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-desktop.html"><span class="std std-doc">jupyterlab/jupyterlab-desktop</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td><p>workflow command</p></td>
+<td></td>
+<td><p>Runs in a workflow.</p></td>
+<td><p><a class="reference external" href="https://github.com/jupyterlab/jupyterlab-desktop/blob/0d7e537b04e49c80ed61911d895273eee9af0f44/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-probot.html"><span class="std std-doc">jupyterlab/jupyterlab-probot</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/richoutput-js.html"><span class="std std-doc">jupyterlab/richoutput-js</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/vscode-config-template.html"><span class="std std-doc">jupyterlab/vscode-config-template</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyterlite/demo.html"><span class="std std-doc">jupyterlite/demo</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/jupyterlite-lsp.html"><span class="std std-doc">jupyterlite/jupyterlite-lsp</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyterlite/sphinx-demo.html"><span class="std std-doc">jupyterlite/sphinx-demo</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyterlite/xeus-lite-demo.html"><span class="std std-doc">jupyterlite/xeus-lite-demo</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/tljh-voila-gallery.html"><span class="std std-doc">voila-dashboards/tljh-voila-gallery</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/voila-dashboards/voici-demo.html"><span class="std std-doc">voila-dashboards/voici-demo</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/voila-dashboards/voici-gallery.html"><span class="std std-doc">voila-dashboards/voici-gallery</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/voila-dashboards/voila-huggingface.html"><span class="std std-doc">voila-dashboards/voila-huggingface</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="../orgs/voila-gallery/voila-gallery.github.io.html"><span class="std std-doc">voila-gallery/voila-gallery.github.io</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-gallery.html"><span class="std std-doc">voila-gallery</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td></td>
+<td><p>No sign of zizmor.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="over-time">
+<h2>Over time<a class="headerlink" href="#over-time" title="Link to this heading">#</a></h2>
+<p>The days the numbers changed.</p>
+<p><a class="reference download internal" download="" href="../_downloads/8576c413592ac845f4288074a7cfa028/topic-zizmor-history.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>date</p></th>
+<th class="head"><p>done</p></th>
+<th class="head"><p>partial</p></th>
+<th class="head"><p>missing</p></th>
+<th class="head"><p>not applicable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="date">2026-11-04</span></p></td>
+<td><p>23</p></td>
+<td><p>3</p></td>
+<td><p>258</p></td>
+<td><p>154</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="date">2026-11-01</span></p></td>
+<td><p>22</p></td>
+<td><p>3</p></td>
+<td><p>259</p></td>
+<td><p>154</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

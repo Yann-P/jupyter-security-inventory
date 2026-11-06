@@ -1,0 +1,34 @@
+# voila\-dashboards\/voila\-railway
+
+Voila deployed on Railway
+
+tooling · [on GitHub](https://github.com/voila-dashboards/voila-railway) · scanned at commit [cd97640](https://github.com/voila-dashboards/voila-railway/tree/cd97640834e71e83d4e08cb6698300262ac053fa)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Procfile and requirements for deploying Voila to Railway\, with a \'Deploy on Railway\' button and a live demo link\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 11: 7 notebook, 3 docs, 1 other

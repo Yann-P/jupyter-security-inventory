@@ -1,0 +1,37 @@
+# jupyter\-server\/jupyter\_releaser
+
+A set of helper scripts and GitHub Actions to aid in automated releases of Python and npm packages\.
+
+tooling · [on GitHub](https://github.com/jupyter-server/jupyter_releaser) · scanned at commit [ae340ad](https://github.com/jupyter-server/jupyter_releaser/tree/ae340ad3f2f83e1a2f50b988050bf453b932e69a)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-releaser](https://pypi.org/project/jupyter-releaser/), [1,278](https://pypistats.org/packages/jupyter-releaser) downloads/month, 0 dependents, last published 2026-11-05
+- **Container images:** none
+- **Run by other repositories:** 62 in their CI, 8 pinned to a commit
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides \'a set of helper scripts and GitHub Actions to aid in automated releases\' \(README\)\, contains GitHub Actions like check\-release\.yml and publish\-release\.yml\, and publishes the jupyter\-releaser PyPI package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-releaser \(2026\-11\-05\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 9, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** ADMIN\_GITHUB\_TOKEN, APP\_PRIVATE\_KEY, NPM\_TOKEN, PYPI\_TOKEN, PYPI\_TOKEN\_MAP
+- **Actions:** 6, 5 by tag, 1 by branch. Third-party, not pinned: re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **Run it in their CI:** [ipython\/comm](/orgs/ipython/comm.md), [jupyter\-book\/jupyter\-book](/orgs/jupyter-book/jupyter-book.md), [jupyter\-book\/jupyter\_releaser](/orgs/jupyter-book/jupyter_releaser.md), [jupyter\-book\/jupyterlab\-myst](/orgs/jupyter-book/jupyterlab-myst.md), [jupyter\-server\/fps](/orgs/jupyter-server/fps.md), [jupyter\-server\/gateway\_provisioners](/orgs/jupyter-server/gateway_provisioners.md), [jupyter\-server\/jupyter\-resource\-usage](/orgs/jupyter-server/jupyter-resource-usage.md), [jupyter\-server\/jupyter\-scheduler](/orgs/jupyter-server/jupyter-scheduler.md), [jupyter\-server\/jupyter\_server](/orgs/jupyter-server/jupyter_server.md), [jupyter\-server\/jupyter\_server\_fileid](/orgs/jupyter-server/jupyter_server_fileid.md), [jupyter\-server\/jupyter\_server\_terminals](/orgs/jupyter-server/jupyter_server_terminals.md), [jupyter\-server\/jupyter\_ydoc](/orgs/jupyter-server/jupyter_ydoc.md), [jupyter\-server\/kernel\_gateway](/orgs/jupyter-server/kernel_gateway.md), [jupyter\-server\/pytest\-jupyter](/orgs/jupyter-server/pytest-jupyter.md), [jupyter\-server\/synchronizer](/orgs/jupyter-server/synchronizer.md), [jupyter\/echo\_kernel](/orgs/jupyter/echo_kernel.md), [jupyter\/jupyter\-packaging](/orgs/jupyter/jupyter-packaging.md), [jupyter\/jupyter\_client](/orgs/jupyter/jupyter_client.md), [jupyter\/jupyter\_console](/orgs/jupyter/jupyter_console.md), [jupyter\/jupyter\_core](/orgs/jupyter/jupyter_core.md), [jupyter\/jupyter\_events](/orgs/jupyter/jupyter_events.md), [jupyter\/jupyter\_kernel\_test](/orgs/jupyter/jupyter_kernel_test.md), [jupyter\/nbconvert](/orgs/jupyter/nbconvert.md), [jupyter\/nbdime](/orgs/jupyter/nbdime.md), [jupyter\/nbformat](/orgs/jupyter/nbformat.md), [jupyter\/nbgrader](/orgs/jupyter/nbgrader.md), [jupyter\/notebook\_shim](/orgs/jupyter/notebook_shim.md), [jupyter\/telemetry](/orgs/jupyter/telemetry.md), [jupyter\/terminado](/orgs/jupyter/terminado.md), [jupytercon\/jupytercon2025\-developingextensions\-demo](/orgs/jupytercon/jupytercon2025-developingextensions-demo.md), [jupyterlab\/eslint\-plugin](/orgs/jupyterlab/eslint-plugin.md), [jupyterlab\/hatch\-jupyter\-builder](/orgs/jupyterlab/hatch-jupyter-builder.md), [jupyterlab\/hatch\-nodejs\-version](/orgs/jupyterlab/hatch-nodejs-version.md), [jupyterlab\/jupyter\-ai\-lite](/orgs/jupyterlab/jupyter-ai-lite.md), [jupyterlab\/jupyter\-builder](/orgs/jupyterlab/jupyter-builder.md), [jupyterlab\/jupyter\-chat](/orgs/jupyterlab/jupyter-chat.md), [jupyterlab\/jupyter\-collaboration](/orgs/jupyterlab/jupyter-collaboration.md), [jupyterlab\/jupyterlab\-git](/orgs/jupyterlab/jupyterlab-git.md), [jupyterlab\/jupyterlab\-github](/orgs/jupyterlab/jupyterlab-github.md), [jupyterlab\/jupyterlab\-latex](/orgs/jupyterlab/jupyterlab-latex.md), [jupyterlab\/jupyterlab\_apod](/orgs/jupyterlab/jupyterlab_apod.md), [jupyterlab\/jupyterlab\_pygments](/orgs/jupyterlab/jupyterlab_pygments.md), [jupyterlab\/jupyterlab\_server](/orgs/jupyterlab/jupyterlab_server.md), [jupyterlab\/lumino](/orgs/jupyterlab/lumino.md), [jupyterlab\/plugin\-playground](/orgs/jupyterlab/plugin-playground.md), [jupyterlab\/pytest\-check\-links](/orgs/jupyterlab/pytest-check-links.md), [jupyterlab\/ui\-profiler](/orgs/jupyterlab/ui-profiler.md), [jupyterlite\/cockle](/orgs/jupyterlite/cockle.md), [jupyterlite\/echo\-kernel](/orgs/jupyterlite/echo-kernel.md), [jupyterlite\/javascript\-kernel](/orgs/jupyterlite/javascript-kernel.md), [jupyterlite\/jupyterlab\-webrtc\-docprovider](/orgs/jupyterlite/jupyterlab-webrtc-docprovider.md), [jupyterlite\/jupyterlite](/orgs/jupyterlite/jupyterlite.md), [jupyterlite\/jupyterlite\-sphinx](/orgs/jupyterlite/jupyterlite-sphinx.md), [jupyterlite\/litegitpuller](/orgs/jupyterlite/litegitpuller.md), [jupyterlite\/p5\-kernel](/orgs/jupyterlite/p5-kernel.md), [jupyterlite\/pyodide\-kernel](/orgs/jupyterlite/pyodide-kernel.md), [jupyterlite\/terminal](/orgs/jupyterlite/terminal.md), [jupyterlite\/xeus](/orgs/jupyterlite/xeus.md), [voila\-dashboards\/voici](/orgs/voila-dashboards/voici.md), [voila\-dashboards\/voila](/orgs/voila-dashboards/voila.md), [voila\-dashboards\/voila\-gridstack](/orgs/voila-dashboards/voila-gridstack.md), [voila\-dashboards\/voila\-topbar](/orgs/voila-dashboards/voila-topbar.md)
+- **Run it pinned to a commit:** [ipython\/ipykernel](/orgs/ipython/ipykernel.md), [ipython\/traitlets](/orgs/ipython/traitlets.md), [jupyter\/nbclassic](/orgs/jupyter/nbclassic.md), [jupyter\/nbclient](/orgs/jupyter/nbclient.md), [jupyter\/notebook](/orgs/jupyter/notebook.md), [jupyterlab\/jupyter\-ai](/orgs/jupyterlab/jupyter-ai.md), [jupyterlab\/jupyterlab](/orgs/jupyterlab/jupyterlab.md), [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v3, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1
+- **Files:** 88: 27 code, 24 config, 21 docs, 12 media, 3 other, 1 web

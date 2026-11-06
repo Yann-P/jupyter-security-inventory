@@ -1,0 +1,5 @@
+package,repository,downloads/month,dependents,last published
+jupyter-book,jupyter-book/jupyter-book,217891,22,2026-09-23
+mystmd,jupyter-book/mystmd,10278,6,2026-10-27
+jupyterlab-myst,jupyter-book/jupyterlab-myst,8807,32,2026-10-02
+hatch-deps-selector,jupyter-book/hatch-deps-selector,107,0,2024-09-04

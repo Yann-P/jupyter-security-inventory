@@ -1,0 +1,6 @@
+package,repository,downloads/month,dependents,last published
+configurable-http-proxy,jupyterhub/configurable-http-proxy,49865,1,2026-10-31
+@jupyterhub/binderhub-client,jupyterhub/binderhub,554,1,2025-09-09
+@jupyterhub/jupyter-server-proxy,jupyterhub/jupyter-server-proxy,158,0,2026-09-21
+@jupyterhub/binderhub-react-components,jupyterhub/binderhub,24,0,2025-09-08
+jupyterhub-deps,jupyterhub/jupyterhub,12,0,2023-07-19

@@ -1,0 +1,34 @@
+# jupyterhealth\/team\-compass
+
+A repository for team interaction\, syncing\, and handling meeting notes in JupyterHealth
+
+documentation · [on GitHub](https://github.com/jupyterhealth/team-compass) · scanned at commit [86708c1](https://github.com/jupyterhealth/team-compass/tree/86708c186b15aa68cfa41b316655d50ef68fced5)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** README states it is for team interaction\, syncing\, and meeting notes\, with no code beyond README\/LICENSE\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 3: 2 other, 1 docs

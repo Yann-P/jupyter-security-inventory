@@ -1,0 +1,34 @@
+# voila\-gallery\/ipympl
+
+Interactive matplotlib in a Voila dashboard
+
+example · [on GitHub](https://github.com/voila-gallery/ipympl) · scanned at commit [d3b7224](https://github.com/voila-gallery/ipympl/tree/d3b722437ef36e519c92be249afbd55aec93ec00)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains a single notebook ipympl\.ipynb and a GIF demonstrating an interactive matplotlib demo\, with no package publishing or CI workflows\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 8: 2 other, 2 config, 2 media, 1 docs, 1 notebook

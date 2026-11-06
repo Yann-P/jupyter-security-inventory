@@ -1,0 +1,35 @@
+# jupyterlite\/pyodide\-kernel
+
+Python kernel for JupyterLite powered by Pyodide
+
+package · [on GitHub](https://github.com/jupyterlite/pyodide-kernel) · scanned at commit [ebdcafd](https://github.com/jupyterlite/pyodide-kernel/tree/ebdcafd780afa1c6f8e3c3b507d4b46652449f9f)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlite\-pyodide\-kernel](https://pypi.org/project/jupyterlite-pyodide-kernel/), [51,057](https://pypistats.org/packages/jupyterlite-pyodide-kernel) downloads/month, 8 dependents, last published 2026-11-05; []{.fa-brands .fa-npm} [\@jupyterlite\/pyodide\-kernel](https://www.npmjs.com/package/@jupyterlite/pyodide-kernel), [15,752](https://npm-stat.com/charts.html?package=@jupyterlite/pyodide-kernel) downloads/month, 1 dependents, last published 2026-11-05; []{.fa-brands .fa-npm} [\@jupyterlite\/pyodide\-kernel\-extension](https://www.npmjs.com/package/@jupyterlite/pyodide-kernel-extension), [14,974](https://npm-stat.com/charts.html?package=@jupyterlite/pyodide-kernel-extension) downloads/month, 0 dependents, last published 2026-11-05
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo provides a Python kernel for JupyterLite as a pip\-installable package and npm packages\, with addons for jupyter lite\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlite\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm versions used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlite\-pyodide\-kernel \(2026\-11\-05\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 6, run on pull\_request, pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 8, 8 by tag
+- **Build requirements:** hatchling, jupyter\-builder
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v8, actions\/github\-script\@v8, actions\/setup\-python\@v6, actions\/upload\-artifact\@v7, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 123: 55 code, 34 config, 16 docs, 11 other, 5 web, 1 notebook, 1 media

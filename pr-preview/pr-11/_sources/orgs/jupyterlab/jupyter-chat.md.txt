@@ -1,0 +1,35 @@
+# jupyterlab\/jupyter\-chat
+
+An extension to add a chat panel to JupyterLab
+
+package · [on GitHub](https://github.com/jupyterlab/jupyter-chat) · scanned at commit [d2127e7](https://github.com/jupyterlab/jupyter-chat/tree/d2127e796e43e2a7538b449b4be104fb604ebb80)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-chat](https://pypi.org/project/jupyterlab-chat/), [22,763](https://pypistats.org/packages/jupyterlab-chat) downloads/month, 14 dependents, last published 2026-11-03; []{.fa-brands .fa-npm} [\@jupyter\/chat](https://www.npmjs.com/package/@jupyter/chat), [3,602](https://npm-stat.com/charts.html?package=@jupyter/chat) downloads/month, 12 dependents, last published 2026-11-03; []{.fa-brands .fa-npm} [jupyterlab\-chat](https://www.npmjs.com/package/jupyterlab-chat), [527](https://npm-stat.com/charts.html?package=jupyterlab-chat) downloads/month, 2 dependents, last published 2026-11-03; []{.fa-brands .fa-npm} [jupyterlab\-chat\-extension](https://www.npmjs.com/package/jupyterlab-chat-extension), [416](https://npm-stat.com/charts.html?package=jupyterlab-chat-extension) downloads/month, 0 dependents, last published 2026-11-03
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a monorepo containing a JupyterLab extension and frontend components\, as evidenced by package\.json files\, Python package configuration\, and README installation instructions\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-chat \(2026\-11\-03\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm versions used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-chat \(2026\-11\-03\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 11, run on issue\_comment, pull\_request, pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN, github\_token
+- **Actions:** 9, 8 by tag, 1 by branch. Third-party, not pinned: apache\/skywalking\-eyes\@v0\.4\.0, toshimaru\/auto\-author\-assign\@v2\.1\.1
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyter\-builder
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v3, actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/upload\-artifact\@v4, apache\/skywalking\-eyes\@v0\.4\.0, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@main, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, toshimaru\/auto\-author\-assign\@v2\.1\.1
+- **Files:** 272: 172 code, 37 config, 23 media, 16 docs, 12 web, 11 other, 1 notebook

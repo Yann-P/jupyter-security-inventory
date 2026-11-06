@@ -1,0 +1,35 @@
+# jupyterhub\/ldapauthenticator
+
+LDAP Authenticator Plugin for Jupyter
+
+package · [on GitHub](https://github.com/jupyterhub/ldapauthenticator) · scanned at commit [9d2759a](https://github.com/jupyterhub/ldapauthenticator/tree/9d2759a3ca3ab8a311398fbae8f8d4cd114f66b0)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterhub\-ldapauthenticator](https://pypi.org/project/jupyterhub-ldapauthenticator/), [6,160](https://pypistats.org/packages/jupyterhub-ldapauthenticator) downloads/month, 0 dependents, last published 2024-11-06
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it authenticates users against LDAP for JupyterHub
+- **Why these labels:** The repository is a JupyterHub authenticator plugin published to PyPI as jupyterhub\-ldapauthenticator\, with code in ldapauthenticator\/ and a release workflow publishing to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterhub\-ldapauthenticator \(2024\-11\-06\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterhub\-ldapauthenticator \(2024\-11\-06\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** pypi\_password
+- **Actions:** 4, 3 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-python\@v6, codecov\/codecov\-action\@v7, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 20: 7 code, 6 config, 4 docs, 3 other

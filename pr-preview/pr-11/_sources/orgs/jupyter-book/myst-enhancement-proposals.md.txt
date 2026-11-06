@@ -1,0 +1,35 @@
+# jupyter\-book\/myst\-enhancement\-proposals
+
+MyST Enhancement Proposals \(MEPs\)
+
+documentation · [on GitHub](https://github.com/jupyter-book/myst-enhancement-proposals) · scanned at commit [d3027b2](https://github.com/jupyter-book/myst-enhancement-proposals/tree/d3027b25abd427c24038739aac8c817cc5229d07)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** mep\.mystmd\.org
+- **Security boundary:** no
+- **Why these labels:** The repository contains only Markdown files under meps\/ and root\-level docs\, and the README describes it as a process and archive of proposals for the MyST Markdown Specification\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/setup\-node\@v4, actions\/upload\-pages\-artifact\@v3
+- **Files:** 22: 10 docs, 6 config, 3 media, 2 other, 1 code

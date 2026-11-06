@@ -1,0 +1,35 @@
+# jupyterhealth\/demos
+
+demo notebooks to be run on the JupyterHealth deployment
+
+example · [on GitHub](https://github.com/jupyterhealth/demos) · scanned at commit [2238d94](https://github.com/jupyterhealth/demos/tree/2238d949729466053d100298041173268b9985fd)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo contains demo notebooks and dashboard code for JupyterHealth deployments\, with a CI workflow that publishes a website\, but no published packages or live service deployment config\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/setup\-node\@v4, actions\/upload\-pages\-artifact\@v3
+- **Files:** 63: 23 code, 22 media, 6 notebook, 4 config, 4 docs, 3 other, 1 web

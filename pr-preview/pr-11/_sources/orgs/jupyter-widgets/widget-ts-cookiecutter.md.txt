@@ -1,0 +1,35 @@
+# jupyter\-widgets\/widget\-ts\-cookiecutter
+
+A highly opinionated cookiecutter template for ipywidget extensions\.
+
+tooling · [on GitHub](https://github.com/jupyter-widgets/widget-ts-cookiecutter) · scanned at commit [7e3339c](https://github.com/jupyter-widgets/widget-ts-cookiecutter/tree/7e3339c6d32fc21396c5d32c750db9ea246a9346)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo is a cookiecutter template for generating Jupyter widget projects\, as stated in the README and evidenced by \'cookiecutter\.json\' and \'\{\{cookiecutter\.\.\.\}\}\' files\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 62: 25 code, 17 config, 10 other, 8 docs, 1 web, 1 notebook

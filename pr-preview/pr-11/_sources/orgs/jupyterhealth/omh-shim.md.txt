@@ -1,0 +1,35 @@
+# jupyterhealth\/omh\-shim
+
+Convert wearable health data from vendor schemas to Open mHealth schemas\.
+
+package · [on GitHub](https://github.com/jupyterhealth/omh-shim) · scanned at commit [1892a18](https://github.com/jupyterhealth/omh-shim/tree/1892a182d6b6c8255b5663a61086fe27eaa67cc0)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [omh\-shim](https://pypi.org/project/omh-shim/), [838](https://pypistats.org/packages/omh-shim) downloads/month, 0 dependents, last published 2026-09-19
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository converts wearable health data using Python code and publishes an installable PYPI package \(omh\-shim\)\, with tests and CI publishing to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhealth\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** done. Its latest PyPI release requires at least Python 3\.11\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 8, 5 by commit, 3 by tag. Third-party, not pinned: codecov\/codecov\-action\@v5
+- **Build requirements:** setuptools, wheel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@de0fac2, actions\/checkout\@v6, actions\/download\-artifact\@3e5f45b, actions\/setup\-python\@a309ff8, actions\/setup\-python\@v6, actions\/upload\-artifact\@043fb46, codecov\/codecov\-action\@v5, pypa\/gh\-action\-pypi\-publish\@cef2210
+- **Files:** 145: 117 config, 17 code, 9 docs, 2 other

@@ -1,0 +1,37 @@
+# jupyterhub\/binderhub
+
+Run your code in the cloud\, with technology so advanced\, it feels like magic\!
+
+application · [on GitHub](https://github.com/jupyterhub/binderhub) · scanned at commit [05666ec](https://github.com/jupyterhub/binderhub/tree/05666ec83128365f77738e6dbf82da4c15a4e59a)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [\@jupyterhub\/binderhub\-client](https://www.npmjs.com/package/@jupyterhub/binderhub-client), [554](https://npm-stat.com/charts.html?package=@jupyterhub/binderhub-client) downloads/month, 1 dependents, last published 2025-09-09; []{.fa-brands .fa-python} [binderhub](https://pypi.org/project/binderhub/), [77](https://pypistats.org/packages/binderhub) downloads/month, 0 dependents, last published 2018-11-07; []{.fa-brands .fa-npm} [\@jupyterhub\/binderhub\-react\-components](https://www.npmjs.com/package/@jupyterhub/binderhub-react-components), [24](https://npm-stat.com/charts.html?package=@jupyterhub/binderhub-react-components) downloads/month, 0 dependents, last published 2025-09-08
+- **Container images:**
+  - [jupyterhub\/k8s\-binderhub](https://hub.docker.com/r/jupyterhub/k8s-binderhub) on docker.io, 225,601 pulls, last published 2026-11-01
+  - [jupyterhub\/k8s\-binderhub](https://quay.io/repository/jupyterhub/k8s-binderhub) on quay.io, last published 2026-11-01
+- **Run by other repositories:** none
+- **Live service:** mybinder\.org
+- **Security boundary:** no
+- **Why these labels:** BinderHub is a server application that builds Docker images from Git repos and connects to JupyterHub to provide live Jupyter environments\, as evidenced by its README description\, Python package \'binderhub\'\, and Helm chart deployment files\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of binderhub \(2018\-11\-07\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest versions of \@jupyterhub\/binderhub\-client \(2025\-09\-09\) and \@jupyterhub\/binderhub\-react\-components \(2025\-09\-08\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of binderhub \(2018\-11\-07\) allows Python 3\.6\, which has had no security fixes since 2021\-12\-23\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** container, website, cloud
+- **Secrets:** DOCKER\_PASSWORD, DOCKER\_USERNAME, JUPYTERHUB\_HELM\_CHART\_DEPLOY\_KEY, QUAY\_PASSWORD, QUAY\_USERNAME, github\_token, jupyterhub\_bot\_pat
+- **Actions:** 13, 13 by tag. Third-party, not pinned: azure\/setup\-helm\@v5, codecov\/codecov\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, peter\-evans\/create\-pull\-request\@v8
+- **Build requirements:** jupyter\-packaging, setuptools, wheel
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v5, actions\/checkout\@v7, actions\/setup\-node\@v7, actions\/setup\-python\@v7, actions\/upload\-artifact\@v7, azure\/setup\-helm\@v5, codecov\/codecov\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, [jupyterhub\/action\-k3s\-helm](/orgs/jupyterhub/action-k3s-helm.md)\@v4, [jupyterhub\/action\-k8s\-await\-workloads](/orgs/jupyterhub/action-k8s-await-workloads.md)\@v3, [jupyterhub\/action\-k8s\-namespace\-report](/orgs/jupyterhub/action-k8s-namespace-report.md)\@v1, peter\-evans\/create\-pull\-request\@v8
+- **Files:** 231: 88 code, 55 config, 43 docs, 20 other, 18 media, 7 web

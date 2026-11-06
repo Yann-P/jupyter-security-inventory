@@ -1,0 +1,34 @@
+# jupyterlab\/jupytercon\-jupyterlab\-training
+
+JupyterCon 2018 JupyterLab Training
+
+documentation · [on GitHub](https://github.com/jupyterlab/jupytercon-jupyterlab-training) · scanned at commit [05cbf7e](https://github.com/jupyterlab/jupytercon-jupyterlab-training/tree/05cbf7eca20a34bc084d090afab45f0dbb893f2f)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Repository contains training material and links\, no code beyond README\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 1: 1 docs

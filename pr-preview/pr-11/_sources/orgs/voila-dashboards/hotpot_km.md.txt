@@ -1,0 +1,35 @@
+# voila\-dashboards\/hotpot\_km
+
+A library for a pooling hotloaded Jupyter kernels
+
+package · [on GitHub](https://github.com/voila-dashboards/hotpot_km) · scanned at commit [6d2f573](https://github.com/voila-dashboards/hotpot_km/tree/6d2f573cb1acbd8ea4682c27b29a3fa2d09ba4e4)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [hotpot\-km](https://pypi.org/project/hotpot-km/), [26](https://pypistats.org/packages/hotpot-km) downloads/month, 0 dependents, last published 2021-03-31
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Python package with source code under hotpot\_km\/ and is published to PyPI as \'hotpot\-km\'\, indicating it is a library for managing Jupyter kernels\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of voila\-dashboards\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of hotpot\-km \(2021\-03\-31\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of hotpot\-km \(2021\-03\-31\) allows Python 3\.7\, which has had no security fixes since 2023\-06\-27\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag
+- **Build requirements:** flit\_core
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/setup\-python\@v1
+- **Files:** 32: 23 code, 4 other, 4 config, 1 docs

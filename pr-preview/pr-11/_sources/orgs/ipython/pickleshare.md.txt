@@ -1,0 +1,35 @@
+# ipython\/pickleshare
+
+File system based database that uses python pickles
+
+package · [on GitHub](https://github.com/ipython/pickleshare) · scanned at commit [9f0a267](https://github.com/ipython/pickleshare/tree/9f0a267b02063bc01bd8a44c54909dab62a590a8)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [pickleshare](https://pypi.org/project/pickleshare/), [8,533,671](https://pypistats.org/packages/pickleshare) downloads/month, 1,127 dependents, last published 2018-09-25
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a Python package named pickleshare\, published on PyPI with 8\.5M downloads per month\, providing a file\-based database using pickles\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of ipython\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of pickleshare \(2018\-09\-25\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of pickleshare \(2018\-09\-25\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/setup\-python\@v4
+- **Files:** 10: 4 config, 3 code, 2 other, 1 docs

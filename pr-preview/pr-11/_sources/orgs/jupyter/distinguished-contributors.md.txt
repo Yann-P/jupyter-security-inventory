@@ -1,0 +1,34 @@
+# jupyter\/distinguished\-contributors
+
+Jupyter Distinguished Contributors
+
+documentation · [on GitHub](https://github.com/jupyter/distinguished-contributors) · scanned at commit [cf8e054](https://github.com/jupyter/distinguished-contributors/tree/cf8e054ae4dce9e9a9aa57a7ef28685a75bb7cd9)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository only contains documentation and process files for the Jupyter Distinguished Contributors body\, as seen in README\.md and elections\_process\/process\.md\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 5: 3 docs, 2 other

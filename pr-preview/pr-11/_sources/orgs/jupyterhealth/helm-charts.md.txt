@@ -1,0 +1,35 @@
+# jupyterhealth\/helm\-charts
+
+Helm Charts for JupyterHealth
+
+deployment · [on GitHub](https://github.com/jupyterhealth/helm-charts) · scanned at commit [81315f1](https://github.com/jupyterhealth/helm-charts/tree/81315f1641b81cbb3b045c6adc605e814f44ab6a)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains Helm chart templates for deploying JupyterHealth services\, as evidenced by files like \`jhe\/Chart\.yaml\` and \`jhe\/templates\/deployment\.yaml\`\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via pre\-commit. Pre\-commit hook\, and CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/jupyterhealth/helm-charts/blob/81315f1641b81cbb3b045c6adc605e814f44ab6a/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** container
+- **Secrets:** none
+- **Actions:** 8, all pinned to a commit
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/setup\-python\@5fda3b9, azure\/setup\-helm\@9bc31f4, docker\/login\-action\@dbcb813, docker\/setup\-buildx\-action\@4d04d5d, docker\/setup\-qemu\-action\@ce36039, helm\/chart\-testing\-action\@6ec842c, helm\/kind\-action\@06c1ae1
+- **Files:** 54: 44 config, 5 docs, 3 code, 2 other

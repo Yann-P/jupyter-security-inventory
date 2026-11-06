@@ -1,0 +1,35 @@
+# jupyter\/jupyter\_kernel\_test
+
+A tool for testing Jupyter kernels
+
+package · [on GitHub](https://github.com/jupyter/jupyter_kernel_test) · scanned at commit [5f2c652](https://github.com/jupyter/jupyter_kernel_test/tree/5f2c65271b48dc95fc75a9585cb1d6db0bb55557)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-kernel\-test](https://pypi.org/project/jupyter-kernel-test/), [7,064](https://pypistats.org/packages/jupyter-kernel-test) downloads/month, 0 dependents, last published 2024-03-12
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides a Python package \(jupyter\_kernel\_test\) for testing Jupyter kernels\, with test files and CI workflows for testing and release\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-kernel\-test \(2024\-03\-12\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-kernel\-test \(2024\-03\-12\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY
+- **Actions:** 6, 5 by tag, 1 by branch. Third-party, not pinned: conda\-incubator\/setup\-miniconda\@v3, re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, conda\-incubator\/setup\-miniconda\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1
+- **Files:** 20: 9 config, 5 code, 3 other, 3 docs

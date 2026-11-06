@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-robot\-wheel
+
+Building a PyPI wheel for xeus\-robot
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-robot-wheel) · scanned at commit [49a66ad](https://github.com/jupyter-xeus/xeus-robot-wheel/tree/49a66adf388fc507e8b6fece7aa9f45d41deff3f)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [xeus\-robot](https://pypi.org/project/xeus-robot/), [215](https://pypistats.org/packages/xeus-robot) downloads/month, 0 dependents, last published 2021-10-26
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository builds and publishes the PyPI wheel for xeus\-robot\, evidenced by CI workflow build\_wheel\.yml and published package \'xeus\-robot\'\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-xeus\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of xeus\-robot \(2021\-10\-26\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of xeus\-robot \(2021\-10\-26\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 1, run on create, pull\_request, push
+- **Publishes:** pypi, container
+- **Secrets:** PYPI\_API\_TOKEN
+- **Actions:** 8, 8 by tag. Third-party, not pinned: ilammy\/setup\-nasm\@v1, maxim\-lobanov\/setup\-xcode\@v1
+- **Build requirements:** cmake, ninja, scikit\-build, setuptools, wheel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v1, actions\/checkout\@v2, actions\/download\-artifact\@v2, actions\/setup\-python\@v2, actions\/upload\-artifact\@v1, actions\/upload\-artifact\@v2, ilammy\/setup\-nasm\@v1, maxim\-lobanov\/setup\-xcode\@v1
+- **Files:** 22: 10 config, 5 code, 2 other, 2 docs, 2 media, 1 notebook

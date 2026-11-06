@@ -1,0 +1,10 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+jupyter-widgets/ipywidgets,package,PYPI:widgetsnbextension,31834051,6776,,,1,,
+jupyter-widgets/traittypes,package,PYPI:traittypes,727236,572,,,,,
+jupyter-widgets/ipyleaflet,package,PYPI:ipyleaflet,198711,288,,,,,
+jupyter-widgets/pythreejs,package,PYPI:pythreejs,69126,122,,,,,
+jupyter-widgets/jupyterlab-sidecar,package,PYPI:sidecar,25574,28,,,,,
+jupyter-widgets/ipydatagrid,package,PYPI:ipydatagrid,20180,35,,,,,
+jupyter-widgets/midicontrols,package,PYPI:ipymidicontrols,37,0,,,,,
+jupyter-widgets/widget-cookiecutter,tooling,,,,,,,,
+jupyter-widgets/widget-ts-cookiecutter,tooling,,,,,,,,

@@ -1,0 +1,36 @@
+# jupyter\/jupyter\_client
+
+Jupyter protocol client APIs
+
+package · [on GitHub](https://github.com/jupyter/jupyter_client) · scanned at commit [978361b](https://github.com/jupyter/jupyter_client/tree/978361b3785dcd9cba6c733f4555e833e88fc0df)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-client](https://pypi.org/project/jupyter-client/), [71,447,300](https://pypistats.org/packages/jupyter-client) downloads/month, 9,130 dependents, last published 2026-08-28
+- **Container images:** none
+- **Run by other repositories:** 1 in their builds
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains the jupyter\_client Python package \(pyproject\.toml\, jupyter\_client\/ code\) published to PyPI with high downloads\, as evidenced by published\_packages and setup instructions\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-client \(2026\-08\-28\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-client \(2026\-08\-28\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 6, run on pull\_request, push, release, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY
+- **Actions:** 7, 6 by tag, 1 by branch. Third-party, not pinned: conda\-incubator\/setup\-miniconda\@v3, re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **Run it in their builds:** [ipython\/ipykernel](/orgs/ipython/ipykernel.md)
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/setup\-python\@v5, conda\-incubator\/setup\-miniconda\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1
+- **Files:** 101: 64 code, 19 docs, 11 config, 5 other, 2 media

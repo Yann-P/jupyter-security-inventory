@@ -1,0 +1,35 @@
+# ipython\/xkcd\-font
+
+The xkcd font
+
+package · [on GitHub](https://github.com/ipython/xkcd-font) · scanned at commit [07bbde8](https://github.com/ipython/xkcd-font/tree/07bbde819cb01bf3f2476abe677149eeb7d64988)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** ipython\.org\/xkcd\-font
+- **Security boundary:** no
+- **Why these labels:** The repository contains font files and build scripts\, and its CI publishes a website\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via GitHub Action. Runs in a workflow\. Files: [\.github\/workflows\/zizmor\.yml](https://github.com/ipython/xkcd-font/blob/07bbde819cb01bf3f2476abe677149eeb7d64988/.github/workflows/zizmor.yml)
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, pull\_request\_target, push, release, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 10, all pinned to a commit
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@11d5960, actions\/checkout\@3d3c42e, actions\/configure\-pages\@983d773, actions\/deploy\-pages\@d6db901, actions\/upload\-artifact\@ea165f8, actions\/upload\-pages\-artifact\@56afc60, docker\/build\-push\-action\@10e90e3, docker\/login\-action\@c94ce9f, docker\/setup\-buildx\-action\@8d2750c, zizmorcore\/zizmor\-action\@85b2b9f
+- **Files:** 135: 77 media, 24 code, 12 config, 9 docs, 8 other, 5 web

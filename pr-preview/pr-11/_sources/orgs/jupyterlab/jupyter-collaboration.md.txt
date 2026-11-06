@@ -1,0 +1,35 @@
+# jupyterlab\/jupyter\-collaboration
+
+A Jupyter Server Extension Providing Support for Y Documents
+
+package · [on GitHub](https://github.com/jupyterlab/jupyter-collaboration) · scanned at commit [89829a0](https://github.com/jupyterlab/jupyter-collaboration/tree/89829a00c9ef1a813b902c136a17579163f64fd7)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-server\-ydoc](https://pypi.org/project/jupyter-server-ydoc/), [815,532](https://pypistats.org/packages/jupyter-server-ydoc) downloads/month, 32 dependents, last published 2026-11-04; []{.fa-brands .fa-python} [jupyter\-docprovider](https://pypi.org/project/jupyter-docprovider/), [186,123](https://pypistats.org/packages/jupyter-docprovider) downloads/month, 39 dependents, last published 2026-11-04; []{.fa-brands .fa-python} [jupyter\-collaboration\-ui](https://pypi.org/project/jupyter-collaboration-ui/), [185,703](https://pypistats.org/packages/jupyter-collaboration-ui) downloads/month, 38 dependents, last published 2026-11-04; []{.fa-brands .fa-python} [jupyter\-collaboration](https://pypi.org/project/jupyter-collaboration/), [177,449](https://pypistats.org/packages/jupyter-collaboration) downloads/month, 29 dependents, last published 2026-11-04; []{.fa-brands .fa-npm} [\@jupyter\/collaborative\-drive](https://www.npmjs.com/package/@jupyter/collaborative-drive), [58,229](https://npm-stat.com/charts.html?package=@jupyter/collaborative-drive) downloads/month, 26 dependents, last published 2026-11-04; []{.fa-brands .fa-npm} [\@jupyter\/collaboration](https://www.npmjs.com/package/@jupyter/collaboration), [33,260](https://npm-stat.com/charts.html?package=@jupyter/collaboration) downloads/month, 17 dependents, last published 2026-11-04; []{.fa-brands .fa-npm} [\@jupyter\/docprovider](https://www.npmjs.com/package/@jupyter/docprovider), [30,119](https://npm-stat.com/charts.html?package=@jupyter/docprovider) downloads/month, 15 dependents, last published 2026-11-04; []{.fa-brands .fa-npm} [\@jupyter\/collaboration\-extension](https://www.npmjs.com/package/@jupyter/collaboration-extension), [24,511](https://npm-stat.com/charts.html?package=@jupyter/collaboration-extension) downloads/month, 9 dependents, last published 2026-11-04; []{.fa-brands .fa-npm} [\@jupyter\/docprovider\-extension](https://www.npmjs.com/package/@jupyter/docprovider-extension), [24,388](https://npm-stat.com/charts.html?package=@jupyter/docprovider-extension) downloads/month, 9 dependents, last published 2026-11-04
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides installable Jupyter server and JupyterLab extensions \(packages under packages\/ and projects\/\) with PyPI and npm published packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest releases of jupyter\-server\-ydoc \(2026\-09\-20\)\, jupyter\-docprovider \(2026\-09\-20\)\, jupyter\-collaboration\-ui \(2026\-09\-20\) and 1 more have no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm versions used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest releases of jupyter\-server\-ydoc \(2026\-09\-20\)\, jupyter\-docprovider \(2026\-09\-20\)\, jupyter\-collaboration\-ui \(2026\-09\-20\) and 1 more allow a Python that no longer gets security fixes\.
+
+## CI and releases
+
+- **Workflows:** 9, run on issue\_comment, pull\_request, pull\_request\_target, push, release, schedule, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN, github\_token
+- **Actions:** 11, 10 by tag, 1 by branch. Third-party, not pinned: apache\/skywalking\-eyes\@v0\.4\.0, pre\-commit\/action\@v3\.0\.1
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyter\-builder
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v5, actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v4, actions\/setup\-python\@v5, actions\/upload\-artifact\@v4, apache\/skywalking\-eyes\@v0\.4\.0, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@main, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, pre\-commit\/action\@v3\.0\.1
+- **Files:** 209: 93 code, 49 config, 20 media, 18 docs, 14 other, 14 web, 1 notebook

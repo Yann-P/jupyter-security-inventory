@@ -1,0 +1,57 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+jupyterhub/jupyter-server-proxy,package,PYPI:jupyter-server-proxy,451131,195,,,,,proxies web services and provides authenticated web access
+jupyterhub/simpervisor,package,PYPI:simpervisor,434920,208,,,,,
+jupyterhub/jupyterhub,application,PYPI:jupyterhub,260478,156,docker.io/jupyterhub/jupyterhub,7323100,,,"authenticates users, proxies traffic, and spawns notebook servers"
+jupyterhub/escapism,package,PYPI:escapism,175967,71,,,,,
+jupyterhub/oauthenticator,package,PYPI:oauthenticator,89857,18,,,,,authenticates users via OAuth for JupyterHub
+jupyterhub/configurable-http-proxy,package,NPM:configurable-http-proxy,49865,1,docker.io/jupyterhub/configurable-http-proxy,51138260,,,proxies HTTP/WebSocket traffic and manages routing rules via CLI/REST API
+jupyterhub/nbgitpuller,package,PYPI:nbgitpuller,25586,6,,,,,executes git pull operations triggered by user-provided URLs on a Jupyter server
+jupyterhub/dockerspawner,package,PYPI:dockerspawner,24371,10,,,,,spawns per-user containers after authentication
+jupyterhub/nativeauthenticator,package,PYPI:jupyterhub-nativeauthenticator,21091,1,,,,,authenticates users and manages signup for JupyterHub
+jupyterhub/jupyterhub-idle-culler,package,PYPI:jupyterhub-idle-culler,15786,0,,,,,
+jupyterhub/kubespawner,package,PYPI:jupyterhub-kubespawner,15220,6,,,,,
+jupyterhub/batchspawner,package,PYPI:batchspawner,8938,5,,,,,
+jupyterhub/ldapauthenticator,package,PYPI:jupyterhub-ldapauthenticator,6160,0,,,,,authenticates users against LDAP for JupyterHub
+jupyterhub/jupyter-rsession-proxy,package,PYPI:jupyter-rsession-proxy,5599,1,,,,,"proxies RStudio sessions within Jupyter, handling network traffic between users and RStudio servers"
+jupyterhub/chartpress,tooling,PYPI:chartpress,4436,0,,,,,
+jupyterhub/traefik-proxy,package,PYPI:jupyterhub-traefik-proxy,3497,1,,,,,
+jupyterhub/firstuseauthenticator,package,PYPI:jupyterhub-firstuseauthenticator,3211,0,,,,,authenticates users by letting them set passwords on first login
+jupyterhub/systemdspawner,package,PYPI:jupyterhub-systemdspawner,3179,3,,,,,spawns user notebook servers via systemd in JupyterHub multi-user environment
+jupyterhub/tmpauthenticator,package,PYPI:jupyterhub-tmpauthenticator,2921,0,,,,,authenticates users by granting temporary accounts without login and spawns notebook servers
+jupyterhub/repo2docker,package,PYPI:jupyter-repo2docker,2884,14,quay.io/jupyterhub/repo2docker,,,,
+jupyterhub/ltiauthenticator,package,PYPI:jupyterhub-ltiauthenticator,1725,0,,,,,authenticates users and authorizes JupyterHub access via LTI
+jupyterhub/autodoc-traits,package,PYPI:autodoc-traits,1660,0,,,,,
+jupyterhub/jupyter-remote-desktop-proxy,package,PYPI:jupyter-remote-desktop-proxy,1078,0,quay.io/jupyterhub/jupyter-remote-desktop-proxy,,,,proxies VNC traffic and launches desktop environments for users
+jupyterhub/sudospawner,package,PYPI:sudospawner,1038,0,,,,,spawns single-user servers for other UNIX users via sudo
+jupyterhub/wrapspawner,package,PYPI:wrapspawner,928,0,,,,,
+jupyterhub/gh-scoped-creds,package,PYPI:gh-scoped-creds,721,0,,,,,
+jupyterhub/binderhub,application,NPM:@jupyterhub/binderhub-client,554,1,docker.io/jupyterhub/k8s-binderhub,225601,,mybinder.org,
+jupyterhub/jupyterhub-sphinx-theme,package,PYPI:jupyterhub-sphinx-theme,373,0,,,,,
+jupyterhub/pytest-jupyterhub,tooling,PYPI:pytest-jupyterhub,198,0,,,,,
+jupyterhub/kerberosauthenticator,package,PYPI:jupyterhub-kerberosauthenticator,139,0,,,,,authenticates users for JupyterHub via Kerberos
+jupyterhub/docker-image-cleaner,package,PYPI:docker-image-cleaner,40,0,quay.io/jupyterhub/docker-image-cleaner,,,,
+jupyterhub/nbgitpuller-downloader-googledrive,package,PYPI:nbgitpuller-downloader-googledrive,19,0,,,,,
+jupyterhub/nbgitpuller-downloader-dropbox,package,PYPI:nbgitpuller-downloader-dropbox,17,0,,,,,
+jupyterhub/nbgitpuller-downloader-generic-web,package,PYPI:nbgitpuller-downloader-generic-web,15,0,,,,,
+jupyterhub/action-k3s-helm,tooling,,,,,,8,,
+jupyterhub/action-k8s-namespace-report,tooling,,,,,,7,,
+jupyterhub/action-k8s-await-workloads,tooling,,,,,,4,,
+jupyterhub/action-major-minor-tag-calculator,tooling,,,,,,4,,
+jupyterhub/action-get-quayio-tags,tooling,,,,,,1,,
+jupyterhub/.github,other,,,,,,,,
+jupyterhub/binder-data,tooling,,,,,,,binder-data website,
+jupyterhub/design,other,,,,,,,,
+jupyterhub/grafana-dashboards,tooling,,,,,,,,
+jupyterhub/helm-chart,deployment,,,,,,,hub.jupyter.org/helm-chart/,
+jupyterhub/jupyterhub-container-images,application,,,,,,,,
+jupyterhub/jupyterhub-deploy-docker,deployment,,,,,,,,
+jupyterhub/jupyterhub-deploy-teaching,deployment,,,,,,,,
+jupyterhub/jupyterhub-python-repo-template,tooling,,,,,,,,
+jupyterhub/mybinder-tools,tooling,,,,,,,,
+jupyterhub/mybinder.org-deploy,deployment,,,,docker.io/jupyterhub/mybinder.org-minesweeper,18348,,mybinder.org,
+jupyterhub/nbgitpuller-downloader-plugins,package,,,,,,,,Downloads untrusted URLs and extracts archives into JupyterHub user environments
+jupyterhub/pamela,package,,,,,,,,performs PAM authentication for user login
+jupyterhub/pebble-helm-chart,application,,,,,,,,
+jupyterhub/repo2docker-action,tooling,,,,,,,,
+jupyterhub/the-littlest-jupyterhub,package,,,,,,,,
+jupyterhub/zero-to-jupyterhub-k8s,deployment,,,,docker.io/jupyterhub/k8s-hub,124058661,,JupyterHub on Kubernetes,authenticates users and spawns their notebook servers via JupyterHub

@@ -1,0 +1,37 @@
+# jupyterhub\/configurable\-http\-proxy
+
+node\-http\-proxy plus a REST API
+
+package · [on GitHub](https://github.com/jupyterhub/configurable-http-proxy) · scanned at commit [03cdac9](https://github.com/jupyterhub/configurable-http-proxy/tree/03cdac9cad603f280e9a6b8dc0ac676fa4c7328a)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [configurable\-http\-proxy](https://www.npmjs.com/package/configurable-http-proxy), [49,865](https://npm-stat.com/charts.html?package=configurable-http-proxy) downloads/month, 1 dependents, last published 2026-10-31
+- **Container images:**
+  - [jupyterhub\/configurable\-http\-proxy](https://hub.docker.com/r/jupyterhub/configurable-http-proxy) on docker.io, 51,138,260 pulls, last published 2026-10-31
+  - [jupyterhub\/configurable\-http\-proxy](https://quay.io/repository/jupyterhub/configurable-http-proxy) on quay.io, last published 2026-10-31
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it proxies HTTP\/WebSocket traffic and manages routing rules via CLI\/REST API
+- **Why these labels:** Publishes the NPM package \'configurable\-http\-proxy\' and includes a Dockerfile and package\.json\, indicating it is a distributable package rather than a service or docs repo\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm version used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** npm, container
+- **Secrets:** DOCKERHUB\_TOKEN, DOCKERHUB\_USERNAME, QUAY\_PASSWORD, QUAY\_USERNAME
+- **Actions:** 7, 7 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/setup\-node\@v7, codecov\/codecov\-action\@v7, docker\/build\-push\-action\@v7, docker\/setup\-buildx\-action\@v4, docker\/setup\-qemu\-action\@v4, [jupyterhub\/action\-major\-minor\-tag\-calculator](/orgs/jupyterhub/action-major-minor-tag-calculator.md)\@v4
+- **Files:** 42: 16 code, 9 other, 7 config, 5 web, 4 docs, 1 media

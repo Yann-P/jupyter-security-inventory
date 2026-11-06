@@ -1,0 +1,34 @@
+# jupyterlab\/frontends\-team\-compass
+
+A repository for team interaction\, syncing\, and handling meeting notes across the JupyterLab ecosystem\.
+
+documentation · [on GitHub](https://github.com/jupyterlab/frontends-team-compass) · scanned at commit [1035048](https://github.com/jupyterlab/frontends-team-compass/tree/10350484a13574e18e98d6f8a8a8e0e793ca4277)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains documentation files like meeting notes\, team guides\, and decision\-making documents\; README indicates purpose is team interaction and meeting notes\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 21: 9 docs, 3 other, 3 media, 3 code, 2 config, 1 web

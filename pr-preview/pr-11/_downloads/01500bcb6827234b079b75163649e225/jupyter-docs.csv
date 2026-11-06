@@ -1,0 +1,25 @@
+repo,kind,live service
+jupyter/community-committee,documentation,jupyter.org/community-committee
+jupyter/docs-team-compass,documentation,documentation issues website
+jupyter/governance,documentation,jupyter.org/governance
+jupyter/jupyter.github.io,documentation,jupyter.org website
+jupyter/surveys,documentation,jupyter.github.io/surveys
+jupyter/try-jupyter,example,jupyter.org/try-jupyter
+jupyter/try.jupyter.org,documentation,try.jupyter.org
+jupyter/.github,documentation,
+jupyter/accessibility,documentation,
+jupyter/council,documentation,
+jupyter/distinguished-contributors,documentation,
+jupyter/enhancement-proposals,documentation,
+jupyter/foundations-and-standards-team-compass,documentation,
+jupyter/ideas,documentation,
+jupyter/jupyter-communitycalls,documentation,
+jupyter/kernel-protocol,documentation,
+jupyter/kernel_gateway_demos,example,
+jupyter/kernels-team-compass,documentation,
+jupyter/markdown,documentation,
+jupyter/nbconvert-examples,example,
+jupyter/practice,documentation,
+jupyter/roadmap,documentation,
+jupyter/security,documentation,
+jupyter/software-steering-council-team-compass,documentation,

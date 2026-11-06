@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>jupyterlab/jupyterlab &#8212; Jupyter Security Inventory</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=2ef5feca" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.js"></script>
+    <script src="../../_static/activate_datatables.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'orgs/jupyterlab/jupyterlab';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../../_static/tables.js?v=f93e9670"></script>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="jupyterlab/jupyterlab_server" href="jupyterlab_server.html" />
+    <link rel="prev" title="jupyterlab/jupyterlab_pygments" href="jupyterlab_pygments.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Security Inventory</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links" aria-label="Site navigation">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">All organizations</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../orgs.html">Organizations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ipython.html">ipython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter.html">jupyter</a></li>
+<li class="toctree-l2 current active"><a class="reference internal" href="../jupyterlab.html">jupyterlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter-server.html">jupyter-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter-widgets.html">jupyter-widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyterhub.html">jupyterhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter-book.html">jupyter-book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../voila-dashboards.html">voila-dashboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyterlite.html">jupyterlite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter-incubator.html">jupyter-incubator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter-xeus.html">jupyter-xeus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyterhealth.html">jupyterhealth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../binder-examples.html">binder-examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupytercon.html">jupytercon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../voila-gallery.html">voila-gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../binderhub-ci-repos.html">binderhub-ci-repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter-governance.html">jupyter-governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../jupyter-standards.html">jupyter-standards</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../topics.html">Security topics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../topics/zizmor.html">zizmor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../topics/security-policy.html">SECURITY.md</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../topics/pypi-attestations.html">PyPI attestations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../topics/npm-trusted-publishing.html">npm trusted publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../topics/supported-python.html">Supported Python</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../packages.html">Published packages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../packages/pypi.html">PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../packages/npm.html">npm</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../images.html">Container images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../orgs.html" class="nav-link">Organizations</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../jupyterlab.html" class="nav-link">jupyterlab</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">jupyterlab/jupyterlab</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="jupyterlab-jupyterlab">
+<h1>jupyterlab/jupyterlab<a class="headerlink" href="#jupyterlab-jupyterlab" title="Link to this heading">#</a></h1>
+<p>JupyterLab computational environment.</p>
+<p>application · <a class="reference external" href="https://github.com/jupyterlab/jupyterlab">on GitHub</a> · scanned at commit <a class="reference external" href="https://github.com/jupyterlab/jupyterlab/tree/c0a095d1fb65e3b24fe13609ee8f887a5af43e49">c0a095d</a></p>
+<section id="reach">
+<h2>Reach<a class="headerlink" href="#reach" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Packages:</strong> <span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterlab/">jupyterlab</a>, <a class="reference external" href="https://pypistats.org/packages/jupyterlab">30,253,541</a> downloads/month, 3,931 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/nbformat">&#64;jupyterlab/nbformat</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/nbformat">694,807</a> downloads/month, 1,121 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/services">&#64;jupyterlab/services</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/services">624,946</a> downloads/month, 1,084 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/coreutils">&#64;jupyterlab/coreutils</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/coreutils">603,394</a> downloads/month, 1,096 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/settingregistry">&#64;jupyterlab/settingregistry</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/settingregistry">515,114</a> downloads/month, 1,104 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/statedb">&#64;jupyterlab/statedb</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/statedb">507,134</a> downloads/month, 1,107 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/observables">&#64;jupyterlab/observables</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/observables">421,515</a> downloads/month, 789 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/apputils">&#64;jupyterlab/apputils</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/apputils">405,092</a> downloads/month, 766 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/rendermime">&#64;jupyterlab/rendermime</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/rendermime">382,721</a> downloads/month, 746 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/ui-components">&#64;jupyterlab/ui-components</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/ui-components">381,113</a> downloads/month, 776 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/statusbar">&#64;jupyterlab/statusbar</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/statusbar">367,716</a> downloads/month, 769 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/translation">&#64;jupyterlab/translation</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/translation">363,950</a> downloads/month, 781 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/rendermime-interfaces">&#64;jupyterlab/rendermime-interfaces</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/rendermime-interfaces">360,595</a> downloads/month, 1,147 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/codeeditor">&#64;jupyterlab/codeeditor</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/codeeditor">331,139</a> downloads/month, 736 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/docregistry">&#64;jupyterlab/docregistry</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/docregistry">312,771</a> downloads/month, 723 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/application">&#64;jupyterlab/application</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/application">297,149</a> downloads/month, 701 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/outputarea">&#64;jupyterlab/outputarea</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/outputarea">295,015</a> downloads/month, 353 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/codemirror">&#64;jupyterlab/codemirror</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/codemirror">293,746</a> downloads/month, 388 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/docmanager">&#64;jupyterlab/docmanager</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/docmanager">254,396</a> downloads/month, 413 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/filebrowser">&#64;jupyterlab/filebrowser</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/filebrowser">250,289</a> downloads/month, 397 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/cells">&#64;jupyterlab/cells</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/cells">241,986</a> downloads/month, 335 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/notebook">&#64;jupyterlab/notebook</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/notebook">240,529</a> downloads/month, 310 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/attachments">&#64;jupyterlab/attachments</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/attachments">237,408</a> downloads/month, 338 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/documentsearch">&#64;jupyterlab/documentsearch</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/documentsearch">226,467</a> downloads/month, 395 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/toc">&#64;jupyterlab/toc</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/toc">211,912</a> downloads/month, 359 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/lsp">&#64;jupyterlab/lsp</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/lsp">200,660</a> downloads/month, 339 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/markedparser-extension">&#64;jupyterlab/markedparser-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/markedparser-extension">173,514</a> downloads/month, 317 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/mermaid">&#64;jupyterlab/mermaid</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/mermaid">172,312</a> downloads/month, 324 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/mainmenu">&#64;jupyterlab/mainmenu</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/mainmenu">165,827</a> downloads/month, 178 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/console">&#64;jupyterlab/console</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/console">157,636</a> downloads/month, 96 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/logconsole">&#64;jupyterlab/logconsole</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/logconsole">144,550</a> downloads/month, 100 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/launcher">&#64;jupyterlab/launcher</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/launcher">142,425</a> downloads/month, 109 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/fileeditor">&#64;jupyterlab/fileeditor</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/fileeditor">139,273</a> downloads/month, 99 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/theme-light-extension">&#64;jupyterlab/theme-light-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/theme-light-extension">132,234</a> downloads/month, 38 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/javascript-extension">&#64;jupyterlab/javascript-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/javascript-extension">121,609</a> downloads/month, 32 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/completer">&#64;jupyterlab/completer</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/completer">119,647</a> downloads/month, 60 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/json-extension">&#64;jupyterlab/json-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/json-extension">118,198</a> downloads/month, 34 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/markdownviewer">&#64;jupyterlab/markdownviewer</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/markdownviewer">110,030</a> downloads/month, 41 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/cell-toolbar">&#64;jupyterlab/cell-toolbar</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/cell-toolbar">109,072</a> downloads/month, 23 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/docmanager-extension">&#64;jupyterlab/docmanager-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/docmanager-extension">108,692</a> downloads/month, 26 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/running">&#64;jupyterlab/running</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/running">108,627</a> downloads/month, 26 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/apputils-extension">&#64;jupyterlab/apputils-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/apputils-extension">108,009</a> downloads/month, 20 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/codemirror-extension">&#64;jupyterlab/codemirror-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/codemirror-extension">107,720</a> downloads/month, 20 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/notebook-extension">&#64;jupyterlab/notebook-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/notebook-extension">107,381</a> downloads/month, 19 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/property-inspector">&#64;jupyterlab/property-inspector</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/property-inspector">107,052</a> downloads/month, 22 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/application-extension">&#64;jupyterlab/application-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/application-extension">106,792</a> downloads/month, 18 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/markdownviewer-extension">&#64;jupyterlab/markdownviewer-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/markdownviewer-extension">106,367</a> downloads/month, 19 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/completer-extension">&#64;jupyterlab/completer-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/completer-extension">106,108</a> downloads/month, 17 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/mainmenu-extension">&#64;jupyterlab/mainmenu-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/mainmenu-extension">106,056</a> downloads/month, 17 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/rendermime-extension">&#64;jupyterlab/rendermime-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/rendermime-extension">105,898</a> downloads/month, 20 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/ui-components-extension">&#64;jupyterlab/ui-components-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/ui-components-extension">105,501</a> downloads/month, 17 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/mathjax-extension">&#64;jupyterlab/mathjax-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/mathjax-extension">105,282</a> downloads/month, 20 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/documentsearch-extension">&#64;jupyterlab/documentsearch-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/documentsearch-extension">104,517</a> downloads/month, 16 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/toc-extension">&#64;jupyterlab/toc-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/toc-extension">104,502</a> downloads/month, 16 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/translation-extension">&#64;jupyterlab/translation-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/translation-extension">104,444</a> downloads/month, 18 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/csvviewer">&#64;jupyterlab/csvviewer</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/csvviewer">104,365</a> downloads/month, 20 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/filebrowser-extension">&#64;jupyterlab/filebrowser-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/filebrowser-extension">104,350</a> downloads/month, 18 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/fileeditor-extension">&#64;jupyterlab/fileeditor-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/fileeditor-extension">103,718</a> downloads/month, 16 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/csvviewer-extension">&#64;jupyterlab/csvviewer-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/csvviewer-extension">103,255</a> downloads/month, 16 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/cell-toolbar-extension">&#64;jupyterlab/cell-toolbar-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/cell-toolbar-extension">102,810</a> downloads/month, 16 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/shortcuts-extension">&#64;jupyterlab/shortcuts-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/shortcuts-extension">102,702</a> downloads/month, 10 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/metadataform">&#64;jupyterlab/metadataform</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/metadataform">100,953</a> downloads/month, 21 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/lsp-extension">&#64;jupyterlab/lsp-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/lsp-extension">98,499</a> downloads/month, 16 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/workspaces">&#64;jupyterlab/workspaces</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/workspaces">97,698</a> downloads/month, 22 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/core-meta">&#64;jupyterlab/core-meta</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/core-meta">94,255</a> downloads/month, 2 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/tooltip">&#64;jupyterlab/tooltip</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/tooltip">92,578</a> downloads/month, 4 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/inspector">&#64;jupyterlab/inspector</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/inspector">91,723</a> downloads/month, 6 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/settingeditor">&#64;jupyterlab/settingeditor</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/settingeditor">91,423</a> downloads/month, 4 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/settingeditor-extension">&#64;jupyterlab/settingeditor-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/settingeditor-extension">90,212</a> downloads/month, 2 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/imageviewer">&#64;jupyterlab/imageviewer</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/imageviewer">89,686</a> downloads/month, 6 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/vega5-extension">&#64;jupyterlab/vega5-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/vega5-extension">89,037</a> downloads/month, 4 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/running-extension">&#64;jupyterlab/running-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/running-extension">88,914</a> downloads/month, 2 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/imageviewer-extension">&#64;jupyterlab/imageviewer-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/imageviewer-extension">88,733</a> downloads/month, 2 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/tooltip-extension">&#64;jupyterlab/tooltip-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/tooltip-extension">88,348</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/htmlviewer">&#64;jupyterlab/htmlviewer</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/htmlviewer">88,117</a> downloads/month, 4 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/pdf-extension">&#64;jupyterlab/pdf-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/pdf-extension">87,272</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/htmlviewer-extension">&#64;jupyterlab/htmlviewer-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/htmlviewer-extension">87,213</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/inspector-extension">&#64;jupyterlab/inspector-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/inspector-extension">86,621</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/logconsole-extension">&#64;jupyterlab/logconsole-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/logconsole-extension">86,321</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/pluginmanager">&#64;jupyterlab/pluginmanager</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/pluginmanager">85,024</a> downloads/month, 16 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/mermaid-extension">&#64;jupyterlab/mermaid-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/mermaid-extension">80,904</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/services-extension">&#64;jupyterlab/services-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/services-extension">79,012</a> downloads/month, 2 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/workspaces-extension">&#64;jupyterlab/workspaces-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/workspaces-extension">78,406</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/theme-dark-extension">&#64;jupyterlab/theme-dark-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/theme-dark-extension">71,319</a> downloads/month, 22 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/terminal">&#64;jupyterlab/terminal</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/terminal">65,673</a> downloads/month, 72 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/statusbar-extension">&#64;jupyterlab/statusbar-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/statusbar-extension">56,766</a> downloads/month, 17 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/console-extension">&#64;jupyterlab/console-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/console-extension">56,747</a> downloads/month, 18 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/buildutils">&#64;jupyterlab/buildutils</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/buildutils">55,853</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/debugger">&#64;jupyterlab/debugger</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/debugger">55,146</a> downloads/month, 6 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/launcher-extension">&#64;jupyterlab/launcher-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/launcher-extension">54,557</a> downloads/month, 17 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/testutils">&#64;jupyterlab/testutils</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/testutils">52,209</a> downloads/month, 13 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/help-extension">&#64;jupyterlab/help-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/help-extension">43,038</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/celltags-extension">&#64;jupyterlab/celltags-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/celltags-extension">40,369</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/terminal-extension">&#64;jupyterlab/terminal-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/terminal-extension">40,254</a> downloads/month, 2 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/extensionmanager">&#64;jupyterlab/extensionmanager</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/extensionmanager">39,946</a> downloads/month, 8 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/extensionmanager-extension">&#64;jupyterlab/extensionmanager-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/extensionmanager-extension">39,335</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/hub-extension">&#64;jupyterlab/hub-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/hub-extension">39,107</a> downloads/month, 2 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/debugger-extension">&#64;jupyterlab/debugger-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/debugger-extension">38,116</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/metadataform-extension">&#64;jupyterlab/metadataform-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/metadataform-extension">34,985</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/theme-dark-high-contrast-extension">&#64;jupyterlab/theme-dark-high-contrast-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/theme-dark-high-contrast-extension">33,060</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/pluginmanager-extension">&#64;jupyterlab/pluginmanager-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/pluginmanager-extension">32,920</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/audio-extension">&#64;jupyterlab/audio-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/audio-extension">29,440</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/video-extension">&#64;jupyterlab/video-extension</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/video-extension">29,212</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/nbconvert-css">&#64;jupyterlab/nbconvert-css</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/nbconvert-css">22,447</a> downloads/month, 18 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/galata">&#64;jupyterlab/galata</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/galata">20,441</a> downloads/month, 1 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/metapackage">&#64;jupyterlab/metapackage</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/metapackage">5,779</a> downloads/month, 0 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterlab/template">&#64;jupyterlab/template</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/template">1,309</a> downloads/month, 0 dependents, last published 2026-10-29; <span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/jupyterlab">jupyterlab</a>, <a class="reference external" href="https://npm-stat.com/charts.html?package=jupyterlab">719</a> downloads/month, 1 dependents, last published 2017-03-13</p></li>
+<li><p><strong>Container images:</strong> none</p></li>
+<li><p><strong>Run by other repositories:</strong> 31 in their builds</p></li>
+<li><p><strong>Live service:</strong> none</p></li>
+<li><p><strong>Security boundary:</strong> yes, it executes user code in notebooks and terminals via its server</p></li>
+<li><p><strong>Why these labels:</strong> JupyterLab is the primary computational environment application with installable packages (PyPI/npm) and a server component (jupyterlab/labapp.py). (deepseek-v4-pro)</p></li>
+</ul>
+</section>
+<section id="security-topics">
+<h2>Security topics<a class="headerlink" href="#security-topics" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong><a class="reference internal" href="../../topics/zizmor.html"><span class="std std-doc">zizmor</span></a>:</strong> done via workflow command, pre-commit. Runs in a workflow. Files: <a class="reference external" href="https://github.com/jupyterlab/jupyterlab/blob/c0a095d1fb65e3b24fe13609ee8f887a5af43e49/.github/workflows/zizmor.yml">.github/workflows/zizmor.yml</a>, <a class="reference external" href="https://github.com/jupyterlab/jupyterlab/blob/c0a095d1fb65e3b24fe13609ee8f887a5af43e49/.pre-commit-config.yaml">.pre-commit-config.yaml</a></p></li>
+<li><p><strong><a class="reference internal" href="../../topics/security-policy.html"><span class="std std-doc">SECURITY.md</span></a>:</strong> done via organization. Uses the SECURITY.md of jupyterlab/.github.</p></li>
+<li><p><strong><a class="reference internal" href="../../topics/pypi-attestations.html"><span class="std std-doc">PyPI attestations</span></a>:</strong> missing. The latest release of jupyterlab (2026-10-29) has no attestations.</p></li>
+<li><p><strong><a class="reference internal" href="../../topics/npm-trusted-publishing.html"><span class="std std-doc">npm trusted publishing</span></a>:</strong> partial. The latest version of jupyterlab (2017-03-13) did not use trusted publishing.</p></li>
+<li><p><strong><a class="reference internal" href="../../topics/supported-python.html"><span class="std std-doc">Supported Python</span></a>:</strong> missing. The latest release of jupyterlab (2026-10-29) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></li>
+</ul>
+</section>
+<section id="ci-and-releases">
+<h2>CI and releases<a class="headerlink" href="#ci-and-releases" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Workflows:</strong> 28, run on issue_comment, pull_request, pull_request_review, pull_request_review_comment, pull_request_target, push, release, schedule, workflow_dispatch, workflow_run</p></li>
+<li><p><strong>Publishes:</strong> npm, jupyter_releaser</p></li>
+<li><p><strong>Secrets:</strong> APP_PRIVATE_KEY, BOT_USER_PAT, NPM_TOKEN</p></li>
+<li><p><strong>Actions:</strong> 16, all pinned to a commit</p></li>
+<li><p><strong>Build requirements:</strong> hatchling, jupyter-builder</p></li>
+</ul>
+</section>
+<section id="details">
+<h2>Details<a class="headerlink" href="#details" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Run it in their builds:</strong> <a class="reference internal" href="../ipython/ipyparallel.html"><span class="std std-doc">ipython/ipyparallel</span></a>, <a class="reference internal" href="../jupyter-server/jupyter-resource-usage.html"><span class="std std-doc">jupyter-server/jupyter-resource-usage</span></a>, <a class="reference internal" href="../jupyter-server/jupyter-scheduler.html"><span class="std std-doc">jupyter-server/jupyter-scheduler</span></a>, <a class="reference internal" href="../jupyter-widgets/ipydatagrid.html"><span class="std std-doc">jupyter-widgets/ipydatagrid</span></a>, <a class="reference internal" href="../jupyter-widgets/ipyleaflet.html"><span class="std std-doc">jupyter-widgets/ipyleaflet</span></a>, <a class="reference internal" href="../jupyter-widgets/jupyterlab-sidecar.html"><span class="std std-doc">jupyter-widgets/jupyterlab-sidecar</span></a>, <a class="reference internal" href="../jupyter-widgets/pythreejs.html"><span class="std std-doc">jupyter-widgets/pythreejs</span></a>, <a class="reference internal" href="../jupyter-widgets/widget-cookiecutter.html"><span class="std std-doc">jupyter-widgets/widget-cookiecutter</span></a>, <a class="reference internal" href="../jupyter-widgets/widget-ts-cookiecutter.html"><span class="std std-doc">jupyter-widgets/widget-ts-cookiecutter</span></a>, <a class="reference internal" href="../jupyter/nbdime.html"><span class="std std-doc">jupyter/nbdime</span></a>, <a class="reference internal" href="../jupytercon/jupytercon2025-developingextensions-demo.html"><span class="std std-doc">jupytercon/jupytercon2025-developingextensions-demo</span></a>, <a class="reference internal" href="../jupyterhub/jupyter-server-proxy.html"><span class="std std-doc">jupyterhub/jupyter-server-proxy</span></a>, <a class="reference internal" href="benchmarks.html"><span class="std std-doc">jupyterlab/benchmarks</span></a>, <a class="reference internal" href="extension-cookiecutter-js.html"><span class="std std-doc">jupyterlab/extension-cookiecutter-js</span></a>, <a class="reference internal" href="extension-examples.html"><span class="std std-doc">jupyterlab/extension-examples</span></a>, <a class="reference internal" href="hatch-jupyter-builder.html"><span class="std std-doc">jupyterlab/hatch-jupyter-builder</span></a>, <a class="reference internal" href="jupyter-renderers.html"><span class="std std-doc">jupyterlab/jupyter-renderers</span></a>, <a class="reference internal" href="jupyterlab-github.html"><span class="std std-doc">jupyterlab/jupyterlab-github</span></a>, <a class="reference internal" href="jupyterlab-latex.html"><span class="std std-doc">jupyterlab/jupyterlab-latex</span></a>, <a class="reference internal" href="jupyterlab_apod.html"><span class="std std-doc">jupyterlab/jupyterlab_apod</span></a>, <a class="reference internal" href="jupyterlab_pygments.html"><span class="std std-doc">jupyterlab/jupyterlab_pygments</span></a>, <a class="reference internal" href="plugin-playground.html"><span class="std std-doc">jupyterlab/plugin-playground</span></a>, <a class="reference internal" href="richoutput-js.html"><span class="std std-doc">jupyterlab/richoutput-js</span></a>, <a class="reference internal" href="ui-profiler.html"><span class="std std-doc">jupyterlab/ui-profiler</span></a>, <a class="reference internal" href="../jupyterlite/echo-kernel.html"><span class="std std-doc">jupyterlite/echo-kernel</span></a>, <a class="reference internal" href="../jupyterlite/jupyterlab-webrtc-docprovider.html"><span class="std std-doc">jupyterlite/jupyterlab-webrtc-docprovider</span></a>, <a class="reference internal" href="../jupyterlite/p5-kernel.html"><span class="std std-doc">jupyterlite/p5-kernel</span></a>, <a class="reference internal" href="../voila-dashboards/voici.html"><span class="std std-doc">voila-dashboards/voici</span></a>, <a class="reference internal" href="../voila-dashboards/voila.html"><span class="std std-doc">voila-dashboards/voila</span></a>, <a class="reference internal" href="../voila-dashboards/voila-gridstack.html"><span class="std std-doc">voila-dashboards/voila-gridstack</span></a>, <a class="reference internal" href="../voila-dashboards/voila-topbar.html"><span class="std std-doc">voila-dashboards/voila-topbar</span></a></p></li>
+<li><p><strong>All actions it uses:</strong> actions/cache&#64;55cc834, actions/checkout&#64;3d3c42e, actions/create-github-app-token&#64;64ab729, actions/download-artifact&#64;9000827, actions/github-script&#64;3a2844b, actions/labeler&#64;bf12e9b, actions/setup-python&#64;5fda3b9, actions/stale&#64;4391f3d, actions/upload-artifact&#64;cf430e0, apache/skywalking-eyes&#64;a196742, astral-sh/setup-uv&#64;1c37ad0, dessant/lock-threads&#64;89ae32b, github/codeql-action&#64;6f2ac81, <a class="reference internal" href="../jupyter-server/jupyter_releaser.html"><span class="std std-doc">jupyter-server/jupyter_releaser</span></a>&#64;22aa25e, <a class="reference internal" href="maintainer-tools.html"><span class="std std-doc">jupyterlab/maintainer-tools</span></a>&#64;b9d5c28, toshimaru/auto-author-assign&#64;a78a94b</p></li>
+<li><p><strong>Files:</strong> 3,095: 1,392 code, 604 config, 600 media, 259 web, 181 docs, 35 notebook, 24 other</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reach">Reach</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-topics">Security topics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ci-and-releases">CI and releases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#details">Details</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

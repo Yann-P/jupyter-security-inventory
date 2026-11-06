@@ -1,0 +1,35 @@
+# jupyter\-server\/gateway\_provisioners
+
+Provides remote kernel provisioners for various resource\-managed clusters\.
+
+package · [on GitHub](https://github.com/jupyter-server/gateway_provisioners) · scanned at commit [d2d6f36](https://github.com/jupyter-server/gateway_provisioners/tree/d2d6f36c66ef4e0e1e2f154ae1487d1441350b9f)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [gateway\-provisioners](https://pypi.org/project/gateway-provisioners/), [2,807](https://pypistats.org/packages/gateway-provisioners) downloads/month, 0 dependents, last published 2026-09-07
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides remote kernel provisioners for clusters\, evidenced by the Python package \'gateway\_provisioners\' with provisioner classes like KubernetesProvisioner\, DockerSwarmProvisioner\, YarnProvisioner\, and SparkOperatorProvisioner\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of gateway\-provisioners \(2026\-09\-07\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of gateway\-provisioners \(2026\-09\-07\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 6, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 9, 1 by commit, 7 by tag, 1 by branch. Third-party, not pinned: nick\-invision\/retry\@v2\.8\.3, re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/create\-github\-app\-token\@v1, actions\/setup\-java\@v6, github\/codeql\-action\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, nick\-invision\/retry\@v2\.8\.3, re\-actors\/alls\-green\@release\/v1, sbt\/setup\-sbt\@c7d2d62
+- **Files:** 159: 59 code, 43 config, 38 docs, 12 other, 4 media, 3 web

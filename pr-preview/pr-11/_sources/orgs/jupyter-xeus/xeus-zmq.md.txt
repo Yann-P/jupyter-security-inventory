@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-zmq
+
+ZeroMQ\-based middleware for xeus
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-zmq) · scanned at commit [f84b101](https://github.com/jupyter-xeus/xeus-zmq/tree/f84b101c03f46a010f54f621016f124cc8b493ae)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo provides implementations of the xserver API using ZeroMQ\, as evidenced by files like include\/xeus\-zmq\/xserver\_zmq\.hpp and src\/server\/xserver\_zmq\.cpp\, and is packaged for installation via conda\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 3, 3 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v2, nick\-invision\/retry\@v3
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, mamba\-org\/setup\-micromamba\@v2, nick\-invision\/retry\@v3
+- **Files:** 116: 88 code, 9 config, 9 docs, 5 other, 4 media, 1 web

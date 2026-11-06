@@ -1,0 +1,35 @@
+# jupytercon\/jupytercon2020\-website
+
+JupyterCon Website
+
+documentation · [on GitHub](https://github.com/jupytercon/jupytercon2020-website) · scanned at commit [50e3ab8](https://github.com/jupytercon/jupytercon2020-website/tree/50e3ab8c5f247526e6e3b001ca6e08f11bfd529d)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupytercon\.com
+- **Security boundary:** no
+- **Why these labels:** Repository is the JupyterCon 2020 website\, a Nuxt\.js project with Vue components and static assets\, deployed via GitHub Pages action\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 3, 2 by tag, 1 by branch. Third-party, not pinned: JamesIves\/github\-pages\-deploy\-action\@releases\/v3
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** JamesIves\/github\-pages\-deploy\-action\@releases\/v3, actions\/cache\@v1, actions\/checkout\@v2
+- **Files:** 174: 109 media, 34 web, 10 docs, 10 code, 7 config, 4 other

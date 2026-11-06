@@ -1,0 +1,34 @@
+# jupyter\-widgets\/team\-compass
+
+A repository for team meetings and org\-wide organization things
+
+documentation · [on GitHub](https://github.com/jupyter-widgets/team-compass) · scanned at commit [1be9a4d](https://github.com/jupyter-widgets/team-compass/tree/1be9a4dd290ca82b1747108e5ad70497adb0bdf7)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only README and meeting notes \(dev\-meetings\.md\) and no CI workflows or published packages\, serving as team coordination and meeting documentation\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 2: 2 docs

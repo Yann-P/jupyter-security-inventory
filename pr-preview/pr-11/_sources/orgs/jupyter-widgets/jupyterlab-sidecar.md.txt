@@ -1,0 +1,35 @@
+# jupyter\-widgets\/jupyterlab\-sidecar
+
+A sidecar output widget for JupyterLab
+
+package · [on GitHub](https://github.com/jupyter-widgets/jupyterlab-sidecar) · scanned at commit [02d3948](https://github.com/jupyter-widgets/jupyterlab-sidecar/tree/02d394841ef3dbd4258b44a5d4ade750ea3167a6)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [sidecar](https://pypi.org/project/sidecar/), [25,574](https://pypistats.org/packages/sidecar) downloads/month, 28 dependents, last published 2026-02-27; []{.fa-brands .fa-npm} [\@jupyter\-widgets\/jupyterlab\-sidecar](https://www.npmjs.com/package/@jupyter-widgets/jupyterlab-sidecar), [140](https://npm-stat.com/charts.html?package=@jupyter-widgets/jupyterlab-sidecar) downloads/month, 0 dependents, last published 2026-02-27
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains Python and TypeScript code for a JupyterLab sidecar output widget\, published as PYPI package \'sidecar\' and NPM package \'\@jupyter\-widgets\/jupyterlab\-sidecar\'\, with installation instructions via pip\/conda\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-widgets\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of sidecar \(2026\-02\-27\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of \@jupyter\-widgets\/jupyterlab\-sidecar \(2026\-02\-27\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of sidecar \(2026\-02\-27\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 4, run on pull\_request, push, release
+- **Publishes:** pypi
+- **Secrets:** PYPI\_API\_TOKEN
+- **Actions:** 6, 6 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/download\-artifact\@v4, actions\/setup\-node\@v3, actions\/setup\-python\@v4, actions\/upload\-artifact\@v4, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 50: 15 config, 14 code, 8 docs, 7 other, 3 media, 2 web, 1 notebook

@@ -1,0 +1,34 @@
+# jupyter\/nbmanager
+
+View and stop running IPython notebook servers
+
+tooling · [on GitHub](https://github.com/jupyter/nbmanager) · scanned at commit [dd26a71](https://github.com/jupyter/nbmanager/tree/dd26a71c0b625773dab582d47d713d574f2af84b)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains a setup\.py\, nbmanager package\, and desktop launcher for a GUI to view and stop notebook servers\, indicating a desktop tool rather than a server itself\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 28: 15 media, 9 code, 3 other, 1 docs

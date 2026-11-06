@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\_apod
+
+JupyterLab extension tutorial answer key\. Please see the tutorial at https\:\/\/jupyterlab\.readthedocs\.io\/en\/stable\/extension\/extension\_tutorial\.html
+
+package · [on GitHub](https://github.com/jupyterlab/jupyterlab_apod) · scanned at commit [397639e](https://github.com/jupyterlab/jupyterlab_apod/tree/397639e908826072b040aeec20fa050dc11046d4)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-apod](https://pypi.org/project/jupyterlab-apod/), [20](https://pypistats.org/packages/jupyterlab-apod) downloads/month, 0 dependents, last published 2023-01-13
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains package configuration \(package\.json\, setup\.py\, pyproject\.toml\)\, publishes to PyPI and npm\, and the README instructs installation via pip\, typical of a JupyterLab extension package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-apod \(2023\-01\-13\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-apod \(2023\-01\-13\) allows Python 3\.7\, which has had no security fixes since 2023\-06\-27\.
+
+## CI and releases
+
+- **Workflows:** 7, run on issue\_comment, pull\_request, pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 8, 8 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v4, actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v4, actions\/setup\-python\@v5, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 38: 18 config, 10 code, 4 other, 4 docs, 2 web

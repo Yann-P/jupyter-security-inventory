@@ -1,0 +1,3 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+binderhub-ci-repos/minimal-dockerfile,tooling,,,,,,,,
+binderhub-ci-repos/repo2docker-ci-clone-depth,tooling,,,,,,,,

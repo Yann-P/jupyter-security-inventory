@@ -1,0 +1,34 @@
+# voila\-gallery\/voila\-spotify
+
+Visualize your Spotify data in a Voila application
+
+example · [on GitHub](https://github.com/voila-gallery/voila-spotify) · scanned at commit [625f0d3](https://github.com/voila-gallery/voila-spotify/tree/625f0d3eb7472db4f355fdd8ab522c5bebf291c7)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains a Binder\-ready Voila application \(environment\.yml\, jupyter\_config\.json\, Spotify\_viewer\.ipynb\) for visualizing Spotify data\, with no CI workflows or published packages\, indicating a demo example\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 9: 5 config, 1 other, 1 docs, 1 notebook, 1 media

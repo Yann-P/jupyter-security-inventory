@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-octave
+
+Jupyter kernel for GNU Octave
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-octave) · scanned at commit [b203877](https://github.com/jupyter-xeus/xeus-octave/tree/b203877568c000ebf46811d378fa67893351e470)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo implements a Jupyter kernel for Octave using the xeus C\+\+ framework\, as stated in README and confirmed by source files like src\/xinterpreter\.cpp and share\/jupyter\/kernels\/xoctave\/kernel\.json\.in\; it is installed as a kernel package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v5, actions\/checkout\@v6, actions\/deploy\-pages\@v4, actions\/upload\-pages\-artifact\@v4, mamba\-org\/setup\-micromamba\@v2
+- **Files:** 89: 31 code, 17 config, 17 media, 11 docs, 9 other, 3 notebook, 1 web

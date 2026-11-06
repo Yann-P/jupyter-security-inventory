@@ -1,0 +1,35 @@
+# jupyterlite\/jupyterlite\-lsp
+
+A jupyter\_lsp shim for JupyterLite
+
+package · [on GitHub](https://github.com/jupyterlite/jupyterlite-lsp) · scanned at commit [b5787b1](https://github.com/jupyterlite/jupyterlite-lsp/tree/b5787b150215a85bdf704aa58947d9fa946ac892)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository describes itself as \'A jupyter\_lsp shim for JupyterLite\' and includes npm packages under packages\/ with source code implementing Language Server Protocol features\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** flit\_core
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v3, actions\/checkout\@v3, actions\/setup\-node\@v3, actions\/setup\-python\@v4, actions\/upload\-artifact\@v3
+- **Files:** 63: 20 config, 19 code, 17 docs, 5 other, 2 media

@@ -1,0 +1,35 @@
+# jupyter\-widgets\/ipyleaflet
+
+A Jupyter \- Leaflet\.js bridge
+
+package · [on GitHub](https://github.com/jupyter-widgets/ipyleaflet) · scanned at commit [612f4eb](https://github.com/jupyter-widgets/ipyleaflet/tree/612f4ebb800e50c0bae84e4d2b6bd3e622b7a12c)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [ipyleaflet](https://pypi.org/project/ipyleaflet/), [198,711](https://pypistats.org/packages/ipyleaflet) downloads/month, 288 dependents, last published 2025-06-13; []{.fa-brands .fa-python} [jupyter\-leaflet](https://pypi.org/project/jupyter-leaflet/), [189,039](https://pypistats.org/packages/jupyter-leaflet) downloads/month, 290 dependents, last published 2025-06-13; []{.fa-brands .fa-npm} [jupyter\-leaflet](https://www.npmjs.com/package/jupyter-leaflet), [1,665](https://npm-stat.com/charts.html?package=jupyter-leaflet) downloads/month, 1 dependents, last published 2025-06-13
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** ipyleaflet is a bridge between Jupyter and Leaflet\.js\, published on PyPI and npm as \'ipyleaflet\' and \'jupyter\-leaflet\'\, making it a package for interactive maps\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-widgets\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest releases of ipyleaflet \(2025\-06\-13\) and jupyter\-leaflet \(2025\-06\-13\) have no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of jupyter\-leaflet \(2025\-06\-13\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest releases of ipyleaflet \(2025\-06\-13\) and jupyter\-leaflet \(2025\-06\-13\) allow a Python that no longer gets security fixes\.
+
+## CI and releases
+
+- **Workflows:** 3, run on issue\_comment, pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 5, 3 by tag, 2 by branch. Third-party, not pinned: mamba\-org\/setup\-micromamba\@main
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, actions\/upload\-artifact\@v4, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@main, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, mamba\-org\/setup\-micromamba\@main
+- **Files:** 295: 77 code, 71 notebook, 55 docs, 46 media, 27 config, 10 other, 7 data, 2 web

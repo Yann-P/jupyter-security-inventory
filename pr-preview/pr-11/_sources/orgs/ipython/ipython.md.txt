@@ -1,0 +1,36 @@
+# ipython\/ipython
+
+Official repository for IPython itself\. Other repos in the IPython organization contain things like the website\, documentation builds\, etc\.
+
+package · [on GitHub](https://github.com/ipython/ipython) · scanned at commit [cf63afd](https://github.com/ipython/ipython/tree/cf63afd11e2fca4eb4645e9d5b4a712f3549f632)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [ipython](https://pypi.org/project/ipython/), [97,202,828](https://pypistats.org/packages/ipython) downloads/month, 15,452 dependents, last published 2026-11-02
+- **Container images:**
+  - [ipython\/ipython](https://hub.docker.com/r/ipython/ipython) on docker.io, 19,004 pulls, last published 2017-05-18
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** IPython is a package on PyPI \(published as \'ipython\'\)\, with a README describing it as a command shell for interactive computing and code files under IPython\/\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via workflow command. Runs in a workflow\. Files: [\.github\/workflows\/zizmor\.yml](https://github.com/ipython/ipython/blob/cf63afd11e2fca4eb4645e9d5b4a712f3549f632/.github/workflows/zizmor.yml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of ipython\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** done. Its latest PyPI release requires at least Python 3\.11\.
+
+## CI and releases
+
+- **Workflows:** 10, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** CODECOV\_TOKEN, ORG\_ZULIP\_API\_KEY, ORG\_ZULIP\_EMAIL, ORG\_ZULIP\_ORGANIZATION\_URL, UPLOAD\_TOKEN, ZULIP\_API\_KEY, ZULIP\_EMAIL
+- **Actions:** 9, all pinned to a commit
+- **Build requirements:** setuptools
+
+## Details
+
+- **All actions it uses:** actions\/cache\@55cc834, actions\/checkout\@3d3c42e, actions\/setup\-python\@6d4fd22, astral\-sh\/setup\-uv\@68559e9, codecov\/codecov\-action\@303a32d, github\/codeql\-action\@9b32540, pypa\/gh\-action\-pypi\-publish\@7245906, scientific\-python\/upload\-nightly\-action\@5a74a2a, zulip\/github\-actions\-zulip\@f675f2b
+- **Files:** 510: 334 code, 76 docs, 52 media, 27 config, 18 other, 3 web

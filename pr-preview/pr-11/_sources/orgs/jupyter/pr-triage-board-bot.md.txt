@@ -1,0 +1,36 @@
+# jupyter\/pr\-triage\-board\-bot
+
+Sync PRs to a GitHub Project Board to make triage easier
+
+tooling · [on GitHub](https://github.com/jupyter/pr-triage-board-bot) · scanned at commit [a2b556b](https://github.com/jupyter/pr-triage-board-bot/tree/a2b556b277251241f05e394cfdfed5f1ad717893)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** 1 in their CI
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a GitHub bot that syncs PRs to project boards\, with action\.yml and CI workflows showing it runs as code in other repos\' workflows\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** GH\_APP\_PRIVATE\_KEY
+- **Actions:** 3, 2 by tag, 1 by branch. Third-party, not pinned: yuvipanda\/pr\-triage\-board\-bot\@main
+- **Build requirements:** none
+
+## Details
+
+- **Run it in their CI:** [jupyter\-book\/\.github](/orgs/jupyter-book/dot.github.md)
+- **All actions it uses:** actions\/checkout\@v4, actions\/setup\-node\@v4, yuvipanda\/pr\-triage\-board\-bot\@main
+- **Files:** 26: 12 code, 7 other, 6 config, 1 docs

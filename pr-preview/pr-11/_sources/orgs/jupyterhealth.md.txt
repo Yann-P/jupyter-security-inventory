@@ -1,0 +1,101 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyterhealth
+
+[github.com/jupyterhealth](https://github.com/jupyterhealth) has 25 public repositories: 3 publish a package, 5 are security boundaries and 7 deploy a live service.
+
+[Security topics (5)](#security-topics) · [Repositories (25)](#repositories) · [Packages (3)](#packages) · [Images (1)](#images)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyterhealth-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterhealth-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyterhealth-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterhealth-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupyterhealth-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterhealth-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyterhealth-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterhealth-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Images
+
+Only Docker Hub has pull counts; they are all-time and include CI. The tag is `latest`, or the newest tag if there is no `latest`.
+
+{download}`Download CSV </_generated/downloads/jupyterhealth-images.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterhealth-images.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyterhealth/omh-shim
+jupyterhealth/jupyter-smart-on-fhir
+jupyterhealth/jupyterhealth-client
+jupyterhealth/dot.github
+jupyterhealth/demos
+jupyterhealth/edgemed-demo-app
+jupyterhealth/fhir-cross-version
+jupyterhealth/helm-charts
+jupyterhealth/hub
+jupyterhealth/initiatives
+jupyterhealth/jhe-smart-demo
+jupyterhealth/jhe-stress
+jupyterhealth/jupyterhealth-demo-deploy
+jupyterhealth/jupyterhealth-exchange
+jupyterhealth/jupyterhealth-sof-provider-template
+jupyterhealth/jupyterhealth-software
+jupyterhealth/jupyterhealth.github.io
+jupyterhealth/jupyterhealth.org
+jupyterhealth/myst-site-article
+jupyterhealth/myst-site-book
+jupyterhealth/partner-client-docker
+jupyterhealth/singleuser-image
+jupyterhealth/sof-cgm-demo
+jupyterhealth/software-documentation
+jupyterhealth/team-compass
+```

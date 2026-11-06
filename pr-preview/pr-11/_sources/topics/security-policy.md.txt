@@ -1,0 +1,50 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# SECURITY\.md
+
+Does the repository say how to report a vulnerability\?
+
+It applies to 151 repositories: 94 done, 2 partial and 55 missing. 287 are not applicable and left out of the tables.
+
+We look for a SECURITY\.md where GitHub does\: in the repository\'s \.github folder\, root and docs folder\, then in the organization\'s \.github repository\. A repository needs one if it ships a package or a container image\. When the repository and its organization both have one\, we compare the emails they list\.
+
+- [done]{.status .status-done} It has a SECURITY\.md\, its own or its organization\'s\.
+- [partial]{.status .status-partial} Its own SECURITY\.md lists other emails than its organization\'s\, so reports may go to the wrong place\.
+- [missing]{.status .status-missing} It ships a package or an image and has no SECURITY\.md\, not even its organization\'s\.
+- [n\/a]{.status .status-na} It ships no package or image\.
+
+## By organization
+
+{download}`Download CSV </_generated/downloads/topic-security-policy-orgs.csv>`
+
+```{csv-table}
+:file: /_generated/topic-security-policy-orgs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+{download}`Download CSV </_generated/downloads/topic-security-policy-repos.csv>`
+
+```{csv-table}
+:file: /_generated/topic-security-policy-repos.csv
+:header-rows: 1
+:class: sphinx-datatable filter-by-org
+```
+
+## Over time
+
+The days the numbers changed.
+
+{download}`Download CSV </_generated/downloads/topic-security-policy-history.csv>`
+
+```{csv-table}
+:file: /_generated/topic-security-policy-history.csv
+:header-rows: 1
+:class: sphinx-datatable
+```

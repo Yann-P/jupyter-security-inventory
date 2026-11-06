@@ -1,0 +1,35 @@
+# jupyterlab\/jupyter\-ai
+
+An open source extension that connects AI agents to computational notebooks in JupyterLab\.
+
+package · [on GitHub](https://github.com/jupyterlab/jupyter-ai) · scanned at commit [96eaa7d](https://github.com/jupyterlab/jupyter-ai/tree/96eaa7dac2942c4f6ded87070816a3bd559f9252)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-ai](https://pypi.org/project/jupyter-ai/), [119,717](https://pypistats.org/packages/jupyter-ai) downloads/month, 9 dependents, last published 2026-09-03; []{.fa-brands .fa-python} [jupyter\-ai\-core](https://pypi.org/project/jupyter-ai-core/), [0](https://pypistats.org/packages/jupyter-ai-core) downloads/month, 0 dependents, last published 2026-10-16
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it executes untrusted AI agent code via MCP server and permission system
+- **Why these labels:** The repository contains a JupyterLab extension package \'jupyter\_ai\' with Python and frontend code\, published to PyPI as \'jupyter\-ai\'\, and includes docs and submodules for related packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via GitHub Action. Runs in a workflow\. Files: [\.github\/workflows\/check\-release\.yml](https://github.com/jupyterlab/jupyter-ai/blob/96eaa7dac2942c4f6ded87070816a3bd559f9252/.github/workflows/check-release.yml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest releases of jupyter\-ai \(2026\-09\-03\) and jupyter\-ai\-core \(2026\-10\-16\) have no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest releases of jupyter\-ai \(2026\-09\-03\) and jupyter\-ai\-core \(2026\-10\-16\) allow a Python that no longer gets security fixes\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 9, all pinned to a commit
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/cache\@0057852, actions\/checkout\@34e1148, actions\/create\-github\-app\-token\@d72941d, actions\/setup\-python\@a26af69, actions\/upload\-artifact\@ea165f8, astral\-sh\/setup\-uv\@d4b2f3b, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@fb873e0, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@95d8544, zizmorcore\/zizmor\-action\@5f14fd0
+- **Files:** 197: 93 media, 35 docs, 25 code, 21 other, 19 config, 4 web

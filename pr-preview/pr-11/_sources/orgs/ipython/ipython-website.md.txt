@@ -1,0 +1,34 @@
+# ipython\/ipython\-website
+
+IPython website sources\. Any fixes to the website should be done on this repository\.
+
+documentation · [on GitHub](https://github.com/ipython/ipython-website) · scanned at commit [5088348](https://github.com/ipython/ipython-website/tree/5088348a051aec0ccf5159f96ae0fa3335dd16e7)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** ipython\.org
+- **Security boundary:** no
+- **Why these labels:** Contains Sphinx documentation sources \(index\.rst\, conf\.py\, many \.rst pages\) and a CNAME for a website\, with README describing building the IPython website\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 112: 62 media, 24 docs, 10 web, 9 code, 6 other, 1 config

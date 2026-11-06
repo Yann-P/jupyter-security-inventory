@@ -1,0 +1,36 @@
+# jupyter\/jupyter\_core
+
+Core Jupyter functionality
+
+package · [on GitHub](https://github.com/jupyter/jupyter_core) · scanned at commit [21b34b5](https://github.com/jupyter/jupyter_core/tree/21b34b5a662165a4ea3dd5f86bc6e06374393468)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-core](https://pypi.org/project/jupyter-core/), [77,056,466](https://pypistats.org/packages/jupyter-core) downloads/month, 11,262 dependents, last published 2025-10-16
+- **Container images:** none
+- **Run by other repositories:** 2 in their builds
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Repository publishes the \'jupyter\-core\' Python package with core functionality and base application classes\; code files include jupyter\_core\/application\.py and command\.py\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-core \(2025\-10\-16\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-core \(2025\-10\-16\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 7, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY
+- **Actions:** 7, 6 by tag, 1 by branch. Third-party, not pinned: re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **Run it in their builds:** [voila\-dashboards\/voici](/orgs/voila-dashboards/voici.md), [voila\-dashboards\/voila](/orgs/voila-dashboards/voila.md)
+- **All actions it uses:** actions\/checkout\@v5, actions\/create\-github\-app\-token\@v2, actions\/setup\-python\@v6, github\/codeql\-action\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1
+- **Files:** 63: 34 code, 11 config, 8 other, 8 docs, 2 web

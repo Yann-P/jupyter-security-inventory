@@ -1,0 +1,34 @@
+# jupyter\-book\/team\-compass
+
+A team compass for the Jupyter Book sub\-project
+
+documentation · [on GitHub](https://github.com/jupyter-book/team-compass) · scanned at commit [4fc155c](https://github.com/jupyter-book/team-compass/tree/4fc155c35c4a08022f9d95f615eddd0db24f3dbb)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyterbook\.org\/compass
+- **Security boundary:** no
+- **Why these labels:** Repository consists of Markdown prose in docs\/ \(governance\, meetings\, code of conduct\) and its README states it is a team compass site built with MyST and hosted on Netlify\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 22: 12 docs, 4 config, 2 other, 2 media, 2 code

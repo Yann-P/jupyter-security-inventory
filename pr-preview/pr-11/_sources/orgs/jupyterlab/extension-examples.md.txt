@@ -1,0 +1,35 @@
+# jupyterlab\/extension\-examples
+
+JupyterLab Extensions by Examples
+
+example · [on GitHub](https://github.com/jupyterlab/extension-examples) · scanned at commit [0ff7dc5](https://github.com/jupyterlab/extension-examples/tree/0ff7dc53f876a2ad9388eb71c188156a572014fc)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlab\-examples\-hello\-world](https://pypi.org/project/jupyterlab-examples-hello-world/), [15](https://pypistats.org/packages/jupyterlab-examples-hello-world) downloads/month, 0 dependents, last published 2022-03-01
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo contains example JupyterLab extensions with README excerpts like \'JupyterLab Extensions by Examples\' and a binder link\, plus published package \'jupyterlab\-examples\-hello\-world\'\, but primarily serves as examples\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlab\-examples\-hello\-world \(2022\-03\-01\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlab\-examples\-hello\-world \(2022\-03\-01\) allows Python 3\.6\, which has had no security fixes since 2021\-12\-23\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 6, 6 by tag. Third-party, not pinned: dorny\/paths\-filter\@v2
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v4, actions\/checkout\@v4, actions\/setup\-node\@v4, actions\/setup\-python\@v5, actions\/upload\-artifact\@v4, dorny\/paths\-filter\@v2
+- **Files:** 751: 256 config, 229 code, 96 other, 61 docs, 59 web, 50 media

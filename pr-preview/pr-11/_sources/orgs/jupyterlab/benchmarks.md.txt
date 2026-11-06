@@ -1,0 +1,35 @@
+# jupyterlab\/benchmarks
+
+Benchmarking tools for JupyterLab
+
+tooling · [on GitHub](https://github.com/jupyterlab/benchmarks) · scanned at commit [66ed34a](https://github.com/jupyterlab/benchmarks/tree/66ed34aa639ed69a236d44a1c45b7dbaa113ec98)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains benchmark tooling\, Docker images for testing\, and CI workflows for benchmarking JupyterLab performance\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 9, run on pull\_request, push, schedule, workflow\_call, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 12, 11 by tag, 1 by branch. Third-party, not pinned: ifaxity\/wait\-on\-action\@v1, iterative\/setup\-cml\@v1
+- **Build requirements:** jupyter\_packaging, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v1, actions\/cache\@v3, actions\/checkout\@v2, actions\/checkout\@v3, actions\/github\-script\@v6, actions\/setup\-node\@v3, actions\/setup\-python\@v4, actions\/upload\-artifact\@v2, actions\/upload\-artifact\@v3, ifaxity\/wait\-on\-action\@v1, iterative\/setup\-cml\@v1, [jupyterlab\/benchmarks](/orgs/jupyterlab/benchmarks.md)\@master
+- **Files:** 353: 104 notebook, 78 code, 48 media, 43 config, 34 docs, 30 web, 16 other

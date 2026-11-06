@@ -1,0 +1,34 @@
+# jupyter\-xeus\/xeus\-brainfuck
+
+Jupyter kernel for the Brainfuck programming language
+
+package · [on GitHub](https://github.com/jupyter-xeus/xeus-brainfuck) · scanned at commit [0302ecf](https://github.com/jupyter-xeus/xeus-brainfuck/tree/0302ecf698b8bace54030eb8eae452110e7418ea)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository implements a Jupyter kernel for Brainfuck\, evidenced by kernel\.json files in share\/jupyter\/kernels and source files like src\/xbrainfuck\.cpp\, making it a package people install as a kernel\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 50: 12 config, 11 media, 10 code, 7 docs, 5 notebook, 4 other, 1 web

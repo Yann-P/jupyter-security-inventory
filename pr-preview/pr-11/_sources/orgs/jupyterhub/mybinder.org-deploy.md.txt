@@ -1,0 +1,40 @@
+# jupyterhub\/mybinder\.org\-deploy
+
+Deployment config files for mybinder\.org
+
+deployment · [on GitHub](https://github.com/jupyterhub/mybinder.org-deploy) · scanned at commit [100add0](https://github.com/jupyterhub/mybinder.org-deploy/tree/100add0cfc8ff21be418a339d30eb235b20a2523)
+
+## Reach
+
+- **Packages:** none
+- **Container images:**
+  - [jupyterhub\/mybinder\.org\-minesweeper](https://hub.docker.com/r/jupyterhub/mybinder.org-minesweeper) on docker.io, 18,348 pulls, last published 2026-11-02
+  - [jupyterhub\/mybinder\.org\-tc\-init](https://hub.docker.com/r/jupyterhub/mybinder.org-tc-init) on docker.io, 16,030 pulls, last published 2026-08-24
+  - [jupyterhub\/mybinder\.org\-analytics\-publisher](https://hub.docker.com/r/jupyterhub/mybinder.org-analytics-publisher) on docker.io, 13,546 pulls, last published 2026-11-02
+  - [jupyterhub\/mybinder\.org\-federation\-redirect](https://hub.docker.com/r/jupyterhub/mybinder.org-federation-redirect) on docker.io, 12,815 pulls, last published 2026-11-02
+  - [jupyterhub\/mybinder\.org\-rsyslog](https://hub.docker.com/r/jupyterhub/mybinder.org-rsyslog) on docker.io, 931 pulls, last published 2026-08-24
+- **Run by other repositories:** none
+- **Live service:** mybinder\.org
+- **Security boundary:** no
+- **Why these labels:** The repository contains deployment configuration files for mybinder\.org \(e\.g\.\, config\/prod\.yaml\, mybinder\/values\.yaml\, secrets\/\*\)\, and CI workflows deploy to cloud infrastructure\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 8, run on issue\_comment, pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** container, cloud
+- **Secrets:** DOCKER\_PASSWORD, DOCKER\_USERNAME, GIT\_CRYPT\_KEY, jupyterhub\_bot\_pat
+- **Actions:** 12, 2 by commit, 9 by tag, 1 by branch. Third-party, not pinned: azure\/setup\-kubectl\@v5, docker\/login\-action\@v4, google\-github\-actions\/setup\-gcloud\@v3, peter\-evans\/create\-pull\-request\@v8, sgibson91\/test\-this\-pr\-action\@main, terraform\-linters\/setup\-tflint\@v6
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/github\-script\@v9, actions\/setup\-python\@v7, azure\/setup\-kubectl\@v5, docker\/login\-action\@v4, google\-github\-actions\/setup\-gcloud\@v3, [jupyterhub\/action\-k3s\-helm](/orgs/jupyterhub/action-k3s-helm.md)\@v4, nick\-invision\/retry\@ad98453, peter\-evans\/create\-pull\-request\@v8, sgibson91\/test\-this\-pr\-action\@main, sliteteam\/github\-action\-git\-crypt\-unlock\@f99c0c6, terraform\-linters\/setup\-tflint\@v6
+- **Files:** 315: 142 config, 70 docs, 42 other, 37 code, 13 media, 8 web, 3 notebook

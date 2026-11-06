@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About &#8212; Jupyter Security Inventory</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=2ef5feca" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="_static/jquery.js?v=5d32c60e"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.js"></script>
+    <script src="_static/activate_datatables.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'about';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="_static/tables.js?v=f93e9670"></script>
+    <link rel="author" title="About these documents" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Container images" href="images.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Security Inventory</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links" aria-label="Site navigation">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="index.html">All organizations</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="orgs.html">Organizations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="orgs/ipython.html">ipython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter.html">jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyterlab.html">jupyterlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter-server.html">jupyter-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter-widgets.html">jupyter-widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyterhub.html">jupyterhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter-book.html">jupyter-book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/voila-dashboards.html">voila-dashboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyterlite.html">jupyterlite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter-incubator.html">jupyter-incubator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter-xeus.html">jupyter-xeus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyterhealth.html">jupyterhealth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/binder-examples.html">binder-examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupytercon.html">jupytercon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/voila-gallery.html">voila-gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/binderhub-ci-repos.html">binderhub-ci-repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter-governance.html">jupyter-governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="orgs/jupyter-standards.html">jupyter-standards</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="topics.html">Security topics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="topics/zizmor.html">zizmor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/security-policy.html">SECURITY.md</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/pypi-attestations.html">PyPI attestations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/npm-trusted-publishing.html">npm trusted publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="topics/supported-python.html">Supported Python</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="packages.html">Published packages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="packages/pypi.html">PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="packages/npm.html">npm</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="images.html">Container images</a></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">About</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">About</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="about">
+<h1>About<a class="headerlink" href="#about" title="Link to this heading">#</a></h1>
+<p>Project Jupyter has over 400 public repositories across 20 GitHub organizations. This project collects, for each repository, some data like how many people install it, how many other Jupyter repositories run its code in CI, whether it runs a live service, and whether it’s a security boundary.</p>
+<section id="eventual-goals">
+<h2>Eventual goals<a class="headerlink" href="#eventual-goals" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Expose a “todo list” of bite-sized security improvements from which contributors can pick from.</p></li>
+<li><p>Be a tool to prioritize where security time is spent first using metrics</p></li>
+<li><p>And eventually aggregate more data (like trusted publishing) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.</p></li>
+</ul>
+</section>
+<section id="structure">
+<h2>Structure<a class="headerlink" href="#structure" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">output/</span></code>: the results of the scripts described below. Do not write here.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">docs/</span></code>: a sphinx website that makes the results browsable.</p></li>
+</ul>
+</section>
+<section id="how-it-works">
+<h2>How it works<a class="headerlink" href="#how-it-works" title="Link to this heading">#</a></h2>
+<p>Eight scripts run in order (they depend on each other):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Step</p></th>
+<th class="head"><p>What it does</p></th>
+<th class="head"><p>Data from</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1. Inventory</p></td>
+<td><p>Lists the public, non-archived repositories of each organization</p></td>
+<td><p>GitHub</p></td>
+</tr>
+<tr class="row-odd"><td><p>2. Scan</p></td>
+<td><p>Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config, README and SECURITY.md</p></td>
+<td><p>GitHub</p></td>
+</tr>
+<tr class="row-even"><td><p>3. Packages</p></td>
+<td><p>Matches PyPI and npm packages to repositories, with downloads, dependents, the date of the last release, how the latest release was published and the Python versions it allows</p></td>
+<td><p>PyPI, npm, pypistats.org, deps.dev</p></td>
+</tr>
+<tr class="row-odd"><td><p>4. Images</p></td>
+<td><p>Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes <code class="docutils literal notranslate"><span class="pre">output/images.txt</span></code>, one image per line</p></td>
+<td><p>Docker Hub, Quay</p></td>
+</tr>
+<tr class="row-even"><td><p>5. Labels</p></td>
+<td><p>Decides each repository’s kind, the live service it deploys and whether it’s a security boundary, and why</p></td>
+<td><p>LLM</p></td>
+</tr>
+<tr class="row-odd"><td><p>6. Merge</p></td>
+<td><p>Puts it all together and works out which repositories run each other’s code</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>7. Table</p></td>
+<td><p>Writes <code class="docutils literal notranslate"><span class="pre">output/repos.csv</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>8. Topics</p></td>
+<td><p>Answers each security topic for every repository and counts the answers each day</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a class="reference external" href="https://github.com/Yann-P/jupyter-security-inventory/blob/main/architecture.md">architecture.md</a> explains how the pieces fit together.</p>
+</section>
+<section id="the-columns">
+<h2>The columns<a class="headerlink" href="#the-columns" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>kind</strong>: package, application, tooling, deployment, documentation, example or other.</p></li>
+<li><p><strong>downloads/month</strong> and <strong>dependents</strong>: for the repository’s most downloaded package.</p></li>
+<li><p><strong>image</strong> and <strong>all-time pulls</strong>: for the repository’s most pulled container image.</p></li>
+<li><p><strong>used in CI</strong>: how many other Jupyter repositories run its actions or build tools without pinning them
+to a commit.</p></li>
+<li><p><strong>live service</strong>: the site or service it deploys, like mybinder.org.</p></li>
+<li><p><strong>security boundary</strong>: whether its bugs can be exploited over the network, because it handles logins,
+proxies traffic, runs multi-user servers or runs code and content from the network, and why.</p></li>
+</ul>
+</section>
+<section id="security-topics">
+<h2>Security topics<a class="headerlink" href="#security-topics" title="Link to this heading">#</a></h2>
+<p>A topic asks one question about every repository, like “does it check its workflows with zizmor?”, and answers
+with a status: done, partial, missing or not applicable. Each topic has a page, and every organization and
+repository page shows how it does. There are five for now:</p>
+<ul class="simple">
+<li><p><strong>zizmor</strong>, run as its GitHub Action, as a command in a workflow or as a pre-commit hook.</p></li>
+<li><p><strong>SECURITY.md</strong>, in the repository or in the organization’s <code class="docutils literal notranslate"><span class="pre">.github</span></code> repository, for the repositories that ship a
+package or an image.</p></li>
+<li><p><strong>PyPI attestations</strong>, on every file of the latest release of each PyPI package. PyPI’s API shows trusted publishing
+only through attestations, so it has no topic of its own.</p></li>
+<li><p><strong>npm trusted publishing</strong>, for the latest version of each npm package.</p></li>
+<li><p><strong>Supported Python</strong>: the Requires-Python of the latest release of each PyPI package leaves out the Python versions
+that no longer get security fixes.</p></li>
+</ul>
+</section>
+<section id="caveats">
+<h2>Caveats<a class="headerlink" href="#caveats" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Repository type, and security boundary come from a language model</strong></p></li>
+<li><p>Download counts include CI.</p></li>
+<li><p>A package is found only through a repository of this inventory.</p></li>
+<li><p>Images: ghcr.io is not covered, Quay has no pull counts, and one tag is recorded per image: <code class="docutils literal notranslate"><span class="pre">latest</span></code>, or the newest.
+The namespaces are listed by hand in <code class="docutils literal notranslate"><span class="pre">scripts/4_images.py</span></code>. Many older images match no repository.</p></li>
+<li><p>“Used in CI” only sees the repositories listed here.</p></li>
+<li><p>The zizmor and SECURITY.md topics read the repository’s files, so they show what is set up, not what is enforced.
+pre-commit.ci can’t be seen from the files, so a pre-commit hook counts as run by CI only if a workflow runs
+pre-commit or the config has a <code class="docutils literal notranslate"><span class="pre">ci:</span></code> section.</p></li>
+</ul>
+</section>
+<section id="running-it">
+<h2>Running it<a class="headerlink" href="#running-it" title="Link to this heading">#</a></h2>
+<p>You need Python &gt;= 3.14, the GitHub CLI (logged in), and a DeepSeek API key for step 5 (or an OpenAI key,
+with <code class="docutils literal notranslate"><span class="pre">--model</span> <span class="pre">&lt;an</span> <span class="pre">OpenAI</span> <span class="pre">model&gt;</span></code>).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>.<span class="w"> </span>--group<span class="w"> </span>dev<span class="w"> </span>--group<span class="w"> </span>docs
+python<span class="w"> </span>scripts/1_inventory.py
+python<span class="w"> </span>scripts/2_scan_repos.py<span class="w"> </span>--clone-dir<span class="w"> </span>~/clones
+python<span class="w"> </span>scripts/3_packages.py
+python<span class="w"> </span>scripts/4_images.py
+python<span class="w"> </span>scripts/5_classify.py<span class="w"> </span>--clone-dir<span class="w"> </span>~/clones
+python<span class="w"> </span>scripts/6_build_dataset.py
+python<span class="w"> </span>scripts/7_table.py
+python<span class="w"> </span>scripts/8_topics.py
+</pre></div>
+</div>
+</section>
+<section id="daily-updates">
+<h2>Daily updates<a class="headerlink" href="#daily-updates" title="Link to this heading">#</a></h2>
+<p>A GitHub Actions workflow (<code class="docutils literal notranslate"><span class="pre">update.yml</span></code>) reruns the whole pipeline every morning, commits what changed in
+<code class="docutils literal notranslate"><span class="pre">output/</span></code> and republishes the site. It needs a <code class="docutils literal notranslate"><span class="pre">DEEPSEEK_API_KEY</span></code> repository secret.</p>
+<p>Step 5 only labels repositories it hasn’t labeled yet with the current model, so a daily run costs almost
+nothing. To relabel everything, switch to another model or delete <code class="docutils literal notranslate"><span class="pre">output/classification.json</span></code>.</p>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">#</a></h2>
+<p>Change the scripts, never <code class="docutils literal notranslate"><span class="pre">output/</span></code> by hand. Rerun the pipeline from the step you changed, run <code class="docutils literal notranslate"><span class="pre">pytest</span></code>,
+and commit the new outputs with your change. CI runs the tests and checks that the outputs of steps 6 to 8 are up to date.</p>
+<p>The daily update and the site build install <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">requirements-docs.txt</span></code>, which pin every
+dependency, including indirect ones, to an exact version. After changing the dependencies in <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>,
+regenerate them with the command on the second line of each file.</p>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Link to this heading">#</a></h2>
+<p>BSD 3-Clause.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eventual-goals">Eventual goals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure">Structure</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works">How it works</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-columns">The columns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-topics">Security topics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caveats">Caveats</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-it">Running it</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#daily-updates">Daily updates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

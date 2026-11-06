@@ -1,0 +1,35 @@
+# jupyter\-book\/blog\-plugin
+
+A plugin to list blog posts in a MyST project
+
+package · [on GitHub](https://github.com/jupyter-book/blog-plugin) · scanned at commit [6afb81b](https://github.com/jupyter-book/blog-plugin/tree/6afb81be34d73ae15e3bec34ba7d9694e4d51c0e)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains source code for a MyST plugin \(src\/plugin\.ts\) intended to be loaded into MyST projects\, with releases published via npm \(package\.json\)\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, release
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 6, 6 by tag. Third-party, not pinned: astral\-sh\/setup\-uv\@v4, softprops\/action\-gh\-release\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/upload\-pages\-artifact\@v3, astral\-sh\/setup\-uv\@v4, softprops\/action\-gh\-release\@v2
+- **Files:** 21: 7 config, 7 docs, 6 code, 1 other

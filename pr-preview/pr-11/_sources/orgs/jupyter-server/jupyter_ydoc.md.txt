@@ -1,0 +1,35 @@
+# jupyter\-server\/jupyter\_ydoc
+
+Jupyter document structures for collaborative editing using Yjs\/pycrdt
+
+package · [on GitHub](https://github.com/jupyter-server/jupyter_ydoc) · scanned at commit [fa376bd](https://github.com/jupyter-server/jupyter_ydoc/tree/fa376bd4d69a88a31ab0419313997443ea6dc91b)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-ydoc](https://pypi.org/project/jupyter-ydoc/), [864,279](https://pypistats.org/packages/jupyter-ydoc) downloads/month, 122 dependents, last published 2026-11-02; []{.fa-brands .fa-npm} [\@jupyter\/ydoc](https://www.npmjs.com/package/@jupyter/ydoc), [478,864](https://npm-stat.com/charts.html?package=@jupyter/ydoc) downloads/month, 1,090 dependents, last published 2026-11-02
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides pycrdt\-based data structures as installable Python \(jupyter\-ydoc\) and JavaScript \(\@jupyter\/ydoc\) packages\, with 864k and 487k downloads respectively\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyter\-ydoc \(2026\-11\-02\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm version used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** done. Its latest PyPI release requires at least Python 3\.11\.
+
+## CI and releases
+
+- **Workflows:** 7, run on pull\_request, pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 10, 10 by tag. Third-party, not pinned: apache\/skywalking\-eyes\@v0\.9\.0, mamba\-org\/setup\-micromamba\@v3, pre\-commit\/action\@v3\.0\.1, toshimaru\/auto\-author\-assign\@v3\.0\.3
+- **Build requirements:** hatch\-nodejs\-version, hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v7, actions\/create\-github\-app\-token\@v3, actions\/setup\-python\@v7, actions\/upload\-artifact\@v7, apache\/skywalking\-eyes\@v0\.9\.0, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, mamba\-org\/setup\-micromamba\@v3, pre\-commit\/action\@v3\.0\.1, toshimaru\/auto\-author\-assign\@v3\.0\.3
+- **Files:** 76: 33 code, 22 config, 9 docs, 7 other, 3 notebook, 2 media

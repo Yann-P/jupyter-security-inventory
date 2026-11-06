@@ -1,0 +1,34 @@
+# binder\-examples\/appmode
+
+Creating web applications with Jupyter and Binder
+
+example · [on GitHub](https://github.com/binder-examples/appmode) · scanned at commit [ef9cb16](https://github.com/binder-examples/appmode/tree/ef9cb16bf8002bde4a2dc39c8c40ed7ebbeab971)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo contains example notebooks \(index\.ipynb\, ipyvolume\_demo\.ipynb\) and a README showing a Binder badge and demo description\, not a reusable package or app\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 7: 3 other, 2 notebook, 1 docs, 1 config

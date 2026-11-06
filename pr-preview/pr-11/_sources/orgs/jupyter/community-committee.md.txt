@@ -1,0 +1,35 @@
+# jupyter\/community\-committee
+
+
+
+documentation · [on GitHub](https://github.com/jupyter/community-committee) · scanned at commit [e913c15](https://github.com/jupyter/community-committee/tree/e913c155fae238d6903bfdc3bb696b50d3a4b6e4)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** jupyter\.org\/community\-committee
+- **Security boundary:** no
+- **Why these labels:** The repo contains only Markdown\/docs\, meeting notes\, charter\, and configs for building a MyST website\; the README states it is a \'team compass\' for community alignment\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 3, run on issue\_comment, pull\_request\_target, push, schedule, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** HACKMD\_TOKEN
+- **Actions:** 6, 5 by tag, 1 by branch. Third-party, not pinned: mfisher87\/hackmd\-meeting\-notes\-action\@main, prefix\-dev\/setup\-pixi\@v0\.8\.8, readthedocs\/actions\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/deploy\-pages\@v4, actions\/upload\-pages\-artifact\@v3, mfisher87\/hackmd\-meeting\-notes\-action\@main, prefix\-dev\/setup\-pixi\@v0\.8\.8, readthedocs\/actions\@v1
+- **Files:** 51: 39 docs, 8 config, 3 other, 1 web

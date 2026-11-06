@@ -1,0 +1,35 @@
+# jupyter\-xeus\/xeus\-cookiecutter
+
+Cookiecutter for xeus\-based Jupyter kernels
+
+tooling · [on GitHub](https://github.com/jupyter-xeus/xeus-cookiecutter) · scanned at commit [6a656cb](https://github.com/jupyter-xeus/xeus-cookiecutter/tree/6a656cbf823141020a21b9ad33be593e873a4e7d)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo is a cookiecutter template that generates xeus\-based Jupyter kernels\, as evidenced by the presence of \'cookiecutter\.json\'\, \'hooks\/post\_gen\_project\.py\'\, and template files under \'\{\{cookiecutter\.github\_project\_name\}\}\'\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 4, 3 by tag, 1 by branch. Third-party, not pinned: SimenB\/github\-actions\-cpu\-cores\@v2, mamba\-org\/setup\-micromamba\@v2, s0\/git\-publish\-subdir\-action\@develop
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** SimenB\/github\-actions\-cpu\-cores\@v2, actions\/checkout\@v6, mamba\-org\/setup\-micromamba\@v2, s0\/git\-publish\-subdir\-action\@develop
+- **Files:** 62: 17 config, 13 docs, 12 code, 11 media, 7 other, 1 web, 1 notebook

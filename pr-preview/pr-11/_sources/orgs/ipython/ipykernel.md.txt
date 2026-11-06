@@ -1,0 +1,36 @@
+# ipython\/ipykernel
+
+IPython Kernel for Jupyter
+
+package · [on GitHub](https://github.com/ipython/ipykernel) · scanned at commit [f87d0e0](https://github.com/ipython/ipykernel/tree/f87d0e09863101be7a961d53f29549397ff62c72)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [ipykernel](https://pypi.org/project/ipykernel/), [54,614,879](https://pypistats.org/packages/ipykernel) downloads/month, 7,049 dependents, last published 2026-09-29
+- **Container images:** none
+- **Run by other repositories:** 1 in their builds
+- **Live service:** none
+- **Security boundary:** yes, it executes code from Jupyter clients over the network as a kernel
+- **Why these labels:** The repository provides the ipykernel Python package\, published to PyPI and downloaded millions of times per month\, as indicated by \'published\_packages\' and \'readme\_excerpt\'\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via GitHub Action. Runs in a workflow\. Files: [\.github\/workflows\/zizmor\.yml](https://github.com/ipython/ipykernel/blob/f87d0e09863101be7a961d53f29549397ff62c72/.github/workflows/zizmor.yml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of ipython\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of ipykernel \(2026\-09\-29\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** done. Its latest PyPI release requires at least Python 3\.11\.
+
+## CI and releases
+
+- **Workflows:** 8, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, UPLOAD\_TOKEN
+- **Actions:** 7, all pinned to a commit
+- **Build requirements:** hatchling, jupyter\_client
+
+## Details
+
+- **Run it in their builds:** [jupyter\/echo\_kernel](/orgs/jupyter/echo_kernel.md)
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/create\-github\-app\-token\@64ab729, actions\/setup\-python\@5fda3b9, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@70e58c5, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@925e40f, scientific\-python\/upload\-nightly\-action\@16fa02e, zizmorcore\/zizmor\-action\@85b2b9f
+- **Files:** 114: 84 code, 12 config, 9 docs, 6 other, 3 media

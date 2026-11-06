@@ -1,0 +1,34 @@
+# binder\-examples\/latex
+
+Using \`apt\.txt\` to install latex for use in notebooks\.
+
+example · [on GitHub](https://github.com/binder-examples/latex) · scanned at commit [c5fb3dc](https://github.com/binder-examples/latex/tree/c5fb3dcf9f70e25f286b857e2d2f1b80d61d50ab)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a Binder example demonstrating LaTeX installation\, evidenced by its README and files like apt\.txt and index\.ipynb\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 9: 3 other, 3 docs, 1 config, 1 media, 1 notebook

@@ -1,0 +1,35 @@
+# ipython\/ipyparallel
+
+IPython Parallel\: Interactive Parallel Computing in Python
+
+package · [on GitHub](https://github.com/ipython/ipyparallel) · scanned at commit [d724f99](https://github.com/ipython/ipyparallel/tree/d724f99d7e4949e116ca986ad00576bc1d86a843)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [ipyparallel](https://pypi.org/project/ipyparallel/), [94,773](https://pypistats.org/packages/ipyparallel) downloads/month, 78 dependents, last published 2026-05-12
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** ipyparallel is a Python package with CLI scripts for controlling IPython clusters\, installed via pip and publishing to PyPI\; repository contains package code under ipyparallel\/ and labs extensions\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via pre\-commit. Pre\-commit hook\, and CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/ipython/ipyparallel/blob/d724f99d7e4949e116ca986ad00576bc1d86a843/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of ipython\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of ipyparallel \(2026\-05\-12\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi, container
+- **Secrets:** none
+- **Actions:** 12, 5 by commit, 7 by tag. Third-party, not pinned: codecov\/codecov\-action\@v7, docker\/login\-action\@v4, docker\/metadata\-action\@v5, supercharge\/mongodb\-github\-action\@1\.12\.1
+- **Build requirements:** hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v6\.1\.0, actions\/checkout\@9c091bb, actions\/checkout\@v7\.0\.0, actions\/download\-artifact\@3e5f45b, actions\/setup\-python\@a309ff8, actions\/setup\-python\@v6, actions\/upload\-artifact\@043fb46, codecov\/codecov\-action\@v7, docker\/login\-action\@v4, docker\/metadata\-action\@v5, pypa\/gh\-action\-pypi\-publish\@cef2210, supercharge\/mongodb\-github\-action\@1\.12\.1
+- **Files:** 305: 154 code, 42 config, 39 media, 28 docs, 26 notebook, 14 other, 2 web

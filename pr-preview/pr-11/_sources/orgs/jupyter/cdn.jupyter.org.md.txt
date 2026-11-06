@@ -1,0 +1,35 @@
+# jupyter\/cdn\.jupyter\.org
+
+Assets and layout for cdn\.jupyter\.org
+
+deployment · [on GitHub](https://github.com/jupyter/cdn.jupyter.org) · scanned at commit [a207622](https://github.com/jupyter/cdn.jupyter.org/tree/a2076225aaaa169086015b62adc83a084c3be9f8)
+
+## Reach
+
+- **Packages:** none
+- **Container images:**
+  - [jupyter\/cdn\.jupyter\.org](https://hub.docker.com/r/jupyter/cdn.jupyter.org) on docker.io, 1,397 pulls, last published 2020-03-04
+- **Run by other repositories:** none
+- **Live service:** cdn\.jupyter\.org
+- **Security boundary:** no
+- **Why these labels:** The repo contains nginx configs\, Dockerfile\, and scripts for cdn\.jupyter\.org\, indicating it deploys and configures that live service\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 14: 11 other, 2 docs, 1 code

@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>jupyterhub &#8212; Jupyter Security Inventory</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2ef5feca" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.js"></script>
+    <script src="../_static/activate_datatables.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'orgs/jupyterhub';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/tables.js?v=f93e9670"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="jupyterhub/jupyter-server-proxy" href="jupyterhub/jupyter-server-proxy.html" />
+    <link rel="prev" title="jupyter-widgets/widget-ts-cookiecutter" href="jupyter-widgets/widget-ts-cookiecutter.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Security Inventory</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links" aria-label="Site navigation">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">All organizations</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../orgs.html">Organizations</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ipython.html">ipython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter.html">jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlab.html">jupyterlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-server.html">jupyter-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-widgets.html">jupyter-widgets</a></li>
+<li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">jupyterhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-book.html">jupyter-book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voila-dashboards.html">voila-dashboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterlite.html">jupyterlite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-incubator.html">jupyter-incubator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-xeus.html">jupyter-xeus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyterhealth.html">jupyterhealth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binder-examples.html">binder-examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupytercon.html">jupytercon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="voila-gallery.html">voila-gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="binderhub-ci-repos.html">binderhub-ci-repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-governance.html">jupyter-governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jupyter-standards.html">jupyter-standards</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../topics.html">Security topics</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../topics/zizmor.html">zizmor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/security-policy.html">SECURITY.md</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/pypi-attestations.html">PyPI attestations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/npm-trusted-publishing.html">npm trusted publishing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../topics/supported-python.html">Supported Python</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../packages.html">Published packages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../packages/pypi.html">PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../packages/npm.html">npm</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../images.html">Container images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../orgs.html" class="nav-link">Organizations</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">jupyterhub</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="jupyterhub">
+<h1>jupyterhub<a class="headerlink" href="#jupyterhub" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://github.com/jupyterhub">github.com/jupyterhub</a> has 64 public repositories: 34 publish a package, 19 are security boundaries and 6 deploy a live service.</p>
+<p><a class="reference internal" href="#security-topics">Security topics (5)</a> · <a class="reference internal" href="#repositories">Repositories (64)</a> · <a class="reference internal" href="#packages">Packages (39)</a> · <a class="reference internal" href="#images">Images (38)</a></p>
+<section id="security-topics">
+<h2>Security topics<a class="headerlink" href="#security-topics" title="Link to this heading">#</a></h2>
+<p>Each topic checks one practice in every repository. Open a topic to see which repositories still need work.</p>
+<p><a class="reference download internal" download="" href="../_downloads/52861961acb87b7baca134e87bfba301/jupyterhub-topics.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>topic</p></th>
+<th class="head"><p>question</p></th>
+<th class="head"><p>done</p></th>
+<th class="head"><p>partial</p></th>
+<th class="head"><p>missing</p></th>
+<th class="head"><p>not applicable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../topics/zizmor.html"><span class="std std-doc">zizmor</span></a></p></td>
+<td><p>Does the repository check its GitHub workflows with zizmor?</p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>46</p></td>
+<td><p>14</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../topics/security-policy.html"><span class="std std-doc">SECURITY.md</span></a></p></td>
+<td><p>Does the repository say how to report a vulnerability?</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>35</p></td>
+<td><p>28</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../topics/pypi-attestations.html"><span class="std std-doc">PyPI attestations</span></a></p></td>
+<td><p>Do the repository’s PyPI releases have attestations?</p></td>
+<td><p>12</p></td>
+<td><p>1</p></td>
+<td><p>20</p></td>
+<td><p>31</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../topics/npm-trusted-publishing.html"><span class="std std-doc">npm trusted publishing</span></a></p></td>
+<td><p>Does the repository publish its npm packages with trusted publishing?</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>60</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../topics/supported-python.html"><span class="std std-doc">Supported Python</span></a></p></td>
+<td><p>Do the repository’s PyPI packages require a Python that still gets security fixes?</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>33</p></td>
+<td><p>31</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="repositories">
+<h2>Repositories<a class="headerlink" href="#repositories" title="Link to this heading">#</a></h2>
+<p>Rows are colored by kind: <span class="kind-package legend">package</span> <span class="kind-application legend">application</span> <span class="kind-tooling legend">tooling</span> <span class="kind-deployment legend">deployment</span> <span class="kind-documentation legend">documentation</span> <span class="kind-example legend">example</span> <span class="kind-other legend">other</span></p>
+<section id="software">
+<h3>Software<a class="headerlink" href="#software" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/04646892277e83cddfd94b644dfb8b23/jupyterhub-repos.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>repo</p></th>
+<th class="head"><p>kind</p></th>
+<th class="head"><p>package</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>dependents</p></th>
+<th class="head"><p>image</p></th>
+<th class="head"><p>all-time pulls</p></th>
+<th class="head"><p>used in CI</p></th>
+<th class="head"><p>live service</p></th>
+<th class="head"><p>security boundary</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/jupyter-server-proxy.html"><span class="std std-doc">jupyterhub/jupyter-server-proxy</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyter-server-proxy/">jupyter-server-proxy</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-proxy">451,131</a></p></td>
+<td><p>195</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">proxies web services and provides authenticated web access</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/simpervisor.html"><span class="std std-doc">jupyterhub/simpervisor</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/simpervisor/">simpervisor</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/simpervisor">434,920</a></p></td>
+<td><p>208</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="jupyterhub/jupyterhub.html"><span class="std std-doc">jupyterhub/jupyterhub</span></a></span></p></td>
+<td><p>application</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub/">jupyterhub</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub">260,478</a></p></td>
+<td><p>156</p></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://hub.docker.com/r/jupyterhub/jupyterhub">jupyterhub/jupyterhub</a></p></td>
+<td><p>7,323,100</p></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users, proxies traffic, and spawns notebook servers</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/escapism.html"><span class="std std-doc">jupyterhub/escapism</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/escapism/">escapism</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/escapism">175,967</a></p></td>
+<td><p>71</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/oauthenticator.html"><span class="std std-doc">jupyterhub/oauthenticator</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/oauthenticator/">oauthenticator</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/oauthenticator">89,857</a></p></td>
+<td><p>18</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users via OAuth for JupyterHub</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/configurable-http-proxy.html"><span class="std std-doc">jupyterhub/configurable-http-proxy</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/configurable-http-proxy">configurable-http-proxy</a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=configurable-http-proxy">49,865</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://hub.docker.com/r/jupyterhub/configurable-http-proxy">jupyterhub/configurable-http-proxy</a></p></td>
+<td><p>51,138,260</p></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">proxies HTTP/WebSocket traffic and manages routing rules via CLI/REST API</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/nbgitpuller.html"><span class="std std-doc">jupyterhub/nbgitpuller</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/nbgitpuller/">nbgitpuller</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller">25,586</a></p></td>
+<td><p>6</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">executes git pull operations triggered by user-provided URLs on a Jupyter server</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/dockerspawner.html"><span class="std std-doc">jupyterhub/dockerspawner</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/dockerspawner/">dockerspawner</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/dockerspawner">24,371</a></p></td>
+<td><p>10</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">spawns per-user containers after authentication</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/nativeauthenticator.html"><span class="std std-doc">jupyterhub/nativeauthenticator</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-nativeauthenticator/">jupyterhub-nativeauthenticator</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-nativeauthenticator">21,091</a></p></td>
+<td><p>1</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users and manages signup for JupyterHub</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/jupyterhub-idle-culler.html"><span class="std std-doc">jupyterhub/jupyterhub-idle-culler</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-idle-culler/">jupyterhub-idle-culler</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-idle-culler">15,786</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/kubespawner.html"><span class="std std-doc">jupyterhub/kubespawner</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-kubespawner/">jupyterhub-kubespawner</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kubespawner">15,220</a></p></td>
+<td><p>6</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/batchspawner.html"><span class="std std-doc">jupyterhub/batchspawner</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/batchspawner/">batchspawner</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/batchspawner">8,938</a></p></td>
+<td><p>5</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/ldapauthenticator.html"><span class="std std-doc">jupyterhub/ldapauthenticator</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-ldapauthenticator/">jupyterhub-ldapauthenticator</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ldapauthenticator">6,160</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users against LDAP for JupyterHub</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/jupyter-rsession-proxy.html"><span class="std std-doc">jupyterhub/jupyter-rsession-proxy</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyter-rsession-proxy/">jupyter-rsession-proxy</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-rsession-proxy">5,599</a></p></td>
+<td><p>1</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">proxies RStudio sessions within Jupyter, handling network traffic between users and RStudio servers</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/chartpress.html"><span class="std std-doc">jupyterhub/chartpress</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/chartpress/">chartpress</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/chartpress">4,436</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/traefik-proxy.html"><span class="std std-doc">jupyterhub/traefik-proxy</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-traefik-proxy/">jupyterhub-traefik-proxy</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-traefik-proxy">3,497</a></p></td>
+<td><p>1</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/firstuseauthenticator.html"><span class="std std-doc">jupyterhub/firstuseauthenticator</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-firstuseauthenticator/">jupyterhub-firstuseauthenticator</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-firstuseauthenticator">3,211</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users by letting them set passwords on first login</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/systemdspawner.html"><span class="std std-doc">jupyterhub/systemdspawner</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-systemdspawner/">jupyterhub-systemdspawner</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-systemdspawner">3,179</a></p></td>
+<td><p>3</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">spawns user notebook servers via systemd in JupyterHub multi-user environment</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/tmpauthenticator.html"><span class="std std-doc">jupyterhub/tmpauthenticator</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-tmpauthenticator/">jupyterhub-tmpauthenticator</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-tmpauthenticator">2,921</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users by granting temporary accounts without login and spawns notebook servers</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/repo2docker.html"><span class="std std-doc">jupyterhub/repo2docker</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyter-repo2docker/">jupyter-repo2docker</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-repo2docker">2,884</a></p></td>
+<td><p>14</p></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://quay.io/repository/jupyterhub/repo2docker">jupyterhub/repo2docker</a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/ltiauthenticator.html"><span class="std std-doc">jupyterhub/ltiauthenticator</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-ltiauthenticator/">jupyterhub-ltiauthenticator</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ltiauthenticator">1,725</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users and authorizes JupyterHub access via LTI</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/autodoc-traits.html"><span class="std std-doc">jupyterhub/autodoc-traits</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/autodoc-traits/">autodoc-traits</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/autodoc-traits">1,660</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/jupyter-remote-desktop-proxy.html"><span class="std std-doc">jupyterhub/jupyter-remote-desktop-proxy</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyter-remote-desktop-proxy/">jupyter-remote-desktop-proxy</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-remote-desktop-proxy">1,078</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://quay.io/repository/jupyterhub/jupyter-remote-desktop-proxy">jupyterhub/jupyter-remote-desktop-proxy</a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">proxies VNC traffic and launches desktop environments for users</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/sudospawner.html"><span class="std std-doc">jupyterhub/sudospawner</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/sudospawner/">sudospawner</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sudospawner">1,038</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">spawns single-user servers for other UNIX users via sudo</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/wrapspawner.html"><span class="std std-doc">jupyterhub/wrapspawner</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/wrapspawner/">wrapspawner</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/wrapspawner">928</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/gh-scoped-creds.html"><span class="std std-doc">jupyterhub/gh-scoped-creds</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/gh-scoped-creds/">gh-scoped-creds</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/gh-scoped-creds">721</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></span></p></td>
+<td><p>application</p></td>
+<td><p><span class="fa-brands fa-npm"></span> <a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterhub/binderhub-client">&#64;jupyterhub/binderhub-client</a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterhub/binderhub-client">554</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-binderhub">jupyterhub/k8s-binderhub</a></p></td>
+<td><p>225,601</p></td>
+<td></td>
+<td><p>mybinder.org</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/jupyterhub-sphinx-theme.html"><span class="std std-doc">jupyterhub/jupyterhub-sphinx-theme</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-sphinx-theme/">jupyterhub-sphinx-theme</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-sphinx-theme">373</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/pytest-jupyterhub.html"><span class="std std-doc">jupyterhub/pytest-jupyterhub</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/pytest-jupyterhub/">pytest-jupyterhub</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-jupyterhub">198</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/kerberosauthenticator.html"><span class="std std-doc">jupyterhub/kerberosauthenticator</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/jupyterhub-kerberosauthenticator/">jupyterhub-kerberosauthenticator</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kerberosauthenticator">139</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">authenticates users for JupyterHub via Kerberos</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/docker-image-cleaner.html"><span class="std std-doc">jupyterhub/docker-image-cleaner</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/docker-image-cleaner/">docker-image-cleaner</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/docker-image-cleaner">40</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://quay.io/repository/jupyterhub/docker-image-cleaner">jupyterhub/docker-image-cleaner</a></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/nbgitpuller-downloader-googledrive.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-googledrive</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/nbgitpuller-downloader-googledrive/">nbgitpuller-downloader-googledrive</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-googledrive">19</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/nbgitpuller-downloader-dropbox.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-dropbox</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/nbgitpuller-downloader-dropbox/">nbgitpuller-downloader-dropbox</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-dropbox">17</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/nbgitpuller-downloader-generic-web.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-generic-web</span></a></span></p></td>
+<td><p>package</p></td>
+<td><p><span class="fa-brands fa-python"></span> <a class="reference external" href="https://pypi.org/project/nbgitpuller-downloader-generic-web/">nbgitpuller-downloader-generic-web</a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-generic-web">15</a></p></td>
+<td><p>0</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/action-k3s-helm.html"><span class="std std-doc">jupyterhub/action-k3s-helm</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>8</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/action-k8s-namespace-report.html"><span class="std std-doc">jupyterhub/action-k8s-namespace-report</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>7</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/action-k8s-await-workloads.html"><span class="std std-doc">jupyterhub/action-k8s-await-workloads</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>4</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/action-major-minor-tag-calculator.html"><span class="std std-doc">jupyterhub/action-major-minor-tag-calculator</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>4</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/action-get-quayio-tags.html"><span class="std std-doc">jupyterhub/action-get-quayio-tags</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>1</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-other"><a class="reference internal" href="jupyterhub/dot.github.html"><span class="std std-doc">jupyterhub/.github</span></a></span></p></td>
+<td><p>other</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/binder-data.html"><span class="std std-doc">jupyterhub/binder-data</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>binder-data website</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-other"><a class="reference internal" href="jupyterhub/design.html"><span class="std std-doc">jupyterhub/design</span></a></span></p></td>
+<td><p>other</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/grafana-dashboards.html"><span class="std std-doc">jupyterhub/grafana-dashboards</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-deployment"><a class="reference internal" href="jupyterhub/helm-chart.html"><span class="std std-doc">jupyterhub/helm-chart</span></a></span></p></td>
+<td><p>deployment</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p>hub.jupyter.org/helm-chart/</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="jupyterhub/jupyterhub-container-images.html"><span class="std std-doc">jupyterhub/jupyterhub-container-images</span></a></span></p></td>
+<td><p>application</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-deployment"><a class="reference internal" href="jupyterhub/jupyterhub-deploy-docker.html"><span class="std std-doc">jupyterhub/jupyterhub-deploy-docker</span></a></span></p></td>
+<td><p>deployment</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-deployment"><a class="reference internal" href="jupyterhub/jupyterhub-deploy-teaching.html"><span class="std std-doc">jupyterhub/jupyterhub-deploy-teaching</span></a></span></p></td>
+<td><p>deployment</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/jupyterhub-python-repo-template.html"><span class="std std-doc">jupyterhub/jupyterhub-python-repo-template</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/mybinder-tools.html"><span class="std std-doc">jupyterhub/mybinder-tools</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-deployment"><a class="reference internal" href="jupyterhub/mybinder.org-deploy.html"><span class="std std-doc">jupyterhub/mybinder.org-deploy</span></a></span></p></td>
+<td><p>deployment</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://hub.docker.com/r/jupyterhub/mybinder.org-minesweeper">jupyterhub/mybinder.org-minesweeper</a></p></td>
+<td><p>18,348</p></td>
+<td></td>
+<td><p>mybinder.org</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/nbgitpuller-downloader-plugins.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-plugins</span></a></span></p></td>
+<td><p>package</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">Downloads untrusted URLs and extracts archives into JupyterHub user environments</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/pamela.html"><span class="std std-doc">jupyterhub/pamela</span></a></span></p></td>
+<td><p>package</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="reason">performs PAM authentication for user login</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="jupyterhub/pebble-helm-chart.html"><span class="std std-doc">jupyterhub/pebble-helm-chart</span></a></span></p></td>
+<td><p>application</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="jupyterhub/repo2docker-action.html"><span class="std std-doc">jupyterhub/repo2docker-action</span></a></span></p></td>
+<td><p>tooling</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="jupyterhub/the-littlest-jupyterhub.html"><span class="std std-doc">jupyterhub/the-littlest-jupyterhub</span></a></span></p></td>
+<td><p>package</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-deployment"><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></span></p></td>
+<td><p>deployment</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><p><span class="fa-brands fa-docker"></span> <a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-hub">jupyterhub/k8s-hub</a></p></td>
+<td><p>124,058,661</p></td>
+<td></td>
+<td><p>JupyterHub on Kubernetes</p></td>
+<td><p><span class="reason">authenticates users and spawns their notebook servers via JupyterHub</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="documentation-and-examples">
+<h3>Documentation and examples<a class="headerlink" href="#documentation-and-examples" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/dc5a304b4d685cb5a38b6e4c433e6ef5/jupyterhub-docs.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>repo</p></th>
+<th class="head"><p>kind</p></th>
+<th class="head"><p>live service</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyterhub/jupyterhub.github.io.html"><span class="std std-doc">jupyterhub/jupyterhub.github.io</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td><p>hub.jupyter.org landing page</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="jupyterhub/binder-billing.html"><span class="std std-doc">jupyterhub/binder-billing</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-example"><a class="reference internal" href="jupyterhub/jupyterhub-deploy-hpc.html"><span class="std std-doc">jupyterhub/jupyterhub-deploy-hpc</span></a></span></p></td>
+<td><p>example</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyterhub/jupyterhub-on-hadoop.html"><span class="std std-doc">jupyterhub/jupyterhub-on-hadoop</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyterhub/jupyterhub-the-hard-way.html"><span class="std std-doc">jupyterhub/jupyterhub-the-hard-way</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyterhub/mybinder.org-user-guide.html"><span class="std std-doc">jupyterhub/mybinder.org-user-guide</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyterhub/roadmap.html"><span class="std std-doc">jupyterhub/roadmap</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-documentation"><a class="reference internal" href="jupyterhub/team-compass.html"><span class="std std-doc">jupyterhub/team-compass</span></a></span></p></td>
+<td><p>documentation</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="packages">
+<h2>Packages<a class="headerlink" href="#packages" title="Link to this heading">#</a></h2>
+<p>Downloads are for the last month and include CI.</p>
+<section id="pypi">
+<h3>PyPI<a class="headerlink" href="#pypi" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/bcc300cf9940b4c124bbcc0edeb12183/jupyterhub-pypi.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>package</p></th>
+<th class="head"><p>repository</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>dependents</p></th>
+<th class="head"><p>last published</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyter-server-proxy/">jupyter-server-proxy</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyter-server-proxy.html"><span class="std std-doc">jupyterhub/jupyter-server-proxy</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-proxy">451,131</a></p></td>
+<td><p>195</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/simpervisor/">simpervisor</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/simpervisor.html"><span class="std std-doc">jupyterhub/simpervisor</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/simpervisor">434,920</a></p></td>
+<td><p>208</p></td>
+<td><p><span class="date">2023-05-18</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub/">jupyterhub</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyterhub.html"><span class="std std-doc">jupyterhub/jupyterhub</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub">260,478</a></p></td>
+<td><p>156</p></td>
+<td><p><span class="date">2026-11-05</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/escapism/">escapism</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/escapism.html"><span class="std std-doc">jupyterhub/escapism</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/escapism">175,967</a></p></td>
+<td><p>71</p></td>
+<td><p><span class="date">2025-12-11</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/oauthenticator/">oauthenticator</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/oauthenticator.html"><span class="std std-doc">jupyterhub/oauthenticator</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/oauthenticator">89,857</a></p></td>
+<td><p>18</p></td>
+<td><p><span class="date">2026-03-26</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/nbgitpuller/">nbgitpuller</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/nbgitpuller.html"><span class="std std-doc">jupyterhub/nbgitpuller</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller">25,586</a></p></td>
+<td><p>6</p></td>
+<td><p><span class="date">2026-03-31</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/dockerspawner/">dockerspawner</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/dockerspawner.html"><span class="std std-doc">jupyterhub/dockerspawner</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/dockerspawner">24,371</a></p></td>
+<td><p>10</p></td>
+<td><p><span class="date">2025-02-12</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-nativeauthenticator/">jupyterhub-nativeauthenticator</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/nativeauthenticator.html"><span class="std std-doc">jupyterhub/nativeauthenticator</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-nativeauthenticator">21,091</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="date">2024-09-17</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-idle-culler/">jupyterhub-idle-culler</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyterhub-idle-culler.html"><span class="std std-doc">jupyterhub/jupyterhub-idle-culler</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-idle-culler">15,786</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-06-16</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-kubespawner/">jupyterhub-kubespawner</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/kubespawner.html"><span class="std std-doc">jupyterhub/kubespawner</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kubespawner">15,220</a></p></td>
+<td><p>6</p></td>
+<td><p><span class="date">2026-07-16</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/batchspawner/">batchspawner</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/batchspawner.html"><span class="std std-doc">jupyterhub/batchspawner</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/batchspawner">8,938</a></p></td>
+<td><p>5</p></td>
+<td><p><span class="date">2024-03-19</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-ldapauthenticator/">jupyterhub-ldapauthenticator</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/ldapauthenticator.html"><span class="std std-doc">jupyterhub/ldapauthenticator</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ldapauthenticator">6,160</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2024-11-06</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyter-rsession-proxy/">jupyter-rsession-proxy</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyter-rsession-proxy.html"><span class="std std-doc">jupyterhub/jupyter-rsession-proxy</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-rsession-proxy">5,599</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="date">2026-05-12</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/chartpress/">chartpress</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/chartpress.html"><span class="std std-doc">jupyterhub/chartpress</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/chartpress">4,436</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-05-01</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-traefik-proxy/">jupyterhub-traefik-proxy</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/traefik-proxy.html"><span class="std std-doc">jupyterhub/traefik-proxy</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-traefik-proxy">3,497</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="date">2025-03-28</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-firstuseauthenticator/">jupyterhub-firstuseauthenticator</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/firstuseauthenticator.html"><span class="std std-doc">jupyterhub/firstuseauthenticator</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-firstuseauthenticator">3,211</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2025-03-28</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-systemdspawner/">jupyterhub-systemdspawner</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/systemdspawner.html"><span class="std std-doc">jupyterhub/systemdspawner</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-systemdspawner">3,179</a></p></td>
+<td><p>3</p></td>
+<td><p><span class="date">2024-10-20</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-tmpauthenticator/">jupyterhub-tmpauthenticator</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/tmpauthenticator.html"><span class="std std-doc">jupyterhub/tmpauthenticator</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-tmpauthenticator">2,921</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2023-05-22</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/jupyter-repo2docker/">jupyter-repo2docker</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/repo2docker.html"><span class="std std-doc">jupyterhub/repo2docker</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-repo2docker">2,884</a></p></td>
+<td><p>14</p></td>
+<td><p><span class="date">2026-04-23</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-ltiauthenticator/">jupyterhub-ltiauthenticator</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/ltiauthenticator.html"><span class="std std-doc">jupyterhub/ltiauthenticator</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ltiauthenticator">1,725</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-03-26</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/autodoc-traits/">autodoc-traits</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/autodoc-traits.html"><span class="std std-doc">jupyterhub/autodoc-traits</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/autodoc-traits">1,660</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-03-10</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyter-remote-desktop-proxy/">jupyter-remote-desktop-proxy</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyter-remote-desktop-proxy.html"><span class="std std-doc">jupyterhub/jupyter-remote-desktop-proxy</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-remote-desktop-proxy">1,078</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2025-04-11</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/sudospawner/">sudospawner</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/sudospawner.html"><span class="std std-doc">jupyterhub/sudospawner</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sudospawner">1,038</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2025-10-17</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/wrapspawner/">wrapspawner</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/wrapspawner.html"><span class="std std-doc">jupyterhub/wrapspawner</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/wrapspawner">928</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2022-03-02</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/gh-scoped-creds/">gh-scoped-creds</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/gh-scoped-creds.html"><span class="std std-doc">jupyterhub/gh-scoped-creds</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/gh-scoped-creds">721</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2022-04-20</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-sphinx-theme/">jupyterhub-sphinx-theme</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyterhub-sphinx-theme.html"><span class="std std-doc">jupyterhub/jupyterhub-sphinx-theme</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-sphinx-theme">373</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2023-09-19</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/pytest-jupyterhub/">pytest-jupyterhub</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/pytest-jupyterhub.html"><span class="std std-doc">jupyterhub/pytest-jupyterhub</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-jupyterhub">198</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2023-04-25</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyterhub-kerberosauthenticator/">jupyterhub-kerberosauthenticator</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/kerberosauthenticator.html"><span class="std std-doc">jupyterhub/kerberosauthenticator</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kerberosauthenticator">139</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-05-27</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/binderhub/">binderhub</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/binderhub">77</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2018-11-07</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/docker-image-cleaner/">docker-image-cleaner</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/docker-image-cleaner.html"><span class="std std-doc">jupyterhub/docker-image-cleaner</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/docker-image-cleaner">40</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2023-01-02</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/nbgitpuller-downloader-googledrive/">nbgitpuller-downloader-googledrive</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/nbgitpuller-downloader-googledrive.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-googledrive</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-googledrive">19</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2021-11-28</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/nbgitpuller-downloader-dropbox/">nbgitpuller-downloader-dropbox</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/nbgitpuller-downloader-dropbox.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-dropbox</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-dropbox">17</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2021-11-28</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://pypi.org/project/nbgitpuller-downloader-generic-web/">nbgitpuller-downloader-generic-web</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/nbgitpuller-downloader-generic-web.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-generic-web</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-generic-web">15</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2021-11-28</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://pypi.org/project/jupyter-theia-proxy/">jupyter-theia-proxy</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyter-server-proxy.html"><span class="std std-doc">jupyterhub/jupyter-server-proxy</span></a></p></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-theia-proxy">13</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2019-01-03</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="npm">
+<h3>npm<a class="headerlink" href="#npm" title="Link to this heading">#</a></h3>
+<p><a class="reference download internal" download="" href="../_downloads/0cd66ebb6037401940dd1046b813c5c9/jupyterhub-npm.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>package</p></th>
+<th class="head"><p>repository</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>dependents</p></th>
+<th class="head"><p>last published</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/configurable-http-proxy">configurable-http-proxy</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/configurable-http-proxy.html"><span class="std std-doc">jupyterhub/configurable-http-proxy</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=configurable-http-proxy">49,865</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="date">2026-10-31</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterhub/binderhub-client">&#64;jupyterhub/binderhub-client</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterhub/binderhub-client">554</a></p></td>
+<td><p>1</p></td>
+<td><p><span class="date">2025-09-09</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterhub/jupyter-server-proxy">&#64;jupyterhub/jupyter-server-proxy</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyter-server-proxy.html"><span class="std std-doc">jupyterhub/jupyter-server-proxy</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterhub/jupyter-server-proxy">158</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2026-09-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.npmjs.com/package/&#64;jupyterhub/binderhub-react-components">&#64;jupyterhub/binderhub-react-components</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterhub/binderhub-react-components">24</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2025-09-08</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.npmjs.com/package/jupyterhub-deps">jupyterhub-deps</a></p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyterhub.html"><span class="std std-doc">jupyterhub/jupyterhub</span></a></p></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=jupyterhub-deps">12</a></p></td>
+<td><p>0</p></td>
+<td><p><span class="date">2023-07-19</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="images">
+<h2>Images<a class="headerlink" href="#images" title="Link to this heading">#</a></h2>
+<p>Only Docker Hub has pull counts; they are all-time and include CI. The tag is <code class="docutils literal notranslate"><span class="pre">latest</span></code>, or the newest tag if there is no <code class="docutils literal notranslate"><span class="pre">latest</span></code>.</p>
+<p><a class="reference download internal" download="" href="../_downloads/b02f25e82ebf979ed0db425b8536046c/jupyterhub-images.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>image</p></th>
+<th class="head"><p>registry</p></th>
+<th class="head"><p>tag</p></th>
+<th class="head"><p>repository</p></th>
+<th class="head"><p>all-time pulls</p></th>
+<th class="head"><p>last published</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-hub">jupyterhub/k8s-hub</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>5.0.0-0.dev.git.7590.h748aa539</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td><p>124,058,661</p></td>
+<td><p><span class="date">2026-11-05</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-network-tools">jupyterhub/k8s-network-tools</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>4.4.4</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td><p>118,284,530</p></td>
+<td><p><span class="date">2026-10-20</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-singleuser-sample">jupyterhub/k8s-singleuser-sample</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>5.0.0-0.dev.git.7590.h748aa539</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td><p>66,505,461</p></td>
+<td><p><span class="date">2026-11-05</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/configurable-http-proxy">jupyterhub/configurable-http-proxy</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>latest</p></td>
+<td><p><a class="reference internal" href="jupyterhub/configurable-http-proxy.html"><span class="std std-doc">jupyterhub/configurable-http-proxy</span></a></p></td>
+<td><p>51,138,260</p></td>
+<td><p><span class="date">2026-10-31</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/singleuser">jupyterhub/singleuser</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td><p>20,285,386</p></td>
+<td><p><span class="date">2026-11-04</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/jupyterhub">jupyterhub/jupyterhub</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>latest</p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyterhub.html"><span class="std std-doc">jupyterhub/jupyterhub</span></a></p></td>
+<td><p>7,323,100</p></td>
+<td><p><span class="date">2026-11-04</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-image-awaiter">jupyterhub/k8s-image-awaiter</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>4.4.4</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td><p>1,876,305</p></td>
+<td><p><span class="date">2026-10-20</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-secret-sync">jupyterhub/k8s-secret-sync</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>5.0.0-0.dev.git.7584.h45b578df</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td><p>811,896</p></td>
+<td><p><span class="date">2026-11-02</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-binderhub">jupyterhub/k8s-binderhub</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>1.0.0-0.dev.git.3987.h1b454db5</p></td>
+<td><p><a class="reference internal" href="jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></p></td>
+<td><p>225,601</p></td>
+<td><p><span class="date">2026-11-01</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-image-cleaner">jupyterhub/k8s-image-cleaner</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>0.2.0-n768.h13978ab</p></td>
+<td></td>
+<td><p>184,238</p></td>
+<td><p><span class="date">2021-09-22</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/jupyterhub-onbuild">jupyterhub/jupyterhub-onbuild</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td><p>115,518</p></td>
+<td><p><span class="date">2024-10-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-pre-puller">jupyterhub/k8s-pre-puller</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>a21cecb</p></td>
+<td></td>
+<td><p>108,324</p></td>
+<td><p><span class="date">2018-02-05</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-hub-slim">jupyterhub/k8s-hub-slim</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>5.0.0-0.dev.git.7590.h748aa539</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td><p>65,073</p></td>
+<td><p><span class="date">2026-11-05</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/jupyterhub-demo">jupyterhub/jupyterhub-demo</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td><p>47,114</p></td>
+<td><p><span class="date">2026-11-04</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/binderhub-ci-repos_minimal-dockerfile">jupyterhub/binderhub-ci-repos_minimal-dockerfile</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td><p>35,880</p></td>
+<td><p><span class="date">2025-12-25</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/mybinder.org-minesweeper">jupyterhub/mybinder.org-minesweeper</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>2020.12.4-0.dev.git.7753.h0486a7bb</p></td>
+<td><p><a class="reference internal" href="jupyterhub/mybinder.org-deploy.html"><span class="std std-doc">jupyterhub/mybinder.org-deploy</span></a></p></td>
+<td><p>18,348</p></td>
+<td><p><span class="date">2026-11-02</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/systemuser">jupyterhub/systemuser</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td><p>18,261</p></td>
+<td><p><span class="date">2017-08-11</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/k8s-pod-culler">jupyterhub/k8s-pod-culler</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>0.7.0</p></td>
+<td></td>
+<td><p>17,688</p></td>
+<td><p><span class="date">2018-09-03</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/mybinder.org-tc-init">jupyterhub/mybinder.org-tc-init</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>2020.12.4-0.dev.git.7606.hffbc9140</p></td>
+<td><p><a class="reference internal" href="jupyterhub/mybinder.org-deploy.html"><span class="std std-doc">jupyterhub/mybinder.org-deploy</span></a></p></td>
+<td><p>16,030</p></td>
+<td><p><span class="date">2026-08-24</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/mybinder.org-analytics-publisher">jupyterhub/mybinder.org-analytics-publisher</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>2020.12.4-0.dev.git.7753.h0486a7bb</p></td>
+<td><p><a class="reference internal" href="jupyterhub/mybinder.org-deploy.html"><span class="std std-doc">jupyterhub/mybinder.org-deploy</span></a></p></td>
+<td><p>13,546</p></td>
+<td><p><span class="date">2026-11-02</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/mybinder.org-federation-redirect">jupyterhub/mybinder.org-federation-redirect</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>2020.12.4-0.dev.git.7753.h0486a7bb</p></td>
+<td><p><a class="reference internal" href="jupyterhub/mybinder.org-deploy.html"><span class="std std-doc">jupyterhub/mybinder.org-deploy</span></a></p></td>
+<td><p>12,815</p></td>
+<td><p><span class="date">2026-11-02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/mybinder.org-proxy-patches">jupyterhub/mybinder.org-proxy-patches</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>2020.12.4-n489.hb4f9ab6</p></td>
+<td></td>
+<td><p>7,587</p></td>
+<td><p><span class="date">2021-07-02</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://hub.docker.com/r/jupyterhub/mybinder.org-rsyslog">jupyterhub/mybinder.org-rsyslog</a></p></td>
+<td><p>docker.io</p></td>
+<td><p>2020.12.4-0.dev.git.7606.hffbc9140</p></td>
+<td><p><a class="reference internal" href="jupyterhub/mybinder.org-deploy.html"><span class="std std-doc">jupyterhub/mybinder.org-deploy</span></a></p></td>
+<td><p>931</p></td>
+<td><p><span class="date">2026-08-24</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/configurable-http-proxy">jupyterhub/configurable-http-proxy</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>latest</p></td>
+<td><p><a class="reference internal" href="jupyterhub/configurable-http-proxy.html"><span class="std std-doc">jupyterhub/configurable-http-proxy</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-10-31</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/docker-image-cleaner">jupyterhub/docker-image-cleaner</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>1.0.0-beta.3</p></td>
+<td><p><a class="reference internal" href="jupyterhub/docker-image-cleaner.html"><span class="std std-doc">jupyterhub/docker-image-cleaner</span></a></p></td>
+<td></td>
+<td><p><span class="date">2023-01-02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/jupyter-remote-desktop-proxy">jupyterhub/jupyter-remote-desktop-proxy</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>latest</p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyter-remote-desktop-proxy.html"><span class="std std-doc">jupyterhub/jupyter-remote-desktop-proxy</span></a></p></td>
+<td></td>
+<td><p><span class="date">2025-04-11</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/jupyterhub">jupyterhub/jupyterhub</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>latest</p></td>
+<td><p><a class="reference internal" href="jupyterhub/jupyterhub.html"><span class="std std-doc">jupyterhub/jupyterhub</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-11-04</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/jupyterhub-demo">jupyterhub/jupyterhub-demo</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td></td>
+<td><p><span class="date">2026-11-04</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/jupyterhub-onbuild">jupyterhub/jupyterhub-onbuild</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td></td>
+<td><p><span class="date">2024-10-21</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/k8s-binderhub">jupyterhub/k8s-binderhub</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>1.0.0-0.dev.git.3987.h1b454db5</p></td>
+<td><p><a class="reference internal" href="jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-11-01</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/k8s-hub">jupyterhub/k8s-hub</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>5.0.0-0.dev.git.7590.h748aa539</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-11-05</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/k8s-hub-slim">jupyterhub/k8s-hub-slim</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>5.0.0-0.dev.git.7590.h748aa539</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-11-05</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/k8s-image-awaiter">jupyterhub/k8s-image-awaiter</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>4.4.4</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-10-20</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/k8s-network-tools">jupyterhub/k8s-network-tools</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>4.4.4</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-10-20</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/k8s-secret-sync">jupyterhub/k8s-secret-sync</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>5.0.0-0.dev.git.7584.h45b578df</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-11-02</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/k8s-singleuser-sample">jupyterhub/k8s-singleuser-sample</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>5.0.0-0.dev.git.7590.h748aa539</p></td>
+<td><p><a class="reference internal" href="jupyterhub/zero-to-jupyterhub-k8s.html"><span class="std std-doc">jupyterhub/zero-to-jupyterhub-k8s</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-11-05</span></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/repo2docker">jupyterhub/repo2docker</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>latest</p></td>
+<td><p><a class="reference internal" href="jupyterhub/repo2docker.html"><span class="std std-doc">jupyterhub/repo2docker</span></a></p></td>
+<td></td>
+<td><p><span class="date">2026-04-23</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://quay.io/repository/jupyterhub/singleuser">jupyterhub/singleuser</a></p></td>
+<td><p>quay.io</p></td>
+<td><p>latest</p></td>
+<td></td>
+<td></td>
+<td><p><span class="date">2026-11-04</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

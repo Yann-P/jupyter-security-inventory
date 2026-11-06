@@ -1,0 +1,35 @@
+# jupytercon\/jupytercon2025\-developingextensions
+
+JupyterCon 2025 Workshop\: Extension Development for Everyone\! Materials and website\.
+
+documentation · [on GitHub](https://github.com/jupytercon/jupytercon2025-developingextensions) · scanned at commit [cd76a2d](https://github.com/jupytercon/jupytercon2025-developingextensions/tree/cd76a2db4952f5179b14096bff7366f067cdb3ab)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** JupyterCon 2025 workshop website
+- **Security boundary:** no
+- **Why these labels:** The repository contains workshop materials\, a website with \.md files\, and a CI workflow deploying to GitHub Pages\, indicating its primary purpose is documentation\/tutorial\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request\_target, push, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag. Third-party, not pinned: prefix\-dev\/setup\-pixi\@v0\.8\.8, readthedocs\/actions\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/deploy\-pages\@v4, actions\/upload\-pages\-artifact\@v3, prefix\-dev\/setup\-pixi\@v0\.8\.8, readthedocs\/actions\@v1
+- **Files:** 30: 13 docs, 7 config, 5 media, 4 other, 1 web

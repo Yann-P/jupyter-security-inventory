@@ -1,0 +1,34 @@
+# jupyter\/kernel\_gateway\_demos
+
+Demos associated with the kernel gateway incubator project
+
+example · [on GitHub](https://github.com/jupyter/kernel_gateway_demos) · scanned at commit [cf92ed7](https://github.com/jupyter/kernel_gateway_demos/tree/cf92ed7115390c410b50487b490ec92a55fc22f0)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains examples and demos for the Jupyter Kernel Gateway\, as indicated by the README title and folder structure with demos like cf\_demo\, microservice\_demo\, and node\_client\_example\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 73: 31 other, 14 code, 12 docs, 10 config, 5 notebook, 1 web

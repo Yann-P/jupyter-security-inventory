@@ -1,0 +1,35 @@
+# jupyterlab\/jupyterlab\-demo
+
+Demonstrations of JupyterLab
+
+example · [on GitHub](https://github.com/jupyterlab/jupyterlab-demo) · scanned at commit [fe0c447](https://github.com/jupyterlab/jupyterlab-demo/tree/fe0c447c1af3faa361075c2a79f1d9dfb9613ffd)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains Jupyter notebooks\, data files\, and slides demonstrating JupyterLab\, as stated in the README and its name\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, pull\_request\_target, push
+- **Publishes:** nothing
+- **Secrets:** github\_token
+- **Actions:** 3, 3 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v1
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, mamba\-org\/setup\-micromamba\@v1
+- **Files:** 40: 8 other, 8 media, 7 config, 6 docs, 6 notebook, 3 code, 2 data

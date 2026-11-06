@@ -1,0 +1,35 @@
+# jupyterhub\/team\-compass
+
+A repository for team interaction\, syncing\, and handling meeting notes across the JupyterHub ecosystem\.
+
+documentation · [on GitHub](https://github.com/jupyterhub/team-compass) · scanned at commit [06b322e](https://github.com/jupyterhub/team-compass/tree/06b322e38d554d87f0ce2e85a0e461d44e74fdcf)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a meta\-repository for team interaction and meeting notes\, with 136 documentation files and a README indicating most content lives on the JupyterHub Team Compass website\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 5, 4 by tag, 1 by branch. Third-party, not pinned: JasonEtco\/create\-an\-issue\@v2, manics\/action\-sphinx\-linkcheck\-summary\@main
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** JasonEtco\/create\-an\-issue\@v2, actions\/checkout\@v4, actions\/checkout\@v6, actions\/setup\-python\@v6, manics\/action\-sphinx\-linkcheck\-summary\@main
+- **Files:** 154: 136 docs, 6 config, 5 code, 3 other, 2 media, 1 data, 1 notebook

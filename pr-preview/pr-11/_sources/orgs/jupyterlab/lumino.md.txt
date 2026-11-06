@@ -1,0 +1,35 @@
+# jupyterlab\/lumino
+
+Lumino is a library for building interactive web applications 
+
+package · [on GitHub](https://github.com/jupyterlab/lumino) · scanned at commit [44aea97](https://github.com/jupyterlab/lumino/tree/44aea979d5d2c77665d651383d27179a63596957)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-npm} [\@lumino\/coreutils](https://www.npmjs.com/package/@lumino/coreutils), [841,017](https://npm-stat.com/charts.html?package=@lumino/coreutils) downloads/month, 1,494 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/algorithm](https://www.npmjs.com/package/@lumino/algorithm), [758,937](https://npm-stat.com/charts.html?package=@lumino/algorithm) downloads/month, 1,501 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/signaling](https://www.npmjs.com/package/@lumino/signaling), [727,000](https://npm-stat.com/charts.html?package=@lumino/signaling) downloads/month, 1,473 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/disposable](https://www.npmjs.com/package/@lumino/disposable), [714,819](https://npm-stat.com/charts.html?package=@lumino/disposable) downloads/month, 1,472 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/virtualdom](https://www.npmjs.com/package/@lumino/virtualdom), [712,755](https://npm-stat.com/charts.html?package=@lumino/virtualdom) downloads/month, 1,459 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/domutils](https://www.npmjs.com/package/@lumino/domutils), [711,887](https://npm-stat.com/charts.html?package=@lumino/domutils) downloads/month, 1,459 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/commands](https://www.npmjs.com/package/@lumino/commands), [709,509](https://npm-stat.com/charts.html?package=@lumino/commands) downloads/month, 1,458 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/properties](https://www.npmjs.com/package/@lumino/properties), [700,179](https://npm-stat.com/charts.html?package=@lumino/properties) downloads/month, 1,459 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/keyboard](https://www.npmjs.com/package/@lumino/keyboard), [699,324](https://npm-stat.com/charts.html?package=@lumino/keyboard) downloads/month, 1,459 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/messaging](https://www.npmjs.com/package/@lumino/messaging), [645,801](https://npm-stat.com/charts.html?package=@lumino/messaging) downloads/month, 1,393 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/widgets](https://www.npmjs.com/package/@lumino/widgets), [643,170](https://npm-stat.com/charts.html?package=@lumino/widgets) downloads/month, 1,044 dependents, last published 2026-10-08; []{.fa-brands .fa-npm} [\@lumino\/collections](https://www.npmjs.com/package/@lumino/collections), [640,620](https://npm-stat.com/charts.html?package=@lumino/collections) downloads/month, 1,394 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/dragdrop](https://www.npmjs.com/package/@lumino/dragdrop), [617,969](https://npm-stat.com/charts.html?package=@lumino/dragdrop) downloads/month, 1,369 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/polling](https://www.npmjs.com/package/@lumino/polling), [501,916](https://npm-stat.com/charts.html?package=@lumino/polling) downloads/month, 1,105 dependents, last published 2026-07-03; []{.fa-brands .fa-npm} [\@lumino\/application](https://www.npmjs.com/package/@lumino/application), [322,301](https://npm-stat.com/charts.html?package=@lumino/application) downloads/month, 725 dependents, last published 2026-10-08; []{.fa-brands .fa-npm} [\@lumino\/datagrid](https://www.npmjs.com/package/@lumino/datagrid), [159,339](https://npm-stat.com/charts.html?package=@lumino/datagrid) downloads/month, 37 dependents, last published 2026-10-08; []{.fa-brands .fa-npm} [\@lumino\/default\-theme](https://www.npmjs.com/package/@lumino/default-theme), [32,367](https://npm-stat.com/charts.html?package=@lumino/default-theme) downloads/month, 19 dependents, last published 2026-10-08; []{.fa-brands .fa-npm} [\@lumino\/buildutils](https://www.npmjs.com/package/@lumino/buildutils), [147](https://npm-stat.com/charts.html?package=@lumino/buildutils) downloads/month, 0 dependents, last published 2025-11-13
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Lumino is a set of JavaScript packages providing widgets\, layouts\, events\, and data structures\, as evidenced by the README and the packages\/ directory with multiple package\.json files\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlab\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** partial. The latest version of \@lumino\/buildutils \(2025\-11\-13\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 10, run on pull\_request, pull\_request\_target, push, release, schedule, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 10, 10 by tag. Third-party, not pinned: apache\/skywalking\-eyes\@v0\.8\.0, dessant\/lock\-threads\@v6, toshimaru\/auto\-author\-assign\@v3\.0\.3
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/cache\@v6, actions\/checkout\@v7, actions\/create\-github\-app\-token\@v3, actions\/setup\-node\@v6, apache\/skywalking\-eyes\@v0\.8\.0, dessant\/lock\-threads\@v6, github\/codeql\-action\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, toshimaru\/auto\-author\-assign\@v3\.0\.3
+- **Files:** 465: 250 code, 121 config, 43 web, 32 docs, 13 other, 5 media, 1 notebook

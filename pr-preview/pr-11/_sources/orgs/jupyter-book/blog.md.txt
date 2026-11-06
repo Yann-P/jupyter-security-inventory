@@ -1,0 +1,35 @@
+# jupyter\-book\/blog
+
+Blog for the Jupyter Book subproject
+
+documentation · [on GitHub](https://github.com/jupyter-book/blog) · scanned at commit [f9d36eb](https://github.com/jupyter-book/blog/tree/f9d36eb0ff89560abee9051e9b60a14940cdb522)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** blog\.jupyterbook\.org
+- **Security boundary:** no
+- **Why these labels:** The repository contains a MyST site under docs\/ with blog posts\, and the README states it is the Jupyter Book blog served at blog\.jupyterbook\.org\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push, schedule, workflow\_dispatch
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/setup\-node\@v4, actions\/upload\-pages\-artifact\@v3
+- **Files:** 49: 31 docs, 10 media, 6 config, 1 other, 1 code

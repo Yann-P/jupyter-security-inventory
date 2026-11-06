@@ -1,0 +1,35 @@
+# jupyter\-book\/github\-action\-playground
+
+A fork of my playground for GHA
+
+tooling · [on GitHub](https://github.com/jupyter-book/github-action-playground) · scanned at commit [0491103](https://github.com/jupyter-book/github-action-playground/tree/0491103009f6ea6a8fb0970961cc75b873f01d31) · fork
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository contains only GitHub Actions workflows and a custom action \'clinder\'\, indicating it is a playground for testing CI automation\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 2, run on push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/checkout\@v5
+- **Files:** 9: 5 config, 4 code

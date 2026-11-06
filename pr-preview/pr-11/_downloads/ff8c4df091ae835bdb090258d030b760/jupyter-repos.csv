@@ -1,0 +1,37 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+jupyter/jupyter_core,package,PYPI:jupyter-core,77056466,11262,,,2,,
+jupyter/nbformat,package,PYPI:nbformat,76592205,8382,,,,,
+jupyter/jupyter_client,package,PYPI:jupyter-client,71447300,9130,,,1,,
+jupyter/nbclient,package,PYPI:nbclient,50729821,6399,,,,,
+jupyter/nbconvert,package,PYPI:nbconvert,49944679,6159,,,,,
+jupyter/terminado,package,PYPI:terminado,29806864,5263,,,,,executes untrusted terminal input received over websockets
+jupyter/jupyter_events,package,PYPI:jupyter-events,28962752,5226,,,,,
+jupyter/notebook,package,PYPI:notebook,28757551,3034,,,,,executes untrusted user code in kernels and serves notebook web interface
+jupyter/notebook_shim,package,PYPI:notebook-shim,27317089,4481,,,,,
+jupyter/jupyter_console,package,PYPI:jupyter-console,12492174,2011,,,,,executes user-supplied code via Jupyter kernels in the console
+jupyter/jupyter,package,PYPI:jupyter,12288648,1883,,,,,
+jupyter/nbclassic,package,PYPI:nbclassic,1980454,550,,,,,
+jupyter/testpath,package,PYPI:testpath,1460262,145,,,,,
+jupyter/jupyter-packaging,package,PYPI:jupyter-packaging,516852,80,,,10,,
+jupyter/nbdime,package,PYPI:nbdime,174529,52,,,,,
+jupyter/jupyter-sphinx,package,PYPI:jupyter-sphinx,60358,10,,,,,
+jupyter/telemetry,package,PYPI:jupyter-telemetry,35634,27,,,,,
+jupyter/nbgrader,package,PYPI:nbgrader,11171,17,,,,,executes and grades user-submitted Jupyter notebooks in multi-user deployments
+jupyter/jupyter_kernel_test,package,PYPI:jupyter-kernel-test,7064,0,,,,,
+jupyter/sphinxcontrib_github_alt,package,PYPI:sphinxcontrib_github_alt,2857,0,,,,,
+jupyter/nbviewer,application,PYPI:nbviewer,145,1,docker.io/jupyter/nbviewer,2835089,,nbviewer.org,renders untrusted notebook content received over the network
+jupyter/echo_kernel,example,PYPI:echo-kernel,67,0,,,,,
+jupyter/papyri,package,PYPI:papyri,21,0,,,,,
+jupyter/pr-triage-board-bot,tooling,,,,,,1,,
+jupyter/atom-notebook,package,,,,,,,,
+jupyter/cdn.jupyter.org,deployment,,,,docker.io/jupyter/cdn.jupyter.org,1397,,cdn.jupyter.org,
+jupyter/cookiecutter-docker-stacks,tooling,,,,,,,,
+jupyter/design,other,,,,,,,,
+jupyter/docker-stacks,application,,,,docker.io/jupyter/scipy-notebook,93375621,,,
+jupyter/github-data,application,,,,,,,jupyter.org/github-data,
+jupyter/jvm-magics,package,,,,,,,,
+jupyter/jvm-repr,package,,,,,,,,
+jupyter/nbmanager,tooling,,,,,,,,
+jupyter/nbviewer.org-deploy,deployment,,,,,,,nbviewer.jupyter.org,
+jupyter/schema,package,,,,,,,schema.jupyter.org,
+jupyter/team-compass-template,tooling,,,,,,,,

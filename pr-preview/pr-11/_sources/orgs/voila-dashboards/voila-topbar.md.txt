@@ -1,0 +1,35 @@
+# voila\-dashboards\/voila\-topbar
+
+A Voila top bar extension\.
+
+package · [on GitHub](https://github.com/voila-dashboards/voila-topbar) · scanned at commit [8bd6d01](https://github.com/voila-dashboards/voila-topbar/tree/8bd6d01541ec83abef33baf1e207c0c075a9b8ff)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [voila\-topbar](https://pypi.org/project/voila-topbar/), [376](https://pypistats.org/packages/voila-topbar) downloads/month, 3 dependents, last published 2023-08-22; []{.fa-brands .fa-npm} [voila\_topbar](https://www.npmjs.com/package/voila_topbar), [7](https://npm-stat.com/charts.html?package=voila_topbar) downloads/month, 0 dependents, last published 2023-08-22
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository defines a Voila extension package \(published as PYPI\:voila\-topbar and NPM\:voila\_topbar\) that adds a configurable top bar to dashboards\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of voila\-dashboards\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of voila\-topbar \(2023\-08\-22\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of voila\_topbar \(2023\-08\-22\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of voila\-topbar \(2023\-08\-22\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 7, 7 by tag
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyterlab
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v3, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v3, actions\/setup\-python\@v4, actions\/upload\-artifact\@v3, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 27: 13 config, 6 code, 3 other, 3 docs, 2 web

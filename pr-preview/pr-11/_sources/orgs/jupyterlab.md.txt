@@ -1,0 +1,120 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# jupyterlab
+
+[github.com/jupyterlab](https://github.com/jupyterlab) has 46 public repositories: 26 publish a package, 3 are security boundaries and 1 deploys a live service.
+
+[Security topics (5)](#security-topics) · [Repositories (46)](#repositories) · [Packages (214)](#packages)
+
+## Security topics
+
+Each topic checks one practice in every repository. Open a topic to see which repositories still need work.
+
+{download}`Download CSV </_generated/downloads/jupyterlab-topics.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlab-topics.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+### Software
+
+{download}`Download CSV </_generated/downloads/jupyterlab-repos.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlab-repos.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### Documentation and examples
+
+{download}`Download CSV </_generated/downloads/jupyterlab-docs.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlab-docs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Packages
+
+Downloads are for the last month and include CI.
+
+### PyPI
+
+{download}`Download CSV </_generated/downloads/jupyterlab-pypi.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlab-pypi.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+### npm
+
+{download}`Download CSV </_generated/downloads/jupyterlab-npm.csv>`
+
+```{csv-table}
+:file: /_generated/jupyterlab-npm.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+```{toctree}
+:hidden:
+
+jupyterlab/jupyterlab_pygments
+jupyterlab/jupyterlab
+jupyterlab/jupyterlab_server
+jupyterlab/jupyter-builder
+jupyterlab/lumino
+jupyterlab/jupyter-collaboration
+jupyterlab/hatch-jupyter-builder
+jupyterlab/jupyter-ai
+jupyterlab/hatch-nodejs-version
+jupyterlab/jupyterlab-git
+jupyterlab/eslint-plugin
+jupyterlab/jupyter-chat
+jupyterlab/pytest-check-links
+jupyterlab/language-packs
+jupyterlab/jupyter-renderers
+jupyterlab/jupyterlab-latex
+jupyterlab/jupyterlab-github
+jupyterlab/jupyterlab-translate
+jupyterlab/plugin-playground
+jupyterlab/jupyter-ai-lite
+jupyterlab/ui-profiler
+jupyterlab/jupyterlab-hdf5
+jupyterlab/pull-requests
+jupyterlab/jupyterlab-commenting
+jupyterlab/jupyterlab_apod
+jupyterlab/extension-examples
+jupyterlab/maintainer-tools
+jupyterlab/dot.github
+jupyterlab/assets
+jupyterlab/benchmarks
+jupyterlab/extension-cookiecutter-js
+jupyterlab/extension-cookiecutter-ts
+jupyterlab/extension-template
+jupyterlab/frontends-team-compass
+jupyterlab/jupytercon-jupyterlab-training
+jupyterlab/jupytercon-jupyterlab-tutorial
+jupyterlab/jupyterlab-demo
+jupyterlab/jupyterlab-desktop
+jupyterlab/jupyterlab-probot
+jupyterlab/language-pack-cookiecutter
+jupyterlab/richoutput-js
+jupyterlab/scipy2018-jupyterlab-tutorial
+jupyterlab/scipy2019-jupyterlab-tutorial
+jupyterlab/triage-automation
+jupyterlab/ux-research
+jupyterlab/vscode-config-template
+```

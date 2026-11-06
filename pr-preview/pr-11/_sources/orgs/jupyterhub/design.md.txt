@@ -1,0 +1,34 @@
+# jupyterhub\/design
+
+A collection of design material for JupyterHub and related projects
+
+other · [on GitHub](https://github.com/jupyterhub/design) · scanned at commit [a037b74](https://github.com/jupyterhub/design/tree/a037b7487f24e3735bd0b534d55823fedfcd8edc)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains only branding assets\, logos\, and a comic for JupyterHub\/Binder with a build script for assets\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 79: 74 media, 2 other, 1 config, 1 docs, 1 code

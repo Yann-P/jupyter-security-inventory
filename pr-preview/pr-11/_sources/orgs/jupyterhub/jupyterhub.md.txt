@@ -1,0 +1,37 @@
+# jupyterhub\/jupyterhub
+
+Multi\-user server for Jupyter notebooks
+
+application · [on GitHub](https://github.com/jupyterhub/jupyterhub) · scanned at commit [41fffb9](https://github.com/jupyterhub/jupyterhub/tree/41fffb935326c9e732d999950fd56beb9bc9fbec)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterhub](https://pypi.org/project/jupyterhub/), [260,478](https://pypistats.org/packages/jupyterhub) downloads/month, 156 dependents, last published 2026-11-05; []{.fa-brands .fa-npm} [jupyterhub\-deps](https://www.npmjs.com/package/jupyterhub-deps), [12](https://npm-stat.com/charts.html?package=jupyterhub-deps) downloads/month, 0 dependents, last published 2023-07-19
+- **Container images:**
+  - [jupyterhub\/jupyterhub](https://hub.docker.com/r/jupyterhub/jupyterhub) on docker.io, 7,323,100 pulls, last published 2026-11-04
+  - [jupyterhub\/jupyterhub](https://quay.io/repository/jupyterhub/jupyterhub) on quay.io, last published 2026-11-04
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it authenticates users\, proxies traffic\, and spawns notebook servers
+- **Why these labels:** JupyterHub is a multi\-user server for Jupyter notebooks\, as stated in its description and README\, and its codebase includes server\, authentication\, proxying\, and spawning modules\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via pre\-commit. Pre\-commit hook\, and CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/jupyterhub/jupyterhub/blob/41fffb935326c9e732d999950fd56beb9bc9fbec/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via repository. Has its own SECURITY\.md\. Files: [SECURITY\.md](https://github.com/jupyterhub/jupyterhub/blob/41fffb935326c9e732d999950fd56beb9bc9fbec/SECURITY.md)
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** missing. The latest version of jupyterhub\-deps \(2023\-07\-19\) did not use trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterhub \(2026\-11\-05\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 5, run on issues, pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 9, 8 by commit, 1 by branch. Third-party, not pinned: manics\/action\-sphinx\-linkcheck\-summary\@main
+- **Build requirements:** setuptools, setuptools\-scm
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/download\-artifact\@9000827, actions\/setup\-node\@949feb2, actions\/setup\-python\@6d4fd22, actions\/upload\-artifact\@cf430e0, codecov\/codecov\-action\@303a32d, dessant\/support\-requests\@0432088, manics\/action\-sphinx\-linkcheck\-summary\@main, pypa\/gh\-action\-pypi\-publish\@7245906
+- **Files:** 429: 203 code, 111 docs, 37 media, 33 web, 25 config, 18 other, 2 notebook

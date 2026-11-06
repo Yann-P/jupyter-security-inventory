@@ -1,0 +1,34 @@
+# jupyter\-book\/mystmd\-quickstart
+
+Repository to be used in the mystjs quickstart guide
+
+documentation · [on GitHub](https://github.com/jupyter-book/mystmd-quickstart) · scanned at commit [caadbd8](https://github.com/jupyter-book/mystmd-quickstart/tree/caadbd885c2dee8a02b38ead4049d900678dc385)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains only tutorial files \(README\, markdown\, notebook\, images\) with no code\, CI\, or packages\, explicitly stated as not a good example and for following a quickstart guide\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 13: 8 media, 3 docs, 1 other, 1 notebook

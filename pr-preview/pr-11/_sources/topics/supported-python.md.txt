@@ -1,0 +1,50 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# Supported Python
+
+Do the repository\'s PyPI packages require a Python that still gets security fixes\?
+
+It applies to 139 repositories: 7 done, 0 partial and 132 missing. 299 are not applicable and left out of the tables.
+
+We read from PyPI the Requires\-Python of the latest release of each PyPI package\, the Python versions pip and uv install it on\, and find the oldest one it allows\. A release without Requires\-Python installs on any Python\. We compare with the day CPython stops shipping security fixes for that version\, as listed on peps\.python\.org\, about five years after its release\. This is what the package claims\: its CI may test only newer versions\, and its dependencies may need a newer one\.
+
+- [done]{.status .status-done} The latest release of each of its PyPI packages requires a Python that still gets security fixes\.
+- [partial]{.status .status-partial} Some of its PyPI packages still allow a Python that no longer gets security fixes\, and some don\'t\.
+- [missing]{.status .status-missing} All its PyPI packages still allow a Python that no longer gets security fixes\.
+- [n\/a]{.status .status-na} It has no PyPI package\.
+
+## By organization
+
+{download}`Download CSV </_generated/downloads/topic-supported-python-orgs.csv>`
+
+```{csv-table}
+:file: /_generated/topic-supported-python-orgs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+{download}`Download CSV </_generated/downloads/topic-supported-python-repos.csv>`
+
+```{csv-table}
+:file: /_generated/topic-supported-python-repos.csv
+:header-rows: 1
+:class: sphinx-datatable filter-by-org
+```
+
+## Over time
+
+The days the numbers changed.
+
+{download}`Download CSV </_generated/downloads/topic-supported-python-history.csv>`
+
+```{csv-table}
+:file: /_generated/topic-supported-python-history.csv
+:header-rows: 1
+:class: sphinx-datatable
+```

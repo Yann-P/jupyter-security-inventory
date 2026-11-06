@@ -1,0 +1,22 @@
+repo,kind,live service
+jupyter-book/blog,documentation,blog.jupyterbook.org
+jupyter-book/demo-scipy-2025,example,demo-scipy-2025 website
+jupyter-book/example-outputs,documentation,jupyter.org/example-outputs
+jupyter-book/example-python-plugin,example,example-python-plugin website
+jupyter-book/jupyterbook.org,documentation,jupyterbook.org
+jupyter-book/myst-enhancement-proposals,documentation,mep.mystmd.org
+jupyter-book/team-compass,documentation,jupyterbook.org/compass
+jupyter-book/workshop-template,example,jupyter-book.github.io/workshop-template
+jupyter-book/book-theme-tailwind-quickstart,example,
+jupyter-book/example-js-anywidget,example,
+jupyter-book/example-js-plugin,example,
+jupyter-book/example-landing-pages,example,
+jupyter-book/example-multi-language-book,example,
+jupyter-book/example-stylesheets,example,
+jupyter-book/example-widgets,example,
+jupyter-book/jupyterlab-myst-quickstart,example,
+jupyter-book/legacy-demo-book,documentation,
+jupyter-book/mystmd-quickstart,documentation,
+jupyter-book/renaissance2026-myst,documentation,
+jupyter-book/test-repo,documentation,
+jupyter-book/thebe-binder-base,example,

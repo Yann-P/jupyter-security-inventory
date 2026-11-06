@@ -1,0 +1,35 @@
+# jupyter\/echo\_kernel
+
+A simple example kernel for Jupyter
+
+example · [on GitHub](https://github.com/jupyter/echo_kernel) · scanned at commit [ad2ff4f](https://github.com/jupyter/echo_kernel/tree/ad2ff4f47e9c9ef6b63c440ed5f8739a19b8ad12)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [echo\-kernel](https://pypi.org/project/echo-kernel/), [67](https://pypistats.org/packages/echo-kernel) downloads/month, 0 dependents, last published 2017-01-18
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository implements a Jupyter kernel \(echo\_kernel\/kernel\.py\) and is published on PyPI as echo\-kernel\, but the README explicitly calls it a simple example kernel\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of echo\-kernel \(2017\-01\-18\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of echo\-kernel \(2017\-01\-18\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, schedule
+- **Publishes:** jupyter\_releaser
+- **Secrets:** none
+- **Actions:** 3, 3 by tag
+- **Build requirements:** hatchling, ipykernel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1
+- **Files:** 12: 5 code, 3 config, 2 other, 2 docs

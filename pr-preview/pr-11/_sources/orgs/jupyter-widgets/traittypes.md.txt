@@ -1,0 +1,35 @@
+# jupyter\-widgets\/traittypes
+
+Traitlets types for NumPy\, SciPy and friends
+
+package · [on GitHub](https://github.com/jupyter-widgets/traittypes) · scanned at commit [9a1db7c](https://github.com/jupyter-widgets/traittypes/tree/9a1db7c182bf2884110958303bc3f54f9ed8414f)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [traittypes](https://pypi.org/project/traittypes/), [727,236](https://pypistats.org/packages/traittypes) downloads/month, 572 dependents, last published 2025-10-22
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository \'jupyter\-widgets\/traittypes\' provides a Python package \'traittypes\' that extends traitlets for numpy\, pandas\, and xarray data structures\; it includes setup\.py and a PYPI publication with significant downloads\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyter\-widgets\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of traittypes \(2025\-10\-22\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of traittypes \(2025\-10\-22\) sets no Requires\-Python\, so it installs on any Python\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v2
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, mamba\-org\/setup\-micromamba\@v2
+- **Files:** 25: 11 code, 6 docs, 5 other, 3 config

@@ -1,0 +1,6 @@
+topic,question,done,partial,missing,not applicable
+zizmor,Does the repository check its GitHub workflows with zizmor?,0,0,15,3
+SECURITY.md,Does the repository say how to report a vulnerability?,12,0,0,6
+PyPI attestations,Do the repository's PyPI releases have attestations?,1,0,10,7
+npm trusted publishing,Does the repository publish its npm packages with trusted publishing?,8,0,2,8
+Supported Python,Do the repository's PyPI packages require a Python that still gets security fixes?,0,0,11,7

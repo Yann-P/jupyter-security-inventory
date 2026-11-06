@@ -1,0 +1,5 @@
+repo,kind,live service
+binderhub-ci-repos/cached-minimal-dockerfile,example,
+binderhub-ci-repos/lfs,example,
+binderhub-ci-repos/repo2docker-subdir-support,example,
+binderhub-ci-repos/requirements,example,

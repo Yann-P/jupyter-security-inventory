@@ -1,0 +1,35 @@
+# jupyterlite\/xeus
+
+JupyterLite loader for Xeus kernels
+
+package · [on GitHub](https://github.com/jupyterlite/xeus) · scanned at commit [5448634](https://github.com/jupyterlite/xeus/tree/54486348f18db850fccc6903de07732b64c5c718)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyterlite\-xeus](https://pypi.org/project/jupyterlite-xeus/), [3,091](https://pypistats.org/packages/jupyterlite-xeus) downloads/month, 2 dependents, last published 2026-11-03; []{.fa-brands .fa-npm} [\@jupyterlite\/xeus\-core](https://www.npmjs.com/package/@jupyterlite/xeus-core), [787](https://npm-stat.com/charts.html?package=@jupyterlite/xeus-core) downloads/month, 3 dependents, last published 2026-11-03; []{.fa-brands .fa-npm} [\@jupyterlite\/xeus](https://www.npmjs.com/package/@jupyterlite/xeus), [266](https://npm-stat.com/charts.html?package=@jupyterlite/xeus) downloads/month, 2 dependents, last published 2026-11-03; []{.fa-brands .fa-npm} [\@jupyterlite\/xeus\-extension](https://www.npmjs.com/package/@jupyterlite/xeus-extension), [241](https://npm-stat.com/charts.html?package=@jupyterlite/xeus-extension) downloads/month, 0 dependents, last published 2026-11-03
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** JupyterLite Xeus is an extension for JupyterLite that bundles xeus kernels compiled to WebAssembly\, with published Python and npm packages\, and source code for kernels and an extension\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyterlite\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of jupyterlite\-xeus \(2026\-09\-11\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** done. Its latest npm versions used trusted publishing\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyterlite\-xeus \(2026\-09\-11\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 6, run on issue\_comment, pull\_request, push, workflow\_dispatch
+- **Publishes:** npm, jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY, NPM\_TOKEN
+- **Actions:** 9, 8 by tag, 1 by branch. Third-party, not pinned: mamba\-org\/setup\-micromamba\@v2
+- **Build requirements:** hatch\-nodejs\-version, hatchling, jupyter\-builder
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, actions\/download\-artifact\@v4, actions\/setup\-python\@v4, actions\/upload\-artifact\@v4, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@main, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, mamba\-org\/setup\-micromamba\@v2
+- **Files:** 99: 47 config, 31 code, 10 docs, 4 notebook, 3 other, 2 web, 2 media

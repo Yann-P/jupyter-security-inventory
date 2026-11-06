@@ -1,0 +1,34 @@
+# voila\-dashboards\/voila\-dashboards\.github\.io
+
+Organization and project management for Voilà
+
+documentation · [on GitHub](https://github.com/voila-dashboards/voila-dashboards.github.io) · scanned at commit [6c6b452](https://github.com/voila-dashboards/voila-dashboards.github.io/tree/6c6b452754faa7cc3a927edde7bebb56bdd4a7cb)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** voila\-dashboards\.github\.io
+- **Security boundary:** no
+- **Why these labels:** The repository contains only GitHub Pages files \(index\.html\, \_layouts\, \_posts\) serving the Voilà organization site\, with no code\, CI workflows\, or published packages\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 22: 15 docs, 3 web, 3 media, 1 other

@@ -1,0 +1,35 @@
+# jupyterhub\/escapism
+
+
+
+package · [on GitHub](https://github.com/jupyterhub/escapism) · scanned at commit [ae458c5](https://github.com/jupyterhub/escapism/tree/ae458c5ad90e66d42c5e55e97e1b72e128cf0b99)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [escapism](https://pypi.org/project/escapism/), [175,967](https://pypistats.org/packages/escapism) downloads/month, 71 dependents, last published 2025-12-11
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a small Python library \(escapism\.py\) that provides text escaping utilities\, with tests and a CI workflow that publishes to PyPI\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of escapism \(2025\-12\-11\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 6, 5 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v6, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** setuptools, setuptools\-scm
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6, actions\/download\-artifact\@v6, actions\/setup\-python\@v6, actions\/upload\-artifact\@v7, codecov\/codecov\-action\@v6, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 12: 5 config, 3 code, 2 other, 2 docs

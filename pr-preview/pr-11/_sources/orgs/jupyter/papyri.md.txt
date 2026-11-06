@@ -1,0 +1,35 @@
+# jupyter\/papyri
+
+
+
+package · [on GitHub](https://github.com/jupyter/papyri) · scanned at commit [3ef74d2](https://github.com/jupyter/papyri/tree/3ef74d2eab807c7850f18cd22d3a04bc1467a423)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [papyri](https://pypi.org/project/papyri/), [21](https://pypistats.org/packages/papyri) downloads/month, 0 dependents, last published 2024-03-01
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains a Python package \'papyri\' with pyproject\.toml and PYPI publication\, plus tooling for docstring IR parsing and a viewer\; primary purpose is a package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via workflow command. Runs in a workflow\. Files: [\.github\/workflows\/zizmor\.yml](https://github.com/jupyter/papyri/blob/3ef74d2eab807c7850f18cd22d3a04bc1467a423/.github/workflows/zizmor.yml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of papyri \(2024\-03\-01\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** done. Its latest PyPI release requires at least Python 3\.11\.
+
+## CI and releases
+
+- **Workflows:** 6, run on pull\_request, push, schedule, workflow\_dispatch
+- **Publishes:** container
+- **Secrets:** CODECOV\_TOKEN
+- **Actions:** 10, all pinned to a commit
+- **Build requirements:** flit\_core
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/download\-artifact\@3e5f45b, actions\/setup\-node\@8207627, actions\/setup\-python\@5fda3b9, actions\/upload\-artifact\@043fb46, codecov\/codecov\-action\@303a32d, docker\/build\-push\-action\@c3c9e26, docker\/setup\-buildx\-action\@f87e599, dorny\/paths\-filter\@ceb8a2b, pnpm\/action\-setup\@ea17c68
+- **Files:** 343: 199 code, 57 other, 35 config, 29 docs, 19 media, 4 web

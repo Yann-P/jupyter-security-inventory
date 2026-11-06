@@ -1,0 +1,50 @@
+---
+html_theme.sidebar_secondary.remove: true
+---
+
+# zizmor
+
+Does the repository check its GitHub workflows with zizmor\?
+
+It applies to 284 repositories: 23 done, 3 partial and 258 missing. 154 are not applicable and left out of the tables.
+
+We look for zizmor in the repository\'s workflows and action files \(its GitHub Action or a command\) and in its pre\-commit hooks\. Comments are ignored\, so a note like \"zizmor\: ignore\" does not count\. A pre\-commit hook counts as running in CI when a workflow runs pre\-commit or the pre\-commit config has a \"ci\" section\, which sets up pre\-commit\.ci\.
+
+- [done]{.status .status-done} zizmor runs in CI\.
+- [partial]{.status .status-partial} zizmor is set up\, but nothing shows that CI runs it\.
+- [missing]{.status .status-missing} The repository has workflows and no sign of zizmor\.
+- [n\/a]{.status .status-na} The repository has no GitHub workflows to check\.
+
+## By organization
+
+{download}`Download CSV </_generated/downloads/topic-zizmor-orgs.csv>`
+
+```{csv-table}
+:file: /_generated/topic-zizmor-orgs.csv
+:header-rows: 1
+:class: sphinx-datatable
+```
+
+## Repositories
+
+Rows are colored by kind: [package]{.kind-package .legend} [application]{.kind-application .legend} [tooling]{.kind-tooling .legend} [deployment]{.kind-deployment .legend} [documentation]{.kind-documentation .legend} [example]{.kind-example .legend} [other]{.kind-other .legend}
+
+{download}`Download CSV </_generated/downloads/topic-zizmor-repos.csv>`
+
+```{csv-table}
+:file: /_generated/topic-zizmor-repos.csv
+:header-rows: 1
+:class: sphinx-datatable filter-by-org
+```
+
+## Over time
+
+The days the numbers changed.
+
+{download}`Download CSV </_generated/downloads/topic-zizmor-history.csv>`
+
+```{csv-table}
+:file: /_generated/topic-zizmor-history.csv
+:header-rows: 1
+:class: sphinx-datatable
+```

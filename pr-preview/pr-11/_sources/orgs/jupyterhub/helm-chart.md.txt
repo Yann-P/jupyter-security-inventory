@@ -1,0 +1,34 @@
+# jupyterhub\/helm\-chart
+
+A store of Helm chart tarballs for deploying JupyterHub and BinderHub on a Kubernetes cluster
+
+deployment · [on GitHub](https://github.com/jupyterhub/helm-chart) · scanned at commit [63e6e91](https://github.com/jupyterhub/helm-chart/tree/63e6e91495bbee32e8dd240719e7d071ab209b98)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** hub\.jupyter\.org\/helm\-chart\/
+- **Security boundary:** no
+- **Why these labels:** The repository stores packaged Helm charts in its gh\-pages branch and serves them as a Helm chart repository via GitHub Pages at hub\.jupyter\.org\/helm\-chart\/\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 2: 1 other, 1 docs

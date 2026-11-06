@@ -1,0 +1,35 @@
+# jupyterhealth\/jupyter\-smart\-on\-fhir
+
+Demo repository to demonstrate SMART on FIHR integration with Jupyter
+
+package · [on GitHub](https://github.com/jupyterhealth/jupyter-smart-on-fhir) · scanned at commit [a0a31bb](https://github.com/jupyterhealth/jupyter-smart-on-fhir/tree/a0a31bb850d0c53d5e3b61a7326a36ca6bba5c31)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [jupyter\-smart\-on\-fhir](https://pypi.org/project/jupyter-smart-on-fhir/), [213](https://pypistats.org/packages/jupyter-smart-on-fhir) downloads/month, 0 dependents, last published 2026-10-08
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** yes, it acts as OAuth client handling authentication with SMART on FHIR
+- **Why these labels:** The repo defines a Python package \'jupyter\-smart\-on\-fhir\' with server extension and hub service code\, published to PyPI\, and includes tests\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via pre\-commit. Pre\-commit hook\, and CI runs pre\-commit\. Files: [\.pre\-commit\-config\.yaml](https://github.com/jupyterhealth/jupyter-smart-on-fhir/blob/a0a31bb850d0c53d5e3b61a7326a36ca6bba5c31/.pre-commit-config.yaml)
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhealth\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of jupyter\-smart\-on\-fhir \(2026\-10\-08\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 6, all pinned to a commit
+- **Build requirements:** setuptools, setuptools\-scm
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/download\-artifact\@3e5f45b, actions\/setup\-node\@8207627, actions\/setup\-python\@5fda3b9, actions\/upload\-artifact\@043fb46, pypa\/gh\-action\-pypi\-publish\@ba38be9
+- **Files:** 22: 10 code, 6 config, 3 other, 3 docs

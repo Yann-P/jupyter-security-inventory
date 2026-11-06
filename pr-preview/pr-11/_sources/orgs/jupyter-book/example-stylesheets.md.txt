@@ -1,0 +1,35 @@
+# jupyter\-book\/example\-stylesheets
+
+An example of deploying a MyST book with a custom CSS stylesheet
+
+example · [on GitHub](https://github.com/jupyter-book/example-stylesheets) · scanned at commit [e4e99d4](https://github.com/jupyter-book/example-stylesheets/tree/e4e99d4fef4acfb205dde38c351597eae958724b)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo is an example MyST book with custom CSS\, as stated in its description and README\, and it contains only markdown files and a stylesheet\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on push
+- **Publishes:** website
+- **Secrets:** none
+- **Actions:** 5, 5 by tag
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/configure\-pages\@v3, actions\/deploy\-pages\@v4, actions\/setup\-node\@v4, actions\/upload\-pages\-artifact\@v3
+- **Files:** 10: 5 docs, 2 config, 2 other, 1 web

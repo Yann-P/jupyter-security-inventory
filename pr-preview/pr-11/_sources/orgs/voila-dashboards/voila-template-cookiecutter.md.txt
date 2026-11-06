@@ -1,0 +1,34 @@
+# voila\-dashboards\/voila\-template\-cookiecutter
+
+Cookiecutter for creating new Voilà templates
+
+tooling · [on GitHub](https://github.com/voila-dashboards/voila-template-cookiecutter) · scanned at commit [8c6382e](https://github.com/voila-dashboards/voila-template-cookiecutter/tree/8c6382e42a561987139d9835c7e40fb39e91a22c)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository provides a Cookiecutter template for generating new Voilà templates\, as evidenced by the cookiecutter\.json and project scaffolding files\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 15: 6 other, 5 config, 2 docs, 1 notebook, 1 code

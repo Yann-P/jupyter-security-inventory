@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Supported Python &#8212; Jupyter Security Inventory</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=2ef5feca" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-3.1.4/datatables.min.js"></script>
+    <script src="../_static/activate_datatables.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'topics/supported-python';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/tables.js?v=f93e9670"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Published packages" href="../packages.html" />
+    <link rel="prev" title="npm trusted publishing" href="npm-trusted-publishing.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Jupyter Security Inventory</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/Yann-P/jupyter-security-inventory" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links" aria-label="Site navigation">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">All organizations</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../orgs.html">Organizations</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/ipython.html">ipython</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter.html">jupyter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterlab.html">jupyterlab</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-server.html">jupyter-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-widgets.html">jupyter-widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterhub.html">jupyterhub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-book.html">jupyter-book</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/voila-dashboards.html">voila-dashboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterlite.html">jupyterlite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-incubator.html">jupyter-incubator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-xeus.html">jupyter-xeus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyterhealth.html">jupyterhealth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/binder-examples.html">binder-examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupytercon.html">jupytercon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/voila-gallery.html">voila-gallery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/binderhub-ci-repos.html">binderhub-ci-repos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-governance.html">jupyter-governance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../orgs/jupyter-standards.html">jupyter-standards</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../topics.html">Security topics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="zizmor.html">zizmor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security-policy.html">SECURITY.md</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pypi-attestations.html">PyPI attestations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="npm-trusted-publishing.html">npm trusted publishing</a></li>
+<li class="toctree-l2 current active"><a aria-current="page" class="current reference internal" href="#">Supported Python</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../packages.html">Published packages</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../packages/pypi.html">PyPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../packages/npm.html">npm</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../images.html">Container images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../topics.html" class="nav-link">Security topics</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Supported Python</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="supported-python">
+<h1>Supported Python<a class="headerlink" href="#supported-python" title="Link to this heading">#</a></h1>
+<p>Do the repository’s PyPI packages require a Python that still gets security fixes?</p>
+<p>It applies to 139 repositories: 7 done, 0 partial and 132 missing. 299 are not applicable and left out of the tables.</p>
+<p>We read from PyPI the Requires-Python of the latest release of each PyPI package, the Python versions pip and uv install it on, and find the oldest one it allows. A release without Requires-Python installs on any Python. We compare with the day CPython stops shipping security fixes for that version, as listed on peps.python.org, about five years after its release. This is what the package claims: its CI may test only newer versions, and its dependencies may need a newer one.</p>
+<ul class="simple">
+<li><p><span class="status status-done">done</span> The latest release of each of its PyPI packages requires a Python that still gets security fixes.</p></li>
+<li><p><span class="status status-partial">partial</span> Some of its PyPI packages still allow a Python that no longer gets security fixes, and some don’t.</p></li>
+<li><p><span class="status status-missing">missing</span> All its PyPI packages still allow a Python that no longer gets security fixes.</p></li>
+<li><p><span class="status status-na">n/a</span> It has no PyPI package.</p></li>
+</ul>
+<section id="by-organization">
+<h2>By organization<a class="headerlink" href="#by-organization" title="Link to this heading">#</a></h2>
+<p><a class="reference download internal" download="" href="../_downloads/abb92ad86c8198b1b74fb77e89082539/topic-supported-python-orgs.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>organization</p></th>
+<th class="head"><p>repos it applies to</p></th>
+<th class="head"><p>done</p></th>
+<th class="head"><p>partial</p></th>
+<th class="head"><p>missing</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p>33</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>33</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p>22</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>22</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p>23</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>21</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p>15</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>13</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p>11</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>11</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p>9</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p>7</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p>7</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>7</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p>4</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../orgs/jupyter-incubator.html"><span class="std std-doc">jupyter-incubator</span></a></p></td>
+<td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="repositories">
+<h2>Repositories<a class="headerlink" href="#repositories" title="Link to this heading">#</a></h2>
+<p>Rows are colored by kind: <span class="kind-package legend">package</span> <span class="kind-application legend">application</span> <span class="kind-tooling legend">tooling</span> <span class="kind-deployment legend">deployment</span> <span class="kind-documentation legend">documentation</span> <span class="kind-example legend">example</span> <span class="kind-other legend">other</span></p>
+<p><a class="reference download internal" download="" href="../_downloads/8431813c7e4d3928ae4ab9e173201256/topic-supported-python-repos.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable filter-by-org table">
+<thead>
+<tr class="row-odd"><th class="head"><p>repository</p></th>
+<th class="head"><p>organization</p></th>
+<th class="head"><p>status</p></th>
+<th class="head"><p>via</p></th>
+<th class="head"><p>downloads/month</p></th>
+<th class="head"><p>reason</p></th>
+<th class="head"><p>files</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/traitlets.html"><span class="std std-doc">ipython/traitlets</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/traitlets">118,414,624</a></p></td>
+<td><p>The latest release of traitlets (2026-08-03) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipython.html"><span class="std std-doc">ipython/ipython</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipython">97,202,828</a></p></td>
+<td><p>Its latest PyPI release requires at least Python 3.11.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/matplotlib-inline.html"><span class="std std-doc">ipython/matplotlib-inline</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/matplotlib-inline">91,853,623</a></p></td>
+<td><p>The latest release of matplotlib-inline (2026-05-08) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_core.html"><span class="std std-doc">jupyter/jupyter_core</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-core">77,056,466</a></p></td>
+<td><p>The latest release of jupyter-core (2025-10-16) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbformat.html"><span class="std std-doc">jupyter/nbformat</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbformat">76,592,205</a></p></td>
+<td><p>The latest release of nbformat (2026-08-17) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_client.html"><span class="std std-doc">jupyter/jupyter_client</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-client">71,447,300</a></p></td>
+<td><p>The latest release of jupyter-client (2026-08-28) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/comm.html"><span class="std std-doc">ipython/comm</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/comm">55,663,064</a></p></td>
+<td><p>The latest release of comm (2025-07-25) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipython-pygments-lexers.html"><span class="std std-doc">ipython/ipython-pygments-lexers</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipython-pygments-lexers">54,818,996</a></p></td>
+<td><p>The latest release of ipython-pygments-lexers (2025-01-17) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipykernel.html"><span class="std std-doc">ipython/ipykernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipykernel">54,614,879</a></p></td>
+<td><p>Its latest PyPI release requires at least Python 3.11.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbclient.html"><span class="std std-doc">jupyter/nbclient</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbclient">50,729,821</a></p></td>
+<td><p>The latest release of nbclient (2026-06-05) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbconvert.html"><span class="std std-doc">jupyter/nbconvert</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbconvert">49,944,679</a></p></td>
+<td><p>The latest release of nbconvert (2026-10-12) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab_pygments.html"><span class="std std-doc">jupyterlab/jupyterlab_pygments</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-pygments">48,057,917</a></p></td>
+<td><p>The latest release of jupyterlab-pygments (2023-11-23) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server.html"><span class="std std-doc">jupyter-server/jupyter_server</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server">32,556,872</a></p></td>
+<td><p>The latest release of jupyter-server (2026-09-15) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/ipywidgets.html"><span class="std std-doc">jupyter-widgets/ipywidgets</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/widgetsnbextension">31,834,051</a></p></td>
+<td><p>The latest releases of widgetsnbextension (2026-08-18), jupyterlab-widgets (2026-08-18) and ipywidgets (2026-08-18) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab.html"><span class="std std-doc">jupyterlab/jupyterlab</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab">30,253,541</a></p></td>
+<td><p>The latest release of jupyterlab (2026-10-29) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/terminado.html"><span class="std std-doc">jupyter/terminado</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/terminado">29,806,864</a></p></td>
+<td><p>The latest release of terminado (2024-03-12) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_events.html"><span class="std std-doc">jupyter/jupyter_events</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-events">28,962,752</a></p></td>
+<td><p>The latest release of jupyter-events (2026-04-20) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/notebook.html"><span class="std std-doc">jupyter/notebook</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/notebook">28,757,551</a></p></td>
+<td><p>The latest release of notebook (2026-10-30) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server_terminals.html"><span class="std std-doc">jupyter-server/jupyter_server_terminals</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-terminals">28,569,855</a></p></td>
+<td><p>The latest release of jupyter-server-terminals (2026-01-14) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab_server.html"><span class="std std-doc">jupyterlab/jupyterlab_server</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-server">27,966,465</a></p></td>
+<td><p>The latest release of jupyterlab-server (2026-09-15) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/notebook_shim.html"><span class="std std-doc">jupyter/notebook_shim</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/notebook-shim">27,317,089</a></p></td>
+<td><p>The latest release of notebook-shim (2024-02-14) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterlab/jupyter-builder.html"><span class="std std-doc">jupyterlab/jupyter-builder</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-builder">17,948,052</a></p></td>
+<td><p>The latest release of jupyter-builder (2026-10-27) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_console.html"><span class="std std-doc">jupyter/jupyter_console</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-console">12,492,174</a></p></td>
+<td><p>The latest release of jupyter-console (2023-03-06) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter.html"><span class="std std-doc">jupyter/jupyter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter">12,288,648</a></p></td>
+<td><p>The latest release of jupyter (2024-08-30) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/pickleshare.html"><span class="std std-doc">ipython/pickleshare</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pickleshare">8,533,671</a></p></td>
+<td><p>The latest release of pickleshare (2018-09-25) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbclassic.html"><span class="std std-doc">jupyter/nbclassic</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbclassic">1,980,454</a></p></td>
+<td><p>The latest release of nbclassic (2025-09-16) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/testpath.html"><span class="std std-doc">jupyter/testpath</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/testpath">1,460,262</a></p></td>
+<td><p>The latest release of testpath (2022-02-23) allows Python 3.5, which has had no security fixes since 2020-09-30.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_ydoc.html"><span class="std std-doc">jupyter-server/jupyter_ydoc</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-ydoc">864,279</a></p></td>
+<td><p>Its latest PyPI release requires at least Python 3.11.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-collaboration.html"><span class="std std-doc">jupyterlab/jupyter-collaboration</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-ydoc">815,532</a></p></td>
+<td><p>The latest releases of jupyter-server-ydoc (2026-09-20), jupyter-docprovider (2026-09-20), jupyter-collaboration-ui (2026-09-20) and 1 more allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server_fileid.html"><span class="std std-doc">jupyter-server/jupyter_server_fileid</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-fileid">813,515</a></p></td>
+<td><p>Its latest PyPI release requires at least Python 3.11.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/traittypes.html"><span class="std std-doc">jupyter-widgets/traittypes</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/traittypes">727,236</a></p></td>
+<td><p>The latest release of traittypes (2025-10-22) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter-server/kernel_gateway.html"><span class="std std-doc">jupyter-server/kernel_gateway</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-kernel-gateway">555,039</a></p></td>
+<td><p>The latest release of jupyter-kernel-gateway (2024-03-12) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter-packaging.html"><span class="std std-doc">jupyter/jupyter-packaging</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-packaging">516,852</a></p></td>
+<td><p>The latest release of jupyter-packaging (2022-08-25) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyter-server-proxy.html"><span class="std std-doc">jupyterhub/jupyter-server-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-proxy">451,131</a></p></td>
+<td><p>The latest releases of jupyter-server-proxy (2026-09-21) and jupyter-theia-proxy (2019-01-03) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/simpervisor.html"><span class="std std-doc">jupyterhub/simpervisor</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/simpervisor">434,920</a></p></td>
+<td><p>The latest release of simpervisor (2023-05-18) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub.html"><span class="std std-doc">jupyterhub/jupyterhub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub">260,478</a></p></td>
+<td><p>The latest release of jupyterhub (2026-11-05) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/jupyter-book.html"><span class="std std-doc">jupyter-book/jupyter-book</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-book">217,891</a></p></td>
+<td><p>The latest release of jupyter-book (2026-09-23) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/ipyleaflet.html"><span class="std std-doc">jupyter-widgets/ipyleaflet</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipyleaflet">198,711</a></p></td>
+<td><p>The latest releases of ipyleaflet (2025-06-13) and jupyter-leaflet (2025-06-13) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/escapism.html"><span class="std std-doc">jupyterhub/escapism</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/escapism">175,967</a></p></td>
+<td><p>The latest release of escapism (2025-12-11) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbdime.html"><span class="std std-doc">jupyter/nbdime</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbdime">174,529</a></p></td>
+<td><p>The latest release of nbdime (2026-02-10) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/hatch-jupyter-builder.html"><span class="std std-doc">jupyterlab/hatch-jupyter-builder</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-jupyter-builder">155,361</a></p></td>
+<td><p>The latest release of hatch-jupyter-builder (2026-09-18) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-ai.html"><span class="std std-doc">jupyterlab/jupyter-ai</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-ai">119,717</a></p></td>
+<td><p>The latest releases of jupyter-ai (2026-09-03) and jupyter-ai-core (2026-10-16) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/hatch-nodejs-version.html"><span class="std std-doc">jupyterlab/hatch-nodejs-version</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-nodejs-version">112,295</a></p></td>
+<td><p>The latest release of hatch-nodejs-version (2025-07-24) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila.html"><span class="std std-doc">voila-dashboards/voila</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila">111,632</a></p></td>
+<td><p>The latest release of voila (2026-09-04) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipyparallel.html"><span class="std std-doc">ipython/ipyparallel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipyparallel">94,773</a></p></td>
+<td><p>The latest release of ipyparallel (2026-05-12) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/mystmd.html"><span class="std std-doc">jupyter-book/mystmd</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=myst-spec">89,985</a></p></td>
+<td><p>The latest release of mystmd (2026-10-27) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/oauthenticator.html"><span class="std std-doc">jupyterhub/oauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/oauthenticator">89,857</a></p></td>
+<td><p>The latest release of oauthenticator (2026-03-26) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-git.html"><span class="std std-doc">jupyterlab/jupyterlab-git</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-git">89,418</a></p></td>
+<td><p>The latest releases of jupyterlab-git (2026-10-07) and jupyterlab-git-core (2026-10-07) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/pythreejs.html"><span class="std std-doc">jupyter-widgets/pythreejs</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pythreejs">69,126</a></p></td>
+<td><p>The latest release of pythreejs (2023-02-20) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/jupyterlite.html"><span class="std std-doc">jupyterlite/jupyterlite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-core">60,813</a></p></td>
+<td><p>The latest releases of jupyterlite-core (2026-10-30) and jupyterlite (2026-10-30) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter-sphinx.html"><span class="std std-doc">jupyter/jupyter-sphinx</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-sphinx">60,358</a></p></td>
+<td><p>The latest release of jupyter-sphinx (2023-12-28) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/ipython/ipynb.html"><span class="std std-doc">ipython/ipynb</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/ipython.html"><span class="std std-doc">ipython</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipynb">54,116</a></p></td>
+<td><p>The latest release of ipynb (2017-10-23) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/pyodide-kernel.html"><span class="std std-doc">jupyterlite/pyodide-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-pyodide-kernel">51,057</a></p></td>
+<td><p>The latest release of jupyterlite-pyodide-kernel (2026-11-05) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter_server_mathjax.html"><span class="std std-doc">jupyter-server/jupyter_server_mathjax</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-mathjax">47,561</a></p></td>
+<td><p>The latest release of jupyter-server-mathjax (2022-07-14) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter-resource-usage.html"><span class="std std-doc">jupyter-server/jupyter-resource-usage</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-resource-usage">43,356</a></p></td>
+<td><p>The latest release of jupyter-resource-usage (2026-08-11) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/telemetry.html"><span class="std std-doc">jupyter/telemetry</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-telemetry">35,634</a></p></td>
+<td><p>The latest release of jupyter-telemetry (2020-04-10) allows Python 3.5, which has had no security fixes since 2020-09-30.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/nbgitpuller.html"><span class="std std-doc">jupyterhub/nbgitpuller</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller">25,586</a></p></td>
+<td><p>The latest release of nbgitpuller (2026-03-31) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/jupyterlab-sidecar.html"><span class="std std-doc">jupyter-widgets/jupyterlab-sidecar</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sidecar">25,574</a></p></td>
+<td><p>The latest release of sidecar (2026-02-27) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/pytest-jupyter.html"><span class="std std-doc">jupyter-server/pytest-jupyter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-jupyter">25,571</a></p></td>
+<td><p>The latest release of pytest-jupyter (2025-10-16) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/dockerspawner.html"><span class="std std-doc">jupyterhub/dockerspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/dockerspawner">24,371</a></p></td>
+<td><p>The latest release of dockerspawner (2025-02-12) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-chat.html"><span class="std std-doc">jupyterlab/jupyter-chat</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-chat">22,763</a></p></td>
+<td><p>The latest release of jupyterlab-chat (2026-11-03) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/nativeauthenticator.html"><span class="std std-doc">jupyterhub/nativeauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-nativeauthenticator">21,091</a></p></td>
+<td><p>The latest release of jupyterhub-nativeauthenticator (2024-09-17) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/ipydatagrid.html"><span class="std std-doc">jupyter-widgets/ipydatagrid</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipydatagrid">20,180</a></p></td>
+<td><p>The latest release of ipydatagrid (2024-12-17) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/jupyterlite-sphinx.html"><span class="std std-doc">jupyterlite/jupyterlite-sphinx</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-sphinx">17,684</a></p></td>
+<td><p>The latest release of jupyterlite-sphinx (2026-08-11) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-idle-culler.html"><span class="std std-doc">jupyterhub/jupyterhub-idle-culler</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-idle-culler">15,786</a></p></td>
+<td><p>The latest release of jupyterhub-idle-culler (2026-06-16) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/kubespawner.html"><span class="std std-doc">jupyterhub/kubespawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kubespawner">15,220</a></p></td>
+<td><p>The latest release of jupyterhub-kubespawner (2026-07-16) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/pytest-check-links.html"><span class="std std-doc">jupyterlab/pytest-check-links</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-check-links">12,459</a></p></td>
+<td><p>The latest release of pytest-check-links (2020-07-29) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-incubator/sparkmagic.html"><span class="std std-doc">jupyter-incubator/sparkmagic</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-incubator.html"><span class="std std-doc">jupyter-incubator</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sparkmagic">12,187</a></p></td>
+<td><p>The latest release of sparkmagic (2025-07-07) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/language-packs.html"><span class="std std-doc">jupyterlab/language-packs</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-language-pack-zh-cn">11,592</a></p></td>
+<td><p>The latest releases of jupyterlab-language-pack-zh-CN (2026-04-13), jupyterlab-language-pack-ja-JP (2026-04-13), jupyterlab-language-pack-fr-FR (2026-04-13) and 27 more allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/nbgrader.html"><span class="std std-doc">jupyter/nbgrader</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgrader">11,171</a></p></td>
+<td><p>Its latest PyPI release requires at least Python 3.11.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/enterprise_gateway.html"><span class="std std-doc">jupyter-server/enterprise_gateway</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-enterprise-gateway">10,266</a></p></td>
+<td><p>The latest release of jupyter-enterprise-gateway (2026-06-01) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/jupyter-scheduler.html"><span class="std std-doc">jupyter-server/jupyter-scheduler</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-scheduler">9,489</a></p></td>
+<td><p>The latest release of jupyter-scheduler (2026-08-07) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/batchspawner.html"><span class="std std-doc">jupyterhub/batchspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/batchspawner">8,938</a></p></td>
+<td><p>The latest release of batchspawner (2024-03-19) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-book/jupyterlab-myst.html"><span class="std std-doc">jupyter-book/jupyterlab-myst</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-myst">8,807</a></p></td>
+<td><p>The latest release of jupyterlab-myst (2026-06-17) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-renderers.html"><span class="std std-doc">jupyterlab/jupyter-renderers</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/mathjax2-extension">8,489</a></p></td>
+<td><p>The latest releases of jupyterlab-geojson (2023-05-23), jupyterlab-fasta (2023-05-23), jupyterlab-katex (2023-05-23) and 2 more allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/jupyter_kernel_test.html"><span class="std std-doc">jupyter/jupyter_kernel_test</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-kernel-test">7,064</a></p></td>
+<td><p>The latest release of jupyter-kernel-test (2024-03-12) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/ldapauthenticator.html"><span class="std std-doc">jupyterhub/ldapauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ldapauthenticator">6,160</a></p></td>
+<td><p>The latest release of jupyterhub-ldapauthenticator (2024-11-06) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyter-rsession-proxy.html"><span class="std std-doc">jupyterhub/jupyter-rsession-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-rsession-proxy">5,599</a></p></td>
+<td><p>The latest release of jupyter-rsession-proxy (2026-05-12) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/chartpress.html"><span class="std std-doc">jupyterhub/chartpress</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/chartpress">4,436</a></p></td>
+<td><p>The latest release of chartpress (2026-05-01) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/traefik-proxy.html"><span class="std std-doc">jupyterhub/traefik-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-traefik-proxy">3,497</a></p></td>
+<td><p>The latest release of jupyterhub-traefik-proxy (2025-03-28) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/firstuseauthenticator.html"><span class="std std-doc">jupyterhub/firstuseauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-firstuseauthenticator">3,211</a></p></td>
+<td><p>The latest release of jupyterhub-firstuseauthenticator (2025-03-28) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/systemdspawner.html"><span class="std std-doc">jupyterhub/systemdspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-systemdspawner">3,179</a></p></td>
+<td><p>The latest release of jupyterhub-systemdspawner (2024-10-20) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/xeus.html"><span class="std std-doc">jupyterlite/xeus</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-xeus">3,091</a></p></td>
+<td><p>The latest release of jupyterlite-xeus (2026-09-11) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/tmpauthenticator.html"><span class="std std-doc">jupyterhub/tmpauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-tmpauthenticator">2,921</a></p></td>
+<td><p>The latest release of jupyterhub-tmpauthenticator (2023-05-22) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/repo2docker.html"><span class="std std-doc">jupyterhub/repo2docker</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-repo2docker">2,884</a></p></td>
+<td><p>The latest release of jupyter-repo2docker (2026-04-23) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/sphinxcontrib_github_alt.html"><span class="std std-doc">jupyter/sphinxcontrib_github_alt</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sphinxcontrib-github-alt">2,857</a></p></td>
+<td><p>The latest release of sphinxcontrib_github_alt (2020-04-27) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/gateway_provisioners.html"><span class="std std-doc">jupyter-server/gateway_provisioners</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/gateway-provisioners">2,807</a></p></td>
+<td><p>The latest release of gateway-provisioners (2026-09-07) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/fps.html"><span class="std std-doc">jupyter-server/fps</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/fps">2,373</a></p></td>
+<td><p>The latest release of fps (2026-07-30) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/javascript-kernel.html"><span class="std std-doc">jupyterlite/javascript-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-javascript-kernel">2,056</a></p></td>
+<td><p>The latest release of jupyterlite-javascript-kernel (2024-03-26) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-latex.html"><span class="std std-doc">jupyterlab/jupyterlab-latex</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-latex">2,054</a></p></td>
+<td><p>The latest release of jupyterlab-latex (2025-12-17) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-python-wheel.html"><span class="std std-doc">jupyter-xeus/xeus-python-wheel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/xeus-python">1,778</a></p></td>
+<td><p>The latest release of xeus-python (2026-07-07) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/ltiauthenticator.html"><span class="std std-doc">jupyterhub/ltiauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-ltiauthenticator">1,725</a></p></td>
+<td><p>The latest release of jupyterhub-ltiauthenticator (2026-03-26) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter-server/jupyverse.html"><span class="std std-doc">jupyter-server/jupyverse</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyverse-api">1,705</a></p></td>
+<td><p>The latest releases of jupyverse-api (2026-08-05), jupyverse (2026-11-02), fps_contents (2026-10-23) and 42 more allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/autodoc-traits.html"><span class="std std-doc">jupyterhub/autodoc-traits</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/autodoc-traits">1,660</a></p></td>
+<td><p>The latest release of autodoc-traits (2026-03-10) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/terminal.html"><span class="std std-doc">jupyterlite/terminal</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-terminal">1,640</a></p></td>
+<td><p>The latest release of jupyterlite-terminal (2026-11-02) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-python-shell.html"><span class="std std-doc">jupyter-xeus/xeus-python-shell</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/xeus-python-shell">1,504</a></p></td>
+<td><p>The latest release of xeus-python-shell (2026-08-14) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-github.html"><span class="std std-doc">jupyterlab/jupyterlab-github</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-github">1,293</a></p></td>
+<td><p>The latest release of jupyterlab-github (2023-08-03) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-server/jupyter_releaser.html"><span class="std std-doc">jupyter-server/jupyter_releaser</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-releaser">1,278</a></p></td>
+<td><p>The latest release of jupyter-releaser (2026-11-05) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/p5-kernel.html"><span class="std std-doc">jupyterlite/p5-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-p5-kernel">1,246</a></p></td>
+<td><p>The latest release of jupyterlite-p5-kernel (2025-12-02) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyter-remote-desktop-proxy.html"><span class="std std-doc">jupyterhub/jupyter-remote-desktop-proxy</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-remote-desktop-proxy">1,078</a></p></td>
+<td><p>The latest release of jupyter-remote-desktop-proxy (2025-04-11) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/sudospawner.html"><span class="std std-doc">jupyterhub/sudospawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/sudospawner">1,038</a></p></td>
+<td><p>The latest release of sudospawner (2025-10-17) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/wrapspawner.html"><span class="std std-doc">jupyterhub/wrapspawner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/wrapspawner">928</a></p></td>
+<td><p>The latest release of wrapspawner (2022-03-02) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhealth/omh-shim.html"><span class="std std-doc">jupyterhealth/omh-shim</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/omh-shim">838</a></p></td>
+<td><p>Its latest PyPI release requires at least Python 3.11.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/gh-scoped-creds.html"><span class="std std-doc">jupyterhub/gh-scoped-creds</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/gh-scoped-creds">721</a></p></td>
+<td><p>The latest release of gh-scoped-creds (2022-04-20) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyterhub/binderhub.html"><span class="std std-doc">jupyterhub/binderhub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterhub/binderhub-client">554</a></p></td>
+<td><p>The latest release of binderhub (2018-11-07) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-translate.html"><span class="std std-doc">jupyterlab/jupyterlab-translate</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-translate">510</a></p></td>
+<td><p>The latest release of jupyterlab-translate (2024-05-15) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila-gridstack.html"><span class="std std-doc">voila-dashboards/voila-gridstack</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila-gridstack">472</a></p></td>
+<td><p>The latest release of voila-gridstack (2024-02-06) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila-topbar.html"><span class="std std-doc">voila-dashboards/voila-topbar</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila-topbar">376</a></p></td>
+<td><p>The latest release of voila-topbar (2023-08-22) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/jupyterhub-sphinx-theme.html"><span class="std std-doc">jupyterhub/jupyterhub-sphinx-theme</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-sphinx-theme">373</a></p></td>
+<td><p>The latest release of jupyterhub-sphinx-theme (2023-09-19) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila-material.html"><span class="std std-doc">voila-dashboards/voila-material</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila-material">303</a></p></td>
+<td><p>The latest release of voila-material (2023-03-07) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/plugin-playground.html"><span class="std std-doc">jupyterlab/plugin-playground</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-plugin-playground">267</a></p></td>
+<td><p>The latest release of jupyterlab-plugin-playground (2026-05-06) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voila-vuetify.html"><span class="std std-doc">voila-dashboards/voila-vuetify</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voila-vuetify">266</a></p></td>
+<td><p>The latest release of voila-vuetify (2022-11-11) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/voici.html"><span class="std std-doc">voila-dashboards/voici</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/voici-core">231</a></p></td>
+<td><p>The latest releases of voici-core (2025-12-30) and voici (2025-12-30) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/xeus-robot-wheel.html"><span class="std std-doc">jupyter-xeus/xeus-robot-wheel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/xeus-robot">215</a></p></td>
+<td><p>The latest release of xeus-robot (2021-10-26) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhealth/jupyter-smart-on-fhir.html"><span class="std std-doc">jupyterhealth/jupyter-smart-on-fhir</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-smart-on-fhir">213</a></p></td>
+<td><p>The latest release of jupyter-smart-on-fhir (2026-10-08) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyter-ai-lite.html"><span class="std std-doc">jupyterlab/jupyter-ai-lite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyter-ai/agent-lite">208</a></p></td>
+<td><p>The latest releases of jupyter-ai-agent-lite (2026-10-20), jupyter-ai-lite (2026-10-20) and jupyternaut-lite (2026-10-20) allow a Python that no longer gets security fixes.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyterhub/pytest-jupyterhub.html"><span class="std std-doc">jupyterhub/pytest-jupyterhub</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/pytest-jupyterhub">198</a></p></td>
+<td><p>The latest release of pytest-jupyterhub (2023-04-25) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/litegitpuller.html"><span class="std std-doc">jupyterlite/litegitpuller</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/litegitpuller">161</a></p></td>
+<td><p>The latest release of litegitpuller (2026-09-15) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-application"><a class="reference internal" href="../orgs/jupyter/nbviewer.html"><span class="std std-doc">jupyter/nbviewer</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbviewer">145</a></p></td>
+<td><p>The latest release of nbviewer (2017-10-15) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/kerberosauthenticator.html"><span class="std std-doc">jupyterhub/kerberosauthenticator</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhub-kerberosauthenticator">139</a></p></td>
+<td><p>The latest release of jupyterhub-kerberosauthenticator (2026-05-27) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-xeus/robotframework-interpreter.html"><span class="std std-doc">jupyter-xeus/robotframework-interpreter</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-xeus.html"><span class="std std-doc">jupyter-xeus</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/robotframework-interpreter">137</a></p></td>
+<td><p>The latest release of robotframework-interpreter (2021-10-20) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhealth/jupyterhealth-client.html"><span class="std std-doc">jupyterhealth/jupyterhealth-client</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhealth.html"><span class="std std-doc">jupyterhealth</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterhealth-client">120</a></p></td>
+<td><p>The latest release of jupyterhealth-client (2026-10-12) allows Python 3.10, which has had no security fixes since 2026-10-01.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-tooling"><a class="reference internal" href="../orgs/jupyter-book/hatch-deps-selector.html"><span class="std std-doc">jupyter-book/hatch-deps-selector</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-book.html"><span class="std std-doc">jupyter-book</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hatch-deps-selector">107</a></p></td>
+<td><p>The latest release of hatch-deps-selector (2024-09-04) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/ui-profiler.html"><span class="std std-doc">jupyterlab/ui-profiler</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/ui-profiler">83</a></p></td>
+<td><p>The latest release of jupyterlab-ui-profiler (2026-07-03) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab-hdf5.html"><span class="std std-doc">jupyterlab/jupyterlab-hdf5</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://npm-stat.com/charts.html?package=&#64;jupyterlab/hdf5">75</a></p></td>
+<td><p>The latest release of jupyterlab-hdf (2023-03-08) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyter/echo_kernel.html"><span class="std std-doc">jupyter/echo_kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/echo-kernel">67</a></p></td>
+<td><p>The latest release of echo-kernel (2017-01-18) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/echo-kernel.html"><span class="std std-doc">jupyterlite/echo-kernel</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlite-echo-kernel">58</a></p></td>
+<td><p>The latest release of jupyterlite-echo-kernel (2025-11-26) allows Python 3.9, which has had no security fixes since 2025-10-31.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/docker-image-cleaner.html"><span class="std std-doc">jupyterhub/docker-image-cleaner</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/docker-image-cleaner">40</a></p></td>
+<td><p>The latest release of docker-image-cleaner (2023-01-02) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/jupyterlab-webrtc-docprovider.html"><span class="std std-doc">jupyterlite/jupyterlab-webrtc-docprovider</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-webrtc-docprovider">38</a></p></td>
+<td><p>The latest release of jupyterlab-webrtc-docprovider (2022-04-22) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-server/synchronizer.html"><span class="std std-doc">jupyter-server/synchronizer</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-server.html"><span class="std std-doc">jupyter-server</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyter-server-synchronizer">37</a></p></td>
+<td><p>The latest release of jupyter-server-synchronizer (2024-03-13) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter-widgets/midicontrols.html"><span class="std std-doc">jupyter-widgets/midicontrols</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter-widgets.html"><span class="std std-doc">jupyter-widgets</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/ipymidicontrols">37</a></p></td>
+<td><p>The latest release of ipymidicontrols (2019-07-12) sets no Requires-Python, so it installs on any Python.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/voila-dashboards/hotpot_km.html"><span class="std std-doc">voila-dashboards/hotpot_km</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/voila-dashboards.html"><span class="std std-doc">voila-dashboards</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/hotpot-km">26</a></p></td>
+<td><p>The latest release of hotpot-km (2021-03-31) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyter/papyri.html"><span class="std std-doc">jupyter/papyri</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyter.html"><span class="std std-doc">jupyter</span></a></p></td>
+<td><p><span class="status status-done">done</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/papyri">21</a></p></td>
+<td><p>Its latest PyPI release requires at least Python 3.11.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlab/jupyterlab_apod.html"><span class="std std-doc">jupyterlab/jupyterlab_apod</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-apod">20</a></p></td>
+<td><p>The latest release of jupyterlab-apod (2023-01-13) allows Python 3.7, which has had no security fixes since 2023-06-27.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/nbgitpuller-downloader-googledrive.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-googledrive</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-googledrive">19</a></p></td>
+<td><p>The latest release of nbgitpuller-downloader-googledrive (2021-11-28) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/nbgitpuller-downloader-dropbox.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-dropbox</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-dropbox">17</a></p></td>
+<td><p>The latest release of nbgitpuller-downloader-dropbox (2021-11-28) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterhub/nbgitpuller-downloader-generic-web.html"><span class="std std-doc">jupyterhub/nbgitpuller-downloader-generic-web</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterhub.html"><span class="std std-doc">jupyterhub</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/nbgitpuller-downloader-generic-web">15</a></p></td>
+<td><p>The latest release of nbgitpuller-downloader-generic-web (2021-11-28) allows Python 3.8, which has had no security fixes since 2024-10-07.</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><span class="kind-example"><a class="reference internal" href="../orgs/jupyterlab/extension-examples.html"><span class="std std-doc">jupyterlab/extension-examples</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlab.html"><span class="std std-doc">jupyterlab</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/jupyterlab-examples-hello-world">15</a></p></td>
+<td><p>The latest release of jupyterlab-examples-hello-world (2022-03-01) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><span class="kind-package"><a class="reference internal" href="../orgs/jupyterlite/repo2jupyterlite.html"><span class="std std-doc">jupyterlite/repo2jupyterlite</span></a></span></p></td>
+<td><p><a class="reference internal" href="../orgs/jupyterlite.html"><span class="std std-doc">jupyterlite</span></a></p></td>
+<td><p><span class="status status-missing">missing</span></p></td>
+<td></td>
+<td><p><a class="reference external" href="https://pypistats.org/packages/repo2jupyterlite">11</a></p></td>
+<td><p>The latest release of repo2jupyterlite (2022-11-02) allows Python 3.6, which has had no security fixes since 2021-12-23.</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="over-time">
+<h2>Over time<a class="headerlink" href="#over-time" title="Link to this heading">#</a></h2>
+<p>The days the numbers changed.</p>
+<p><a class="reference download internal" download="" href="../_downloads/9dc9c03b84d7bd11bfe887f595cfa96b/topic-supported-python-history.csv"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">CSV</span></code></a></p>
+<div class="pst-scrollable-table-container"><table class="sphinx-datatable table">
+<thead>
+<tr class="row-odd"><th class="head"><p>date</p></th>
+<th class="head"><p>done</p></th>
+<th class="head"><p>partial</p></th>
+<th class="head"><p>missing</p></th>
+<th class="head"><p>not applicable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="date">2026-11-06</span></p></td>
+<td><p>7</p></td>
+<td><p>0</p></td>
+<td><p>132</p></td>
+<td><p>299</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

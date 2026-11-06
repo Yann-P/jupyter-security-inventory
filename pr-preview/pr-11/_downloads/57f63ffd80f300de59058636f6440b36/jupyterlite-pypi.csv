@@ -1,0 +1,13 @@
+package,repository,downloads/month,dependents,last published
+jupyterlite-core,jupyterlite/jupyterlite,60813,21,2026-10-30
+jupyterlite-pyodide-kernel,jupyterlite/pyodide-kernel,51057,8,2026-11-05
+jupyterlite-sphinx,jupyterlite/jupyterlite-sphinx,17684,0,2026-08-11
+jupyterlite,jupyterlite/jupyterlite,9673,8,2026-10-30
+jupyterlite-xeus,jupyterlite/xeus,3091,2,2026-11-03
+jupyterlite-javascript-kernel,jupyterlite/javascript-kernel,2056,4,2026-07-14
+jupyterlite-terminal,jupyterlite/terminal,1640,1,2026-11-02
+jupyterlite-p5-kernel,jupyterlite/p5-kernel,1246,1,2026-03-09
+litegitpuller,jupyterlite/litegitpuller,161,0,2026-09-15
+jupyterlite-echo-kernel,jupyterlite/echo-kernel,58,0,2025-11-26
+jupyterlab-webrtc-docprovider,jupyterlite/jupyterlab-webrtc-docprovider,38,0,2022-04-22
+repo2jupyterlite,jupyterlite/repo2jupyterlite,11,0,2022-11-02

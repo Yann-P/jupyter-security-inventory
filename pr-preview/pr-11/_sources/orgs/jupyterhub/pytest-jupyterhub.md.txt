@@ -1,0 +1,35 @@
+# jupyterhub\/pytest\-jupyterhub
+
+Reusable pytest plugin for testing JupyterHub\'s components
+
+tooling · [on GitHub](https://github.com/jupyterhub/pytest-jupyterhub) · scanned at commit [0bc90cd](https://github.com/jupyterhub/pytest-jupyterhub/tree/0bc90cdd06c01c2a63ae56e36878ea25ce7642fd)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [pytest\-jupyterhub](https://pypi.org/project/pytest-jupyterhub/), [198](https://pypistats.org/packages/pytest-jupyterhub) downloads/month, 0 dependents, last published 2023-04-25
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains a pytest plugin \(pytest\_jupyterhub\/\) published to PyPI with tests and CI\, clearly a reusable testing tool for JupyterHub components\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** missing. No SECURITY\.md\, here or in jupyterhub\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of pytest\-jupyterhub \(2023\-04\-25\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of pytest\-jupyterhub \(2023\-04\-25\) allows Python 3\.8\, which has had no security fixes since 2024\-10\-07\.
+
+## CI and releases
+
+- **Workflows:** 2, run on pull\_request, push, workflow\_dispatch
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 5, 4 by tag, 1 by branch. Third-party, not pinned: codecov\/codecov\-action\@v6, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v6, actions\/setup\-node\@v6, actions\/setup\-python\@v6, codecov\/codecov\-action\@v6, pypa\/gh\-action\-pypi\-publish\@release\/v1
+- **Files:** 33: 13 docs, 7 config, 7 code, 4 other, 2 media

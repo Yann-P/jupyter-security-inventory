@@ -1,0 +1,13 @@
+repo,kind,live service
+jupyterhealth/hub,documentation,jupyter-health.2i2c.cloud
+jupyterhealth/jupyterhealth.github.io,documentation,docs.jupyterhealth.org
+jupyterhealth/jupyterhealth.org,documentation,jupyterhealth.org
+jupyterhealth/myst-site-article,documentation,jupyterhealth.github.io/myst-site
+jupyterhealth/myst-site-book,documentation,jupyterhealth.github.io/myst-site
+jupyterhealth/software-documentation,documentation,jupyterhealth.github.io/software-documentation
+jupyterhealth/.github,documentation,
+jupyterhealth/demos,example,
+jupyterhealth/fhir-cross-version,documentation,
+jupyterhealth/jhe-smart-demo,example,
+jupyterhealth/jupyterhealth-software,documentation,
+jupyterhealth/team-compass,documentation,

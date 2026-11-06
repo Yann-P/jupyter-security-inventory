@@ -1,0 +1,14 @@
+repo,kind,package,downloads/month,dependents,image,all-time pulls,used in CI,live service,security boundary
+jupyterlite/jupyterlite,package,PYPI:jupyterlite-core,60813,21,,,,,
+jupyterlite/pyodide-kernel,package,PYPI:jupyterlite-pyodide-kernel,51057,8,,,,,
+jupyterlite/jupyterlite-sphinx,package,PYPI:jupyterlite-sphinx,17684,0,,,,,
+jupyterlite/xeus,package,PYPI:jupyterlite-xeus,3091,2,,,,,
+jupyterlite/cockle,package,NPM:@jupyterlite/cockle,2094,3,,,,jupyterlite.github.io/cockle,
+jupyterlite/javascript-kernel,package,PYPI:jupyterlite-javascript-kernel,2056,4,,,,,
+jupyterlite/terminal,package,PYPI:jupyterlite-terminal,1640,1,,,,,
+jupyterlite/p5-kernel,package,PYPI:jupyterlite-p5-kernel,1246,1,,,,,
+jupyterlite/litegitpuller,package,PYPI:litegitpuller,161,0,,,,,
+jupyterlite/echo-kernel,package,PYPI:jupyterlite-echo-kernel,58,0,,,,,
+jupyterlite/jupyterlab-webrtc-docprovider,package,PYPI:jupyterlab-webrtc-docprovider,38,0,,,,,executes untrusted collaboration messages from peers over WebRTC
+jupyterlite/repo2jupyterlite,package,PYPI:repo2jupyterlite,11,0,,,,,
+jupyterlite/jupyterlite-lsp,package,,,,,,,,

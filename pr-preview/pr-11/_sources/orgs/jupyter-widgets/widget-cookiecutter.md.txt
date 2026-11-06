@@ -1,0 +1,35 @@
+# jupyter\-widgets\/widget\-cookiecutter
+
+A cookiecutter template for creating a custom Jupyter widget project\.
+
+tooling · [on GitHub](https://github.com/jupyter-widgets/widget-cookiecutter) · scanned at commit [347b812](https://github.com/jupyter-widgets/widget-cookiecutter/tree/347b812631f9e92f32bd2a8ccd78958a8fa8abed)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a deprecated cookiecutter template with files like cookiecutter\.json and template directories\, designed to scaffold new Jupyter widget projects\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on pull\_request, push
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** 2, 2 by tag. Third-party, not pinned: conda\-incubator\/setup\-miniconda\@v2
+- **Build requirements:** jupyter\_packaging, jupyterlab, setuptools, wheel
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v2, conda\-incubator\/setup\-miniconda\@v2
+- **Files:** 26: 10 code, 9 config, 4 docs, 3 other

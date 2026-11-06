@@ -1,0 +1,35 @@
+# jupyterlab\/\.github
+
+Community health files for the \@JupyterLab organization
+
+documentation · [on GitHub](https://github.com/jupyterlab/.github) · scanned at commit [4868796](https://github.com/jupyterlab/.github/tree/486879676b42459f54bb0c54b8895dcc78f5a94f)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Contains standard community health files \(CODE\_OF\_CONDUCT\.md\, SECURITY\.md\, FUNDING\.yml\) and issue templates for the \@JupyterLab organization\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 1, run on schedule, workflow\_dispatch
+- **Publishes:** nothing
+- **Secrets:** GH\_APP\_PRIVATE\_KEY
+- **Actions:** 1, 1 by branch. Third-party, not pinned: yuvipanda\/pr\-triage\-board\-bot\@main
+- **Build requirements:** none
+
+## Details
+
+- **All actions it uses:** yuvipanda\/pr\-triage\-board\-bot\@main
+- **Files:** 12: 5 docs, 5 config, 2 media

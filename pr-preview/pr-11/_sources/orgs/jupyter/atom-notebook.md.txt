@@ -1,0 +1,34 @@
+# jupyter\/atom\-notebook
+
+\[Deprecated\] Jupyter Notebook\, but inside Atom\.
+
+package · [on GitHub](https://github.com/jupyter/atom-notebook) · scanned at commit [117e317](https://github.com/jupyter/atom-notebook/tree/117e3171eb50f68e3dd22ca87e34e6020e041f6c)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** Files like lib\/main\.js\, lib\/notebook\-editor\.js\, and package\.json indicate an Atom package that adds notebook functionality\, and the README states it is \'a package that works like the Jupyter Notebook\, but inside Atom\' installed via apm\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** n\/a. No GitHub workflows\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** none
+- **Publishes:** nothing
+- **Secrets:** none
+- **Actions:** none
+- **Build requirements:** none
+
+## Details
+
+- **Files:** 19: 7 other, 7 code, 3 docs, 1 config, 1 web

@@ -1,0 +1,35 @@
+# jupyter\-server\/pytest\-jupyter
+
+A pytest plugin for testing Jupyter core libraries and extensions\.
+
+package · [on GitHub](https://github.com/jupyter-server/pytest-jupyter) · scanned at commit [9509dd2](https://github.com/jupyter-server/pytest-jupyter/tree/9509dd22d3a29122373d8a5ae134632f10abce21)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [pytest\-jupyter](https://pypi.org/project/pytest-jupyter/), [25,571](https://pypistats.org/packages/pytest-jupyter) downloads/month, 1 dependents, last published 2025-10-16
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repo provides pytest plugins for Jupyter core libraries and extensions\, with plugins like jupyter\_server\.py and jupyter\_client\.py and published as a PyPI package\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of jupyter\-server\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** missing. The latest release of pytest\-jupyter \(2025\-10\-16\) has no attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of pytest\-jupyter \(2025\-10\-16\) allows Python 3\.10\, which has had no security fixes since 2026\-10\-01\.
+
+## CI and releases
+
+- **Workflows:** 5, run on pull\_request, push, release, schedule, workflow\_dispatch
+- **Publishes:** jupyter\_releaser
+- **Secrets:** APP\_PRIVATE\_KEY
+- **Actions:** 5, 4 by tag, 1 by branch. Third-party, not pinned: re\-actors\/alls\-green\@release\/v1
+- **Build requirements:** hatchling
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@v4, actions\/create\-github\-app\-token\@v1, [jupyter\-server\/jupyter\_releaser](/orgs/jupyter-server/jupyter_releaser.md)\@v2, [jupyterlab\/maintainer\-tools](/orgs/jupyterlab/maintainer-tools.md)\@v1, re\-actors\/alls\-green\@release\/v1
+- **Files:** 33: 14 code, 9 config, 6 docs, 4 other

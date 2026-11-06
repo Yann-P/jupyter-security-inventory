@@ -1,0 +1,35 @@
+# ipython\/matplotlib\-inline
+
+Inline Matplotlib backend for Jupyter
+
+package · [on GitHub](https://github.com/ipython/matplotlib-inline) · scanned at commit [28f8f3a](https://github.com/ipython/matplotlib-inline/tree/28f8f3a1b4654b85a45a12626eb99a18e03bb162)
+
+## Reach
+
+- **Packages:** []{.fa-brands .fa-python} [matplotlib\-inline](https://pypi.org/project/matplotlib-inline/), [91,853,623](https://pypistats.org/packages/matplotlib-inline) downloads/month, 16,779 dependents, last published 2026-05-08
+- **Container images:** none
+- **Run by other repositories:** none
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** The repository is a Python package named matplotlib\-inline\, installed via pip\/conda\, that provides an inline backend for matplotlib in Jupyter\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** done via workflow command. Runs in a workflow\. Files: [\.github\/workflows\/zizmor\.yml](https://github.com/ipython/matplotlib-inline/blob/28f8f3a1b4654b85a45a12626eb99a18e03bb162/.github/workflows/zizmor.yml)
+- **[SECURITY\.md](/topics/security-policy.md):** done via organization. Uses the SECURITY\.md of ipython\/\.github\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** done. Its latest PyPI release has attestations\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** missing. The latest release of matplotlib\-inline \(2026\-05\-08\) allows Python 3\.9\, which has had no security fixes since 2025\-10\-31\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push
+- **Publishes:** pypi
+- **Secrets:** none
+- **Actions:** 5, all pinned to a commit
+- **Build requirements:** flit\_core
+
+## Details
+
+- **All actions it uses:** actions\/checkout\@3d3c42e, actions\/setup\-python\@6d4fd22, astral\-sh\/setup\-uv\@07a047e, github\/codeql\-action\@9b32540, pypa\/gh\-action\-pypi\-publish\@7245906
+- **Files:** 16: 6 config, 4 code, 3 other, 2 notebook, 1 docs

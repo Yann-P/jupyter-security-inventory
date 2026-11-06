@@ -1,0 +1,36 @@
+# jupyterhub\/action\-k3s\-helm
+
+A GitHub action to install K3S\, Calico\, and Helm\.
+
+tooling · [on GitHub](https://github.com/jupyterhub/action-k3s-helm) · scanned at commit [6da89b7](https://github.com/jupyterhub/action-k3s-helm/tree/6da89b79178a4f74d94114306c5c39df06d28b1c)
+
+## Reach
+
+- **Packages:** none
+- **Container images:** none
+- **Run by other repositories:** 8 in their CI
+- **Live service:** none
+- **Security boundary:** no
+- **Why these labels:** This repository provides a GitHub Action to install K3s\, Calico\, and Helm\, as indicated by action\.yml and README\, fitting the tooling category\. (deepseek\-v4\-pro)
+
+## Security topics
+
+- **[zizmor](/topics/zizmor.md):** missing. No sign of zizmor\.
+- **[SECURITY\.md](/topics/security-policy.md):** n\/a. Ships no package or image\.
+- **[PyPI attestations](/topics/pypi-attestations.md):** n\/a. No PyPI package\.
+- **[npm trusted publishing](/topics/npm-trusted-publishing.md):** n\/a. No npm package\.
+- **[Supported Python](/topics/supported-python.md):** n\/a. No PyPI package\.
+
+## CI and releases
+
+- **Workflows:** 3, run on pull\_request, push, release, workflow\_dispatch
+- **Publishes:** cloud
+- **Secrets:** none
+- **Actions:** 4, 4 by tag. Third-party, not pinned: Actions\-R\-Us\/actions\-tagger\@v2
+- **Build requirements:** none
+
+## Details
+
+- **Run it in their CI:** [binder\-examples\/zero\-to\-jupyterhub\-k8s](/orgs/binder-examples/zero-to-jupyterhub-k8s.md), [jupyterhub\/action\-k8s\-await\-workloads](/orgs/jupyterhub/action-k8s-await-workloads.md), [jupyterhub\/action\-k8s\-namespace\-report](/orgs/jupyterhub/action-k8s-namespace-report.md), [jupyterhub\/binderhub](/orgs/jupyterhub/binderhub.md), [jupyterhub\/kubespawner](/orgs/jupyterhub/kubespawner.md), [jupyterhub\/mybinder\.org\-deploy](/orgs/jupyterhub/mybinder.org-deploy.md), [jupyterhub\/pebble\-helm\-chart](/orgs/jupyterhub/pebble-helm-chart.md), [jupyterhub\/zero\-to\-jupyterhub\-k8s](/orgs/jupyterhub/zero-to-jupyterhub-k8s.md)
+- **All actions it uses:** Actions\-R\-Us\/actions\-tagger\@v2, actions\/checkout\@v7, [jupyterhub\/action\-k3s\-helm](/orgs/jupyterhub/action-k3s-helm.md)\@v4, [jupyterhub\/action\-k8s\-namespace\-report](/orgs/jupyterhub/action-k8s-namespace-report.md)\@v1
+- **Files:** 18: 13 config, 3 docs, 2 other
