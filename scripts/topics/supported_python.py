@@ -6,6 +6,7 @@ of every dependency that has dropped that version.
 """
 
 from packaging.specifiers import InvalidSpecifier, SpecifierSet
+
 from topics import DONE, MISSING, NOT_APPLICABLE, PARTIAL, Result, Topic, names
 
 # When each CPython version stopped, or will stop, getting security fixes, oldest version first, from
@@ -55,10 +56,10 @@ def check(repo: dict, scan: dict) -> Result:
     # Dates compare as text, and "2027-10" comes before every day of October 2027.
     without = [p for p in packages if oldest[p["name"]] and END_OF_LIFE[oldest[p["name"]]] <= repo["fetched_on"]]
     if not without:
-        versions = sorted({v for v in oldest.values() if v}, key=list(END_OF_LIFE).index)
-        newer = f"Python {versions[0]} or newer" if versions else "a Python newer than any we know"
+        version = min(filter(None, oldest.values()), key=list(END_OF_LIFE).index, default=None)
+        least = f"at least Python {version}" if version else "a Python newer than any we know"
         one = len(packages) == 1
-        return Result(DONE, f"Its latest PyPI release{'' if one else 's'} require{'s' if one else ''} {newer}.")
+        return Result(DONE, f"Its latest PyPI release{'' if one else 's'} require{'s' if one else ''} {least}.")
     status = PARTIAL if len(without) < len(packages) else MISSING
     if len(without) > 1:
         reason = f"The latest releases of {names(without)} allow a Python that no longer gets security fixes."

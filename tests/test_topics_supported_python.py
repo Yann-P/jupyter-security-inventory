@@ -19,7 +19,8 @@ def test_the_oldest_python_allowed_is_what_pip_would_install_on():
     assert oldest(">=3.99") is None
 
 
-def test_a_python_counts_as_end_of_life_from_the_day_it_stopped_getting_security_fixes():
+def test_a_python_counts_as_end_of_life_from_the_day_it_stopped_getting_security_fixes(monkeypatch):
+    monkeypatch.setattr(supported_python, "END_OF_LIFE", {"3.10": "2026-10-01", "3.11": "2027-10", "3.12": "2028-10"})
     assert check("2026-09-30", ("PYPI", "a", ">=3.10")) == "done"
     assert check("2026-10-01", ("PYPI", "a", ">=3.10")) == "missing"
     assert check("2027-09-30", ("PYPI", "a", ">=3.11")) == "done"
