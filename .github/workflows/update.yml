@@ -56,5 +56,6 @@ jobs:
     needs: update
     uses: ./.github/workflows/docs.yml
     permissions:
-      contents: write
-      pull-requests: write  # unused here, but GitHub requires it because docs.yml's publish job asks for it
+      contents: read
+      pages: write
+      id-token: write

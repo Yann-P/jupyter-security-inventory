@@ -139,7 +139,7 @@ so it is shown as text and never becomes HTML, a link or a substitution.
 | Workflow | When | What |
 |---|---|---|
 | `ci.yml` | each push to `main` and each pull request | Formatting (pre-commit, ruff), the tests, and a check that the outputs of steps 6 to 8 match the code. Steps 1 to 5 need the network or an LLM, so they are not rerun. |
-| `docs.yml` | each push to `main` and each pull request | Builds the site with warnings as errors and pushes it to the `gh-pages` branch, which GitHub Pages serves: `main` at the root, and each pull request from this repo at `pr-preview/pr-<number>/` until it closes, with a link in a comment. |
+| `docs.yml` | each push to `main` and each pull request; on `main` it also publishes | Builds the site with warnings as errors. |
 | `update.yml` | every day | Runs steps 1 to 8, commits `output/`, then calls `docs.yml`. |
 
 Actions are pinned to commit SHAs.

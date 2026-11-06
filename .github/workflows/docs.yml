@@ -1,23 +1,17 @@
-# Builds the site and pushes it to the gh-pages branch: main at the root, each pull request in pr-preview/pr-<number>/.
+# Builds the web page from docs/ and, on main, publishes it with GitHub Pages. The daily update calls it too.
 name: Docs
 
 on:
   push:
     branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened, closed]
   workflow_call:
 
 permissions:
   contents: read
 
-concurrency:
-  group: docs-${{ github.event.pull_request.number || github.run_id }}
-  cancel-in-progress: true
-
 jobs:
   build:
-    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
@@ -29,68 +23,23 @@ jobs:
           python-version: "3.14"
       - run: pip install -r requirements-docs.txt
       - run: sphinx-build --fail-on-warning docs docs/_build/html
-      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9  # v7.0.2
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
         with:
-          name: site
           path: docs/_build/html
-          retention-days: 1
 
-  # Only this job can push, and it runs none of the build's code.
-  publish:
+  deploy:
+    if: github.event_name != 'pull_request'
     needs: build
-    if: >-
-      !cancelled() && (needs.build.result == 'success' || github.event.action == 'closed') &&
-      (github.ref == 'refs/heads/main' || github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
+      pages: write
+      id-token: write
     concurrency:
-      group: gh-pages-${{ github.event.pull_request.number || 'main' }}
+      group: pages
       cancel-in-progress: false
-    env:
-      GH_TOKEN: ${{ github.token }}
-      PR: ${{ github.event.pull_request.number }}
-      ACTION: ${{ github.event.action }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - if: github.event.action != 'closed'
-        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
-        with:
-          name: site
-          path: site
-      - name: Push to gh-pages
-        run: |
-          remote="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git clone --quiet --depth 1 --branch gh-pages "$remote" pages || {
-            git init --quiet --initial-branch gh-pages pages
-            git -C pages remote add origin "$remote"
-          }
-          if [ -z "$PR" ]; then
-            rsync -a --delete --exclude /.git --exclude /pr-preview site/ pages/
-            touch pages/.nojekyll  # otherwise Pages runs Jekyll, which drops _static/
-            message="Publish main"
-          elif [ "$ACTION" = closed ]; then
-            rm -rf "pages/pr-preview/pr-$PR"
-            message="Remove the preview of pull request $PR"
-          else
-            mkdir -p "pages/pr-preview/pr-$PR"
-            rsync -a --delete site/ "pages/pr-preview/pr-$PR/"
-            message="Publish a preview of pull request $PR"
-          fi
-          cd pages
-          git add --all
-          git diff --cached --quiet && exit 0
-          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-            commit --quiet -m "$message"
-          for attempt in 1 2 3; do
-            git push --quiet origin HEAD:gh-pages && exit 0
-            git pull --quiet --rebase origin gh-pages
-          done
-          exit 1
-      - name: Comment the link, once per pull request
-        if: github.event_name == 'pull_request' && github.event.action != 'closed'
-        run: |
-          url="https://yann-p.github.io/jupyter-security-inventory/pr-preview/pr-$PR/"
-          gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR/comments" \
-            --jq '.[] | select(.user.login == "github-actions[bot]") | .body' | grep -qF "$url" ||
-            gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="Preview, updated on every push: $url"
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1
