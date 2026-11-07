@@ -7492,7 +7492,7 @@
     }
   },
   "jupyter/jupyter_client": {
-    "head": "978361b3785dcd9cba6c733f4555e833e88fc0df",
+    "head": "e8043c08887a26ae1186b7547512e9c8ad8706e2",
     "n_files": 101,
     "file_types": {
       "config": 11,
@@ -8452,14 +8452,14 @@
     "security_policy": null
   },
   "jupyter/notebook": {
-    "head": "b5a05a862382c90bda0343af3535098a5548c023",
-    "n_files": 376,
+    "head": "1da1cc965fc1a5f232012eeb4d9cc2f183406ace",
+    "n_files": 378,
     "file_types": {
       "config": 87,
       "other": 18,
       "docs": 32,
-      "code": 94,
-      "web": 33,
+      "code": 95,
+      "web": 34,
       "notebook": 16,
       "media": 96
     },
@@ -9106,7 +9106,7 @@
     "security_policy": null
   },
   "jupyter/try-jupyter": {
-    "head": "d178bd53e9d234b7936255e2150d11a0270a23dd",
+    "head": "f3ab103efcde1a42bea502c6efb7caae54e6b821",
     "n_files": 37,
     "file_types": {
       "other": 4,
@@ -11550,7 +11550,7 @@
     "security_policy": null
   },
   "jupyterhub/configurable-http-proxy": {
-    "head": "03cdac9cad603f280e9a6b8dc0ac676fa4c7328a",
+    "head": "f4f53d6263562596821c0986172e4147d240b742",
     "n_files": 42,
     "file_types": {
       "other": 9,
@@ -11602,7 +11602,7 @@
         ".pre-commit-config.yaml"
       ]
     },
-    "readme": "# [configurable-http-proxy](https://github.com/jupyterhub/configurable-http-proxy)\n\n[![npm](https://img.shields.io/npm/v/configurable-http-proxy.svg?logo=npm)](https://www.npmjs.com/package/configurable-http-proxy)\n[![Docker Build status](https://img.shields.io/docker/cloud/build/jupyterhub/configurable-http-proxy?logo=docker&label=build)](https://hub.docker.com/r/jupyterhub/configurable-http-proxy/tags)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/actions/workflow/status/jupyterhub/configurable-http-proxy/test.yml?branch=main&logo=github&label=tests)](https://github.com/jupyterhub/configurable-http-proxy/actions)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/configurable-http-proxy/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub/z2jh-k8s)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\n**configurable-http-proxy** (CHP) provides you with a way to update and manage\na proxy table using a command line interface or REST API.\nIt is a simple wrapper around [node-http-proxy][]. node-http-proxy is an HTTP\nprogrammable proxying library that supports websockets and is suitable for\nimplementing components such as reverse proxies and load balancers. By\nwrapping node-http-proxy, **configurable-http-proxy** extends this\nfunctionality to [JupyterHub] deployments.\n\n## Table of Contents\n\n- [Install](#install)\n- [Usage](#usage)\n  - [Starting the proxy](#starting-the-proxy)\n  - [Setting a default target](#setting-a-default-target)\n  - [Command-line options](#command-line-options)\n- [Using the REST API](#using-the-rest-api)\n  - [REST API Basics](#rest-api-basics)\n  - [Authenticating via passing a token](#authenticating-via-passing-a-token)\n  - [Getting the routing table](#getting-the-routing-table)\n  - [Adding new routes](#adding-new-routes)\n  - [Deleting routes](#deleting-routes)\n- [Custom error pages](#custom-error-pages)\n  - [Setting the path for custom error pages](#setting-the-path-for-custom-error-pages)\n  - [Setting a target for custom error handling](#setting-a-target-for-custom-error-handling)\n- [Host-based routing](#host-based-routing)\n- [Troubleshooting](#troubleshooting)\n\n## Install\n\nPrerequisite: [Node.js](https://nodejs.org/en/download/) ≥ 22\n\nIf you're installing `configurable-http-proxy` in Linux, you can follow [the in",
+    "readme": "# [configurable-http-proxy](https://github.com/jupyterhub/configurable-http-proxy)\n\n[![npm](https://img.shields.io/npm/v/configurable-http-proxy.svg?logo=npm)](https://www.npmjs.com/package/configurable-http-proxy)\n[![Docker Build status](https://img.shields.io/docker/cloud/build/jupyterhub/configurable-http-proxy?logo=docker&label=build)](https://hub.docker.com/r/jupyterhub/configurable-http-proxy/tags)\n[![GitHub Workflow Status - Test](https://img.shields.io/github/actions/workflow/status/jupyterhub/configurable-http-proxy/test.yml?branch=main&logo=github&label=tests)](https://github.com/jupyterhub/configurable-http-proxy/actions)\n[![GitHub](https://img.shields.io/badge/issue_tracking-github-blue?logo=github)](https://github.com/jupyterhub/configurable-http-proxy/issues)\n[![Discourse](https://img.shields.io/badge/help_forum-discourse-blue?logo=discourse)](https://discourse.jupyter.org/c/jupyterhub/z2jh-k8s)\n[![Gitter](https://img.shields.io/badge/social_chat-gitter-blue?logo=gitter)](https://gitter.im/jupyterhub/jupyterhub)\n\n**configurable-http-proxy** (CHP) provides you with a way to update and manage\na proxy table using a command line interface or REST API.\nIt is a simple wrapper around [node-http-proxy][]. node-http-proxy is an HTTP\nprogrammable proxying library that supports websockets and is suitable for\nimplementing components such as reverse proxies and load balancers. By\nwrapping node-http-proxy, **configurable-http-proxy** extends this\nfunctionality to [JupyterHub] deployments.\n\n## Table of Contents\n\n- [Install](#install)\n- [Usage](#usage)\n  - [Starting the proxy](#starting-the-proxy)\n  - [Setting a default target](#setting-a-default-target)\n  - [Command-line options](#command-line-options)\n- [Using the REST API](#using-the-rest-api)\n  - [REST API Basics](#rest-api-basics)\n  - [Authenticating via passing a token](#authenticating-via-passing-a-token)\n  - [Getting the routing table](#getting-the-routing-table)\n  - [Adding new routes](#adding-new-routes)\n  - [Deleting routes](#deleting-routes)\n- [Custom error pages](#custom-error-pages)\n  - [Setting the path for custom error pages](#setting-the-path-for-custom-error-pages)\n  - [Setting a target for custom error handling](#setting-a-target-for-custom-error-handling)\n  - [Combining error-target with error-path fallback](#combining-error-target-with-error-path-fallback)\n- [Host-based routing](#host-based-routing)\n- [Troubleshooting](#troubleshooting)\n\n## Install\n\nPrerequisite: [Node.js](https://nodejs",
     "security_policy": null
   },
   "jupyterhub/design": {
@@ -12045,7 +12045,7 @@
     "security_policy": null
   },
   "jupyterhub/jupyter-server-proxy": {
-    "head": "e5f6497a9e8727ce7dbfac26b1956850cd5269a5",
+    "head": "2c92f70d0d847d67f7aa5be2bbfd2f0598e9e747",
     "n_files": 90,
     "file_types": {
       "other": 10,
@@ -12193,7 +12193,7 @@
     }
   },
   "jupyterhub/jupyterhub-container-images": {
-    "head": "7a125d71181ee93476afc8345d57aa4e59071c05",
+    "head": "06d0b9391562f21ef2f2f031a9a1d89403d06377",
     "n_files": 20,
     "file_types": {
       "config": 8,
@@ -12334,7 +12334,7 @@
     "security_policy": null
   },
   "jupyterhub/jupyterhub-idle-culler": {
-    "head": "65c60ecb5979e46a16d5acbfb6023719f882ae83",
+    "head": "5ab85d329a70b860bef67b3cf30ec7aa1733d5f9",
     "n_files": 19,
     "file_types": {
       "other": 2,
@@ -12633,7 +12633,7 @@
     "security_policy": null
   },
   "jupyterhub/kubespawner": {
-    "head": "47ce269d515b7b509cb5ebe45d69ebe79d9dd6c6",
+    "head": "dd7bc1f04d10bf7b237c98f1c897a9a9192f959c",
     "n_files": 68,
     "file_types": {
       "other": 6,
@@ -12809,7 +12809,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "100add0cfc8ff21be418a339d30eb235b20a2523",
+    "head": "a8df705c6e6e2f22c30c99e01ca637e384523ac6",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -12898,13 +12898,13 @@
     "security_policy": null
   },
   "jupyterhub/nativeauthenticator": {
-    "head": "67acaf6a1a7305a9b43dec90056dc08b4f5ef98a",
-    "n_files": 54,
+    "head": "f899019b2811c5da7ae8fc2df13912e9e3f749ba",
+    "n_files": 53,
     "file_types": {
       "other": 6,
       "config": 7,
       "docs": 10,
-      "code": 16,
+      "code": 15,
       "media": 8,
       "web": 7
     },
@@ -12912,7 +12912,7 @@
       {
         "system": "PYPI",
         "name": "jupyterhub-nativeauthenticator",
-        "path": "setup.py",
+        "path": "pyproject.toml",
         "in_test_or_example_folder": false
       }
     ],
@@ -12929,13 +12929,18 @@
       ]
     },
     "uses": [
-      "actions/checkout@v7",
-      "actions/setup-python@v7",
-      "codecov/codecov-action@v7",
-      "pypa/gh-action-pypi-publish@release/v1"
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+      "codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5",
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
-    "build_requires": [],
+    "build_requires": [
+      "hatch-requirements-txt",
+      "hatchling"
+    ],
     "mentions": {
       "pre-commit": [
         ".pre-commit-config.yaml"
@@ -13128,7 +13133,7 @@
     "security_policy": null
   },
   "jupyterhub/oauthenticator": {
-    "head": "d3ae420ac2af7b71b486a4dcfebcb6bb5d200e66",
+    "head": "ed8646ea9268483ed7dd611fbd39c9a3f4d20635",
     "n_files": 97,
     "file_types": {
       "other": 9,
@@ -13324,7 +13329,7 @@
     "security_policy": null
   },
   "jupyterhub/repo2docker": {
-    "head": "ebcc593885cc6a7e344520ca1bb8766242093c8f",
+    "head": "2d5af27ace6d03ae262f608031b3c82fe4a7cf0f",
     "n_files": 381,
     "file_types": {
       "config": 73,
@@ -13850,7 +13855,7 @@
     "security_policy": null
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "5ab26676c5e11bcfb8d0bff74241f0ce057afc8a",
+    "head": "c7b0d2884d4e5337f9e2337e924376db0f2e36bc",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -14840,7 +14845,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "96eaa7dac2942c4f6ded87070816a3bd559f9252",
+    "head": "bc49e38847317dae974b2756865a850a6105e592",
     "n_files": 197,
     "file_types": {
       "other": 21,
@@ -15076,7 +15081,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-chat": {
-    "head": "d2127e796e43e2a7538b449b4be104fb604ebb80",
+    "head": "878e7268e32f1890603221ccb65e700c152ba960",
     "n_files": 272,
     "file_types": {
       "config": 37,
@@ -15441,15 +15446,15 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "c0a095d1fb65e3b24fe13609ee8f887a5af43e49",
-    "n_files": 3095,
+    "head": "1c917ab158ef862c86630291ecd0771f0b6de8ba",
+    "n_files": 3101,
     "file_types": {
       "config": 604,
       "other": 24,
       "docs": 181,
-      "code": 1392,
+      "code": 1397,
       "web": 259,
-      "media": 600,
+      "media": 601,
       "notebook": 35
     },
     "packages": [
@@ -17822,7 +17827,7 @@
     }
   },
   "jupyterlite/cockle": {
-    "head": "d424f00ae7996fd8e65bfbd19b6eee19dc337d4a",
+    "head": "482724b57a9503153e85b7ec5d6f74f6d9d6892f",
     "n_files": 256,
     "file_types": {
       "config": 23,
