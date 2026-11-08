@@ -6371,13 +6371,13 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-sql": {
-    "head": "a2b12e5c9c6eec6d68d3025346e35a66544bb162",
-    "n_files": 53,
+    "head": "16d60b392fa62a5682829d1cd152576fded4758c",
+    "n_files": 52,
     "file_types": {
       "config": 8,
       "other": 8,
       "docs": 16,
-      "code": 11,
+      "code": 10,
       "media": 4,
       "notebook": 5,
       "data": 1
