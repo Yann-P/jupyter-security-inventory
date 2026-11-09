@@ -1,17 +1,24 @@
 # Builds the web page from docs/ and, on main, publishes it with GitHub Pages. The daily update calls it too.
+# A pull request from this repo gets a preview in another repo, so that no pull request can touch the live site.
 name: Docs
 
 on:
   push:
     branches: [main]
   pull_request:
+    types: [opened, synchronize, reopened, closed]
   workflow_call:
 
 permissions:
   contents: read
 
+concurrency:
+  group: docs-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
 jobs:
   build:
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
@@ -43,3 +50,66 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1
+
+  # Forks and Dependabot get no secrets, so no preview.
+  preview:
+    needs: build
+    if: >-
+      !cancelled() && (needs.build.result == 'success' || github.event.action == 'closed') &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    env:
+      PR: ${{ github.event.number }}
+      ACTION: ${{ github.event.action }}
+    steps:
+      - id: key
+        env:
+          KEY: ${{ secrets.PREVIEWS_DEPLOY_KEY }}
+        run: |
+          if [ -n "$KEY" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::No preview: the PREVIEWS_DEPLOY_KEY secret is not set."
+          fi
+      - if: steps.key.outputs.ready && github.event.action != 'closed'
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333  # v8.0.2
+        with:
+          name: github-pages
+      - if: steps.key.outputs.ready
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          repository: Yann-P/jupyter-security-inventory-previews
+          ssh-key: ${{ secrets.PREVIEWS_DEPLOY_KEY }}
+          path: previews
+          persist-credentials: true  # the next step pushes with it
+      - if: steps.key.outputs.ready
+        name: Push the preview
+        run: |
+          rm -rf "previews/pr-$PR"
+          if [ "$ACTION" != closed ]; then
+            mkdir "previews/pr-$PR"
+            tar -xf artifact.tar -C "previews/pr-$PR"
+          fi
+          touch previews/.nojekyll  # otherwise Pages runs Jekyll, which drops _static/
+          cd previews
+          git add --all
+          git diff --cached --quiet && exit 0
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit --quiet -m "${ACTION} pull request $PR"
+          for attempt in 1 2 3; do
+            git push --quiet && exit 0
+            git pull --quiet --rebase
+          done
+          exit 1
+      - if: steps.key.outputs.ready && github.event.action != 'closed'
+        name: Comment the link, once per pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          url="https://yann-p.github.io/jupyter-security-inventory-previews/pr-$PR/"
+          gh api --paginate "repos/$GITHUB_REPOSITORY/issues/$PR/comments" \
+            --jq '.[] | select(.user.login == "github-actions[bot]") | .body' | grep -qF "$url" ||
+            gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="Preview, updated on every push: $url"
