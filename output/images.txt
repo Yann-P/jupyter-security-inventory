@@ -29,8 +29,8 @@ docker.io/jupyterhub/jupyterhub:latest
 docker.io/jupyterhub/jupyterhub-demo:latest
 docker.io/jupyterhub/jupyterhub-onbuild:latest
 docker.io/jupyterhub/k8s-binderhub:1.0.0-0.dev.git.3987.h1b454db5
-docker.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7602.ha8e31ad8
-docker.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7602.ha8e31ad8
+docker.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7613.hcee0e428
+docker.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7613.hcee0e428
 docker.io/jupyterhub/k8s-image-awaiter:4.4.5
 docker.io/jupyterhub/k8s-image-cleaner:0.2.0-n768.h13978ab
 docker.io/jupyterhub/k8s-network-tools:4.4.5
@@ -66,8 +66,8 @@ quay.io/jupyterhub/jupyterhub:latest
 quay.io/jupyterhub/jupyterhub-demo:latest
 quay.io/jupyterhub/jupyterhub-onbuild:latest
 quay.io/jupyterhub/k8s-binderhub:1.0.0-0.dev.git.3987.h1b454db5
-quay.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7602.ha8e31ad8
-quay.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7602.ha8e31ad8
+quay.io/jupyterhub/k8s-hub:5.0.0-0.dev.git.7613.hcee0e428
+quay.io/jupyterhub/k8s-hub-slim:5.0.0-0.dev.git.7613.hcee0e428
 quay.io/jupyterhub/k8s-image-awaiter:4.4.5
 quay.io/jupyterhub/k8s-network-tools:4.4.5
 quay.io/jupyterhub/k8s-secret-sync:4.4.5

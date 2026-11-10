@@ -1272,7 +1272,7 @@
     "security_policy": null
   },
   "ipython/ipykernel": {
-    "head": "f87d0e09863101be7a961d53f29549397ff62c72",
+    "head": "7940a0972ab7c1521eb652e5cd8ea36d31d144d4",
     "n_files": 114,
     "file_types": {
       "other": 6,
@@ -2894,10 +2894,10 @@
     "security_policy": null
   },
   "jupyter-book/mystmd": {
-    "head": "5d87e8b8a6a0fe176a872eb79e3ee1f0cd61b9c3",
-    "n_files": 1762,
+    "head": "50e82202324dc36f10bd04877d00016879da6f6e",
+    "n_files": 1765,
     "file_types": {
-      "docs": 476,
+      "docs": 479,
       "config": 413,
       "other": 78,
       "code": 689,
@@ -3692,13 +3692,13 @@
     "security_policy": null
   },
   "jupyter-server/enterprise_gateway": {
-    "head": "3be3bb30a09fd022bf093d8e29d9b9131eee1873",
-    "n_files": 335,
+    "head": "508287c8d87ae2c95417745cae446ac726e957d1",
+    "n_files": 339,
     "file_types": {
       "other": 31,
       "docs": 66,
       "config": 56,
-      "code": 91,
+      "code": 95,
       "web": 48,
       "media": 32,
       "notebook": 11
@@ -3834,7 +3834,7 @@
     "security_policy": null
   },
   "jupyter-server/gateway_provisioners": {
-    "head": "62f0af78ec5ca008e2ecd7cfadf4ae8baf0e1ed6",
+    "head": "4ad3bdafb655c9e4847540094e83ab2652bb973e",
     "n_files": 159,
     "file_types": {
       "other": 12,
@@ -4300,7 +4300,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyter_ydoc": {
-    "head": "87c9d791ade6fb5d29e89216af2a689279fee8ba",
+    "head": "190531b30aded5dbe85e883878c95ee3bd4e2086",
     "n_files": 76,
     "file_types": {
       "config": 22,
@@ -4367,7 +4367,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyverse": {
-    "head": "ef857b5f525a7bea8eb3f8b5000edba379e05c5c",
+    "head": "b2b82a9ecfd821e6ce344ed2dabb7b5c13d7d7a5",
     "n_files": 401,
     "file_types": {
       "config": 53,
@@ -5487,7 +5487,7 @@
     "security_policy": null
   },
   "jupyter-xeus/cpp-terminal": {
-    "head": "f0aa76acfaa929e9000be9063233f32ac7f6a619",
+    "head": "9e685fb0997a22855675ebb9369336f17f28b9a7",
     "n_files": 144,
     "file_types": {
       "other": 9,
@@ -5518,7 +5518,7 @@
       "ammaraskar/gcc-problem-matcher@master",
       "ammaraskar/msvc-problem-matcher@master",
       "cpp-linter/cpp-linter-action@v2",
-      "github/codeql-action@v4.39.1",
+      "github/codeql-action@v4.39.3",
       "ilammy/msvc-dev-cmd@v1.13.0",
       "lukka/get-cmake@latest",
       "mamba-org/setup-micromamba@v3.2.1",
@@ -7450,13 +7450,13 @@
     "security_policy": null
   },
   "jupyter/jupyter.github.io": {
-    "head": "6f9b3e2bdb6637547f022ec38aa90f5e1a891fdf",
-    "n_files": 330,
+    "head": "149ed77fd3adfa3f289f72f0551ff1e27b547bf6",
+    "n_files": 331,
     "file_types": {
       "media": 240,
       "config": 12,
       "other": 5,
-      "docs": 12,
+      "docs": 13,
       "web": 51,
       "code": 10
     },
@@ -10152,7 +10152,7 @@
     "security_policy": null
   },
   "jupyterhealth/helm-charts": {
-    "head": "81315f1641b81cbb3b045c6adc605e814f44ab6a",
+    "head": "b98de87879481117d0085264f950da3085fc0b1c",
     "n_files": 54,
     "file_types": {
       "config": 44,
@@ -10182,13 +10182,13 @@
     },
     "uses": [
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
-      "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
       "azure/setup-helm@9bc31f4ebc9c6b171d7bfbaa5d006ae7abdb4310",
-      "docker/login-action@dbcb813823bdd20940b903addbd779551569679f",
+      "docker/login-action@81c6f93d4bc991e510b342a00b419b3bb4efc5c6",
       "docker/setup-buildx-action@4d04d5d9486b7bd6fa91e7baf45bbb4f8b9deedd",
       "docker/setup-qemu-action@ce360397dd3f832beb865e1373c09c0e9f86d70a",
-      "helm/chart-testing-action@6ec842c01de15ebb84c8627d2744a0c2f2755c9f",
-      "helm/kind-action@06c1ae10762d3b9c1644e7fe69596ae519e015a2"
+      "helm/chart-testing-action@720270857a28afd41e2426521a7801db09e9b510",
+      "helm/kind-action@1544676c07bb3570fcb70166beaa07c4528fd4aa"
     ],
     "images": [],
     "build_requires": [],
@@ -10506,13 +10506,13 @@
     "security_policy": null
   },
   "jupyterhealth/jupyterhealth-exchange": {
-    "head": "3cb9e210e3c3a77ff582e2ba02214ac723b0c547",
-    "n_files": 944,
+    "head": "69af47b0007d4d249c38e9634ccdbe76a9845086",
+    "n_files": 947,
     "file_types": {
       "other": 10,
-      "config": 537,
+      "config": 539,
       "docs": 12,
-      "code": 309,
+      "code": 310,
       "web": 62,
       "media": 14
     },
@@ -10556,13 +10556,13 @@
     "uses": [
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
       "actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3",
-      "actions/setup-node@820762786026740c76f36085b0efc47a31fe5020",
-      "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
-      "astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7",
+      "actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2",
       "codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5",
       "docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc",
       "docker/login-action@783ae9cac559640a24c9212dfa6cd9e998252f9a",
-      "docker/metadata-action@8e671d84a3bd81afdfc4fdbb96a42b07c2a80934",
+      "docker/metadata-action@1ec73021df0717d8bef7700a897c064453280439",
       "docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069",
       "docker/setup-qemu-action@99012661954931238ded8c8b007157a8430204e1",
       "superfly/flyctl-actions@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1"
@@ -10967,7 +10967,7 @@
     "security_policy": null
   },
   "jupyterhealth/software-documentation": {
-    "head": "49a35c93b740f9eb4db1a0c055ea391403ca36f2",
+    "head": "322bbee610eae3db7a442fd18be154d001c46210",
     "n_files": 71,
     "file_types": {
       "config": 12,
@@ -12002,20 +12002,20 @@
     "security_policy": null
   },
   "jupyterhub/jupyter-rsession-proxy": {
-    "head": "a63034e8d917cc9f4ae5b885bf7eb598f45bc2a4",
-    "n_files": 18,
+    "head": "5fa36637fe14b483519efd59d920f9b952f7764c",
+    "n_files": 15,
     "file_types": {
-      "config": 7,
+      "config": 5,
       "other": 2,
       "docs": 5,
-      "code": 2,
+      "code": 1,
       "media": 2
     },
     "packages": [
       {
         "system": "PYPI",
         "name": "jupyter-rsession-proxy",
-        "path": "setup.py",
+        "path": "pyproject.toml",
         "in_test_or_example_folder": false
       }
     ],
@@ -12033,13 +12033,15 @@
       ]
     },
     "uses": [
-      "actions/checkout@v4",
-      "actions/checkout@v7",
-      "actions/setup-python@v7",
-      "pypa/gh-action-pypi-publish@release/v1"
+      "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33"
     ],
     "images": [],
-    "build_requires": [],
+    "build_requires": [
+      "hatchling"
+    ],
     "mentions": {},
     "readme": "# jupyter-rsession-proxy\n\n[![Test JupyterLab](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterlab.yaml/badge.svg)](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterlab.yaml)\n[![Test JupyterHub](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterhub.yaml/badge.svg)](https://github.com/jupyterhub/jupyter-rsession-proxy/actions/workflows/test-jupyterhub.yaml)\n\n**jupyter-rsession-proxy** provides Jupyter server and notebook extensions to proxy RStudio.\n\n![Screenshot](screenshot.png)\n\nIf you have a JupyterHub deployment, jupyter-rsession-proxy can take advantage of JupyterHub's existing authenticator and spawner to launch RStudio in users' Jupyter environments. You can also run this from within Jupyter.\nNote that [RStudio Server Pro](https://rstudio.com/products/rstudio-server-pro) has more featureful authentication and spawning than the standard version, in the event that you do not want to use Jupyter's.\n\nThis extension used to proxy Shiny server as well, however that functionality has been [separated](https://github.com/ryanlovett/jupyter-shiny-proxy).\n\n## Installation\n\n### Pre-reqs\n\n#### Install rstudio\nUse conda `conda install rstudio` or [download](https://www.rstudio.com/products/rstudio/download-server/) the corresponding package for your platform\n\nNote that rstudio server is needed to work with this extension.\n\n### Install jupyter-rsession-proxy\n\nInstall the library via `pip`:\n```\npip install jupyter-rsession-proxy\n```\nOr via `conda`:\n```\nconda install -c conda-forge jupyter-rsession-proxy\n```\n\n### Traitlets configuration\n\nYou may also manually configure this extension inside a [traitlets](https://traitlets.readthedocs.io/en/stable/) configuration file for [jupyter-server-proxy](https://jupyter-server-proxy.readthedocs.io/en/latest/server-process.html#specifying-config-via-traitlets). This also allows you to configure multiple different RStudio applications, for instance using different versions of R:\n\n```python\nfrom jupyter_rsession_proxy import setup_rserver\n# update the jupyter-server-proxy config by adding two RStudio servers\nc.ServerProxy.servers.update({\n  \"rstudio1\": setup_rserver(prefix=\"rstudio1\", r_path=\"/usr/bin/R\", launcher_title=\"RStudio (default R)\"),\n  \"rstudio2\": setup_rserver(prefix=\"rstudio2\", r_path=\"/opt/miniconda3/bin/R\", launcher_title=\"RStudio (other R)\")\n})\n# note that the prefix and the dict key are the same for each server (bot",
     "security_policy": null
@@ -12633,7 +12635,7 @@
     "security_policy": null
   },
   "jupyterhub/kubespawner": {
-    "head": "101d721767bc821349e003859e423cb3eddf6346",
+    "head": "4a5772bf658bc362f704fe58d8f980ce90a132a6",
     "n_files": 68,
     "file_types": {
       "other": 6,
@@ -12809,7 +12811,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "ab412e028e6743256ed6afc14e39af7e5f28de3e",
+    "head": "2826f4ff9625e47765ebd40bc45fe10f84d1bfec",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -13133,7 +13135,7 @@
     "security_policy": null
   },
   "jupyterhub/oauthenticator": {
-    "head": "ed8646ea9268483ed7dd611fbd39c9a3f4d20635",
+    "head": "ca8c70c21e1a24e89a9bc3f26f39010206c4d7f8",
     "n_files": 97,
     "file_types": {
       "other": 9,
@@ -13329,11 +13331,11 @@
     "security_policy": null
   },
   "jupyterhub/repo2docker": {
-    "head": "2d5af27ace6d03ae262f608031b3c82fe4a7cf0f",
-    "n_files": 381,
+    "head": "07f110141aa147bbe19be54f7b84e56181d70796",
+    "n_files": 383,
     "file_types": {
       "config": 73,
-      "other": 101,
+      "other": 103,
       "docs": 101,
       "code": 99,
       "web": 1,
@@ -13855,7 +13857,7 @@
     "security_policy": null
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "f680b75dcaba77f7837acb6bc52a20dc9ee8dc09",
+    "head": "f0e244e86286ea7a35cb8a32205b113dffb42012",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -14845,7 +14847,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "bc49e38847317dae974b2756865a850a6105e592",
+    "head": "42f8c34e067ac22aa49bed78fca8e632a0e17304",
     "n_files": 197,
     "file_types": {
       "other": 21,
@@ -15016,7 +15018,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-builder": {
-    "head": "e3a7992381c0675fcde7b69843fe4fd9c4313040",
+    "head": "7fd4ec937ee8fb2d6a5f2eda367b3c10ff7c47e1",
     "n_files": 64,
     "file_types": {
       "config": 19,
@@ -15081,7 +15083,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-chat": {
-    "head": "878e7268e32f1890603221ccb65e700c152ba960",
+    "head": "c112d54fb2a9d97f9195adc5ad1d566f37df166e",
     "n_files": 272,
     "file_types": {
       "config": 37,
@@ -15446,7 +15448,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "d551e6341aec6a2a0d4b2a175b60db42d8cf34cf",
+    "head": "22a044e0dde10237f8c74988c03c2d42e0771394",
     "n_files": 3102,
     "file_types": {
       "config": 605,
@@ -17827,7 +17829,7 @@
     }
   },
   "jupyterlite/cockle": {
-    "head": "482724b57a9503153e85b7ec5d6f74f6d9d6892f",
+    "head": "e8cbbcf5d0df27d76e60d0b9334f732932b8f8d7",
     "n_files": 256,
     "file_types": {
       "config": 23,
@@ -17869,7 +17871,7 @@
       "actions/deploy-pages@v5",
       "actions/upload-artifact@v7",
       "actions/upload-pages-artifact@v5",
-      "codecov/codecov-action@v5",
+      "codecov/codecov-action@v7",
       "jupyter-server/jupyter_releaser@v2",
       "jupyterlab/maintainer-tools@v1",
       "mamba-org/setup-micromamba@main",
