@@ -1464,7 +1464,7 @@
     {"topic": "npm-trusted-publishing", "repo": "jupyter-book/legacy-demo-book", "status": "n/a", "reason": "No npm package.", "via": [], "evidence": []},
     {"topic": "npm-trusted-publishing", "repo": "jupyter-book/myst-enhancement-proposals", "status": "n/a", "reason": "No npm package.", "via": [], "evidence": []},
     {"topic": "npm-trusted-publishing", "repo": "jupyter-book/myst-plugins", "status": "n/a", "reason": "No npm package.", "via": [], "evidence": []},
-    {"topic": "npm-trusted-publishing", "repo": "jupyter-book/myst-theme", "status": "done", "reason": "Its latest npm versions used trusted publishing.", "via": [], "evidence": []},
+    {"topic": "npm-trusted-publishing", "repo": "jupyter-book/myst-theme", "status": "partial", "reason": "The latest version of @myst-theme/prerender (2026-11-10) did not use trusted publishing.", "via": [], "evidence": []},
     {"topic": "npm-trusted-publishing", "repo": "jupyter-book/mystmd", "status": "done", "reason": "Its latest npm versions used trusted publishing.", "via": [], "evidence": []},
     {"topic": "npm-trusted-publishing", "repo": "jupyter-book/mystmd-quickstart", "status": "n/a", "reason": "No npm package.", "via": [], "evidence": []},
     {"topic": "npm-trusted-publishing", "repo": "jupyter-book/mystmd.org", "status": "n/a", "reason": "No npm package.", "via": [], "evidence": []},

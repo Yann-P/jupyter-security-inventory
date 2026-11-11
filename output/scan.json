@@ -2756,12 +2756,12 @@
     "security_policy": null
   },
   "jupyter-book/myst-theme": {
-    "head": "1c50887c46b1166f8fca90b5b0ec76594e305c97",
-    "n_files": 452,
+    "head": "ea08e186708d05b1f369492018c4db1eeb247b50",
+    "n_files": 446,
     "file_types": {
-      "docs": 76,
+      "docs": 69,
       "config": 60,
-      "code": 260,
+      "code": 261,
       "other": 19,
       "media": 4,
       "data": 2,
@@ -2894,13 +2894,13 @@
     "security_policy": null
   },
   "jupyter-book/mystmd": {
-    "head": "50e82202324dc36f10bd04877d00016879da6f6e",
-    "n_files": 1765,
+    "head": "b131bc1f98c9af4905e05b8a3127a4fe3a6090e4",
+    "n_files": 1767,
     "file_types": {
-      "docs": 479,
+      "docs": 480,
       "config": 413,
       "other": 78,
-      "code": 689,
+      "code": 690,
       "web": 8,
       "media": 95,
       "notebook": 3
@@ -3430,12 +3430,12 @@
     "security_policy": null
   },
   "jupyter-book/workshop-template": {
-    "head": "e22d306baa2819016eeebb6411ebd05fcd3e6fed",
-    "n_files": 53,
+    "head": "96f3bb3f7ac89f5b946eb94ce03236ba154a94bf",
+    "n_files": 55,
     "file_types": {
-      "config": 2,
-      "other": 2,
-      "docs": 26,
+      "other": 3,
+      "config": 4,
+      "docs": 25,
       "notebook": 1,
       "media": 21,
       "web": 1
@@ -3447,17 +3447,10 @@
         "push"
       ],
       "secrets": [],
-      "publishes": [
-        "website"
-      ]
+      "publishes": []
     },
     "uses": [
-      "actions/checkout@v4",
-      "actions/configure-pages@v3",
-      "actions/deploy-pages@v4",
-      "actions/setup-python@v5",
-      "actions/upload-pages-artifact@v3",
-      "typst-community/setup-typst@v4"
+      "FreekPols/JB-workflows@main"
     ],
     "images": [],
     "build_requires": [],
@@ -3834,13 +3827,13 @@
     "security_policy": null
   },
   "jupyter-server/gateway_provisioners": {
-    "head": "4ad3bdafb655c9e4847540094e83ab2652bb973e",
+    "head": "90e2d48461e5aebfaeb89ce0c3e3dbd6cc27d5c5",
     "n_files": 159,
     "file_types": {
       "other": 12,
-      "config": 43,
+      "config": 42,
       "docs": 38,
-      "code": 59,
+      "code": 60,
       "web": 3,
       "media": 4
     },
@@ -5658,7 +5651,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus": {
-    "head": "45ea4507a3a66102a07d91bc14627b5651515a13",
+    "head": "6995664666e5a0dffae1cb390c4bb11d800f919d",
     "n_files": 107,
     "file_types": {
       "other": 6,
@@ -6474,7 +6467,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-zmq": {
-    "head": "f84b101c03f46a010f54f621016f124cc8b493ae",
+    "head": "30ad90d89bc1f5f767b4b7edfbd6a13985baf34e",
     "n_files": 116,
     "file_types": {
       "config": 9,
@@ -6573,7 +6566,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xproperty": {
-    "head": "919fb1e3ba720180a0434cb5d4a3b3d7599d47f2",
+    "head": "d4fa869a37d7bcbea3c65a339f47cb2ab574d740",
     "n_files": 32,
     "file_types": {
       "config": 5,
@@ -6979,15 +6972,15 @@
     "security_policy": null
   },
   "jupyter/docker-stacks": {
-    "head": "90b46d6b8248d6c6e85ba4015b96a58671c3729a",
-    "n_files": 309,
+    "head": "660dc22b671e02e765273c9f8931588b4a00f263",
+    "n_files": 312,
     "file_types": {
       "other": 59,
-      "config": 36,
+      "config": 38,
       "docs": 50,
       "notebook": 10,
       "media": 11,
-      "code": 143
+      "code": 144
     },
     "packages": [],
     "workflows": {
@@ -7018,11 +7011,11 @@
       "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
       "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "anchore/sbom-action@66cbf4bc1f1c0d2edc94016e65bc221b6bb0ad6c",
-      "cargo-bins/cargo-binstall@81df5c23b0dc775b009efdfc9895c5965b7a4e40",
+      "cargo-bins/cargo-binstall@851112458b5f28a29e5bc14a690c3f283d9dcc6f",
       "christian-korneck/update-container-description-action@d36005551adeaba9698d8d67a296bd16fa91f8e8",
-      "github/codeql-action@9b3254085494b55a0f7c4c2b3d2d52cc712ce370",
+      "github/codeql-action@33d7b85da1a04171e211befe2c739303b9a4c066",
       "ossf/scorecard-action@fa7117db83c52d787ae5a89f350999701505d78e",
-      "sigstore/cosign-installer@6f9f17788090df1f26f669e9d70d6ae9567deba6",
+      "sigstore/cosign-installer@756fe2d284c7292c4e9b62c8a28f1e5629c59532",
       "stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c"
     ],
     "images": [],
@@ -8452,7 +8445,7 @@
     "security_policy": null
   },
   "jupyter/notebook": {
-    "head": "55a698a3816d5305a1053baa22283b2a283b0f5e",
+    "head": "5662506ad194d2c69725fd76c18a080bb277c682",
     "n_files": 379,
     "file_types": {
       "config": 87,
@@ -8570,16 +8563,17 @@
       "actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510",
       "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
       "actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
-      "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
       "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
       "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
-      "astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884",
+      "astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2",
       "dessant/lock-threads@89ae32b08ed1a541efecbab17912962a5e38981c",
-      "github/codeql-action@6f2ac81f5cd81fe351a197ba0b00d91d03cd2aee",
+      "github/codeql-action@1fc58d04a4d4374f921bdac573c3811c240f9c26",
       "jupyter-server/jupyter_releaser@70e58c50c736ad496cca11fe4f2446033b68b027",
       "jupyterlab/maintainer-tools@21b1cac622018fd37ec13a1c8081da814e10d94e",
+      "jupyterlab/maintainer-tools@b9d5c28489f8b460cef48868f303b97c20f8fe1b",
       "re-actors/alls-green@b5b5b37504aa4183270bd3d855c52a67f212be35",
-      "toshimaru/auto-author-assign@a78a94b219445cece8ccf0d45fec60af449f212a"
+      "toshimaru/auto-author-assign@415448809ea5ba0e171b251632720b009df3d8d6"
     ],
     "images": [],
     "build_requires": [
@@ -12811,7 +12805,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "2826f4ff9625e47765ebd40bc45fe10f84d1bfec",
+    "head": "e416d76ee1b15a4c5274cc1f88dcdea681786bc6",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -13857,7 +13851,7 @@
     "security_policy": null
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "f0e244e86286ea7a35cb8a32205b113dffb42012",
+    "head": "69beaa9f5fc67f48fda59533e0e1a8e4188a7b76",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -15018,13 +15012,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-builder": {
-    "head": "7fd4ec937ee8fb2d6a5f2eda367b3c10ff7c47e1",
-    "n_files": 64,
+    "head": "e7729f2590146595ffd617933363d3307436dc20",
+    "n_files": 65,
     "file_types": {
       "config": 19,
       "other": 4,
       "docs": 5,
-      "code": 36
+      "code": 37
     },
     "packages": [
       {
@@ -15448,13 +15442,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "22a044e0dde10237f8c74988c03c2d42e0771394",
-    "n_files": 3102,
+    "head": "bd6f2521ff09705f5f465acdcc3aa68147ca3a76",
+    "n_files": 3106,
     "file_types": {
       "config": 605,
       "other": 24,
       "docs": 181,
-      "code": 1397,
+      "code": 1401,
       "web": 259,
       "media": 601,
       "notebook": 35
@@ -16294,7 +16288,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab-desktop": {
-    "head": "0d7e537b04e49c80ed61911d895273eee9af0f44",
+    "head": "9107ff402a715a38eb82fc04e62a8802614b0b37",
     "n_files": 223,
     "file_types": {
       "other": 15,
@@ -17803,7 +17797,7 @@
     "security_policy": null
   },
   "jupyterlite/.github": {
-    "head": "b18156c68342221c305643eb31d8f350dd0b31f5",
+    "head": "3ba66949861c0c514d0809caefd04a0817cd62d8",
     "n_files": 8,
     "file_types": {
       "docs": 7,
@@ -18524,7 +18518,7 @@
     "security_policy": null
   },
   "jupyterlite/pyodide-kernel": {
-    "head": "ebdcafd780afa1c6f8e3c3b507d4b46652449f9f",
+    "head": "2fdfe29c7aff3e19b71fae64878524b910203ca8",
     "n_files": 123,
     "file_types": {
       "config": 34,
@@ -18618,7 +18612,7 @@
       "jupyter-builder"
     ],
     "mentions": {},
-    "readme": "# jupyterlite-pyodide-kernel\n\n> A Python kernel for [JupyterLite](https://jupyterlite.rtfd.io) powered by\n> [Pyodide](https://pyodide.org),\n\n[![ci-badge]][ci] [![lite-badge]][lite] [![docs-badge]][docs]\n\n[ci-badge]: https://github.com/jupyterlite/pyodide-kernel/workflows/Test/badge.svg\n[lite-badge]: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg\n[lite]: https://jupyterlite-pyodide-kernel.rtfd.io/en/latest/_static\n[ci]: https://github.com/jupyterlite/pyodide-kernel/actions?query=branch%3Amain\n[docs-badge]:\n  https://readthedocs.org/projects/jupyterlite-pyodide-kernel/badge/?version=latest\n[docs]: https://jupyterlite-pyodide-kernel.readthedocs.io/en/latest/?badge=latest\n\n## Install\n\nTo install the Pyodide kernel labextension and the CLI addons for `jupyter lite`, run:\n\n```bash\npip install jupyterlite-pyodide-kernel\n```\n\nor with `conda`, `mamba`, `micromamba`, etc.\n\n```bash\nconda install -c conda-forge jupyterlite-pyodide-kernel\n```\n\n> For more options see the [development install](#development-install) or [contributing\n> guide][contrib].\n\n### Optional Features\n\n#### Lock\n\nInstall the `[lock]` extra for compatible versions of [`pyodide-lock`][pyodide-lock] and\n[`uv`][uv], used to add local or PyPI packages and their import name and dependency\ninformation to the Pyodide lockfile:\n\n- from PyPI: `jupyterlite-pyodide-kernel[lock]`\n- from `conda-forge`: `jupyterlite-pyodide-kernel-with-lock`\n\n[pyodide-lock]: https://pypi.org/project/pyodide-lock\n[uv]: https://pypi.org/project/uv\n\n### Compatibility\n\n#### With Jupyter\n\n| status | `jupyterlite-pyodide-kernel` | `jupyterlite-core` |   `jupyterlab`   |    `notebook`    |  `retrolab`  |\n| :----: | :--------------------------: | :----------------: | :--------------: | :--------------: | :----------: |\n| alpha  |           `0.9.*`            | `>=0.9.0b0,<0.10`  | `>=4.7.0b0,<4.8` | `>=7.7.0b0,<7.8` |      -       |\n| stable |           `0.8.*`            |    `>=0.8,<0.9`    |  `>=4.6.0,<4.7`  |  `>=7.6.0,<7.7`  |      -       |\n| stable |           `0.7.*`            |    `>=0.7,<0.8`    |  `>=4.5.0,<4.6`  |  `>=7.5.0,<7.6`  |      -       |\n| stable |           `0.6.*`            |    `>=0.6,<0.7`    |  `>=4.4.3,<4.5`  |  `>=7.4.3,<7.5`  |      -       |\n| stable |           `0.5.*`            |    `>=0.5,<0.6`    |  `>=4.3.0,<4.4`  |  `>=7.3.0,<7.4`  |      -       |\n| stable |           `0.4.*`            |    `>=0.4,<0.5`    |  `>=4.2.0,<4.3`  |  `>=7.2.0,<7.3`  |      -       |\n| stable |           `0.3.*`",
+    "readme": "# jupyterlite-pyodide-kernel\n\n> A Python kernel for [JupyterLite](https://jupyterlite.rtfd.io) powered by\n> [Pyodide](https://pyodide.org),\n\n[![ci-badge]][ci] [![lite-badge]][lite] [![docs-badge]][docs]\n\n[ci-badge]: https://github.com/jupyterlite/pyodide-kernel/workflows/Test/badge.svg\n[lite-badge]: https://jupyterlite.rtfd.io/en/latest/_static/badge.svg\n[lite]: https://jupyterlite-pyodide-kernel.rtfd.io/en/latest/_static\n[ci]: https://github.com/jupyterlite/pyodide-kernel/actions?query=branch%3Amain\n[docs-badge]:\n  https://readthedocs.org/projects/jupyterlite-pyodide-kernel/badge/?version=latest\n[docs]: https://jupyterlite-pyodide-kernel.readthedocs.io/en/latest/?badge=latest\n\n## Install\n\nTo install the Pyodide kernel labextension and the CLI addons for `jupyter lite`, run:\n\n```bash\npip install jupyterlite-pyodide-kernel\n```\n\nor with `conda`, `mamba`, `micromamba`, etc.\n\n```bash\nconda install -c conda-forge jupyterlite-pyodide-kernel\n```\n\n> For more options see the [development install](#development-install) or [contributing\n> guide][contrib].\n\n### Optional Features\n\n#### Lock\n\nInstall the `[lock]` extra for compatible versions of [`pyodide-lock`][pyodide-lock] and\n[`uv`][uv], used to add local or PyPI packages and their import name and dependency\ninformation to the Pyodide lockfile:\n\n- from PyPI: `jupyterlite-pyodide-kernel[lock]`\n- from `conda-forge`: `jupyterlite-pyodide-kernel-with-lock`\n\n[pyodide-lock]: https://pypi.org/project/pyodide-lock\n[uv]: https://pypi.org/project/uv\n\n### Compatibility\n\n#### With Jupyter\n\n| status | `jupyterlite-pyodide-kernel` | `jupyterlite-core` |   `jupyterlab`   |    `notebook`    |  `retrolab`  |\n| :----: | :--------------------------: | :----------------: | :--------------: | :--------------: | :----------: |\n| alpha  |           `0.9.*`            | `>=0.9.0b1,<0.10`  | `>=4.7.0b1,<4.8` | `>=7.7.0b1,<7.8` |      -       |\n| stable |           `0.8.*`            |    `>=0.8,<0.9`    |  `>=4.6.0,<4.7`  |  `>=7.6.0,<7.7`  |      -       |\n| stable |           `0.7.*`            |    `>=0.7,<0.8`    |  `>=4.5.0,<4.6`  |  `>=7.5.0,<7.6`  |      -       |\n| stable |           `0.6.*`            |    `>=0.6,<0.7`    |  `>=4.4.3,<4.5`  |  `>=7.4.3,<7.5`  |      -       |\n| stable |           `0.5.*`            |    `>=0.5,<0.6`    |  `>=4.3.0,<4.4`  |  `>=7.3.0,<7.4`  |      -       |\n| stable |           `0.4.*`            |    `>=0.4,<0.5`    |  `>=4.2.0,<4.3`  |  `>=7.2.0,<7.3`  |      -       |\n| stable |           `0.3.*`",
     "security_policy": null
   },
   "jupyterlite/repo2jupyterlite": {
