@@ -1854,13 +1854,13 @@
     "security_policy": null
   },
   "jupyter-book/blog": {
-    "head": "e4f0e7198c73a2d827c97dc7b006df88fa792dab",
-    "n_files": 50,
+    "head": "6b91cb008d7dd36a2e0f12709b9d89848a515b20",
+    "n_files": 51,
     "file_types": {
       "docs": 32,
       "config": 6,
       "other": 1,
-      "media": 10,
+      "media": 11,
       "code": 1
     },
     "packages": [],
@@ -2513,7 +2513,7 @@
     "security_policy": null
   },
   "jupyter-book/jupyterlab-myst": {
-    "head": "ada2b284307f20ba00895b671c3a737ee1bf9d55",
+    "head": "3aa2c99fe031a92727a49bf0f3ce083e8597de05",
     "n_files": 122,
     "file_types": {
       "config": 28,
@@ -5596,7 +5596,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xcanvas": {
-    "head": "265cb13105039505401de74084c9f98321348e94",
+    "head": "54efb31753f386a0ca3a64b2a31358b9f6f12b7e",
     "n_files": 15,
     "file_types": {
       "config": 6,
@@ -5651,7 +5651,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus": {
-    "head": "6995664666e5a0dffae1cb390c4bb11d800f919d",
+    "head": "5eb22a5f854acb403436157a579a1d1d62d30f45",
     "n_files": 107,
     "file_types": {
       "other": 6,
@@ -6532,7 +6532,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xleaflet": {
-    "head": "45b9961fd8447f3cd48ac56af8bdd23ed2a4f073",
+    "head": "fb418a2774ff627e05186f24c74bf5ccb9455ea6",
     "n_files": 159,
     "file_types": {
       "config": 11,
@@ -9009,7 +9009,7 @@
     "security_policy": null
   },
   "jupyter/terminado": {
-    "head": "b070d12fa1108b482758f2ef6e3a0b54f7273196",
+    "head": "bc04d823152b30d8f839180348f91fb5079911a4",
     "n_files": 41,
     "file_types": {
       "other": 5,
@@ -11051,7 +11051,7 @@
     "security_policy": null
   },
   "jupyterhub/action-get-quayio-tags": {
-    "head": "e903af6a1a72af439873a9bb548550ee75ce5905",
+    "head": "ea9e3cc3f7891abbf36c9028d1076d23d36eefe2",
     "n_files": 30,
     "file_types": {
       "other": 6,
@@ -11073,7 +11073,7 @@
     "uses": [
       "actions/checkout@v7.0.1",
       "actions/setup-node@v7.1.0",
-      "github/codeql-action@v4.39.1",
+      "github/codeql-action@v4.39.3",
       "stefanzweifel/git-auto-commit-action@d0b01107b5db882071f96de5dd4b54961ea93f4c",
       "super-linter/super-linter@2da136927bd4a73596db63044b504547c62cb854"
     ],
@@ -12576,7 +12576,7 @@
     "security_policy": null
   },
   "jupyterhub/kerberosauthenticator": {
-    "head": "3c5f60d084201884de63d5b36d01f0b56d23b0e5",
+    "head": "e5135b03c38846d6ec168c1a8f70f658759e4ce2",
     "n_files": 37,
     "file_types": {
       "other": 8,
@@ -12606,11 +12606,11 @@
     },
     "uses": [
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
-      "actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c",
-      "actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97",
-      "actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a",
-      "j178/prek-action@5337cb91e0fa35a7ff31b9ca345126d8bbbcdf16",
-      "pypa/gh-action-pypi-publish@ba38be9e461d3875417946c167d0b5f3d385a247"
+      "actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
+      "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
+      "j178/prek-action@44924fe9ef4a6f88253c4b6b1bf11c689d3ce53d",
+      "pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086"
     ],
     "images": [],
     "build_requires": [
@@ -12805,7 +12805,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "6d44fcd8c05bcdd91bc3ac6c5ee4563b60aa60cd",
+    "head": "50889c76dc22080d1ccf1e84fc26e52b9cd43213",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -15442,13 +15442,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "ab367104bf8e662c2e908df775f90e2abb8b86ef",
-    "n_files": 3116,
+    "head": "10c16318cd5cd047290578b772c16f00329f19ef",
+    "n_files": 3117,
     "file_types": {
       "config": 605,
       "other": 24,
       "docs": 186,
-      "code": 1406,
+      "code": 1407,
       "web": 259,
       "media": 601,
       "notebook": 35
@@ -16358,7 +16358,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab-git": {
-    "head": "006b477839a2e718a8d3823901acaa7915cef288",
+    "head": "ecdd22b658ddffd187eeb2a599386ad44492b1a5",
     "n_files": 258,
     "file_types": {
       "other": 10,
@@ -17377,7 +17377,7 @@
     "security_policy": null
   },
   "jupyterlab/plugin-playground": {
-    "head": "b1e21e7440b28afc13a3c534e7fb10828d412d5a",
+    "head": "fded8b3c60f7d4c58693734398c267c9d6888540",
     "n_files": 112,
     "file_types": {
       "config": 24,
@@ -18383,7 +18383,7 @@
     "security_policy": null
   },
   "jupyterlite/litegitpuller": {
-    "head": "4c0308f706082b1834f1e0eaf0921bfba96a7103",
+    "head": "9919687b0e8aa8030358ac209b2a40291662d55f",
     "n_files": 44,
     "file_types": {
       "config": 20,
