@@ -972,13 +972,6 @@
     "security_boundary": null,
     "model": "deepseek-v4-pro"
   },
-  "jupyter-xeus/robotframework-interpreter": {
-    "rationale": "The repository provides a Python package 'robotframework-interpreter' with utility functions for building Robot Framework interpreters, as indicated by setup.py, the package directory, and README, and it publishes to PyPI.",
-    "kind": "package",
-    "deploys_live_service": null,
-    "security_boundary": null,
-    "model": "deepseek-v4-pro"
-  },
   "jupyter-xeus/xcanvas": {
     "rationale": "xcanvas is a C++ backend for the ipycanvas library, providing a canvas API for Jupyter through xeus-cling; it is installed via conda and is a library with code in src/ and include/.",
     "kind": "package",
@@ -1002,13 +995,6 @@
   },
   "jupyter-xeus/xeus-brainfuck": {
     "rationale": "The repository implements a Jupyter kernel for Brainfuck, evidenced by kernel.json files in share/jupyter/kernels and source files like src/xbrainfuck.cpp, making it a package people install as a kernel.",
-    "kind": "package",
-    "deploys_live_service": null,
-    "security_boundary": null,
-    "model": "deepseek-v4-pro"
-  },
-  "jupyter-xeus/xeus-calc": {
-    "rationale": "The repo implements and installs a Jupyter kernel named xeus-calc, as shown in src/xeus_calc_interpreter.cpp, share/jupyter/kernels/xcalc/kernel.json.in, and README installation instructions.",
     "kind": "package",
     "deploys_live_service": null,
     "security_boundary": null,
@@ -1040,13 +1026,6 @@
     "kind": "package",
     "deploys_live_service": "jupyter-xeus.github.io",
     "security_boundary": "executes untrusted Haskell code in a Jupyter kernel",
-    "model": "deepseek-v4-pro"
-  },
-  "jupyter-xeus/xeus-javascript": {
-    "rationale": "xeus-javascript provides a Jupyter kernel (share/jupyter/kernels/xjavascript/kernel.json.in) installable via conda, making it a package.",
-    "kind": "package",
-    "deploys_live_service": "xeus-javascript.readthedocs.io",
-    "security_boundary": null,
     "model": "deepseek-v4-pro"
   },
   "jupyter-xeus/xeus-lite": {
@@ -1098,39 +1077,11 @@
     "security_boundary": null,
     "model": "deepseek-v4-pro"
   },
-  "jupyter-xeus/xeus-qt": {
-    "rationale": "The repository provides a C++ library and example kernel for integrating xeus with Qt, as evidenced by the library source files (src/include), example kernel code, and installation of a Jupyter kernel via share/jupyter/kernels.",
-    "kind": "package",
-    "deploys_live_service": null,
-    "security_boundary": null,
-    "model": "deepseek-v4-pro"
-  },
-  "jupyter-xeus/xeus-qt-python": {
-    "rationale": "The repository is a C++/Python extension that integrates xeus-python and xeus-qt to run Python kernels in Qt applications; it has build files (CMakeLists.txt), source code (src/x_qt_python_extension.cpp), and a README instructing compilation and usage.",
-    "kind": "package",
-    "deploys_live_service": null,
-    "security_boundary": null,
-    "model": "deepseek-v4-pro"
-  },
   "jupyter-xeus/xeus-r": {
     "rationale": "The repository implements and packages a Jupyter kernel for R, with kernel.json, source, and install instructions via conda.",
     "kind": "package",
     "deploys_live_service": null,
     "security_boundary": "executes R code from notebook users",
-    "model": "deepseek-v4-pro"
-  },
-  "jupyter-xeus/xeus-robot": {
-    "rationale": "The repository implements a Jupyter kernel for Robot Framework, as stated in the README and evidenced by source files like src/xinterpreter.cpp and kernel specification in share/jupyter/kernels/xrobot/.",
-    "kind": "package",
-    "deploys_live_service": null,
-    "security_boundary": "executes untrusted user code in the Jupyter kernel",
-    "model": "deepseek-v4-pro"
-  },
-  "jupyter-xeus/xeus-robot-wheel": {
-    "rationale": "The repository builds and publishes the PyPI wheel for xeus-robot, evidenced by CI workflow build_wheel.yml and published package 'xeus-robot'.",
-    "kind": "package",
-    "deploys_live_service": null,
-    "security_boundary": null,
     "model": "deepseek-v4-pro"
   },
   "jupyter-xeus/xeus-sql": {
@@ -1142,13 +1093,6 @@
   },
   "jupyter-xeus/xeus-sqlite": {
     "rationale": "xeus-sqlite is a Jupyter kernel for SQLite, as indicated by the README and kernel.json.",
-    "kind": "package",
-    "deploys_live_service": null,
-    "security_boundary": null,
-    "model": "deepseek-v4-pro"
-  },
-  "jupyter-xeus/xeus-uv": {
-    "rationale": "The repository implements a ZeroMQ middleware for xeus using the uv event loop, as indicated by the description, README, and source files in src/ and include/.",
     "kind": "package",
     "deploys_live_service": null,
     "security_boundary": null,

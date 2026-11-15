@@ -1,5 +1,5 @@
 {
-  "fetched_on": "2026-11-14",
+  "fetched_on": "2026-11-15",
   "orgs": [
     "binder-examples",
     "binderhub-ci-repos",
@@ -1004,13 +1004,6 @@
       "is_fork": false
     },
     {
-      "full_name": "jupyter-xeus/robotframework-interpreter",
-      "org": "jupyter-xeus",
-      "name": "robotframework-interpreter",
-      "description": "Utilities for building a Robot Framework interpreter",
-      "is_fork": false
-    },
-    {
       "full_name": "jupyter-xeus/xcanvas",
       "org": "jupyter-xeus",
       "name": "xcanvas",
@@ -1039,13 +1032,6 @@
       "is_fork": false
     },
     {
-      "full_name": "jupyter-xeus/xeus-calc",
-      "org": "jupyter-xeus",
-      "name": "xeus-calc",
-      "description": "Jupyter kernel for a simple calculator",
-      "is_fork": false
-    },
-    {
       "full_name": "jupyter-xeus/xeus-client-test",
       "org": "jupyter-xeus",
       "name": "xeus-client-test",
@@ -1071,13 +1057,6 @@
       "org": "jupyter-xeus",
       "name": "xeus-haskell",
       "description": "jupyter / jupyterlite kernel for Haskell powered by WebAssembly",
-      "is_fork": false
-    },
-    {
-      "full_name": "jupyter-xeus/xeus-javascript",
-      "org": "jupyter-xeus",
-      "name": "xeus-javascript",
-      "description": "A JavaScript kernel for JupyterLite, powered by Xeus",
       "is_fork": false
     },
     {
@@ -1130,38 +1109,10 @@
       "is_fork": false
     },
     {
-      "full_name": "jupyter-xeus/xeus-qt",
-      "org": "jupyter-xeus",
-      "name": "xeus-qt",
-      "description": "ZeroMQ-based middleware for xeus integrated in the Qt event loop",
-      "is_fork": false
-    },
-    {
-      "full_name": "jupyter-xeus/xeus-qt-python",
-      "org": "jupyter-xeus",
-      "name": "xeus-qt-python",
-      "description": "xeus-python + xeus-qt = xeus-python-qt",
-      "is_fork": false
-    },
-    {
       "full_name": "jupyter-xeus/xeus-r",
       "org": "jupyter-xeus",
       "name": "xeus-r",
       "description": "Jupyter kernel for the R programming language",
-      "is_fork": false
-    },
-    {
-      "full_name": "jupyter-xeus/xeus-robot",
-      "org": "jupyter-xeus",
-      "name": "xeus-robot",
-      "description": "Jupyter kernel for Robot Framework",
-      "is_fork": false
-    },
-    {
-      "full_name": "jupyter-xeus/xeus-robot-wheel",
-      "org": "jupyter-xeus",
-      "name": "xeus-robot-wheel",
-      "description": "Building a PyPI wheel for xeus-robot",
       "is_fork": false
     },
     {
@@ -1176,13 +1127,6 @@
       "org": "jupyter-xeus",
       "name": "xeus-sqlite",
       "description": "Jupyter kernel for SQLite",
-      "is_fork": false
-    },
-    {
-      "full_name": "jupyter-xeus/xeus-uv",
-      "org": "jupyter-xeus",
-      "name": "xeus-uv",
-      "description": "ZeroMQ-based middleware for xeus integrated in the uv event loop ",
       "is_fork": false
     },
     {

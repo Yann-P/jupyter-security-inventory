@@ -2894,11 +2894,11 @@
     "security_policy": null
   },
   "jupyter-book/mystmd": {
-    "head": "35ee26e6875a3b5e721a8b67484705c7eca510a4",
-    "n_files": 1762,
+    "head": "16c5e6035ec2f9214313bf40b77089787a26fa7e",
+    "n_files": 1798,
     "file_types": {
       "docs": 474,
-      "config": 415,
+      "config": 451,
       "other": 77,
       "code": 690,
       "web": 8,
@@ -3887,7 +3887,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyter-resource-usage": {
-    "head": "2e20198ba8f8789e1d079075c54f77a76e0bce4c",
+    "head": "815044a58c9079f0b2df31d9961629601e11e8ca",
     "n_files": 72,
     "file_types": {
       "other": 5,
@@ -3938,7 +3938,7 @@
     "images": [],
     "build_requires": [
       "hatchling",
-      "jupyterlab",
+      "jupyter-builder",
       "pip"
     ],
     "mentions": {},
@@ -4070,7 +4070,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyter_server": {
-    "head": "e39ebd56b3ed2b201aa615448ec6adbeed8fa99c",
+    "head": "0d1a13b2f5212a9f9da0122a9e7dbaf23f6cfcb7",
     "n_files": 342,
     "file_types": {
       "other": 14,
@@ -4776,22 +4776,38 @@
     "security_policy": null
   },
   "jupyter-server/server-side-documents": {
-    "head": "8779892a51acd4e8535c59123f0165e613192e25",
-    "n_files": 1,
+    "head": "f78d8166d6e0efd84396081bb05c82a7ab71ca9f",
+    "n_files": 6,
     "file_types": {
+      "config": 3,
+      "other": 2,
       "docs": 1
     },
     "packages": [],
     "workflows": {
-      "count": 0,
-      "triggers": [],
+      "count": 1,
+      "triggers": [
+        "pull_request",
+        "push"
+      ],
       "secrets": [],
-      "publishes": []
+      "publishes": [
+        "website"
+      ]
     },
-    "uses": [],
+    "uses": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346",
+      "actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
+      "actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9"
+    ],
     "images": [],
     "build_requires": [],
-    "mentions": {},
+    "mentions": {
+      "zizmor": [
+        ".pre-commit-config.yaml"
+      ]
+    },
     "readme": "# server-side-documents\n",
     "security_policy": null
   },
@@ -5573,50 +5589,8 @@
     "readme": null,
     "security_policy": null
   },
-  "jupyter-xeus/robotframework-interpreter": {
-    "head": "cc2dfe5b595c46dc64701d577b739f58f94d5baa",
-    "n_files": 20,
-    "file_types": {
-      "config": 2,
-      "other": 3,
-      "docs": 1,
-      "code": 14
-    },
-    "packages": [
-      {
-        "system": "PYPI",
-        "name": "robotframework-interpreter",
-        "path": "setup.py",
-        "in_test_or_example_folder": false
-      }
-    ],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "create",
-        "pull_request",
-        "push"
-      ],
-      "secrets": [
-        "PYPI_API_TOKEN"
-      ],
-      "publishes": [
-        "pypi"
-      ]
-    },
-    "uses": [
-      "actions/checkout@v2",
-      "actions/setup-python@v2",
-      "conda-incubator/setup-miniconda@v2"
-    ],
-    "images": [],
-    "build_requires": [],
-    "mentions": {},
-    "readme": "# robotframework-interpreter\n\nUtility functions for building a Robot Framework interpreter.\n\n\n# Acknowledgements\n\nMost of the code was taken from the [robotkernel](https://github.com/robots-from-jupyter/robotkernel) Jupyter kernel. It has been extracted from this repository so it's easier to create other kernels with it.\n",
-    "security_policy": null
-  },
   "jupyter-xeus/xcanvas": {
-    "head": "54efb31753f386a0ca3a64b2a31358b9f6f12b7e",
+    "head": "67ea6606673c3f4d8a3f1949b7ee34994b0a6b6a",
     "n_files": 15,
     "file_types": {
       "config": 6,
@@ -5730,39 +5704,6 @@
     "readme": "# ![xeus-brainfuck](docs/source/xeus-logo.svg)\n\n[![Build Status](https://github.com/JohanMabille/xeus-brainfuck/actions/workflows/main.yml/badge.svg)](https://github.com/JohanMabille/xeus-brainfuck/actions/workflows/main.yml)\n\n[![Documentation Status](http://readthedocs.org/projects/xeus-brainfuck/badge/?version=latest)](https://xeus-brainfuckreadthedocs.io/en/latest/?badge=latest)\n\n`xeus-brainfuck` is a Jupyter kernel for brainfuck based on the native implementation of the\nJupyter protocol [xeus](https://github.com/jupyter-xeus/xeus).\n\n## Installation\n\nxeus-brainfuck has not been packaged for the mamba (or conda) package manager.\n\nTo ensure that the installation works, it is preferable to install `xeus-brainfuck` in a\nfresh environment. It is also needed to use a\n[miniforge](https://github.com/conda-forge/miniforge#mambaforge) or\n[miniconda](https://conda.io/miniconda.html) installation because with the full\n[anaconda](https://www.anaconda.com/) you may have a conflict with the `zeromq` library\nwhich is already installed in the anaconda distribution.\n\nThe safest usage is to create an environment named `xeus-brainfuck`\n\n```bash\nmamba create -n  `xeus-brainfuck`\nsource activate  `xeus-brainfuck`\n```\n\n<!-- ### Installing from conda-forge\n\nThen you can install in this environment `xeus-brainfuck` and its dependencies\n\n```bash\nmamba install`xeus-brainfuck` notebook -c conda-forge\n``` -->\n\n### Installing from source\n\nOr you can install it from the sources, you will first need to install dependencies\n\n```bash\nmamba install cmake cxx-compiler xeus-zmq nlohmann_json cppzmq jupyterlab -c conda-forge\n```\n\nThen you can compile the sources (replace `$CONDA_PREFIX` with a custom installation\nprefix if need be)\n\n```bash\nmkdir build && cd build\ncmake .. -D CMAKE_PREFIX_PATH=$CONDA_PREFIX -D CMAKE_INSTALL_PREFIX=$CONDA_PREFIX -D CMAKE_INSTALL_LIBDIR=lib\nmake && make install\n```\n\n<!-- ## Trying it online\n\nTo try out xeus-brainfuck interactively in your web browser, just click on the binder link:\n(Once Conda Package is Ready)\n\n[![Binder](binder-logo.svg)](https://mybinder.org/v2/gh/JohanMabille/xeus-brainfuck/main?urlpath=/lab/tree/notebooks/xeus-brainfuck.ipynb) -->\n\n\n\n## Documentation\n\nTo get started with using `xeus-brainfuck`, check out the full documentation\n\nhttp://xeus-brainfuck.readthedocs.io\n\n\n## Dependencies\n\n`xeus-brainfuck` depends on\n\n- [xeus-zmq](https://github.com/jupyter-xeus/xeus-zmq)\n- [nlohmann_json](https://github.com/nlohmann/json)\n- [cppzmq](https://gi",
     "security_policy": null
   },
-  "jupyter-xeus/xeus-calc": {
-    "head": "22294b67f4033861644a306f31424243d5a3b848",
-    "n_files": 20,
-    "file_types": {
-      "config": 5,
-      "other": 3,
-      "docs": 4,
-      "code": 6,
-      "notebook": 1,
-      "media": 1
-    },
-    "packages": [],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "pull_request",
-        "push",
-        "workflow_dispatch"
-      ],
-      "secrets": [],
-      "publishes": []
-    },
-    "uses": [
-      "SimenB/github-actions-cpu-cores@v2",
-      "actions/checkout@v4",
-      "mamba-org/setup-micromamba@v1"
-    ],
-    "images": [],
-    "build_requires": [],
-    "mentions": {},
-    "readme": "# xeus-calc\n\n[![GithubActions](https://github.com/jupyter-xeus/xeus-calc/actions/workflows/main.yml/badge.svg)](https://github.com/jupyter-xeus/xeus-calc/actions/workflows/main.yml)\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-xeus/xeus-calc/master?filepath=notebooks/Xeus-calc.ipynb)\n\nCalculator as a Jupyter Kernel implemented with Xeus\n\n## Usage \n\nLaunch the Jupyter notebook with `jupyter notebook` or Jupyter lab with `jupyter lab` and launch a new notebook by selecting the **xeus-calc** kernel.\n\n**Code execution**:\n\n![Basic code execution](xeus-calc2.gif)\n\n## Installation\n\nTo ensure that the installation works, it is preferable to install `xeus` in a fresh mamba/conda environment. \n\n```bash\nmamba create -n xeus-calc-env -c conda-forge -f environment-dev.yml\n```\n\nOnce you have installed ` xeus ` ,the  ` xeus-calc ` project is quite easy to install, you have to clone the repository, and run the following command lines :\n\n```bash\nmkdir build\ncd build\ncmake -D CMAKE_INSTALL_PREFIX=$CONDA_PREFIX ..\nmake\nmake install\n```\n\n## Contributing\n\nSee [CONTRIBUTING.md](./CONTRIBUTING.md) to know how to contribute and set up a development environment.\n\n## License\n\nWe use a shared copyright model that enables all contributors to maintain the\ncopyright on their contributions.\n\nThis software is licensed under the BSD-3-Clause license. See the [LICENSE](LICENSE) file for details.\n",
-    "security_policy": null
-  },
   "jupyter-xeus/xeus-client-test": {
     "head": "07d3a839ccfaf1d626e908d78689fbbc253fe9a0",
     "n_files": 2,
@@ -5846,7 +5787,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-haskell": {
-    "head": "7c465750e2e6ac4b9bdbab2764c4ff5683e36db4",
+    "head": "9328563fc9794cd00717ff4776f9406d324a6c7b",
     "n_files": 84,
     "file_types": {
       "other": 10,
@@ -5882,45 +5823,6 @@
     "build_requires": [],
     "mentions": {},
     "readme": "# xeus-haskell\n\n[![Build Status](https://github.com/jupyter-xeus/xeus-haskell/actions/workflows/main.yml/badge.svg)](https://github.com/jupyter-xeus/xeus-haskell/actions/workflows/main.yml)\n[![Documentation](https://img.shields.io/badge/docs-passing-green)](https://jupyter-xeus.github.io/xeus-haskell/docs/xhaskell.pdf)\n\n`xeus-haskell` provides Haskell Jupyter kernels built on the native\n[Jupyter protocol implementation xeus](https://github.com/jupyter-xeus/xeus).\n\n| Kernel | Display name | Native JupyterLab | JupyterLite | Backend |\n| --- | --- | :---: | :---: | --- |\n| `xhaskell-mhs` | Haskell (MicroHs `<version>`) | Yes | Yes | MicroHs |\n| `xhaskell-ghc` | Haskell (GHC `<version>`) | No | Yes | GHC Wasm |\n\n## Quickstart\n\nBuild and run locally through the supplied Linux amd64 Docker development container.\n\n### Native MicroHs kernel\n\n```sh\ngit clone https://github.com/jupyter-xeus/xeus-haskell\ncd xeus-haskell\ndocker build --platform linux/amd64 -t xeus-haskell-dev .\ndocker run --rm -it --platform linux/amd64 \\\n  -v \"$PWD:/workspace\" -w /workspace xeus-haskell-dev\n# Inside the container:\npixi run -e native native\npixi run -e native serve\n```\n\n### JupyterLite kernels\n\nInside the development container:\n\n```sh\npixi run -e wasm-build wasm\npixi run -e wasm-build serve\n```\n\nThe WebAssembly build installs both kernels. `xhaskell-ghc` builds a local\nGHC Wasm resource bundle from the pinned native-bignum flavour described in `licenses.toml`;\nit does not copy `ghc-in-browser`.\n\n## Development\n\n| Environment | Purpose |\n| --- | --- |\n| `native` | Native MicroHs build, C++/Python tests, and JupyterLab |\n| `wasm-build` | Emscripten build tools and JupyterLite tasks |\n| `wasm-host` | `emscripten-wasm32` target libraries |\n| `browser-test` | Chromium/Playwright integration tests |\n| `docs` | LaTeX manual generation |\n\n`wasm` downloads the `wasm-host` target prefix automatically.\n\nRun all test tiers with:\n\n```sh\npixi run -e native test\npixi run -e wasm-build test\n```\n\nThe browser tier requires the WebAssembly build and installed kernels first.\nSee [test/README.md](test/README.md) for its coverage matrix.\n\n## Layout\n\n- `cmake/`: reusable CMake modules.\n- `docs/`: LaTeX manual and assets.\n- `notebooks/`: example notebooks.\n- `test/`: C++, Python protocol, and browser integration tests.\n- `xhaskell/common/`: shared headers and browser glue.\n- `xhaskell/microhs/`: MicroHs kernel implementation.\n- `xhaskell/ghc/`: GHC browser kernel and resource build.\n\nGenerated native and Web",
-    "security_policy": null
-  },
-  "jupyter-xeus/xeus-javascript": {
-    "head": "23f7e0081e23b1826aa8798ff45c48aa95cde341",
-    "n_files": 45,
-    "file_types": {
-      "docs": 7,
-      "config": 11,
-      "other": 4,
-      "media": 8,
-      "code": 13,
-      "web": 1,
-      "notebook": 1
-    },
-    "packages": [],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "pull_request",
-        "push",
-        "schedule",
-        "workflow_dispatch"
-      ],
-      "secrets": [],
-      "publishes": [
-        "website"
-      ]
-    },
-    "uses": [
-      "SimenB/github-actions-cpu-cores@v2",
-      "actions/checkout@v4",
-      "actions/deploy-pages@v4",
-      "actions/upload-pages-artifact@v3",
-      "mamba-org/setup-micromamba@v1"
-    ],
-    "images": [],
-    "build_requires": [],
-    "mentions": {},
-    "readme": "# ![xeus-javascript](docs/source/xeus-logo.svg)\n\n[![Build Status](https://github.com/DerThorsten/xeus-javascript/actions/workflows/main.yml/badge.svg)](https://github.com/DerThorsten/xeus-javascript/actions/workflows/main.yml)\n\n[![Documentation Status](http://readthedocs.org/projects/xeus-javascript/badge/?version=latest)](https://xeus-javascriptreadthedocs.io/en/latest/?badge=latest)\n\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyter-xeus.github.io/xeus-javascript/lab/index.html?path=xeus-javascript.ipynb)\n\n\n`xeus-javascript`  works only in jupyterlite!\n\n\n## License\n\nThis software is licensed under the `BSD 3-Clause License`. See the [LICENSE](LICENSE)\nfile for details.\n",
     "security_policy": null
   },
   "jupyter-xeus/xeus-lite": {
@@ -6195,66 +6097,6 @@
     "readme": "# Xeus-python-wheel\n\nThis project holds the recipe for building PyPI wheels for the [xeus-python](https://github.com/jupyter-xeus/xeus-python) project.\n\nThe continuous integration builds and tests wheels for\n\n - Linux (`manylinux2014_x86_64`),\n - OS X (`Xcode 13.1.0`),\n - and Windows (x64).\n\n## Building the manylinux wheels\n\nBuilding the manylinux wheels requires `docker`. To build manylinux2010 wheels, clone the repository, and run:\n\n```bash\ndocker run --rm -e PLAT=manylinux2014_x86_64 -v `pwd`:/io quay.io/pypa/manylinux2014_x86_64 /io/scripts/build-wheels.sh\n```\n\nfrom the root of the source directory.\n\nBuilt manylinux wheels for Python 3.7, 3.8, and 3.9 are placed into the `wheelhouse` directory.\n\n## Building the Windows wheels\n\nThe following packages must be installed in the environment to build the xeus-python wheel on windows:\n\n- `perl` (required to build `OpenSSL` on Windows)\n- `nasm` (required to build `OpenSSL` on Windows)\n\nTo build the wheel in your local environment, clone the repository and run\n\n```\npip wheel . --verbose\n```\n\nfrom the root of the source directory.\n\n",
     "security_policy": null
   },
-  "jupyter-xeus/xeus-qt": {
-    "head": "67a82db74dcb72c320030dcf55de22bd52957697",
-    "n_files": 22,
-    "file_types": {
-      "config": 5,
-      "other": 5,
-      "docs": 3,
-      "media": 3,
-      "code": 6
-    },
-    "packages": [],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "pull_request",
-        "push",
-        "workflow_dispatch"
-      ],
-      "secrets": [],
-      "publishes": []
-    },
-    "uses": [
-      "actions/checkout@v4",
-      "mamba-org/setup-micromamba@v1"
-    ],
-    "images": [],
-    "build_requires": [],
-    "mentions": {},
-    "readme": "# Xeus-qt\n\n[![CI](https://github.com/jupyter-xeus/xeus-qt/actions/workflows/main.yml/badge.svg)](https://github.com/jupyter-xeus/xeus-qt/actions/workflows/main.yml)\n\nZeroMQ-based middleware for xeus integrated in the Qt event loop.\n\n## Building and running the example kernel from source\n\nFirst, create the environment with all required dependencies:\n```\nmamba env create -f environment-dev.yml -n xeus-qt\nmamba activate xeus-qt\n```\n\nTo build the main library:\n\n```\nmkdir build && cd build\ncmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX\nmake install\n```\n\nTo build the example kernel:\n\n```\ncd examples\nmkdir build && cd build\ncmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX\nmake install\n```\n\nOn linux, the build may fail with the following error:\n```\ncannot find \"GL/gl.h\"\n```\n\nIn that case, run `mamba install mesalib -c conda-forge` and build again.\n\n# License\n\nWe use a shared copyright model that enables all contributors to maintain the copyright on their contributions.\n\nThis software is licensed under the BSD-3-Clause license. See the [LICENSE](LICENSE) file for details.\n",
-    "security_policy": null
-  },
-  "jupyter-xeus/xeus-qt-python": {
-    "head": "bc2fdadefc0981f483f49e9ca93a6cd575c86d40",
-    "n_files": 9,
-    "file_types": {
-      "config": 2,
-      "docs": 2,
-      "code": 4,
-      "notebook": 1
-    },
-    "packages": [],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "pull_request",
-        "push"
-      ],
-      "secrets": [],
-      "publishes": []
-    },
-    "uses": [
-      "actions/checkout@v4",
-      "mamba-org/setup-micromamba@v1"
-    ],
-    "images": [],
-    "build_requires": [],
-    "mentions": {},
-    "readme": "# xeus-qt-python\n\n[![Build Status](https://github.com/jupyter-xeus/xeus-qt-python/workflows/CI/badge.svg)](https://github.com/jupyter-xeus/xeus-qt-python/actions)\n\nYou will need to compile [xeus-qt](https://github.com/jupyter-xeus/xeus-qt) and [xeus-qt-python](https://github.com/jupyter-xeus/xeus-qt-python) (this repository) from source.\nFirst clone these two repositories under `path/to/xeus-qt` and `path/to/xeus-qt-python`, respectively (or whatever place you'd like).\nThen enter in a terminal:\n\n```console\nmicromamba create -f env.yml\nmicromamba activate xeus-qt-python\ncd path/to/xeus-qt\nmkdir build\ncd build\ncmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX\nmake install\ncd path/to/xeus-qt-python\nmkdir build\ncd build\ncmake .. -DCMAKE_PREFIX_PATH=$CONDA_PREFIX -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX\nmake\nmake install\ncd ..\npython kernel_widget.py\n```\n\nThis launches JupyterLab in a Qt application. If you look at running kernels in the left tab, you will see a kernel named `qt-python`.\nRight-click on it and choose \"New Console for Kernel\". This console won't be used, it is just a workaround to create a session with this kernel, so that we can then open a notebook using this session (this has to be improved in JupyterLab).\n\nNow go to the file browser and double-click on the `my_notebook.ipynb` notebook.\nIn the \"Select Kernel\" menu, under \"Use Kernel from Other Session\" at the bottom, select \"Console 1\" (or whatever number, this is the console we previously created).\nNow execute all the cells. The last one should display a button with the name \"black magic\" at the bottom of the Qt application.\nIf you click on it, it should display \"hello from here\" inside the last cell.\n\nThat's it, you've just connected your custom Qt application to Jupyter!\nYou added a button to your Qt application from a Jupyter notebook, which when clicked on, prints a message to a notebook cell output.\n",
-    "security_policy": null
-  },
   "jupyter-xeus/xeus-r": {
     "head": "33475c0b3f3bb2779ecba9c31548ecd236ea99a8",
     "n_files": 85,
@@ -6292,95 +6134,6 @@
     "build_requires": [],
     "mentions": {},
     "readme": "# ![xeus-r](docs/source/xeus-logo.svg)\n\n[![Build Status](https://github.com/jupyter-xeus/xeus-r/actions/workflows/main.yml/badge.svg)](https://github.com/jupyter-xeus/xeus-r/actions/workflows/main.yml)\n[![Documentation Status](http://readthedocs.org/projects/xeus-r/badge/?version=latest)](https://xeus-r.readthedocs.io/en/latest/?badge=latest)\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-xeus/xeus-r/main?urlpath=/lab/tree/notebooks/xeus-r.ipynb)\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyter-xeus.github.io/xeus-r/)\n[![R-CMD-check](https://github.com/jupyter-xeus/xeus-r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jupyter-xeus/xeus-r/actions/workflows/R-CMD-check.yaml)\n[![Zulip](https://img.shields.io/badge/social_chat-zulip-blue.svg)](https://jupyter.zulipchat.com/#narrow/channel/539737-Jupyter-Kernels)\n\n`xeus-r` is a Jupyter kernel for the R programming language.\n\n## Installation\n\nxeus-r has been packaged for the mamba package manager on the Linux, Windows, and OS X platforms.\n\n### Installation with mamba or conda\n\nThe safest usage is to create an environment named `xeus-r`\n\n```bash\nmamba create -n xeus-r\nmamba activate xeus-r\n```\n\nThen you can install in this environment `xeus-r` and its dependencies\n\n```\nmamba install xeus-r -c conda-forge\n```\n\n### Installing from source\n\nXeus-r can be built from sources. We recommend using mamba to create a development environment with all the required dependencies:\n\n```bash\nmamba env create -f environment-dev.yml\nmamba activate xeus-r\n```\n\nThen you can compile and install `xeus-r`\n\n```bash\nmkdir build && cd build\ncmake .. -D CMAKE_PREFIX_PATH=$CONDA_PREFIX -D CMAKE_INSTALL_PREFIX=$CONDA_PREFIX -D CMAKE_INSTALL_LIBDIR=lib\nmake && make install\n```\n\n## Trying it online\n\nTo try out xeus-r interactively in your web browser, just click on the Binder link.\n\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-xeus/xeus-r/main?urlpath=/lab/tree/notebooks/xeus-r.ipynb)\n\nTo use a WebAssembly build of xeus-r in JupyterLite, follow the link.\n\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyter-xeus.github.io/xeus-r/)\n\n## Documentation\n\nTo get started with using `xeus-r`, check out the full documentation\n\nhttp://xeus-r.readthedocs.io\n\n## Contributing\n\nSee [CONTRIBUTING.md](./CONTRIBUTING.md) to know how to contribute and set up a\ndevelopment environment.\n\n## Licens",
-    "security_policy": null
-  },
-  "jupyter-xeus/xeus-robot": {
-    "head": "91f24789d674f33ec18bcfec9bec4efff9fb4048",
-    "n_files": 42,
-    "file_types": {
-      "config": 7,
-      "other": 2,
-      "docs": 3,
-      "media": 9,
-      "notebook": 3,
-      "code": 18
-    },
-    "packages": [],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "pull_request",
-        "push",
-        "workflow_dispatch"
-      ],
-      "secrets": [],
-      "publishes": []
-    },
-    "uses": [
-      "SimenB/github-actions-cpu-cores@v1",
-      "actions/checkout@v2",
-      "mamba-org/provision-with-micromamba@main"
-    ],
-    "images": [],
-    "build_requires": [],
-    "mentions": {},
-    "readme": "![xeus-robot](images/xeus-robot.svg)\n\n[![Azure Pipelines](https://dev.azure.com/jupyter-xeus/jupyter-xeus/_apis/build/status/jupyter-xeus.xeus-robot?branchName=master)](https://dev.azure.com/jupyter-xeus/jupyter-xeus/_build/latest?definitionId=3&branchName=master)\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-xeus/xeus-robot/stable?urlpath=/lab/tree/notebooks/xrobot.ipynb)\n\n`xeus-robot` is a Jupyter kernel for [Robot Framework](https://robotframework.org/) based on the native implementation of the Jupyter protocol [xeus](https://github.com/jupyter-xeus/xeus).\n\n## Installation\n\n### Using mamba (or conda)\n\n```bash\nmamba install -c conda-forge xeus-robot\n```\n\n### Using pip\n\nDepending on the platform, PyPI wheels may be available for xeus-robot.\n\n```bash\npip install xeus-robot\n```\n\n### Installing from source\n\nYou can install `xeus-robot` from the sources, you first need to install its dependencies:\n\n```bash\nmamba install -c conda-forge xeus-python xtl cmake cppzmq nlohmann_json pybind11 pybind11_json robotframework-interpreter ipywidgets jupyterlab_robotmode\n```\n\nThen you can compile the sources (replace $CONDA_PREFIX with a custom installation prefix if need be)\n\n```bash\nmkdir build && cd build\ncmake .. -D CMAKE_PREFIX_PATH=$CONDA_PREFIX -D CMAKE_INSTALL_PREFIX=$CONDA_PREFIX -D CMAKE_INSTALL_LIBDIR=lib -D PYTHON_EXECUTABLE=`which python`\nmake install\n```\n\n### Install the syntax highlighting and widgets for JupyterLab 1 and 2 (It is automatically installed for JupyterLab 3)\n\n```bash\njupyter labextension install @marketsquare/jupyterlab_robotmode @jupyter-widgets/jupyterlab-manager\n```\n\n## Dependencies\n\n``xeus-robot`` depends on\n\n - [xeus-python](https://github.com/jupyter-xeus/xeus-python)\n - [xtl](https://github.com/xtensor-stack/xtl)\n - [pybind11](https://github.com/pybind/pybind11)\n - [pybind11_json](https://github.com/pybind/pybind11_json)\n - [nlohmann_json](https://github.com/nlohmann/json)\n - [robotframework-interpreter](https://github.com/jupyter-xeus/robotframework-interpreter)\n - [robotframework-lsp](https://github.com/robocorp/robotframework-lsp)\n\n\n| `xeus-robot`|  `xeus-python`  |      `xtl`      | `cppzmq` | `nlohmann_json` | `pybind11`     | `pybind11_json`   | `robotframework-interpreter` | `robotframework-lsp` |\n|-------------|-----------------|-----------------|----------|-----------------|----------------|-------------------|------------------------------|----------------------|\n|   master    |  >=0.15.2,<",
-    "security_policy": null
-  },
-  "jupyter-xeus/xeus-robot-wheel": {
-    "head": "49a66adf388fc507e8b6fece7aa9f45d41deff3f",
-    "n_files": 22,
-    "file_types": {
-      "config": 10,
-      "other": 2,
-      "docs": 2,
-      "code": 5,
-      "media": 2,
-      "notebook": 1
-    },
-    "packages": [
-      {
-        "system": "PYPI",
-        "name": "xeus-robot",
-        "path": "setup.py",
-        "in_test_or_example_folder": false
-      }
-    ],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "create",
-        "pull_request",
-        "push"
-      ],
-      "secrets": [
-        "PYPI_API_TOKEN"
-      ],
-      "publishes": [
-        "pypi",
-        "container"
-      ]
-    },
-    "uses": [
-      "actions/checkout@v1",
-      "actions/checkout@v2",
-      "actions/download-artifact@v2",
-      "actions/setup-python@v2",
-      "actions/upload-artifact@v1",
-      "actions/upload-artifact@v2",
-      "ilammy/setup-nasm@v1",
-      "maxim-lobanov/setup-xcode@v1"
-    ],
-    "images": [],
-    "build_requires": [
-      "cmake",
-      "ninja",
-      "scikit-build",
-      "setuptools",
-      "wheel"
-    ],
-    "mentions": {},
-    "readme": "# Xeus-robot-wheel\n\nThis project holds the recipe for building PyPI wheels for the [xeus-robot](https://github.com/jupyter-xeus/xeus-robot) project.\n\nThe continuous integration builds and tests wheels for\n\n - Linux (`manylinux2010_x86_64`),\n - OS X (`Xcode 9.4.1`),\n - and Windows (x64).\n\n## Building the manylinux wheels\n\nBuilding the manylinux wheels requires `docker`. To build manylinux2010 wheels, clone the repository, and run:\n\n```bash\ndocker run --rm -e PLAT=manylinux2010_x86_64 -v `pwd`:/io quay.io/pypa/manylinux2010_x86_64 /io/scripts/build-wheels.sh\n```\n\nfrom the root of the source directory.\n\nBuilt manylinux wheels for Python 3.7, 3.8, and 3.9 are placed into the `wheelhouse` directory.\n\n## Building the Windows wheels\n\nThe following packages must be installed in the environment to build the xeus-robot wheel on windows:\n\n- `perl` (required to build `OpenSSL` on Windows)\n- `nasm` (required to build `OpenSSL` on Windows)\n\nTo build the wheel in your local environment, clone the repository and run\n\n```\npip wheel . --verbose\n```\n\nfrom the root of the source directory.\n",
     "security_policy": null
   },
   "jupyter-xeus/xeus-sql": {
@@ -6453,37 +6206,6 @@
     "build_requires": [],
     "mentions": {},
     "readme": "# xeus-sqlite\n[![GithubActions](https://github.com/jupyter-xeus/xeus-sqlite/actions/workflows/main.yml/badge.svg)](https://github.com/jupyter-xeus/xeus-sqlite/actions/workflows/main.yml)\n[![Documentation Status](https://readthedocs.org/projects/xeus-sqlite/badge/?version=latest)](https://xeus-sqlite.readthedocs.io/en/latest/?badge=latest)\n[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-xeus/xeus-sqlite/stable?filepath=examples/Simple%20operations.ipynb)\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyter-xeus.github.io/xeus-sqlite/lab/index.html?path=Simple+operations.ipynb)\n[![Zulip](https://img.shields.io/badge/social_chat-zulip-blue.svg)](https://jupyter.zulipchat.com/#narrow/channel/539737-Jupyter-Kernels)\n\n`xeus-sqlite` is a Jupyter kernel for SQL based on the native implementation of the Jupyter protocol [xeus](https://github.com/jupyter-xeus/xeus).\n\n`xeus-sqlite` now supports [vega](https://vega.github.io/) visualizations thanks to [xvega](https://github.com/jupyter-xeus/xvega).\n\n## Usage\n\nLaunch the Jupyter notebook with `jupyter notebook` or Jupyter lab with `jupyter lab` and launch a new SQL notebook by selecting the **xsqlite** kernel.\n\n## Installation\n\nxeus-sqlite has been packaged for the mamba (or conda) package manager on the **Linux** and **OS X** platforms. At the moment, we are not providing packages for the **Windows** platform.\n\nTo ensure that the installation works, it is preferable to install xeus-sqlite in a fresh environment.\n\nTo ensure that the installation works, it is preferable to install `xeus` in a fresh environment. It is also needed to use\na [miniforge](https://github.com/conda-forge/miniforge#mambaforge) or [miniconda](https://conda.io/miniconda.html) installation because with the full [anaconda](https://www.anaconda.com/)\nyou may have a conflict.\n\nThe safest usage is to create an environment named xeus-sqlite\n\n```\nmamba create -n xeus-sqlite\nsource activate xeus-sqlite\n```\n\n### Installing from conda-forge\n\nTo install xeus-sqlite with the mamba (or conda) package manager\n\n```\nmamba install xeus-sqlite jupyterlab -c conda-forge\n```\n\n### Installing from source\n\nTo install the xeus-sqlite dependencies\n\n```bash\nmamba install cmake nlohmann_json cppzmq xeus sqlite sqlitecpp cpp-tabulate=1.5 xvega xproperty cppzmq xproperty jupyterlab -c conda-forge\n```\n\nThen you can compile the sources\n\n```bash\nmkdir build\ncd build\ncmake -D CMAKE_INSTALL_PREFIX=$CONDA_PREFI",
-    "security_policy": null
-  },
-  "jupyter-xeus/xeus-uv": {
-    "head": "7a2a28b197ceb73cf728d328714628b1b9264bba",
-    "n_files": 23,
-    "file_types": {
-      "config": 4,
-      "other": 2,
-      "docs": 5,
-      "code": 12
-    },
-    "packages": [],
-    "workflows": {
-      "count": 1,
-      "triggers": [
-        "pull_request",
-        "push",
-        "workflow_dispatch"
-      ],
-      "secrets": [],
-      "publishes": []
-    },
-    "uses": [
-      "actions/checkout@v4",
-      "mamba-org/setup-micromamba@v2",
-      "nick-invision/retry@v3"
-    ],
-    "images": [],
-    "build_requires": [],
-    "mentions": {},
-    "readme": "# xeus-uv\nZeroMQ-based middleware for xeus integrated in the uv event loop",
     "security_policy": null
   },
   "jupyter-xeus/xeus-zmq": {
@@ -6650,7 +6372,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xvega-bindings": {
-    "head": "f3e91b782ce222335fe05dea6f764b9b0bc54101",
+    "head": "0adb7d4b1c59b2af8f0e9c49dea0d9e1cb2f0d36",
     "n_files": 13,
     "file_types": {
       "config": 3,
@@ -6677,7 +6399,7 @@
     "images": [],
     "build_requires": [],
     "mentions": {},
-    "readme": "# xvega bindings\n\nBindings from xvega to xeus.\n\nThis small language is documented here: https://xeus-sqlite.readthedocs.io/en/latest/xvega_magic.html\n\nCurrently used by `xeus-sqlite` and `xeus-soci`.",
+    "readme": "# xvega bindings\n\nBindings from xvega to xeus.\n\nThis small language is documented here: https://xeus-sqlite.readthedocs.io/en/latest/xvega_magic.html\n\nCurrently used by `xeus-sqlite` and `xeus-sql`.\n",
     "security_policy": null
   },
   "jupyter-xeus/xwidgets": {
@@ -11420,13 +11142,13 @@
     "security_policy": null
   },
   "jupyterhub/binderhub": {
-    "head": "05666ec83128365f77738e6dbf82da4c15a4e59a",
-    "n_files": 231,
+    "head": "8f416b1c01e5945eb6e247d43ae4852e928100a1",
+    "n_files": 232,
     "file_types": {
       "other": 20,
       "code": 88,
       "docs": 43,
-      "config": 55,
+      "config": 56,
       "media": 18,
       "web": 7
     },
@@ -12825,7 +12547,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "50889c76dc22080d1ccf1e84fc26e52b9cd43213",
+    "head": "a7e2044a69f3d70adf559973c4c69eb594091a45",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -13871,7 +13593,7 @@
     "security_policy": null
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "69beaa9f5fc67f48fda59533e0e1a8e4188a7b76",
+    "head": "83a9f73f6ce30e652cb7d5340ddf35da8257d940",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -15462,13 +15184,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "579d5efab65dd2f6a4dba4df0e204c6652a56f98",
+    "head": "ee893522826f436c4c8763324c672ffb6c2e6727",
     "n_files": 3140,
     "file_types": {
-      "config": 606,
+      "config": 605,
       "other": 24,
       "docs": 186,
-      "code": 1412,
+      "code": 1413,
       "web": 259,
       "media": 618,
       "notebook": 35
@@ -18123,7 +17845,7 @@
     "security_policy": null
   },
   "jupyterlite/jupyterlite": {
-    "head": "98c128cfc9c9d1112810c4296b4569b02db438e6",
+    "head": "e0654f2ecbc4b1c0d2435f8a6d2c0c9aa50de5c6",
     "n_files": 509,
     "file_types": {
       "config": 94,
