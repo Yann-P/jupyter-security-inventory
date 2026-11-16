@@ -3887,14 +3887,14 @@
     "security_policy": null
   },
   "jupyter-server/jupyter-resource-usage": {
-    "head": "815044a58c9079f0b2df31d9961629601e11e8ca",
-    "n_files": 72,
+    "head": "188f217b3fe2dab906d5b16ef769f11bc4a18eef",
+    "n_files": 73,
     "file_types": {
       "other": 5,
       "config": 23,
       "docs": 4,
       "media": 9,
-      "code": 29,
+      "code": 30,
       "web": 2
     },
     "packages": [
@@ -5858,7 +5858,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-lua": {
-    "head": "a39a123375bba7a8eff6c7f8096e172261929c98",
+    "head": "748c0c2096a7462c7a4a489b0bba72ff637084c1",
     "n_files": 70,
     "file_types": {
       "docs": 8,
@@ -6714,7 +6714,7 @@
     "security_policy": null
   },
   "jupyter/docker-stacks": {
-    "head": "660dc22b671e02e765273c9f8931588b4a00f263",
+    "head": "57927ad0fa694908c068a4ed4711b1f5fa217709",
     "n_files": 312,
     "file_types": {
       "other": 59,
@@ -6753,7 +6753,7 @@
       "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0",
       "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "anchore/sbom-action@66cbf4bc1f1c0d2edc94016e65bc221b6bb0ad6c",
-      "cargo-bins/cargo-binstall@851112458b5f28a29e5bc14a690c3f283d9dcc6f",
+      "cargo-bins/cargo-binstall@5885714d0a40a14b2535c6ffc051fd8e49aa9665",
       "christian-korneck/update-container-description-action@d36005551adeaba9698d8d67a296bd16fa91f8e8",
       "github/codeql-action@33d7b85da1a04171e211befe2c739303b9a4c066",
       "ossf/scorecard-action@fa7117db83c52d787ae5a89f350999701505d78e",
@@ -7133,7 +7133,7 @@
     "security_policy": null
   },
   "jupyter/jupyter-sphinx": {
-    "head": "1238d4234810e1782a08b36ec5d63c64e077898d",
+    "head": "68efe44ddd79249e7fec078e26b39fba89534455",
     "n_files": 72,
     "file_types": {
       "config": 8,
@@ -8563,7 +8563,7 @@
     "security_policy": null
   },
   "jupyter/security": {
-    "head": "d32454e27c85cef024c019334b4c147365125f56",
+    "head": "e93391ac0bd7496f35be2280fb34bb6223d27a90",
     "n_files": 75,
     "file_types": {
       "other": 5,
@@ -11931,7 +11931,7 @@
     }
   },
   "jupyterhub/jupyterhub-container-images": {
-    "head": "58959e8a13c8d982b3d3b14c10e3548eea20492b",
+    "head": "abe942e17ca674c8d7f9304505950188f628605a",
     "n_files": 20,
     "file_types": {
       "config": 8,
@@ -14375,7 +14375,7 @@
     "security_policy": null
   },
   "jupyterlab/extension-template": {
-    "head": "d0987d46c84bfaa702c697097becf0491cf2eef7",
+    "head": "2f66160b8051a5c88c1e1aa70d22c95b1ee54c2b",
     "n_files": 56,
     "file_types": {
       "config": 9,
@@ -14657,13 +14657,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai-lite": {
-    "head": "6fb9c84bf46ab4e0c3512f3d3271bc1a5459c2a2",
-    "n_files": 155,
+    "head": "6f5d75e1f717b1b551445b14e0388ad91b874ed6",
+    "n_files": 157,
     "file_types": {
       "config": 35,
       "other": 8,
       "docs": 29,
-      "code": 73,
+      "code": 75,
       "web": 5,
       "media": 5
     },
@@ -14819,7 +14819,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-chat": {
-    "head": "c112d54fb2a9d97f9195adc5ad1d566f37df166e",
+    "head": "5d0b4357c201c97be8b46099f673fb31c5a1be72",
     "n_files": 272,
     "file_types": {
       "config": 37,
@@ -14903,11 +14903,11 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-collaboration": {
-    "head": "89829a00c9ef1a813b902c136a17579163f64fd7",
-    "n_files": 209,
+    "head": "0a53399488efdbfb15a6ff73361837fe0b0e8791",
+    "n_files": 211,
     "file_types": {
       "other": 14,
-      "code": 93,
+      "code": 95,
       "config": 49,
       "docs": 18,
       "media": 20,
@@ -15184,7 +15184,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "ee893522826f436c4c8763324c672ffb6c2e6727",
+    "head": "4b69f6286fcbbfa114d108d26a6459aec18e7324",
     "n_files": 3140,
     "file_types": {
       "config": 605,
@@ -16393,7 +16393,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab-translate": {
-    "head": "3120dd14424862ec8135b706e7edadc9a1ef5dfc",
+    "head": "079f26cd59e457b4e50200e2f177dd0d1d95e486",
     "n_files": 30,
     "file_types": {
       "config": 8,
@@ -16659,7 +16659,7 @@
     "security_policy": null
   },
   "jupyterlab/language-packs": {
-    "head": "2e278fb470ebbb241267bd1fce8994cd5ca6fc2c",
+    "head": "00ae034a901aba9fba0389cd66d56a12ea93f235",
     "n_files": 832,
     "file_types": {
       "docs": 101,
@@ -18439,7 +18439,7 @@
     "security_policy": null
   },
   "jupyterlite/terminal": {
-    "head": "60fa70f487d6703528eb61f4a64dfa93ac86520d",
+    "head": "21cd8c2cd9ebfa870e338fc9e78b2f8d0f70ce8e",
     "n_files": 85,
     "file_types": {
       "config": 28,
