@@ -342,6 +342,7 @@ def repo_cells(data: Data, row: dict) -> list:
     return [
         data.cell(row["repo"]),
         row["kind"],
+        plain(row["owner"]),
         package(row["package"]),
         stats(row["package"], grouped(row["downloads/month"])),
         grouped(row["dependents"]),

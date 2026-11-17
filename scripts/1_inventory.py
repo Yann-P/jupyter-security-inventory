@@ -3,6 +3,8 @@
 Archived and empty repos are left out: archived ones are read-only, run no CI and cut no releases,
 and empty ones have no code, so there is nothing in them to secure.
 
+Each repo also gets its "Owner", a custom property the organizations set on their repos.
+
 Usage: python scripts/1_inventory.py    Needs: the GitHub CLI (`gh auth login`).
 Output: output/repos.json
 """
@@ -38,6 +40,12 @@ ORGS = [
 ]
 
 
+def owner(full_name: str) -> str | None:
+    command = ["gh", "api", f"repos/{full_name}/properties/values"]
+    values = json.loads(subprocess.run(command, capture_output=True, text=True, check=True).stdout)
+    return next((value["value"] for value in values if value["property_name"] == "Owner"), None)
+
+
 def public_repos(org: str) -> list[dict]:
     command = [
         "gh",
@@ -65,6 +73,7 @@ def public_repos(org: str) -> list[dict]:
                 "name": full_name.split("/")[1],
                 "description": item["description"] or None,
                 "is_fork": item["isFork"],
+                "owner": owner(full_name),
             }
         )
     return repos

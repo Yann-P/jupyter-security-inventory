@@ -9,6 +9,7 @@ def repo(**changes):
     """A repo record as step 6 writes it, with no package and nobody using it."""
     record = {
         "full_name": "o/r",
+        "owner": None,
         "top_package": None,
         "top_image": None,
         "top_image_pulls": None,
