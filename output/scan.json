@@ -1429,11 +1429,11 @@
     "security_policy": null
   },
   "ipython/ipython": {
-    "head": "cf63afd11e2fca4eb4645e9d5b4a712f3549f632",
-    "n_files": 510,
+    "head": "c33a434960555413e378cb1b8d9a1df6975dcef8",
+    "n_files": 511,
     "file_types": {
       "other": 18,
-      "docs": 76,
+      "docs": 77,
       "config": 27,
       "code": 334,
       "media": 52,
@@ -2756,7 +2756,7 @@
     "security_policy": null
   },
   "jupyter-book/myst-theme": {
-    "head": "f54d87e603c0f4815c8b21a152d192c96624bf8c",
+    "head": "b31ee93a18705532ba7ffd567455c61b600dd43e",
     "n_files": 446,
     "file_types": {
       "docs": 69,
@@ -3887,14 +3887,14 @@
     "security_policy": null
   },
   "jupyter-server/jupyter-resource-usage": {
-    "head": "188f217b3fe2dab906d5b16ef769f11bc4a18eef",
-    "n_files": 73,
+    "head": "35b43196f2d9ab182b2ef86f9d3fe35cfe65f9cb",
+    "n_files": 76,
     "file_types": {
       "other": 5,
       "config": 23,
       "docs": 4,
+      "code": 33,
       "media": 9,
-      "code": 30,
       "web": 2
     },
     "packages": [
@@ -4293,7 +4293,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyter_ydoc": {
-    "head": "190531b30aded5dbe85e883878c95ee3bd4e2086",
+    "head": "2a322b8c63230bd30cc371c7aae9c2ee268a69a7",
     "n_files": 76,
     "file_types": {
       "config": 22,
@@ -4360,7 +4360,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyverse": {
-    "head": "b2b82a9ecfd821e6ce344ed2dabb7b5c13d7d7a5",
+    "head": "e40e44aae6551cf736db5839395af34ad379845a",
     "n_files": 401,
     "file_types": {
       "config": 53,
@@ -5645,7 +5645,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus": {
-    "head": "5eb22a5f854acb403436157a579a1d1d62d30f45",
+    "head": "b0504f4c21762a7673a6575151dbf9d1f14f70d1",
     "n_files": 107,
     "file_types": {
       "other": 6,
@@ -5675,7 +5675,7 @@
     "images": [],
     "build_requires": [],
     "mentions": {},
-    "readme": "# ![xeus](docs/source/xeus.svg)\n[![GithubActions](https://github.com/jupyter-xeus/xeus/actions/workflows/main.yml/badge.svg)](https://github.com/jupyter-xeus/xeus/actions/workflows/main.yml)\n[![Documentation Status](http://readthedocs.org/projects/xeus/badge/?version=latest)](https://xeus.readthedocs.io/en/latest/?badge=latest)\n[![Zulip](https://img.shields.io/badge/social_chat-zulip-blue.svg)](https://jupyter.zulipchat.com/#narrow/channel/539737-Jupyter-Kernels)\n\nC++ implementation of the Jupyter Kernel protocol\n\n## Introduction\n\n`xeus` is a library meant to facilitate the implementation of kernels for Jupyter. It takes the\nburden of implementing the Jupyter Kernel protocol so developers can focus on implementing the\ninterpreter part of the kernel.\n\nSeveral Jupyter kernels are built upon xeus, such as [`xeus-cling`](https://github.com/jupyter-xeus/xeus-cling),\na kernel for the C++ programming language, and [`xeus-python`](https://github.com/jupyter-xeus/xeus-python), an alternative Python kernel for Jupyter.\n\n## Installation\n\n`xeus` has been packaged on all platforms for the mamba (or conda) package manager.\n\n```\nmamba install xeus -c conda-forge\n```\n\n## Documentation\n\nTo get started with using `xeus`, check out the full documentation\n\nhttp://xeus.readthedocs.io/\n\n## Usage\n\n`xeus` enables custom kernel authors to implement Jupyter kernels more easily. It takes the burden of implementing the Jupyter Kernel protocol so developers can focus on implementing the interpreter part of the Kernel.\n\nThe easiest way to get started with a new kernel is to inherit from the base interpreter class `xeus::xinterpreter` and implement the private virtual methods:\n\n- `configure_impl`\n- `execute_request_impl`\n- `complete_request_impl`\n- `inspect_request_impl`\n- `is_complete_request_impl`\n- `kernel_info_request_impl`\n- `shutdown_request_impl`\n\nas seen in the [documentation](http://xeus.readthedocs.io/).\n\n\n```cpp\n#include \"xeus/xinterpreter.hpp\"\n\n#include \"nlohmann/json.hpp\"\n\nusing xeus::xinterpreter;\n\nnamespace nl = nlohmann;\n\nnamespace custom\n{\n    class custom_interpreter : public xinterpreter\n    {\n    public:\n\n        custom_interpreter() = default;\n        virtual ~custom_interpreter() = default;\n\n    private:\n\n        void configure_impl() override;\n\n        void execute_request_impl(send_reply_callback cb,\n                                  int execution_counter,\n                                  const std::string& code,\n                                  execute_request",
+    "readme": "# ![xeus](docs/source/xeus.svg)\n[![GithubActions](https://github.com/jupyter-xeus/xeus/actions/workflows/main.yml/badge.svg)](https://github.com/jupyter-xeus/xeus/actions/workflows/main.yml)\n[![Documentation Status](https://readthedocs.org/projects/xeus/badge/?version=latest)](https://xeus.readthedocs.io/en/latest/?badge=latest)\n[![Zulip](https://img.shields.io/badge/social_chat-zulip-blue.svg)](https://jupyter.zulipchat.com/#narrow/channel/539737-Jupyter-Kernels)\n\nC++ implementation of the Jupyter Kernel protocol\n\n## Introduction\n\n`xeus` is a library meant to facilitate the implementation of kernels for Jupyter. It takes the\nburden of implementing the Jupyter Kernel protocol so developers can focus on implementing the\ninterpreter part of the kernel.\n\nSeveral Jupyter kernels are built upon xeus, such as [`xeus-cling`](https://github.com/jupyter-xeus/xeus-cling),\na kernel for the C++ programming language, and [`xeus-python`](https://github.com/jupyter-xeus/xeus-python), an alternative Python kernel for Jupyter.\n\n## Installation\n\n`xeus` has been packaged on all platforms for the mamba (or conda) package manager.\n\n```\nmamba install xeus -c conda-forge\n```\n\n## Documentation\n\nTo get started with using `xeus`, check out the full documentation\n\nhttp://xeus.readthedocs.io/\n\n## Usage\n\n`xeus` enables custom kernel authors to implement Jupyter kernels more easily. It takes the burden of implementing the Jupyter Kernel protocol so developers can focus on implementing the interpreter part of the Kernel.\n\nThe easiest way to get started with a new kernel is to inherit from the base interpreter class `xeus::xinterpreter` and implement the private virtual methods:\n\n- `configure_impl`\n- `execute_request_impl`\n- `complete_request_impl`\n- `inspect_request_impl`\n- `is_complete_request_impl`\n- `kernel_info_request_impl`\n- `shutdown_request_impl`\n\nas seen in the [documentation](http://xeus.readthedocs.io/).\n\n\n```cpp\n#include \"xeus/xinterpreter.hpp\"\n\n#include \"nlohmann/json.hpp\"\n\nusing xeus::xinterpreter;\n\nnamespace nl = nlohmann;\n\nnamespace custom\n{\n    class custom_interpreter : public xinterpreter\n    {\n    public:\n\n        custom_interpreter() = default;\n        virtual ~custom_interpreter() = default;\n\n    private:\n\n        void configure_impl() override;\n\n        void execute_request_impl(send_reply_callback cb,\n                                  int execution_counter,\n                                  const std::string& code,\n                                  execute_reques",
     "security_policy": null
   },
   "jupyter-xeus/xeus-brainfuck": {
@@ -5826,7 +5826,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-lite": {
-    "head": "b5077c994171ebd1fce1cc7a58188426d6cafc5b",
+    "head": "d70c6cf9f2d6883b0669990886533b2fbb86a9dd",
     "n_files": 25,
     "file_types": {
       "config": 6,
@@ -5858,7 +5858,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-lua": {
-    "head": "748c0c2096a7462c7a4a489b0bba72ff637084c1",
+    "head": "cb6949f60a89383d8c7e488d1f69754ff90e8d2f",
     "n_files": 70,
     "file_types": {
       "docs": 8,
@@ -6137,7 +6137,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-sql": {
-    "head": "16d60b392fa62a5682829d1cd152576fded4758c",
+    "head": "545244a14554184eda41d281a1e7468820c80430",
     "n_files": 52,
     "file_types": {
       "config": 8,
@@ -6171,7 +6171,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-sqlite": {
-    "head": "09c14e8487822089a71b7bb5f47396a5801b45d4",
+    "head": "5ddf6bd99f2a7ef1daa1425400eddd7ae510c667",
     "n_files": 46,
     "file_types": {
       "config": 10,
@@ -6209,7 +6209,7 @@
     "security_policy": null
   },
   "jupyter-xeus/xeus-zmq": {
-    "head": "30ad90d89bc1f5f767b4b7edfbd6a13985baf34e",
+    "head": "435f5d40f28419a40f96592e3f3ade4f10bde3d7",
     "n_files": 116,
     "file_types": {
       "config": 9,
@@ -7754,7 +7754,7 @@
     "security_policy": null
   },
   "jupyter/nbconvert": {
-    "head": "e681152f214b65387f875aad96a4726994533a0b",
+    "head": "f31a097873baba2216972969e59022cf98245cae",
     "n_files": 276,
     "file_types": {
       "other": 10,
@@ -8751,11 +8751,11 @@
     "security_policy": null
   },
   "jupyter/terminado": {
-    "head": "bc04d823152b30d8f839180348f91fb5079911a4",
-    "n_files": 41,
+    "head": "27c4c65529ac3ebb10597b77907be9868af4455e",
+    "n_files": 42,
     "file_types": {
       "other": 5,
-      "config": 9,
+      "config": 10,
       "docs": 9,
       "code": 16,
       "web": 2
@@ -8769,7 +8769,7 @@
       }
     ],
     "workflows": {
-      "count": 5,
+      "count": 6,
       "triggers": [
         "pull_request",
         "push",
@@ -8785,17 +8785,24 @@
       ]
     },
     "uses": [
-      "actions/checkout@v7",
-      "actions/create-github-app-token@v3",
-      "jupyter-server/jupyter_releaser@v2",
-      "jupyterlab/maintainer-tools@v1",
-      "re-actors/alls-green@release/v1"
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/create-github-app-token@64ab729a6294000f5aa4a4bc0b73d1f32bc45510",
+      "jupyter-server/jupyter_releaser@ae340ad3f2f83e1a2f50b988050bf453b932e69a",
+      "jupyterlab/maintainer-tools@b9d5c28489f8b460cef48868f303b97c20f8fe1b",
+      "re-actors/alls-green@b5b5b37504aa4183270bd3d855c52a67f212be35",
+      "zizmorcore/zizmor-action@85b2b9fb8e3325e7a23d7d0a9d7ba5ae0f999e3e"
     ],
     "images": [],
     "build_requires": [
       "hatchling"
     ],
     "mentions": {
+      "zizmor": [
+        ".github/workflows/zizmor.yml"
+      ],
+      "zizmor-action": [
+        ".github/workflows/zizmor.yml"
+      ],
       "pre-commit": [
         ".pre-commit-config.yaml"
       ]
@@ -10422,7 +10429,7 @@
     "security_policy": null
   },
   "jupyterhealth/jupyterhealth.org": {
-    "head": "714d67624e4fb375809e2b8c75a7be96c7c9255d",
+    "head": "48476c650fb35be0fb0a5b9991a1644fc7a835f1",
     "n_files": 963,
     "file_types": {
       "config": 57,
@@ -13216,7 +13223,7 @@
     "security_policy": null
   },
   "jupyterhub/simpervisor": {
-    "head": "24730d8bf9574e1adfb755804882acedd3696855",
+    "head": "40d651d06f65eca42338bc1c3c0f82fd9075abd5",
     "n_files": 23,
     "file_types": {
       "other": 3,
@@ -13831,7 +13838,7 @@
     "security_policy": null
   },
   "jupyterlab/eslint-plugin": {
-    "head": "ec88e8891497953504f7fd7bfd8fc5e185e37a96",
+    "head": "4635243f67858bd79c1b916de8596b6c8a1b43b3",
     "n_files": 144,
     "file_types": {
       "config": 23,
@@ -14375,7 +14382,7 @@
     "security_policy": null
   },
   "jupyterlab/extension-template": {
-    "head": "2f66160b8051a5c88c1e1aa70d22c95b1ee54c2b",
+    "head": "7d19dcccb8da6ab930881568d8fe2beede6ad2bb",
     "n_files": 56,
     "file_types": {
       "config": 9,
@@ -14583,7 +14590,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "f2392b2079658c6e176ee7ab1e1be93b63b77db0",
+    "head": "5b2d808cd04b32cef3309bcf71502e5a76c0c53f",
     "n_files": 209,
     "file_types": {
       "other": 21,
@@ -14903,7 +14910,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-collaboration": {
-    "head": "0a53399488efdbfb15a6ff73361837fe0b0e8791",
+    "head": "441f0304310d0dc36a9c5e4abba8010a23d00a75",
     "n_files": 211,
     "file_types": {
       "other": 14,
@@ -15184,7 +15191,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "4b69f6286fcbbfa114d108d26a6459aec18e7324",
+    "head": "285087bb6852b06c0ce087e6d1a49e8a805aacaa",
     "n_files": 3140,
     "file_types": {
       "config": 605,
