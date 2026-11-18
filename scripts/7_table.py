@@ -3,7 +3,7 @@
     python scripts/7_table.py
 
 The columns:
-  owner              the repo's "Owner" custom property on GitHub
+  owner              its Owner custom property on GitHub
   package            its most downloaded package
   downloads/month    monthly downloads of that package
   dependents         how many packages depend on it

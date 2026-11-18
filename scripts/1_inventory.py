@@ -3,8 +3,6 @@
 Archived and empty repos are left out: archived ones are read-only, run no CI and cut no releases,
 and empty ones have no code, so there is nothing in them to secure.
 
-Each repo also gets its "Owner", a custom property the organizations set on their repos.
-
 Usage: python scripts/1_inventory.py    Needs: the GitHub CLI (`gh auth login`).
 Output: output/repos.json
 """

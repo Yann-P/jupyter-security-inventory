@@ -19,7 +19,7 @@ Eight scripts run in order (they depend on each other):
 
 | Step | What it does | Data from |
 |---|---|---|
-| 1. Inventory | Lists the public, non-archived repositories of each organization, with their "Owner" custom property | GitHub |
+| 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |
 | 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config, README and SECURITY.md | GitHub |
 | 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents, the date of the last release, how the latest release was published and the Python versions it allows | PyPI, npm, pypistats.org, deps.dev |
 | 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |
@@ -33,7 +33,7 @@ Eight scripts run in order (they depend on each other):
 ## The columns
 
 - **kind**: package, application, tooling, deployment, documentation, example or other.
-- **owner**: the repository's "Owner" custom property on GitHub.
+- **owner**: its Owner custom property on GitHub.
 - **downloads/month** and **dependents**: for the repository's most downloaded package.
 - **image** and **all-time pulls**: for the repository's most pulled container image.
 - **used in CI**: how many other Jupyter repositories run its actions or build tools without pinning them
@@ -46,7 +46,7 @@ Eight scripts run in order (they depend on each other):
 
 A topic asks one question about every repository, like "does it check its workflows with zizmor?", and answers
 with a status: done, partial, missing or not applicable. Each topic has a page, and every organization and
-repository page shows how it does. There are six for now:
+repository page shows how it does. The topics for now:
 
 - **zizmor**, run as its GitHub Action, as a command in a workflow or as a pre-commit hook.
 - **SECURITY.md**, in the repository or in the organization's `.github` repository, for the repositories that ship a
@@ -56,7 +56,7 @@ repository page shows how it does. There are six for now:
 - **npm trusted publishing**, for the latest version of each npm package.
 - **Supported Python**: the Requires-Python of the latest release of each PyPI package leaves out the Python versions
   that no longer get security fixes.
-- **Owner**: the repository's "Owner" custom property names someone. It is flagged when it is "None" or not set.
+- **Owner**: the repository's Owner custom property is set, and not "None".
 
 ## Caveats
 

@@ -1,4 +1,4 @@
-"""Topic: does the repo name its owner, in the "Owner" custom property that its organization sets on each repo?"""
+"""Topic: does the repo name its owner?"""
 
 from topics import DONE, MISSING, NOT_APPLICABLE, PARTIAL, Result, Topic
 
