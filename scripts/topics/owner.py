@@ -14,13 +14,13 @@ def check(repo: dict, scan: dict) -> Result:
 TOPIC = Topic(
     id="owner",
     title="Owner",
-    question="Does the repository name who owns it?",
-    detection='We read the "Owner" custom property that the organization sets on each repository.',
+    question="Does the repository name who owns it with the Owner custom property?",
+    detection='We read the repository "Owner" custom property.',
     meanings={
         DONE: "Its Owner custom property names an owner.",
-        PARTIAL: "Not used: a repository names an owner or it doesn't.",
-        MISSING: "Its Owner custom property is None, or not set.",
-        NOT_APPLICABLE: "Not used: every repository needs an owner.",
+        PARTIAL: "Not used: the property cannot be partially set.",
+        MISSING: "Its Owner custom property is the default value (None) or not set.",
+        NOT_APPLICABLE: "Not used: the property is mandatory.",
     },
     check=check,
 )

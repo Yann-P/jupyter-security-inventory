@@ -63,13 +63,13 @@
     {
       "id": "owner",
       "title": "Owner",
-      "question": "Does the repository name who owns it?",
-      "detection": "We read the \"Owner\" custom property that the organization sets on each repository.",
+      "question": "Does the repository name who owns it with the Owner custom property?",
+      "detection": "We read the repository \"Owner\" custom property.",
       "meanings": {
         "done": "Its Owner custom property names an owner.",
-        "partial": "Not used: a repository names an owner or it doesn't.",
-        "missing": "Its Owner custom property is None, or not set.",
-        "n/a": "Not used: every repository needs an owner."
+        "partial": "Not used: the property cannot be partially set.",
+        "missing": "Its Owner custom property is the default value (None) or not set.",
+        "n/a": "Not used: the property is mandatory."
       }
     }
   ],
