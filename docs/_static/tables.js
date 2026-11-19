@@ -17,16 +17,17 @@ function hideControlsOfSmallTable(api) {
 }
 
 /* Adds a dropdown next to the search box of the tables that have the filter-by-org or filter-by-owner class.
-   It filters the table's "organization" or "owner" column. Each is put first in turn, so the owner comes first. */
+   It filters the table's "organization" or "owner" column. Each is put first in turn, so the owner comes first.
+   The page's URL can pick a value, like ?owner=Jupyter%20Book, which the owner and organization pages link with. */
 const FILTERS = [
-  ["filter-by-org", "organization", "All organizations"],
-  ["filter-by-owner", "owner", "All owners"],
+  ["filter-by-org", "organization", "All organizations", "org"],
+  ["filter-by-owner", "owner", "All owners", "owner"],
 ];
 
 function addFilters(settings) {
   const api = settings.api;
   const headers = api.columns().header().toArray().map((th) => $(th).text().trim());
-  for (const [cls, header, all] of FILTERS) {
+  for (const [cls, header, all, param] of FILTERS) {
     const index = headers.indexOf(header);
     if (!$(api.table().node()).hasClass(cls) || index < 0) continue;
 
@@ -40,6 +41,8 @@ function addFilters(settings) {
         column.search(value ? "^" + $.fn.dataTable.util.escapeRegex(value) + "$" : "", true, false).draw();
       });
     $(api.table().container()).find(".dt-search").prepend(select);
+    const wanted = new URLSearchParams(location.search).get(param);
+    if (values.includes(wanted)) select.val(wanted).trigger("change");
   }
 }
 

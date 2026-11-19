@@ -14,6 +14,7 @@ Repositories are listed most downloaded first, then by how many other repositori
 """
 
 import csv
+import html
 import json
 import re
 import shutil
@@ -516,15 +517,23 @@ def progress_cell(counts: Counter) -> str:
     )
 
 
-def topic_summary(data: Data, names) -> Table:
-    """One row per topic: how far along it is, and how many of these repos have each status."""
+def topic_summary(data: Data, names, query: str = "") -> Table:
+    """One row per topic: how far along it is, and how many of these repos have each status.
+
+    With a `query`, like "owner=Jupyter%20Book", a topic links to the repos of its page that the query picks, which
+    tables.js filters by. Raw HTML, since a Sphinx link has no query, from a page one folder down like owners/.
+    """
     header = ["topic", "progress", "question", "done", "partial", "missing", "not applicable"]
     rows, cells = [], []
     for topic in data.topics:
         counts = topic_counts(data, topic, names)
         statuses = [counts[status] for status in STATUSES]
         rows.append([topic["title"], progress(counts), topic["question"], *statuses])
-        title = f"[{plain(topic['title'])}](/topics/{topic['id']}.md)"
+        if query:
+            href = f"../topics/{topic['id']}.html?{query}#repositories"
+            title = f'<a href="{html.escape(href)}">{html.escape(topic["title"])}</a>'
+        else:
+            title = f"[{plain(topic['title'])}](/topics/{topic['id']}.md)"
         cells.append([title, progress_cell(counts), plain(topic["question"]), *statuses])
     return Table(header, rows, cells)
 
@@ -711,15 +720,22 @@ def sections(
 
 
 def write_tables(
-    data: Data, scope: str, names: list[str], images: list[dict], by_org: bool, by_owner: bool = True
+    data: Data,
+    scope: str,
+    names: list[str],
+    images: list[dict],
+    by_org: bool,
+    by_owner: bool = True,
+    topic_query: str = "",
 ) -> str:
     """Writes the tables of a page that lists repositories, their packages and images. Returns its sections.
 
     `names` are the repositories of the page. Without `by_org`, the tables of packages and images
     leave out the organization column, which is the same on every row of an organization's page.
     `by_owner`: the repository tables get an owner filter, which an owner's page has no use for.
+    `topic_query`: see topic_summary().
     """
-    topics = topic_summary(data, names)
+    topics = topic_summary(data, names, topic_query)
     software = repo_table(data, [name for name in names if not data.out_of_the_way(name)])
     docs = docs_table(data, [name for name in names if data.out_of_the_way(name)])
     packages = {title: package_table(data, system, names) for system, title in REGISTRIES.items()}
@@ -846,7 +862,7 @@ def org_pages(data: Data) -> Table:
             rows[org] = [org, 0, 0, len(org_images), 0, 0, 0, "", ""]
             cells[org] = [plain(org), *rows[org][1:]]
             continue
-        body = write_tables(data, org, names, org_images, by_org=False)
+        body = write_tables(data, org, names, org_images, by_org=False, topic_query=f"org={quote(org)}")
         (DOCS / "orgs" / org).mkdir(parents=True)
         for name in names:
             (DOCS / f"{slug(name)}.md").write_text(repo_page(data, name), encoding="utf-8")
@@ -902,7 +918,15 @@ def owner_pages(data: Data) -> Table:
     for owner in order:
         names = data.by_reach(name for name, repo in data.repos.items() if owner_of(repo) == owner)
         images = [image for image in data.images if image["repo"] in names]
-        body = write_tables(data, f"owner-{owner_slug(owner)}", names, images, by_org=True, by_owner=False)
+        body = write_tables(
+            data,
+            f"owner-{owner_slug(owner)}",
+            names,
+            images,
+            by_org=True,
+            by_owner=False,
+            topic_query=f"owner={quote(owner)}",
+        )
         counts = tally(data, names)
         page = OWNER_PAGE.format(title=plain(owner), summary=summary_sentence(plain(owner), counts), body=body)
         (DOCS / "owners" / f"{owner_slug(owner)}.md").write_text(page, encoding="utf-8")
