@@ -32,7 +32,8 @@ def registry_entry(system: str, name: str) -> dict | None:
         people = [info.get(key) or "" for key in ("author", "author_email", "maintainer", "maintainer_email")]
         name = info["name"]
     else:
-        body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest")
+        # With no wait, 8 threads on kept-open connections got npm to refuse us for minutes (HTTP 429).
+        body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.5)
         if not isinstance(body, dict) or "version" not in body:
             return None
         repository = body.get("repository")
@@ -121,7 +122,7 @@ def publishing(system: str, name: str) -> dict:
             "attested": bool(files) and all(fetch_json(f"{base}/{quote(file)}/provenance") for file in files),
             "requires_python": body["info"].get("requires_python") or None,
         }
-    body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest")
+    body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.5)
     return {"trusted_publishing": bool((body.get("_npmUser") or {}).get("trustedPublisher"))}
 
 

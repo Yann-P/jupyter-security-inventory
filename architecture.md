@@ -34,7 +34,7 @@ scripts/1..8  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.p
 `common.py` has what the scripts share: reading and writing JSON, and `fetch_json`, which caches answers for
 24 hours in `.cache/http/`. It downloads with urllib3, which keeps connections open between requests and retries on
 rate limits (HTTP 429) and server errors, waiting as long as the server's Retry-After or X-RateLimit-Reset header
-asks (up to a minute). `RETRIES` counts the retries. `Progress` shows how far a step has got when it runs in a
+asks (up to 5 minutes). `RETRIES` counts the retries. `Progress` shows how far a step has got when it runs in a
 terminal.
 
 Step 2 keeps, for each repo: file counts by type, the packages its manifests declare, a summary of its workflows
