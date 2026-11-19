@@ -6,7 +6,7 @@ requires-python = ">=3.14"
 dependencies = ["openai==3.36.1", "packaging==26.3", "pydantic==2.14.1", "pyyaml==6.0.3"]
 
 [dependency-groups]
-dev = ["pytest==9.1.1", "pre-commit==4.7.0"]
+dev = ["pytest==9.1.1", "pre-commit==4.7.0", "sphinx-autobuild==2025.8.25"]
 docs = [
     "sphinx==9.2.0",
     "pydata-sphinx-theme==0.23.0",
@@ -25,3 +25,42 @@ line-length = 120
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
 ignore = ["B905"]  # zip() without strict=
+
+# pixi reads the dependencies above, so pip and uv keep working from the same lists.
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[tool.pixi.dependencies]
+python = "3.14.*"  # as in CI
+gh = "*"  # step 1 calls the GitHub CLI
+
+[tool.pixi.environments]
+default = ["dev", "docs"]
+
+# One task per pipeline step, plus the checks and the site. `pixi task list` describes them.
+[tool.pixi.tasks]
+inventory = { cmd = "python scripts/1_inventory.py", description = "Step 1: list the repositories" }
+scan = { cmd = "python scripts/2_scan_repos.py --clone-dir {{ clone_dir }}", args = [
+  { arg = "clone_dir", default = "~/clones" },
+], description = "Step 2: clone and scan the repositories" }
+packages = { cmd = "python scripts/3_packages.py", description = "Step 3: find the published packages" }
+images = { cmd = "python scripts/4_images.py", description = "Step 4: find the container images" }
+classify = { cmd = "python scripts/5_classify.py --clone-dir {{ clone_dir }}", args = [
+  { arg = "clone_dir", default = "~/clones" },
+], description = "Step 5: label new repositories with a language model" }
+dataset = { cmd = "python scripts/6_build_dataset.py", description = "Step 6: build the dataset" }
+table = { cmd = "python scripts/7_table.py", description = "Step 7: write the CSV table" }
+topics = { cmd = "python scripts/8_topics.py", description = "Step 8: check the security topics" }
+outputs = { depends-on = ["dataset", "table", "topics"], description = "Steps 6 to 8, which CI checks" }
+pipeline = { depends-on = [
+  "inventory", "scan", "packages", "images", "classify", "outputs",
+], description = "The whole pipeline" }
+test = { cmd = "pytest", description = "Run the tests" }
+lint = { cmd = "pre-commit run --all-files", description = "Format and lint" }
+docs = { cmd = "sphinx-build -W docs docs/_build", description = "Build the site into docs/_build" }
+
+[tool.pixi.tasks.docs-watch]
+description = "Serve the site and rebuild on changes"
+# The site build writes into the ignored folders, so watching them would rebuild forever.
+cmd = "sphinx-autobuild docs docs/_build --watch output --ignore docs/_generated --ignore docs/orgs --ignore docs/topics"

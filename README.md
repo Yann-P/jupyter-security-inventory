@@ -87,6 +87,23 @@ python scripts/7_table.py
 python scripts/8_topics.py
 ```
 
+Then build the site with `sphinx-build -W docs docs/_build`, and open `docs/_build/index.html`.
+
+### With pixi
+
+[pixi](https://pixi.sh) installs Python 3.14, the GitHub CLI and the same dependencies, and runs each step as a task.
+`pixi task list` shows them all.
+
+```bash
+pixi run pipeline        # steps 1 to 8
+pixi run scan ~/clones   # the clone directory, ~/clones by default
+pixi run outputs         # steps 6 to 8
+pixi run test
+pixi run lint
+pixi run docs            # build the site into docs/_build
+pixi run docs-watch      # serve the site at http://127.0.0.1:8000 and rebuild on changes
+```
+
 ## Daily updates
 
 A GitHub Actions workflow (`update.yml`) reruns the whole pipeline every morning, commits what changed in
