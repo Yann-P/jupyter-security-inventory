@@ -43,6 +43,9 @@ class Topic:
 
 def names(packages: list[dict]) -> str:
     """Packages with the date of their latest release: 'a (2024-01-31), b (2025-02-01), c and 2 more'."""
+    # Most downloaded first, but by order of magnitude, then by name: the exact counts change every day, and so would
+    # the order of packages with close counts.
+    packages = sorted(packages, key=lambda p: (-len(str(p.get("downloads_last_month") or 0)), p["name"]))
     items = [f"{p['name']} ({p['latest_published']})" if p["latest_published"] else p["name"] for p in packages]
     if len(items) > 3:
         return f"{', '.join(items[:3])} and {len(items) - 3} more"
