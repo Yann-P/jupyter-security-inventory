@@ -104,6 +104,8 @@ pixi run docs            # build the site into docs/_build
 pixi run docs-watch      # serve the site at http://127.0.0.1:8000 and rebuild on changes
 ```
 
+Read the Docs builds the site the same way, with `.readthedocs.yaml`.
+
 ## Daily updates
 
 A GitHub Actions workflow (`update.yml`) reruns the whole pipeline every morning, commits what changed in

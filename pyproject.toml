@@ -58,7 +58,9 @@ pipeline = { depends-on = [
 ], description = "The whole pipeline" }
 test = { cmd = "pytest", description = "Run the tests" }
 lint = { cmd = "pre-commit run --all-files", description = "Format and lint" }
-docs = { cmd = "sphinx-build -W docs docs/_build", description = "Build the site into docs/_build" }
+docs = { cmd = "sphinx-build -W docs {{ out }}", args = [
+  { arg = "out", default = "docs/_build" },
+], description = "Build the site, into docs/_build by default" }
 
 [tool.pixi.tasks.docs-watch]
 description = "Serve the site and rebuild on changes"
