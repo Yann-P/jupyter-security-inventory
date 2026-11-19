@@ -13,6 +13,7 @@ Usage: python scripts/3_packages.py    Output: output/packages.json
 """
 
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import PurePosixPath
 
@@ -165,7 +166,15 @@ def pick_publishers(candidates: dict, entries: dict, repos: dict, jupyter_orgs: 
     return accepted, rejected
 
 
+def took(what: str, since: float) -> float:
+    """Print how long a part took, for the run log, and return the time now."""
+    now = time.perf_counter()
+    print(f"{what}: {now - since:.0f} s", flush=True)
+    return now
+
+
 def main():
+    start = time.perf_counter()
     inventory = load_json(OUTPUT / "repos.json")
     repos = {repo["full_name"]: repo for repo in inventory["repos"]}
     scan = load_json(OUTPUT / "scan.json")
@@ -175,20 +184,25 @@ def main():
     with ThreadPoolExecutor(8) as pool:
         entries = dict(zip(names, pool.map(lambda key: registry_entry(*key), names)))
     packages, rejected = pick_publishers(candidates, entries, repos, set(inventory["orgs"]))
+    start = took(f"{len(names)} registry lookups", start)
 
     with ThreadPoolExecutor(8) as pool:
         known = list(
             pool.map(lambda p: deps_dev(p["system"], p["name"]) | publishing(p["system"], p["name"]), packages)
         )
+    start = took(f"deps.dev and publishing of {len(packages)} packages", start)
 
     def count_downloads(system):
+        since = time.perf_counter()
         for package in packages:
             if package["system"] == system:
                 package["downloads_last_month"] = downloads(system, package["name"])
+        took(f"{system} downloads", since)
 
     # pypistats.org and api.npmjs.org limit how often we may call them: one request at a time to each, both at once.
     with ThreadPoolExecutor(2) as pool:
         list(pool.map(count_downloads, ("PYPI", "NPM")))  # list() raises any error from the threads
+    took("downloads", start)
     for package, deps in zip(packages, known):
         package.update(deps)
 
