@@ -153,10 +153,11 @@ def main():
     else:
         client = OpenAI()  # reads OPENAI_API_KEY
     with ThreadPoolExecutor(8) as pool:
-        for repo, labels in zip(todo, pool.map(lambda text: ask(client, args.model, text), texts)):
+        answers = pool.map(lambda text: ask(client, args.model, text), texts)
+        for done, (repo, labels) in enumerate(zip(todo, answers), 1):
             results[repo["full_name"]] = labels.model_dump() | {"model": args.model}
             save_json(LABELS, results)  # saved after every repo, so an interrupted run loses nothing
-            print(f"{repo['full_name']}: {labels.kind}")
+            print(f"[{done}/{len(todo)}] {repo['full_name']}: {labels.kind}")
     save_json(LABELS, results)
 
 
