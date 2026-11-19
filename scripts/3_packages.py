@@ -190,7 +190,7 @@ def main():
     describe = Progress("deps.dev and publishing", len(packages)).wrap(
         lambda p: deps_dev(p["system"], p["name"]) | publishing(p["system"], p["name"])
     )
-    with ThreadPoolExecutor(8) as pool:
+    with ThreadPoolExecutor(16) as pool:  # mostly deps.dev, up to 14 requests per package
         known = list(pool.map(describe, packages))
     start = took(f"deps.dev and publishing of {len(packages)} packages", start)
 
