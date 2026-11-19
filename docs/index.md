@@ -11,8 +11,8 @@ html_theme.sidebar_secondary.remove: true
 :hidden:
 
 self
-orgs
 owners
+orgs
 topics
 packages
 images

@@ -54,6 +54,9 @@ a.download code { font: inherit; background: none; border: 0; padding: 0; color:
 
 /* The progress column of the topic tables: a bar of the done (green) and partial (orange) repos, which
    insights.py sets as --done and --partial, then the percentage done, or a check mark for a finished topic. */
+/* A fixed width, so the bars line up in a column that DataTables aligns to the right. In rem, which a font size of 0
+   leaves alone. */
+.topic-label { display: inline-block; width: 2.5rem; text-align: right; }
 .topic-finished { font-size: 0; }  /* hides the "100%" that DataTables sorts by */
 .topic-finished::before { content: "✓"; font-size: 1.25rem; line-height: 1; font-weight: bold; color: rgb(56, 142, 60); }
 .topic-progress { display: inline-flex; align-items: center; gap: 0.5em; white-space: nowrap; }
@@ -66,3 +69,8 @@ a.download code { font: inherit; background: none; border: 0; padding: 0; color:
     rgb(255, 159, 28) 0 calc(var(--done) + var(--partial)),
     rgba(128, 128, 128, 0.25) 0);
 }
+
+/* Every column is aligned to the left, with its sort arrows on the right. DataTables aligns the columns of numbers
+   and dates to the right and moves their arrows to the left, which makes a row of headers look ragged. */
+.bd-article table.dataTable :is(th, td):is(.dt-type-numeric, .dt-type-date) { text-align: left; }
+.bd-article table.dataTable th:is(.dt-type-numeric, .dt-type-date) div.dt-column-header { flex-direction: row; }

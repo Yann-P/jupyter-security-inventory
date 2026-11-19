@@ -17,7 +17,7 @@ function hideControlsOfSmallTable(api) {
 }
 
 /* Adds a dropdown next to the search box of the tables that have the filter-by-org or filter-by-owner class.
-   It filters the table's "organization" or "owner" column. */
+   It filters the table's "organization" or "owner" column. Each is put first in turn, so the owner comes first. */
 const FILTERS = [
   ["filter-by-org", "organization", "All organizations"],
   ["filter-by-owner", "owner", "All owners"],

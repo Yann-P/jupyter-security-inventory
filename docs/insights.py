@@ -94,13 +94,13 @@ html_theme.sidebar_secondary.remove: true
 
 {legend}
 
-## By organization
-
-{orgs}
-
 ## By owner
 
 {owners}
+
+## By organization
+
+{orgs}
 
 ## Repositories
 
@@ -508,7 +508,8 @@ def progress_cell(counts: Counter) -> str:
     applicable = counts["done"] + counts["partial"] + counts["missing"]
     partial = counts["partial"] * 100 / applicable if applicable else 0
     title = f"{counts['done']} done, {counts['partial']} partial, {counts['missing']} missing"
-    label = '<span class="topic-finished">100%</span>' if percent == 100 else f"{percent}%"
+    classes = "topic-label topic-finished" if percent == 100 else "topic-label"
+    label = f'<span class="{classes}">{percent}%</span>'
     return (
         f'<span class="topic-progress" style="--done: {percent}%; --partial: {partial:.1f}%" title="{title}">'
         f'<span class="topic-bar"></span>{label}</span>'
@@ -553,7 +554,7 @@ def topic_repo_table(data: Data, topic: dict) -> Table:
     """The repos a topic applies to, most reached first."""
     results = data.results[topic["id"]]
     names = data.by_reach(name for name, answer in results.items() if answer["status"] != NOT_APPLICABLE)
-    header = ["repository", "organization", "owner", "status", "via", "downloads/month", "reason", "files"]
+    header = ["repository", "owner", "organization", "status", "via", "downloads/month", "reason", "files"]
     rows, cells = [], []
     for name in names:
         answer, repo = results[name], data.repos[name]
@@ -561,14 +562,14 @@ def topic_repo_table(data: Data, topic: dict) -> Table:
         downloads = repo["max_downloads_last_month"] if repo["top_package"] else ""
         evidence = "; ".join(answer["evidence"])
         rows.append(
-            [name, repo["org"], repo["owner"] or "", answer["status"], via, downloads, answer["reason"], evidence]
+            [name, repo["owner"] or "", repo["org"], answer["status"], via, downloads, answer["reason"], evidence]
         )
         files = ", ".join(file_link(data, name, path) for path in answer["evidence"])
         cells.append(
             [
                 data.cell(name),
-                org_link(repo["org"]),
                 owner_link(repo["owner"]),
+                org_link(repo["org"]),
                 status_chip(answer["status"]),
                 plain(via),
                 data.downloads(name),
@@ -595,8 +596,8 @@ def topic_history_table(data: Data, topic: dict) -> Table:
 def topic_page(data: Data, topic: dict) -> str:
     stem = f"topic-{topic['id']}"
     tables = {
-        "orgs": topic_group_table(data, topic, "organization"),
         "owners": topic_group_table(data, topic, "owner"),
+        "orgs": topic_group_table(data, topic, "organization"),
         "repos": topic_repo_table(data, topic),
         "history": topic_history_table(data, topic),
     }
@@ -622,8 +623,8 @@ def topic_page(data: Data, topic: dict) -> str:
         headline=headline,
         detection=plain(topic["detection"]),
         legend="\n".join(f"- {status_chip(status)} {plain(topic['meanings'][status])}" for status in STATUSES),
-        orgs=table("orgs"),
         owners=table("owners"),
+        orgs=table("orgs"),
         legend_of_kinds=LEGEND,
         repos=table("repos", by_org=True, by_owner=True),
         history=table("history"),
