@@ -47,8 +47,27 @@ function addFilters(settings) {
   }
 }
 
+/* The page's URL can keep only the rows where a column is filled in, like ?has=security%20boundary, which the counts
+   of the owners, the organizations and the summary sentences link with. A note above the table says so.
+   A repository table without that column, like the documentation table without "package", has none of those rows,
+   so its whole subsection is hidden. */
+function keepFilledIn(api) {
+  const column = new URLSearchParams(location.search).get("has");
+  if (!column) return;
+  const headers = api.columns().header().toArray().map((th) => $(th).text().trim());
+  const index = headers.indexOf(column);
+  if (index < 0) {
+    $(api.table().node()).closest("section#repositories section").hide();
+    return;
+  }
+  api.column(index).search("\\S", true, false).draw();
+  const all = $("<a>", { href: location.pathname + "#repositories", text: "Show all" });
+  $("<p>", { class: "has-filter", text: `Only the rows with a ${column}. ` }).append(all).insertBefore(api.table().container());
+}
+
 /* conf.py hands this to DataTables as its initComplete option. */
 function initTable(settings) {
   hideControlsOfSmallTable(settings.api);
   addFilters(settings);
+  keepFilledIn(settings.api);
 }

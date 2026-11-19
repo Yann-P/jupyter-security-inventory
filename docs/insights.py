@@ -233,6 +233,14 @@ def stats(top: str | None, count: str) -> str:
     return f"[{count}]({url})"
 
 
+def dependents(top: str | None, count: str) -> str:
+    """A count of dependents that links to the package on deps.dev, which lists them for each version."""
+    if not top or not count or count == "0":
+        return count
+    system, name = top.split(":", 1)
+    return f"[{count}](https://deps.dev/{system.lower()}/{quote(name, safe='')})"
+
+
 def date(day: str | None) -> str:
     """A date in a table, kept on one line: '2026-10-28' would otherwise wrap at its hyphens."""
     return f"[{day}]{{.date}}" if day else ""
@@ -244,14 +252,24 @@ def counted(number: int, one: str, many: str) -> str:
 
 
 def summary_sentence(subject: str, counts: dict) -> str:
-    """'github.com/jupyter has 60 public repositories: 23 publish a package, 6 are security ...'"""
+    """'github.com/jupyter has 60 public repositories: 23 publish a package, 6 are security ...'
+
+    Each count links to those repos in the page's own tables, which tables.js filters by the query's `has`.
+    """
+
+    def fact(count: int, column: str | None, one: str, many: str) -> str:
+        return f"{count_link(count, repos_href('', has=column))} {one if count == 1 else many}"
+
     facts = [
-        counted(counts["packaged"], "publishes a package", "publish a package"),
-        counted(counts["boundaries"], "is a security boundary", "are security boundaries"),
-        counted(counts["services"], "deploys a live service", "deploy a live service"),
+        fact(counts[key], column, one, many)
+        for key, column, one, many in (
+            ("packaged", "package", "publishes a package", "publish a package"),
+            ("boundaries", "security boundary", "is a security boundary", "are security boundaries"),
+            ("services", "live service", "deploys a live service", "deploy a live service"),
+        )
+        if counts[key]
     ]
-    facts = [fact for fact in facts if not fact.startswith("0 ")]
-    sentence = f"{subject} has " + counted(counts["repos"], "public repository", "public repositories")
+    sentence = f"{subject} has " + fact(counts["repos"], None, "public repository", "public repositories")
     if facts:
         sentence += ": " + (", ".join(facts[:-1]) + " and " + facts[-1] if len(facts) > 1 else facts[0])
     return sentence + "."
@@ -376,10 +394,10 @@ def repo_cells(data: Data, row: dict) -> list:
         owner_link(row["owner"]),
         package(row["package"]),
         stats(row["package"], grouped(row["downloads/month"])),
-        grouped(row["dependents"]),
+        dependents(row["package"], grouped(row["dependents"])),
         image_cell(row["image"]),
         grouped(row["all-time pulls"]),
-        grouped(row["used in CI"]),
+        f"[{grouped(row['used in CI'])}](/{slug(row['repo'])}.md#details)" if row["used in CI"] else "",
         plain(row["live service"]),
         f"[{plain(row['security boundary'])}]{{.reason}}" if row["security boundary"] else "",
     ]
@@ -914,7 +932,18 @@ def org_pages(data: Data) -> Table:
             top["top_package"],
             top["max_downloads_last_month"] if top["top_package"] else "",
         ]
-        cells[org] = [org_link(org), *rows[org][1:7], package(top["top_package"]), data.downloads(names[0])]
+        page = f"orgs/{org}.html"
+        cells[org] = [
+            org_link(org),
+            count_link(counts["repos"], repos_href(page)),
+            count_link(counts["packaged"], repos_href(page, has="package")),
+            count_link(len(org_images), f"{page}#images"),
+            count_link(counts["boundaries"], repos_href(page, has="security boundary")),
+            count_link(counts["services"], repos_href(page, has="live service")),
+            counts["tokens"],  # the repository tables have no column of tokens to filter by
+            package(top["top_package"]),
+            data.downloads(names[0]),
+        ]
     # By their most installed package, then by size. The sidebar lists them in the same order.
     order = sorted(rows, key=lambda org: (-top_downloads.get(org, 0), -rows[org][1]))
     pages = "\n".join(f"orgs/{org}" for org in order if rows[org][1])
@@ -960,7 +989,17 @@ def owner_pages(data: Data) -> Table:
         rows.append(
             [owner, counts["repos"], ", ".join(orgs), counts["packaged"], counts["boundaries"], counts["services"]]
         )
-        cells.append([owner_link(owner), counts["repos"], ", ".join(map(org_link, orgs)), *rows[-1][3:]])
+        page = f"owners/{owner_slug(owner)}.html"
+        cells.append(
+            [
+                owner_link(owner),
+                count_link(counts["repos"], repos_href(page)),
+                ", ".join(map(org_link, orgs)),
+                count_link(counts["packaged"], repos_href(page, has="package")),
+                count_link(counts["boundaries"], repos_href(page, has="security boundary")),
+                count_link(counts["services"], repos_href(page, has="live service")),
+            ]
+        )
     pages = "\n".join(f"owners/{owner_slug(owner)}" for owner in order)
     (GENERATED / "owners-toctree.md").write_text(f"```{{toctree}}\n:hidden:\n\n{pages}\n```\n", encoding="utf-8")
     header = ["owner", "repos", "organizations", "publish a package", "security boundaries", "live services"]

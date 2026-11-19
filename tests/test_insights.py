@@ -1,5 +1,6 @@
 """Tests for docs/insights.py, which writes the site's pages."""
 
+import re
 from collections import Counter
 
 import insights
@@ -11,12 +12,14 @@ def test_plain_keeps_text_from_repos_from_becoming_html_or_markdown():
     assert insights.plain("[click](evil)") == "\\[click\\]\\(evil\\)"  # a link the model was tricked into writing
 
 
-def test_summary_sentence_reads_as_one_sentence():
+def test_summary_sentence_reads_as_one_sentence_and_links_its_counts():
     counts = {"repos": 35, "packaged": 6, "boundaries": 1, "services": 0}
-    assert insights.summary_sentence("[github.com/jupyter-book](https://github.com/jupyter-book)", counts) == (
+    sentence = insights.summary_sentence("[github.com/jupyter-book](https://github.com/jupyter-book)", counts)
+    assert re.sub(r"<[^>]+>", "", sentence) == (
         "[github.com/jupyter-book](https://github.com/jupyter-book) has 35 public repositories: "
         "6 publish a package and 1 is a security boundary."
     )
+    assert '<a href="?has=security%20boundary#repositories">1</a>' in sentence
 
 
 def test_a_table_writes_its_cells_for_the_page_and_its_values_for_the_download(tmp_path, monkeypatch):
