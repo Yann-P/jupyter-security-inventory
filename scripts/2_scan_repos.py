@@ -19,7 +19,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path, PurePosixPath
 
 import yaml
-from common import OUTPUT, load_json, save_json
+from common import OUTPUT, Progress, load_json, save_json
 
 FILE_TYPES = {
     "code": ".py .pyx .ts .tsx .js .jsx .mjs .cjs .c .cc .cpp .h .hpp .go .rs .java .scala .kt .jl .r .lua .hs "
@@ -300,7 +300,7 @@ def main():
     clone_dir = parser.parse_args().clone_dir
     names = [repo["full_name"] for repo in load_json(OUTPUT / "repos.json")["repos"]]
     with ThreadPoolExecutor(4) as pool:
-        results = pool.map(lambda name: scan(name, clone_dir), names)
+        results = pool.map(Progress("scanned", len(names)).wrap(lambda name: scan(name, clone_dir)), names)
         save_json(OUTPUT / "scan.json", dict(zip(names, results)))
     print(f"scanned {len(names)} repos")
 
