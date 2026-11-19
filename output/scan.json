@@ -1429,7 +1429,7 @@
     "security_policy": null
   },
   "ipython/ipython": {
-    "head": "c33a434960555413e378cb1b8d9a1df6975dcef8",
+    "head": "80b623833fd0c472f7df80795b5affb406bc4001",
     "n_files": 511,
     "file_types": {
       "other": 18,
@@ -1488,7 +1488,7 @@
         ".github/workflows/zizmor.yml"
       ]
     },
-    "readme": ".. image:: https://codecov.io/github/ipython/ipython/coverage.svg?branch=main\n    :target: https://codecov.io/github/ipython/ipython?branch=main\n\n.. image:: https://img.shields.io/pypi/v/IPython.svg\n    :target: https://pypi.python.org/pypi/ipython\n\n.. image:: https://github.com/ipython/ipython/actions/workflows/test.yml/badge.svg\n    :target: https://github.com/ipython/ipython/actions/workflows/test.yml\n\n.. image:: https://www.codetriage.com/ipython/ipython/badges/users.svg\n    :target: https://www.codetriage.com/ipython/ipython/\n\n.. image:: https://raster.shields.io/badge/Follows-SPEC--0000-brightgreen.png\n    :target: https://scientific-python.org/specs/spec-0000/\n\n\n===========================================\n IPython: Productive Interactive Computing\n===========================================\n\nOverview\n========\n\nWelcome to IPython.  Our full documentation is available on `ipython.readthedocs.io\n<https://ipython.readthedocs.io/en/stable/>`_ and contains information on how to install, use, and\ncontribute to the project.\nIPython (Interactive Python) is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history.\n\n**Python Support**\n\nStarting after IPython 8.16, we follow `SPEC-0 <https://scientific-python.org/specs/spec-0000/>`_\nfor determining the minimum supported Python version. Python 3.11 support is\nadditionally maintained thanks to funding from the\n`D. E. Shaw group <https://deshaw.com/>`_.\n\nIPython requires Python 3.11 or newer.\n\n\nThe Notebook, Qt console and a number of other pieces are now parts of *Jupyter*.\nSee the `Jupyter installation docs <https://jupyter.readthedocs.io/en/latest/install.html>`__\nif you want to use these.\n\nMain features of IPython\n========================\nComprehensive object introspection.\n\nInput history, persistent across sessions.\n\nCaching of output results during a session with automatically generated references.\n\nExtensible tab completion, with support by default for completion of python variables and keywords, filenames and function keywords.\n\nExtensible system of ‘magic’ commands for controlling the environment and performing many tasks related to IPython or the operating system.\n\nA rich configuration system with easy switching between different setups (simpler than changing $PYTHONSTARTUP environment variables every time).\n\nSession logging and reloading.\n\nExtensi",
+    "readme": ".. image:: https://img.shields.io/pypi/v/IPython.svg\n    :target: https://pypi.python.org/pypi/ipython\n\n.. image:: https://github.com/ipython/ipython/actions/workflows/test.yml/badge.svg\n    :target: https://github.com/ipython/ipython/actions/workflows/test.yml\n\n.. image:: https://raster.shields.io/badge/Follows-SPEC--0000-brightgreen.png\n    :target: https://scientific-python.org/specs/spec-0000/\n\n\n===========================================\n IPython: Productive Interactive Computing\n===========================================\n\nOverview\n========\n\nWelcome to IPython.  Our full documentation is available on `ipython.readthedocs.io\n<https://ipython.readthedocs.io/en/stable/>`_ and contains information on how to install, use, and\ncontribute to the project.\nIPython (Interactive Python) is a command shell for interactive computing in multiple programming languages, originally developed for the Python programming language, that offers introspection, rich media, shell syntax, tab completion, and history.\n\n**Python Support**\n\nStarting after IPython 8.16, we follow `SPEC-0 <https://scientific-python.org/specs/spec-0000/>`_\nfor determining the minimum supported Python version. Python 3.11 support is\nadditionally maintained thanks to funding from the\n`D. E. Shaw group <https://deshaw.com/>`_.\n\nIPython requires Python 3.11 or newer.\n\n\nThe Notebook, Qt console and a number of other pieces are now parts of *Jupyter*.\nSee the `Jupyter installation docs <https://jupyter.readthedocs.io/en/latest/install.html>`__\nif you want to use these.\n\nMain features of IPython\n========================\nComprehensive object introspection.\n\nInput history, persistent across sessions.\n\nCaching of output results during a session with automatically generated references.\n\nExtensible tab completion, with support by default for completion of python variables and keywords, filenames and function keywords.\n\nExtensible system of ‘magic’ commands for controlling the environment and performing many tasks related to IPython or the operating system.\n\nA rich configuration system with easy switching between different setups (simpler than changing $PYTHONSTARTUP environment variables every time).\n\nSession logging and reloading.\n\nExtensible syntax processing for special purpose situations.\n\nAccess to the system shell with user-extensible alias system.\n\nEasily embeddable in other Python programs and GUIs.\n\nIntegrated access to the pdb debugger and the Python profiler.\n\n\nDevelopment and Instant running\n======",
     "security_policy": null
   },
   "ipython/ipython-in-depth": {
@@ -2358,7 +2358,7 @@
     "security_policy": null
   },
   "jupyter-book/jupyter-book": {
-    "head": "526cfa7e76db12b0f4b6b08bbe8910439849413b",
+    "head": "6674da6eccd792e7ab815018c69aaa5f757b0c82",
     "n_files": 80,
     "file_types": {
       "config": 17,
@@ -2756,7 +2756,7 @@
     "security_policy": null
   },
   "jupyter-book/myst-theme": {
-    "head": "b31ee93a18705532ba7ffd567455c61b600dd43e",
+    "head": "6cce1e250d24ad59d34ce7a796805f1edd349944",
     "n_files": 446,
     "file_types": {
       "docs": 69,
@@ -4070,7 +4070,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyter_server": {
-    "head": "0d1a13b2f5212a9f9da0122a9e7dbaf23f6cfcb7",
+    "head": "af813a81ee7007a0b3ddb94e2ed323ab8625cb12",
     "n_files": 342,
     "file_types": {
       "other": 14,
@@ -4776,12 +4776,13 @@
     "security_policy": null
   },
   "jupyter-server/server-side-documents": {
-    "head": "f78d8166d6e0efd84396081bb05c82a7ab71ca9f",
-    "n_files": 6,
+    "head": "07842eb6e0d2834f128890e0e40f83fa8658975b",
+    "n_files": 16,
     "file_types": {
-      "config": 3,
-      "other": 2,
-      "docs": 1
+      "other": 3,
+      "config": 7,
+      "docs": 5,
+      "code": 1
     },
     "packages": [],
     "workflows": {
@@ -4791,15 +4792,11 @@
         "push"
       ],
       "secrets": [],
-      "publishes": [
-        "website"
-      ]
+      "publishes": []
     },
     "uses": [
       "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
-      "actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346",
-      "actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1",
-      "actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9"
+      "prefix-dev/setup-pixi@9936258fee697aff89b3fed6ca1f80a382ef694e"
     ],
     "images": [],
     "build_requires": [],
@@ -4808,7 +4805,7 @@
         ".pre-commit-config.yaml"
       ]
     },
-    "readme": "# server-side-documents\n",
+    "readme": "# Server-side Documents\n\n> **Motivation**\n> Users should be able to close or reload a browser tab without losing access to outputs from an ongoing computation, but browser-dependent output handling has made this a longstanding challenge ([notebook#641](https://github.com/jupyter/notebook/issues/641)).\n> Supporting collaborative editing or agents and other tools that work with notebooks independently of the browser adds to the need for a shared server-side foundation.\n\nWe plan to move notebook document state to the server using CRDT-backed documents and making server-side execution a core API of `jupyter-server` and `jupyverse`.\nThis will provide a shared foundation for reliable notebook execution and output recovery for browser clients, agents, and other tools, without requiring an open browser.\nBuilding on existing work across the Jupyter ecosystem, we will focus the next 2-3 months on collaborative design and implementation.\n\nThe API will initially be experimental, but reliability and protection against data loss are essential from the outset.\nMoving beyond experimental status will depend on demonstrated reliability against explicit criteria for document persistence, synchronization, execution, and recovery.\nWe plan to build on the extensive Playwright test suite being developed by Zach Sailer and colleagues at Apple, which they plan to open-source for community development and maintenance.\n\nWe commit to working collaboratively and in public.\nSpecifically, we will:\n\n- Jointly author a JEP describing the proposed architecture, API, compatibility requirements, and implementation plan.\n- Open a coordinating meta-issue on `jupyter-server` and conduct design and implementation work in public repositories and issues.\n- Develop and maintain shared tests, document known limitations, and establish criteria for moving the API out of experimental status.\n- Hold weekly developer meetings for design discussions, PR triage and review, and roadmap updates, with decisions and open questions recorded publicly.\n- Report progress and solicit feedback at the weekly Jupyter Contributor Meeting.\n- Welcome additional contributors and revise the plan in response to community feedback.\n\nInitial contributors will include [@jtpio](https://github.com/jtpio), [@davidbrochart](https://github.com/davidbrochart), [@sylvaincorlay](https://github.com/sylvaincorlay), [@zsailer](https://github.com/zsailer), [@minrk](https://github.com/minrk), [@jarrodmillman](https://github.com/jarrodmillm",
     "security_policy": null
   },
   "jupyter-server/synchronizer": {
@@ -12554,7 +12551,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "a7e2044a69f3d70adf559973c4c69eb594091a45",
+    "head": "9f69f572170f576efac5926fd69515cca0912f1c",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -14382,7 +14379,7 @@
     "security_policy": null
   },
   "jupyterlab/extension-template": {
-    "head": "7d19dcccb8da6ab930881568d8fe2beede6ad2bb",
+    "head": "c11b36056477806a4c28fae5e2810489af59e40f",
     "n_files": 56,
     "file_types": {
       "config": 9,
@@ -14590,7 +14587,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "5b2d808cd04b32cef3309bcf71502e5a76c0c53f",
+    "head": "3bf9a00888116a13e3ac932f84f8e2cf849538ac",
     "n_files": 209,
     "file_types": {
       "other": 21,
@@ -15191,7 +15188,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "285087bb6852b06c0ce087e6d1a49e8a805aacaa",
+    "head": "a1547b980d4dadf61c201ccc183f72f1c9fad41c",
     "n_files": 3140,
     "file_types": {
       "config": 605,
@@ -16666,7 +16663,7 @@
     "security_policy": null
   },
   "jupyterlab/language-packs": {
-    "head": "00ae034a901aba9fba0389cd66d56a12ea93f235",
+    "head": "42612f6f46aa4ecc929a76b4d2121aac1783ee10",
     "n_files": 832,
     "file_types": {
       "docs": 101,
@@ -18895,7 +18892,7 @@
     "security_policy": null
   },
   "voila-dashboards/voila": {
-    "head": "2993413ffb950476ff7b44abf84fe56f656e7772",
+    "head": "519c25a4ab0d058af4790d87af4e280513d8ff0d",
     "n_files": 300,
     "file_types": {
       "config": 45,
