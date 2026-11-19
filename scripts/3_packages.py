@@ -76,12 +76,17 @@ def reason(repo: dict, system: str, entry: dict, declared: bool, jupyter_orgs: s
     return None
 
 
+# api.npmjs.org allows about 40 requests a minute: it refused the 41st in a row, and 0.68 a second got through. Its
+# refusals say "Retry-After: 0", so we keep under the limit instead.
+NPM_DOWNLOADS_DELAY = 1.5
+
+
 def downloads(system: str, name: str) -> int | None:
     if system == "PYPI":
         # pypistats.org allows 60 requests per window (its X-RateLimit headers); past that, fetch_json waits for the reset.
         body = fetch_json(f"https://pypistats.org/api/packages/{quote(pep503(name))}/recent", delay=1.1)
         return body["data"]["last_month"] if body else None
-    body = fetch_json(f"https://api.npmjs.org/downloads/point/last-month/{quote(name)}", delay=1)
+    body = fetch_json(f"https://api.npmjs.org/downloads/point/last-month/{quote(name)}", delay=NPM_DOWNLOADS_DELAY)
     return body["downloads"] if body else None
 
 
@@ -91,7 +96,7 @@ def npm_bulk_downloads(names: list[str]) -> dict[str, int | None]:
     for start in range(0, len(names), 128):
         batch = names[start : start + 128]
         url = "https://api.npmjs.org/downloads/point/last-month/" + ",".join(quote(name) for name in batch)
-        body = fetch_json(url, delay=1) or {}
+        body = fetch_json(url, delay=NPM_DOWNLOADS_DELAY) or {}
         if len(batch) == 1:  # for one name, npm answers with that package's counts, not a mapping
             body = {batch[0]: body}
         counts |= {name: (body.get(name) or {}).get("downloads") for name in batch}  # null: no such package

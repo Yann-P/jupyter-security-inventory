@@ -113,9 +113,10 @@ HTTP = urllib3.PoolManager(
     maxsize=16,  # connections kept open per site: one per thread of the largest pool in step 3
     headers={"User-Agent": "jupyter-security-inventory"},
     timeout=60,
-    # Waits 0, 2, 4, 8, 16 s between the attempts, or what the server asks, up to 5 minutes. A rate limit can ask for
-    # minutes (npm asked for 212 s), and retrying sooner only gets refused again.
-    retries=Retry(total=5, backoff_factor=1, backoff_max=60, retry_after_max=300, status_forcelist=RETRY_ON),
+    # Waits 0, 4, 8, 16, 32 s between the attempts, a minute in all, so a server that refuses without saying for how
+    # long (npm's download API) is waited out over a whole minute-long window. If the server asks, waits that long
+    # instead, up to 5 minutes: a rate limit can ask for minutes (npm's registry asked for 212 s).
+    retries=Retry(total=5, backoff_factor=2, backoff_max=60, retry_after_max=300, status_forcelist=RETRY_ON),
 )
 
 
