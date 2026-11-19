@@ -8,6 +8,7 @@ docs/_generated/
 uv.lock
 docs/orgs/
 docs/topics/
+docs/owners/
 .ruff_cache
 build/
 *.egg-info/

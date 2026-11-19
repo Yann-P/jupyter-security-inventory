@@ -43,6 +43,7 @@ def make_repo(full_name, packages, boundary=None):
     return {
         "full_name": full_name,
         "org": org,
+        "owner": None,
         "packages": [
             {
                 "system": system,
@@ -172,6 +173,6 @@ def test_topic_repo_table_lists_the_most_downloaded_first_and_leaves_out_what_do
 def test_a_topic_is_finished_only_when_every_applicable_repo_is_done():
     assert insights.progress(Counter({"done": 199, "missing": 1})) == 99  # not rounded up to 100
     assert insights.progress(Counter({"done": 3, "n/a": 5})) == 100
-    assert insights.progress(Counter({"n/a": 5})) is None
+    assert insights.progress(Counter({"n/a": 5})) == 100  # nothing to do
     assert "topic-finished" in insights.progress_cell(Counter({"done": 3}))
     assert "topic-finished" not in insights.progress_cell(Counter({"done": 199, "partial": 1}))

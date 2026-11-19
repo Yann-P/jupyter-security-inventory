@@ -4,7 +4,7 @@ conf.py calls build(), which:
 - writes CSV tables into docs/_generated/ for the pages to include, each with its plain values in downloads/,
 - writes the body of the home page (docs/_generated/home.md), which has the sections of an organization page,
 - writes a page per organization (docs/orgs/<org>.md) and per repository (docs/orgs/<org>/<repo>.md),
-  and a page per security topic (docs/topics/<topic>.md),
+  a page per owner (docs/owners/<owner>.md) and a page per security topic (docs/topics/<topic>.md),
 - returns the notes that the hand-written pages quote, as MyST substitutions: {{ downloads_note }}, ...
 
 Text that comes from the repositories themselves (descriptions, labels, workflow contents) goes through
@@ -52,7 +52,7 @@ REPO_PAGE = """# {title}
 
 {description}
 
-{kind} · [on GitHub](https://github.com/{name}) · scanned at commit [{commit}](https://github.com/{name}/tree/{sha}){fork}
+{kind} · {owner} · [on GitHub](https://github.com/{name}) · scanned at commit [{commit}](https://github.com/{name}/tree/{sha}){fork}
 
 ## Reach
 
@@ -98,6 +98,10 @@ html_theme.sidebar_secondary.remove: true
 
 {orgs}
 
+## By owner
+
+{owners}
+
 ## Repositories
 
 {legend_of_kinds}
@@ -109,6 +113,17 @@ html_theme.sidebar_secondary.remove: true
 The days the numbers changed.
 
 {history}
+"""
+
+OWNER_PAGE = """---
+html_theme.sidebar_secondary.remove: true
+---
+
+# {title}
+
+{summary}
+
+{body}
 """
 
 ORG_PAGE = """---
@@ -159,6 +174,21 @@ def link(full_name: str) -> str:
 
 def org_link(org: str) -> str:
     return f"[{plain(org)}](/orgs/{org}.md)"
+
+
+def owner_of(repo: dict) -> str | None:
+    """Its Owner custom property, or None if it has none. "None" is the property's default value."""
+    return repo["owner"] if repo["owner"] not in (None, "", "None") else None
+
+
+def owner_link(owner: str | None) -> str:
+    if not owner or owner == "None":
+        return "no owner"
+    return f"[{plain(owner)}](/owners/{owner_slug(owner)}.md)"
+
+
+def owner_slug(owner: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", owner.lower()).strip("-")
 
 
 def links(full_names) -> str:
@@ -342,7 +372,7 @@ def repo_cells(data: Data, row: dict) -> list:
     return [
         data.cell(row["repo"]),
         row["kind"],
-        plain(row["owner"]),
+        owner_link(row["owner"]),
         package(row["package"]),
         stats(row["package"], grouped(row["downloads/month"])),
         grouped(row["dependents"]),
@@ -460,10 +490,13 @@ def topic_counts(data: Data, topic: dict, names) -> Counter:
     return Counter(results[name]["status"] for name in names)
 
 
-def progress(counts: Counter) -> int | None:
-    """The percentage of done repos among those the topic applies to. Rounded down, so 100 means finished."""
+def progress(counts: Counter) -> int:
+    """The percentage of done repos among those the topic applies to. Rounded down, so 100 means finished.
+
+    A topic that applies to none of the repos has nothing left to do, so it is finished too.
+    """
     applicable = counts["done"] + counts["partial"] + counts["missing"]
-    return counts["done"] * 100 // applicable if applicable else None
+    return counts["done"] * 100 // applicable if applicable else 100
 
 
 def progress_cell(counts: Counter) -> str:
@@ -472,10 +505,8 @@ def progress_cell(counts: Counter) -> str:
     Raw HTML, since MyST drops a style attribute. The percentage stays in the text, which DataTables sorts by.
     """
     percent = progress(counts)
-    if percent is None:
-        return ""
     applicable = counts["done"] + counts["partial"] + counts["missing"]
-    partial = counts["partial"] * 100 / applicable
+    partial = counts["partial"] * 100 / applicable if applicable else 0
     title = f"{counts['done']} done, {counts['partial']} partial, {counts['missing']} missing"
     label = '<span class="topic-finished">100%</span>' if percent == 100 else f"{percent}%"
     return (
@@ -497,37 +528,47 @@ def topic_summary(data: Data, names) -> Table:
     return Table(header, rows, cells)
 
 
-def topic_org_table(data: Data, topic: dict) -> Table:
-    """The repos a topic applies to, by organization. The most left to do first."""
-    results = data.results[topic["id"]]
-    rows = []
-    for org in data.orgs:
-        counts = topic_counts(data, topic, [name for name in results if data.repos[name]["org"] == org])
+def topic_group_table(data: Data, topic: dict, column: str) -> Table:
+    """The repos a topic applies to, by organization or by owner. The most left to do first."""
+    if column == "organization":
+        group, linked = (lambda repo: repo["org"]), org_link
+    else:
+        group, linked = (lambda repo: owner_of(repo) or ""), owner_link
+    groups = {}
+    for name in data.results[topic["id"]]:
+        groups.setdefault(group(data.repos[name]), []).append(name)
+    rows, bars = [], {}
+    for key, names in groups.items():
+        counts = topic_counts(data, topic, names)
         applies = counts["done"] + counts["partial"] + counts["missing"]
         if applies:
-            rows.append([org, applies, counts["done"], counts["partial"], counts["missing"]])
-    rows.sort(key=lambda row: (-(row[3] + row[4]), row[0]))
-    header = ["organization", "repos it applies to", "done", "partial", "missing"]
-    return Table(header, rows, [[org_link(row[0]), *row[1:]] for row in rows])
+            rows.append([key, progress(counts), applies, counts["done"], counts["partial"], counts["missing"]])
+            bars[key] = progress_cell(counts)
+    rows.sort(key=lambda row: (-(row[4] + row[5]), row[0]))
+    header = [column, "progress", "repos it applies to", "done", "partial", "missing"]
+    return Table(header, rows, [[linked(row[0]), bars[row[0]], *row[2:]] for row in rows])
 
 
 def topic_repo_table(data: Data, topic: dict) -> Table:
     """The repos a topic applies to, most reached first."""
     results = data.results[topic["id"]]
     names = data.by_reach(name for name, answer in results.items() if answer["status"] != NOT_APPLICABLE)
-    header = ["repository", "organization", "status", "via", "downloads/month", "reason", "files"]
+    header = ["repository", "organization", "owner", "status", "via", "downloads/month", "reason", "files"]
     rows, cells = [], []
     for name in names:
         answer, repo = results[name], data.repos[name]
         via = ", ".join(answer["via"])
         downloads = repo["max_downloads_last_month"] if repo["top_package"] else ""
         evidence = "; ".join(answer["evidence"])
-        rows.append([name, repo["org"], answer["status"], via, downloads, answer["reason"], evidence])
+        rows.append(
+            [name, repo["org"], repo["owner"] or "", answer["status"], via, downloads, answer["reason"], evidence]
+        )
         files = ", ".join(file_link(data, name, path) for path in answer["evidence"])
         cells.append(
             [
                 data.cell(name),
                 org_link(repo["org"]),
+                owner_link(repo["owner"]),
                 status_chip(answer["status"]),
                 plain(via),
                 data.downloads(name),
@@ -554,7 +595,8 @@ def topic_history_table(data: Data, topic: dict) -> Table:
 def topic_page(data: Data, topic: dict) -> str:
     stem = f"topic-{topic['id']}"
     tables = {
-        "orgs": topic_org_table(data, topic),
+        "orgs": topic_group_table(data, topic, "organization"),
+        "owners": topic_group_table(data, topic, "owner"),
         "repos": topic_repo_table(data, topic),
         "history": topic_history_table(data, topic),
     }
@@ -571,8 +613,8 @@ def topic_page(data: Data, topic: dict) -> str:
         not_applicable = counted(counts[NOT_APPLICABLE], "is not applicable", "are not applicable")
         headline += f" {not_applicable} and left out of the tables."
 
-    def table(part: str, by_org: bool) -> str:
-        return csv_table(f"{stem}-{part}", by_org) if len(tables[part]) else NO_ROWS
+    def table(part: str, **filters) -> str:
+        return csv_table(f"{stem}-{part}", **filters) if len(tables[part]) else NO_ROWS
 
     return TOPIC_PAGE.format(
         title=plain(topic["title"]),
@@ -580,10 +622,11 @@ def topic_page(data: Data, topic: dict) -> str:
         headline=headline,
         detection=plain(topic["detection"]),
         legend="\n".join(f"- {status_chip(status)} {plain(topic['meanings'][status])}" for status in STATUSES),
-        orgs=table("orgs", False),
+        orgs=table("orgs"),
+        owners=table("owners"),
         legend_of_kinds=LEGEND,
-        repos=table("repos", True),
-        history=table("history", False),
+        repos=table("repos", by_org=True, by_owner=True),
+        history=table("history"),
     )
 
 
@@ -609,12 +652,12 @@ def repo_topics(data: Data, name: str) -> str:
     return "\n".join(lines)
 
 
-def csv_table(stem: str, by_org: bool) -> str:
+def csv_table(stem: str, by_org: bool = False, by_owner: bool = False) -> str:
     """The Markdown for a sortable table whose rows are in <stem>.csv, with a link to download them.
 
-    `by_org`: the table has an organization column, which gets a filter.
+    `by_org`, `by_owner`: the table's organization or owner column gets a filter.
     """
-    classes = "sphinx-datatable" + (" filter-by-org" if by_org else "")
+    classes = "sphinx-datatable" + (" filter-by-org" if by_org else "") + (" filter-by-owner" if by_owner else "")
     return (
         f"{{download}}`Download CSV </_generated/downloads/{stem}.csv>`\n\n"
         f"```{{csv-table}}\n:file: /_generated/{stem}.csv\n:header-rows: 1\n:class: {classes}\n```"
@@ -622,48 +665,58 @@ def csv_table(stem: str, by_org: bool) -> str:
 
 
 def sections(
-    scope: str, topics: Table, software: Table, docs: Table, packages: dict, images: Table, by_org: bool
+    scope: str,
+    topics: Table,
+    software: Table,
+    docs: Table,
+    packages: dict,
+    images: Table,
+    by_org: bool,
+    by_owner: bool = False,
 ) -> str:
     """The sections of a page: security topics, repositories, packages (a table per registry) and images.
 
     `packages` maps a registry's title to its table. A table with no rows is left out, and so is a section with no
     table. With more than one section, a line of links to them comes first. `by_org`: the package and image tables
-    have an organization column.
+    have an organization column. `by_owner`: the repository tables get an owner filter.
     """
-    groups = [  # (title, note, whether its tables are filtered by organization, [(subtitle, table stem, table)])
-        ("Security topics", TOPICS_NOTE, False, [(None, f"{scope}-topics", topics)]),
+    groups = [  # (title, note, the filters of its tables, [(subtitle, table stem, table)])
+        ("Security topics", TOPICS_NOTE, {}, [(None, f"{scope}-topics", topics)]),
         (
             "Repositories",
             LEGEND,
-            False,
+            {"by_owner": by_owner},
             [("Software", f"{scope}-repos", software), ("Documentation and examples", f"{scope}-docs", docs)],
         ),
         (
             "Packages",
             DOWNLOADS_NOTE,
-            by_org,
+            {"by_org": by_org},
             [(title, f"{scope}-{title.lower()}", table) for title, table in packages.items()],
         ),
-        ("Images", IMAGES_NOTE, by_org, [(None, f"{scope}-images", images)]),
+        ("Images", IMAGES_NOTE, {"by_org": by_org}, [(None, f"{scope}-images", images)]),
     ]
     links, parts = [], []
-    for title, note, filtered, tables in groups:
+    for title, note, filters, tables in groups:
         tables = [(subtitle, stem, table) for subtitle, stem, table in tables if len(table)]
         if tables:
             links.append(f"[{title} ({sum(len(table) for _, _, table in tables)})](#{title.lower().replace(' ', '-')})")
             blocks = [
-                f"### {subtitle}\n\n{csv_table(stem, filtered)}" if subtitle else csv_table(stem, filtered)
+                f"### {subtitle}\n\n{csv_table(stem, **filters)}" if subtitle else csv_table(stem, **filters)
                 for subtitle, stem, _ in tables
             ]
             parts.append(f"## {title}\n\n{note}\n\n" + "\n\n".join(blocks))
     return "\n\n".join(([" · ".join(links)] if len(links) > 1 else []) + parts)
 
 
-def write_tables(data: Data, scope: str, names: list[str], images: list[dict], by_org: bool) -> str:
+def write_tables(
+    data: Data, scope: str, names: list[str], images: list[dict], by_org: bool, by_owner: bool = True
+) -> str:
     """Writes the tables of a page that lists repositories, their packages and images. Returns its sections.
 
     `names` are the repositories of the page. Without `by_org`, the tables of packages and images
     leave out the organization column, which is the same on every row of an organization's page.
+    `by_owner`: the repository tables get an owner filter, which an owner's page has no use for.
     """
     topics = topic_summary(data, names)
     software = repo_table(data, [name for name in names if not data.out_of_the_way(name)])
@@ -680,7 +733,7 @@ def write_tables(data: Data, scope: str, names: list[str], images: list[dict], b
     for title, table in packages.items():
         table.write(f"{scope}-{title.lower()}")
     images.write(f"{scope}-images")
-    return sections(scope, topics, software, docs, packages, images, by_org)
+    return sections(scope, topics, software, docs, packages, images, by_org, by_owner)
 
 
 def image_item(image: dict) -> str:
@@ -742,6 +795,7 @@ def repo_page(data: Data, name: str) -> str:
         commit=repo["content"]["commit"][:7],
         sha=repo["content"]["commit"],
         fork=" · fork" if repo["is_fork"] else "",
+        owner=f"owned by {owner_link(owner_of(repo))}" if owner_of(repo) else "no owner",
         packages="; ".join(
             f"{package(p['system'] + ':' + p['name'])}, {stats(p['system'] + ':' + p['name'], n(p['downloads_last_month']))} downloads/month,"
             f" {n(p['dependents'])} dependents, last published {p['last_published'] or 'unknown'}"
@@ -836,6 +890,32 @@ def org_pages(data: Data) -> Table:
     return Table(header, [rows[org] for org in order], [cells[org] for org in order])
 
 
+def owner_pages(data: Data) -> Table:
+    """A page per owner, with the sections of an organization page for the repos it owns. Returns the table of owners."""
+    shutil.rmtree(DOCS / "owners", ignore_errors=True)
+    (DOCS / "owners").mkdir()
+    owners = Counter(owner_of(repo) for repo in data.repos.values())
+    owners.pop(None, None)
+    order = [owner for owner, _ in owners.most_common()]
+    rows, cells = [], []
+    for owner in order:
+        names = data.by_reach(name for name, repo in data.repos.items() if owner_of(repo) == owner)
+        images = [image for image in data.images if image["repo"] in names]
+        body = write_tables(data, f"owner-{owner_slug(owner)}", names, images, by_org=True, by_owner=False)
+        counts = tally(data, names)
+        page = OWNER_PAGE.format(title=plain(owner), summary=summary_sentence(plain(owner), counts), body=body)
+        (DOCS / "owners" / f"{owner_slug(owner)}.md").write_text(page, encoding="utf-8")
+        orgs = sorted({data.repos[name]["org"] for name in names})
+        rows.append(
+            [owner, counts["repos"], ", ".join(orgs), counts["packaged"], counts["boundaries"], counts["services"]]
+        )
+        cells.append([owner_link(owner), counts["repos"], ", ".join(map(org_link, orgs)), *rows[-1][3:]])
+    pages = "\n".join(f"owners/{owner_slug(owner)}" for owner in order)
+    (GENERATED / "owners-toctree.md").write_text(f"```{{toctree}}\n:hidden:\n\n{pages}\n```\n", encoding="utf-8")
+    header = ["owner", "repos", "organizations", "publish a package", "security boundaries", "live services"]
+    return Table(header, rows, cells)
+
+
 def build() -> dict:
     shutil.rmtree(GENERATED, ignore_errors=True)
     GENERATED.mkdir()
@@ -844,6 +924,7 @@ def build() -> dict:
 
     # Organizations, with a page per organization and repository
     org_pages(data).write("orgs")
+    owner_pages(data).write("owners")
     topic_pages(data)
 
     # All organizations: the home page, whose package and image tables the pages of packages and images show too

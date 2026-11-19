@@ -100,14 +100,15 @@ gets the same answers. Those days are written in the topic, from peps.python.org
 ## The site
 
 `docs/conf.py` calls `insights.build()` every time Sphinx starts. It reads `output/`, then writes the CSV tables and
-the body of the home page to `docs/_generated/` and a page per organization and repo to `docs/orgs/`, and a page per
-topic to `docs/topics/`. These folders are generated and not committed. The other pages are written by hand and include those tables.
+the body of the home page to `docs/_generated/`, a page per organization and repo to `docs/orgs/`, a page per owner
+to `docs/owners/`, and a page per topic to `docs/topics/`. These folders are generated and not committed. The other pages are written by hand and include those tables.
 
 | Page | Content | Source |
 |---|---|---|
 | All organizations (`index.md`) | The sections of an organization page, for all of them: security topics, repos, packages (PyPI, npm) and images. Its body is `_generated/home.md` | `jupyter_repos.json`, `images.json`, `repos.csv` |
 | Organizations (`orgs.md`) | One page per organization that has a repo: its topics, repos, packages (PyPI, npm) and images, and one page per repo below it. Empty tables and sections are left out | `jupyter_repos.json`, `images.json` |
-| Security topics (`topics.md`) | The home page's table of topics, and a page per topic: a table by organization, the repos, most downloaded first, and the days the numbers changed | `topics.json`, `topics_history.json` |
+| Owners (`owners.md`) | One page per owner, the team that a repo's Owner custom property names: the sections of an organization page, for the repos it owns | `jupyter_repos.json`, `images.json`, `repos.csv` |
+| Security topics (`topics.md`) | The home page's table of topics, and a page per topic: a table by organization and one by owner, the repos, most downloaded first, and the days the numbers changed | `topics.json`, `topics_history.json` |
 | Published packages (`packages.md`) | A summary table, then a page with one table for PyPI and one for npm (the home page's tables) | `jupyter_repos.json` |
 | Container images (`images.md`) | One table of images (the home page's table) | `images.json` |
 | About (`about.md`) | The README | `README.md` |

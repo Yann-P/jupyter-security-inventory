@@ -16,28 +16,35 @@ function hideControlsOfSmallTable(api) {
   if (api.rows().count() <= 10) $(api.table().container()).find(".dt-layout-row:not(.dt-layout-table)").hide();
 }
 
-/* Adds an "organization" dropdown next to the search box of the tables that have the filter-by-org class.
-   It filters the table's "organization" column. */
-function filterByOrg(settings) {
+/* Adds a dropdown next to the search box of the tables that have the filter-by-org or filter-by-owner class.
+   It filters the table's "organization" or "owner" column. */
+const FILTERS = [
+  ["filter-by-org", "organization", "All organizations"],
+  ["filter-by-owner", "owner", "All owners"],
+];
+
+function addFilters(settings) {
   const api = settings.api;
-  if (!$(api.table().node()).hasClass("filter-by-org")) return;
-
   const headers = api.columns().header().toArray().map((th) => $(th).text().trim());
-  const column = api.column(headers.indexOf("organization"));
-  const orgs = [...new Set(column.data().toArray().map((cell) => $("<div>").html(cell).text().trim()))].sort();
+  for (const [cls, header, all] of FILTERS) {
+    const index = headers.indexOf(header);
+    if (!$(api.table().node()).hasClass(cls) || index < 0) continue;
 
-  const select = $("<select>", { "aria-label": "Filter by organization", class: "dt-input org-filter" })
-    .append($("<option>", { value: "", text: "All organizations" }))
-    .append(orgs.map((org) => $("<option>", { value: org, text: org })))
-    .on("change", function () {
-      const org = this.value;
-      column.search(org ? "^" + $.fn.dataTable.util.escapeRegex(org) + "$" : "", true, false).draw();
-    });
-  $(api.table().container()).find(".dt-search").prepend(select);
+    const column = api.column(index);
+    const values = [...new Set(column.data().toArray().map((cell) => $("<div>").html(cell).text().trim()))].sort();
+    const select = $("<select>", { "aria-label": `Filter by ${header}`, class: "dt-input table-filter" })
+      .append($("<option>", { value: "", text: all }))
+      .append(values.map((value) => $("<option>", { value, text: value })))
+      .on("change", function () {
+        const value = this.value;
+        column.search(value ? "^" + $.fn.dataTable.util.escapeRegex(value) + "$" : "", true, false).draw();
+      });
+    $(api.table().container()).find(".dt-search").prepend(select);
+  }
 }
 
 /* conf.py hands this to DataTables as its initComplete option. */
 function initTable(settings) {
   hideControlsOfSmallTable(settings.api);
-  filterByOrg(settings);
+  addFilters(settings);
 }
