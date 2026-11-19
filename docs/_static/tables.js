@@ -16,10 +16,11 @@ function hideControlsOfSmallTable(api) {
   if (api.rows().count() <= 10) $(api.table().container()).find(".dt-layout-row:not(.dt-layout-table)").hide();
 }
 
-/* Adds a dropdown next to the search box of the tables that have the filter-by-org or filter-by-owner class.
-   It filters the table's "organization" or "owner" column. Each is put first in turn, so the owner comes first.
-   The page's URL can pick a value, like ?owner=Jupyter%20Book, which the owner and organization pages link with. */
+/* Adds a dropdown next to the search box of the tables that have a filter-by-... class. It filters the table's
+   column of that name. Each is put first in turn, so they show in reverse order: owner, organization, status.
+   The page's URL can pick values, like ?owner=Jupyter%20Book&status=missing, which the counts link with. */
 const FILTERS = [
+  ["filter-by-status", "status", "All statuses", "status"],
   ["filter-by-org", "organization", "All organizations", "org"],
   ["filter-by-owner", "owner", "All owners", "owner"],
 ];

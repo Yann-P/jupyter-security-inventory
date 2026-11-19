@@ -42,6 +42,7 @@ tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind
 
 /* The organization and owner dropdowns that tables.js adds beside the search box. */
 .table-filter { margin-right: 0.75em; }
+.bd-article .dt-search input { width: 12rem; }  /* narrower than DataTables', so three dropdowns fit beside it */
 
 /* {download} wraps its text in <code>: show it as the plain link it is. */
 a.download code { font: inherit; background: none; border: 0; padding: 0; color: inherit; }

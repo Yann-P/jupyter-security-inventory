@@ -21,7 +21,7 @@ import shutil
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 
 DOCS = Path(__file__).parent
 OUTPUT = DOCS.parent / "output"
@@ -517,33 +517,52 @@ def progress_cell(counts: Counter) -> str:
     )
 
 
-def topic_summary(data: Data, names, query: str = "") -> Table:
+def repos_href(page: str, **filters) -> str:
+    """A link to the repository table of a topic page, filtered by tables.js to what the query picks."""
+    query = urlencode({key: value for key, value in filters.items() if value}, quote_via=quote)
+    return f"{page}{'?' if query else ''}{query}#repositories"
+
+
+def count_link(count: int, href: str) -> str:
+    """A count that links to the repos it counts. Raw HTML, since a Sphinx link has no query."""
+    return f'<a href="{html.escape(href)}">{count}</a>' if count else str(count)
+
+
+def topic_summary(data: Data, names, scope: dict | None = None) -> Table:
     """One row per topic: how far along it is, and how many of these repos have each status.
 
-    With a `query`, like "owner=Jupyter%20Book", a topic links to the repos of its page that the query picks, which
-    tables.js filters by. Raw HTML, since a Sphinx link has no query, from a page one folder down like owners/.
+    Each count links to those repos on the topic page. `scope`, like {"owner": "Jupyter Book"}, is what picks the
+    repos of an owner or organization page, which is one folder down; the topic then links there too.
     """
+    scope = scope or {}
+    root = "../" if scope else ""
     header = ["topic", "progress", "question", "done", "partial", "missing", "not applicable"]
     rows, cells = [], []
     for topic in data.topics:
         counts = topic_counts(data, topic, names)
         statuses = [counts[status] for status in STATUSES]
         rows.append([topic["title"], progress(counts), topic["question"], *statuses])
-        if query:
-            href = f"../topics/{topic['id']}.html?{query}#repositories"
-            title = f'<a href="{html.escape(href)}">{html.escape(topic["title"])}</a>'
+        page = f"{root}topics/{topic['id']}.html"
+        if scope:
+            title = f'<a href="{html.escape(repos_href(page, **scope))}">{html.escape(topic["title"])}</a>'
         else:
             title = f"[{plain(topic['title'])}](/topics/{topic['id']}.md)"
-        cells.append([title, progress_cell(counts), plain(topic["question"]), *statuses])
+        linked = [  # not the n/a count: the topic page leaves those repos out
+            count_link(counts[status], repos_href(page, **scope, status=status))
+            if status != NOT_APPLICABLE
+            else counts[status]
+            for status in STATUSES
+        ]
+        cells.append([title, progress_cell(counts), plain(topic["question"]), *linked])
     return Table(header, rows, cells)
 
 
 def topic_group_table(data: Data, topic: dict, column: str) -> Table:
     """The repos a topic applies to, by organization or by owner. The most left to do first."""
     if column == "organization":
-        group, linked = (lambda repo: repo["org"]), org_link
+        group, linked, param = (lambda repo: repo["org"]), org_link, "org"
     else:
-        group, linked = (lambda repo: owner_of(repo) or ""), owner_link
+        group, linked, param = (lambda repo: owner_of(repo) or ""), owner_link, "owner"
     groups = {}
     for name in data.results[topic["id"]]:
         groups.setdefault(group(data.repos[name]), []).append(name)
@@ -556,7 +575,13 @@ def topic_group_table(data: Data, topic: dict, column: str) -> Table:
             bars[key] = progress_cell(counts)
     rows.sort(key=lambda row: (-(row[4] + row[5]), row[0]))
     header = [column, "progress", "repos it applies to", "done", "partial", "missing"]
-    return Table(header, rows, [[linked(row[0]), bars[row[0]], *row[2:]] for row in rows])
+    cells = []
+    for key, _, applies, *statuses in rows:
+        # Each count links to the repos it counts in this page's repository table. Repos with no owner have no filter.
+        hrefs = [repos_href("", **{param: key}, status=status) for status in (None, "done", "partial", "missing")]
+        counts = [count_link(count, href) if key else count for count, href in zip([applies, *statuses], hrefs)]
+        cells.append([linked(key), bars[key], *counts])
+    return Table(header, rows, cells)
 
 
 def topic_repo_table(data: Data, topic: dict) -> Table:
@@ -635,7 +660,7 @@ def topic_page(data: Data, topic: dict) -> str:
         owners=table("owners"),
         orgs=table("orgs"),
         legend_of_kinds=LEGEND,
-        repos=table("repos", by_org=True, by_owner=True),
+        repos=table("repos", by_org=True, by_owner=True, by_status=True),
         history=table("history"),
     )
 
@@ -662,12 +687,13 @@ def repo_topics(data: Data, name: str) -> str:
     return "\n".join(lines)
 
 
-def csv_table(stem: str, by_org: bool = False, by_owner: bool = False) -> str:
+def csv_table(stem: str, by_org: bool = False, by_owner: bool = False, by_status: bool = False) -> str:
     """The Markdown for a sortable table whose rows are in <stem>.csv, with a link to download them.
 
-    `by_org`, `by_owner`: the table's organization or owner column gets a filter.
+    `by_org`, `by_owner`, `by_status`: the table's organization, owner or status column gets a filter.
     """
-    classes = "sphinx-datatable" + (" filter-by-org" if by_org else "") + (" filter-by-owner" if by_owner else "")
+    filters = {"filter-by-org": by_org, "filter-by-owner": by_owner, "filter-by-status": by_status}
+    classes = " ".join(["sphinx-datatable", *(cls for cls, on in filters.items() if on)])
     return (
         f"{{download}}`Download CSV </_generated/downloads/{stem}.csv>`\n\n"
         f"```{{csv-table}}\n:file: /_generated/{stem}.csv\n:header-rows: 1\n:class: {classes}\n```"
@@ -726,16 +752,16 @@ def write_tables(
     images: list[dict],
     by_org: bool,
     by_owner: bool = True,
-    topic_query: str = "",
+    topic_scope: dict | None = None,
 ) -> str:
     """Writes the tables of a page that lists repositories, their packages and images. Returns its sections.
 
     `names` are the repositories of the page. Without `by_org`, the tables of packages and images
     leave out the organization column, which is the same on every row of an organization's page.
     `by_owner`: the repository tables get an owner filter, which an owner's page has no use for.
-    `topic_query`: see topic_summary().
+    `topic_scope`: see topic_summary().
     """
-    topics = topic_summary(data, names, topic_query)
+    topics = topic_summary(data, names, topic_scope)
     software = repo_table(data, [name for name in names if not data.out_of_the_way(name)])
     docs = docs_table(data, [name for name in names if data.out_of_the_way(name)])
     packages = {title: package_table(data, system, names) for system, title in REGISTRIES.items()}
@@ -862,7 +888,7 @@ def org_pages(data: Data) -> Table:
             rows[org] = [org, 0, 0, len(org_images), 0, 0, 0, "", ""]
             cells[org] = [plain(org), *rows[org][1:]]
             continue
-        body = write_tables(data, org, names, org_images, by_org=False, topic_query=f"org={quote(org)}")
+        body = write_tables(data, org, names, org_images, by_org=False, topic_scope={"org": org})
         (DOCS / "orgs" / org).mkdir(parents=True)
         for name in names:
             (DOCS / f"{slug(name)}.md").write_text(repo_page(data, name), encoding="utf-8")
@@ -925,7 +951,7 @@ def owner_pages(data: Data) -> Table:
             images,
             by_org=True,
             by_owner=False,
-            topic_query=f"owner={quote(owner)}",
+            topic_scope={"owner": owner},
         )
         counts = tally(data, names)
         page = OWNER_PAGE.format(title=plain(owner), summary=summary_sentence(plain(owner), counts), body=body)
