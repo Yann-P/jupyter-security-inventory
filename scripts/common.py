@@ -34,7 +34,9 @@ class Progress:
             self.done += 1
             if sys.stderr.isatty():
                 end = "\n" if self.done == self.total else ""
-                print(f"\r{self.what}: {self.done}/{self.total}", end=end, file=sys.stderr, flush=True)
+                retried = sum(RETRIES.values())
+                note = f" ({retried} retries)" if retried else ""
+                print(f"\r{self.what}: {self.done}/{self.total}{note}", end=end, file=sys.stderr, flush=True)
 
     def wrap(self, function):
         """`function`, ticking after each call."""
@@ -45,6 +47,12 @@ class Progress:
             return result
 
         return run
+
+
+def retries() -> str:
+    """The retries so far, by site and reason: 'registry.npmjs.org HTTP 429: 3', or 'none'."""
+    with RETRIES_LOCK:
+        return ", ".join(f"{key}: {count}" for key, count in sorted(RETRIES.items())) or "none"
 
 
 def load_json(path):

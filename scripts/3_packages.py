@@ -17,7 +17,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import PurePosixPath
 
-from common import OUTPUT, RETRIES, Progress, fetch_json, github_repos_in, load_json, pep503, quote, save_json
+from common import OUTPUT, Progress, fetch_json, github_repos_in, load_json, pep503, quote, retries, save_json
 
 
 def registry_entry(system: str, name: str) -> dict | None:
@@ -169,7 +169,7 @@ def pick_publishers(candidates: dict, entries: dict, repos: dict, jupyter_orgs: 
 def took(what: str, since: float) -> float:
     """Print how long a part took, for the run log, and return the time now."""
     now = time.perf_counter()
-    print(f"{what}: {now - since:.0f} s", flush=True)
+    print(f"{what}: {now - since:.0f} s; retries so far: {retries()}", flush=True)
     return now
 
 
@@ -214,7 +214,6 @@ def main():
     save_json(OUTPUT / "packages.json", {"accepted": packages, "rejected": rejected})
     n_repos = len({p["repo"] for p in packages})
     print(f"{len(packages)} packages from {n_repos} repos; {len(rejected)} candidates rejected")
-    print("retries:", ", ".join(f"{key}: {count}" for key, count in sorted(RETRIES.items())) or "none")
 
 
 if __name__ == "__main__":
