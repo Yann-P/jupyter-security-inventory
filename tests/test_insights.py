@@ -1,5 +1,7 @@
 """Tests for docs/insights.py, which writes the site's pages."""
 
+from collections import Counter
+
 import insights
 
 
@@ -165,3 +167,11 @@ def test_topic_repo_table_lists_the_most_downloaded_first_and_leaves_out_what_do
     table = insights.topic_repo_table(data, {"id": "t"})
     assert [row[0] for row in table.rows] == ["o/done", "o/missing"]
     assert "blob/c0ffee/a%20b.yml" in table.cells[0][-1]
+
+
+def test_a_topic_is_finished_only_when_every_applicable_repo_is_done():
+    assert insights.progress(Counter({"done": 199, "missing": 1})) == 99  # not rounded up to 100
+    assert insights.progress(Counter({"done": 3, "n/a": 5})) == 100
+    assert insights.progress(Counter({"n/a": 5})) is None
+    assert "topic-finished" in insights.progress_cell(Counter({"done": 3}))
+    assert "topic-bar" in insights.progress_cell(Counter({"done": 199, "partial": 1}))

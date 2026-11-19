@@ -460,14 +460,41 @@ def topic_counts(data: Data, topic: dict, names) -> Counter:
     return Counter(results[name]["status"] for name in names)
 
 
+def progress(counts: Counter) -> int | None:
+    """The percentage of done repos among those the topic applies to. Rounded down, so 100 means finished."""
+    applicable = counts["done"] + counts["partial"] + counts["missing"]
+    return counts["done"] * 100 // applicable if applicable else None
+
+
+def progress_cell(counts: Counter) -> str:
+    """A check mark for a finished topic, else a bar of the done and partial repos.
+
+    Raw HTML, since MyST drops a style attribute. The percentage stays in the text, which DataTables sorts by.
+    """
+    percent = progress(counts)
+    if percent is None:
+        return ""
+    if percent == 100:
+        return '<span class="topic-finished" title="Finished">100%</span>'
+    applicable = counts["done"] + counts["partial"] + counts["missing"]
+    partial = counts["partial"] * 100 / applicable
+    title = f"{counts['done']} done, {counts['partial']} partial, {counts['missing']} missing"
+    return (
+        f'<span class="topic-progress" style="--done: {percent}%; --partial: {partial:.1f}%" title="{title}">'
+        f'<span class="topic-bar"></span>{percent}%</span>'
+    )
+
+
 def topic_summary(data: Data, names) -> Table:
-    """One row per topic: how many of these repos have each status."""
-    header = ["topic", "question", "done", "partial", "missing", "not applicable"]
+    """One row per topic: how far along it is, and how many of these repos have each status."""
+    header = ["topic", "progress", "question", "done", "partial", "missing", "not applicable"]
     rows, cells = [], []
     for topic in data.topics:
         counts = topic_counts(data, topic, names)
-        rows.append([topic["title"], topic["question"], *(counts[status] for status in STATUSES)])
-        cells.append([f"[{plain(topic['title'])}](/topics/{topic['id']}.md)", plain(topic["question"]), *rows[-1][2:]])
+        statuses = [counts[status] for status in STATUSES]
+        rows.append([topic["title"], progress(counts), topic["question"], *statuses])
+        title = f"[{plain(topic['title'])}](/topics/{topic['id']}.md)"
+        cells.append([title, progress_cell(counts), plain(topic["question"]), *statuses])
     return Table(header, rows, cells)
 
 
