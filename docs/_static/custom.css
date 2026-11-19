@@ -82,8 +82,9 @@ a.download code { font: inherit; background: none; border: 0; padding: 0; color:
 .bd-article h2 { padding-bottom: 0.3em; border-bottom: 1px solid var(--pst-color-border); }
 .bd-article h3 { font-size: 1.3rem; margin-top: 1.75rem; }
 
-/* The theme fills the heading a link jumps to with a yellow block, loud in the dark theme. The counts' links all
-   land on a heading, so no fill: the jump already shows where they lead. */
-.bd-main .bd-content .bd-article-container .bd-article :target > :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5) {
-  background-color: transparent;  /* the theme's selector, so this one wins */
+/* The theme fills whatever a link jumps to with --pst-color-target, a yellow block that is loud in the dark theme
+   and shows on every count's link, which lands on a heading. A faint tint of the primary color instead, in both
+   themes; it also marks search terms and footnotes. */
+html[data-theme="light"], html[data-theme="dark"] {
+  --pst-color-target: color-mix(in srgb, var(--pst-color-primary) 15%, transparent);
 }
