@@ -38,10 +38,13 @@ ORGS = [
 ]
 
 
-def owner(full_name: str) -> str | None:
-    command = ["gh", "api", f"repos/{full_name}/properties/values"]
-    values = json.loads(subprocess.run(command, capture_output=True, text=True, check=True).stdout)
-    return next((value["value"] for value in values if value["property_name"] == "Owner"), None)
+def owners(org: str) -> dict[str, str | None]:
+    """{repo: its Owner custom property}. The REST listing of an org's repos carries each repo's custom properties,
+    so a page of 100 repos costs one request instead of one per repo. GraphQL does not expose them."""
+    query = ".[] | [.full_name, .custom_properties.Owner]"
+    command = ["gh", "api", "--paginate", f"orgs/{org}/repos?type=public&per_page=100", "--jq", query]
+    lines = subprocess.run(command, capture_output=True, text=True, check=True).stdout.splitlines()
+    return dict(json.loads(line) for line in lines)
 
 
 def public_repos(org: str) -> list[dict]:
@@ -59,6 +62,7 @@ def public_repos(org: str) -> list[dict]:
         "nameWithOwner,description,isFork,isEmpty",
     ]
     listing = json.loads(subprocess.run(command, capture_output=True, text=True, check=True).stdout)
+    owner = owners(org)
     repos = []
     for item in listing:
         if item["isEmpty"]:
@@ -71,7 +75,7 @@ def public_repos(org: str) -> list[dict]:
                 "name": full_name.split("/")[1],
                 "description": item["description"] or None,
                 "is_fork": item["isFork"],
-                "owner": owner(full_name),
+                "owner": owner.get(full_name),
             }
         )
     return repos

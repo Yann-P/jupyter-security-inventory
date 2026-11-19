@@ -8,15 +8,15 @@ inventory = importlib.import_module("1_inventory")  # names starting with a digi
 
 
 def test_public_repos_keeps_what_the_other_steps_need(monkeypatch):
-    # What `gh repo list` and `gh api .../properties/values` print, so the test doesn't need GitHub.
+    # What `gh repo list` and `gh api orgs/jupyter/repos --jq ...` print, so the test doesn't need GitHub.
     listing = [
         {"nameWithOwner": "jupyter/notebook", "description": "", "isFork": False, "isEmpty": False},
         {"nameWithOwner": "jupyter/new-idea", "description": "", "isFork": False, "isEmpty": True},
     ]
-    properties = [{"property_name": "Team", "value": "x"}, {"property_name": "Owner", "value": "notebook-council"}]
+    owners = '["jupyter/notebook","notebook-council"]\n["jupyter/new-idea",null]\n'
 
     def run(command, **kwargs):
-        return SimpleNamespace(stdout=json.dumps(listing if command[1] == "repo" else properties))
+        return SimpleNamespace(stdout=json.dumps(listing) if command[1] == "repo" else owners)
 
     monkeypatch.setattr(inventory.subprocess, "run", run)
 
