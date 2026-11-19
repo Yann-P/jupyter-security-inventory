@@ -63,4 +63,4 @@ docs = { cmd = "sphinx-build -W docs docs/_build", description = "Build the site
 [tool.pixi.tasks.docs-watch]
 description = "Serve the site and rebuild on changes"
 # The site build writes into the ignored folders, so watching them would rebuild forever.
-cmd = "sphinx-autobuild docs docs/_build --watch output --ignore docs/_generated --ignore docs/orgs --ignore docs/topics"
+cmd = "sphinx-autobuild docs docs/_build --watch output --ignore docs/_generated --ignore docs/orgs --ignore docs/owners --ignore docs/topics"
