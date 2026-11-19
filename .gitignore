@@ -12,3 +12,4 @@ docs/topics/
 build/
 *.egg-info/
 .ruff_cache/
+.pixi/
