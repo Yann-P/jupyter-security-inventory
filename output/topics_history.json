@@ -488,5 +488,43 @@
       "missing": 130,
       "n/a": 294
     }
+  },
+  "2026-11-19": {
+    "zizmor": {
+      "done": 24,
+      "partial": 4,
+      "missing": 249,
+      "n/a": 154
+    },
+    "security-policy": {
+      "done": 94,
+      "partial": 2,
+      "missing": 53,
+      "n/a": 282
+    },
+    "pypi-attestations": {
+      "done": 28,
+      "partial": 1,
+      "missing": 108,
+      "n/a": 294
+    },
+    "npm-trusted-publishing": {
+      "done": 28,
+      "partial": 3,
+      "missing": 21,
+      "n/a": 379
+    },
+    "supported-python": {
+      "done": 7,
+      "partial": 0,
+      "missing": 130,
+      "n/a": 294
+    },
+    "owner": {
+      "done": 431,
+      "partial": 0,
+      "missing": 0,
+      "n/a": 0
+    }
   }
 }

@@ -33,6 +33,7 @@ Eight scripts run in order (they depend on each other):
 ## The columns
 
 - **kind**: package, application, tooling, deployment, documentation, example or other.
+- **owner**: its Owner custom property on GitHub.
 - **downloads/month** and **dependents**: for the repository's most downloaded package.
 - **image** and **all-time pulls**: for the repository's most pulled container image.
 - **used in CI**: how many other Jupyter repositories run its actions or build tools without pinning them
@@ -45,7 +46,7 @@ Eight scripts run in order (they depend on each other):
 
 A topic asks one question about every repository, like "does it check its workflows with zizmor?", and answers
 with a status: done, partial, missing or not applicable. Each topic has a page, and every organization and
-repository page shows how it does. There are five for now:
+repository page shows how it does. The topics for now:
 
 - **zizmor**, run as its GitHub Action, as a command in a workflow or as a pre-commit hook.
 - **SECURITY.md**, in the repository or in the organization's `.github` repository, for the repositories that ship a
@@ -55,6 +56,7 @@ repository page shows how it does. There are five for now:
 - **npm trusted publishing**, for the latest version of each npm package.
 - **Supported Python**: the Requires-Python of the latest release of each PyPI package leaves out the Python versions
   that no longer get security fixes.
+- **Owner**: the repository's Owner custom property is set, and not "None".
 
 ## Caveats
 

@@ -58,7 +58,7 @@ All in `output/`. Repos are named `org/repo`.
 
 | File | Shape |
 |---|---|
-| `repos.json` | `fetched_on`, `orgs`, and `repos`: full_name, org, name, description, is_fork. |
+| `repos.json` | `fetched_on`, `orgs`, and `repos`: full_name, org, name, description, is_fork, owner. |
 | `scan.json` | `{repo: facts from step 2}`. |
 | `packages.json` | `accepted`: system (PYPI or NPM), name, repo, reason, downloads_last_month, dependents, last_published, and for the latest release (the default version): latest_published, and `attested` and `requires_python` (PyPI) or `trusted_publishing` (npm). `rejected`: candidates that were not confirmed. |
 | `images.json` | `images`: registry, namespace, name, tag, last_published, pulls (all time), reference, repo, reason. |

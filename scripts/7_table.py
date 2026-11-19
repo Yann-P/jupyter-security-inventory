@@ -3,6 +3,7 @@
     python scripts/7_table.py
 
 The columns:
+  owner              its Owner custom property on GitHub
   package            its most downloaded package
   downloads/month    monthly downloads of that package
   dependents         how many packages depend on it
@@ -28,6 +29,7 @@ def row(repo: dict) -> dict:
     return {
         "repo": repo["full_name"],
         "kind": labels["kind"],
+        "owner": repo["owner"] or "",
         "package": repo["top_package"] or "",
         "downloads/month": repo["max_downloads_last_month"] if has_package else "",
         "dependents": repo["top_package_dependents"] if has_package else "",
