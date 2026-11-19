@@ -76,9 +76,8 @@ def reason(repo: dict, system: str, entry: dict, declared: bool, jupyter_orgs: s
 
 def downloads(system: str, name: str) -> int | None:
     if system == "PYPI":
-        # 1.1 s got many HTTP 429s once PyPI downloads had their own thread. 2.5 s is about the rate that worked when
-        # they were fetched one at a time between npm ones.
-        body = fetch_json(f"https://pypistats.org/api/packages/{quote(pep503(name))}/recent", delay=2.5)
+        # pypistats.org allows 60 requests per window (its X-RateLimit headers); past that, fetch_json waits for the reset.
+        body = fetch_json(f"https://pypistats.org/api/packages/{quote(pep503(name))}/recent", delay=1.1)
         return body["data"]["last_month"] if body else None
     body = fetch_json(f"https://api.npmjs.org/downloads/point/last-month/{quote(name)}", delay=1)
     return body["downloads"] if body else None

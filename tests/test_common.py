@@ -2,6 +2,7 @@
 
 import email.message
 import io
+import time
 import urllib.error
 
 import common
@@ -41,8 +42,11 @@ def test_download_json_retries_rate_limits_when_asked_and_counts_them(monkeypatc
     assert 3 in waits  # the server's Retry-After, not our own 1 s
 
 
-def test_retry_after_reads_seconds_and_dates():
+def test_retry_after_reads_seconds_dates_and_rate_limit_resets():
     assert common.retry_after({"Retry-After": "120"}) == 120
     assert common.retry_after({"Retry-After": "Wed, 21 Oct 2015 07:28:00 GMT"}) == 0  # in the past
     assert common.retry_after({"Retry-After": "soon"}) is None
     assert common.retry_after(None) is None
+    # pypistats.org: "Retry-After: 0", and the reset of its window as a Unix time
+    reset = str(int(time.time()) + 30)
+    assert 28 < common.retry_after({"Retry-After": "0", "X-RateLimit-Reset": reset}) <= 30

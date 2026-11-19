@@ -82,17 +82,27 @@ def fetch_json(url: str, delay: float = 0.0):
 
 
 def retry_after(headers) -> float | None:
-    """The seconds a server asks us to wait in its Retry-After header, given as seconds or as a date; else None."""
+    """The seconds a server asks us to wait: the later of its Retry-After header (seconds or a date) and its
+    X-RateLimit-Reset time. None if it gives neither."""
+    waits = []
     value = (headers.get("Retry-After") if headers else None) or ""
     if value.strip().isdigit():
-        return float(value)
-    try:
-        when = email.utils.parsedate_to_datetime(value)
-    except TypeError, ValueError:
-        return None
-    if when.tzinfo is None:  # an HTTP date is always in GMT
-        when = when.replace(tzinfo=datetime.UTC)
-    return max(0.0, (when - datetime.datetime.now(datetime.UTC)).total_seconds())
+        waits.append(float(value))
+    else:
+        try:
+            when = email.utils.parsedate_to_datetime(value)
+            if when.tzinfo is None:  # an HTTP date is always in GMT
+                when = when.replace(tzinfo=datetime.UTC)
+            waits.append((when - datetime.datetime.now(datetime.UTC)).total_seconds())
+        except TypeError, ValueError:
+            pass
+    # pypistats.org sends "Retry-After: 0" and gives its real wait here, as a Unix time (like GitHub). Some APIs give
+    # the seconds left instead.
+    reset = (headers.get("X-RateLimit-Reset") if headers else None) or ""
+    if reset.strip().isdigit():
+        seconds = float(reset)
+        waits.append(seconds - time.time() if seconds > 1e9 else seconds)
+    return max(0.0, *waits) if waits else None
 
 
 def download_json(url: str, delay: float):
@@ -116,7 +126,7 @@ def download_json(url: str, delay: float):
             reason, wait = "network error", None
         with RETRIES_LOCK:
             RETRIES[f"{urllib.parse.urlsplit(url).hostname} {reason}"] += 1
-        time.sleep(2**attempt if wait is None else min(wait, MAX_RETRY_AFTER))
+        time.sleep(min(max(2**attempt, wait or 0), MAX_RETRY_AFTER))  # a server's hint can only make us wait longer
 
 
 def quote(text: str) -> str:
