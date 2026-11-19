@@ -30,4 +30,4 @@ myst_substitutions = insights.build()
 # The big tables are sortable and searchable with DataTables, loaded from cdn.datatables.net.
 datatables_version = "3.1.4"
 # Keep the order the tables are generated in. initTable is defined in _static/tables.js, so this has to stay a string.
-datatables_options = '{"pageLength": 50, "order": [], "initComplete": initTable}'
+datatables_options = '{"pageLength": 50, "order": [], "autoWidth": false, "initComplete": initTable}'

@@ -60,6 +60,7 @@ a.download code { font: inherit; background: none; border: 0; padding: 0; color:
 .topic-finished { font-size: 0; }  /* hides the "100%" that DataTables sorts by */
 .topic-finished::before { content: "✓"; font-size: 1.25rem; line-height: 1; font-weight: bold; color: rgb(56, 142, 60); }
 .topic-progress { display: inline-flex; align-items: center; gap: 0.5em; white-space: nowrap; }
+.bd-article td:has(.topic-progress) { width: 1%; }  /* as narrow as the bar, so the other columns get the room */
 .topic-bar {
   width: 8rem;
   height: 0.75rem;
