@@ -2,8 +2,6 @@
 version: 2
 build:
   os: ubuntu-24.04
-  tools:
-    python: "3.13"  # unused: pixi installs Python 3.14
   commands:
     - mkdir -p $HOME/bin
     - curl -fsSL https://github.com/prefix-dev/pixi/releases/download/v0.84.2/pixi-x86_64-unknown-linux-musl.tar.gz | tar xz -C $HOME/bin
