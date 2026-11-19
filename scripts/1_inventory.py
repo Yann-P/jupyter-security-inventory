@@ -11,7 +11,7 @@ import datetime
 import json
 import subprocess
 
-from common import OUTPUT, save_json
+from common import OUTPUT, Progress, save_json
 
 # The GitHub organizations of Project Jupyter, written by hand.
 ORGS = [
@@ -71,7 +71,8 @@ def public_repos(org: str) -> list[dict]:
 
 
 def main():
-    repos = [repo for org in ORGS for repo in public_repos(org)]
+    listed = Progress("orgs listed", len(ORGS)).wrap(public_repos)
+    repos = [repo for org in ORGS for repo in listed(org)]
     repos.sort(key=lambda repo: repo["full_name"].lower())
     save_json(OUTPUT / "repos.json", {"fetched_on": str(datetime.date.today()), "orgs": ORGS, "repos": repos})
     print(f"{len(repos)} public, non-archived repos in {len(ORGS)} orgs")
