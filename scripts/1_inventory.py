@@ -41,7 +41,7 @@ ORGS = [
 def owners(org: str) -> dict[str, str | None]:
     """{repo: its Owner custom property}. The REST listing of an org's repos carries each repo's custom properties,
     so a page of 100 repos costs one request instead of one per repo. GraphQL does not expose them."""
-    query = ".[] | [.full_name, .custom_properties.Owner]"
+    query = ".[] | [.full_name, .custom_properties.Owner] | @json"  # a string: always printed on one line
     command = ["gh", "api", "--paginate", f"orgs/{org}/repos?type=public&per_page=100", "--jq", query]
     lines = subprocess.run(command, capture_output=True, text=True, check=True).stdout.splitlines()
     return dict(json.loads(line) for line in lines)
