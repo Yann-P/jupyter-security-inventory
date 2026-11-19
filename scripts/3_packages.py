@@ -180,9 +180,16 @@ def main():
         known = list(
             pool.map(lambda p: deps_dev(p["system"], p["name"]) | publishing(p["system"], p["name"]), packages)
         )
+
+    def count_downloads(system):
+        for package in packages:
+            if package["system"] == system:
+                package["downloads_last_month"] = downloads(system, package["name"])
+
+    # pypistats.org and api.npmjs.org limit how often we may call them: one request at a time to each, both at once.
+    with ThreadPoolExecutor(2) as pool:
+        list(pool.map(count_downloads, ("PYPI", "NPM")))  # list() raises any error from the threads
     for package, deps in zip(packages, known):
-        # One at a time, because pypistats.org and api.npmjs.org limit how often we may call them.
-        package["downloads_last_month"] = downloads(package["system"], package["name"])
         package.update(deps)
 
     save_json(OUTPUT / "packages.json", {"accepted": packages, "rejected": rejected})
