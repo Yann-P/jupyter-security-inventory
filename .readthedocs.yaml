@@ -1,8 +1,20 @@
-# Read the Docs builds the site with pixi, from the same dependencies as everyone else.
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
 version: 2
+
 build:
   os: ubuntu-24.04
-  commands:
-    - mkdir -p $HOME/bin
-    - curl -fsSL https://github.com/prefix-dev/pixi/releases/download/v0.84.2/pixi-x86_64-unknown-linux-musl.tar.gz | tar xz -C $HOME/bin
-    - $HOME/bin/pixi run docs $READTHEDOCS_OUTPUT/html
+  tools:
+    # Required by Read the Docs; the docs environment itself comes from pixi.
+    python: "3.13"
+  jobs:
+    create_environment:
+      - asdf plugin add pixi
+      - asdf install pixi 0.84.2
+      - asdf global pixi 0.84.2
+    install:
+      - pixi install  # no --locked: pixi.lock is not committed, and pyproject.toml pins the dependencies
+    build:
+      html:
+        - pixi run docs $READTHEDOCS_OUTPUT/html
