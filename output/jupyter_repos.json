@@ -1,5 +1,5 @@
 {
-  "fetched_on": "2026-11-18",
+  "fetched_on": "2026-11-19",
   "repos": [
     {
       "full_name": "binder-examples/.github",
@@ -7,6 +7,7 @@
       "name": ".github",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -48,6 +49,7 @@
       "name": "appmode",
       "description": "Creating web applications with Jupyter and Binder",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -91,6 +93,7 @@
       "name": "apt_install",
       "description": "Installing packages from APT",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -133,6 +136,7 @@
       "name": "binder-r-description",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -176,6 +180,7 @@
       "name": "bokeh",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -220,6 +225,7 @@
       "name": "conda",
       "description": "Specifying a conda environment with `environment.yml`",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -265,6 +271,7 @@
       "name": "conda-freeze",
       "description": "A base repository to use for exporting conda environments",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -307,6 +314,7 @@
       "name": "continuous-build",
       "description": "Show how to use continuous integration to test your dependency specifications",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -350,6 +358,7 @@
       "name": "data-quilt",
       "description": "Install quilt data packages and use them in Binder notebooks",
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -393,6 +402,7 @@
       "name": "demo-julia",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -436,6 +446,7 @@
       "name": "dockerfile-rstudio",
       "description": "Using RStudio with Binder with a custom Dockerfile",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -480,6 +491,7 @@
       "name": "getting-data",
       "description": "How to get data into your Binder",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -523,6 +535,7 @@
       "name": "getting-data-xroot",
       "description": "Using the xroot protocol to access very large datasets",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -564,6 +577,7 @@
       "name": "julia-python",
       "description": "Installing Julia and Python environments",
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -607,6 +621,7 @@
       "name": "jupyter-extension",
       "description": "Enabling jupyter extensions for use in Binder",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -649,6 +664,7 @@
       "name": "jupyter-rise",
       "description": "Auto-launching the RISE plugin for Binder presentations.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -692,6 +708,7 @@
       "name": "jupyter-sos",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -736,6 +753,7 @@
       "name": "jupyter-stacks",
       "description": "Binder example for using a Jupyter DockerStacks image",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -777,6 +795,7 @@
       "name": "jupyter-stacks-datascience",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -818,6 +837,7 @@
       "name": "jupyterlab",
       "description": "Demonstrating how to get JupyterLab working with Binder",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -861,6 +881,7 @@
       "name": "latex",
       "description": "Using `apt.txt` to install latex for use in notebooks.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -905,6 +926,7 @@
       "name": "matplotlib-versions",
       "description": "Illustrating what can change when a dependency is upgraded",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -947,6 +969,7 @@
       "name": "minimal-dockerfile",
       "description": "A starting point for your custom Dockerfile that works on binder. You probably don't want to use this.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -988,6 +1011,7 @@
       "name": "multi-language-demo",
       "description": "Material to accompany https://blog.jupyter.org/i-python-you-r-we-julia-baf064ca1fb6",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1032,6 +1056,7 @@
       "name": "nix",
       "description": "Simplest Nix Binderhub example",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1075,6 +1100,7 @@
       "name": "octave",
       "description": "An example of using Octave on mybinder.org",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1118,6 +1144,7 @@
       "name": "pipfile",
       "description": "Using a Pipfile with pipenv on Binder",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1162,6 +1189,7 @@
       "name": "python-conda_pip",
       "description": "Installing packages with pip and conda",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1205,6 +1233,7 @@
       "name": "python2_runtime",
       "description": "Demonstrating how to activate a python 2 environment with `runtime.txt`",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1247,6 +1276,7 @@
       "name": "python2_with_3",
       "description": "A repository to demonstrate simultaneous python 2 and 3 kernels",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1289,6 +1319,7 @@
       "name": "r",
       "description": "Using R with Jupyter / RStudio on Binder",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1335,6 +1366,7 @@
       "name": "r-conda",
       "description": "R and RStudio via conda packages in repo2docker",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1378,6 +1410,7 @@
       "name": "r_with_python",
       "description": "Minimal working example for a binder with both R and Python Jupyter and RMarkdown notebooks",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1422,6 +1455,7 @@
       "name": "remote_storage",
       "description": "Connecting a Binder repository with data stored remotely.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1464,6 +1498,7 @@
       "name": "requirements",
       "description": "Simple requirements.txt based example",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1509,6 +1544,7 @@
       "name": "rocker",
       "description": "Using a pre-existing rocker image on mybinder.org",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1552,6 +1588,7 @@
       "name": "setup.py",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1596,6 +1633,7 @@
       "name": "stencila-multi",
       "description": "Demo for Stencila & Dar on binder with multiple Stencila documents in one repository",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1638,6 +1676,7 @@
       "name": "stencila-py",
       "description": "Demo for Stencila & DAR on binder with Python code",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1679,6 +1718,7 @@
       "name": "stencila-r",
       "description": "Demo for Stencila & DAR on binder with R code",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1720,6 +1760,7 @@
       "name": "tensorboard",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1764,6 +1805,7 @@
       "name": "voila",
       "description": "Using Voilà with matplotlib example",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1807,6 +1849,7 @@
       "name": "zero-to-binder",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1851,6 +1894,7 @@
       "name": "zero-to-jupyterhub-k8s",
       "description": "Helm Chart & Documentation for deploying JupyterHub on Kubernetes",
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1911,6 +1955,7 @@
       "name": "cached-minimal-dockerfile",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1952,6 +1997,7 @@
       "name": "lfs",
       "description": "testing LFS with repo2docker/binderhub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -1993,6 +2039,7 @@
       "name": "minimal-dockerfile",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2044,6 +2091,7 @@
       "name": "repo2docker-ci-clone-depth",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2085,6 +2133,7 @@
       "name": "repo2docker-subdir-support",
       "description": "A repository to test building from a subdirectory with repo2docker",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2125,6 +2174,7 @@
       "name": "requirements",
       "description": "Simple requirements.txt based example",
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2166,6 +2216,7 @@
       "name": ".github",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Security",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2207,6 +2258,7 @@
       "name": "comm",
       "description": "Python Comm implementation for the Jupyter kernel protocol",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [
         {
           "system": "PYPI",
@@ -2272,6 +2324,7 @@
       "name": "ipykernel",
       "description": "IPython Kernel for Jupyter",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -2341,6 +2394,7 @@
       "name": "ipynb",
       "description": "Package / Module importer for importing code from Jupyter Notebook files (.ipynb)",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -2397,6 +2451,7 @@
       "name": "ipyparallel",
       "description": "IPython Parallel: Interactive Parallel Computing in Python",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [
         {
           "system": "PYPI",
@@ -2462,6 +2517,7 @@
       "name": "ipython",
       "description": "Official repository for IPython itself. Other repos in the IPython organization contain things like the website, documentation builds, etc.",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -2545,6 +2601,7 @@
       "name": "ipython-in-depth",
       "description": "IPython and Jupyter in-depth Tutorial, first presented at PyCon 2012",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2592,6 +2649,7 @@
       "name": "ipython-pygments-lexers",
       "description": "Pygments lexers for syntax-highlighting IPython code & sessions",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -2653,6 +2711,7 @@
       "name": "ipython-website",
       "description": "IPython website sources. Any fixes to the website should be done on this repository.",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2698,6 +2757,7 @@
       "name": "ipython.github.com",
       "description": "Auto-generated sphinx version of the IPython website. Since this is an auto-generated directory, do *not* submit pull requests against this repository.  The actual sources are in the ipython-website repository.",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2750,6 +2810,7 @@
       "name": "matplotlib-inline",
       "description": "Inline Matplotlib backend for Jupyter",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -2811,6 +2872,7 @@
       "name": "pickleshare",
       "description": "File system based database that uses python pickles",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -2868,6 +2930,7 @@
       "name": "traitlets",
       "description": "A lightweight Traits like module",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [
         {
           "system": "PYPI",
@@ -2935,6 +2998,7 @@
       "name": "xkcd-font",
       "description": "The xkcd font",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -2988,6 +3052,7 @@
       "name": ".github",
       "description": "GitHub-specified configuration / meta-data",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3034,6 +3099,7 @@
       "name": "blog",
       "description": "Blog for the Jupyter Book subproject",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3084,6 +3150,7 @@
       "name": "blog-plugin",
       "description": "A plugin to list blog posts in a MyST project",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3133,6 +3200,7 @@
       "name": "book-theme-tailwind-quickstart",
       "description": "A quickstart repository for building custom CSS with Tailwind",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3181,6 +3249,7 @@
       "name": "demo-scipy-2025",
       "description": "The demo repository used in the SciPy 2025 talk on Jupyter Book 2",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3228,6 +3297,7 @@
       "name": "example-js-anywidget",
       "description": "A demonstration JS anywidget for use with the MyST Document Engine",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3276,6 +3346,7 @@
       "name": "example-js-plugin",
       "description": "A demonstration JS plugin for use with the MyST Document Engine",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3324,6 +3395,7 @@
       "name": "example-landing-pages",
       "description": "An example of deploying a MyST book with a landing page",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3372,6 +3444,7 @@
       "name": "example-multi-language-book",
       "description": "A simple book to demonstrate what's possible with multi-language books.",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3413,6 +3486,7 @@
       "name": "example-outputs",
       "description": "An example of deploying a MyST book containing executable notebooks that generate plots",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3461,6 +3535,7 @@
       "name": "example-python-plugin",
       "description": "A demonstration Python plugin for use with the MyST Document Engine",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3508,6 +3583,7 @@
       "name": "example-stylesheets",
       "description": "An example of deploying a MyST book with a custom CSS stylesheet",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3555,6 +3631,7 @@
       "name": "example-widgets",
       "description": "A MyST Markdown project for testing the widget interfaces",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3598,6 +3675,7 @@
       "name": "github-action-playground",
       "description": "A fork of my playground for GHA",
       "is_fork": true,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3641,6 +3719,7 @@
       "name": "hatch-deps-selector",
       "description": "Select additional dependencies for pyproject.toml from the environment",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [
         {
           "system": "PYPI",
@@ -3706,6 +3785,7 @@
       "name": "jb1-redirect-generator",
       "description": "Generate HTML redirect files when migrating from Jupyter Book v1 to MyST/Jupyter Book v2",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3748,6 +3828,7 @@
       "name": "jupyter-book",
       "description": "Create beautiful, publication-quality books and documents from computational content.",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [
         {
           "system": "PYPI",
@@ -3826,6 +3907,7 @@
       "name": "jupyter_releaser",
       "description": "A set of helper scripts and GitHub Actions to aid in automated releases of Python and npm packages.",
       "is_fork": true,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3886,6 +3968,7 @@
       "name": "jupyterbook.org",
       "description": "The landing page and site for the Jupyter Book project",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -3937,6 +4020,7 @@
       "name": "jupyterlab-myst",
       "description": "Use MyST Markdown directly in Jupyter Lab",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [
         {
           "system": "PYPI",
@@ -4020,6 +4104,7 @@
       "name": "jupyterlab-myst-quickstart",
       "description": "Quickstart examples for working with MyST in Jupyter",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -4063,6 +4148,7 @@
       "name": "legacy-demo-book",
       "description": "A simple Jupyter Book",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -4111,6 +4197,7 @@
       "name": "myst-enhancement-proposals",
       "description": "MyST Enhancement Proposals (MEPs)",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -4160,6 +4247,7 @@
       "name": "myst-plugins",
       "description": "A place for community-maintained MyST plugins",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -4212,6 +4300,7 @@
       "name": "myst-theme",
       "description": "Packages for creating MyST websites themes using React and Remix",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [
         {
           "system": "NPM",
@@ -4421,6 +4510,7 @@
       "name": "mystmd",
       "description": "Command line tools for working with MyST Markdown.",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [
         {
           "system": "NPM",
@@ -4850,6 +4940,7 @@
       "name": "mystmd-quickstart",
       "description": "Repository to be used in the mystjs quickstart guide",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -4893,6 +4984,7 @@
       "name": "mystmd.org",
       "description": "The website theme and landing content for mystmd.org",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -4946,6 +5038,7 @@
       "name": "renaissance2026-myst",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -4987,6 +5080,7 @@
       "name": "team-compass",
       "description": "A team compass for the Jupyter Book sub-project",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5031,6 +5125,7 @@
       "name": "test-repo",
       "description": "A test repository for internal use in docs, testing, etc.",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5071,6 +5166,7 @@
       "name": "thebe",
       "description": "Turn static HTML pages into live documents with Jupyter kernels.",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [
         {
           "system": "NPM",
@@ -5168,6 +5264,7 @@
       "name": "thebe-binder-base",
       "description": "A minimal binder setup for thebe demos",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5208,6 +5305,7 @@
       "name": "vscode-mystmd",
       "description": "VSCode extension for MyST Markdown",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5252,6 +5350,7 @@
       "name": "workshop-template",
       "description": "Preparing for the JupyterCon 2025 Jupyter Book 2 workshop",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5299,6 +5398,7 @@
       "name": ".github",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5340,6 +5440,7 @@
       "name": "ec-team-compass",
       "description": "A repository for Executive Council discussion, syncing, and meeting notes. ",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5386,6 +5487,7 @@
       "name": "funding-proposals",
       "description": "Funding proposals for the Jupyter Foundation",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5435,6 +5537,7 @@
       "name": "jupyter-foundation-governing-board",
       "description": "Materials and minutes maintained by the Jupyter Foundation Governing Board",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5482,6 +5585,7 @@
       "name": "sparkmagic",
       "description": "Jupyter magics and kernels for working with remote Spark clusters",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [
         {
           "system": "PYPI",
@@ -5553,6 +5657,7 @@
       "name": ".github",
       "description": "Community health files for the @jupyter-server organization.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5595,6 +5700,7 @@
       "name": "contributing-hour",
       "description": "Contributing Hour Whiteboard",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5635,6 +5741,7 @@
       "name": "enterprise_gateway",
       "description": "A lightweight, multi-tenant, scalable and secure gateway that enables Jupyter Notebooks to share resources across distributed clusters such as Apache Spark, Kubernetes and others.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -5697,6 +5804,7 @@
       "name": "extension-cookiecutter",
       "description": "A Cookiecutter recipe for Jupyter Server extensions",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -5744,6 +5852,7 @@
       "name": "fps",
       "description": "Fast Pluggable System",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -5810,6 +5919,7 @@
       "name": "gateway_provisioners",
       "description": "Provides remote kernel provisioners for various resource-managed clusters.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -5879,6 +5989,7 @@
       "name": "jupyter-resource-usage",
       "description": "Jupyter Notebook Extension for monitoring your own Resource Usage",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -5957,6 +6068,7 @@
       "name": "jupyter-scheduler",
       "description": "Run Jupyter notebooks as jobs",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -6038,6 +6150,7 @@
       "name": "jupyter_releaser",
       "description": "A set of helper scripts and GitHub Actions to aid in automated releases of Python and npm packages.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -6182,6 +6295,7 @@
       "name": "jupyter_server",
       "description": "The backend—i.e. core services, APIs, and REST endpoints—to Jupyter web applications.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -6253,6 +6367,7 @@
       "name": "jupyter_server_fileid",
       "description": "An extension that maintains file IDs for documents in a running Jupyter Server",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -6319,6 +6434,7 @@
       "name": "jupyter_server_mathjax",
       "description": "Jupyter Server extension for serving Mathjax",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -6377,6 +6493,7 @@
       "name": "jupyter_server_terminals",
       "description": "A Jupyter Server Extension Providing Support for Terminals",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -6443,6 +6560,7 @@
       "name": "jupyter_ydoc",
       "description": "Jupyter document structures for collaborative editing using Yjs/pycrdt",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -6521,6 +6639,7 @@
       "name": "jupyverse",
       "description": "Modern Jupyter server based on FastAPI",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -7068,6 +7187,7 @@
       "name": "kernel_gateway",
       "description": "Jupyter Kernel Gateway",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -7136,6 +7256,7 @@
       "name": "pytest-jupyter",
       "description": "A pytest plugin for testing Jupyter core libraries and extensions.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -7201,6 +7322,7 @@
       "name": "server-side-documents",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -7247,6 +7369,7 @@
       "name": "synchronizer",
       "description": "A Jupyter Server Session Manager that rehydrates and persists.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -7312,6 +7435,7 @@
       "name": "team-compass",
       "description": "A repository for team discussion, syncing, and meeting notes.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -7357,6 +7481,7 @@
       "name": ".github",
       "description": "Public organization profile for jupyter-standards",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -7398,6 +7523,7 @@
       "name": "ipydatagrid",
       "description": "Fast Datagrid widget for the Jupyter Notebook and JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [
         {
           "system": "PYPI",
@@ -7477,6 +7603,7 @@
       "name": "ipyleaflet",
       "description": "A Jupyter - Leaflet.js bridge",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [
         {
           "system": "PYPI",
@@ -7561,6 +7688,7 @@
       "name": "ipywidgets",
       "description": "Interactive Widgets for the Jupyter Notebook",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [
         {
           "system": "PYPI",
@@ -7718,6 +7846,7 @@
       "name": "jupyterlab-sidecar",
       "description": "A sidecar output widget for JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [
         {
           "system": "PYPI",
@@ -7794,6 +7923,7 @@
       "name": "midicontrols",
       "description": "A Jupyter widget for midi controllers.",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [
         {
           "system": "NPM",
@@ -7861,6 +7991,7 @@
       "name": "pythreejs",
       "description": "A Jupyter - Three.js bridge",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [
         {
           "system": "PYPI",
@@ -7931,6 +8062,7 @@
       "name": "team-compass",
       "description": "A repository for team meetings and org-wide organization things",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -7971,6 +8103,7 @@
       "name": "traittypes",
       "description": "Traitlets types for NumPy, SciPy and friends",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [
         {
           "system": "PYPI",
@@ -8029,6 +8162,7 @@
       "name": "tutorial",
       "description": "A tutorial for widgets",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8080,6 +8214,7 @@
       "name": "tutorial-jupyterlite",
       "description": "A JupyterLite configured for the Jupyter Widgets Tutorial",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8127,6 +8262,7 @@
       "name": "widget-cookiecutter",
       "description": "A cookiecutter template for creating a custom Jupyter widget project.",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8173,6 +8309,7 @@
       "name": "widget-ts-cookiecutter",
       "description": "A highly opinionated cookiecutter template for ipywidget extensions.",
       "is_fork": false,
+      "owner": "Jupyter Widgets",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8221,6 +8358,7 @@
       "name": ".github",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8262,6 +8400,7 @@
       "name": "cpp-terminal",
       "description": "C++ library for writing multiplatform terminal applications",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8313,6 +8452,7 @@
       "name": "jupyter-xeus.github.io",
       "description": "Organization and project management for Xeus",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8355,6 +8495,7 @@
       "name": "xcanvas",
       "description": "C++ back-end for ipycanvas",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8403,6 +8544,7 @@
       "name": "xena",
       "description": "The world needs Xena, stay tuned!",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8446,6 +8588,7 @@
       "name": "xeus",
       "description": "Implementation of the Jupyter kernel protocol in C++",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8495,6 +8638,7 @@
       "name": "xeus-brainfuck",
       "description": "Jupyter kernel for the Brainfuck programming language",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8541,6 +8685,7 @@
       "name": "xeus-client-test",
       "description": "Jupyter kernels for testing clients",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8581,6 +8726,7 @@
       "name": "xeus-cling",
       "description": "Jupyter kernel for the C++ programming language",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8627,6 +8773,7 @@
       "name": "xeus-cookiecutter",
       "description": "Cookiecutter for xeus-based Jupyter kernels",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8678,6 +8825,7 @@
       "name": "xeus-haskell",
       "description": "jupyter / jupyterlite kernel for Haskell powered by WebAssembly",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8730,6 +8878,7 @@
       "name": "xeus-lite",
       "description": "Emscripten-based middleware for xeus",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8778,6 +8927,7 @@
       "name": "xeus-lua",
       "description": "Jupyter kernel for the Lua programming language",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8827,6 +8977,7 @@
       "name": "xeus-nelson",
       "description": "Jupyter kernel for Nelson",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8876,6 +9027,7 @@
       "name": "xeus-octave",
       "description": "Jupyter kernel for GNU Octave",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8928,6 +9080,7 @@
       "name": "xeus-python",
       "description": "Jupyter kernel for the Python programming language",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -8979,6 +9132,7 @@
       "name": "xeus-python-shell",
       "description": "Core Python code for xeus-python",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -9042,6 +9196,7 @@
       "name": "xeus-python-wheel",
       "description": "Building a PyPI wheel for xeus-python",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -9108,6 +9263,7 @@
       "name": "xeus-r",
       "description": "Jupyter kernel for the R programming language",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9161,6 +9317,7 @@
       "name": "xeus-sql",
       "description": "Jupyter kernel for SQL databases",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9211,6 +9368,7 @@
       "name": "xeus-sqlite",
       "description": "Jupyter kernel for SQLite",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9263,6 +9421,7 @@
       "name": "xeus-zmq",
       "description": "ZeroMQ-based middleware for xeus",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9312,6 +9471,7 @@
       "name": "xhale",
       "description": "Converter from sphinx and breathe inventory files to doxygen tag files",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9357,6 +9517,7 @@
       "name": "xleaflet",
       "description": "C++ backend for the jupyter leaflet widget",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9407,6 +9568,7 @@
       "name": "xproperty",
       "description": "Traitlets-like C++ properties and implementation of the observer pattern",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9457,6 +9619,7 @@
       "name": "xvega",
       "description": "A C++ API to Vega-Lite.",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9504,6 +9667,7 @@
       "name": "xvega-bindings",
       "description": "xvega bindings for xeus",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9551,6 +9715,7 @@
       "name": "xwidgets",
       "description": "C++ backend for Jupyter interactive widgets",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9603,6 +9768,7 @@
       "name": ".github",
       "description": null,
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9643,6 +9809,7 @@
       "name": "accessibility",
       "description": "A repository for ongoing work around making Jupyter's software accessible and inclusive",
       "is_fork": false,
+      "owner": "Jupyter Accessibility",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9697,6 +9864,7 @@
       "name": "atom-notebook",
       "description": "[Deprecated] Jupyter Notebook, but inside Atom.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9741,6 +9909,7 @@
       "name": "cdn.jupyter.org",
       "description": "Assets and layout for cdn.jupyter.org",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [
         {
@@ -9794,6 +9963,7 @@
       "name": "community-committee",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Community Building",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9847,6 +10017,7 @@
       "name": "cookiecutter-docker-stacks",
       "description": "Cookiecutter for community-maintained Jupyter Docker images",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9894,6 +10065,7 @@
       "name": "council",
       "description": "This repository provides a standardized process for community members to submit formal requests to the Executive Committee (EC) or Software Security Council (SSC).",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9936,6 +10108,7 @@
       "name": "design",
       "description": "Design related materials for Project Jupyter",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -9979,6 +10152,7 @@
       "name": "distinguished-contributors",
       "description": "Jupyter Distinguished Contributors",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10020,6 +10194,7 @@
       "name": "docker-stacks",
       "description": "Ready-to-run Docker images containing Jupyter applications",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [],
       "images": [
         {
@@ -10292,6 +10467,7 @@
       "name": "docs-team-compass",
       "description": "Documentation Work Group Discussions",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10341,6 +10517,7 @@
       "name": "echo_kernel",
       "description": "A simple example kernel for Jupyter",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -10402,6 +10579,7 @@
       "name": "enhancement-proposals",
       "description": "Enhancement proposals for the Jupyter Ecosystem",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10454,6 +10632,7 @@
       "name": "foundations-and-standards-team-compass",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10499,6 +10678,7 @@
       "name": "github-data",
       "description": "Scrapes, publishes, and shows off github issue data from around the Jupyter ecosystem.",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10551,6 +10731,7 @@
       "name": "governance",
       "description": "The governance process and model for Project Jupyter",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10601,6 +10782,7 @@
       "name": "ideas",
       "description": "A place for the Jupyter community to connect on ideas",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10641,6 +10823,7 @@
       "name": "jupyter",
       "description": "Jupyter metapackage for installation and documentation",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [
         {
           "system": "PYPI",
@@ -10705,6 +10888,7 @@
       "name": "jupyter-communitycalls",
       "description": "📣  Resources for planning and hosting the Jupyter Community Calls",
       "is_fork": false,
+      "owner": "Jupyter Community Building",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10747,6 +10931,7 @@
       "name": "jupyter-packaging",
       "description": "Tools to help build and install Jupyter Python packages",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -10819,6 +11004,7 @@
       "name": "jupyter-sphinx",
       "description": "Sphinx extension for rendering of Jupyter interactive widgets.",
       "is_fork": false,
+      "owner": "Jupyter Book",
       "packages": [
         {
           "system": "PYPI",
@@ -10887,6 +11073,7 @@
       "name": "jupyter.github.io",
       "description": "Project Jupyter's home on the World Wide Web",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -10938,6 +11125,7 @@
       "name": "jupyter_client",
       "description": "Jupyter protocol client APIs",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [
         {
           "system": "PYPI",
@@ -11005,6 +11193,7 @@
       "name": "jupyter_console",
       "description": "Jupyter Terminal Console",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -11065,6 +11254,7 @@
       "name": "jupyter_core",
       "description": "Core Jupyter functionality",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [
         {
           "system": "PYPI",
@@ -11134,6 +11324,7 @@
       "name": "jupyter_events",
       "description": "Configurable event system for Jupyter applications and extensions.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -11201,6 +11392,7 @@
       "name": "jupyter_kernel_test",
       "description": "A tool for testing Jupyter kernels",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -11266,6 +11458,7 @@
       "name": "jvm-magics",
       "description": "A plugin system for magic function implementations across JVM kernels.",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -11309,6 +11502,7 @@
       "name": "jvm-repr",
       "description": "API for converting JVM objects to representations by MIME type, for the Jupyter ecosystem.",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -11352,6 +11546,7 @@
       "name": "kernel-protocol",
       "description": "Specification of the Jupyter Kernel Protocol",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -11396,6 +11591,7 @@
       "name": "kernel_gateway_demos",
       "description": "Demos associated with the kernel gateway incubator project",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -11441,6 +11637,7 @@
       "name": "kernels-team-compass",
       "description": "The team-compass for the Jupyter Kernels Subproject",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -11486,6 +11683,7 @@
       "name": "markdown",
       "description": "Specify the Jupyter Markdown flavor.",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -11527,6 +11725,7 @@
       "name": "nbclassic",
       "description": "Jupyter Notebook as a Jupyter Server extension",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -11596,6 +11795,7 @@
       "name": "nbclient",
       "description": "A client library for executing notebooks. Formally nbconvert's ExecutePreprocessor",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [
         {
           "system": "PYPI",
@@ -11664,6 +11864,7 @@
       "name": "nbconvert",
       "description": "Jupyter Notebook Conversion",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [
         {
           "system": "PYPI",
@@ -11733,6 +11934,7 @@
       "name": "nbconvert-examples",
       "description": "Examples that illustrate how nbconvert can be used",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -11777,6 +11979,7 @@
       "name": "nbdime",
       "description": "Tools for diffing and merging of Jupyter notebooks.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -11869,6 +12072,7 @@
       "name": "nbformat",
       "description": "Reference implementation of the Jupyter Notebook format",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [
         {
           "system": "PYPI",
@@ -11945,6 +12149,7 @@
       "name": "nbgrader",
       "description": "A system for assigning and grading notebooks",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [
         {
           "system": "PYPI",
@@ -12037,6 +12242,7 @@
       "name": "nbmanager",
       "description": "View and stop running IPython notebook servers",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12080,6 +12286,7 @@
       "name": "nbviewer",
       "description": "nbconvert as a web service: Render Jupyter Notebooks as static web pages",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -12157,6 +12364,7 @@
       "name": "nbviewer.org-deploy",
       "description": "Deployment files for nbviewer.jupyter.org",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12209,6 +12417,7 @@
       "name": "notebook",
       "description": "Jupyter Interactive Notebook",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -12403,6 +12612,7 @@
       "name": "notebook_shim",
       "description": "A shim layer for notebook traits and config",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -12469,6 +12679,7 @@
       "name": "papyri",
       "description": null,
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [
         {
           "system": "PYPI",
@@ -12535,6 +12746,7 @@
       "name": "pr-triage-board-bot",
       "description": "Sync PRs to a GitHub Project Board to make triage easier",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12587,6 +12799,7 @@
       "name": "practice",
       "description": "A practice repo for submitting pull requests",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12627,6 +12840,7 @@
       "name": "roadmap",
       "description": "Master roadmap for Project Jupyter",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12668,6 +12882,7 @@
       "name": "schema",
       "description": "The canonical place for Jupyter schema descriptions",
       "is_fork": false,
+      "owner": "Jupyter Foundations and Standards",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12712,6 +12927,7 @@
       "name": "security",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Security",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12756,6 +12972,7 @@
       "name": "software-steering-council-team-compass",
       "description": "Team compass page for the Jupyter Software Steering Council",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12801,6 +13018,7 @@
       "name": "sphinxcontrib_github_alt",
       "description": "Github roles for Sphinx docs",
       "is_fork": false,
+      "owner": "Software Steering Council",
       "packages": [
         {
           "system": "PYPI",
@@ -12859,6 +13077,7 @@
       "name": "surveys",
       "description": "Surveys and datasets collected by Project Jupyter",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12911,6 +13130,7 @@
       "name": "team-compass-template",
       "description": "A template for team-compass repositories",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -12956,6 +13176,7 @@
       "name": "telemetry",
       "description": "Configurable event-logging for Jupyter applications and extensions.",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -13017,6 +13238,7 @@
       "name": "terminado",
       "description": "Terminals served by tornado websockets",
       "is_fork": false,
+      "owner": "Jupyter Server",
       "packages": [
         {
           "system": "PYPI",
@@ -13083,6 +13305,7 @@
       "name": "testpath",
       "description": "Test utilities for Python code working with files and commands",
       "is_fork": false,
+      "owner": "Jupyter Kernels",
       "packages": [
         {
           "system": "PYPI",
@@ -13141,6 +13364,7 @@
       "name": "try-jupyter",
       "description": "A JupyterLite deployment to try JupyterLab, Jupyter Notebook and IPython in the browser",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13193,6 +13417,7 @@
       "name": "try.jupyter.org",
       "description": "Try Jupyter!",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13236,6 +13461,7 @@
       "name": "2020-Cheukting",
       "description": "2020-Cheukting created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13285,6 +13511,7 @@
       "name": "2020-ClusteringAlgorithms",
       "description": "2020-fawazsiddiqi created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13334,6 +13561,7 @@
       "name": "2020-ericmjl",
       "description": "2020-ericmjl created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13378,6 +13606,7 @@
       "name": "2020-eteq",
       "description": "2020-eteq created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13426,6 +13655,7 @@
       "name": "2020-ethics-culture-opensource-tutorial",
       "description": "2020-acabunoc created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13472,6 +13702,7 @@
       "name": "2020-jedbrown",
       "description": "2020-jedbrown created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13518,6 +13749,7 @@
       "name": "2020-juanklopper",
       "description": "Keynote speaker Juan Klopper's accompanying notebook and data",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13562,6 +13794,7 @@
       "name": "2020-jupyterbook-with-turing-way",
       "description": "2020-tutorial created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13610,6 +13843,7 @@
       "name": "2020-mattharrison",
       "description": "2020-mattharrison created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13657,6 +13891,7 @@
       "name": "2020-OpenSourceCommunities",
       "description": "2020-gdequeiroz created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13704,6 +13939,7 @@
       "name": "2020-OpenSourceFunding",
       "description": "2020-npch created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13751,6 +13987,7 @@
       "name": "2020-posters-033-stix",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13792,6 +14029,7 @@
       "name": "2020-posters-047-lee",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13833,6 +14071,7 @@
       "name": "2020-posters-048-Grosch",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13874,6 +14113,7 @@
       "name": "2020-posters-057-lippert",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13915,6 +14155,7 @@
       "name": "2020-posters-103-brochart",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -13956,6 +14197,7 @@
       "name": "2020-sdruskat",
       "description": "2020-sdruskat created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14004,6 +14246,7 @@
       "name": "2020-shlomihod",
       "description": "2020-shlomihod created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14053,6 +14296,7 @@
       "name": "2020-tracks",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14094,6 +14338,7 @@
       "name": "2020-widgets-tutorial",
       "description": "2020-mwcraig created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14145,6 +14390,7 @@
       "name": "2020-willingc",
       "description": "2020-willingc created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14192,6 +14438,7 @@
       "name": "2020-zronaghi",
       "description": "2020-zronaghi created by GitHub Classroom",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14241,6 +14488,7 @@
       "name": "conf-session2020",
       "description": "A template repository for conference sessions, which are clusters of talks in a given track",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14281,6 +14529,7 @@
       "name": "jupytercon2020-developingextensions",
       "description": null,
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14331,6 +14580,7 @@
       "name": "jupytercon2020-website",
       "description": "JupyterCon Website",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14381,6 +14631,7 @@
       "name": "jupytercon2025-developingextensions",
       "description": "JupyterCon 2025 Workshop: Extension Development for Everyone! Materials and website.",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14431,6 +14682,7 @@
       "name": "jupytercon2025-developingextensions-demo",
       "description": "A demo of a JupyterLab extension for JupyterCon 2025's \"Extension Development for Everyone!\" workshop",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14488,6 +14740,7 @@
       "name": "tutorial2020",
       "description": "Template for JupyterCon2020 tutorials",
       "is_fork": false,
+      "owner": "Executive Council",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14534,6 +14787,7 @@
       "name": ".github",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14574,6 +14828,7 @@
       "name": "demos",
       "description": "demo notebooks to be run on the JupyterHealth deployment",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14625,6 +14880,7 @@
       "name": "edgemed-demo-app",
       "description": "EdgeMed patient app (Flutter) for JupyterHealth Exchange",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14669,6 +14925,7 @@
       "name": "fhir-cross-version",
       "description": "FHIR IG that contains a collection of cross-version artefacts",
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14712,6 +14969,7 @@
       "name": "helm-charts",
       "description": "Helm Charts for JupyterHealth",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14761,6 +15019,7 @@
       "name": "hub",
       "description": "Documentation for the JupyterHealth hub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14810,6 +15069,7 @@
       "name": "initiatives",
       "description": "Planning repo for JupyterHealth",
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14857,6 +15117,7 @@
       "name": "jhe-smart-demo",
       "description": "demo SMART app launch with JupyterHealth",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14903,6 +15164,7 @@
       "name": "jhe-stress",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -14947,6 +15209,7 @@
       "name": "jupyter-smart-on-fhir",
       "description": "Demo repository to demonstrate SMART on FIHR integration with Jupyter",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -15008,6 +15271,7 @@
       "name": "jupyterhealth-client",
       "description": "client library for jupyterhealth data exchange",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -15070,6 +15334,7 @@
       "name": "jupyterhealth-demo-deploy",
       "description": "Deployment configuration for JupyterHealth demo at Berkeley",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15118,6 +15383,7 @@
       "name": "jupyterhealth-exchange",
       "description": "Collect and Share Health Data over FHIR",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15174,6 +15440,7 @@
       "name": "jupyterhealth-sof-provider-template",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15224,6 +15491,7 @@
       "name": "jupyterhealth-software",
       "description": "A repository to track issues for the JupyterHealth Software Team",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15264,6 +15532,7 @@
       "name": "jupyterhealth.github.io",
       "description": "Documentation landing page for the JupyterHealth ecosystem",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15313,6 +15582,7 @@
       "name": "jupyterhealth.org",
       "description": "The brochure landing site for JupyterHealth",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15364,6 +15634,7 @@
       "name": "myst-site-article",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15411,6 +15682,7 @@
       "name": "myst-site-book",
       "description": null,
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15458,6 +15730,7 @@
       "name": "omh-shim",
       "description": "Convert wearable health data from vendor schemas to Open mHealth schemas.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -15520,6 +15793,7 @@
       "name": "partner-client-docker",
       "description": "Docker environment for testing the partner client functionality with CommonHealth Cloud Storage Service",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15563,6 +15837,7 @@
       "name": "singleuser-image",
       "description": "Build singleuser image for Jupyter Health Hub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15615,6 +15890,7 @@
       "name": "sof-cgm-demo",
       "description": "SMART on FHIR demo with cgm data",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15665,6 +15941,7 @@
       "name": "software-documentation",
       "description": "Documentation for JupyterHealth",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15715,6 +15992,7 @@
       "name": "team-compass",
       "description": "A repository for team interaction, syncing, and handling meeting notes in JupyterHealth",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15756,6 +16034,7 @@
       "name": ".github",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15798,6 +16077,7 @@
       "name": "action-get-quayio-tags",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15847,6 +16127,7 @@
       "name": "action-k3s-helm",
       "description": "A GitHub action to install K3S, Calico, and Helm.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15905,6 +16186,7 @@
       "name": "action-k8s-await-workloads",
       "description": "A Github Action to await k8s workloads to become Ready",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -15960,6 +16242,7 @@
       "name": "action-k8s-namespace-report",
       "description": "GitHub Action to report info and logs from the current namespace.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -16017,6 +16300,7 @@
       "name": "action-major-minor-tag-calculator",
       "description": "GitHub action to calculate major and minor semver tags, e.g. for tagging containers",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -16069,6 +16353,7 @@
       "name": "autodoc-traits",
       "description": "Sphinx extension to autodocument traitlets",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16130,6 +16415,7 @@
       "name": "batchspawner",
       "description": "Custom Spawner for Jupyterhub to start servers in batch scheduled systems",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16194,6 +16480,7 @@
       "name": "binder-billing",
       "description": "A repository to explore billing data for mybinder.org",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -16237,6 +16524,7 @@
       "name": "binder-data",
       "description": "A place to store data for Binder",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -16287,6 +16575,7 @@
       "name": "binderhub",
       "description": "Run your code in the cloud, with technology so advanced, it feels like magic!",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "NPM",
@@ -16402,6 +16691,7 @@
       "name": "chartpress",
       "description": "automate building and publishing images for helm charts",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16463,6 +16753,7 @@
       "name": "configurable-http-proxy",
       "description": "node-http-proxy plus a REST API",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "NPM",
@@ -16552,6 +16843,7 @@
       "name": "design",
       "description": "A collection of design material for JupyterHub and related projects",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -16596,6 +16888,7 @@
       "name": "docker-image-cleaner",
       "description": "Python script to cleanup unused docker images",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16675,6 +16968,7 @@
       "name": "dockerspawner",
       "description": "Spawns JupyterHub single user servers in Docker containers ",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16737,6 +17031,7 @@
       "name": "escapism",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16797,6 +17092,7 @@
       "name": "firstuseauthenticator",
       "description": "JupyterHub Authenticator that lets users set passwords when they first log in",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16861,6 +17157,7 @@
       "name": "gh-scoped-creds",
       "description": "Provide fine-grained push access to GitHub from a JupyterHub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -16923,6 +17220,7 @@
       "name": "grafana-dashboards",
       "description": "Grafana Dashboards useful for k8s + JupyterHub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -16971,6 +17269,7 @@
       "name": "helm-chart",
       "description": "A store of Helm chart tarballs for deploying JupyterHub and BinderHub on a Kubernetes cluster",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17012,6 +17311,7 @@
       "name": "jupyter-remote-desktop-proxy",
       "description": " Run a Linux Desktop on a JupyterHub ",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17091,6 +17391,7 @@
       "name": "jupyter-rsession-proxy",
       "description": "Jupyter extensions for running an RStudio rsession proxy",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17154,6 +17455,7 @@
       "name": "jupyter-server-proxy",
       "description": "Jupyter notebook server extension to proxy web services.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17240,6 +17542,7 @@
       "name": "jupyterhub",
       "description": "Multi-user server for Jupyter notebooks",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17336,6 +17639,7 @@
       "name": "jupyterhub-container-images",
       "description": "Container images for JupyterHub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17392,6 +17696,7 @@
       "name": "jupyterhub-deploy-docker",
       "description": "Reference deployment of JupyterHub with docker",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17440,6 +17745,7 @@
       "name": "jupyterhub-deploy-hpc",
       "description": "Documented examples of Jupyterhub deployment in HPC settings",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17483,6 +17789,7 @@
       "name": "jupyterhub-deploy-teaching",
       "description": "Reference deployment of JupyterHub and nbgrader on a single server",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17527,6 +17834,7 @@
       "name": "jupyterhub-idle-culler",
       "description": "JupyterHub service to cull idle servers and users",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17588,6 +17896,7 @@
       "name": "jupyterhub-on-hadoop",
       "description": "Documentation and resources for deploying JupyterHub on Hadoop",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17633,6 +17942,7 @@
       "name": "jupyterhub-python-repo-template",
       "description": "A template for generating Python repositories in the `jupyterhub` organization",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17682,6 +17992,7 @@
       "name": "jupyterhub-sphinx-theme",
       "description": "A lightweight wrapper theme for Sphinx based on the PyData Sphinx Theme",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17745,6 +18056,7 @@
       "name": "jupyterhub-the-hard-way",
       "description": "Understanding JupyterHub by deploying it step by step",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17792,6 +18104,7 @@
       "name": "jupyterhub.github.io",
       "description": "A landing page and overview for the JupyterHub project and team",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -17842,6 +18155,7 @@
       "name": "kerberosauthenticator",
       "description": "A JupyterHub authenticator using Kerberos",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17903,6 +18217,7 @@
       "name": "kubespawner",
       "description": "Kubernetes spawner for JupyterHub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -17968,6 +18283,7 @@
       "name": "ldapauthenticator",
       "description": "LDAP Authenticator Plugin for Jupyter",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18031,6 +18347,7 @@
       "name": "ltiauthenticator",
       "description": "A JupyterHub authenticator for LTI",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18094,6 +18411,7 @@
       "name": "mybinder-tools",
       "description": "Some tools for munging and utilizing kubectl",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -18136,6 +18454,7 @@
       "name": "mybinder.org-deploy",
       "description": "Deployment config files for mybinder.org",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [
         {
@@ -18247,6 +18566,7 @@
       "name": "mybinder.org-user-guide",
       "description": "Turn a Git repo into a collection of interactive notebooks. This is Binder's user documentation repository.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -18292,6 +18612,7 @@
       "name": "nativeauthenticator",
       "description": "JupyterHub-native User Authenticator",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18355,6 +18676,7 @@
       "name": "nbgitpuller",
       "description": "Jupyter server extension to sync a git repository one-way to a local path",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18418,6 +18740,7 @@
       "name": "nbgitpuller-downloader-dropbox",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18473,6 +18796,7 @@
       "name": "nbgitpuller-downloader-generic-web",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18528,6 +18852,7 @@
       "name": "nbgitpuller-downloader-googledrive",
       "description": null,
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18583,6 +18908,7 @@
       "name": "nbgitpuller-downloader-plugins",
       "description": "jupyterhub/nbgitpuller allows for content provider plugins, this python package provides downloader plugins",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -18626,6 +18952,7 @@
       "name": "oauthenticator",
       "description": "OAuth + JupyterHub Authenticator = OAuthenticator",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18690,6 +19017,7 @@
       "name": "pamela",
       "description": "Python PAM interface",
       "is_fork": true,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -18739,6 +19067,7 @@
       "name": "pebble-helm-chart",
       "description": "To deploy a server to replace Let's Encrypt in externally unreachable CI environment for testing purposes.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -18790,6 +19119,7 @@
       "name": "pytest-jupyterhub",
       "description": "Reusable pytest plugin for testing JupyterHub's components",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18852,6 +19182,7 @@
       "name": "repo2docker",
       "description": "Turn repositories into Jupyter-enabled Docker images",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -18932,6 +19263,7 @@
       "name": "repo2docker-action",
       "description": "A GitHub action to build data science environment images with repo2docker and push them to registries.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -18982,6 +19314,7 @@
       "name": "roadmap",
       "description": "Repository to track JupyterHub roadmap initiatives",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19024,6 +19357,7 @@
       "name": "simpervisor",
       "description": "Simple Python3 Supervisor library",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -19087,6 +19421,7 @@
       "name": "sudospawner",
       "description": "Spawn JupyterHub single-user servers with sudo",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -19149,6 +19484,7 @@
       "name": "systemdspawner",
       "description": "Spawn JupyterHub single-user notebook servers with systemd",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -19210,6 +19546,7 @@
       "name": "team-compass",
       "description": "A repository for team interaction, syncing, and handling meeting notes across the JupyterHub ecosystem.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19261,6 +19598,7 @@
       "name": "the-littlest-jupyterhub",
       "description": "Simple JupyterHub distribution for 1-100 users on a single server",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19309,6 +19647,7 @@
       "name": "tmpauthenticator",
       "description": "JupyterHub authenticator that hands out temporary accounts for everyone.",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -19370,6 +19709,7 @@
       "name": "traefik-proxy",
       "description": "JupyterHub proxy implementation with traefik",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -19436,6 +19776,7 @@
       "name": "wrapspawner",
       "description": "Mechanism for runtime configuration of spawners for JupyterHub",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [
         {
           "system": "PYPI",
@@ -19498,6 +19839,7 @@
       "name": "zero-to-jupyterhub-k8s",
       "description": "Helm Chart & Documentation for deploying JupyterHub on Kubernetes",
       "is_fork": false,
+      "owner": "JupyterHub and Binder",
       "packages": [],
       "images": [
         {
@@ -19681,6 +20023,7 @@
       "name": ".github",
       "description": "Community health files for the @JupyterLab organization",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19728,6 +20071,7 @@
       "name": "assets",
       "description": "Static assets for JupyterLab extensions",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19770,6 +20114,7 @@
       "name": "benchmarks",
       "description": "Benchmarking tools for JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19822,6 +20167,7 @@
       "name": "eslint-plugin",
       "description": "ESLint plugin for Jupyter core and extensions with early error catching and best practices enforcement",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -19890,6 +20236,7 @@
       "name": "extension-cookiecutter-js",
       "description": "A cookiecutter recipe for building JupyterLab extensions.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19938,6 +20285,7 @@
       "name": "extension-cookiecutter-ts",
       "description": "A cookiecutter recipe for JupyterLab extensions in Typescript",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -19986,6 +20334,7 @@
       "name": "extension-examples",
       "description": "JupyterLab Extensions by Examples",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20046,6 +20395,7 @@
       "name": "extension-template",
       "description": "A `copier` template for JupyterLab extensions",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -20097,6 +20447,7 @@
       "name": "frontends-team-compass",
       "description": "A repository for team interaction, syncing, and handling meeting notes across the JupyterLab ecosystem.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -20142,6 +20493,7 @@
       "name": "hatch-jupyter-builder",
       "description": "A hatch plugin to help build Jupyter packages",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20212,6 +20564,7 @@
       "name": "hatch-nodejs-version",
       "description": "Hatch plugin to read pyproject.toml metadata from package.json",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20312,6 +20665,7 @@
       "name": "jupyter-ai",
       "description": "An open source extension that connects AI agents to computational notebooks in JupyterLab.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20391,6 +20745,7 @@
       "name": "jupyter-ai-lite",
       "description": "Browser-based AI code completions and chat for JupyterLab, Notebook 7 and JupyterLite ✨",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20501,6 +20856,7 @@
       "name": "jupyter-builder",
       "description": "Build tools for JupyterLab (and remixes)",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20593,6 +20949,7 @@
       "name": "jupyter-chat",
       "description": "An extension to add a chat panel to JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20694,6 +21051,7 @@
       "name": "jupyter-collaboration",
       "description": "A Jupyter Server Extension Providing Support for Y Documents",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -20850,6 +21208,7 @@
       "name": "jupyter-renderers",
       "description": "Renderers and renderer extensions for JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -21009,6 +21368,7 @@
       "name": "jupytercon-jupyterlab-training",
       "description": "JupyterCon 2018 JupyterLab Training",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -21049,6 +21409,7 @@
       "name": "jupytercon-jupyterlab-tutorial",
       "description": "JupyterCon 2018 JupyterLab tutorial ",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -21096,6 +21457,7 @@
       "name": "jupyterlab",
       "description": "JupyterLab computational environment.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -22273,6 +22635,7 @@
       "name": "jupyterlab-commenting",
       "description": "Commenting and annotation for JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -22343,6 +22706,7 @@
       "name": "jupyterlab-demo",
       "description": "Demonstrations of JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -22395,6 +22759,7 @@
       "name": "jupyterlab-desktop",
       "description": "JupyterLab desktop application, based on Electron.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -22457,6 +22822,7 @@
       "name": "jupyterlab-git",
       "description": "A Git extension for JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -22550,6 +22916,7 @@
       "name": "jupyterlab-github",
       "description": "GitHub integration for JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -22627,6 +22994,7 @@
       "name": "jupyterlab-hdf5",
       "description": "Open and explore HDF5 files in JupyterLab. Can handle very large (TB) sized files, and datasets of any dimensionality",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -22700,6 +23068,7 @@
       "name": "jupyterlab-latex",
       "description": "JupyterLab extension for live editing of LaTeX documents",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -22778,6 +23147,7 @@
       "name": "jupyterlab-probot",
       "description": "A probot for JupyterLab development",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -22824,6 +23194,7 @@
       "name": "jupyterlab-translate",
       "description": "JupyterLab Language pack helper",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -22884,6 +23255,7 @@
       "name": "jupyterlab_apod",
       "description": "JupyterLab extension tutorial answer key. Please see the tutorial at https://jupyterlab.readthedocs.io/en/stable/extension/extension_tutorial.html",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -22952,6 +23324,7 @@
       "name": "jupyterlab_pygments",
       "description": "Pygments theme making use of JupyterLab CSS variables",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -23034,6 +23407,7 @@
       "name": "jupyterlab_server",
       "description": "A set of server components for JupyterLab and JupyterLab like applications",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -23103,6 +23477,7 @@
       "name": "language-pack-cookiecutter",
       "description": "Template for Jupyterlab Language packs",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -23147,6 +23522,7 @@
       "name": "language-packs",
       "description": "Language packs for JupyterLab ecosystem",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -23532,6 +23908,7 @@
       "name": "lumino",
       "description": "Lumino is a library for building interactive web applications ",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -23772,6 +24149,7 @@
       "name": "maintainer-tools",
       "description": "Workflows and Actions meant to be used by other repositories to make repo maintenance easier",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -23908,6 +24286,7 @@
       "name": "plugin-playground",
       "description": "A dynamic extension loader for JupyterLab",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -23986,6 +24365,7 @@
       "name": "pull-requests",
       "description": "A JupyterLab extension for reviewing GitHub pull requests",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -24045,6 +24425,7 @@
       "name": "pytest-check-links",
       "description": "pytest plugin that checks URLs",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -24112,6 +24493,7 @@
       "name": "richoutput-js",
       "description": "Experimental investigation into a rendermime for es6 modules rendering rich output",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24160,6 +24542,7 @@
       "name": "scipy2018-jupyterlab-tutorial",
       "description": "Tutorial material and instruction for scipy 2018 jupyterlab tutorial",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24207,6 +24590,7 @@
       "name": "scipy2019-jupyterlab-tutorial",
       "description": "Scipy 2019 JupyterLab tutorial",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24254,6 +24638,7 @@
       "name": "triage-automation",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24295,6 +24680,7 @@
       "name": "ui-profiler",
       "description": "Extension for profiling performance of JupyterLab UI for JupyterLab core developers, extension developers, and advanced users.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -24375,6 +24761,7 @@
       "name": "ux-research",
       "description": null,
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24417,6 +24804,7 @@
       "name": "vscode-config-template",
       "description": "A copier template for creating the IDE config needed to debug the Python and Typescript code in any Jupyter project",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24464,6 +24852,7 @@
       "name": ".github",
       "description": "Community health files for the @jupyterlite organization ",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24505,6 +24894,7 @@
       "name": "cockle",
       "description": "In-browser bash-like shell implemented in TypeScript.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -24573,6 +24963,7 @@
       "name": "demo",
       "description": "JupyterLite demo deployed to GitHub Pages 🚀",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -24623,6 +25014,7 @@
       "name": "echo-kernel",
       "description": "An echo kernel for JupyterLite",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "NPM",
@@ -24700,6 +25092,7 @@
       "name": "javascript-kernel",
       "description": "A simple JavaScript kernel for JupyterLite, running in a Web Worker",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -24789,6 +25182,7 @@
       "name": "jupyterlab-webrtc-docprovider",
       "description": "Document collaboration for JupyterLab and JupyterLite, powered by y-webrtc",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -24862,6 +25256,7 @@
       "name": "jupyterlite",
       "description": "Wasm powered Jupyter running in the browser 💡",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25104,6 +25499,7 @@
       "name": "jupyterlite-lsp",
       "description": "A jupyter_lsp shim for JupyterLite",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -25151,6 +25547,7 @@
       "name": "jupyterlite-sphinx",
       "description": "A Sphinx extension that integrates JupyterLite within your Sphinx documentation",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25220,6 +25617,7 @@
       "name": "litegitpuller",
       "description": "nbgitpuller in JupyterLite",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25299,6 +25697,7 @@
       "name": "p5-kernel",
       "description": "A p5.js kernel running in the browser",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25389,6 +25788,7 @@
       "name": "pyodide-kernel",
       "description": "Python kernel for JupyterLite powered by Pyodide",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25478,6 +25878,7 @@
       "name": "repo2jupyterlite",
       "description": "Build jupyterlite apps out of repositories",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25535,6 +25936,7 @@
       "name": "sphinx-demo",
       "description": "A Sphinx demo website using jupyterlite-sphinx deployed to GitHub Pages 🚀",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -25587,6 +25989,7 @@
       "name": "terminal",
       "description": "A terminal for JupyterLite.",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25668,6 +26071,7 @@
       "name": "wasm_lua",
       "description": "Lua VM running in a WASM environment",
       "is_fork": true,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -25712,6 +26116,7 @@
       "name": "xeus",
       "description": "JupyterLite loader for Xeus kernels",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [
         {
           "system": "PYPI",
@@ -25811,6 +26216,7 @@
       "name": "xeus-lite-demo",
       "description": "JupyterLite template repository with xeus kernels and pre-installed packages",
       "is_fork": false,
+      "owner": "Jupyter Frontends",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -25860,6 +26266,7 @@
       "name": ".github",
       "description": "Community health files for the @voila-dashboards organization ",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -25901,6 +26308,7 @@
       "name": "hotpot_km",
       "description": "A library for a pooling hotloaded Jupyter kernels",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [
         {
           "system": "PYPI",
@@ -25959,6 +26367,7 @@
       "name": "tljh-voila-gallery",
       "description": "Configuration for deploying the Voilà Gallery with The Littlest JupyterHub",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26007,6 +26416,7 @@
       "name": "voici",
       "description": "Voici turns any Jupyter Notebook into a static web application",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [
         {
           "system": "PYPI",
@@ -26090,6 +26500,7 @@
       "name": "voici-demo",
       "description": "Voici deployment template ",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26139,6 +26550,7 @@
       "name": "voici-gallery",
       "description": "A gallery of Voici examples",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26189,6 +26601,7 @@
       "name": "voila",
       "description": "Voilà turns Jupyter notebooks into standalone web applications",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [
         {
           "system": "PYPI",
@@ -26304,6 +26717,7 @@
       "name": "voila-dashboards.github.io",
       "description": "Organization and project management for Voilà",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26347,6 +26761,7 @@
       "name": "voila-debug",
       "description": "Voilà template to show debug information",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26393,6 +26808,7 @@
       "name": "voila-gridstack",
       "description": "Dashboard template for Voilà based on GridStackJS",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [
         {
           "system": "PYPI",
@@ -26475,6 +26891,7 @@
       "name": "voila-heroku",
       "description": "Voilà application deployed on Heroku",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26517,6 +26934,7 @@
       "name": "voila-huggingface",
       "description": "Voila deployed on Hugging Face Spaces 🤗",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26566,6 +26984,7 @@
       "name": "voila-material",
       "description": "Material design template for Voilà",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [
         {
           "system": "PYPI",
@@ -26624,6 +27043,7 @@
       "name": "voila-railway",
       "description": "Voila deployed on Railway",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26666,6 +27086,7 @@
       "name": "voila-template-cookiecutter",
       "description": "Cookiecutter for creating new Voilà templates",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26710,6 +27131,7 @@
       "name": "voila-topbar",
       "description": "A Voila top bar extension.",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [
         {
           "system": "PYPI",
@@ -26786,6 +27208,7 @@
       "name": "voila-vuetify",
       "description": "Dashboard template for Voilà based on VuetifyJS",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [
         {
           "system": "PYPI",
@@ -26843,6 +27266,7 @@
       "name": "cpp-xleaflet",
       "description": "Interactive C++ Jupyter dashboards with Voilà",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26887,6 +27311,7 @@
       "name": "electricitymap_dashboard",
       "description": null,
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26932,6 +27357,7 @@
       "name": "gaussian-density",
       "description": "Using Voilà with bqplot to visualize the Gaussian density",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -26975,6 +27401,7 @@
       "name": "hello-world-example",
       "description": "A Hello World template application to get started with Voilà",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -27018,6 +27445,7 @@
       "name": "ipympl",
       "description": "Interactive matplotlib in a Voila dashboard",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -27062,6 +27490,7 @@
       "name": "render-stl",
       "description": "Using Voilà with ipyvolume to render STL files",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -27106,6 +27535,7 @@
       "name": "voila-gallery.github.io",
       "description": "Public facing deployment for voila-gallery.org",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
@@ -27154,6 +27584,7 @@
       "name": "voila-spotify",
       "description": "Visualize your Spotify data in a Voila application",
       "is_fork": false,
+      "owner": "Voila",
       "packages": [],
       "images": [],
       "top_image": null,
