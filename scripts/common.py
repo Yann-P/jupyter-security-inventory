@@ -85,7 +85,8 @@ class Retry(urllib3.Retry):
     def get_retry_after(self, response):
         waits = [super().get_retry_after(response) or 0]
         reset = response.headers.get("X-RateLimit-Reset", "")
-        if reset.strip().isdigit():
+        # Only a refusal waits for the reset: pypistats.org sends the header on every answer, its errors too.
+        if response.status == 429 and reset.strip().isdigit():
             seconds = float(reset)
             waits.append(seconds - time.time() if seconds > 1e9 else seconds)
         return min(max(waits), self.retry_after_max) or None  # None: no wait asked, so urllib3 backs off on its own
@@ -93,11 +94,11 @@ class Retry(urllib3.Retry):
     def increment(self, method=None, url=None, response=None, error=None, _pool=None, _stacktrace=None):
         # Counted as each retry happens, not when the request ends, so a stalled run still shows what it waits for.
         host = _pool.host if _pool else "?"
+        retry = super().increment(method, url, response, error, _pool, _stacktrace)  # raises when none are left
         if error is not None or response.status in self.status_forcelist:  # not a redirect
             reason = type(error).__name__ if error is not None else f"HTTP {response.status}"
             with RETRIES_LOCK:
                 RETRIES[f"{host} {reason}"] += 1
-        retry = super().increment(method, url, response, error, _pool, _stacktrace)
         retry.host = host
         return retry
 
