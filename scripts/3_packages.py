@@ -17,7 +17,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import PurePosixPath
 
-from common import OUTPUT, Progress, fetch_json, github_repos_in, load_json, pep503, quote, save_json
+from common import OUTPUT, RETRIES, Progress, fetch_json, github_repos_in, load_json, pep503, quote, save_json
 
 
 def registry_entry(system: str, name: str) -> dict | None:
@@ -32,7 +32,7 @@ def registry_entry(system: str, name: str) -> dict | None:
         people = [info.get(key) or "" for key in ("author", "author_email", "maintainer", "maintainer_email")]
         name = info["name"]
     else:
-        body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.5)  # 8 threads: ~16 requests/s
+        body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest")
         if not isinstance(body, dict) or "version" not in body:
             return None
         repository = body.get("repository")
@@ -120,7 +120,7 @@ def publishing(system: str, name: str) -> dict:
             "attested": bool(files) and all(fetch_json(f"{base}/{quote(file)}/provenance") for file in files),
             "requires_python": body["info"].get("requires_python") or None,
         }
-    body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.5)
+    body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest")
     return {"trusted_publishing": bool((body.get("_npmUser") or {}).get("trustedPublisher"))}
 
 
@@ -214,6 +214,7 @@ def main():
     save_json(OUTPUT / "packages.json", {"accepted": packages, "rejected": rejected})
     n_repos = len({p["repo"] for p in packages})
     print(f"{len(packages)} packages from {n_repos} repos; {len(rejected)} candidates rejected")
+    print("retries:", ", ".join(f"{key}: {count}" for key, count in sorted(RETRIES.items())) or "none")
 
 
 if __name__ == "__main__":

@@ -9,6 +9,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -16,6 +17,9 @@ OUTPUT = ROOT / "output"  # every file the scripts write
 CACHE = ROOT / ".cache" / "http"
 CACHE_HOURS = 24  # cached answers older than this are downloaded again, so counts stay current
 RETRY_ON = {429, 500, 502, 503, 504}  # HTTP errors that are worth retrying: rate limits, server hiccups
+# {"host reason": count} of the retries so far, so a step can show whether a site pushed back (retries are slow).
+RETRIES = Counter()
+RETRIES_LOCK = threading.Lock()
 
 
 class Progress:
@@ -80,9 +84,13 @@ def download_json(url: str, delay: float):
                 return None
             if error.code not in RETRY_ON or last_attempt:
                 raise
+            reason = f"HTTP {error.code}"
         except urllib.error.URLError:
             if last_attempt:
                 raise
+            reason = "network error"
+        with RETRIES_LOCK:
+            RETRIES[f"{urllib.parse.urlsplit(url).hostname} {reason}"] += 1
         time.sleep(2**attempt)
 
 
