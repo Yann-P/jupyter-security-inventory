@@ -174,4 +174,4 @@ def test_a_topic_is_finished_only_when_every_applicable_repo_is_done():
     assert insights.progress(Counter({"done": 3, "n/a": 5})) == 100
     assert insights.progress(Counter({"n/a": 5})) is None
     assert "topic-finished" in insights.progress_cell(Counter({"done": 3}))
-    assert "topic-bar" in insights.progress_cell(Counter({"done": 199, "partial": 1}))
+    assert "topic-finished" not in insights.progress_cell(Counter({"done": 199, "partial": 1}))

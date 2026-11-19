@@ -467,21 +467,20 @@ def progress(counts: Counter) -> int | None:
 
 
 def progress_cell(counts: Counter) -> str:
-    """A check mark for a finished topic, else a bar of the done and partial repos.
+    """A bar of the done and partial repos, then the percentage done, or a check mark for a finished topic.
 
     Raw HTML, since MyST drops a style attribute. The percentage stays in the text, which DataTables sorts by.
     """
     percent = progress(counts)
     if percent is None:
         return ""
-    if percent == 100:
-        return '<span class="topic-finished" title="Finished">100%</span>'
     applicable = counts["done"] + counts["partial"] + counts["missing"]
     partial = counts["partial"] * 100 / applicable
     title = f"{counts['done']} done, {counts['partial']} partial, {counts['missing']} missing"
+    label = '<span class="topic-finished">100%</span>' if percent == 100 else f"{percent}%"
     return (
         f'<span class="topic-progress" style="--done: {percent}%; --partial: {partial:.1f}%" title="{title}">'
-        f'<span class="topic-bar"></span>{percent}%</span>'
+        f'<span class="topic-bar"></span>{label}</span>'
     )
 
 
