@@ -76,3 +76,14 @@ a.download code { font: inherit; background: none; border: 0; padding: 0; color:
    and dates to the right and moves their arrows to the left, which makes a row of headers look ragged. */
 .bd-article table.dataTable :is(th, td):is(.dt-type-numeric, .dt-type-date) { text-align: left; }
 .bd-article table.dataTable th:is(.dt-type-numeric, .dt-type-date) div.dt-column-header { flex-direction: row; }
+
+/* The theme's h2 and h3 differ by a few pixels, so a subsection like "Software" passed for a section. A rule under
+   each section heading and smaller subsection headings make the levels plain. */
+.bd-article h2 { padding-bottom: 0.3em; border-bottom: 1px solid var(--pst-color-border); }
+.bd-article h3 { font-size: 1.3rem; margin-top: 1.75rem; }
+
+/* The theme fills the heading a link jumps to with a yellow block, loud in the dark theme. The counts' links all
+   land on a heading, so no fill: the jump already shows where they lead. */
+.bd-main .bd-content .bd-article-container .bd-article :target > :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5) {
+  background-color: transparent;  /* the theme's selector, so this one wins */
+}
