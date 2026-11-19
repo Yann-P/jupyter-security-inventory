@@ -109,7 +109,7 @@ Read the Docs builds the site the same way, with `.readthedocs.yaml`.
 ## Daily updates
 
 A GitHub Actions workflow (`update.yml`) reruns the whole pipeline every morning, commits what changed in
-`output/` and republishes the site. It needs a `DEEPSEEK_API_KEY` repository secret.
+`output/`, and Read the Docs rebuilds the site. It needs a `DEEPSEEK_API_KEY` repository secret.
 
 Step 5 only labels repositories it hasn't labeled yet with the current model, so a daily run costs almost
 nothing. To relabel everything, switch to another model or delete `output/classification.json`.
@@ -119,9 +119,9 @@ nothing. To relabel everything, switch to another model or delete `output/classi
 Change the scripts, never `output/` by hand. Rerun the pipeline from the step you changed, run `pytest`,
 and commit the new outputs with your change. CI runs the tests and checks that the outputs of steps 6 to 8 are up to date.
 
-The daily update and the site build install `requirements.txt` and `requirements-docs.txt`, which pin every
-dependency, including indirect ones, to an exact version. After changing the dependencies in `pyproject.toml`,
-regenerate them with the command on the second line of each file, and `pixi.lock` with `pixi lock`.
+The daily update installs `requirements.txt`, which pins every dependency, including indirect ones, to an exact
+version. Read the Docs installs `pixi.lock`. After changing the dependencies in `pyproject.toml`, regenerate
+`requirements.txt` with the command on its second line, and `pixi.lock` with `pixi lock`.
 
 ## License
 
