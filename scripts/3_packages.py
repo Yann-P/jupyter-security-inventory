@@ -85,6 +85,19 @@ def downloads(system: str, name: str) -> int | None:
     return body["downloads"] if body else None
 
 
+def npm_bulk_downloads(names: list[str]) -> dict[str, int | None]:
+    """Last month's downloads of unscoped npm packages, up to 128 per request. npm takes no scoped names in bulk."""
+    counts = {}
+    for start in range(0, len(names), 128):
+        batch = names[start : start + 128]
+        url = "https://api.npmjs.org/downloads/point/last-month/" + ",".join(quote(name) for name in batch)
+        body = fetch_json(url, delay=1) or {}
+        if len(batch) == 1:  # for one name, npm answers with that package's counts, not a mapping
+            body = {batch[0]: body}
+        counts |= {name: (body.get(name) or {}).get("downloads") for name in batch}  # null: no such package
+    return counts
+
+
 def deps_dev(system: str, name: str) -> dict:
     """What deps.dev knows about a package: how many packages depend on it, when it was last published, and when its
     default version (the one installed when no version is asked for) was published.
@@ -201,10 +214,13 @@ def main():
 
     def count_downloads(system):
         since = time.perf_counter()
-        for package in packages:
-            if package["system"] == system:
-                package["downloads_last_month"] = downloads(system, package["name"])
-                counted.tick()
+        mine = [package for package in packages if package["system"] == system]
+        unscoped = [package["name"] for package in mine if system == "NPM" and not package["name"].startswith("@")]
+        bulk = npm_bulk_downloads(unscoped)
+        for package in mine:
+            name = package["name"]
+            package["downloads_last_month"] = bulk[name] if name in bulk else downloads(system, name)
+            counted.tick()
         return time.perf_counter() - since
 
     # pypistats.org and api.npmjs.org limit how often we may call them: one request at a time to each, both at once.
