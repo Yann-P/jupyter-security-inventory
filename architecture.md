@@ -7,7 +7,7 @@ GitHub, PyPI, npm, pypistats.org, deps.dev, Docker Hub, Quay, an LLM
         │
         ▼
 scripts/1..8  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.py  ──►  Sphinx site
- (pipeline)        (committed to git)                (writes the pages)      (GitHub Pages)
+ (pipeline)        (committed to git)                (writes the pages)      (Read the Docs)
 ```
 
 ## Rules
@@ -139,8 +139,8 @@ so it is shown as text and never becomes HTML, a link or a substitution.
 | Workflow | When | What |
 |---|---|---|
 | `ci.yml` | each push to `main` and each pull request | Formatting (pre-commit, ruff), the tests, and a check that the outputs of steps 6 to 8 match the code. Steps 1 to 5 need the network or an LLM, so they are not rerun. |
-| `docs.yml` | each push to `main` and each pull request; on `main` it also publishes | Builds the site with warnings as errors. |
-| `update.yml` | every day | Runs steps 1 to 8, commits `output/`, then calls `docs.yml`. |
+| `docs.yml` | each push to `main` and each pull request | Builds the site with warnings as errors. Read the Docs publishes it. |
+| `update.yml` | every day | Runs steps 1 to 8 and commits `output/`. Read the Docs rebuilds the site on the push. |
 
 Actions are pinned to commit SHAs.
 

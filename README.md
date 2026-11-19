@@ -109,7 +109,7 @@ Read the Docs builds the site the same way, with `.readthedocs.yaml`.
 ## Daily updates
 
 A GitHub Actions workflow (`update.yml`) reruns the whole pipeline every morning, commits what changed in
-`output/` and republishes the site. It needs a `DEEPSEEK_API_KEY` repository secret.
+`output/`, and Read the Docs rebuilds the site. It needs a `DEEPSEEK_API_KEY` repository secret.
 
 Step 5 only labels repositories it hasn't labeled yet with the current model, so a daily run costs almost
 nothing. To relabel everything, switch to another model or delete `output/classification.json`.
