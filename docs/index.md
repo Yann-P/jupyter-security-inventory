@@ -2,7 +2,7 @@
 html_theme.sidebar_secondary.remove: true
 ---
 
-# All organizations
+# Overview
 
 ```{include} _generated/home.md
 ```
