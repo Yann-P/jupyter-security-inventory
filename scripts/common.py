@@ -3,6 +3,8 @@
 import hashlib
 import json
 import re
+import sys
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -14,6 +16,31 @@ OUTPUT = ROOT / "output"  # every file the scripts write
 CACHE = ROOT / ".cache" / "http"
 CACHE_HOURS = 24  # cached answers older than this are downloaded again, so counts stay current
 RETRY_ON = {429, 500, 502, 503, 504}  # HTTP errors that are worth retrying: rate limits, server hiccups
+
+
+class Progress:
+    """Shows "what: done/total" on one line while a script runs in a terminal. Silent in CI logs."""
+
+    def __init__(self, what: str, total: int):
+        self.what, self.total, self.done = what, total, 0
+        self.lock = threading.Lock()  # ticked from several threads
+
+    def tick(self):
+        with self.lock:
+            self.done += 1
+            if sys.stderr.isatty():
+                end = "\n" if self.done == self.total else ""
+                print(f"\r{self.what}: {self.done}/{self.total}", end=end, file=sys.stderr, flush=True)
+
+    def wrap(self, function):
+        """`function`, ticking after each call."""
+
+        def run(*args):
+            result = function(*args)
+            self.tick()
+            return result
+
+        return run
 
 
 def load_json(path):

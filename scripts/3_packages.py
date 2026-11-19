@@ -17,7 +17,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import PurePosixPath
 
-from common import OUTPUT, fetch_json, github_repos_in, load_json, pep503, quote, save_json
+from common import OUTPUT, Progress, fetch_json, github_repos_in, load_json, pep503, quote, save_json
 
 
 def registry_entry(system: str, name: str) -> dict | None:
@@ -181,28 +181,33 @@ def main():
 
     candidates = find_candidates(repos, scan)
     names = sorted({(system, name) for system, name, _ in candidates})
+    lookup = Progress("registry lookups", len(names)).wrap(lambda key: registry_entry(*key))
     with ThreadPoolExecutor(8) as pool:
-        entries = dict(zip(names, pool.map(lambda key: registry_entry(*key), names)))
+        entries = dict(zip(names, pool.map(lookup, names)))
     packages, rejected = pick_publishers(candidates, entries, repos, set(inventory["orgs"]))
     start = took(f"{len(names)} registry lookups", start)
 
+    describe = Progress("deps.dev and publishing", len(packages)).wrap(
+        lambda p: deps_dev(p["system"], p["name"]) | publishing(p["system"], p["name"])
+    )
     with ThreadPoolExecutor(8) as pool:
-        known = list(
-            pool.map(lambda p: deps_dev(p["system"], p["name"]) | publishing(p["system"], p["name"]), packages)
-        )
+        known = list(pool.map(describe, packages))
     start = took(f"deps.dev and publishing of {len(packages)} packages", start)
+
+    counted = Progress("downloads", len(packages))
 
     def count_downloads(system):
         since = time.perf_counter()
         for package in packages:
             if package["system"] == system:
                 package["downloads_last_month"] = downloads(system, package["name"])
-        took(f"{system} downloads", since)
+                counted.tick()
+        return time.perf_counter() - since
 
     # pypistats.org and api.npmjs.org limit how often we may call them: one request at a time to each, both at once.
     with ThreadPoolExecutor(2) as pool:
-        list(pool.map(count_downloads, ("PYPI", "NPM")))  # list() raises any error from the threads
-    took("downloads", start)
+        pypi, npm = pool.map(count_downloads, ("PYPI", "NPM"))  # unpacking raises any error from the threads
+    took(f"downloads (PyPI {pypi:.0f} s, npm {npm:.0f} s)", start)
     for package, deps in zip(packages, known):
         package.update(deps)
 
