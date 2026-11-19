@@ -1,9 +1,8 @@
 """Tests for scripts/common.py."""
 
-import email.message
-import io
+import http.server
+import threading
 import time
-import urllib.error
 
 import common
 from common import github_repos_in, pep503
@@ -19,34 +18,34 @@ def test_github_repos_in_finds_https_and_ssh_links():
     assert github_repos_in(text) == {"jupyter/notebook", "ipython/ipython"}
 
 
-def test_download_json_retries_rate_limits_when_asked_and_counts_them(monkeypatch):
-    headers = email.message.Message()
-    headers["Retry-After"] = "3"
-    answers = [
-        urllib.error.HTTPError("https://example.org/x", 429, "Too Many Requests", headers, None),
-        io.BytesIO(b"1"),
-    ]
+def test_download_json_waits_for_a_rate_limit_reset_and_counts_the_retry(monkeypatch):
+    # A local server that refuses the first request like pypistats.org: "Retry-After: 0" and a reset 2 s away.
+    class Handler(http.server.BaseHTTPRequestHandler):
+        requests = 0
+
+        def do_GET(self):
+            Handler.requests += 1
+            if Handler.requests == 1:
+                self.send_response(429)
+                self.send_header("Retry-After", "0")
+                self.send_header("X-RateLimit-Reset", str(int(time.time()) + 2))
+                self.end_headers()
+            else:
+                self.send_response(200)
+                self.end_headers()
+                self.wfile.write(b"1")
+
+        def log_message(self, *args):
+            pass
+
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+    threading.Thread(target=server.serve_forever, daemon=True).start()
     waits = []
-
-    def urlopen(request, timeout):
-        answer = answers.pop(0)
-        if isinstance(answer, Exception):
-            raise answer
-        return answer
-
-    monkeypatch.setattr(common.urllib.request, "urlopen", urlopen)
-    monkeypatch.setattr(common.time, "sleep", waits.append)
+    monkeypatch.setattr(time, "sleep", waits.append)
     monkeypatch.setattr(common, "RETRIES", common.Counter())
-    assert common.download_json("https://example.org/x", delay=0) == 1
-    assert common.RETRIES == {"example.org HTTP 429": 1}
-    assert 3 in waits  # the server's Retry-After, not our own 1 s
-
-
-def test_retry_after_reads_seconds_dates_and_rate_limit_resets():
-    assert common.retry_after({"Retry-After": "120"}) == 120
-    assert common.retry_after({"Retry-After": "Wed, 21 Oct 2015 07:28:00 GMT"}) == 0  # in the past
-    assert common.retry_after({"Retry-After": "soon"}) is None
-    assert common.retry_after(None) is None
-    # pypistats.org: "Retry-After: 0", and the reset of its window as a Unix time
-    reset = str(int(time.time()) + 30)
-    assert 28 < common.retry_after({"Retry-After": "0", "X-RateLimit-Reset": reset}) <= 30
+    try:
+        assert common.download_json(f"http://127.0.0.1:{server.server_port}/x", delay=0) == 1
+    finally:
+        server.shutdown()
+    assert common.RETRIES == {"127.0.0.1 HTTP 429": 1}
+    assert any(1 < wait <= 2 for wait in waits)  # until the reset, not urllib3's immediate first retry

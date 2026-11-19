@@ -1,18 +1,16 @@
 """Helpers shared by the scripts."""
 
-import datetime
-import email.utils
 import hashlib
 import json
 import re
 import sys
 import threading
 import time
-import urllib.error
 import urllib.parse
-import urllib.request
 from collections import Counter
 from pathlib import Path
+
+import urllib3
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "output"  # every file the scripts write
@@ -22,7 +20,6 @@ RETRY_ON = {429, 500, 502, 503, 504}  # HTTP errors that are worth retrying: rat
 # {"host reason": count} of the retries so far, so a step can show whether a site pushed back (retries are slow).
 RETRIES = Counter()
 RETRIES_LOCK = threading.Lock()
-MAX_RETRY_AFTER = 60  # seconds; a server that asks for longer would stall the step, so we ask again sooner
 
 
 class Progress:
@@ -81,52 +78,41 @@ def fetch_json(url: str, delay: float = 0.0):
     return body
 
 
-def retry_after(headers) -> float | None:
-    """The seconds a server asks us to wait: the later of its Retry-After header (seconds or a date) and its
-    X-RateLimit-Reset time. None if it gives neither."""
-    waits = []
-    value = (headers.get("Retry-After") if headers else None) or ""
-    if value.strip().isdigit():
-        waits.append(float(value))
-    else:
-        try:
-            when = email.utils.parsedate_to_datetime(value)
-            if when.tzinfo is None:  # an HTTP date is always in GMT
-                when = when.replace(tzinfo=datetime.UTC)
-            waits.append((when - datetime.datetime.now(datetime.UTC)).total_seconds())
-        except TypeError, ValueError:
-            pass
-    # pypistats.org sends "Retry-After: 0" and gives its real wait here, as a Unix time (like GitHub). Some APIs give
-    # the seconds left instead.
-    reset = (headers.get("X-RateLimit-Reset") if headers else None) or ""
-    if reset.strip().isdigit():
-        seconds = float(reset)
-        waits.append(seconds - time.time() if seconds > 1e9 else seconds)
-    return max(0.0, *waits) if waits else None
+class Retry(urllib3.Retry):
+    """urllib3's retries, which also wait for an X-RateLimit-Reset. pypistats.org sends "Retry-After: 0" and gives its
+    real wait there, as a Unix time (like GitHub). Some APIs give the seconds left instead."""
+
+    def get_retry_after(self, response):
+        waits = [super().get_retry_after(response) or 0]
+        reset = response.headers.get("X-RateLimit-Reset", "")
+        if reset.strip().isdigit():
+            seconds = float(reset)
+            waits.append(seconds - time.time() if seconds > 1e9 else seconds)
+        return min(max(waits), self.retry_after_max) or None  # None: no wait asked, so urllib3 backs off on its own
+
+
+# One pool of connections per site, shared by all threads: reusing connections saves a TLS handshake per request.
+HTTP = urllib3.PoolManager(
+    maxsize=16,  # connections kept open per site: one per thread of the largest pool in step 3
+    headers={"User-Agent": "jupyter-security-inventory"},
+    timeout=60,
+    # Waits 0, 2, 4, 8, 16 s between the attempts, or what the server asks, up to a minute: longer would stall the step.
+    retries=Retry(total=5, backoff_factor=1, backoff_max=60, retry_after_max=60, status_forcelist=RETRY_ON),
+)
 
 
 def download_json(url: str, delay: float):
-    request = urllib.request.Request(url, headers={"User-Agent": "jupyter-security-inventory"})
-    attempts = 6
-    for attempt in range(attempts):
-        last_attempt = attempt == attempts - 1
-        time.sleep(delay)
-        try:
-            with urllib.request.urlopen(request, timeout=60) as response:
-                return json.loads(response.read() or b"null")
-        except urllib.error.HTTPError as error:
-            if error.code == 404:
-                return None
-            if error.code not in RETRY_ON or last_attempt:
-                raise
-            reason, wait = f"HTTP {error.code}", retry_after(error.headers)
-        except urllib.error.URLError:
-            if last_attempt:
-                raise
-            reason, wait = "network error", None
+    time.sleep(delay)
+    response = HTTP.request("GET", url)  # raises MaxRetryError when the retries run out
+    for retry in response.retries.history:
+        reason = f"HTTP {retry.status}" if retry.status else "network error"
         with RETRIES_LOCK:
             RETRIES[f"{urllib.parse.urlsplit(url).hostname} {reason}"] += 1
-        time.sleep(min(max(2**attempt, wait or 0), MAX_RETRY_AFTER))  # a server's hint can only make us wait longer
+    if response.status == 404:
+        return None
+    if response.status >= 400:
+        raise urllib3.exceptions.HTTPError(f"HTTP {response.status} from {url}")
+    return json.loads(response.data or b"null")
 
 
 def quote(text: str) -> str:
