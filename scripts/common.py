@@ -90,6 +90,23 @@ class Retry(urllib3.Retry):
             waits.append(seconds - time.time() if seconds > 1e9 else seconds)
         return min(max(waits), self.retry_after_max) or None  # None: no wait asked, so urllib3 backs off on its own
 
+    def increment(self, method=None, url=None, response=None, error=None, _pool=None, _stacktrace=None):
+        # Counted as each retry happens, not when the request ends, so a stalled run still shows what it waits for.
+        host = _pool.host if _pool else "?"
+        if error is not None or response.status in self.status_forcelist:  # not a redirect
+            reason = type(error).__name__ if error is not None else f"HTTP {response.status}"
+            with RETRIES_LOCK:
+                RETRIES[f"{host} {reason}"] += 1
+        retry = super().increment(method, url, response, error, _pool, _stacktrace)
+        retry.host = host
+        return retry
+
+    def sleep(self, response=None):
+        wait = (self.get_retry_after(response) if response is not None else None) or self.get_backoff_time()
+        if wait >= 10:  # long enough to look like a stall
+            print(f"\nwaiting {wait:.0f} s to retry {getattr(self, 'host', 'a site')}", file=sys.stderr, flush=True)
+        super().sleep(response)
+
 
 # One pool of connections per site, shared by all threads: reusing connections saves a TLS handshake per request.
 HTTP = urllib3.PoolManager(
@@ -104,10 +121,6 @@ HTTP = urllib3.PoolManager(
 def download_json(url: str, delay: float):
     time.sleep(delay)
     response = HTTP.request("GET", url)  # raises MaxRetryError when the retries run out
-    for retry in response.retries.history:
-        reason = f"HTTP {retry.status}" if retry.status else "network error"
-        with RETRIES_LOCK:
-            RETRIES[f"{urllib.parse.urlsplit(url).hostname} {reason}"] += 1
     if response.status == 404:
         return None
     if response.status >= 400:
