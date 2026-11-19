@@ -92,11 +92,11 @@ Then build the site with `sphinx-build -W docs docs/_build`, and open `docs/_bui
 ### With pixi
 
 [pixi](https://pixi.sh) installs Python 3.14, the GitHub CLI and the same dependencies, and runs each step as a task.
-`pixi task list` shows them all.
+`pixi task list` shows them all, with the steps first, in order.
 
 ```bash
 pixi run pipeline        # steps 1 to 8
-pixi run scan ~/clones   # the clone directory, ~/clones by default
+pixi run 2-scan ~/clones # one step; the clone directory is ~/clones by default
 pixi run outputs         # steps 6 to 8
 pixi run test
 pixi run lint

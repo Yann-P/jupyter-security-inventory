@@ -40,21 +40,21 @@ default = ["dev", "docs"]
 
 # One task per pipeline step, plus the checks and the site. `pixi task list` describes them.
 [tool.pixi.tasks]
-inventory = { cmd = "python scripts/1_inventory.py", description = "Step 1: list the repositories" }
-scan = { cmd = "python scripts/2_scan_repos.py --clone-dir {{ clone_dir }}", args = [
+1-inventory = { cmd = "python scripts/1_inventory.py", description = "Step 1: list the repositories" }
+2-scan = { cmd = "python scripts/2_scan_repos.py --clone-dir {{ clone_dir }}", args = [
   { arg = "clone_dir", default = "~/clones" },
 ], description = "Step 2: clone and scan the repositories" }
-packages = { cmd = "python scripts/3_packages.py", description = "Step 3: find the published packages" }
-images = { cmd = "python scripts/4_images.py", description = "Step 4: find the container images" }
-classify = { cmd = "python scripts/5_classify.py --clone-dir {{ clone_dir }}", args = [
+3-packages = { cmd = "python scripts/3_packages.py", description = "Step 3: find the published packages" }
+4-images = { cmd = "python scripts/4_images.py", description = "Step 4: find the container images" }
+5-classify = { cmd = "python scripts/5_classify.py --clone-dir {{ clone_dir }}", args = [
   { arg = "clone_dir", default = "~/clones" },
 ], description = "Step 5: label new repositories with a language model" }
-dataset = { cmd = "python scripts/6_build_dataset.py", description = "Step 6: build the dataset" }
-table = { cmd = "python scripts/7_table.py", description = "Step 7: write the CSV table" }
-topics = { cmd = "python scripts/8_topics.py", description = "Step 8: check the security topics" }
-outputs = { depends-on = ["dataset", "table", "topics"], description = "Steps 6 to 8, which CI checks" }
+6-dataset = { cmd = "python scripts/6_build_dataset.py", description = "Step 6: build the dataset" }
+7-table = { cmd = "python scripts/7_table.py", description = "Step 7: write the CSV table" }
+8-topics = { cmd = "python scripts/8_topics.py", description = "Step 8: check the security topics" }
+outputs = { depends-on = ["6-dataset", "7-table", "8-topics"], description = "Steps 6 to 8, which CI checks" }
 pipeline = { depends-on = [
-  "inventory", "scan", "packages", "images", "classify", "outputs",
+  "1-inventory", "2-scan", "3-packages", "4-images", "5-classify", "outputs",
 ], description = "The whole pipeline" }
 test = { cmd = "pytest", description = "Run the tests" }
 lint = { cmd = "pre-commit run --all-files", description = "Format and lint" }
