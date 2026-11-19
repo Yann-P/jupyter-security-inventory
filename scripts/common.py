@@ -1,5 +1,7 @@
 """Helpers shared by the scripts."""
 
+import datetime
+import email.utils
 import hashlib
 import json
 import re
@@ -20,6 +22,7 @@ RETRY_ON = {429, 500, 502, 503, 504}  # HTTP errors that are worth retrying: rat
 # {"host reason": count} of the retries so far, so a step can show whether a site pushed back (retries are slow).
 RETRIES = Counter()
 RETRIES_LOCK = threading.Lock()
+MAX_RETRY_AFTER = 60  # seconds; a server that asks for longer would stall the step, so we ask again sooner
 
 
 class Progress:
@@ -78,6 +81,20 @@ def fetch_json(url: str, delay: float = 0.0):
     return body
 
 
+def retry_after(headers) -> float | None:
+    """The seconds a server asks us to wait in its Retry-After header, given as seconds or as a date; else None."""
+    value = (headers.get("Retry-After") if headers else None) or ""
+    if value.strip().isdigit():
+        return float(value)
+    try:
+        when = email.utils.parsedate_to_datetime(value)
+    except TypeError, ValueError:
+        return None
+    if when.tzinfo is None:  # an HTTP date is always in GMT
+        when = when.replace(tzinfo=datetime.UTC)
+    return max(0.0, (when - datetime.datetime.now(datetime.UTC)).total_seconds())
+
+
 def download_json(url: str, delay: float):
     request = urllib.request.Request(url, headers={"User-Agent": "jupyter-security-inventory"})
     attempts = 6
@@ -92,14 +109,14 @@ def download_json(url: str, delay: float):
                 return None
             if error.code not in RETRY_ON or last_attempt:
                 raise
-            reason = f"HTTP {error.code}"
+            reason, wait = f"HTTP {error.code}", retry_after(error.headers)
         except urllib.error.URLError:
             if last_attempt:
                 raise
-            reason = "network error"
+            reason, wait = "network error", None
         with RETRIES_LOCK:
             RETRIES[f"{urllib.parse.urlsplit(url).hostname} {reason}"] += 1
-        time.sleep(2**attempt)
+        time.sleep(2**attempt if wait is None else min(wait, MAX_RETRY_AFTER))
 
 
 def quote(text: str) -> str:
