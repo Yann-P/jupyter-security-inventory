@@ -121,7 +121,7 @@ and commit the new outputs with your change. CI runs the tests and checks that t
 
 The daily update and the site build install `requirements.txt` and `requirements-docs.txt`, which pin every
 dependency, including indirect ones, to an exact version. After changing the dependencies in `pyproject.toml`,
-regenerate them with the command on the second line of each file.
+regenerate them with the command on the second line of each file, and `pixi.lock` with `pixi lock`.
 
 ## License
 

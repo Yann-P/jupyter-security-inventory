@@ -14,7 +14,7 @@ build:
       - asdf install pixi 0.84.2
       - asdf global pixi 0.84.2
     install:
-      - pixi install  # no --locked: pixi.lock is not committed, and pyproject.toml pins the dependencies
+      - pixi install --locked
     build:
       html:
-        - pixi run docs $READTHEDOCS_OUTPUT/html
+        - pixi run --locked docs $READTHEDOCS_OUTPUT/html

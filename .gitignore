@@ -13,4 +13,3 @@ build/
 *.egg-info/
 .ruff_cache/
 .pixi/
-pixi.lock
