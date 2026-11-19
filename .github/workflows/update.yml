@@ -1,4 +1,4 @@
-# Every day: rebuilds the inventory, commits what changed in output/, and republishes the site.
+# Every day: rebuilds the inventory and commits what changed in output/. Read the Docs then rebuilds the site.
 # Step 5 only labels new repos (see scripts/5_classify.py), so a daily run costs few tokens.
 # Needs a DEEPSEEK_API_KEY repository secret.
 name: Update
@@ -50,12 +50,3 @@ jobs:
             git commit -m "Update the inventory"
             git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF}"
           }
-
-  # A push made with the workflow's own token doesn't start other workflows, so publish the site here.
-  docs:
-    needs: update
-    uses: ./.github/workflows/docs.yml
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
