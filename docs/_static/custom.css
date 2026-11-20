@@ -86,7 +86,7 @@ div.dt-container .dt-length label { margin-left: 0.35em; }
 /* The theme's h2 and h3 differ by a few pixels, so a subsection like "Software" passed for a section. A rule under
    each section heading and smaller subsection headings make the levels plain. */
 .bd-article h2 { padding-bottom: 0.3em; border-bottom: 1px solid var(--pst-color-border); }
-.bd-article h3 { font-size: 1.3rem; margin-top: 1.75rem; }
+.bd-article h3 { font-size: 1.3rem; margin-top: 1.75rem; margin-bottom: 0.5rem; }
 
 /* The theme fills whatever a link jumps to with --pst-color-target, a yellow block that is loud in the dark theme
    and shows on every count's link, which lands on a heading. A faint tint of the primary color instead, in both
@@ -95,6 +95,9 @@ html[data-theme="light"], html[data-theme="dark"] {
   --pst-color-target: color-mix(in srgb, var(--pst-color-primary) 15%, transparent);
 }
 
+/* Compact table controls, at the tables' text size, so a heading sits close to its table. */
+div.dt-container div.dt-layout-row { margin: 0.5em 0; }
+div.dt-container :is(.dt-search input, select).dt-input { font-size: 0.875rem; line-height: 1.35; padding: 0.2em 0.4em; }
 /* A table cell's text comes in a paragraph, whose bottom margin made the header row tall. */
 .bd-article table :is(th, td) > p:last-child,
 .bd-article table .dt-column-title > p:last-child { margin-bottom: 0; }
