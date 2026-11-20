@@ -10,10 +10,24 @@ DataTable.type("html-num-fmt", "detect", {
   allOf: (cell, settings) => cell === "" || numFmtAllOf(cell, settings),
 });
 
-/* A table of 10 rows or fewer, the smallest page size, fits on one page: its length menu, search box, count and
-   pager only take room. Sorting stays. */
+/* A table of 10 rows or fewer, the smallest page size, fits on one page: its search box, count, page size and pager
+   only take room. Sorting stays, and so does the top row, for the filters and the download link. */
 function hideControlsOfSmallTable(api) {
-  if (api.rows().count() <= 10) $(api.table().container()).find(".dt-layout-row:not(.dt-layout-table)").hide();
+  if (api.rows().count() > 10) return;
+  const container = $(api.table().container());
+  container.find(".dt-search > label, .dt-search > input").hide();
+  container.find(".dt-layout-table ~ .dt-layout-row").hide();
+}
+
+/* The "Download CSV" link above a table moves into its top row, left of the search box. */
+function moveDownload(api) {
+  const container = $(api.table().container());
+  const paragraph = container.parent().prev("p").has("a.download");
+  if (!paragraph.length) return;
+  const label = container.find(".dt-search > label");
+  const link = paragraph.find("a.download").addClass("table-download").insertBefore(label);
+  if (!label.is(":visible")) link.css("margin-right", 0);  // a small table hides its search box
+  paragraph.remove();
 }
 
 /* Adds a dropdown next to the search box of the tables that have a filter-by-... class. It filters the table's
@@ -80,5 +94,6 @@ function keepFilledIn(api) {
 function initTable(settings) {
   hideControlsOfSmallTable(settings.api);
   addFilters(settings);
+  moveDownload(settings.api);
   keepFilledIn(settings.api);
 }
