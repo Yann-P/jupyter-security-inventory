@@ -19,14 +19,15 @@ function hideControlsOfSmallTable(api) {
   container.find(".dt-layout-table ~ .dt-layout-row").hide();
 }
 
-/* The "Download CSV" link above a table moves into its top row, left of the search box. */
+/* The "Download CSV" link above a table moves to the start of its top row, which the layout leaves empty. */
 function moveDownload(api) {
   const container = $(api.table().container());
   const paragraph = container.parent().prev("p").has("a.download");
   if (!paragraph.length) return;
-  const label = container.find(".dt-search > label");
-  const link = paragraph.find("a.download").addClass("table-download").insertBefore(label);
-  if (!label.is(":visible")) link.css("margin-right", 0);  // a small table hides its search box
+  const row = container.children(".dt-layout-row").first();
+  let start = row.children(".dt-layout-start");
+  if (!start.length) start = $("<div>", { class: "dt-layout-cell dt-layout-start" }).prependTo(row);
+  start.append(paragraph.find("a.download"));
   paragraph.remove();
 }
 

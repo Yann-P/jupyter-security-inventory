@@ -46,7 +46,6 @@ tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind
 
 /* {download} wraps its text in <code>: show it as the plain link it is. */
 a.download code { font: inherit; background: none; border: 0; padding: 0; color: inherit; }
-.table-download { margin-right: 1.5em; white-space: nowrap; }  /* in a table's top row, see tables.js */
 
 .status { padding: 0.1em 0.45em; border-radius: 0.3em; white-space: nowrap; }
 .status-done { background: rgba(76, 175, 80, 0.25); }
