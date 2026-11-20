@@ -2,7 +2,7 @@
 
 {{ downloads_note }}
 
-{download}`Download CSV </_generated/downloads/packages.csv>`
+{download}`Download Full CSV </_generated/downloads/packages.csv>`
 
 ```{csv-table}
 :file: /_generated/packages.csv

@@ -11,23 +11,29 @@ DataTable.type("html-num-fmt", "detect", {
 });
 
 /* A table of 10 rows or fewer, the smallest page size, fits on one page: its search box, count, page size and pager
-   only take room. Sorting stays, and so does the top row, for the filters and the download link. */
+   only take room. Sorting, the filters and the download link stay. */
 function hideControlsOfSmallTable(api) {
   if (api.rows().count() > 10) return;
-  const container = $(api.table().container());
-  container.find(".dt-search > label, .dt-search > input").hide();
-  container.find(".dt-layout-table ~ .dt-layout-row").hide();
+  $(api.table().container()).find(".dt-search > label, .dt-search > input, .dt-info, .dt-length, .dt-paging").hide();
 }
 
-/* The "Download CSV" link above a table moves to the start of its top row, which the layout leaves empty. */
+/* Hides a row of controls left with nothing to show, like the top row of a small table without filters. */
+function hideEmptyRows(api) {
+  $(api.table().container())
+    .children(".dt-layout-row:not(.dt-layout-table)")
+    .filter((_, row) => !$(row).find("a, input, select, .dt-info").filter(":visible").length)
+    .hide();
+}
+
+/* The "Download Full CSV" link above a table moves to the end of its bottom row, after the pager. */
 function moveDownload(api) {
   const container = $(api.table().container());
   const paragraph = container.parent().prev("p").has("a.download");
   if (!paragraph.length) return;
-  const row = container.children(".dt-layout-row").first();
-  let start = row.children(".dt-layout-start");
-  if (!start.length) start = $("<div>", { class: "dt-layout-cell dt-layout-start" }).prependTo(row);
-  start.append(paragraph.find("a.download"));
+  const row = container.children(".dt-layout-row").last();
+  let end = row.children(".dt-layout-end");
+  if (!end.length) end = $("<div>", { class: "dt-layout-cell dt-layout-end" }).appendTo(row);
+  end.append(paragraph.find("a.download").addClass("table-download"));
   paragraph.remove();
 }
 
@@ -96,5 +102,6 @@ function initTable(settings) {
   hideControlsOfSmallTable(settings.api);
   addFilters(settings);
   moveDownload(settings.api);
+  hideEmptyRows(settings.api);
   keepFilledIn(settings.api);
 }

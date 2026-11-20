@@ -713,7 +713,7 @@ def csv_table(stem: str, by_org: bool = False, by_owner: bool = False, by_status
     filters = {"filter-by-org": by_org, "filter-by-owner": by_owner, "filter-by-status": by_status}
     classes = " ".join(["sphinx-datatable", *(cls for cls, on in filters.items() if on)])
     return (
-        f"{{download}}`Download CSV </_generated/downloads/{stem}.csv>`\n\n"
+        f"{{download}}`Download Full CSV </_generated/downloads/{stem}.csv>`\n\n"
         f"```{{csv-table}}\n:file: /_generated/{stem}.csv\n:header-rows: 1\n:class: {classes}\n```"
     )
 
