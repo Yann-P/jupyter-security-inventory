@@ -43,3 +43,20 @@ def test_a_pypi_release_is_attested_only_if_every_file_is(monkeypatch):
     assert packages.publishing("PYPI", "a") == {"attested": False, "requires_python": None}
     answers["https://pypi.org/integrity/a/1.0/a.zip/provenance"] = {"attestation_bundles": []}
     assert packages.publishing("PYPI", "a")["attested"] is True
+
+
+def test_npm_bulk_downloads_asks_128_names_at_a_time(monkeypatch):
+    names = [f"p{i}" for i in range(129)]
+    asked = []
+
+    def fetch_json(url, delay=0):
+        batch = url.rsplit("/", 1)[1].split(",")
+        asked.append(len(batch))
+        if len(batch) == 1:  # npm's answer for a single name
+            return {"package": batch[0], "downloads": 7}
+        return {name: None if name == "p3" else {"package": name, "downloads": 5} for name in batch}
+
+    monkeypatch.setattr(packages, "fetch_json", fetch_json)
+    counts = packages.npm_bulk_downloads(names)
+    assert asked == [128, 1]
+    assert counts["p0"] == 5 and counts["p3"] is None and counts["p128"] == 7

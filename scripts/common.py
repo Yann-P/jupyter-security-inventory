@@ -3,11 +3,12 @@
 import hashlib
 import json
 import re
+import sys
 import time
-import urllib.error
 import urllib.parse
-import urllib.request
 from pathlib import Path
+
+import urllib3
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "output"  # every file the scripts write
@@ -28,7 +29,8 @@ def fetch_json(url: str, delay: float = 0.0):
     """GET a JSON URL. Returns None if it does not exist (404).
 
     Answers are cached in .cache/http/ for CACHE_HOURS, so running a script twice in a day does not
-    download anything twice. `delay` waits before each request, for APIs that limit how often we may call them.
+    download anything twice. `delay` waits before the request (not before its retries), for APIs that limit
+    how often we may call them.
     """
     cache_file = CACHE / (hashlib.sha256(url.encode()).hexdigest() + ".json")
     if cache_file.exists() and time.time() - cache_file.stat().st_mtime < CACHE_HOURS * 3600:
@@ -39,24 +41,41 @@ def fetch_json(url: str, delay: float = 0.0):
     return body
 
 
+class Retry(urllib3.Retry):
+    """urllib3's retries, which also wait for an X-RateLimit-Reset. pypistats.org sends "Retry-After: 0" and gives its
+    real wait there, as a Unix time."""
+
+    def get_retry_after(self, response):
+        waits = [super().get_retry_after(response) or 0]
+        reset = response.headers.get("X-RateLimit-Reset", "")
+        # Only a refusal waits for the reset: pypistats.org sends the header on every answer, its errors too.
+        if response.status == 429 and reset.strip().isdigit():
+            waits.append(float(reset) - time.time())
+        return min(max(waits), self.retry_after_max) or None  # None: no wait asked, so urllib3 backs off on its own
+
+
+# One pool of connections per site, shared by all threads: reusing connections saves a TLS handshake per request.
+HTTP = urllib3.PoolManager(
+    maxsize=16,  # connections kept open per site: one per thread of the largest pool in step 3
+    headers={"User-Agent": "jupyter-security-inventory"},
+    timeout=60,
+    # Waits 0, 4, 8, 16, 32 s between the attempts: npm's download API refuses without saying for how long, over a
+    # minute-long window. If the server asks, waits that long instead, up to 5 minutes.
+    retries=Retry(total=5, backoff_factor=2, backoff_max=60, retry_after_max=300, status_forcelist=RETRY_ON),
+)
+
+
 def download_json(url: str, delay: float):
-    request = urllib.request.Request(url, headers={"User-Agent": "jupyter-security-inventory"})
-    attempts = 6
-    for attempt in range(attempts):
-        last_attempt = attempt == attempts - 1
-        time.sleep(delay)
-        try:
-            with urllib.request.urlopen(request, timeout=60) as response:
-                return json.loads(response.read() or b"null")
-        except urllib.error.HTTPError as error:
-            if error.code == 404:
-                return None
-            if error.code not in RETRY_ON or last_attempt:
-                raise
-        except urllib.error.URLError:
-            if last_attempt:
-                raise
-        time.sleep(2**attempt)
+    time.sleep(delay)
+    response = HTTP.request("GET", url)  # raises MaxRetryError when the retries run out
+    retried = [attempt for attempt in response.retries.history if attempt.redirect_location is None]
+    if retried:
+        print(f"{len(retried)} retries: {url}", file=sys.stderr, flush=True)
+    if response.status == 404:
+        return None
+    if response.status >= 400:
+        raise urllib3.exceptions.HTTPError(f"HTTP {response.status} from {url}")
+    return json.loads(response.data or b"null")
 
 
 def quote(text: str) -> str:

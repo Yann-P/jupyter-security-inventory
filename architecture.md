@@ -32,7 +32,7 @@ scripts/1..8  ──►  output/*.json, *.csv, *.txt  ──►  docs/insights.p
 | 8 | `8_topics.py` | `scan.json`, `jupyter_repos.json` | `topics.json`, `topics_history.json` |
 
 `common.py` has what the scripts share: reading and writing JSON, and `fetch_json`, which caches answers for
-24 hours in `.cache/http/` and retries on rate limits (HTTP 429) and server errors.
+24 hours in `.cache/http/` and retries on rate limits (HTTP 429) and server errors, waiting as long as the server asks.
 
 Step 2 keeps, for each repo: file counts by type, the packages its manifests declare, a summary of its workflows
 (triggers, secrets, what they publish), the actions it uses, the images its chartpress files build, the build

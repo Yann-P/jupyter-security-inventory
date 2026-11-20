@@ -13,6 +13,7 @@ Usage: python scripts/3_packages.py    Output: output/packages.json
 """
 
 import re
+import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import PurePosixPath
 
@@ -31,7 +32,8 @@ def registry_entry(system: str, name: str) -> dict | None:
         people = [info.get(key) or "" for key in ("author", "author_email", "maintainer", "maintainer_email")]
         name = info["name"]
     else:
-        body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=2)  # 8 threads: ~4 requests/s
+        # Each of the 8 threads waits 0.1 s before a request. With no wait, npm refused us for minutes (HTTP 429).
+        body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.1)
         if not isinstance(body, dict) or "version" not in body:
             return None
         repository = body.get("repository")
@@ -73,12 +75,31 @@ def reason(repo: dict, system: str, entry: dict, declared: bool, jupyter_orgs: s
     return None
 
 
+# api.npmjs.org allows about 40 requests a minute. Its refusals say "Retry-After: 0", so we keep under the limit.
+NPM_DOWNLOADS_DELAY = 1.5
+
+
 def downloads(system: str, name: str) -> int | None:
     if system == "PYPI":
+        # pypistats.org allows 60 requests per window; past that, fetch_json waits for the reset.
         body = fetch_json(f"https://pypistats.org/api/packages/{quote(pep503(name))}/recent", delay=1.1)
         return body["data"]["last_month"] if body else None
-    body = fetch_json(f"https://api.npmjs.org/downloads/point/last-month/{quote(name)}", delay=1)
+    body = fetch_json(f"https://api.npmjs.org/downloads/point/last-month/{quote(name)}", delay=NPM_DOWNLOADS_DELAY)
     return body["downloads"] if body else None
+
+
+def npm_bulk_downloads(names: list[str]) -> dict[str, int | None]:
+    """Last month's downloads of unscoped npm packages, up to 128 per request. npm takes no scoped names in bulk."""
+    counts = {}
+    for start in range(0, len(names), 128):
+        batch = names[start : start + 128]
+        if len(batch) == 1:  # for one name, npm answers with that package's counts, not a mapping
+            counts[batch[0]] = downloads("NPM", batch[0])
+            continue
+        url = "https://api.npmjs.org/downloads/point/last-month/" + ",".join(quote(name) for name in batch)
+        body = fetch_json(url, delay=NPM_DOWNLOADS_DELAY)
+        counts |= {name: (body[name] or {}).get("downloads") for name in batch}  # null: no such package
+    return counts
 
 
 def deps_dev(system: str, name: str) -> dict:
@@ -119,7 +140,7 @@ def publishing(system: str, name: str) -> dict:
             "attested": bool(files) and all(fetch_json(f"{base}/{quote(file)}/provenance") for file in files),
             "requires_python": body["info"].get("requires_python") or None,
         }
-    body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=2)
+    body = fetch_json(f"https://registry.npmjs.org/{quote(name)}/latest", delay=0.1)
     return {"trusted_publishing": bool((body.get("_npmUser") or {}).get("trustedPublisher"))}
 
 
@@ -165,7 +186,15 @@ def pick_publishers(candidates: dict, entries: dict, repos: dict, jupyter_orgs: 
     return accepted, rejected
 
 
+def took(what: str, since: float) -> float:
+    """Print how long a part took, for the run log, and return the time now."""
+    now = time.perf_counter()
+    print(f"{what}: {now - since:.0f} s", flush=True)
+    return now
+
+
 def main():
+    start = time.perf_counter()
     inventory = load_json(OUTPUT / "repos.json")
     repos = {repo["full_name"]: repo for repo in inventory["repos"]}
     scan = load_json(OUTPUT / "scan.json")
@@ -175,14 +204,27 @@ def main():
     with ThreadPoolExecutor(8) as pool:
         entries = dict(zip(names, pool.map(lambda key: registry_entry(*key), names)))
     packages, rejected = pick_publishers(candidates, entries, repos, set(inventory["orgs"]))
+    start = took(f"{len(names)} registry lookups", start)
 
-    with ThreadPoolExecutor(8) as pool:
+    with ThreadPoolExecutor(16) as pool:  # mostly deps.dev, up to 14 requests per package
         known = list(
             pool.map(lambda p: deps_dev(p["system"], p["name"]) | publishing(p["system"], p["name"]), packages)
         )
+    start = took(f"deps.dev and publishing of {len(packages)} packages", start)
+
+    def count_downloads(system):
+        mine = [package for package in packages if package["system"] == system]
+        unscoped = [package["name"] for package in mine if system == "NPM" and not package["name"].startswith("@")]
+        bulk = npm_bulk_downloads(unscoped)
+        for package in mine:
+            name = package["name"]
+            package["downloads_last_month"] = bulk[name] if name in bulk else downloads(system, name)
+
+    # pypistats.org and api.npmjs.org limit how often we may call them: one request at a time to each, both at once.
+    with ThreadPoolExecutor(2) as pool:
+        list(pool.map(count_downloads, ("PYPI", "NPM")))  # list() raises any error from the threads
+    took("downloads", start)
     for package, deps in zip(packages, known):
-        # One at a time, because pypistats.org and api.npmjs.org limit how often we may call them.
-        package["downloads_last_month"] = downloads(package["system"], package["name"])
         package.update(deps)
 
     save_json(OUTPUT / "packages.json", {"accepted": packages, "rejected": rejected})
