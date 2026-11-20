@@ -47,6 +47,11 @@ tr:has(.kind-other) > td, .legend.kind-other { background-color: rgba(var(--kind
 /* {download} wraps its text in <code>: show it as the plain link it is. */
 a.download code { font: inherit; background: none; border: 0; padding: 0; color: inherit; }
 .table-download { margin-left: 1.5em; white-space: nowrap; }  /* after a table's pager, see tables.js */
+/* Below a table, one sentence: "Showing 1 to 50 of 227 entries, [50] entries per page". DataTables leaves 1em after
+   the count and nothing between the page size and its label. */
+div.dt-container div.dt-layout-row div.dt-layout-cell > .dt-info { margin-right: 0.35em; }
+div.dt-container .dt-info::after { content: ","; }
+div.dt-container .dt-length label { margin-left: 0.35em; }
 
 .status { padding: 0.1em 0.45em; border-radius: 0.3em; white-space: nowrap; }
 .status-done { background: rgba(76, 175, 80, 0.25); }
@@ -89,3 +94,7 @@ a.download code { font: inherit; background: none; border: 0; padding: 0; color:
 html[data-theme="light"], html[data-theme="dark"] {
   --pst-color-target: color-mix(in srgb, var(--pst-color-primary) 15%, transparent);
 }
+
+/* A table cell's text comes in a paragraph, whose bottom margin made the header row tall. */
+.bd-article table :is(th, td) > p:last-child,
+.bd-article table .dt-column-title > p:last-child { margin-bottom: 0; }
