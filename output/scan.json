@@ -1429,7 +1429,7 @@
     "security_policy": null
   },
   "ipython/ipython": {
-    "head": "80b623833fd0c472f7df80795b5affb406bc4001",
+    "head": "5b5bc2e01adfa9972a4f542b603eab509f04be71",
     "n_files": 511,
     "file_types": {
       "other": 18,
@@ -1854,10 +1854,10 @@
     "security_policy": null
   },
   "jupyter-book/blog": {
-    "head": "6b91cb008d7dd36a2e0f12709b9d89848a515b20",
-    "n_files": 51,
+    "head": "29f4fa3fb560c5a4a14a6ddc7c83d572e544cf76",
+    "n_files": 52,
     "file_types": {
-      "docs": 32,
+      "docs": 33,
       "config": 6,
       "other": 1,
       "media": 11,
@@ -2756,7 +2756,7 @@
     "security_policy": null
   },
   "jupyter-book/myst-theme": {
-    "head": "6cce1e250d24ad59d34ce7a796805f1edd349944",
+    "head": "5eb9fe451f316aafb2cb19c7b044051c16a4854a",
     "n_files": 446,
     "file_types": {
       "docs": 69,
@@ -2894,7 +2894,7 @@
     "security_policy": null
   },
   "jupyter-book/mystmd": {
-    "head": "16c5e6035ec2f9214313bf40b77089787a26fa7e",
+    "head": "1a09ee329f7307fd5fad614d3403acd0abad2b57",
     "n_files": 1798,
     "file_types": {
       "docs": 474,
@@ -3574,7 +3574,7 @@
     "security_policy": null
   },
   "jupyter-incubator/sparkmagic": {
-    "head": "41ff10d366acb68a5567d439b87f2d20fbf8b2c7",
+    "head": "b29ce25afbaf943af7241061af79468638b87890",
     "n_files": 194,
     "file_types": {
       "config": 28,
@@ -3633,12 +3633,12 @@
     "security_policy": {
       "path": "SECURITY.md",
       "emails": [
-        "security@ipython.org"
+        "security@jupyter.org"
       ]
     }
   },
   "jupyter-server/.github": {
-    "head": "339ec164a968653f7ca60c79d4a349f797a55702",
+    "head": "acfd885014be76a95f8543334c3306de35544ca1",
     "n_files": 10,
     "file_types": {
       "docs": 5,
@@ -3685,13 +3685,13 @@
     "security_policy": null
   },
   "jupyter-server/enterprise_gateway": {
-    "head": "afb9ba80d6c464ccfc604f14167b3f07caca6ad0",
-    "n_files": 340,
+    "head": "849ba86aef3115215b43e6d5c0744edce14b5561",
+    "n_files": 342,
     "file_types": {
       "other": 31,
       "docs": 66,
       "config": 56,
-      "code": 96,
+      "code": 98,
       "web": 48,
       "media": 32,
       "notebook": 11
@@ -3887,13 +3887,13 @@
     "security_policy": null
   },
   "jupyter-server/jupyter-resource-usage": {
-    "head": "35b43196f2d9ab182b2ef86f9d3fe35cfe65f9cb",
-    "n_files": 76,
+    "head": "793dafbc08ec05e321eddc23d300d89690f5cb2e",
+    "n_files": 77,
     "file_types": {
       "other": 5,
       "config": 23,
       "docs": 4,
-      "code": 33,
+      "code": 34,
       "media": 9,
       "web": 2
     },
@@ -4070,7 +4070,7 @@
     "security_policy": null
   },
   "jupyter-server/jupyter_server": {
-    "head": "af813a81ee7007a0b3ddb94e2ed323ab8625cb12",
+    "head": "c4c5a51d2cf77d31a266376582ee05c4d661ad4b",
     "n_files": 342,
     "file_types": {
       "other": 14,
@@ -6470,12 +6470,12 @@
     }
   },
   "jupyter/accessibility": {
-    "head": "440e52720df6ca241b04588c67d396b79e453532",
-    "n_files": 161,
+    "head": "e47d627a7f804f3d6a1395ea08326201555c28f1",
+    "n_files": 160,
     "file_types": {
       "config": 14,
       "other": 4,
-      "docs": 103,
+      "docs": 102,
       "web": 1,
       "media": 34,
       "code": 5
@@ -6711,7 +6711,7 @@
     "security_policy": null
   },
   "jupyter/docker-stacks": {
-    "head": "57927ad0fa694908c068a4ed4711b1f5fa217709",
+    "head": "fe190c9e10d341558f637d9e7c2e2dff6145ef6b",
     "n_files": 312,
     "file_types": {
       "other": 59,
@@ -7015,12 +7015,12 @@
     "security_policy": null
   },
   "jupyter/jupyter": {
-    "head": "6b5eb0f469c7bc3ea43d6d2a0ba1057853c9a3a5",
-    "n_files": 239,
+    "head": "9b003dddd744c1b82a21b24646c24f9656f9ec02",
+    "n_files": 238,
     "file_types": {
       "other": 56,
       "config": 8,
-      "docs": 123,
+      "docs": 122,
       "code": 5,
       "media": 45,
       "web": 2
@@ -7056,10 +7056,7 @@
     "build_requires": [],
     "mentions": {},
     "readme": "# Jupyter\n\n*Leer en otros idiomas: [English](README.md), [Español](README.es-ES.md), [Português](README.pt-BR.md), [Français](README.fr-FR.md)*\n\nMeta paquete de Jupyter para su instalación y documentación.\n\n## Ejecutando los documentos localmente\nPrimero navega al directorio `/docs` y crea un entorno en `conda`:\n\n```bash\nconda env create -f environment.yml  \n```  \n\nActiva el entorno:\n\n```bash\nsource activate jupyter_docs  \n```\n\nGenera los documentos:\n\n```bash\nmake clean  \nmake html\n```\n\nLos documentos se crearán en `build/html`. Éstos pueden ser vistos abriendo `build/html/index.html` o iniciando un servidor HTTP y navegando hasta `0.0.0.0:8000` en tu explorador web.\n\n```bash\npython3 -m http.server\n```\n",
-    "security_policy": {
-      "path": "SECURITY.md",
-      "emails": []
-    }
+    "security_policy": null
   },
   "jupyter/jupyter-communitycalls": {
     "head": "cf0213d47b84b2c10630f64d6773d7903ac48d83",
@@ -7624,7 +7621,7 @@
     "security_policy": null
   },
   "jupyter/nbclassic": {
-    "head": "173fdfecbda8e4e6a70d865fda7970ceb5239137",
+    "head": "7ee522cb50cccbab2453f698f3c6a1912ec9b9eb",
     "n_files": 464,
     "file_types": {
       "other": 35,
@@ -8184,7 +8181,7 @@
     "security_policy": null
   },
   "jupyter/notebook": {
-    "head": "5662506ad194d2c69725fd76c18a080bb277c682",
+    "head": "b373833c18fb062d304e1aa05d40b1f2141a6eee",
     "n_files": 379,
     "file_types": {
       "config": 87,
@@ -8307,8 +8304,8 @@
       "actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9",
       "astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2",
       "dessant/lock-threads@89ae32b08ed1a541efecbab17912962a5e38981c",
-      "github/codeql-action@1fc58d04a4d4374f921bdac573c3811c240f9c26",
-      "jupyter-server/jupyter_releaser@70e58c50c736ad496cca11fe4f2446033b68b027",
+      "github/codeql-action@33d7b85da1a04171e211befe2c739303b9a4c066",
+      "jupyter-server/jupyter_releaser@ae340ad3f2f83e1a2f50b988050bf453b932e69a",
       "jupyterlab/maintainer-tools@21b1cac622018fd37ec13a1c8081da814e10d94e",
       "jupyterlab/maintainer-tools@b9d5c28489f8b460cef48868f303b97c20f8fe1b",
       "re-actors/alls-green@b5b5b37504aa4183270bd3d855c52a67f212be35",
@@ -8583,6 +8580,52 @@
     "readme": "# Security\n\nThis repository is for anything Jupyter or IPython security related that can be discussed in public.\n\nIf you need to privately disclose security issues please see https://jupyter.org/security\n\n## Jupyter Security Subproject Council\n\nMembers\n- Matthias Bussonnier [@Carreau](https://github.com/Carreau)\n- Jason Grout [@jasongrout](https://github.com/jasongrout)\n- David L. Qiu [@dlqqq](https://github.com/dlqqq)\n- Mike Krassowski [@krassowski](https://github.com/krassowski)\n- Yann Pellegrini [@Yann-P](https://github.com/Yann-P)\n\nThe Jupyter Security Subproject representative to the [Jupyter Software Steering Council](https://jupyter.org/governance/software_steering_council.html) is Yann Pellegrini ([@Yann-P](https://github.com/Yann-P)).\n\n# Tools\n\nThe `tools/` directory contains scripts used by the security council to track\nthe Jupyter GitHub organizations, PyPI packages and security-reporting setup.\nUnless noted otherwise, run them from the root of this repository, since they\nread their input files (`all_repos.txt`, `psc_ignore.txt`, ...) from the\ncurrent working directory.\n\nSeveral scripts need a GitHub token with read access to the organizations:\n\n```bash\nexport GH_TOKEN=<your personal access token>\n```\n\nScripts that declare their dependencies inline (PEP 723) can be run directly\nwith [`uv`](https://docs.astral.sh/uv/), which installs what they need on the\nfly. For the others, install the packages they import (see `requirements.txt`).\n\n## `tools/all_repos.py`\n\nCross-references the repositories of the Jupyter GitHub organizations with the\nPyPI packages they publish. It reads the mapping from `all_repos.txt`\n(one `github_org/repo : pypi-url` per line; use `<none>` if the repo has no\npackage and `-` if the package name equals the repo name), then:\n\n- lists the PyPI packages declared in `all_repos.txt` that are *not* published\n  under the Jupyter PyPI org, together with their maintainers (the work to do\n  to add them to the org);\n- lists repos that have no matching package in `all_repos.txt` so the mapping\n  can be completed, flagging archived and private ones.\n\nMaintainer lookups are cached in `github_cache-all_repos-YYYYMM/` to limit\nrequests. Requires `GH_TOKEN`.\n\n```bash\nuv run tools/all_repos.py\n```\n\n## `tools/jupyter_pypi_python_requires.py`\n\nLists every PyPI project under the Jupyter org in a table with its\n`requires-python` constraint, release date and archived status. Useful to spot\npackages still supporting old Python versions. It does not n",
     "security_policy": null
   },
+  "jupyter/security-inventory": {
+    "head": "4de737b8889e301bf632d6d8b37276bf2e12b2ca",
+    "n_files": 66,
+    "file_types": {
+      "config": 14,
+      "other": 2,
+      "docs": 13,
+      "web": 2,
+      "code": 34,
+      "data": 1
+    },
+    "packages": [
+      {
+        "system": "PYPI",
+        "name": "jupyter-security-inventory",
+        "path": "pyproject.toml",
+        "in_test_or_example_folder": false
+      }
+    ],
+    "workflows": {
+      "count": 2,
+      "triggers": [
+        "pull_request",
+        "push",
+        "schedule",
+        "workflow_dispatch"
+      ],
+      "secrets": [
+        "DEEPSEEK_API_KEY"
+      ],
+      "publishes": []
+    },
+    "uses": [
+      "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1",
+      "actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0"
+    ],
+    "images": [],
+    "build_requires": [],
+    "mentions": {
+      "pre-commit": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    "readme": "# Jupyter Security Inventory\n\nProject Jupyter has over 400 public repositories across 20 GitHub organizations. This project collects, for each repository, some data like how many people install it, how many other Jupyter repositories run its code in CI, whether it runs a live service, and whether it's a security boundary.\n\n## Eventual goals\n\n- Expose a \"todo list\" of bite-sized security improvements from which contributors can pick from.\n- Be a tool to prioritize where security time is spent first using metrics\n- And eventually aggregate more data (like trusted publishing) in an effort to centralize what we do manually in https://github.com/jupyter/security/issues.\n\n## Structure\n\n- In `output/`: the results of the scripts described below. Do not write here.\n- In `docs/`: a sphinx website that makes the results browsable.\n\n## How it works\n\nEight scripts run in order (they depend on each other):\n\n| Step | What it does | Data from |\n|---|---|---|\n| 1. Inventory | Lists the public, non-archived repositories of each organization | GitHub |\n| 2. Scan | Clones each repository and reads its workflows, actions, package manifests, chartpress files, pre-commit config, README and SECURITY.md | GitHub |\n| 3. Packages | Matches PyPI and npm packages to repositories, with downloads, dependents, the date of the last release, how the latest release was published and the Python versions it allows | PyPI, npm, pypistats.org, deps.dev |\n| 4. Images | Lists the images published on Docker Hub and Quay and matches them to repositories. Also writes `output/images.txt`, one image per line | Docker Hub, Quay |\n| 5. Labels | Decides each repository's kind, the live service it deploys and whether it's a security boundary, and why | LLM |\n| 6. Merge | Puts it all together and works out which repositories run each other's code | |\n| 7. Table | Writes `output/repos.csv` | |\n| 8. Topics | Answers each security topic for every repository and counts the answers each day | |\n\n[architecture.md](https://github.com/Yann-P/jupyter-security-inventory/blob/main/architecture.md) explains how the pieces fit together.\n\n## The columns\n\n- **kind**: package, application, tooling, deployment, documentation, example or other.\n- **owner**: its Owner custom property on GitHub.\n- **downloads/month** and **dependents**: for the repository's most downloaded package.\n- **image** and **all-time pulls**: for the repository's most pulled container image.\n- **used in CI**: how many other Jupyter repositories run i",
+    "security_policy": null
+  },
   "jupyter/software-steering-council-team-compass": {
     "head": "0fb17b29f685a3fe6e2c62fb1cdf0a4cd989ea14",
     "n_files": 13,
@@ -8846,7 +8889,7 @@
     "security_policy": null
   },
   "jupyter/try-jupyter": {
-    "head": "f3ab103efcde1a42bea502c6efb7caae54e6b821",
+    "head": "a570e6748f3087c0d7e19fd267b0790861b30795",
     "n_files": 37,
     "file_types": {
       "other": 4,
@@ -10797,7 +10840,7 @@
     "security_policy": null
   },
   "jupyterhub/action-get-quayio-tags": {
-    "head": "ea9e3cc3f7891abbf36c9028d1076d23d36eefe2",
+    "head": "1948d413db4aa204efe8b940ec03696579704924",
     "n_files": 30,
     "file_types": {
       "other": 6,
@@ -11860,7 +11903,7 @@
     "security_policy": null
   },
   "jupyterhub/jupyterhub": {
-    "head": "41fffb935326c9e732d999950fd56beb9bc9fbec",
+    "head": "3ca37442a18e7bcfc9a0f66d2759cd8313a6cff5",
     "n_files": 429,
     "file_types": {
       "other": 18,
@@ -12551,7 +12594,7 @@
     "security_policy": null
   },
   "jupyterhub/mybinder.org-deploy": {
-    "head": "9f69f572170f576efac5926fd69515cca0912f1c",
+    "head": "c1e991dd0bb63cb49d9095d68af2fb86090aefac",
     "n_files": 315,
     "file_types": {
       "other": 42,
@@ -13071,7 +13114,7 @@
     "security_policy": null
   },
   "jupyterhub/repo2docker": {
-    "head": "07f110141aa147bbe19be54f7b84e56181d70796",
+    "head": "6d928bce54d755b05b5e5bf7363444ba783319f4",
     "n_files": 383,
     "file_types": {
       "config": 73,
@@ -13365,7 +13408,7 @@
     "security_policy": null
   },
   "jupyterhub/team-compass": {
-    "head": "06b322e38d554d87f0ce2e85a0e461d44e74fdcf",
+    "head": "04ca6db9ff183050f4ecf8ff589f515181433f94",
     "n_files": 154,
     "file_types": {
       "docs": 136,
@@ -13597,7 +13640,7 @@
     "security_policy": null
   },
   "jupyterhub/zero-to-jupyterhub-k8s": {
-    "head": "83a9f73f6ce30e652cb7d5340ddf35da8257d940",
+    "head": "3cd0e13b309f5c6f54668261567ce04a2c359e5c",
     "n_files": 211,
     "file_types": {
       "other": 24,
@@ -14587,7 +14630,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai": {
-    "head": "3bf9a00888116a13e3ac932f84f8e2cf849538ac",
+    "head": "6e05ab4044d73a0c5f5f4229a7d226a87eff9ad9",
     "n_files": 209,
     "file_types": {
       "other": 21,
@@ -14823,7 +14866,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-chat": {
-    "head": "5d0b4357c201c97be8b46099f673fb31c5a1be72",
+    "head": "220bbf7be4beea0c6a1d68ba101b2b67bd645be3",
     "n_files": 272,
     "file_types": {
       "config": 37,
@@ -15188,7 +15231,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "a1547b980d4dadf61c201ccc183f72f1c9fad41c",
+    "head": "adcb6f8af341909efb4af6743f4e0f31025d562a",
     "n_files": 3140,
     "file_types": {
       "config": 605,
@@ -16663,7 +16706,7 @@
     "security_policy": null
   },
   "jupyterlab/language-packs": {
-    "head": "42612f6f46aa4ecc929a76b4d2121aac1783ee10",
+    "head": "5fe5ebc91b6d800041dc739c677e79979a8c00dd",
     "n_files": 832,
     "file_types": {
       "docs": 101,
@@ -17123,7 +17166,7 @@
     "security_policy": null
   },
   "jupyterlab/plugin-playground": {
-    "head": "fded8b3c60f7d4c58693734398c267c9d6888540",
+    "head": "0ebd64a5f95bfe6d956a1c954dcb96af1e370dc8",
     "n_files": 112,
     "file_types": {
       "config": 24,
@@ -17569,15 +17612,15 @@
     }
   },
   "jupyterlite/cockle": {
-    "head": "e8cbbcf5d0df27d76e60d0b9334f732932b8f8d7",
-    "n_files": 256,
+    "head": "f76fc49ddf94ddfbfe2a6f584139e56477b6110d",
+    "n_files": 258,
     "file_types": {
       "config": 23,
       "other": 5,
       "docs": 5,
       "media": 2,
       "web": 4,
-      "code": 217
+      "code": 219
     },
     "packages": [
       {
@@ -17620,7 +17663,7 @@
     "images": [],
     "build_requires": [],
     "mentions": {},
-    "readme": "# cockle\n\n[![codecov](https://codecov.io/gh/jupyterlite/cockle/graph/badge.svg)](https://codecov.io/gh/jupyterlite/cockle)\n\nIn-browser bash-like shell implemented in a combination of TypeScript and WebAssembly.\n\nUsed in the [JupyterLite terminal extension](https://github.com/jupyterlite/terminal).\n\nTry it out outside of JupyterLite on GitHub Pages at https://jupyterlite.github.io/cockle.\n\n<img alt=\"Demo\" src=\"demo.png\" width=\"800px\">\n\nCommands of the following types are supported:\n\n1. Built-in TypeScript commands such as `history`. The source code for these is within this repo.\n2. WebAssembly commands, from C/C++ source code, compiled into `.js` and `.wasm` files.\n   These are usually built by [Emscripten-forge](https://emscripten-forge.org/) although they can be\n   manually built, and are added to a deployment during the deployment build process.\n3. JavaScript commands that are loaded and run in the same as WebAssembly commands except they have\n   a `.js` file and no `.wasm` file. There is an example of creating a JavaScript command from\n   TypeScript source code for use in the Jupyterlite terminal in the\n   [terminal-javascript-command](https://github.com/ianthomas23/terminal-javascript-command) repo.\n4. External commands which are TypeScript commands that run in the main browser UI thread rather\n   than the WebWorker that the `cockle` shell runs in. These are registered when a `cockle` `Shell`\n   is constructed. There is an example of an external command which is packaged as a JupyterLite\n   extension in the\n   [terminal-external-command](https://github.com/ianthomas23/terminal-external-command) repo.\n\n[Emscripten-forge](https://emscripten-forge.org/) packages containing WebAssembly commands that are\ncurrently supported and tested are as follows. Each package contains a single commmand with the same\nname as the package unless otherwise specified:\n\n- `awk`\n- `coreutils`: multiple core commands including `cat`, `cp`, `echo`, `ls`, `mkdir`, `mv`, `rm`, `touch`, `uname`, and `wc`\n- [`git2cpp`](https://git2cpp.readthedocs.io/): a `git` implementation\n- `grep`\n- `less`\n- `lua`\n- `nano`\n- `sed`\n- `tree`\n- `vim`\n\n## Version compatibility\n\nThe filesystem used in `cockle` is built using a specific version of Emscripten, and for maximum\ncompatibility the WebAssembly commands used in `cockle` should be built using the same version of\nEmscripten. WebAssembly commands built on Emscripten-forge are hosted on different\n[prefix.dev](https://prefix.dev/channels) channels",
+    "readme": "# cockle\n\n[![codecov](https://codecov.io/gh/jupyterlite/cockle/graph/badge.svg)](https://codecov.io/gh/jupyterlite/cockle)\n\nIn-browser bash-like shell implemented in a combination of TypeScript and WebAssembly.\n\nUsed in the [JupyterLite terminal extension](https://github.com/jupyterlite/terminal).\n\nTry it out outside of JupyterLite on GitHub Pages at https://jupyterlite.github.io/cockle.\n\n<img alt=\"Demo\" src=\"demo.png\" width=\"800px\">\n\nCommands of the following types are supported:\n\n1. Built-in TypeScript commands such as `history`. The source code for these is within this repo.\n2. WebAssembly commands, from C/C++ source code, compiled into `.js` and `.wasm` files.\n   These are usually built by [Emscripten-forge](https://emscripten-forge.org/) although they can be\n   manually built, and are added to a deployment during the deployment build process.\n3. JavaScript commands that are loaded and run in the same as WebAssembly commands except they have\n   a `.js` file and no `.wasm` file. There is an example of creating a JavaScript command from\n   TypeScript source code for use in the Jupyterlite terminal in the\n   [terminal-javascript-command](https://github.com/ianthomas23/terminal-javascript-command) repo.\n4. External commands which are TypeScript commands that run in the main browser UI thread rather\n   than the WebWorker that the `cockle` shell runs in. These are registered when a `cockle` `Shell`\n   is constructed. There is an example of an external command which is packaged as a JupyterLite\n   extension in the\n   [terminal-external-command](https://github.com/ianthomas23/terminal-external-command) repo.\n\n[Emscripten-forge](https://emscripten-forge.org/) packages containing WebAssembly commands that are\ncurrently supported and tested are as follows. Each package contains a single commmand with the same\nname as the package unless otherwise specified:\n\n- `awk`\n- `coreutils`: multiple core commands including `cat`, `cp`, `echo`, `ls`, `mkdir`, `mv`, `rm`, `touch`, `uname`, and `wc`\n- `findutils`: `find` command\n- [`git2cpp`](https://git2cpp.readthedocs.io/): a `git` implementation\n- `grep`\n- `less`\n- `lua`\n- `nano`\n- `sed`\n- `tree`\n- `vim`\n\n## Version compatibility\n\nThe filesystem used in `cockle` is built using a specific version of Emscripten, and for maximum\ncompatibility the WebAssembly commands used in `cockle` should be built using the same version of\nEmscripten. WebAssembly commands built on Emscripten-forge are hosted on different\n[prefix.dev](https:/",
     "security_policy": null
   },
   "jupyterlite/demo": {
@@ -18443,7 +18486,7 @@
     "security_policy": null
   },
   "jupyterlite/terminal": {
-    "head": "21cd8c2cd9ebfa870e338fc9e78b2f8d0f70ce8e",
+    "head": "37a250bcad178880c844a99f1fe48f31b661f695",
     "n_files": 85,
     "file_types": {
       "config": 28,
@@ -18509,7 +18552,7 @@
       "jupyter-builder"
     ],
     "mentions": {},
-    "readme": "# JupyterLite Terminal\n\n[![Github Actions Status](https://github.com/jupyterlite/terminal/actions/workflows/build.yml/badge.svg)](https://github.com/jupyterlite/terminal/actions/workflows/build.yml)\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/terminal/)\n\nA terminal for JupyterLite.\n\n![a screenshot showing a terminal running in JupyterLite](https://raw.githubusercontent.com/jupyterlite/terminal/main/screenshot.png)\n\n## Requirements\n\n- JupyterLite >= 0.7.0, < 0.9.0\n\n## Install\n\nTo install the extension, execute:\n\n```bash\npip install jupyterlite-terminal\n```\n\nYou will also need to install the JupyterLite CLI:\n\n```bash\npython -m pip install jupyterlite-core\n```\n\n## Usage\n\nAfter installing `jupyterlite-core` and `jupyterlite-terminal`, create a `jupyter-lite.json` file with the following content to activate the terminal extension:\n\n```json\n{\n  \"jupyter-lite-schema-version\": 0,\n  \"jupyter-config-data\": {\n    \"terminalsAvailable\": true\n  }\n}\n```\n\nThen build a new JupyterLite site:\n\n```bash\njupyter lite build\n```\n\n## Running commands programmatically\n\nBesides the interactive terminal, the extension registers JupyterLab commands that\nrun commands in a _headless_ `cockle` shell: one that captures the output and exit\ncode without opening a terminal widget. These are useful for other extensions or\nautomation that need to run shell commands in JupyterLite.\n\n| Command                                | Description                                       |\n| -------------------------------------- | ------------------------------------------------- |\n| `@jupyterlite/terminal:execute-shell`  | Run a command and return its output and exit code |\n| `@jupyterlite/terminal:start-shell`    | Start a reusable headless shell                   |\n| `@jupyterlite/terminal:shutdown-shell` | Shut down a headless shell by name                |\n| `@jupyterlite/terminal:list-shells`    | List the running headless shells                  |\n\nRun a single command (a throwaway shell is created and disposed automatically):\n\n```ts\nconst result = await app.commands.execute('@jupyterlite/terminal:execute-shell', {\n  code: 'echo hello'\n});\nconsole.log(result.exitCode); // 0\nconsole.log(result.output); // hello\n```\n\nPass a `shellName` to reuse a shell across calls so state such as the working\ndirectory persists:\n\n```ts\nconst { shellName } = await app.commands.execute('@jupyterlite/terminal:start-shell');\nawait app.commands.execute('@jupyterlit",
+    "readme": "# JupyterLite Terminal\n\n[![Github Actions Status](https://github.com/jupyterlite/terminal/actions/workflows/build.yml/badge.svg)](https://github.com/jupyterlite/terminal/actions/workflows/build.yml)\n[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/terminal/)\n\nA terminal for JupyterLite.\n\n![a screenshot showing a terminal running in JupyterLite](https://raw.githubusercontent.com/jupyterlite/terminal/main/screenshot.png)\n\n## Requirements\n\n- JupyterLite >= 0.8.0, < 0.9.0\n\n## Install\n\nTo install the extension, execute:\n\n```bash\npip install jupyterlite-terminal\n```\n\nYou will also need to install the JupyterLite CLI:\n\n```bash\npython -m pip install jupyterlite-core\n```\n\n## Usage\n\nAfter installing `jupyterlite-core` and `jupyterlite-terminal`, create a `jupyter-lite.json` file with the following content to activate the terminal extension:\n\n```json\n{\n  \"jupyter-lite-schema-version\": 0,\n  \"jupyter-config-data\": {\n    \"terminalsAvailable\": true\n  }\n}\n```\n\nThen build a new JupyterLite site:\n\n```bash\njupyter lite build\n```\n\n## Running commands programmatically\n\nBesides the interactive terminal, the extension registers JupyterLab commands that\nrun commands in a _headless_ `cockle` shell: one that captures the output and exit\ncode without opening a terminal widget. These are useful for other extensions or\nautomation that need to run shell commands in JupyterLite.\n\n| Command                                | Description                                       |\n| -------------------------------------- | ------------------------------------------------- |\n| `@jupyterlite/terminal:execute-shell`  | Run a command and return its output and exit code |\n| `@jupyterlite/terminal:start-shell`    | Start a reusable headless shell                   |\n| `@jupyterlite/terminal:shutdown-shell` | Shut down a headless shell by name                |\n| `@jupyterlite/terminal:list-shells`    | List the running headless shells                  |\n\nRun a single command (a throwaway shell is created and disposed automatically):\n\n```ts\nconst result = await app.commands.execute('@jupyterlite/terminal:execute-shell', {\n  code: 'echo hello'\n});\nconsole.log(result.exitCode); // 0\nconsole.log(result.output); // hello\n```\n\nPass a `shellName` to reuse a shell across calls so state such as the working\ndirectory persists:\n\n```ts\nconst { shellName } = await app.commands.execute('@jupyterlite/terminal:start-shell');\nawait app.commands.execute('@jupyterlit",
     "security_policy": null
   },
   "jupyterlite/wasm_lua": {
@@ -18537,7 +18580,7 @@
     "security_policy": null
   },
   "jupyterlite/xeus": {
-    "head": "963e010c2ef2406cd113ff2b39a3b2e3ac2d3c22",
+    "head": "cb643d5236a2a9b8dcef0740efbb9424796e48f2",
     "n_files": 99,
     "file_types": {
       "config": 47,

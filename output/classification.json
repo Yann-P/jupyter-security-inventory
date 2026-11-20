@@ -3015,5 +3015,12 @@
     "deploys_live_service": null,
     "security_boundary": null,
     "model": "deepseek-v4-pro"
+  },
+  "jupyter/security-inventory": {
+    "rationale": "Repository is a tool that inventories and classifies Jupyter repositories for security metrics, with scripts, docs, and CI.",
+    "kind": "tooling",
+    "deploys_live_service": null,
+    "security_boundary": null,
+    "model": "deepseek-v4-pro"
   }
 }

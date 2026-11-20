@@ -1,5 +1,5 @@
 {
-  "fetched_on": "2026-11-19",
+  "fetched_on": "2026-11-20",
   "orgs": [
     "binder-examples",
     "binderhub-ci-repos",
@@ -1750,6 +1750,14 @@
       "description": null,
       "is_fork": false,
       "owner": "Jupyter Security"
+    },
+    {
+      "full_name": "jupyter/security-inventory",
+      "org": "jupyter",
+      "name": "security-inventory",
+      "description": "Jupyter GitHub inventory tools for public security purposes",
+      "is_fork": false,
+      "owner": "None"
     },
     {
       "full_name": "jupyter/software-steering-council-team-compass",
