@@ -7,6 +7,7 @@ Each topic checks one practice in every repository. Open a topic to see which re
 ```{csv-table}
 :file: /_generated/all-topics.csv
 :header-rows: 1
+:class: sphinx-datatable
 ```
 
 ```{include} _generated/topics-toctree.md
