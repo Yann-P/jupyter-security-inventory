@@ -2,7 +2,7 @@
 html_theme.sidebar_secondary.remove: true
 ---
 
-# All organizations
+# Overview
 
 ```{include} _generated/home.md
 ```
@@ -11,6 +11,7 @@ html_theme.sidebar_secondary.remove: true
 :hidden:
 
 self
+owners
 orgs
 topics
 packages

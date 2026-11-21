@@ -6,7 +6,7 @@ html_theme.sidebar_secondary.remove: true
 
 {{ images_note }}
 
-{download}`Download CSV </_generated/downloads/all-images.csv>`
+{download}`Download Full CSV </_generated/downloads/all-images.csv>`
 
 ```{csv-table}
 :file: /_generated/all-images.csv

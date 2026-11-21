@@ -1,5 +1,8 @@
 """Tests for docs/insights.py, which writes the site's pages."""
 
+import re
+from collections import Counter
+
 import insights
 
 
@@ -9,12 +12,14 @@ def test_plain_keeps_text_from_repos_from_becoming_html_or_markdown():
     assert insights.plain("[click](evil)") == "\\[click\\]\\(evil\\)"  # a link the model was tricked into writing
 
 
-def test_summary_sentence_reads_as_one_sentence():
+def test_summary_sentence_reads_as_one_sentence_and_links_its_counts():
     counts = {"repos": 35, "packaged": 6, "boundaries": 1, "services": 0}
-    assert insights.summary_sentence("[github.com/jupyter-book](https://github.com/jupyter-book)", counts) == (
+    sentence = insights.summary_sentence("[github.com/jupyter-book](https://github.com/jupyter-book)", counts)
+    assert re.sub(r"<[^>]+>", "", sentence) == (
         "[github.com/jupyter-book](https://github.com/jupyter-book) has 35 public repositories: "
         "6 publish a package and 1 is a security boundary."
     )
+    assert '<a href="?has=security%20boundary#repositories">1</a>' in sentence
 
 
 def test_a_table_writes_its_cells_for_the_page_and_its_values_for_the_download(tmp_path, monkeypatch):
@@ -41,6 +46,7 @@ def make_repo(full_name, packages, boundary=None):
     return {
         "full_name": full_name,
         "org": org,
+        "owner": None,
         "packages": [
             {
                 "system": system,
@@ -165,3 +171,21 @@ def test_topic_repo_table_lists_the_most_downloaded_first_and_leaves_out_what_do
     table = insights.topic_repo_table(data, {"id": "t"})
     assert [row[0] for row in table.rows] == ["o/done", "o/missing"]
     assert "blob/c0ffee/a%20b.yml" in table.cells[0][-1]
+
+
+def test_a_topic_is_finished_only_when_every_applicable_repo_is_done():
+    assert insights.progress(Counter({"done": 199, "missing": 1})) == 99  # not rounded up to 100
+    assert insights.progress(Counter({"done": 3, "n/a": 5})) == 100
+    assert insights.progress(Counter({"n/a": 5})) == 100  # nothing to do
+    assert "topic-finished" in insights.progress_cell(Counter({"done": 3}))
+    assert "topic-finished" not in insights.progress_cell(Counter({"done": 199, "partial": 1}))
+
+
+def test_the_topics_and_counts_of_an_owner_page_link_to_their_repos_on_the_topic_page():
+    data = make_data(make_repo("o/r", []))
+    data.topics = [{"id": "t", "title": "T & co", "question": "Q?"}]
+    data.results = {"t": {"o/r": {"status": "done"}}}
+    topic, _, _, done, partial, *_ = insights.topic_summary(data, ["o/r"], {"owner": "Jupyter Book"}).cells[0]
+    assert topic == '<a href="../topics/t.html?owner=Jupyter%20Book#repositories">T &amp; co</a>'
+    assert done == '<a href="../topics/t.html?owner=Jupyter%20Book&amp;status=done#repositories">1</a>'
+    assert partial == "0"  # nothing to list
