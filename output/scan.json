@@ -8581,7 +8581,7 @@
     "security_policy": null
   },
   "jupyter/security-inventory": {
-    "head": "4de737b8889e301bf632d6d8b37276bf2e12b2ca",
+    "head": "9fb63af9ac9709b9aef3b6be0aef28f09a30141d",
     "n_files": 66,
     "file_types": {
       "config": 14,
@@ -8889,7 +8889,7 @@
     "security_policy": null
   },
   "jupyter/try-jupyter": {
-    "head": "a570e6748f3087c0d7e19fd267b0790861b30795",
+    "head": "84bab66332fb9262ed6a17013497be3eaa60e2be",
     "n_files": 37,
     "file_types": {
       "other": 4,
@@ -10289,7 +10289,7 @@
     "security_policy": null
   },
   "jupyterhealth/jupyterhealth-exchange": {
-    "head": "96b5897f03ba1065e20cdf6dfaab125233829ca7",
+    "head": "f31d3655f9a604a3d3a93e2f3a7090a2ef8ac784",
     "n_files": 948,
     "file_types": {
       "other": 10,
@@ -14485,7 +14485,7 @@
     "security_policy": null
   },
   "jupyterlab/hatch-jupyter-builder": {
-    "head": "fedc855da78b965f69a0c6d02e5645adcf2a6fac",
+    "head": "ad96c5ef867666de4241abf96f578419e1c7c0b1",
     "n_files": 132,
     "file_types": {
       "config": 32,
@@ -14704,13 +14704,13 @@
     "security_policy": null
   },
   "jupyterlab/jupyter-ai-lite": {
-    "head": "6f5d75e1f717b1b551445b14e0388ad91b874ed6",
-    "n_files": 157,
+    "head": "fb14aa47d3f0663ac467fad858f0abb2e8d87c4c",
+    "n_files": 158,
     "file_types": {
       "config": 35,
       "other": 8,
       "docs": 29,
-      "code": 75,
+      "code": 76,
       "web": 5,
       "media": 5
     },
@@ -15231,7 +15231,7 @@
     "security_policy": null
   },
   "jupyterlab/jupyterlab": {
-    "head": "adcb6f8af341909efb4af6743f4e0f31025d562a",
+    "head": "c233d4b14d548fe55108a883aea5f9f52afe5594",
     "n_files": 3140,
     "file_types": {
       "config": 605,
